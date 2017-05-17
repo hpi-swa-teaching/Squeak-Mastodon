@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Spike-Twitter",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TweetReaderTest",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
