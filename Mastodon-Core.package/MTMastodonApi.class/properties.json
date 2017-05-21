@@ -11,7 +11,8 @@
 		"clientID",
 		"clientSecret",
 		"token",
-		"scope" ],
+		"webClient",
+		"baseURL" ],
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],
