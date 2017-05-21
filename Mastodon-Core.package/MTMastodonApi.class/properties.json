@@ -1,0 +1,19 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"username",
+		"password",
+		"clientID",
+		"clientSecret",
+		"token",
+		"scope" ],
+	"name" : "MTMastodonApi",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

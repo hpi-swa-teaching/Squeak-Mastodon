@@ -1,3 +1,4 @@
 OrderedDictionary {
+	'Mastodon-Core.package' : #SquotCypressCodeSerializer,
 	'Mastodon-Spike-Twitter.package' : #SquotCypressCodeSerializer
 }
