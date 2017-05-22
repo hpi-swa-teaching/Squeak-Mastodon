@@ -9,3 +9,4 @@ toot: aString
 			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
 	json := self deserialize: (response content).
 	"Transcript show: response content."
+	^ json.
