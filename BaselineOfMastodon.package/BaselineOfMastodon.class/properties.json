@@ -10,5 +10,5 @@
 	"name" : "BaselineOfMastodon",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "BaselineOf",
 	"type" : "normal" }
