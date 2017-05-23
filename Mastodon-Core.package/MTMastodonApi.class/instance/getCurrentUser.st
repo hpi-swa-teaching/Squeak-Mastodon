@@ -1,8 +1,5 @@
 endpoints
 getCurrentUser
-	| url response json |
+	| url |
 	url := self baseURL, '/api/v1/accounts/verify_credentials'.
-	response := webClient httpGet: url
-			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
-	json := self deserialize: (response content).
-	^ json.
+	^ self getRequest: url.
