@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfMastodon",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfMastodon",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

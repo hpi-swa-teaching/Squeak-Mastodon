@@ -1,4 +1,6 @@
 OrderedDictionary {
+	'BaselineOfMastodon.package' : #SquotCypressCodeSerializer,
 	'Mastodon-Core.package' : #SquotCypressCodeSerializer,
-	'Mastodon-Spike-Twitter.package' : #SquotCypressCodeSerializer
+	'Mastodon-Spike-Twitter.package' : #SquotCypressCodeSerializer,
+	'Mastodon-Tests.package' : #SquotCypressCodeSerializer
 }
