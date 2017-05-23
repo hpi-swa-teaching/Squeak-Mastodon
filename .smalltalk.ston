@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'MT',
+      #baseline : 'Mastodon',
       #directory : '',
       #platforms : [ #squeak ],
       #load : [ 'tests' ],
