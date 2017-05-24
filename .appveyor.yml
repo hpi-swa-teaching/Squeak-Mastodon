@@ -1,0 +1,17 @@
+environment:
+  matrix:
+    - SMALLTALK: Squeak-trunk
+    - SMALLTALK: Squeak-5.1
+    - SMALLTALK: Squeak-5.0
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - SMALLTALK: Squeak-trunk
+
+platform:
+  - x86
+
+clone_depth: 5
+build: false
+version: "{build}"
