@@ -1,0 +1,15 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JU 5/29/2016 13:28",
+	"instvars" : [
+		"thumbnailMediaUrl",
+		"mediaUrl" ],
+	"name" : "MTMedia",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }

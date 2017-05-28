@@ -1,0 +1,25 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JS 5/31/2016 14:18",
+	"instvars" : [
+		"id",
+		"username",
+		"acct",
+		"displayName",
+		"createdAt",
+		"url",
+		"note",
+		"avatar",
+		"header",
+		"followersCount",
+		"followingCount",
+		"statusesCount" ],
+	"name" : "MTAccount",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }

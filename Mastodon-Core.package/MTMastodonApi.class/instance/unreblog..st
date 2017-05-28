@@ -1,5 +1,6 @@
 endpoints
 unreblog: aStatusID
-	| url |
+	| url response |
 	url := self baseURL, '/api/v1/statuses/', aStatusID ,'/unreblog'.
-	^ self postRequest: url.
+	response := self getRequest: url.
+	^ MTResult value: (self deserialize: (response content) intoObjectOf: MTToot).

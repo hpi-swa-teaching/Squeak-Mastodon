@@ -1,5 +1,6 @@
 endpoints
 unfollow: aUserID
-	| url |
+	| url response |
 	url := self baseURL, '/api/v1/accounts/', aUserID ,'/unfollow'.
-	^ self postRequest: url.
+	response := self getRequest: url.
+	^ MTResult value: (self deserialize: (response content) intoObjectOf: MTRelationship ).

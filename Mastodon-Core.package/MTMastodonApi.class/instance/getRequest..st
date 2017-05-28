@@ -1,7 +1,7 @@
 helpers
 getRequest: url
-	| response json |
+	| response |
 	response := webClient httpGet: url
 			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
-	json := self deserialize: (response content).
-	^ json.
+	response isSuccess 
+		ifTrue: [^ response]

@@ -1,0 +1,27 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JU 5/23/2016 12:08",
+	"instvars" : [
+		"id",
+		"createdAt",
+		"content",
+		"acct",
+		"tags",
+		"mentions",
+		"urls",
+		"media",
+		"reblogged",
+		"reblogsCount",
+		"favouritesCount",
+		"inReplyToID",
+		"inReplyToAccountID",
+		"favourited" ],
+	"name" : "MTToot",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }

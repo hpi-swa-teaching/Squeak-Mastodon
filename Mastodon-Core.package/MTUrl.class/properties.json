@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JU 5/29/2016 16:18",
+	"instvars" : [
+		"shortUrl",
+		"expandedUrl",
+		"displayUrl" ],
+	"name" : "MTUrl",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }

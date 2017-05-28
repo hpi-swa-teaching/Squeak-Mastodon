@@ -1,5 +1,6 @@
 endpoints
 unblock: aUserID
-	| url |
+	| url response |
 	url := self baseURL, '/api/v1/accounts/', aUserID ,'/unblock'.
-	^ self postRequest: url.
+	response := self getRequest: url.
+	^ MTResult value: (self deserialize: (response content) intoObjectOf: MTRelationship).

@@ -1,6 +1,7 @@
 endpoints
 toot: aString
-	| url parameters |
+	| url parameters response |
 	url := self baseURL, '/api/v1/statuses'.
 	parameters := Dictionary newFromPairs: {'status'. aString}.
-	^ self postRequest: url withParameters: parameters.
+	response := self postRequest: url withParameters: parameters.
+	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTToot).

@@ -1,6 +1,7 @@
 endpoints
 getFollowers: aUserID
 	"returns all users who follow this UserID"
-	| url |
+	| url response |
 	url := self baseURL, '/api/v1/accounts/', aUserID ,'/followers'.
-	^ self getRequest: url.
+	response := self getRequest: url.
+	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTAccount).

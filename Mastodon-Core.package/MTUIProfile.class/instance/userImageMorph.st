@@ -1,7 +1,7 @@
 as yet unclassified
 userImageMorph
 	| image |  
-	image := STMedia imageMorphFrom: self user profileImageUrl.
+	image := MTMedia imageMorphFrom: self user profileImageUrl.
 	image ifNotNil: [
 		image
 			width: 200;
