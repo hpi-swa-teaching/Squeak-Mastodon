@@ -9,7 +9,7 @@ from: aJsonObject
 		"urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | MTUrl from: json]);"
 		favourited:  (aJsonObject at: 'favourited');
 		reblogged:  (aJsonObject at: 'reblogged:');
-		reblogsCount:  (aJsonObject at: 'reblogsCount');
+		reblogsCount:  (aJsonObject at: 'reblogs_count');
 		favouritesCount:  (aJsonObject at: 'favouritesCount');
 		urls: (aJsonObject at: 'url');
 		"media:  (((aJsonObject at: 'entities') at:'media' ifAbsent: [#()]) collect: [:json | MTMedia from: json]);"	
