@@ -6,7 +6,7 @@ addRequestSection
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper 
 		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
+		listDirection: #topToBottom;
 		cellPositioning: #topLeft;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
@@ -24,6 +24,7 @@ addRequestSection
 	passwordTextField theText: (MTSettingsStore default at: #password ifAbsent: ['']). 
 	passwordTextField helpText: 'Mastodon Password'.
 	requestWrapper addMorphBack: passwordTextField.
+	
 	
 	urlTextField := UiLineEdit new.
 	urlTextField theText: (MTSettingsStore default at: #baseURL ifAbsent: ['']). 
