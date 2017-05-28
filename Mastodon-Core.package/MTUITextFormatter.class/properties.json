@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUITextFormatter",
+	"pools" : [
+		 ],
+	"super" : "UiHtmlTextFormatter",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tweetTextArea" ],
+	"name" : "MTUINewTweet",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"resultTextLabel",
+		"pinTextField",
+		"consumerSecretTextField",
+		"consumerKeyTextField" ],
+	"name" : "MTUISettings",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

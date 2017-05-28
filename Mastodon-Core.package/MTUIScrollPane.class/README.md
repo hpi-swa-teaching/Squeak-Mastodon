@@ -1,0 +1,1 @@
+STUIScrollPane initializes and holds the STUIScrollBar.

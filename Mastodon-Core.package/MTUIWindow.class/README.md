@@ -1,0 +1,1 @@
+STUIWindow is the main wrapper for all of the views and resposible for connecting them properly.

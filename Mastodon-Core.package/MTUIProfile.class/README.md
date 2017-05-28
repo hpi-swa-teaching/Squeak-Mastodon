@@ -1,0 +1,1 @@
+STUIProfile is a view to display a user profile.

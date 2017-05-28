@@ -1,0 +1,15 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"active",
+		"id" ],
+	"name" : "MTUIMenuButton",
+	"pools" : [
+		 ],
+	"super" : "IconicButton",
+	"type" : "normal" }

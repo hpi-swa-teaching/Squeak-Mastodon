@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"instance" : "JU 7/5/2016 11:28",
+		"instance:" : "JU 7/5/2016 11:34",
+		"open" : "JU 7/5/2016 11:29" },
+	"instance" : {
+		"addMenuMorph" : "mm 5/28/2017 13:45",
+		"addScrollMorph" : "NK 6/14/2016 17:48",
+		"addViewMorph" : "NK 5/30/2016 00:50",
+		"displayUser:" : "JU 7/5/2016 12:19",
+		"forceLoadView:as:activate:" : "nb 6/28/2016 11:27",
+		"initialize" : "mm 5/28/2017 13:47",
+		"loadHomeTimelineView" : "mm 5/28/2017 13:47",
+		"loadMentionsView" : "mm 5/28/2017 13:47",
+		"loadNewTweetView" : "mm 5/28/2017 13:47",
+		"loadProfileView" : "mm 5/28/2017 13:47",
+		"loadProfileViewOf:" : "mm 5/28/2017 13:47",
+		"loadScreenshotView" : "NR 6/6/2016 11:57",
+		"loadSettingsView" : "mm 5/28/2017 13:47",
+		"loadView:as:activate:" : "nb 7/18/2016 19:46",
+		"loadedViews" : "NK 5/30/2016 19:24",
+		"menuMorph" : "NK 5/30/2016 19:24",
+		"openWindow" : "nb 6/26/2016 01:02",
+		"scrollMorph" : "NK 5/30/2016 19:24",
+		"twitterApi" : "NR 6/4/2016 13:37",
+		"twitterApi:" : "NR 6/4/2016 13:37",
+		"updateViewMorph:" : "NK 5/30/2016 17:34",
+		"viewMorph" : "NK 5/30/2016 19:24" } }

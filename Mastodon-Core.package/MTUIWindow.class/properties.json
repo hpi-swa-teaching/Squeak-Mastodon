@@ -1,0 +1,18 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:29",
+	"instvars" : [
+		"menuMorph",
+		"viewMorph",
+		"scrollMorph",
+		"loadedViews",
+		"twitterApi" ],
+	"name" : "MTUIWindow",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

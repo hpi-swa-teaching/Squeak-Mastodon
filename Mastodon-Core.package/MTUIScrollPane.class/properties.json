@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "nb 7/29/2016 14:18",
+	"instvars" : [
+		 ],
+	"name" : "MTUIScrollPane",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }

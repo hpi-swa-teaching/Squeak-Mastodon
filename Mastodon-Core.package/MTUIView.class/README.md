@@ -1,0 +1,1 @@
+A STUIView is a morph which is displayed as part of the STUIWindow.

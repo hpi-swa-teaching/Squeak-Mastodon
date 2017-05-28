@@ -1,0 +1,1 @@
+STUIMenuButton is an IconicButton which aditionally contains an active state and an id.

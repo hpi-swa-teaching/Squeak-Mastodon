@@ -1,0 +1,1 @@
+STUIIcons is an image-form dispenser for the icons we're using so we don't have to reload them everytime from the resources folder.

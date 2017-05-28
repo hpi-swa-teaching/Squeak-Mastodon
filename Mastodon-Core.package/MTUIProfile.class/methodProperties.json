@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"with:from:" : "nb 7/11/2016 01:23" },
+	"instance" : {
+		"addUserInfo" : "NK 6/4/2016 18:24",
+		"addUserTimeline" : "nb 7/18/2016 19:25",
+		"initialize" : "JS 6/4/2016 15:28",
+		"loadMoreTweets" : "nb 7/11/2016 01:24",
+		"refreshTweets" : "nb 7/11/2016 01:56",
+		"tweetList" : "nb 7/11/2016 01:23",
+		"tweetList:" : "nb 7/11/2016 01:23",
+		"tweets" : "NK 6/4/2016 18:16",
+		"tweets:" : "NK 6/4/2016 18:16",
+		"user" : "NK 6/4/2016 18:16",
+		"user:" : "NK 6/4/2016 18:16",
+		"userImageMorph" : "JU 6/25/2016 15:37" } }

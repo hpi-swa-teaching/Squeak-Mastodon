@@ -1,0 +1,18 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		"maxID" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"name",
+		"tweets",
+		"minID",
+		"maxID",
+		"tweetMorphs" ],
+	"name" : "MTUITweetList",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

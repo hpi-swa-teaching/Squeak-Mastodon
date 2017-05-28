@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"with:" : "NK 6/6/2016 08:58" },
+	"instance" : {
+		"addTweetMorph:" : "nb 7/11/2016 02:55",
+		"appendTweets:" : "nb 7/29/2016 14:34",
+		"favoriteTweetWithId:fromSender:" : "NR 7/17/2016 22:13",
+		"initialize" : "nb 7/11/2016 02:55",
+		"loadMoreTweets" : "nb 7/29/2016 14:33",
+		"loadTweets" : "nb 7/29/2016 14:37",
+		"maxID" : "nb 7/5/2016 11:53",
+		"maxID:" : "nb 7/5/2016 11:52",
+		"minID" : "nb 6/26/2016 00:28",
+		"minID:" : "nb 6/26/2016 01:01",
+		"prependTweets:" : "nb 7/29/2016 14:34",
+		"refreshTweets" : "nb 7/29/2016 14:34",
+		"render" : "mm 5/28/2017 13:46",
+		"retweetTweetWithId:fromSender:" : "NR 7/17/2016 22:13",
+		"setTweets:" : "nb 7/29/2016 14:37",
+		"tweetMorphs" : "nb 7/11/2016 02:49",
+		"tweets" : "NK 5/29/2016 23:37",
+		"tweets:" : "nb 7/11/2016 02:11",
+		"twitterApi" : "JS 6/1/2016 19:24",
+		"twitterApi:" : "JS 6/1/2016 19:21" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:29",
+	"instvars" : [
+		 ],
+	"name" : "MTUIUserTimeline",
+	"pools" : [
+		 ],
+	"super" : "MTUITweetList",
+	"type" : "normal" }

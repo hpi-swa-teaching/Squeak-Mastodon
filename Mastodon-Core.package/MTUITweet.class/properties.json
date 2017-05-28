@@ -1,0 +1,21 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"tweet",
+		"avatar",
+		"image",
+		"content",
+		"text",
+		"actions",
+		"heartButton",
+		"retweetButton" ],
+	"name" : "MTUITweet",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

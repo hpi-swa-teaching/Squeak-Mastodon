@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NK 5/30/2016 23:28",
+	"instvars" : [
+		"twitterApi" ],
+	"name" : "MTUIView",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

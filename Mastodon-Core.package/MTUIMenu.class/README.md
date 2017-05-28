@@ -1,0 +1,1 @@
+STUIMenu contains the main navigation in form of SUIMenuButtons.
