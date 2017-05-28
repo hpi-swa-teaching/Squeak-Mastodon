@@ -7,7 +7,7 @@ addMenuMorph
 				offsets: (0 @ 0 corner: 70 @ 0 negated)).
 	menuMorph color: Color transparent.
 
-	menuMorph addButton: #newTweetButton for: #loadNewTweetView on: self with:  MTUIIcons newTweet.
+	menuMorph addButton: #newTootButton for: #loadNewTootView on: self with:  MTUIIcons newTweet.
 	menuMorph addButton: #homeTimelineButton for: #loadHomeTimelineView on: self with: MTUIIcons home.
 	menuMorph addButton: #mentionsButton for: #loadMentionsView on: self with:  MTUIIcons mentions.
 	menuMorph addButton: #profileButton for: #loadProfileView on: self with: MTUIIcons user.

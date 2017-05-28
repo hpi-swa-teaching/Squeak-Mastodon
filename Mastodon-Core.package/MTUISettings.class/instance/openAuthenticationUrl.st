@@ -4,15 +4,15 @@ openAuthenticationUrl
 	consumerKey := consumerKeyTextField theText asString.
 	consumerSecret :=  consumerSecretTextField theText asString.
 	
-	tootApi consumerKey: consumerKey.
-	tootApi consumerSecret: consumerSecret.
+	mastodonApi consumerKey: consumerKey.
+	mastodonApi consumerSecret: consumerSecret.
 	
 	MTSettingsStore default at: #consumerKey put: consumerKey.
 	MTSettingsStore default at: #consumerSecret put: consumerSecret.
 	
-	tootApi requestAuthenticationToken 
+	mastodonApi requestAuthenticationToken 
 		ifFalse:[resultTextLabel contents: '<i>Requesting a pin failed</i>' asHtmlText.
 			     ^ self].
-	url := tootApi authenticationUrl.
+	url := mastodonApi authenticationUrl.
 	Transcript show: url.
 	MTUtils openLink: url.

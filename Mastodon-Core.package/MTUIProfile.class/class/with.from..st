@@ -1,7 +1,7 @@
 as yet unclassified
-with: aTweetList from: aSTUser 		
+with: aTootList from: aMTUser 		
 	^ (self new)
-		user: aSTUser;
-		tweetList: aTweetList;
+		user: aMTUser;
+		tootList: aTootList;
 		addUserInfo;
 		addUserTimeline.

@@ -1,3 +1,3 @@
 accessing
 mastodonApi: anObject
-	tootApi := anObject
+	mastodonApi := anObject

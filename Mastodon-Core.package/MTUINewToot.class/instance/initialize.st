@@ -3,8 +3,8 @@ initialize
 	super initialize.
 
 	self 
-		addMorph: (TextMorph new contents: '<b>New tweet</b>' asHtmlText);
+		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
 		cellInset: 10;
 		layoutInset: 20;
-		addNewTweetTextarea;
-		addNewTweetButtons.
+		addNewTootTextarea;
+		addNewTootButtons.

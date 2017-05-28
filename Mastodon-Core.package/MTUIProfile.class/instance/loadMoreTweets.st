@@ -1,3 +1,0 @@
-accessing
-loadMoreTweets
-	self tweetList loadMoreTweets

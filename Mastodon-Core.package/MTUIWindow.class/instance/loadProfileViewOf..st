@@ -1,5 +1,5 @@
 as yet unclassified
-loadProfileViewOf: aSTUser
+loadProfileViewOf: aMTUser
 	| userTimeline|
 	self mastodonApi hasUser 
 		ifFalse: [ self inform: 'Please login first.'. 
@@ -9,9 +9,9 @@ loadProfileViewOf: aSTUser
 	
 	userTimeline 
 		mastodonApi: self mastodonApi;
-		loadTweetsOf: aSTUser.
+		loadTootsOf: aMTUser.
 	
 	self 
-		loadView: (MTUIProfile with: userTimeline from: aSTUser)
+		loadView: (MTUIProfile with: userTimeline from: aMTUser)
 		as: #profileView 
 		activate: #profileButton.

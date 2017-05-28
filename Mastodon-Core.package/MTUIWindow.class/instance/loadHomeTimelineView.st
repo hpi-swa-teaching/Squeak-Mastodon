@@ -5,7 +5,7 @@ loadHomeTimelineView
 							
 	homeTimelineView 
 		mastodonApi: (self mastodonApi);
-		loadTweets.
+		loadToots.
 	
 	self 
 		loadView: homeTimelineView

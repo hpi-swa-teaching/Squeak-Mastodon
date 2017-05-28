@@ -1,4 +1,4 @@
 as yet unclassified
-with: aTwitterApi
+with: aMastodonApi
 	^ (self new)
-		mastodonApi: aTwitterApi
+		mastodonApi: aMastodonApi

@@ -9,7 +9,7 @@ loadProfileView
 	
 	userTimeline
 		mastodonApi: self mastodonApi;
-		loadTweets.
+		loadToots.
 	
 	currentUser := mastodonApi currentUser.
 	

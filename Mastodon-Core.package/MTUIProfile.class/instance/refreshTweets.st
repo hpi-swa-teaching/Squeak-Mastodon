@@ -1,3 +1,0 @@
-accessing
-refreshTweets
-	self tweetList refreshTweets

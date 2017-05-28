@@ -5,7 +5,7 @@ loadMentionsView
 							
 	mentionsTimelineView 
 		mastodonApi: (self mastodonApi);
-		loadTweets.
+		loadToots.
 	
 	self 
 		loadView: mentionsTimelineView

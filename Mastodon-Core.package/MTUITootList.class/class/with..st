@@ -1,5 +1,5 @@
 as yet unclassified
-with: anOrderedCollectionOfTweets
+with: anOrderedCollectionOfToots
 	^ (self new)
-		tweets: anOrderedCollectionOfTweets;
+		toots: anOrderedCollectionOfToots;
 		render

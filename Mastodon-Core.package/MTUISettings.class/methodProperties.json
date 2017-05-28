@@ -1,14 +1,14 @@
 {
 	"class" : {
-		"with:" : "mm 5/28/2017 14:07" },
+		"with:" : "PG 5/28/2017 19:09" },
 	"instance" : {
 		"addLoginSection" : "mm 5/28/2017 14:51",
 		"addRequestSection" : "FS 5/28/2017 18:17",
 		"addResultSection" : "mm 5/28/2017 14:59",
 		"authenticateApplication" : "mm 5/28/2017 15:18",
 		"initialize" : "NR 6/6/2016 17:33",
-		"mastodonApi" : "PG 5/28/2017 18:25",
-		"mastodonApi:" : "PG 5/28/2017 18:25",
-		"openAuthenticationUrl" : "PG 5/28/2017 18:25",
+		"mastodonApi" : "PG 5/28/2017 18:38",
+		"mastodonApi:" : "PG 5/28/2017 18:38",
+		"openAuthenticationUrl" : "PG 5/28/2017 18:38",
 		"verifyAccount" : "mm 5/28/2017 15:17",
-		"verifyPin" : "PG 5/28/2017 18:25" } }
+		"verifyPin" : "PG 5/28/2017 18:38" } }
