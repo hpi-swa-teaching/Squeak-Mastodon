@@ -28,7 +28,7 @@ addRequestSection
 	
 	urlTextField := UiLineEdit new.
 	urlTextField theText: (MTSettingsStore default at: #baseURL ifAbsent: ['']). 
-	urlTextField helpText: 'Mastodon server URL (with https://)'.
+	urlTextField helpText: 'Mastodon server URL (without https://)'.
 	requestWrapper addMorphBack: urlTextField.
 	
 	requestButton := UiPushButton new.

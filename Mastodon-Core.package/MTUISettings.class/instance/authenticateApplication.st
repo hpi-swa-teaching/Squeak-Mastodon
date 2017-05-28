@@ -3,7 +3,7 @@ authenticateApplication
 	| baseURL password username |
 	password := passwordTextField theText asString.
 	username :=  usernameTextField theText asString.
-	baseURL :=  urlTextField theText asString.
+	baseURL :=  'https://', urlTextField theText asString.
 	
 	self mastodonApi password: password.
 	self mastodonApi username: username.
