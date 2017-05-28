@@ -14,12 +14,12 @@ addNewTweetTextarea
 		borderColor: Color gray;
 		borderWidth: 1.
 	
-	tweetTextArea := TextMorph new.
-	tweetTextArea 
+	tootTextArea := TextMorph new.
+	tootTextArea 
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1.
-	textareaWrapper addMorphBack: tweetTextArea.
+	textareaWrapper addMorphBack: tootTextArea.
 	
 	self addMorphBack: textareaWrapper.
 	

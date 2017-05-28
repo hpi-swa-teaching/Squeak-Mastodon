@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "MTUIRetweetButton",
+	"name" : "MTUIRepostButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITweetActionButton",
+	"super" : "MTUITootActionButton",
 	"type" : "normal" }

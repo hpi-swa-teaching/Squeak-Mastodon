@@ -1,13 +1,14 @@
 accessing
-loadTweets
-	| tweets |
+refreshTweets
+	| newTweets |
 	self mastodonApi hasUser 
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 			
-	tweets := twitterApi timeline: self name with: MTSettingsStore default tweetNum.
-	tweets isError  
+	newTweets := tootApi timeline: self name since: self maxID.
+	
+	newTweets isError  
 		ifTrue: [self inform: 'An error occurred'. 
 				^ false].
 			
-	self setTweets: tweets value.
+	self prependTweets: newTweets value.

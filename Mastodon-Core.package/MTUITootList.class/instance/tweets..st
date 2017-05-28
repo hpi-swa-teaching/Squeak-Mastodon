@@ -1,3 +1,3 @@
 accessing
 tweets: anOrderedCollection
-	tweets := anOrderedCollection
+	toots := anOrderedCollection

@@ -4,15 +4,15 @@ openAuthenticationUrl
 	consumerKey := consumerKeyTextField theText asString.
 	consumerSecret :=  consumerSecretTextField theText asString.
 	
-	twitterApi consumerKey: consumerKey.
-	twitterApi consumerSecret: consumerSecret.
+	tootApi consumerKey: consumerKey.
+	tootApi consumerSecret: consumerSecret.
 	
 	MTSettingsStore default at: #consumerKey put: consumerKey.
 	MTSettingsStore default at: #consumerSecret put: consumerSecret.
 	
-	twitterApi requestAuthenticationToken 
+	tootApi requestAuthenticationToken 
 		ifFalse:[resultTextLabel contents: '<i>Requesting a pin failed</i>' asHtmlText.
 			     ^ self].
-	url := twitterApi authenticationUrl.
+	url := tootApi authenticationUrl.
 	Transcript show: url.
 	MTUtils openLink: url.

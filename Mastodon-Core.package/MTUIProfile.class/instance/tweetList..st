@@ -1,3 +1,3 @@
 accessing
 tweetList: anObject
-	tweetList := anObject
+	tootList := anObject

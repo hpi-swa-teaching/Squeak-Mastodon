@@ -1,4 +1,4 @@
 accessing
 addTweetMorph: aMorph
 	
-	tweetMorphs addFirst: aMorph
+	tootMorphs addFirst: aMorph

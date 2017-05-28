@@ -1,17 +1,13 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"maxID" ],
+		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "NK 5/30/2016 23:28",
+	"commentStamp" : "",
 	"instvars" : [
-		"name",
-		"tweets",
-		"minID",
-		"maxID",
-		"tweetMorphs" ],
-	"name" : "MTUITweetList",
+		"tootTextArea" ],
+	"name" : "MTUINewToot",
 	"pools" : [
 		 ],
 	"super" : "MTUIView",

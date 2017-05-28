@@ -10,5 +10,5 @@
 	"name" : "MTUIUserTimeline",
 	"pools" : [
 		 ],
-	"super" : "MTUITweetList",
+	"super" : "MTUITootList",
 	"type" : "normal" }

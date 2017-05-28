@@ -1,3 +1,3 @@
 accessing
 mastodonApi
-	^twitterApi 
+	^tootApi 

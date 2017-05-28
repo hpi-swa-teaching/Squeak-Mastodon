@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		"tweetList",
-		"user" ],
+		"user",
+		"tootList" ],
 	"name" : "MTUIProfile",
 	"pools" : [
 		 ],

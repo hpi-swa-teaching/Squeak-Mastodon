@@ -5,6 +5,6 @@ loadNewTweetView
 		^ false].
 	
 	self 
-		loadView: (MTUINewTweet with: mastodonApi)
+		loadView: (MTUINewToot with: mastodonApi)
 		as: #newTweetView 
 		activate: #newTweetButton.

@@ -1,14 +1,18 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		 ],
+		"maxID" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		"tootApi" ],
-	"name" : "MTUIView",
+		"name",
+		"minID",
+		"maxID",
+		"toots",
+		"tootMorphs" ],
+	"name" : "MTUITootList",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "MTUIView",
 	"type" : "normal" }

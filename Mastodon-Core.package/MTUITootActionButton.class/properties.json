@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tweetTextArea" ],
-	"name" : "MTUINewTweet",
+		"active",
+		"id" ],
+	"name" : "MTUITootActionButton",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "IconicButton",
 	"type" : "normal" }
