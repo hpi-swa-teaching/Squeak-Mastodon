@@ -4,7 +4,7 @@ loadMentionsView
 	mentionsTimelineView := MTUIMentionsTimeline new.
 							
 	mentionsTimelineView 
-		twitterApi: (self twitterApi);
+		mastodonApi: (self mastodonApi);
 		loadTweets.
 	
 	self 

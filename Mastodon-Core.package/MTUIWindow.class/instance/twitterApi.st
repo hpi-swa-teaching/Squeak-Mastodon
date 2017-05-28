@@ -1,3 +1,0 @@
-accessing
-twitterApi
-	^ twitterApi

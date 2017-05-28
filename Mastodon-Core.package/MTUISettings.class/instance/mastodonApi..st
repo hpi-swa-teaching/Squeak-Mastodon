@@ -1,3 +1,3 @@
 accessing
-twitterApi: anObject
+mastodonApi: anObject
 	twitterApi := anObject

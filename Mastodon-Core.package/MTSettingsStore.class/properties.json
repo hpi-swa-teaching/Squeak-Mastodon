@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTSettingsStore",
+	"pools" : [
+		 ],
+	"super" : "Dictionary",
+	"type" : "normal" }

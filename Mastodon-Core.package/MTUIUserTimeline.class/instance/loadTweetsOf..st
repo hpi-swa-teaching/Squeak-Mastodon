@@ -1,7 +1,7 @@
 as yet unclassified
 loadTweetsOf: aSTUser
 	| tweets |
-	self twitterApi hasUser 
+	self mastodonApi hasUser 
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 			

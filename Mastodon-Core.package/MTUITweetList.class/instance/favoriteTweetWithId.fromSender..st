@@ -1,4 +1,4 @@
 as yet unclassified
 favoriteTweetWithId: anInteger fromSender: aButton
-	self twitterApi favoriteStatusWithId: anInteger.
+	self mastodonApi favoriteStatusWithId: anInteger.
 	aButton active: true.

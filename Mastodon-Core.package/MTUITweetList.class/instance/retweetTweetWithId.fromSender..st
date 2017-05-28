@@ -1,4 +1,4 @@
 as yet unclassified
 retweetTweetWithId: anInteger fromSender: aButton
-	self twitterApi retweetStatusWithId: anInteger.
+	self mastodonApi retweetStatusWithId: anInteger.
 	aButton active: true

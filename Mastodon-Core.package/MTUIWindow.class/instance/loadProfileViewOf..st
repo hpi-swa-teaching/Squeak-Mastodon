@@ -1,14 +1,14 @@
 as yet unclassified
 loadProfileViewOf: aSTUser
 	| userTimeline|
-	self twitterApi hasUser 
+	self mastodonApi hasUser 
 		ifFalse: [ self inform: 'Please login first.'. 
 				^ false].
 	
 	userTimeline := MTUIUserTimeline new.
 	
 	userTimeline 
-		twitterApi: self twitterApi;
+		mastodonApi: self mastodonApi;
 		loadTweetsOf: aSTUser.
 	
 	self 

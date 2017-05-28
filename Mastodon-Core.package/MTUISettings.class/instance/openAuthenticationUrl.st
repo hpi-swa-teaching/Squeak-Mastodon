@@ -7,8 +7,8 @@ openAuthenticationUrl
 	twitterApi consumerKey: consumerKey.
 	twitterApi consumerSecret: consumerSecret.
 	
-	STSettingsStore default at: #consumerKey put: consumerKey.
-	STSettingsStore default at: #consumerSecret put: consumerSecret.
+	MTSettingsStore default at: #consumerKey put: consumerKey.
+	MTSettingsStore default at: #consumerSecret put: consumerSecret.
 	
 	twitterApi requestAuthenticationToken 
 		ifFalse:[resultTextLabel contents: '<i>Requesting a pin failed</i>' asHtmlText.

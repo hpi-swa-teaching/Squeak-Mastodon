@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"with:" : "JS 6/4/2016 15:23" },
+		"with:" : "mm 5/28/2017 14:07" },
 	"instance" : {
 		"initialize" : "NK 5/29/2016 23:47",
-		"ownerChanged" : "NK 5/29/2016 23:06",
-		"twitterApi" : "JS 6/4/2016 15:32",
-		"twitterApi:" : "JS 6/4/2016 15:25" } }
+		"mastodonApi" : "mm 5/28/2017 14:07",
+		"mastodonApi:" : "mm 5/28/2017 14:07",
+		"ownerChanged" : "NK 5/29/2016 23:06" } }

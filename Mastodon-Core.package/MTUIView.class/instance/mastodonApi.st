@@ -1,3 +1,3 @@
 accessing
-twitterApi
+mastodonApi
 	^twitterApi 

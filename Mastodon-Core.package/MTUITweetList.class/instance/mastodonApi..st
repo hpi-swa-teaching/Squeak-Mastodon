@@ -1,3 +1,3 @@
 accessing
-twitterApi: aTwitterApi
+mastodonApi: aTwitterApi
 	twitterApi := aTwitterApi

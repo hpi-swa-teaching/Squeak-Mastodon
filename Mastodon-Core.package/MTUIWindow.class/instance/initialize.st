@@ -7,18 +7,17 @@ initialize
 	scrollMorph := MTUIScrollPane new.	
 	
 	
-	self twitterApi: (STTwitterApi 
-						consumerKey: (STSettingsStore default at: #consumerKey ifAbsent: [''] )  
-						consumerSecret: (STSettingsStore default at: #consumerSecret  ifAbsent: [''])
-						accessToken: (STSettingsStore default at: #accessToken ifAbsent: [''])
-						accessTokenSecret: (STSettingsStore default at: #accessTokenSecret ifAbsent: [''])).
+	self mastodonApi: (MTMastodonApi with:
+						(MTSettingsStore default at: #baseURL ifAbsent: [''] )  
+						password: (MTSettingsStore default at: #password  ifAbsent: [''])
+						username: (MTSettingsStore default at: #username ifAbsent: [''])).
 
-	self setLabel: 'SmallTweet';
+	self setLabel: 'Mastodon';
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
 	
-	"self twitterApi isAuthenticated 
+	self mastodonApi isAuthenticated 
 		ifTrue: [self loadHomeTimelineView] 
-		ifFalse: [self loadSettingsView]"
+		ifFalse: [self loadSettingsView]
 	

@@ -7,9 +7,9 @@
 	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
 		"resultTextLabel",
-		"pinTextField",
-		"consumerSecretTextField",
-		"consumerKeyTextField" ],
+		"urlTextField",
+		"passwordTextField",
+		"usernameTextField" ],
 	"name" : "MTUISettings",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
 as yet unclassified
-addPinResultSection
+addResultSection
 	resultTextLabel := (TextMorph new contents: '').
-	self addMorphBack: resultTextLabel.
+ 	self addMorphBack: resultTextLabel.

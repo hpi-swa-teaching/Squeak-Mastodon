@@ -4,7 +4,7 @@ loadHomeTimelineView
 	homeTimelineView := MTUIHomeTimeline new.
 							
 	homeTimelineView 
-		twitterApi: (self twitterApi);
+		mastodonApi: (self mastodonApi);
 		loadTweets.
 	
 	self 

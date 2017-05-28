@@ -1,7 +1,7 @@
 accessing
 refreshTweets
 	| newTweets |
-	self twitterApi hasUser 
+	self mastodonApi hasUser 
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 			

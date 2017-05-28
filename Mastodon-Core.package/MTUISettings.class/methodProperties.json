@@ -1,13 +1,14 @@
 {
 	"class" : {
-		"with:" : "JS 6/4/2016 15:14" },
+		"with:" : "mm 5/28/2017 14:07" },
 	"instance" : {
-		"addLoginSection" : "NR 6/4/2016 14:15",
-		"addPinResultSection" : "NR 6/4/2016 14:18",
-		"addPinSection" : "NR 6/4/2016 14:19",
-		"addRequestPinSection" : "NR 6/28/2016 10:14",
+		"addLoginSection" : "mm 5/28/2017 14:51",
+		"addRequestSection" : "mm 5/28/2017 14:36",
+		"addResultSection" : "mm 5/28/2017 14:59",
+		"authenticateApplication" : "mm 5/28/2017 15:18",
 		"initialize" : "NR 6/6/2016 17:33",
-		"openAuthenticationUrl" : "mm 5/28/2017 13:48",
-		"twitterApi" : "NR 6/4/2016 14:48",
-		"twitterApi:" : "NR 6/4/2016 14:48",
-		"verifyPin" : "NR 7/11/2016 12:04" } }
+		"mastodonApi" : "mm 5/28/2017 14:07",
+		"mastodonApi:" : "mm 5/28/2017 14:07",
+		"openAuthenticationUrl" : "mm 5/28/2017 14:08",
+		"verifyAccount" : "mm 5/28/2017 15:17",
+		"verifyPin" : "mm 5/28/2017 14:08" } }

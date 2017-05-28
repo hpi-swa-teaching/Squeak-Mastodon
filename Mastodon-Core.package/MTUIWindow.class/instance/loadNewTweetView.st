@@ -1,10 +1,10 @@
 as yet unclassified
 loadNewTweetView
-	self twitterApi hasUser ifFalse: [
+	self mastodonApi hasUser ifFalse: [
 		self inform: 'Please login first.'. 
 		^ false].
 	
 	self 
-		loadView: (MTUINewTweet with: twitterApi)
+		loadView: (MTUINewTweet with: mastodonApi)
 		as: #newTweetView 
 		activate: #newTweetButton.
