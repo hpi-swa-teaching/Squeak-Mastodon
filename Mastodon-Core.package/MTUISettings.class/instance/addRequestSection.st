@@ -1,7 +1,7 @@
 as yet unclassified
 addRequestSection
 	| requestButton requestWrapper |
-	self addMorphBack: (TextMorph new contents: 'Enter Mastodon username and password' asHtmlText).
+	self addMorphBack: (TextMorph new contents: 'Enter Mastodon email and password' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper 
@@ -17,7 +17,7 @@ addRequestSection
 		
 	usernameTextField := UiLineEdit new.
 	usernameTextField theText: (MTSettingsStore default at: #username ifAbsent: ['']). 
-	usernameTextField helpText: 'Mastodon Username'.
+	usernameTextField helpText: 'Mastodon Email'.
 	requestWrapper addMorphBack: usernameTextField.
 	
 	passwordTextField := UiLineEdit new.
@@ -27,11 +27,11 @@ addRequestSection
 	
 	urlTextField := UiLineEdit new.
 	urlTextField theText: (MTSettingsStore default at: #baseURL ifAbsent: ['']). 
-	urlTextField helpText: 'Mastodon server URL'.
+	urlTextField helpText: 'Mastodon server URL (with https://)'.
 	requestWrapper addMorphBack: urlTextField.
 	
 	requestButton := UiPushButton new.
-	requestButton text: 'Request pin'.
+	requestButton text: 'Login'.
 	self
 		connect: requestButton
  		signal: #clicked:
