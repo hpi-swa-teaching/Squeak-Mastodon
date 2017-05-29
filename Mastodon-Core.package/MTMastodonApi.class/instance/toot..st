@@ -4,4 +4,8 @@ toot: aString
 	url := self baseURL, '/api/v1/statuses'.
 	parameters := Dictionary newFromPairs: {'status'. aString}.
 	response := self postRequest: url withParameters: parameters.
-	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTToot).
+	
+	
+	"
+	ToDo: Später in TimeLine anzeigen
+	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTToot)."

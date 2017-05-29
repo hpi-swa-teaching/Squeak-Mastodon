@@ -3,7 +3,7 @@ addNewTootButtons
 	| sendButton |
 	
 	sendButton := UiPushButton new.
-	sendButton text: 'Tweet'.
+	sendButton text: 'Toot'.
 	self
 		connect: sendButton
  		signal: #clicked:
