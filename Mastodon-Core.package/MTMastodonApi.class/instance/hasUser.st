@@ -1,5 +1,5 @@
 accessing
 hasUser
 "isAuthenticated statt clientID?"
-	clientID ifNotNil: [^ true].
+	token ifNotNil: [^ true].
 	^ false
