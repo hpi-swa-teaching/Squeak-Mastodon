@@ -1,7 +1,7 @@
 endpoints
 toot: aString
 	| url parameters response |
-	self mastodonApi hasUser 
+	self hasUser 
 	ifFalse: [self inform: 'Please login first.'. 
 			^ false].
 	
