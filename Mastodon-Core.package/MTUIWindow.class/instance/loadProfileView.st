@@ -1,7 +1,7 @@
 as yet unclassified
 loadProfileView
 	| userTimeline currentUser|
-	self mastodonApi hasUser 
+	self mastodonApi isAuthenticated 
 		ifFalse: [ self inform: 'Please login first.'. 
 				^ false].
 	

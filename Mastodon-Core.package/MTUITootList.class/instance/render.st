@@ -11,12 +11,12 @@ render
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
 				arguments: (Array with: (toot id) with: tootMorph repostButton);
-				active: toot retweeted.
+				active: toot reblogged.
 			tootMorph heartButton
 				target: self;
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (toot id) with: tootMorph heartButton);
-				active: toot favorited.
+				active: toot favourited.
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;

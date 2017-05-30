@@ -1,6 +1,8 @@
 as yet unclassified
 from: aJsonObject
 	^ (self new)
-		mediaUrl: (aJsonObject at: 'media_url');
-		thumbnailMediaUrl: (aJsonObject at: 'media_url'), ':thumb';
+		id: (aJsonObject at: 'id');
+		type: (aJsonObject at: 'type');
+		url: (aJsonObject at: 'url');
+		previewUrl: (aJsonObject at: 'preview_url');
 		yourself.

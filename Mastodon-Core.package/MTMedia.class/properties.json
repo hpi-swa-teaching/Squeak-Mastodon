@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "JU 5/29/2016 13:28",
 	"instvars" : [
-		"thumbnailMediaUrl",
-		"mediaUrl" ],
+		"id",
+		"type",
+		"url",
+		"previewUrl" ],
 	"name" : "MTMedia",
 	"pools" : [
 		 ],
