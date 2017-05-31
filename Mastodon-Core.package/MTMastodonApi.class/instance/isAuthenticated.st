@@ -1,3 +1,4 @@
-endpoints
+helpers
 isAuthenticated
-	^ false.
+	token ifNotNil: [^ true].
+	^ false

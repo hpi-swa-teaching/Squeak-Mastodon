@@ -1,5 +1,12 @@
 as yet unclassified
 from: aJsonObject
+	| reblogged favourited |
+	(aJsonObject at: 'reblogged') = 'true' 
+		ifTrue: [reblogged := true] 
+		ifFalse: [reblogged := false].
+	(aJsonObject at: 'favourited') = 'true' 
+		ifTrue: [favourited := true] 
+		ifFalse: [favourited := false].
 	^ (self new)
 		id: (aJsonObject at: 'id');
 		createdAt: (aJsonObject at: 'created_at');
@@ -7,10 +14,10 @@ from: aJsonObject
 		"tags: (aJsonObject at: 'tags');"
 		acct: (MTAccount from: (aJsonObject at: 'account'));
 		"urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | MTUrl from: json]);"
-		favourited:  (aJsonObject at: 'favourited');
-		reblogged:  (aJsonObject at: 'reblogged:');
+		favourited: favourited;
+		reblogged: reblogged;
 		reblogsCount:  (aJsonObject at: 'reblogs_count');
 		favouritesCount:  (aJsonObject at: 'favouritesCount');
 		urls: (aJsonObject at: 'url');
-		"media:  (((aJsonObject at: 'entities') at:'media' ifAbsent: [#()]) collect: [:json | MTMedia from: json]);"	
+		media:  ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
 		yourself.

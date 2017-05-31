@@ -4,13 +4,13 @@
 	"instance" : {
 		"actionsMorph" : "PG 5/28/2017 19:40",
 		"avatar" : "NK 6/14/2016 18:43",
-		"avatarMorph" : "PG 5/28/2017 18:59",
+		"avatarMorph" : "mm 5/30/2017 12:10",
 		"content" : "NK 6/14/2016 17:42",
 		"contentMorph" : "NR 6/14/2016 21:03",
 		"heartButton" : "NR 6/14/2016 21:16",
 		"heartButton:" : "NR 6/14/2016 21:16",
 		"image" : "NK 5/29/2016 23:18",
-		"imageMorph" : "PG 5/28/2017 18:59",
+		"imageMorph" : "mm 5/30/2017 15:22",
 		"initialize" : "PG 5/28/2017 19:40",
 		"linkUrls:" : "JS 7/9/2016 11:03",
 		"ownerChanged" : "NK 6/14/2016 18:30",
@@ -18,6 +18,6 @@
 		"repostButton" : "PG 5/28/2017 19:40",
 		"repostButton:" : "PG 5/28/2017 19:40",
 		"text" : "NK 5/29/2016 23:18",
-		"textMorph" : "PG 5/28/2017 18:59",
+		"textMorph" : "mm 5/30/2017 12:12",
 		"toot" : "PG 5/28/2017 19:03",
 		"toot:" : "PG 5/28/2017 19:03" } }

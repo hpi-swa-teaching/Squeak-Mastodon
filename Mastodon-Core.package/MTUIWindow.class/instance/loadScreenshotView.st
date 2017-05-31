@@ -1,6 +1,6 @@
 as yet unclassified
 loadScreenshotView
-	self mastodonApi hasUser ifFalse: [
+	self mastodonApi isAuthenticated ifFalse: [
 		self inform: 'Please login first.'. 
 		^ false].
 	

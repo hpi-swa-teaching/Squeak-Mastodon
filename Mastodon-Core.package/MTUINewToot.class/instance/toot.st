@@ -1,7 +1,7 @@
 as yet unclassified
 toot
 	| text |
-	self mastodonApi hasUser 
+	self mastodonApi isAuthenticated 
 	ifFalse: [self inform: 'Please login first.'. 
 			^ false].
 	

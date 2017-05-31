@@ -6,18 +6,16 @@ initialize
 	menuMorph := MTUIMenu new.
 	scrollMorph := MTUIScrollPane new.	
 	
-	
 	self mastodonApi: (MTMastodonApi with:
 						(MTSettingsStore default at: #baseURL ifAbsent: [''] )  
-						password: (MTSettingsStore default at: #password  ifAbsent: [''])
-						username: (MTSettingsStore default at: #username ifAbsent: [''])).
+						token: (MTSettingsStore default at: #token ifAbsent: [nil])).
 
 	self setLabel: 'Mastodon';
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
 	
-	self mastodonApi isAuthenticated 
-		ifTrue: [self loadHomeTimelineView] 
+	self mastodonApi isAuthenticated
+		ifTrue: [self loadNewTootView] 
 		ifFalse: [self loadSettingsView]
 	
