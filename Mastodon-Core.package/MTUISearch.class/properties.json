@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		"addSearchSection" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"statements" ],
+	"name" : "MTUISearch",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }
