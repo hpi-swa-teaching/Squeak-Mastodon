@@ -4,8 +4,6 @@ logout
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 	MTSettingsStore reset.
-	"self mastodonApi reset."
-	MTMastodonApi allInstancesDo: [:instance | instance := nil].
+	self mastodonApi reset.
 	self addResultSection.
-	"self owner owner owner mastodonApi: MTMastodonApi new."
 	resultTextLabel contents: ('<i>Successfully logged out</i>') asHtmlText.
