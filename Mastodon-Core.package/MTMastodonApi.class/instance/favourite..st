@@ -4,4 +4,4 @@ favourite: aStatusID
 	url := self baseURL, '/api/v1/statuses/', aStatusID ,'/favourite'.
 	response := self getRequest: url.
 	Transcript show: response.
-	^ MTResult value: (self deserialize: (response content) intoObjectOf: MTToot).
+	^ MTResult value: (self class deserialize: (response content) intoObjectOf: MTToot).

@@ -1,4 +1,4 @@
-helpers
+initialize
 deserialize: aJsonString intoCollectionOf: aClass
 	| parsedJson |
 	parsedJson := (Json new stream: (ReadStream on: aJsonString)) readAny.
