@@ -21,6 +21,7 @@ addRequestSection
 	requestWrapper addMorphBack: usernameTextField.
 	
 	passwordTextField := UiLineEdit new.
+	passwordTextField font: (StrikeFont passwordFontSize: 16).
 	passwordTextField theText: (MTSettingsStore default at: #password ifAbsent: ['']). 
 	passwordTextField helpText: 'Mastodon Password'.
 	requestWrapper addMorphBack: passwordTextField.
