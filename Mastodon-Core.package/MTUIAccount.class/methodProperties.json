@@ -2,4 +2,21 @@
 	"class" : {
 		"for:" : "mm 6/19/2017 16:24" },
 	"instance" : {
-		 } }
+		"account" : "fw 6/19/2017 16:40",
+		"account:" : "fw 6/19/2017 16:40",
+		"actionsMorph" : "fw 6/19/2017 16:24",
+		"avatar" : "fw 6/19/2017 16:19",
+		"avatarMorph" : "fw 6/19/2017 16:31",
+		"blockButton" : "fw 6/19/2017 16:23",
+		"blockButton:" : "fw 6/19/2017 16:23",
+		"contentMorph" : "fw 6/19/2017 16:34",
+		"followButton" : "fw 6/19/2017 16:24",
+		"followButton:" : "fw 6/19/2017 16:24",
+		"image" : "fw 6/19/2017 16:19",
+		"imageMorph" : "fw 6/19/2017 16:36",
+		"initialize" : "fw 6/19/2017 16:39",
+		"linkUrls:" : "fw 6/19/2017 16:19",
+		"ownerChanged" : "fw 6/19/2017 16:19",
+		"render" : "fw 6/19/2017 16:19",
+		"text" : "fw 6/19/2017 16:19",
+		"textMorph" : "fw 6/19/2017 16:48" } }
