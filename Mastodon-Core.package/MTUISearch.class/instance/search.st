@@ -1,5 +1,10 @@
 as yet unclassified
 search
 	"comment stating purpose of message"
+	|query queryResult|
 
-	statements
+	query := searchTextField theText asString.
+	queryResult:= mastodonApi search: query.
+	self accountsList: queryResult value accounts.
+	
+	self	render.
