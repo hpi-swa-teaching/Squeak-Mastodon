@@ -1,5 +1,5 @@
 as yet unclassified
-value: aSTTwitterModel
+value: aMTMastodonModel
 	^ (self new)
-		value: aSTTwitterModel;
+		value: aMTMastodonModel;
 		yourself.
