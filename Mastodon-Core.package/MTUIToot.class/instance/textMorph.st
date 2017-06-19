@@ -1,8 +1,7 @@
 as yet unclassified
 textMorph
 	| createdAt |
-	"createdAt := MTUtils relativeTimeString: (MTUtils timestampFromString: self toot createdAt)."
-	createdAt := 'test time'.
+	createdAt := MTUtils relativeTimeString: (MTUtils timestampFromString: self toot createdAt).
 	text := TextMorph new contentsWrapped: (MTUITextFormatter asHtmlText: (
 		'<b>' , self toot acct username , '</b> ',
 		 '<a href="smallTweetUser:', self toot acct displayName , '">', '<font color="#555555">@' , self toot acct displayName , '</font>', '</a>' ,
