@@ -7,12 +7,12 @@ render
 		do: [:account | 
 			| accountMorph spacingMorph |
 			accountMorph := MTUIAccount for: account.
-			accountMorph repostButton
+			accountMorph followButton
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
 				arguments: (Array with: (account id) with: accountMorph repostButton);
 				active: account reblogged.
-			accountMorph heartButton
+			accountMorph blockButton
 				target: self;
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (account id) with: accountMorph heartButton);
@@ -23,5 +23,5 @@ render
 				hResizing: #spaceFill.
 				
 			self addMorphBack: accountMorph.
-			self addTootMorph: accountMorph.
+			self addAccountMorph: accountMorph.
 			self addMorphBack: spacingMorph]
