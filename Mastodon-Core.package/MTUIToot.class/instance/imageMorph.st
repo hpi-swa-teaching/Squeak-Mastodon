@@ -1,6 +1,6 @@
 as yet unclassified
 imageMorph
-	image := STMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) url).
+	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) url).
 	image
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;

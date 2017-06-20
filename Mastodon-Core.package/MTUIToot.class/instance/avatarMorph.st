@@ -1,6 +1,6 @@
 as yet unclassified
 avatarMorph
-	image := STMedia imageMorphFrom: self toot acct avatar.
+	image := MTMedia imageMorphFrom: self toot acct avatar.
 	image ifNotNil: [
 	image
 		vResizing: #spaceFill;

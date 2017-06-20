@@ -1,7 +1,7 @@
 as yet unclassified
 initialize
 	super initialize.
-	toot := STTweet new.
+	toot := MTToot new.
 	
 	self repostButton: MTUIRepostButton new.
 	self heartButton: MTUIStarButton new.
