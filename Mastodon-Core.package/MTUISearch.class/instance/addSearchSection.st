@@ -15,7 +15,7 @@ addSearchSection
 			cellInset: 10;
 			borderWidth: 1.
 		
-		searchTextField UiLineEdit new.
+		self searchTextField: UiLineEdit new.
 		requestWrapper addMorphBack: searchTextField.
 		searchButton := UiPushButton new.
 		searchButton text: 'Search User'.

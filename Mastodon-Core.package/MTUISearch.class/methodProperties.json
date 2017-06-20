@@ -2,9 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addSearchSection" : "mm 6/19/2017 15:51",
+		"accountsList" : "fw 6/19/2017 16:05",
+		"accountsList:" : "fw 6/19/2017 16:05",
+		"addAccountMorph:" : "fw 6/19/2017 17:07",
+		"addSearchSection" : "mm 6/19/2017 16:14",
 		"initialize" : "fw 6/7/2017 14:40",
-		"render" : "mm 6/14/2017 17:25",
-		"search" : "fw 6/7/2017 15:18",
+		"render" : "fw 6/19/2017 17:08",
+		"search" : "fw 6/19/2017 16:10",
 		"searchTextField" : "mm 6/19/2017 15:51",
 		"searchTextField:" : "mm 6/19/2017 15:51" } }
