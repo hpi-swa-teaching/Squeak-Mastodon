@@ -2,7 +2,7 @@ as yet unclassified
 render
 	
 	self accountMorph do: [:morph | self removeMorph: morph. morph delete].
-	
+	"Test"
 	self accounts
 		do: [:account | 
 			| accountMorph spacingMorph relationship|
