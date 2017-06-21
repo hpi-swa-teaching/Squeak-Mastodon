@@ -14,7 +14,6 @@ initialize
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
-	
 	self mastodonApi isAuthenticated
 		ifTrue: [self loadNewTootView] 
 		ifFalse: [self loadSettingsView]

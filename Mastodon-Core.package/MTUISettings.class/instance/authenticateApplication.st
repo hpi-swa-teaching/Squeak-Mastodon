@@ -15,4 +15,5 @@ authenticateApplication
 	
 	self mastodonApi registerApplication.
 	self mastodonApi getAccessToken. 
+	MTSettingsStore default at: #token put: self mastodonApi token.
 	self verifyAccount.
