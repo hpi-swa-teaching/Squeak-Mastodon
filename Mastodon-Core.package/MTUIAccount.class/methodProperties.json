@@ -1,18 +1,18 @@
 {
 	"class" : {
-		"for:" : "mm 6/21/2017 13:24" },
+		"for:" : "mm 6/21/2017 14:24" },
 	"instance" : {
 		"account" : "fw 6/19/2017 16:40",
 		"account:" : "fw 6/19/2017 16:40",
-		"actionsMorph" : "fw 6/19/2017 16:24",
+		"actionsMorph" : "mm 6/21/2017 14:59",
 		"avatar" : "fw 6/19/2017 16:19",
 		"avatar:" : "mm 6/21/2017 13:22",
-		"avatarMorph" : "fw 6/19/2017 16:31",
+		"avatarMorph" : "mm 6/21/2017 16:10",
 		"blockButton" : "fw 6/19/2017 16:23",
 		"blockButton:" : "fw 6/19/2017 16:23",
 		"content" : "mm 6/21/2017 13:25",
 		"content:" : "mm 6/21/2017 13:25",
-		"contentMorph" : "mm 6/21/2017 13:25",
+		"contentMorph" : "mm 6/21/2017 14:28",
 		"followButton" : "fw 6/19/2017 16:24",
 		"followButton:" : "fw 6/19/2017 16:24",
 		"image" : "fw 6/19/2017 16:19",
@@ -22,7 +22,7 @@
 		"note" : "mm 6/21/2017 13:23",
 		"note:" : "mm 6/21/2017 13:23",
 		"ownerChanged" : "fw 6/19/2017 16:19",
-		"render" : "fw 6/19/2017 16:19",
+		"render" : "mm 6/21/2017 16:10",
 		"text" : "fw 6/19/2017 16:19",
 		"text:" : "mm 6/21/2017 13:23",
-		"textMorph" : "mm 6/21/2017 13:25" } }
+		"textMorph" : "mm 6/21/2017 16:00" } }

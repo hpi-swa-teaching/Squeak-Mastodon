@@ -1,7 +1,7 @@
 as yet unclassified
 for: anAccount
-	| tweetMorph | 
-	tweetMorph := self new account: anAccount.
-	tweetMorph render.
+	| accountMorph | 
+	accountMorph := self new account: anAccount.
+	accountMorph render.
 	
-	^ tweetMorph
+	^ accountMorph

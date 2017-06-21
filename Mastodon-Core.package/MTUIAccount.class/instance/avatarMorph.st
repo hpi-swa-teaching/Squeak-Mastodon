@@ -1,6 +1,6 @@
 as yet unclassified
 avatarMorph
-	image := MTMedia imageMorphFrom: self avatar.
+	image := MTMedia imageMorphFrom: self account avatar.
 	image ifNotNil: [
 	image
 		vResizing: #spaceFill;

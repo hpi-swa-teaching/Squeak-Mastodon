@@ -11,7 +11,7 @@ actionsMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self followButton render ;
+		addMorphBack: self followButton render;
 		addMorphBack: self blockButton render.
 		
 	^ actions

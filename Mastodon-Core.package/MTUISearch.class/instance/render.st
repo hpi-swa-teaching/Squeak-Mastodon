@@ -10,13 +10,13 @@ render
 			accountMorph followButton
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
-				arguments: (Array with: (account id) with: accountMorph repostButton);
-				active: account reblogged.
+				arguments: (Array with: (account id) with: accountMorph followButton);
+				active: true. "account reblogged."
 			accountMorph blockButton
 				target: self;
 				actionSelector: #favoriteTootWithId:fromSender:;
-				arguments: (Array with: (account id) with: accountMorph heartButton);
-				active: account favourited.
+				arguments: (Array with: (account id) with: accountMorph blockButton);
+				active: true."account favourited."
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
