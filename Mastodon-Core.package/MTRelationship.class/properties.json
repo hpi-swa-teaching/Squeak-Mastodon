@@ -8,11 +8,11 @@
 	"instvars" : [
 		"id",
 		"following",
-		"followed_by",
+		"followedBy",
 		"blocking",
 		"muting",
 		"requested",
-		"domain_blocking" ],
+		"domainBlocking" ],
 	"name" : "MTRelationship",
 	"pools" : [
 		 ],
