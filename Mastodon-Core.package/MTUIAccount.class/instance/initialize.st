@@ -1,7 +1,7 @@
 as yet unclassified
 initialize
 	super initialize.
-	account := MTUIAccount new.
+	self account: MTAccount new.
 	
 	self repostButton: MTUIRepostButton new.
 	self heartButton: MTUIStarButton new.

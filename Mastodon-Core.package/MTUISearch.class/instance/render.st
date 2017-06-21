@@ -1,7 +1,7 @@
 as yet unclassified
 render
 	
-	self accountsList do: [:morph | self removeMorph: morph. morph delete].
+	"self accountsList do: [:morph | self removeMorph: morph. morph delete]."
 
 	self accountsList 
 		do: [:account | 

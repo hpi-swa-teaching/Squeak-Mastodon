@@ -6,9 +6,16 @@
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		 ],
+		"account",
+		"image",
+		"text",
+		"blockButton",
+		"actions",
+		"followButton",
+		"note",
+		"avatar" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Morph",
 	"type" : "normal" }
