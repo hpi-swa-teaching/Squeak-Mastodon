@@ -1,3 +1,3 @@
 accessing
-accountsList: anObject
+accountMorph: anObject
 	accountMorph := anObject

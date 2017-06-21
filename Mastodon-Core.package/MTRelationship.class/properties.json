@@ -6,7 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"id",
+		"following",
+		"followed_by",
+		"blocking",
+		"muting",
+		"requested",
+		"domain_blocking" ],
 	"name" : "MTRelationship",
 	"pools" : [
 		 ],
