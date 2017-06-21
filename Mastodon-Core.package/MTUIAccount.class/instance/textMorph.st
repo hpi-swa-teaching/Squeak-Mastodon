@@ -6,7 +6,7 @@ textMorph
 	text := TextMorph new contentsWrapped: (MTUITextFormatter asHtmlText: (
 		'<b>' , self account username , '</b> ',
 		 '<a href="MastodonUser:', self account displayName , '">', '<font color="#555555">@' , self account displayName , '</font>', '</a>' ,
-		'<br>' , (self linkUrls: self account content), '<br>' , 
+		'<br>' , (self linkUrls: self account note), '<br>' , 
 		'<i><font color="#555555">' , createdAt , '</font></i>')).
 	text 
 		wrapFlag: true;

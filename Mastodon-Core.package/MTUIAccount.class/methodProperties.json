@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"for:" : "mm 6/19/2017 16:24" },
+		"for:" : "mm 6/21/2017 13:24" },
 	"instance" : {
 		"account" : "fw 6/19/2017 16:40",
 		"account:" : "fw 6/19/2017 16:40",
@@ -10,13 +10,14 @@
 		"avatarMorph" : "fw 6/19/2017 16:31",
 		"blockButton" : "fw 6/19/2017 16:23",
 		"blockButton:" : "fw 6/19/2017 16:23",
-		"contentMorph" : "fw 6/19/2017 16:34",
+		"content" : "mm 6/21/2017 13:25",
+		"content:" : "mm 6/21/2017 13:25",
+		"contentMorph" : "mm 6/21/2017 13:25",
 		"followButton" : "fw 6/19/2017 16:24",
 		"followButton:" : "fw 6/19/2017 16:24",
 		"image" : "fw 6/19/2017 16:19",
 		"image:" : "mm 6/21/2017 13:23",
-		"imageMorph" : "fw 6/19/2017 16:36",
-		"initialize" : "mm 6/21/2017 13:19",
+		"initialize" : "mm 6/21/2017 13:24",
 		"linkUrls:" : "fw 6/19/2017 16:19",
 		"note" : "mm 6/21/2017 13:23",
 		"note:" : "mm 6/21/2017 13:23",
@@ -24,4 +25,4 @@
 		"render" : "fw 6/19/2017 16:19",
 		"text" : "fw 6/19/2017 16:19",
 		"text:" : "mm 6/21/2017 13:23",
-		"textMorph" : "fw 6/19/2017 16:48" } }
+		"textMorph" : "mm 6/21/2017 13:25" } }

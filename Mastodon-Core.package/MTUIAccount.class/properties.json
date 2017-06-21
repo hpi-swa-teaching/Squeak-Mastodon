@@ -13,7 +13,8 @@
 		"actions",
 		"followButton",
 		"note",
-		"avatar" ],
+		"avatar",
+		"content" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],
