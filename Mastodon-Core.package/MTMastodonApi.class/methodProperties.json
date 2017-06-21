@@ -25,6 +25,7 @@
 		"getFollowers:" : "mm 6/7/2017 18:04",
 		"getFollowing:" : "mm 6/7/2017 18:04",
 		"getPrivateTimeline" : "mm 6/7/2017 18:04",
+		"getRelationship:" : "mm 6/21/2017 16:53",
 		"getRequest:" : "mm 5/28/2017 19:22",
 		"getStatus:" : "mm 6/7/2017 18:05",
 		"initialize" : "mm 5/21/2017 14:04",

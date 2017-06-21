@@ -2,21 +2,22 @@ as yet unclassified
 render
 	
 	self accountMorph do: [:morph | self removeMorph: morph. morph delete].
-
+	
 	self accounts
 		do: [:account | 
-			| accountMorph spacingMorph |
+			| accountMorph spacingMorph relationship|
 			accountMorph := MTUIAccount for: account.
+			relationship := (self mastodonApi getRelationship: account id) value at: 1.
 			accountMorph followButton
 				target: self;
 				actionSelector: #followAccountWithId:fromSender:;
 				arguments: (Array with: (account id) with: accountMorph followButton);
-				active: false. "account reblogged."
+				active: relationship following.
 			accountMorph blockButton
 				target: self;
 				actionSelector: #blockAccountWithId:fromSender:;
 				arguments: (Array with: (account id) with: accountMorph blockButton);
-				active: false."account favourited."
+				active: relationship blocking.
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;

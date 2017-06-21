@@ -2,7 +2,7 @@
 	"class" : {
 		"with:" : "PG 5/28/2017 19:09" },
 	"instance" : {
-		"addTootMorph:" : "mm 6/21/2017 16:15",
+		"addTootMorph:" : "mm 6/21/2017 16:56",
 		"appendToots:" : "PG 5/28/2017 19:19",
 		"favoriteTootWithId:fromSender:" : "mm 5/30/2017 15:25",
 		"initialize" : "PG 5/28/2017 18:24",
