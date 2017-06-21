@@ -14,7 +14,7 @@ render
 				active: false. "account reblogged."
 			accountMorph blockButton
 				target: self;
-				actionSelector: #blockTootWithId:fromSender:;
+				actionSelector: #blockAccountWithId:fromSender:;
 				arguments: (Array with: (account id) with: accountMorph blockButton);
 				active: false."account favourited."
 			spacingMorph := Morph new color: Color veryVeryLightGray.
