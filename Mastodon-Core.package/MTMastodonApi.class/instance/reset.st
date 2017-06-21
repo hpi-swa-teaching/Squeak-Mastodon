@@ -1,6 +1,5 @@
 accessing
 reset
-	self toot: nil;
-		username: nil;
+	self username: nil;
 		password: nil;
 		baseURL: nil.

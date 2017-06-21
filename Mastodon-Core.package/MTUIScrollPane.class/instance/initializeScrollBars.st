@@ -16,8 +16,8 @@ initializeScrollBars
 	scroller offset: 0 @ 0.
 	self addMorph: scroller.
 	
-	"scrollBar initializeEmbedded: retractableScrollBar not.
-	hScrollBar initializeEmbedded: retractableScrollBar not."
+	"scrollBar initializeEmbedded: retractableScrollBar not."
+	"hScrollBar initializeEmbedded: retractableScrollBar not."
 	retractableScrollBar ifFalse: 
 			[self 
 				addMorph: scrollBar;

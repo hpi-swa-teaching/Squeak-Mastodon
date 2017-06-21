@@ -15,5 +15,4 @@ authenticateApplication
 	
 	self mastodonApi registerApplication.
 	self mastodonApi getAccessToken. 
-	self addResultSection.
 	self verifyAccount.
