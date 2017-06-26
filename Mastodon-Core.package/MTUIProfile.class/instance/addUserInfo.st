@@ -21,7 +21,7 @@ addUserInfo
 			'<b><font size="20">', user displayName , '</font></b><br>',
 			'<font color="#cccccc">@', user username , '</font><br><br>',
 			user note, '<br><br>',
-			'<b>', user statusesCount, '</b> Tweets - <b>',  user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers') asHtmlText;
+			'<b>', user statusesCount, '</b> Tweets - <b>',  user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers') asTextFromHtml;
 		wrapFlag: true;
 		width: 400;
 		color: Color white;
