@@ -1,6 +1,6 @@
 as yet unclassified
 imageMorph
-	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) url).
+	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) previewUrl).
 	image
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
@@ -11,6 +11,6 @@ imageMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		setNewImageFrom: (image form scaledToSize: 800).
+		setNewImageFrom: (image form scaledToSize: 300).
 		
 	^ image

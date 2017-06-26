@@ -2,8 +2,8 @@ as yet unclassified
 addSearchSection 
 	| searchButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Search Users' asHtmlText).
-		requestWrapper := Morph new borderWidth: 1.
 		
+		requestWrapper := Morph new borderWidth: 1.
 		requestWrapper 
 			layoutPolicy: TableLayout new;
 			listDirection: #topToBottom;
@@ -15,15 +15,16 @@ addSearchSection
 			cellInset: 10;
 			borderWidth: 1.
 		
-		self searchTextField: UiLineEdit new.
-		requestWrapper addMorphBack: searchTextField.
-		searchButton := UiPushButton new.
-		searchButton text: 'Search User'.
+	searchTextField := UiLineEdit new.
+	searchTextField helpText: '@User@Domain'.
+	requestWrapper addMorphBack: searchTextField.
+	
+	searchButton := UiPushButton new.
+	searchButton text: 'Search User'.
 	self
 		connect: searchButton
  		signal: #clicked:
  		toSelector: #search.
-	
 	requestWrapper addMorphBack: searchButton.
 	
 	self addMorphBack: requestWrapper.

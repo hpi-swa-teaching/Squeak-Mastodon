@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "NK 5/30/2016 23:28",
 	"instvars" : [
-		"name",
 		"minID",
 		"maxID",
 		"toots",
