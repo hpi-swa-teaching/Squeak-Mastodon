@@ -10,5 +10,5 @@
 	"name" : "MTUITextFormatter",
 	"pools" : [
 		 ],
-	"super" : "UiHtmlTextFormatter",
+	"super" : "HtmlReadWriter",
 	"type" : "normal" }

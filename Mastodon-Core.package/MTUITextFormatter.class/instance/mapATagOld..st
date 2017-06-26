@@ -1,5 +1,5 @@
 as yet unclassified
-mapATag: aTag
+mapATagOld: aTag
 
 	| rx strm result href |
 	result := OrderedCollection new.
