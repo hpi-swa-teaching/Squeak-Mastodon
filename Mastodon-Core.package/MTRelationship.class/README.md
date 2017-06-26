@@ -1,0 +1,1 @@
+MTRealtionship represents the realtionship to a specific account

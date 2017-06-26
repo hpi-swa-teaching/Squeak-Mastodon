@@ -17,7 +17,7 @@ render
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (toot id) with: tootMorph heartButton);
 				active: toot favourited.
-			spacingMorph := Morph new color: Color veryVeryDarkGray.
+			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
 				hResizing: #spaceFill.

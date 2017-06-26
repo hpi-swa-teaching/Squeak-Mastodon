@@ -2,7 +2,7 @@
 	"class" : {
 		"with:from:" : "PG 5/28/2017 19:27" },
 	"instance" : {
-		"addUserInfo" : "NK 6/4/2016 18:24",
+		"addUserInfo" : "mm 6/26/2017 15:47",
 		"addUserTimeline" : "PG 5/28/2017 19:27",
 		"initialize" : "JS 6/4/2016 15:28",
 		"loadMoreToot" : "PG 5/28/2017 19:27",
@@ -13,4 +13,4 @@
 		"toots:" : "PG 5/28/2017 18:58",
 		"user" : "NK 6/4/2016 18:16",
 		"user:" : "NK 6/4/2016 18:16",
-		"userImageMorph" : "mm 5/28/2017 18:26" } }
+		"userImageMorph" : "mm 6/26/2017 15:43" } }

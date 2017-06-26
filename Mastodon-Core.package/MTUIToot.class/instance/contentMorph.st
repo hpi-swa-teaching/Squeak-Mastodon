@@ -7,7 +7,7 @@ contentMorph
 		"listDirection: #topToBottom;"
 		wrapDirection: #topToBottom;
 		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
+		vResizing: #spaceFill;
 		layoutInset: 0; 
 		cellInset: 10;
 		wrapCentering: #topLeft;

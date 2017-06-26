@@ -18,10 +18,10 @@ addUserInfo
 	text := TextMorph new.
 	text 
 		contentsWrapped: (
-			'<b><font size="20">', user name, '</font></b><br>',
-			'<font color="#cccccc">@', user screenName, '</font><br><br>',
-			user description, '<br><br>',
-			'<b>', user numTweets, '</b> Tweets - <b>',  user numFollowing, '</b> Following - <b>', user numFollowers, '</b> Followers') asHtmlText;
+			'<b><font size="20">', user displayName , '</font></b><br>',
+			'<font color="#cccccc">@', user username , '</font><br><br>',
+			user note, '<br><br>',
+			'<b>', user statusesCount, '</b> Tweets - <b>',  user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers') asHtmlText;
 		wrapFlag: true;
 		width: 400;
 		color: Color white;

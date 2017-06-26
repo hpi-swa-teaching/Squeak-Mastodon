@@ -1,4 +1,4 @@
 as yet unclassified
 repostTootWithId: anInteger fromSender: aButton
-	self mastodonApi retweetStatusWithId: anInteger.
+	self mastodonApi reblog: anInteger.
 	aButton active: true

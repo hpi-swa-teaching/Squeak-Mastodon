@@ -11,7 +11,7 @@ loadProfileView
 		mastodonApi: self mastodonApi;
 		loadToots.
 	
-	currentUser := mastodonApi currentUser.
+	currentUser := mastodonApi getCurrentUser.
 	
 	(currentUser isError)
 		ifTrue: [ self inform: 'An Error occurred.'. 

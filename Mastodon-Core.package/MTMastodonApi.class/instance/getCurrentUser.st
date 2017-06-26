@@ -1,6 +1,6 @@
 endpoints
 getCurrentUser
 	| url response |
-	url := self baseURL, '/api/v1/accounts/verify_credentials'.
+	url := self buildUrl: '/api/v1/accounts/verify_credentials'.
 	response := self getRequest: url.
 	^ MTResult value: (self class deserialize: (response content) intoObjectOf: MTAccount).

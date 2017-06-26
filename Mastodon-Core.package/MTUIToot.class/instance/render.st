@@ -4,7 +4,7 @@ render
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
+		vResizing: #spaceFill;
 		layoutInset: 10; 
 		cellInset: 0;
 		wrapCentering: #leftTop;

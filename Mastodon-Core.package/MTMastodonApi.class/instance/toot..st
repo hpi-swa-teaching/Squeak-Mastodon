@@ -1,7 +1,7 @@
 endpoints
 toot: aString
 	| url parameters response |
-	url := self baseURL, '/api/v1/statuses'.
+	url := self buildUrl: '/api/v1/statuses'.
 	parameters := Dictionary newFromPairs: {'status'. aString}.
 	response := self postRequest: url withParameters: parameters.
 	

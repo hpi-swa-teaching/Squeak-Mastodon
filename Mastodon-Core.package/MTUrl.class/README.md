@@ -1,4 +1,4 @@
-A STUrl is an Enities that contains diffrent versions of urls mentioned in a tweet.
+A STUrl is an entity that contains different versions of urls mentioned in a tweet.
 
 Instance Variables
 	displayUrl:		<String>

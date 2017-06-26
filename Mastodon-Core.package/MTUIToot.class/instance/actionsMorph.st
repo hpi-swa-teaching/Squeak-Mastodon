@@ -5,9 +5,9 @@ actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
+		vResizing: #spaceFill;
 		layoutInset: 0; 
-		cellInset: 10;
+		cellInset: 1;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;

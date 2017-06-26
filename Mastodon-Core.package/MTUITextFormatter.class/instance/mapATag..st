@@ -9,5 +9,5 @@ mapATag: aTag
 	strm := aTag readStream.
 	[rx searchStream: strm]
 		whileTrue: [href := rx subexpression: 2].
-	result add: (MTUITextURL new url: href).
+	result add: (MTUITextURL new buildUrl: href).
 	^ result

@@ -1,3 +1,3 @@
 accessing
-url: anObject
+buildUrl: anObject
 	url := anObject

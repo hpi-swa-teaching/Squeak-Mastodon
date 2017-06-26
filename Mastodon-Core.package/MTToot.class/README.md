@@ -1,4 +1,4 @@
-A STTweet is an Object that represents a single Tweet.
+A MTToot is an Object that represents a single Toot.
 
 Instance Variables
 	createdAt:		<String>

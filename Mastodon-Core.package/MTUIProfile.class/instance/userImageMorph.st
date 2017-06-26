@@ -1,7 +1,7 @@
 as yet unclassified
 userImageMorph
 	| image |  
-	image := MTMedia imageMorphFrom: self user profileImageUrl.
+	image := MTMedia imageMorphFrom: self user avatar.
 	image ifNotNil: [
 		image
 			width: 200;
