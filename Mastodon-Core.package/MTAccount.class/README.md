@@ -1,4 +1,4 @@
-A STUser represents a user of Twitter.
+A MTAccount represents a Mastodon account.
 
 Instance Variables
 	id:		<Integer>

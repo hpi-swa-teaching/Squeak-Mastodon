@@ -1,15 +1,15 @@
 accessing
-uploadMediaFrom: aForm 
+uploadMediaFrom: aForm "the image path should be converted to a form"
 	| url response parameters boundary file pngStream |
-	url := self baseURL , '/api/v1/media/'.
-	boundary := WebUtils multipartBoundary.
+	url := self buildUrl: '/api/v1/media/'.
+	boundary := WebUtils multipartBoundary. "content type multipart needs an unique boundary to seperate the parts"
 	pngStream := (ReadWriteStream
 				on: (ByteArray new: 1024)) binary; yourself.
 	PNGReadWriter putForm: aForm onStream: pngStream.
 	file := (MIMELocalFileDocument
 				contentType: 'text/plain'
 				content: ''
-				url: 'file://bild.png')
+				url: 'file://bild.png') 
 				contentStream: pngStream.
 
 	parameters := Dictionary newFromPairs: {'file'. aForm}.
