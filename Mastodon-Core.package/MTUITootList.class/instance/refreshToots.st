@@ -5,7 +5,7 @@ refreshToots
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 			
-	newToots := mastodonApi timeline: self name since: self maxID.
+	newToots := mastodonApi getPrivateTimelineSince: maxID.
 	
 	newToots isError  
 		ifTrue: [self inform: 'An error occurred'. 

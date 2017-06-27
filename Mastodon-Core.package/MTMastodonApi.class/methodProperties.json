@@ -26,6 +26,8 @@
 		"getFollowers:" : "PG 6/26/2017 16:28",
 		"getFollowing:" : "PG 6/26/2017 16:28",
 		"getPrivateTimeline" : "PG 6/26/2017 16:28",
+		"getPrivateTimelineMax:" : "mm 6/27/2017 02:07",
+		"getPrivateTimelineSince:" : "mm 6/27/2017 02:05",
 		"getRegistrationParameters" : "PG 6/26/2017 16:34",
 		"getRelationship:" : "PG 6/26/2017 16:28",
 		"getRequest:" : "mm 6/26/2017 20:08",
