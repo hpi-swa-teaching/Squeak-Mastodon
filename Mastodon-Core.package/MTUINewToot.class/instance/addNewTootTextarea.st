@@ -18,7 +18,8 @@ addNewTootTextarea
 	tootTextArea 
 		hResizing: #spaceFill;
 		borderColor: Color gray;
-		borderColor: 1.
+		borderColor: 1;
+		contents: ' '.
 	textareaWrapper addMorphBack: tootTextArea.
 	
 	self addMorphBack: textareaWrapper.

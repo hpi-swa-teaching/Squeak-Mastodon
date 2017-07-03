@@ -7,4 +7,4 @@ toot
 	
 	text := tootTextArea contents asString.
 	mastodonApi toot: text.
-	tootTextArea contents: ''.
+	tootTextArea contents: ' '.

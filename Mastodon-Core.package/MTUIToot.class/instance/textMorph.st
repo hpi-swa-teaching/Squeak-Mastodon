@@ -12,7 +12,6 @@ textMorph
 		autoFit: true;
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		vResizing: #shrinkWrap;
 		hResizing: #spaceFill.
 		
 	^ text
