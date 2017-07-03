@@ -7,12 +7,15 @@ contentMorph
 		"listDirection: #topToBottom;"
 		wrapDirection: #topToBottom;
 		hResizing: #spaceFill;
-		vResizing: #spaceFill;
+		vResizing: #shrinkWrap;
+		"vResizing: #spaceFill;"
 		layoutInset: 0; 
 		cellInset: 10;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
+		borderColor: Color green;
+		borderWidth: 1;
 		addMorphBack: self textMorph.
 	imageMorph := self imageMorph.
 	imageMorph ifNotNil:  [content addMorphBack: imageMorph].

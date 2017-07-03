@@ -5,7 +5,7 @@ actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
-		vResizing: #spaceFill;
+		vResizing: #shrinkWrap;
 		layoutInset: 0; 
 		cellInset: 1;
 		wrapCentering: #topLeft;

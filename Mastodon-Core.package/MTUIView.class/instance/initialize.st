@@ -5,8 +5,10 @@ initialize
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		cellPositioning: #topLeft;
+		cellInset: 0;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		wrapCentering: #left;
+		wrapCentering: #topLeft;
 		color: Color white;
-		borderWidth: 1.
+		borderWidth: 1;
+		borderColor: Color magenta.

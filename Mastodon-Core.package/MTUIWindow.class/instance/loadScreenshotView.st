@@ -4,4 +4,4 @@ loadScreenshotView
 		self inform: 'Please login first.'. 
 		^ false].
 	
-	STScreenshot useTwitterCursor.
+	MTScreenshot useMastodonCursor.

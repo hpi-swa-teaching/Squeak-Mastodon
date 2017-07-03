@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"cameraCursor" : "NK 6/5/2016 19:39",
+		"useMastodonCursor" : "mm 6/28/2017 17:00" },
+	"instance" : {
+		"getContentAtClick" : "NK 6/5/2016 19:39",
+		"getContentAtPoint:" : "NK 6/4/2016 18:31",
+		"isPoint:withinBounds:" : "NK 6/4/2016 18:31" } }

@@ -2,7 +2,6 @@ as yet unclassified
 textMorph
 	| createdAt |
 	createdAt := MTUtils relativeTimeString: (MTUtils timestampFromString: self toot createdAt).
-	Transcript show: toot content.
 	text := TextMorph new contentsWrapped: (
 		'<b>' , self toot acct username , '</b> ',
 		'<b><i><font color="#555555">@', self toot acct displayName , '</font></i></b>',
@@ -13,7 +12,7 @@ textMorph
 		autoFit: true;
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		vResizing: #spaceFill;
+		vResizing: #shrinkWrap;
 		hResizing: #spaceFill.
 		
 	^ text

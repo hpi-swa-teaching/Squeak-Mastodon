@@ -25,4 +25,4 @@ render
 			self addMorphBack: tootMorph.
 			self addTootMorph: tootMorph.
 			self addMorphBack: spacingMorph
-			]
+			].

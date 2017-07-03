@@ -4,11 +4,14 @@ render
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
-		vResizing: #spaceFill;
+		vResizing: #shrinkWrap;
 		layoutInset: 10; 
 		cellInset: 0;
+		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
 		color: Color white;
 		
 		addMorphBack: self avatarMorph;
 		addMorphBack: self contentMorph.
+		
+	self layoutChanged.

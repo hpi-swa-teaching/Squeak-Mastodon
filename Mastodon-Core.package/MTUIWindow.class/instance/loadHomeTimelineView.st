@@ -11,3 +11,4 @@ loadHomeTimelineView
 		loadView: homeTimelineView
 		as: #homeTimelineView 
 		activate: #homeTimelineButton.
+	self layoutChanged.
