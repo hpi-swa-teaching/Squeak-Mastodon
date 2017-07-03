@@ -10,7 +10,7 @@ addSearchSection
 			cellPositioning: #topLeft;
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
-			wrapCentering: #left;
+			wrapCentering: #topLeft;
 			color: Color white;
 			cellInset: 10;
 			borderWidth: 1.

@@ -6,5 +6,5 @@ toot: aString withMedia: aMediaID
 	response := self postRequest: url withParameters: parameters.
 	
 	"
-	ToDo: Später in TimeLine anzeigen
-	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTToot)."
+	ToDo: Später in TimeLine anzeigen"
+	^ MTResult value: (self deserialize: response intoCollectionOf: MTToot).

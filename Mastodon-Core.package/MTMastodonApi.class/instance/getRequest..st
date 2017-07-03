@@ -4,4 +4,4 @@ getRequest: url
 	response := webClient httpGet: url
 			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
 	response isSuccess 
-		ifTrue: [^ response]
+		ifTrue: [^ response content utf8ToSqueak]

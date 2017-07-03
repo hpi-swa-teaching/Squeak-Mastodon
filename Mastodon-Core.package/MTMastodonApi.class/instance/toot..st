@@ -6,5 +6,5 @@ toot: aString
 	response := self postRequest: url withParameters: parameters.
 	
 	"
-	ToDo: Später in TimeLine anzeigen
-	^ MTResult value: (self deserialize: (response content) intoCollectionOf: MTToot)."
+	ToDo: Später in TimeLine anzeigen"
+	^ MTResult value: (self class deserialize: response intoObjectOf: MTToot).

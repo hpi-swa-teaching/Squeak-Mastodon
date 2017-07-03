@@ -11,6 +11,6 @@ getAccessToken
 	'client_secret'. self clientSecret. 
 	'grant_type'. 'password' }.
 	response := self postRequest: url withParameters: parameters.
-	json := self deserialize: response content.
+	json := self deserialize: response.
 	self token: (json at: 'access_token').
 
