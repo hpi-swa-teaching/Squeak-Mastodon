@@ -1,13 +1,12 @@
 as yet unclassified
-tootImage
+loadImage
 	| file imageID json |
 	self mastodonApi isAuthenticated 
 	ifFalse: [self inform: 'Please login first.'. 
 			^ false].
 	
-	file := imageTextArea contents asString.
+	file := self selectPicture.
 	json := mastodonApi uploadMediaFrom: (Form fromFileNamed: file).
 	imageID := (mastodonApi deserialize: json) at: 'id'.
-	self halt.
 	mastodonApi toot: (tootTextArea contents asString) withMedia: imageID.
-	tootTextArea contents: ''.
+	tootTextArea contents: ' '.

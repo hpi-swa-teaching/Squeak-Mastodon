@@ -3,11 +3,11 @@ addImageButton
 	| imageButton |
 	
 	imageButton := UiPushButton new.
-	imageButton text: 'Toot with Image from Link'.
+	imageButton text: 'select Image'.
 	self
 		connect: imageButton
  		signal: #clicked:
- 		toSelector: #tootImage.
+ 		toSelector: #loadImage.
 	
 	self addMorphBack: imageButton.
 	self addMorphBack: imageButton.
