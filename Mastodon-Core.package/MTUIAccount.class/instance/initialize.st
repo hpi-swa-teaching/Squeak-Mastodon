@@ -3,5 +3,5 @@ initialize
 	super initialize.
 	self account: MTAccount new.
 	
-	self followButton: MTUIRepostButton new.
-	self blockButton: MTUIStarButton new.
+	self followButton: MTUIFollowButton new.
+	self blockButton: MTUIMuteButton new.

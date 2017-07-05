@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"active",
-		"id" ],
-	"name" : "MTUITootActionButton",
+		 ],
+	"name" : "MTUIFollowButton",
 	"pools" : [
 		 ],
-	"super" : "IconicButton",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }

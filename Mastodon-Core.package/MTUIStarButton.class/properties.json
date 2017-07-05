@@ -10,5 +10,5 @@
 	"name" : "MTUIStarButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITootActionButton",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }

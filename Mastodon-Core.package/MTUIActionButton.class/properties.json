@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "MTUIRepostButton",
+		"active",
+		"id" ],
+	"name" : "MTUIActionButton",
 	"pools" : [
 		 ],
-	"super" : "MTUIActionButton",
+	"super" : "IconicButton",
 	"type" : "normal" }
