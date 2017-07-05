@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tootTextArea" ],
+		"tootTextArea",
+		"imageTextArea" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

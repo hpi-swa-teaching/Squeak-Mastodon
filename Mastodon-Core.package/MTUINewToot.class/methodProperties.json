@@ -2,7 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addNewTootButtons" : "LS 5/29/2017 16:18",
+		"addImageButton" : "mm 7/5/2017 00:22",
+		"addImageTextarea" : "LS 7/3/2017 14:37",
+		"addNewTootButtons" : "LS 7/3/2017 14:38",
 		"addNewTootTextarea" : "mm 7/3/2017 15:08",
-		"initialize" : "PG 5/28/2017 19:35",
+		"initialize" : "mm 7/5/2017 00:20",
+		"loadImage" : "mm 7/5/2017 00:47",
+		"selectPicture" : "mm 7/5/2017 00:47",
 		"toot" : "mm 7/3/2017 15:08" } }
