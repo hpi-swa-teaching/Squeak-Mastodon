@@ -18,5 +18,6 @@ uploadMediaFrom: aForm "the image path should be converted to a form"
 				content: (self encodeMultipartForm: file boundary: boundary)
 				type: 'multipart/form-data; boundary=' , boundary
 				do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
+	self halt.
 	response isSuccess
-		ifTrue: [^ response content].
+		ifTrue: [^ response]

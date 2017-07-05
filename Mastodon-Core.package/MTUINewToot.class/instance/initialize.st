@@ -7,6 +7,4 @@ initialize
 		cellInset: 10;
 		layoutInset: 20;
 		addNewTootTextarea;
-		addNewTootButtons;
-		"addImageTextarea;"
-		addImageButton.
+		addNewTootButtons.
