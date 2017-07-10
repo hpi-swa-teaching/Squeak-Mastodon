@@ -1,12 +1,10 @@
 as yet unclassified
 loadImage
-	| file imageID json |
-	self mastodonApi isAuthenticated 
-	ifFalse: [self inform: 'Please login first.'. 
-			^ false].
-	
-	file := self selectPicture.
-	json := mastodonApi uploadMediaFrom: (Form fromFileNamed: file).
-	imageID := (mastodonApi deserialize: json) at: 'id'.
-	mastodonApi toot: (tootTextArea contents asString) withMedia: imageID.
-	tootTextArea contents: ' '.
+	"Open file chooser with a system window UI that has a caption pane and shows only picture files."
+	| fc stream |
+	fc := FileChooser new.
+	fc initializeAsSystemWindowWithCaptionPane.
+	fc setCaption: 'Select a picture file' translated.
+	fc setSuffixes: {'png' . 'gif' . 'bmp' . 'jpg' . 'jpeg' }.
+	stream := fc open.
+	^ stream ifNotNil: [(Form fromBinaryStream: stream) asMorph].

@@ -1,5 +1,5 @@
 as yet unclassified
-mapATagOld: aTag
+mapATag: aTag
 
 	| rx strm result href |
 	result := OrderedCollection new.
@@ -9,5 +9,5 @@ mapATagOld: aTag
 	strm := aTag readStream.
 	[rx searchStream: strm]
 		whileTrue: [href := rx subexpression: 2].
-	result add: (MTUITextURL new buildUrl: href).
+	result add: (MTUITextURL new url: href).
 	^ result

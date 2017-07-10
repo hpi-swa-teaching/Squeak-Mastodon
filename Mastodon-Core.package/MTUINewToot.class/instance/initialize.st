@@ -8,5 +8,4 @@ initialize
 		layoutInset: 20;
 		addNewTootTextarea;
 		addNewTootButtons;
-		"addImageTextarea;"
 		addImageButton.

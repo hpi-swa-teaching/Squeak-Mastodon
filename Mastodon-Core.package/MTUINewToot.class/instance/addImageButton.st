@@ -7,7 +7,7 @@ addImageButton
 	self
 		connect: imageButton
  		signal: #clicked:
- 		toSelector: #loadImage.
+ 		toSelector: #selectImage.
 	
 	self addMorphBack: imageButton.
 	self addMorphBack: imageButton.

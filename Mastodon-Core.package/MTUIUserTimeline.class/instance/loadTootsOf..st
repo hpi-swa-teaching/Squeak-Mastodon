@@ -5,7 +5,7 @@ loadTootsOf: aMTUser
 		ifFalse: [self inform: 'Please login first.'. 
 				^ false].
 			
-	toots := mastodonApi userTimelineOf: aMTUser.
+	toots := mastodonApi getStatuses: aMTUser id.
 	
 	toots isError  
 		ifTrue: [self inform: 'An error occurred'. 

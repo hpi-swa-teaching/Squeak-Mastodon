@@ -1,4 +1,4 @@
 as yet unclassified
 initialize 
 	super initialize.
-	self active: false
+	self active: false.

@@ -2,11 +2,19 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addImageButton" : "mm 7/5/2017 00:22",
+		"addImageButton" : "mm 7/8/2017 18:53",
 		"addImageTextarea" : "LS 7/3/2017 14:37",
 		"addNewTootButtons" : "LS 7/3/2017 14:38",
 		"addNewTootTextarea" : "mm 7/3/2017 15:08",
-		"initialize" : "mm 7/5/2017 00:20",
-		"loadImage" : "mm 7/5/2017 00:47",
-		"selectPicture" : "mm 7/5/2017 00:47",
-		"toot" : "mm 7/3/2017 15:08" } }
+		"imageMorph" : "mm 7/8/2017 19:19",
+		"imageMorph:" : "mm 7/8/2017 19:19",
+		"initialize" : "mm 7/8/2017 19:08",
+		"loadImage" : "mm 7/8/2017 19:20",
+		"morphFromPath" : "mm 7/8/2017 19:19",
+		"removeOldMorph" : "mm 7/8/2017 19:28",
+		"selectImage" : "mm 7/8/2017 19:23",
+		"showImage" : "mm 7/8/2017 19:20",
+		"toot" : "mm 7/8/2017 19:26",
+		"tootImage" : "mm 7/8/2017 19:27",
+		"tootTextArea" : "mm 7/8/2017 18:51",
+		"tootTextArea:" : "mm 7/8/2017 18:51" } }

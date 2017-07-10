@@ -3,10 +3,10 @@ textMorph
 	| createdAt |
 	createdAt := MTUtils relativeTimeString: (MTUtils timestampFromString: self account createdAt).
 	
-	text := TextMorph new contentsWrapped: (
-		'<b>' , self account displayName , '</b> @', self account acct , 
+	text := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: (
+		'<b>' , self account displayName , '</b> <a href="mastodonUser:', self account id , '">@', self account acct , '</a>' , 
 		'<br>' , self account note, '<br>' , 
-		'<i><font color="#555555">' , 'on Mastodon since ', createdAt , '</font></i>') asTextFromHtml.
+		'<i><font color="#555555">' , 'on Mastodon since ', createdAt , '</font></i>')).
 		
 	text 
 		wrapFlag: true;

@@ -9,6 +9,4 @@ initialize
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		wrapCentering: #topLeft;
-		color: Color white;
-		borderWidth: 1;
-		borderColor: Color magenta.
+		color: Color white.
