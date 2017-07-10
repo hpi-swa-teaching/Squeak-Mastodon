@@ -14,8 +14,9 @@ addNewTootTextarea
 		borderColor: Color gray;
 		borderWidth: 1.
 	
-	tootTextArea := TextMorph new.
+	tootTextArea := MTUITootMorph new.
 	tootTextArea 
+		tootSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;

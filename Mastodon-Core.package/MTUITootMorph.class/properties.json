@@ -1,17 +1,14 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"tootLength" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tootTextArea",
-		"imageTextArea",
-		"imageMorph",
-		"tootSizeLabel" ],
-	"name" : "MTUINewToot",
+		"tootSize" ],
+	"name" : "MTUITootMorph",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "TextMorph",
 	"type" : "normal" }

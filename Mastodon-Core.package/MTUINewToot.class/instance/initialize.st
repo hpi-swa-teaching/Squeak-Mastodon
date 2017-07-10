@@ -1,11 +1,12 @@
 as yet unclassified
 initialize 
-	super initialize.
-
+	super initialize.	
 	self 
-		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
 		cellInset: 10;
 		layoutInset: 20;
 		addNewTootTextarea;
 		addNewTootButtons;
-		addImageButton.
+		addImageButton;
+		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
+		addMorph: tootSizeLabel;
+		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText).
