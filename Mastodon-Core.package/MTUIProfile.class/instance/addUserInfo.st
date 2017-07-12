@@ -17,11 +17,11 @@ addUserInfo
 	
 	text := TextMorph new.
 	text 
-		contentsWrapped: (
+		contentsWrapped: (MTUtils asTextFromHtml: (
 			'<b><font size="20">', user displayName , '</font></b><br>',
-			'<font color="#cccccc">@', user username , '</font><br><br>',
+			'<font color="#cccccc">@', user acct , '</font><br><br>',
 			user note, '<br><br>',
-			'<b>', user statusesCount, '</b> Tweets - <b>',  user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers') asTextFromHtml;
+			'<b>', user statusesCount, '</b> Toots - <b>',  user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers'));
 		wrapFlag: true;
 		width: 400;
 		color: Color white;
