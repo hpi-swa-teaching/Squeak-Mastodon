@@ -5,3 +5,4 @@ initialize
 	
 	self followButton: MTUIFollowButton new.
 	self blockButton: MTUIMuteButton new.
+	self directTootButton: MTUIDirectTootButton new.

@@ -1,14 +1,15 @@
 {
 	"class" : {
+		"with:content:" : "mm 7/16/2017 21:10",
 		"with:morph:" : "mm 7/10/2017 13:28" },
 	"instance" : {
 		"addImageButton" : "mm 7/8/2017 18:53",
 		"addImageTextarea" : "LS 7/3/2017 14:37",
 		"addNewTootButtons" : "LS 7/3/2017 14:38",
-		"addNewTootTextarea" : "LS 7/10/2017 16:08",
+		"addNewTootTextarea" : "mm 7/16/2017 21:18",
 		"imageMorph" : "mm 7/8/2017 19:19",
 		"imageMorph:" : "mm 7/8/2017 19:19",
-		"initialize" : "LS 7/10/2017 16:38",
+		"initialize" : "mm 7/16/2017 21:10",
 		"loadImage" : "mm 7/8/2017 19:20",
 		"morphFromPath" : "mm 7/8/2017 19:19",
 		"removeOldMorph" : "mm 7/8/2017 19:28",
@@ -20,4 +21,5 @@
 		"tootSizeLabel:" : "LS 7/10/2017 16:23",
 		"tootTextArea" : "mm 7/8/2017 18:51",
 		"tootTextArea:" : "mm 7/8/2017 18:51",
-		"update" : "LS 7/10/2017 16:44" } }
+		"updateContent:" : "mm 7/16/2017 21:17",
+		"updateTootSize" : "mm 7/16/2017 21:17" } }

@@ -1,0 +1,4 @@
+as yet unclassified
+with: aMastodonApi content: aString 
+	^ self new mastodonApi: aMastodonApi;
+		 updateContent: aString
