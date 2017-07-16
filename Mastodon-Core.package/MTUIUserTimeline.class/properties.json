@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "NK 5/30/2016 23:29",
 	"instvars" : [
-		 ],
+		"id" ],
 	"name" : "MTUIUserTimeline",
 	"pools" : [
 		 ],
