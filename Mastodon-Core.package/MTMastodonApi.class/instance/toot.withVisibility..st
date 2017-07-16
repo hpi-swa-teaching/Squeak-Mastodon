@@ -1,8 +1,8 @@
 endpoints
-toot: aString
+toot: aString withVisibility: aVisibility
 	| url parameters response |
 	url := self buildUrl: '/api/v1/statuses'.
-	parameters := Dictionary newFromPairs: {'status'. aString}.
+	parameters := Dictionary newFromPairs: {'status'. aString . 'visibility'. aVisibility}.
 	response := self postRequest: url withParameters: parameters.
 	
 	"

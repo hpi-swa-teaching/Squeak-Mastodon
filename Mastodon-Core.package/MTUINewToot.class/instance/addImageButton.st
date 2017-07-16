@@ -10,4 +10,3 @@ addImageButton
  		toSelector: #selectImage.
 	
 	self addMorphBack: imageButton.
-	self addMorphBack: imageButton.
