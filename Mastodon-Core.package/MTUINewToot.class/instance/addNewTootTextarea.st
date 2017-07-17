@@ -14,12 +14,12 @@ addNewTootTextarea
 		borderColor: Color gray;
 		borderWidth: 1.
 	
-	tootTextArea := MTUITootMorph new.
+	tootTextArea := MTUITextMorph new.
 	tootTextArea 
-		tootSize: 1;
+		textSize: 1;
 		hResizing: #spaceFill;
-		"borderColor: Color gray;
-		borderColor: 1;"
+		borderColor: Color gray;
+		borderColor: 1;
 		contents: '';
 		wrapFlag: true.
 	textareaWrapper addMorphBack: tootTextArea.

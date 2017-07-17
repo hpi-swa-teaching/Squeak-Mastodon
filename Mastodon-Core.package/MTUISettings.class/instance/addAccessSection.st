@@ -5,3 +5,4 @@ addAccessSection
 	self layoutInset: 20.
 
 	self addRequestSection.
+	self addUpdateSection.

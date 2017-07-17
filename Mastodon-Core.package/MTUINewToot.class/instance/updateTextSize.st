@@ -1,5 +1,5 @@
 as yet unclassified
-updateTootSize
+updateTextSize
 	(self tootTextArea contents size) > 500
 		ifTrue: [tootSizeLabel textColor: Color red];
 		ifFalse: [tootSizeLabel textColor: Color black].

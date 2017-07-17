@@ -4,12 +4,19 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "NK 5/30/2016 23:28",
+	"commentStamp" : "LS 7/17/2017 11:32",
 	"instvars" : [
 		"resultTextLabel",
 		"urlTextField",
 		"passwordTextField",
-		"usernameTextField" ],
+		"usernameTextField",
+		"usernameUpdateTextField",
+		"descriptionTextField",
+		"usernameSizeLabel",
+		"descriptionSizeLabel",
+		"avatarImageMorph",
+		"headerImageMorph",
+		"locked" ],
 	"name" : "MTUISettings",
 	"pools" : [
 		 ],
