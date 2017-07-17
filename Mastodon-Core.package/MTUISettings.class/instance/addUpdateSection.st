@@ -1,6 +1,6 @@
 as yet unclassified
 addUpdateSection
-	| updateButton requestWrapper avatarImageButton headerImageButton lockCheckBox |
+	| updateButton requestWrapper avatarImageButton headerImageButton |
 	
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
@@ -57,15 +57,6 @@ addUpdateSection
  		toSelector: #selectHeaderImage.
 	
 	requestWrapper addMorphBack: headerImageButton.
-	
-	self locked: false.
-	lockCheckBox := UiCheckBox new.
-	lockCheckBox text: 'Lock Account'.
-	self
-		connect: lockCheckBox
- 		signal: #clicked:
- 		toSelector: #updateLock.
-	requestWrapper addMorphBack: lockCheckBox.
 	
 	updateButton := UiPushButton new.
 	updateButton text: 'Save Changes'.

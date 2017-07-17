@@ -1,6 +1,6 @@
 initialization
 updateProfile 
-	| text |
+	| text dict |
 	self mastodonApi isAuthenticated
 		ifFalse: [self inform: 'Please login first.'.
 			^ false].
@@ -15,4 +15,8 @@ updateProfile
 		ifTrue: [self inform: 'Not more than 160 characters description allowed.'.
 			^ false].
 		
-	self halt.
+	dict := self uploadPictures.
+	dict at: 'display_name' put: self usernameUpdateTextField contents.
+	dict at: 'note' put: self descriptionTextField contents.
+	
+	mastodonApi updateCredentials: dict.
