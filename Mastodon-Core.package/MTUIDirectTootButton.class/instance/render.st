@@ -1,4 +1,4 @@
 as yet unclassified
 render
 	super render.
-	self labelGraphic: MTUIIcons follow
+	self labelGraphic: MTUIIcons directMessage
