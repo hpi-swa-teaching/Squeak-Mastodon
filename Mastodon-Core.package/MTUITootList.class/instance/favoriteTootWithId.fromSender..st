@@ -1,4 +1,9 @@
 as yet unclassified
 favoriteTootWithId: anInteger fromSender: aButton
-	self mastodonApi favourite: anInteger.
-	aButton active: true.
+	aButton active
+		ifTrue:[self mastodonApi unfavourite: anInteger.
+				aButton active: false]
+		ifFalse:[	self mastodonApi favourite: anInteger.
+				aButton active: true.]
+			
+		
