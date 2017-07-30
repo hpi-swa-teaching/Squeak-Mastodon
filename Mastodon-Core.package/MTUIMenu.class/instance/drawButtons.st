@@ -1,6 +1,5 @@
-as yet unclassified
+morphic
 drawButtons 
 	buttons do: [ :button |
 		self addMorphBack: button.
-		button render.
-	]
+		button render ]

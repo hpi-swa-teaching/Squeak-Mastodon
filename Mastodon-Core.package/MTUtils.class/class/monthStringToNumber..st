@@ -1,4 +1,4 @@
-as yet unclassified
+time-conversion
 monthStringToNumber: aString 
 	"Parses following string format: 'Jun'"
 	aString = 'Jan'

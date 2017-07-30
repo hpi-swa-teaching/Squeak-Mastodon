@@ -1,4 +1,4 @@
-as yet unclassified
+render
 imageMorph
 	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) previewUrl).
 	image

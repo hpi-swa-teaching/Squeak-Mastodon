@@ -1,4 +1,4 @@
-as yet unclassified
+render
 userImageMorph
 	| image |  
 	image := MTMedia imageMorphFrom: self user avatar.

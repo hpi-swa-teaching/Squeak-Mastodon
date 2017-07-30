@@ -1,3 +1,3 @@
-as yet unclassified
+reset
 reset
 	default := self new.

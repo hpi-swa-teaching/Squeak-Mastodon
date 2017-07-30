@@ -1,3 +1,3 @@
-as yet unclassified
+image
 flush
 	self removeAll.

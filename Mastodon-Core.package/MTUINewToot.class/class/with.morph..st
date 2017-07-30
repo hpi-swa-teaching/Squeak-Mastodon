@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 with: aMastodonApi morph: aMorph
 	^ (self new)
 		mastodonApi: aMastodonApi;

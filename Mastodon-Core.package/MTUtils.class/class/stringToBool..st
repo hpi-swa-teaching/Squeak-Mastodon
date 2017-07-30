@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 stringToBool: aString
 	aString ifNil: [^ false ].
 	(aString = true) 

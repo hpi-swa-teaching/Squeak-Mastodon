@@ -1,4 +1,4 @@
-as yet unclassified
+morphic
 addButton: anId for: anAction on: aTarget with: anImage
 	| button |
 	button := MTUIMenuButton new.

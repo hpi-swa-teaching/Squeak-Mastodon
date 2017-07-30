@@ -1,4 +1,4 @@
-as yet unclassified
+render
 avatarMorph
 	image := MTMedia imageMorphFrom: self account avatar.
 	image ifNotNil: [

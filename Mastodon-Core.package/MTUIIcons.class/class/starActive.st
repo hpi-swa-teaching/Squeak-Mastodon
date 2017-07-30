@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 starActive
 	^ (Form
 	extent: 22@22

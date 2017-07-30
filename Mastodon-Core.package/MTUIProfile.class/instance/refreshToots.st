@@ -1,3 +1,3 @@
-accessing
+updating
 refreshToots
 	self tootList refreshToots

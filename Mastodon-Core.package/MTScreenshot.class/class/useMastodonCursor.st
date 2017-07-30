@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 useMastodonCursor
 	| morphUnderCursor textMorph |
 	morphUnderCursor := self new getContentAtClick.

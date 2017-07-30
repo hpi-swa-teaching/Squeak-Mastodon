@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 active: aBoolean
 	active := aBoolean.

@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 messages
 	^  (Form
 	extent: 32@32

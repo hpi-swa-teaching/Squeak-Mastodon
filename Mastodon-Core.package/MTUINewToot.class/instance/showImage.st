@@ -1,4 +1,4 @@
-as yet unclassified
+image
 showImage
 	"| imageMorph |
 	imageMorph := self morphFromPath."

@@ -1,4 +1,3 @@
-as yet unclassified
+formatting
 asHtmlText: aString
-	
 	^ self new toText: aString

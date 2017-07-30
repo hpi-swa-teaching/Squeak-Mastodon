@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 with: aMastodonApi content: aString 
 	^ self new mastodonApi: aMastodonApi;
 		 updateContent: aString

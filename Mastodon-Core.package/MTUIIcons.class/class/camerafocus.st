@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 camerafocus
 	^  (Form
 	extent: 32@32

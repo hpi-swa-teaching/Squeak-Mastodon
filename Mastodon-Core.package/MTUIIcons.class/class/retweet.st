@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 retweet
 	^ (Form
 	extent: 22@22

@@ -1,4 +1,4 @@
-as yet unclassified
+loading
 imageMorphFrom: anUrl
 |doc form image cachedForm|
 	anUrl ifNil: [^nil].

@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 with: anOrderedCollectionOfToots
 	^ (self new)
 		toots: anOrderedCollectionOfToots;

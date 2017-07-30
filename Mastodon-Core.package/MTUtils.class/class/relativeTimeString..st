@@ -1,4 +1,4 @@
-as yet unclassified
+time-conversion
 relativeTimeString: aTimeStamp 
 	"converts a timestamp into a relative time like '2 hours ago'"
 	| diff dayDiff |

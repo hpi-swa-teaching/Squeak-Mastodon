@@ -1,4 +1,4 @@
-as yet unclassified
+toot
 toot
 	| text menu visibility |
 	self mastodonApi isAuthenticated ifFalse: [^false].

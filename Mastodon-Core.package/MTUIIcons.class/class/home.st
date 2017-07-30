@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 home
 	^ (Form
 	extent: 32@32

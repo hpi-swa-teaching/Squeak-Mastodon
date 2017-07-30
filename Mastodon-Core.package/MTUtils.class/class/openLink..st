@@ -1,4 +1,4 @@
-as yet unclassified
+helper
 openLink: aString
 	"| hostOS |
 	hostOS := Smalltalk platformName.

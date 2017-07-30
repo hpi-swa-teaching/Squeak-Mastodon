@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 with: aTootList from: aMTUser 		
 	^ (self new)
 		user: aMTUser;

@@ -1,4 +1,4 @@
-as yet unclassified
+mouse-action
 isPoint: aPoint withinBounds: aBound 
 	
 	^ aPoint x > aBound origin x

@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 settings
 	^  (Form
 	extent: 32@32

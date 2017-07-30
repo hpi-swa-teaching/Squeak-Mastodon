@@ -1,4 +1,4 @@
-accessing
+helpers
 encodeMultipartForm: form boundary: boundary
 
 	^ String streamContents: [:stream |

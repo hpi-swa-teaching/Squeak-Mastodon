@@ -1,4 +1,4 @@
-as yet unclassified
+image
 cache: anImageForm from: anUrl
 	self add: anUrl -> anImageForm.
 

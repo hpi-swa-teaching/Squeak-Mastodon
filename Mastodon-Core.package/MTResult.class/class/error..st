@@ -1,4 +1,4 @@
-as yet unclassified
+error handling
 error: aSTError
 	^ (self new)
 		error: aSTError;

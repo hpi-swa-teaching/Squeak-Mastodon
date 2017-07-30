@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize 
 	| pw mail url api|
 	url := UIManager default request: 'Enter your Mastodon Server (without https://)'. 

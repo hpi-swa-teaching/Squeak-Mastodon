@@ -1,3 +1,3 @@
-as yet unclassified
+image
 morphFromPath
 	^ (Form fromFileNamed: imageMorph) asMorph

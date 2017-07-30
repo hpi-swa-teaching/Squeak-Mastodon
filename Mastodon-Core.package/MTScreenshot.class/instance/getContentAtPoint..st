@@ -1,4 +1,4 @@
-as yet unclassified
+mouse-action
 getContentAtPoint: aPoint 
 
 	World submorphs

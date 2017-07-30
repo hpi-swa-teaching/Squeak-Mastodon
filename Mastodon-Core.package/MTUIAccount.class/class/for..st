@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 for: anAccount
 	| accountMorph | 
 	accountMorph := self new account: anAccount.

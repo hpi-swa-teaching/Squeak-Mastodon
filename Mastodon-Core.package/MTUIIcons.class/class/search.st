@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 search 
 ^(Form
 	extent: 32@31

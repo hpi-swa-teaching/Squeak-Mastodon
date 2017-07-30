@@ -1,4 +1,4 @@
-as yet unclassified
+morphic
 activeButton: aButtonId
 	self submorphs do: [ :button |
 		button id = aButtonId 

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeScrollBars
 	"Initialize vertical and horizontal scroll bars."
 

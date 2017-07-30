@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 "48x48"
 defaultAvatar
 	^ (Form

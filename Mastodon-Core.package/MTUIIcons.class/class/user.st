@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 user
 	^ (Form
 	extent: 32@32

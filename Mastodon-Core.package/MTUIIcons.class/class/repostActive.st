@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 repostActive
 	^ (Form
 	extent: 22@22

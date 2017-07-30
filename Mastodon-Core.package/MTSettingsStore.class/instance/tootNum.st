@@ -1,3 +1,3 @@
-as yet unclassified
+constant
 tootNum
 	^ 5

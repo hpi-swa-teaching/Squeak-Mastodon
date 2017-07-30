@@ -1,4 +1,4 @@
-as yet unclassified
+toot
 tootImagewithVisibility: aVisibility
 	| imageID json |
 	json := mastodonApi uploadMediaFrom: imageMorph imageForm.

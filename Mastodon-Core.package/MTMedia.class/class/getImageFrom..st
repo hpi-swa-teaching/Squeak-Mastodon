@@ -1,4 +1,4 @@
-as yet unclassified
+loading
 getImageFrom: anUrl
 |doc form image len suffix cachedForm|
 	anUrl ifNil: [^nil].

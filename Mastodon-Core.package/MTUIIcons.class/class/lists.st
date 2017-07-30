@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 lists
 	^ ((ColorForm
 	extent: 32@32

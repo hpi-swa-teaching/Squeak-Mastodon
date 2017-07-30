@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 newToot
 	^ (Form
 	extent: 32@32

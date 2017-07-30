@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 newTweet
 	^ (Form
 	extent: 32@32

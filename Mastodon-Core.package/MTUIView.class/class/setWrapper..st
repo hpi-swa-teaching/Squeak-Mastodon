@@ -1,4 +1,4 @@
-as yet unclassified
+layout-properties
 setWrapper: aWrapper
 	aWrapper layoutPolicy: TableLayout new;
 		 listDirection: #topToBottom;

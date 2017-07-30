@@ -1,4 +1,4 @@
-accessing
+endpoints
 uploadMediaFrom: aForm "the image path should be converted to a form"
 	| url response boundary file |
 	url := self buildUrl: '/api/v1/media/'.

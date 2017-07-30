@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 with: aMastodonApi
 	^ (self new)
 		mastodonApi: aMastodonApi

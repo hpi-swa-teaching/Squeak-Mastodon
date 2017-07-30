@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 camera
 	^  (Form
 	extent: 32@32

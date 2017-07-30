@@ -1,4 +1,4 @@
-as yet unclassified
+icon
 heartActive
 	^ (Form
 	extent: 22@22

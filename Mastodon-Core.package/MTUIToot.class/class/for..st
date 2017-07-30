@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 for: aToot
 	| tweetMorph | 
 	tweetMorph := self new toot: aToot.

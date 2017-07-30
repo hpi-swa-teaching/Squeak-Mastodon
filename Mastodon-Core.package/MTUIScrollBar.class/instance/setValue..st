@@ -1,4 +1,4 @@
-as yet unclassified
+model access
 setValue: newValue
 
 	(newValue = self getMaximumValue) & (newValue ~= self getValue)

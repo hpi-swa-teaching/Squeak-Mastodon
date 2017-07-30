@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 from: aJsonObject		
 	^ (self new)
 		errors: (aJsonObject at: 'errors');

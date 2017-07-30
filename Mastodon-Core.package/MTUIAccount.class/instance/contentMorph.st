@@ -1,4 +1,4 @@
-as yet unclassified
+render
 contentMorph
   	content := Morph new.
   	content 
