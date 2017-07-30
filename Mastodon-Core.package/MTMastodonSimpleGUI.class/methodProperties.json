@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"initialize" : "mm 5/24/2017 16:31",
-		"mastodonAPI" : "mm 5/24/2017 16:18",
-		"mastodonAPI:" : "mm 5/24/2017 16:18",
-		"register" : "mm 5/24/2017 16:23",
-		"toot" : "mm 5/24/2017 16:21" } }

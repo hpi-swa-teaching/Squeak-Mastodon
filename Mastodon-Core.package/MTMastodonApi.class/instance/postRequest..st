@@ -1,3 +1,3 @@
 helpers
 postRequest: url
-	^ self postRequest: url withParameters: ''.
+	^ self postRequest: url withParameters: ''

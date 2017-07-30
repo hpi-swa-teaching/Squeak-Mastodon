@@ -1,3 +1,3 @@
 accessing
 refreshToots
-	^ self.
+	^ self

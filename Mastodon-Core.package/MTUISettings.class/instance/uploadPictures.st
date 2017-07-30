@@ -10,7 +10,7 @@ uploadPictures
 	avatar ifNotNil: [ urls at: 'avatar' put: ((mastodonApi deserialize: avatar) at: 'url' )].
 	header ifNotNil: [ urls at: 'header' put: ((mastodonApi deserialize: header) at: 'url')].
 	
-	^ urls.
+	^ urls
 	
 	
 	

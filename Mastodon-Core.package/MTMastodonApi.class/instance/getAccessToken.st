@@ -4,12 +4,7 @@ getAccessToken
 
 	| url parameters json response |
 	url := self buildUrl: '/oauth/token'.
-	parameters := Dictionary newFromPairs: {'password'. self password. 
-	'username'. self username. 
-	'scope'. self class scope. 
-	'client_id'. self clientID. 
-	'client_secret'. self clientSecret. 
-	'grant_type'. 'password' }.
+	parameters := self newAccessDictionary.
 	response := self postRequest: url withParameters: parameters.
 	json := self deserialize: response.
 	self token: (json at: 'access_token').

@@ -4,7 +4,7 @@ addRequestSection
 	self addMorphBack: (TextMorph new contents: 'Enter Mastodon email and password' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
-	requestWrapper := MTUIView setWrapper: requestWrapper.
+	requestWrapper := MTUIView setMorph: requestWrapper.
 		
 	usernameTextField := UiLineEdit new.
 	usernameTextField theText: (MTSettingsStore default at: #username ifAbsent: ['']). 

@@ -5,27 +5,17 @@ addUpdateSection
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
 	requestWrapper := RectangleMorph new borderWidth: 1.
-	requestWrapper := MTUIView setWrapper: requestWrapper.
+	requestWrapper := MTUIView setMorph: requestWrapper.
 			
 	usernameUpdateTextField := MTUITextMorph new.
-	usernameUpdateTextField 
-		textSize: 1;
-		hResizing: #spaceFill;
-		borderColor: Color gray;
-		borderColor: 1;
-		contents: 'New Username'.
+	usernameUpdateTextField := MTUIView setTextField: usernameUpdateTextField withContent: 'New Username'.
 	requestWrapper addMorphBack: usernameUpdateTextField.
 		
 	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString , '/30') asHtmlText).
 	requestWrapper addMorphBack: usernameSizeLabel.
 	
 	descriptionTextField := MTUITextMorph new.
-	descriptionTextField 
-		textSize: 1;
-		hResizing: #spaceFill;
-		borderColor: Color gray;
-		borderColor: 1;
-		contents: 'New Description'.
+	descriptionTextField := MTUIView setTextField: descriptionTextField withContent: 'New Description'.
 	requestWrapper addMorphBack: descriptionTextField.
 	
 	self descriptionSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString , '/160') asHtmlText).

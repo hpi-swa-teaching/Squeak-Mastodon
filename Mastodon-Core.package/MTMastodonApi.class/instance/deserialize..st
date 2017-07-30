@@ -1,3 +1,3 @@
 helpers
 deserialize: aJsonString
-	^ (Json new stream: (ReadStream on: aJsonString)) readAny.
+	^ (Json new stream: (ReadStream on: aJsonString)) readAny
