@@ -1,4 +1,4 @@
-initialize
+initialization
 with: aBaseURL
     ^ self new
         baseURL:  aBaseURL;

@@ -1,4 +1,4 @@
-as yet unclassified
+render
 addSearchSection 
 	| searchButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Search Users' asHtmlText).

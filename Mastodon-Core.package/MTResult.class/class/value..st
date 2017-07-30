@@ -1,4 +1,4 @@
-initialize
+initialization
 value: aMTMastodonModel
 	^ (self new)
 		value: aMTMastodonModel;

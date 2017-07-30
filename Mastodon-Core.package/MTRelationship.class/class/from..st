@@ -1,4 +1,4 @@
-initialize
+initialization
 from: aJsonObject
 	^ (self new)
 		id: (aJsonObject at: 'id');

@@ -1,4 +1,4 @@
-initialize
+initialization
 with: aTootList from: aMTUser 		
 	^ (self new)
 		user: aMTUser;

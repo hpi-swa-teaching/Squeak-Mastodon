@@ -1,4 +1,4 @@
-initialize
+initialization
 for: aToot
 	| tweetMorph | 
 	tweetMorph := self new toot: aToot.

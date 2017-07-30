@@ -1,4 +1,4 @@
-initialize
+initialization
 from: aJsonObject
 	^ (self new)
 		accounts: ((aJsonObject at: 'accounts') collect: [:acc| MTAccount from: acc]);

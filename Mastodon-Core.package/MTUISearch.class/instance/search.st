@@ -1,4 +1,4 @@
-as yet unclassified
+action
 search
 	"comment stating purpose of message"
 	|query queryResult|
