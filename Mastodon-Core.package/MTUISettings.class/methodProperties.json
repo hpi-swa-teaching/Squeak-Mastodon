@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"with:" : "PG 5/28/2017 19:09" },
+		"with:" : "mm 7/30/2017 19:50" },
 	"instance" : {
-		"addAccessSection" : "LS 7/17/2017 14:05",
+		"addAccessSection" : "mm 7/30/2017 19:57",
 		"addRequestSection" : "LS 7/30/2017 19:12",
 		"addResultSection" : "mm 5/28/2017 14:59",
 		"addUpdateSection" : "LS 7/30/2017 19:17",
@@ -16,7 +16,7 @@
 		"descriptionTextField:" : "LS 7/17/2017 12:07",
 		"headerImageMorph" : "LS 7/17/2017 12:19",
 		"headerImageMorph:" : "LS 7/17/2017 12:19",
-		"initialize" : "LS 5/29/2017 16:38",
+		"initialize" : "mm 7/30/2017 19:54",
 		"loadImage" : "mm 7/17/2017 12:52",
 		"logout" : "LS 7/30/2017 19:32",
 		"mastodonApi" : "PG 5/28/2017 18:38",
@@ -32,4 +32,4 @@
 		"usernameSizeLabel:" : "LS 7/17/2017 11:52",
 		"usernameUpdateTextField" : "LS 7/17/2017 12:07",
 		"usernameUpdateTextField:" : "LS 7/17/2017 12:07",
-		"verifyAccount" : "LS 5/29/2017 16:55" } }
+		"verifyAccount" : "mm 7/30/2017 19:18" } }

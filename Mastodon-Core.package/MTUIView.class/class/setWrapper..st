@@ -8,5 +8,6 @@ setWrapper: aWrapper
 		 wrapCentering: #left;
 		 color: Color white;
 		 cellInset: 10;
-		 borderWidth: 1.
+		 borderWidth: 1;
+		layoutInset: 2.
 	^ aWrapper

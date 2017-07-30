@@ -9,3 +9,4 @@ loadToots
 				^ false].
 			
 	self setToots: toots value.
+	^ true.
