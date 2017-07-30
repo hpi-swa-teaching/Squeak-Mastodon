@@ -1,9 +1,7 @@
 as yet unclassified
 loadProfileViewOf: aMTUser 
 	| userTimeline |
-	self mastodonApi isAuthenticated
-		ifFalse: [self inform: 'Please login first.'.
-			^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	userTimeline := MTUIUserTimeline new.
 	userTimeline id: aMTUser id.
 	userTimeline mastodonApi: self mastodonApi;

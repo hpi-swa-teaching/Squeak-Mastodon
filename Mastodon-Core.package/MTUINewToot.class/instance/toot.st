@@ -1,9 +1,7 @@
 as yet unclassified
 toot
 	| text menu visibility |
-	self mastodonApi isAuthenticated
-		ifFalse: [self inform: 'Please login first.'.
-			^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	text := tootTextArea contents asString.
 	text size > 500
 		ifTrue: [self inform: 'Not more than 500 characters allowed.'.

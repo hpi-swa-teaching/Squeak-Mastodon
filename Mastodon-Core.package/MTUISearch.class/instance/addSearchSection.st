@@ -3,17 +3,9 @@ addSearchSection
 	| searchButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Search Users' asHtmlText).
 		
-		requestWrapper := Morph new borderWidth: 1.
-		requestWrapper 
-			layoutPolicy: TableLayout new;
-			listDirection: #topToBottom;
-			cellPositioning: #topLeft;
-			hResizing: #spaceFill;
-			vResizing: #shrinkWrap;
-			wrapCentering: #topLeft;
-			color: Color white;
-			cellInset: 10;
-			borderWidth: 1.
+	requestWrapper := Morph new borderWidth: 1.
+	requestWrapper := MTUIView setWrapper: requestWrapper.
+	requestWrapper wrapCentering: #topLeft.
 		
 	searchTextField := UiLineEdit new.
 	searchTextField helpText: '@User@Domain'.

@@ -1,4 +1,4 @@
 helpers
 isAuthenticated
-	token ifNotNil: [^ true].
-	^ false
+	token ifNil: [self inform: 'Please login first.'. ^ false].
+	^ true

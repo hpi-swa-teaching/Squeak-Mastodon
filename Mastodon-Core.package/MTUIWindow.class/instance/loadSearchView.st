@@ -1,6 +1,7 @@
 as yet unclassified
 loadSearchView
 	| searchView |
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	searchView := MTUISearch new.
 							
 	searchView 

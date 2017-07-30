@@ -4,17 +4,8 @@ addUpdateSection
 	
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
-	requestWrapper := Morph new borderWidth: 1.
-	requestWrapper 
-		layoutPolicy: TableLayout new;
-		listDirection: #topToBottom;
-		cellPositioning: #topLeft;
-		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
-		wrapCentering: #left;
-		color: Color white;
-		cellInset: 10;
-		borderWidth: 1.
+	requestWrapper := RectangleMorph new borderWidth: 1.
+	requestWrapper := MTUIView setWrapper: requestWrapper.
 			
 	usernameUpdateTextField := MTUITextMorph new.
 	usernameUpdateTextField 

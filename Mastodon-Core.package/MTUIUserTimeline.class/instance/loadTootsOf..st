@@ -1,9 +1,7 @@
 as yet unclassified
 loadTootsOf: aMTUser
 	| toots |
-	self mastodonApi isAuthenticated 
-		ifFalse: [self inform: 'Please login first.'. 
-				^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 			
 	toots := mastodonApi getStatuses: aMTUser id.
 	

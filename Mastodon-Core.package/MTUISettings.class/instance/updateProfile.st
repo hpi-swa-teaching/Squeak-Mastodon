@@ -1,9 +1,7 @@
 initialization
 updateProfile 
 	| text dict |
-	self mastodonApi isAuthenticated
-		ifFalse: [self inform: 'Please login first.'.
-			^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	text := usernameUpdateTextField contents asString.
 	text size > 30

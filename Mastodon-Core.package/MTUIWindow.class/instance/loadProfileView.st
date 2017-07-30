@@ -1,9 +1,7 @@
 as yet unclassified
 loadProfileView
 	| currentUser|
-	self mastodonApi isAuthenticated 
-		ifFalse: [ self inform: 'Please login first.'. 
-				^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	currentUser := mastodonApi getCurrentUser.
 	

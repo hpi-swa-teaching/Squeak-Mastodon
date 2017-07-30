@@ -1,9 +1,7 @@
 accessing
 refreshToots
 	| newToots |
-	self mastodonApi isAuthenticated 
-		ifFalse: [self inform: 'Please login first.'. 
-				^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 			
 	newToots := mastodonApi getPrivateTimelineSince: maxID.
 	

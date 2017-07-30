@@ -1,9 +1,7 @@
 accessing
 loadMoreToot
 	| newToots |
-	self mastodonApi isAuthenticated 
-		ifFalse: [self inform: 'Please login first.'. 
-				^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 			
 	newToots := mastodonApi getPrivateTimelineMax: (self minID - 1).
 	

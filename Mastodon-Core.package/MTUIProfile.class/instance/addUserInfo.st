@@ -3,14 +3,11 @@ addUserInfo
 	| userInfo text |
 	
 	userInfo := RectangleMorph new.
+	userInfo := MTUIView setWrapper: userInfo.
 	userInfo
 		color: (Color r: 0.1 g: 0.2 b: 0.3);
-		layoutPolicy: TableLayout new;
-		listDirection: #topToBottom;
 		cellPositioning: #center;
 		wrapCentering: #center;
-		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
 		cellInset: 20;
 		layoutInset:20;
 		borderWidth: 0.

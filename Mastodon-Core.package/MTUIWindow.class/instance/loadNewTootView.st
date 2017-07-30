@@ -1,8 +1,6 @@
 as yet unclassified
 loadNewTootView
-	self mastodonApi isAuthenticated ifFalse: [
-		self inform: 'Please login first.'. 
-		^ false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	self 
 		loadView: (MTUINewToot with: mastodonApi)
