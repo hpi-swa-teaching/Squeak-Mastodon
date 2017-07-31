@@ -1,4 +1,9 @@
 action
 followAccountWithId: anInteger fromSender: aButton
-	self mastodonApi follow: anInteger.
-	aButton active: true
+	aButton active 
+		
+		ifTrue: [self mastodonApi unfollow: anInteger.
+				aButton active: false]
+		
+		ifFalse: [self mastodonApi follow: anInteger.
+				aButton active: true]
