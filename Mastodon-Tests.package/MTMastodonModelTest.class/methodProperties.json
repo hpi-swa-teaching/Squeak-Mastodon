@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testAccountAcct" : "fs 8/3/2017 17:09",
+		"testAccountAvatar" : "fs 8/3/2017 17:08",
+		"testAccountCreatedAt" : "fs 8/3/2017 17:07",
+		"testAccountDisplayName" : "fs 8/3/2017 17:06",
+		"testAccountFollowersCount" : "fs 8/3/2017 17:05",
+		"testAccountFollowingCount" : "fs 8/3/2017 17:05",
+		"testAccountHeader" : "fs 8/3/2017 17:04",
+		"testAccountId" : "fs 8/3/2017 17:03",
+		"testAccountNote" : "fs 8/3/2017 17:03",
+		"testAccountStatusesCount" : "fs 8/3/2017 17:02",
+		"testAccountUsername" : "fs 8/3/2017 17:00" } }
