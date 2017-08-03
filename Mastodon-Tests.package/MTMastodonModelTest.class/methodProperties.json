@@ -16,4 +16,11 @@
 		"testErrorErrors" : "fs 8/3/2017 17:23",
 		"testMediaId" : "fs 8/3/2017 17:26",
 		"testMediaPreviewURL" : "fs 8/3/2017 17:27",
-		"testMediaType" : "fs 8/3/2017 17:27" } }
+		"testMediaType" : "fs 8/3/2017 17:27",
+		"testRelationshipBlocking" : "fs 8/3/2017 17:35",
+		"testRelationshipDomainBlocking" : "fs 8/3/2017 17:36",
+		"testRelationshipFollowedBy" : "fs 8/3/2017 17:37",
+		"testRelationshipFollowing" : "fs 8/3/2017 17:37",
+		"testRelationshipId" : "fs 8/3/2017 17:38",
+		"testRelationshipMuting" : "fs 8/3/2017 17:39",
+		"testRelationshipRequested" : "fs 8/3/2017 17:40" } }
