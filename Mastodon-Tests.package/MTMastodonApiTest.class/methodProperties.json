@@ -4,4 +4,11 @@
 	"instance" : {
 		"setUp" : "mm 5/23/2017 23:24",
 		"testApiUrl" : "mm 5/24/2017 17:47",
-		"testReset" : "fs 8/3/2017 16:04" } }
+		"testBaseURL" : "fs 8/3/2017 16:11",
+		"testClientID" : "fs 8/3/2017 16:12",
+		"testClientSecret" : "fs 8/3/2017 16:13",
+		"testPassword" : "fs 8/3/2017 16:10",
+		"testReset" : "fs 8/3/2017 16:04",
+		"testToken" : "fs 8/3/2017 16:11",
+		"testUsername" : "fs 8/3/2017 16:09",
+		"testWebClient" : "fs 8/3/2017 16:14" } }
