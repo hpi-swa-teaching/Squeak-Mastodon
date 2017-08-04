@@ -1,4 +1,4 @@
 initialization
 from: aJsonObject
-	^ (self new) subclassResponsibility.
+	^ (self new) subclassResponsibility
 	

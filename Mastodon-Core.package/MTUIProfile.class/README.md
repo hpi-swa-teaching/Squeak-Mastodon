@@ -1,1 +1,1 @@
-STUIProfile is a view to display a user profile.
+MTUIProfile is a view to display a user profile.

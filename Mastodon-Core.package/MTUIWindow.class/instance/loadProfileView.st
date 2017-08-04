@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadProfileView
 	| currentUser|
 	self mastodonApi isAuthenticated ifFalse: [^false].

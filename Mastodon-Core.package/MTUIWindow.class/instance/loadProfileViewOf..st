@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadProfileViewOf: aMTUser 
 	| userTimeline |
 	self mastodonApi isAuthenticated ifFalse: [^false].

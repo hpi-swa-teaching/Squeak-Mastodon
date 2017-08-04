@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadNewTootViewWithMorph: aMorph
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	

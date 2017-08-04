@@ -1,4 +1,4 @@
-as yet unclassified
+render
 updateViewMorph: aMorph
 	scrollMorph scroller hasSubmorphs ifTrue: [
 		scrollMorph scroller removeMorph: viewMorph ].

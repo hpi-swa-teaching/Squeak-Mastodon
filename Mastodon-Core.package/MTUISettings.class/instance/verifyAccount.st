@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 verifyAccount
 	| account |
 	account := (self mastodonApi verifyCredentials) value.  

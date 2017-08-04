@@ -1,4 +1,4 @@
-as yet unclassified
+render
 addAccessSection 
 	self addMorph: (TextMorph new contents: '<b>Login/Logout</b>' asHtmlText).
 	self cellInset: 10.

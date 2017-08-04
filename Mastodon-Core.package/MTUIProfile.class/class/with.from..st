@@ -4,4 +4,4 @@ with: aTootList from: aMTUser
 		user: aMTUser;
 		tootList: aTootList;
 		addUserInfo;
-		addUserTimeline.
+		addUserTimeline

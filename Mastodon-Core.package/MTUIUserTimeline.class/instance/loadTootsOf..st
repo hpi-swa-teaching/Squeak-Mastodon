@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 loadTootsOf: aMTUser
 	| toots |
 	self mastodonApi isAuthenticated ifFalse: [^false].

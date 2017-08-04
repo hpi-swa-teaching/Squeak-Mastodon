@@ -1,4 +1,4 @@
-as yet unclassified
+views
 forceLoadView: aView as: aSymbol activate: aButton 
 
 	loadedViews at: aSymbol put: (aView).

@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 authenticateApplication
 	| baseURL password username |
 	password := passwordTextField theText asString.

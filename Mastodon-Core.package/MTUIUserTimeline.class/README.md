@@ -1,1 +1,0 @@
-STUIHomeTimeline implements a STUITweetList for the user's timeline.

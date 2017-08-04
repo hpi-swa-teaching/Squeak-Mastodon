@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadNewTootViewWithAccount: anAccountID
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	

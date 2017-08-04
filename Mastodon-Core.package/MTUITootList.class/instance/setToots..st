@@ -1,4 +1,4 @@
-accessing
+updating
 setToots: anOrderedCollection
 	"Initializes toott collection and sets min/max ID"
 	

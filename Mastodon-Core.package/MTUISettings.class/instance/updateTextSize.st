@@ -1,4 +1,4 @@
-as yet unclassified
+render
 updateTextSize
 	(self usernameUpdateTextField contents size) > 30
 		ifTrue: [usernameSizeLabel textColor: Color red];

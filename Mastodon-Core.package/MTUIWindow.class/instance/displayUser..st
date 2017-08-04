@@ -1,4 +1,4 @@
-as yet unclassified
+render
 displayUser: aUsername
 |user|
 	self mastodonApi isAuthenticated ifFalse: [^false].

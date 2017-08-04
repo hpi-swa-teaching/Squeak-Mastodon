@@ -1,4 +1,4 @@
-as yet unclassified
+render
 addUpdateSection
 	| updateButton requestWrapper avatarImageButton headerImageButton |
 	

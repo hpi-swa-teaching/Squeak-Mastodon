@@ -1,3 +1,3 @@
 initialization
 scope
-	^ 'read write follow'.
+	^ 'read write follow'

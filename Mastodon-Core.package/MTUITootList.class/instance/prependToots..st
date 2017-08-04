@@ -1,4 +1,4 @@
-accessing
+updating
 prependToots: anOrderedCollection
 	"Adds new toots which were posted since the last api request"
 	

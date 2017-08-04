@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 refreshToots
 	| newToots |
 	self mastodonApi isAuthenticated ifFalse: [^false].

@@ -1,4 +1,4 @@
-as yet unclassified
+render
 addRequestSection
 	| requestButton logoutButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Enter Mastodon email and password' asHtmlText).

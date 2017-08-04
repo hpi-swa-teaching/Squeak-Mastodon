@@ -1,4 +1,4 @@
-as yet unclassified
+layout-properties
 setTextField: aTextField withContent: aString 
 	aTextField 
 		textSize: 1;

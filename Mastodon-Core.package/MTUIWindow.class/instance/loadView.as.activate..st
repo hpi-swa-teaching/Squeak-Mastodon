@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadView: aView as: aSymbol activate: aButton 
 	loadedViews at: aSymbol put: aView.
 	menuMorph activeButton: aButton.

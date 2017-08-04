@@ -1,1 +1,0 @@
-STUITweet is the graphical representation of a STTweet instance and should be used inside a STUITweetList.

@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadHomeTimelineView
 	| homeTimelineView |
 	homeTimelineView := MTUIHomeTimeline new.

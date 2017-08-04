@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadSearchView
 	| searchView |
 	self mastodonApi isAuthenticated ifFalse: [^false].

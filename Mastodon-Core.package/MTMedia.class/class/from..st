@@ -5,4 +5,4 @@ from: aJsonObject
 		type: (aJsonObject at: 'type');
 		buildUrl: (aJsonObject at: 'url');
 		previewUrl: (aJsonObject at: 'preview_url');
-		yourself.
+		yourself

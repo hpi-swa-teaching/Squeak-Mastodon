@@ -1,1 +1,1 @@
-STUIMenu contains the main navigation in form of SUIMenuButtons.
+MTUIMenu contains the main navigation in form of MTUIMenuButtons.

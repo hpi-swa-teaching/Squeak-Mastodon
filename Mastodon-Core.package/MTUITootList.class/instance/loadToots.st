@@ -1,4 +1,4 @@
-accessing
+updating
 loadToots
 	| toots |	
 	self mastodonApi isAuthenticated ifFalse: [^false].
@@ -9,4 +9,4 @@ loadToots
 				^ false].
 			
 	self setToots: toots value.
-	^ true.
+	^ true

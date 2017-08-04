@@ -1,4 +1,4 @@
-A STUrl is an entity that contains different versions of urls mentioned in a tweet.
+A MTUrl is an entity that contains different versions of urls mentioned in a toot.
 
 Instance Variables
 	displayUrl:		<String>

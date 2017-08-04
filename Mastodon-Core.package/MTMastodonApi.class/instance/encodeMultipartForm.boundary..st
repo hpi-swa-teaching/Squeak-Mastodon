@@ -13,4 +13,4 @@ encodeMultipartForm: form boundary: boundary
 			crlf;
 			nextPutAll: form content asString;
 			crlf;
-			nextPutAll: '--'; nextPutAll: boundary; nextPutAll: '--'].
+			nextPutAll: '--'; nextPutAll: boundary; nextPutAll: '--']

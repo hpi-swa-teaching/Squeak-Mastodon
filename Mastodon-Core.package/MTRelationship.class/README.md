@@ -1,1 +1,1 @@
-MTRealtionship represents the realtionship to a specific account
+MTRelationship represents the realtionship to a specific account

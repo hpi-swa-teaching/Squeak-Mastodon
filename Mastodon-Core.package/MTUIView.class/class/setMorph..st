@@ -1,4 +1,4 @@
-as yet unclassified
+layout-properties
 setMorph: aMorph
 	aMorph layoutPolicy: TableLayout new;
 		 listDirection: #topToBottom;

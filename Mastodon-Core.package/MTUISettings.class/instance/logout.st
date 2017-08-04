@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 logout
 	self clearTextFields.
 	self mastodonApi isAuthenticated ifFalse: [^false].

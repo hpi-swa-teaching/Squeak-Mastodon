@@ -13,4 +13,4 @@ from: aJsonObject
 		followersCount: (aJsonObject at: 'followers_count');
 		followingCount: (aJsonObject at: 'following_count');
 		statusesCount: (aJsonObject at: 'statuses_count');
-		yourself.
+		yourself

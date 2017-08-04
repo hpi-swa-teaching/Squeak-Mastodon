@@ -13,4 +13,4 @@ from: aJsonObject
 		favouritesCount:  (aJsonObject at: 'favouritesCount');
 		urls: (aJsonObject at: 'url');
 		media:  ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
-		yourself.
+		yourself

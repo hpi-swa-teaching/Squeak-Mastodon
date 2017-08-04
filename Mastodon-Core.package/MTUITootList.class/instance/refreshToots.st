@@ -1,4 +1,4 @@
-accessing
+updating
 refreshToots
 	| newToots |
 	self mastodonApi isAuthenticated ifFalse: [^false].

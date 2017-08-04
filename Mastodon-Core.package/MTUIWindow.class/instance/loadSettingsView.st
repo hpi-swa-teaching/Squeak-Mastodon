@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadSettingsView
 	self 
 		loadView: (MTUISettings with: mastodonApi)

@@ -1,4 +1,4 @@
-as yet unclassified
+render
 clearTextFields
 	usernameTextField theText: ''.
 	passwordTextField theText: ''.

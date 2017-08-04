@@ -1,4 +1,4 @@
-as yet unclassified
+views
 loadScreenshotView
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	

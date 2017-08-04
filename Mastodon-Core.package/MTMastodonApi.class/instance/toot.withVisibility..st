@@ -7,4 +7,4 @@ toot: aString withVisibility: aVisibility
 	
 	"
 	ToDo: Später in TimeLine anzeigen"
-	^ MTResult value: (self class deserialize: response intoObjectOf: MTToot).
+	^ MTResult value: (self class deserialize: response intoObjectOf: MTToot)

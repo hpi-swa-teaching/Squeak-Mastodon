@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 repostTootWithId: anInteger fromSender: aButton
 	aButton active
 		ifFalse: [self mastodonApi reblog: anInteger.
