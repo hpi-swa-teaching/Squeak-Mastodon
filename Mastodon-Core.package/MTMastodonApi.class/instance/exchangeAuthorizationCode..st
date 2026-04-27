@@ -1,15 +1,15 @@
 authentification
 exchangeAuthorizationCode: anAuthorizationCode
 	| url parameters response json |
+	(self clientID isNil or: [self clientSecret isNil]) ifTrue: [^ nil].
+
 	url := self buildUrl: '/oauth/token'.
 	parameters := Dictionary newFromPairs: {
 		'grant_type'. 'authorization_code'.
 		'code'. anAuthorizationCode.
-		'client_id'. 'EgPNP8MWCtZEIhgRcoN9wfD2bRWkzEebc2rew-95uNs'.
-		'redirect_uri'. 'urn:ietf:wg:oauth:2.0:oob'.
-		'scope'. self class scope}.
-
-	self clientSecret ifNotNil: [parameters at: 'client_secret' put: self clientSecret].
+		'client_id'. self clientID.
+		'client_secret'. self clientSecret.
+		'redirect_uri'. 'urn:ietf:wg:oauth:2.0:oob'}.
 
 	response := webClient httpPost: url
 		content: (WebUtils encodeUrlEncodedForm: parameters)

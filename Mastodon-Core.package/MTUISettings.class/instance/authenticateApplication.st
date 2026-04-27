@@ -1,9 +1,8 @@
 actions
 authenticateApplication
-	| baseURL token authorizationLink displayAuthorizationLink |
+	| baseURL authorizationCode authorizationLink displayAuthorizationLink |
 	baseURL := (urlTextField theText asString) withBlanksTrimmed.
-	token := (tokenTextField theText asString) withBlanksTrimmed.
-	(token beginsWith: 'Bearer ') ifTrue: [token := (token allButFirst: 7) withBlanksTrimmed].
+	authorizationCode := (tokenTextField theText asString) withBlanksTrimmed.
 
 	((baseURL beginsWith: 'https://') or: [baseURL beginsWith: 'http://'])
 		ifFalse: [baseURL := 'https://', baseURL].
@@ -11,28 +10,37 @@ authenticateApplication
 	self mastodonApi baseURL: baseURL.
 	MTSettingsStore default at: #baseURL put: baseURL.
 
-	token isEmpty
+	authorizationCode isEmpty
 		ifTrue: [
 			self mastodonApi token: nil.
-			authorizationLink := self authorizationLinkFor: baseURL.
+			self mastodonApi registerApplication.
+			(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
+				resultTextLabel contents: '<i>Could not register OAuth app on this instance.</i>' asHtmlText.
+				^ false].
+			MTSettingsStore default at: #clientID put: self mastodonApi clientID.
+			MTSettingsStore default at: #clientSecret put: self mastodonApi clientSecret.
+			authorizationLink := self authorizationLinkFor: baseURL clientID: self mastodonApi clientID.
 			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
-			resultTextLabel contents: ('<i>Open link, authorize app, then paste token or code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
+			resultTextLabel contents: ('<i>Open link, authorize app, then paste OAuth code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
 
-	self mastodonApi token: token.
+	MTSettingsStore default at: #oauthCode put: authorizationCode.
+
+	self mastodonApi token: nil.
+	self mastodonApi clientID: (MTSettingsStore default at: #clientID ifAbsent: [nil]).
+	self mastodonApi clientSecret: (MTSettingsStore default at: #clientSecret ifAbsent: [nil]).
+	(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
+		resultTextLabel contents: '<i>Missing OAuth app credentials. Click "Login / Get Link" once without code first.</i>' asHtmlText.
+		^ false].
+	self mastodonApi exchangeAuthorizationCode: authorizationCode.
+	self mastodonApi token ifNil: [
+		resultTextLabel contents: '<i>OAuth code exchange failed. Paste code from authorize flow.</i>' asHtmlText.
+		^ false].
+
 	[
 		self verifyAccount.
-		MTSettingsStore default at: #token put: token.
+		MTSettingsStore default at: #token put: self mastodonApi token.
 		^ true
 	] on: Error do: [
-		self mastodonApi exchangeAuthorizationCode: token.
-		self mastodonApi token ifNil: [
-			resultTextLabel contents: '<i>Login failed. Paste access token or OAuth code from authorize flow.</i>' asHtmlText.
-			^ false].
-		[
-			self verifyAccount.
-			MTSettingsStore default at: #token put: self mastodonApi token.
-			^ true
-		] on: Error do: [
-			resultTextLabel contents: '<i>Token/code was accepted but verify_credentials failed.</i>' asHtmlText.
-			^ false]]
+		resultTextLabel contents: '<i>OAuth code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
+		^ false]
