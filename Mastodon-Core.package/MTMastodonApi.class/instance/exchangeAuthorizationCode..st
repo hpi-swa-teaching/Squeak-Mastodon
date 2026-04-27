@@ -6,7 +6,8 @@ exchangeAuthorizationCode: anAuthorizationCode
 		'grant_type'. 'authorization_code'.
 		'code'. anAuthorizationCode.
 		'client_id'. 'EgPNP8MWCtZEIhgRcoN9wfD2bRWkzEebc2rew-95uNs'.
-		'redirect_uri'. 'urn:ietf:wg:oauth:2.0:oob'}.
+		'redirect_uri'. 'urn:ietf:wg:oauth:2.0:oob'.
+		'scope'. self class scope}.
 
 	self clientSecret ifNotNil: [parameters at: 'client_secret' put: self clientSecret].
 

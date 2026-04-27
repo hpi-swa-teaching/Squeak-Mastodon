@@ -1,8 +1,9 @@
 actions
 authenticateApplication
-	| baseURL token authorizationLink |
-	baseURL := urlTextField theText asString.
-	token := tokenTextField theText asString.
+	| baseURL token authorizationLink displayAuthorizationLink |
+	baseURL := (urlTextField theText asString) withBlanksTrimmed.
+	token := (tokenTextField theText asString) withBlanksTrimmed.
+	(token beginsWith: 'Bearer ') ifTrue: [token := (token allButFirst: 7) withBlanksTrimmed].
 
 	((baseURL beginsWith: 'https://') or: [baseURL beginsWith: 'http://'])
 		ifFalse: [baseURL := 'https://', baseURL].
@@ -14,7 +15,8 @@ authenticateApplication
 		ifTrue: [
 			self mastodonApi token: nil.
 			authorizationLink := self authorizationLinkFor: baseURL.
-			resultTextLabel contents: ('<i>Open link, authorize app, then paste token or code here:</i><br><b>', authorizationLink, '</b>') asHtmlText.
+			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
+			resultTextLabel contents: ('<i>Open link, authorize app, then paste token or code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
 
 	self mastodonApi token: token.
