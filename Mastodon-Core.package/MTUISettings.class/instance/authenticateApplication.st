@@ -1,19 +1,20 @@
 actions
 authenticateApplication
-	| baseURL password username |
-	password := passwordTextField theText asString.
-	username :=  usernameTextField theText asString.
-	baseURL :=  urlTextField theText asString.
-	
-	self mastodonApi password: password.
-	self mastodonApi username: username.
+	| baseURL token authorizationLink |
+	baseURL := urlTextField theText asString.
+	token := tokenTextField theText asString.
+
+	(baseURL endsWith: '/') ifTrue: [baseURL := baseURL allButLast].
 	self mastodonApi baseURL: baseURL.
-	
-	MTSettingsStore default at: #password put: password.
-	MTSettingsStore default at: #username put: username.
 	MTSettingsStore default at: #baseURL put: baseURL.
-	
-	self mastodonApi registerApplication.
-	self mastodonApi getAccessToken. 
-	MTSettingsStore default at: #token put: self mastodonApi token.
+
+	token isEmpty
+		ifTrue: [
+			self mastodonApi token: nil.
+			authorizationLink := self authorizationLinkFor: baseURL.
+			resultTextLabel contents: ('<i>Open link, authorize app, then paste token here:</i><br><b>', authorizationLink, '</b>') asHtmlText.
+			^ false].
+
+	self mastodonApi token: token.
+	MTSettingsStore default at: #token put: token.
 	self verifyAccount.

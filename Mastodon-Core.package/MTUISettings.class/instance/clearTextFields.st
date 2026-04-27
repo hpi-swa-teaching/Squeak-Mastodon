@@ -1,5 +1,4 @@
 render
 clearTextFields
-	usernameTextField theText: ''.
-	passwordTextField theText: ''.
+	tokenTextField theText: ''.
 	urlTextField theText: ''
