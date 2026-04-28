@@ -23,14 +23,6 @@ addRequestSection
  		signal: #clicked:
  		toSelector: #authenticateApplication.
 	requestWrapper addMorphBack: requestButton.
-
-	openLinkButton := UiPushButton new.
-	openLinkButton text: 'Open Link'.
-	self
-		connect: openLinkButton
-	 	signal: #clicked:
-	 	toSelector: #openAuthorizationLink.
-	requestWrapper addMorphBack: openLinkButton.
 	
 	logoutButton := UiPushButton new.
 	logoutButton text: 'Logout'.

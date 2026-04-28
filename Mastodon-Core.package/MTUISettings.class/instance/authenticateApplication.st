@@ -18,7 +18,6 @@ authenticateApplication
 				resultTextLabel contents: '<i>Could not register OAuth app on this instance.</i>' asHtmlText.
 				^ false].
 			authorizationLink := self authorizationLinkFor: baseURL clientID: self mastodonApi clientID.
-			lastAuthorizationLink := authorizationLink.
 			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
 			resultTextLabel contents: ('<i>Open link, authorize app, then paste OAuth code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
