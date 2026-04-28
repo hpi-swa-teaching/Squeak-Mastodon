@@ -7,12 +7,12 @@ addRequestSection
 	requestWrapper := MTUIView setMorph: requestWrapper.
 		
 	urlTextField := UiLineEdit new.
-	urlTextField theText: (MTSettingsStore default at: #baseURL ifAbsent: ['']). 
+	urlTextField theText: ''.
 	urlTextField helpText: 'Mastodon server URL (with https://)'.
 	requestWrapper addMorphBack: urlTextField.
 
 	tokenTextField := UiLineEdit new.
-	tokenTextField theText: (MTSettingsStore default at: #oauthCode ifAbsent: ['']). 
+	tokenTextField theText: ''.
 	tokenTextField helpText: 'OAuth code from authorize page'.
 	requestWrapper addMorphBack: tokenTextField.
 	
@@ -23,6 +23,14 @@ addRequestSection
  		signal: #clicked:
  		toSelector: #authenticateApplication.
 	requestWrapper addMorphBack: requestButton.
+
+	openLinkButton := UiPushButton new.
+	openLinkButton text: 'Open Link'.
+	self
+		connect: openLinkButton
+	 	signal: #clicked:
+	 	toSelector: #openAuthorizationLink.
+	requestWrapper addMorphBack: openLinkButton.
 	
 	logoutButton := UiPushButton new.
 	logoutButton text: 'Logout'.

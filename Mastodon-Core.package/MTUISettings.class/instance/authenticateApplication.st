@@ -17,20 +17,15 @@ authenticateApplication
 			(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
 				resultTextLabel contents: '<i>Could not register OAuth app on this instance.</i>' asHtmlText.
 				^ false].
-			MTSettingsStore default at: #clientID put: self mastodonApi clientID.
-			MTSettingsStore default at: #clientSecret put: self mastodonApi clientSecret.
 			authorizationLink := self authorizationLinkFor: baseURL clientID: self mastodonApi clientID.
+			lastAuthorizationLink := authorizationLink.
 			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
 			resultTextLabel contents: ('<i>Open link, authorize app, then paste OAuth code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
 
-	MTSettingsStore default at: #oauthCode put: authorizationCode.
-
 	self mastodonApi token: nil.
-	self mastodonApi clientID: (MTSettingsStore default at: #clientID ifAbsent: [nil]).
-	self mastodonApi clientSecret: (MTSettingsStore default at: #clientSecret ifAbsent: [nil]).
 	(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
-		resultTextLabel contents: '<i>Missing OAuth app credentials. Click "Login / Get Link" once without code first.</i>' asHtmlText.
+		resultTextLabel contents: '<i>No app registration found in this session. Click "Login / Get Link" to register an app for this instance, then paste the OAuth code.</i>' asHtmlText.
 		^ false].
 	self mastodonApi exchangeAuthorizationCode: authorizationCode.
 	self mastodonApi token ifNil: [
