@@ -13,14 +13,18 @@ getImageFrom: anUrl
 		((doc isNil) or: [doc isKindOf: Error]) ifTrue: [^ nil].
 		doc binary; reset.
 		
-		form := [ImageReadWriter formFromStream: doc] on: Error do: [nil].
+		"WebP check"
+		((doc size > 12) and: [(doc next: 4) = 'RIFF' asByteArray]) ifTrue: [
+			doc next: 4. "skip size"
+			(doc next: 4) = 'WEBP' asByteArray ifTrue: [^ nil].
+		].
+		doc reset.
 		
+		form := [ImageReadWriter formFromStream: doc] on: Error do: [nil].
 		(form isKindOf: Form) ifFalse: [^ nil].
 		
 		MTImageCache default cache: form from: anUrl. 
 		image := ImageMorph new.
 		image setNewImageFrom: form.
 		^ image
-	] on: Error do: [:ex |
-		Transcript show: 'Error loading image ', anUrl, ': ', ex description; cr.
-		^ nil].
+	] on: Error do: [:ex | ^ nil].
