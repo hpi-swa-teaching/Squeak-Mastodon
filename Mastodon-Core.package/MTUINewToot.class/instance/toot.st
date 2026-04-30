@@ -1,6 +1,8 @@
 toot
 toot
 	| text menu visibility |
+	(self mastodonApi supportsFeature: #post)
+		ifFalse: [self inform: 'Posting not supported.'. ^ false].
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	text := tootTextArea contents asString.
 	text size > 500

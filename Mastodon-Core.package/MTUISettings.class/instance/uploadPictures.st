@@ -1,6 +1,8 @@
 initialization
 uploadPictures
 	|avatar header urls|
+	(self mastodonApi supportsFeature: #mediaUpload)
+		ifFalse: [^ Dictionary new].
 	self avatarImageMorph ifNotNil: [
 		avatar := mastodonApi uploadMediaFrom: self avatarImageMorph].
 	self headerImageMorph ifNotNil: [

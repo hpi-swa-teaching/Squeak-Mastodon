@@ -1,19 +1,32 @@
 render
 addRequestSection
-	| requestButton logoutButton requestWrapper |
-	self addMorphBack: (TextMorph new contents: 'Enter Mastodon instance. Leave code empty to get authorize link.' asHtmlText).
+	| requestButton logoutButton providerButton requestWrapper |
+	self addMorphBack: (TextMorph new contents: 'Enter server URL. Leave code empty to get authorize link (Mastodon only).' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper := MTUIView setMorph: requestWrapper.
+
+	providerTextField := UiLineEdit new.
+	providerTextField theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString.
+	providerTextField helpText: 'Provider (mastodon or bluesky)'.
+	requestWrapper addMorphBack: providerTextField.
+
+	providerButton := UiPushButton new.
+	providerButton text: 'Apply Provider'.
+	self
+		connect: providerButton
+		signal: #clicked:
+		toSelector: #applyProviderSelection.
+	requestWrapper addMorphBack: providerButton.
 		
 	urlTextField := UiLineEdit new.
 	urlTextField theText: ''.
-	urlTextField helpText: 'Mastodon server URL (with https://)'.
+	urlTextField helpText: 'Server URL (with https://)'.
 	requestWrapper addMorphBack: urlTextField.
 
 	tokenTextField := UiLineEdit new.
 	tokenTextField theText: ''.
-	tokenTextField helpText: 'OAuth code from authorize page'.
+	tokenTextField helpText: 'OAuth code or access token'.
 	requestWrapper addMorphBack: tokenTextField.
 	
 	requestButton := UiPushButton new.

@@ -1,12 +1,27 @@
 actions
 authenticateApplication
 	| baseURL authorizationCode authorizationLink displayAuthorizationLink |
+	(self applyProviderSelection) ifFalse: [^ false].
+	self mastodonApi: MTProviderFactory providerFromSettings.
 	baseURL := (urlTextField theText asString) withBlanksTrimmed.
 	authorizationCode := (tokenTextField theText asString) withBlanksTrimmed.
 
-	((baseURL beginsWith: 'https://') or: [baseURL beginsWith: 'http://'])
-		ifFalse: [baseURL := 'https://', baseURL].
-	(baseURL endsWith: '/') ifTrue: [baseURL := baseURL allButLast].
+	baseURL isEmpty ifFalse: [
+		((baseURL beginsWith: 'https://') or: [baseURL beginsWith: 'http://'])
+			ifFalse: [baseURL := 'https://', baseURL].
+		(baseURL endsWith: '/') ifTrue: [baseURL := baseURL allButLast]].
+
+	(self mastodonApi supportsFeature: #auth)
+		ifFalse: [
+			baseURL isEmpty ifFalse: [
+				self mastodonApi baseURL: baseURL.
+				MTSettingsStore default at: #baseURL put: baseURL].
+			authorizationCode isEmpty ifFalse: [
+				self mastodonApi token: authorizationCode.
+				MTSettingsStore default at: #token put: authorizationCode].
+			resultTextLabel contents: '<i>Stored provider settings.</i>' asHtmlText.
+			^ true].
+
 	self mastodonApi baseURL: baseURL.
 	MTSettingsStore default at: #baseURL put: baseURL.
 

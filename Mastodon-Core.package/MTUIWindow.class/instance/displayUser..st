@@ -1,6 +1,9 @@
 render
 displayUser: aUsername
 |user|
+	self refreshProvider.
+	(self mastodonApi supportsFeature: #profile)
+		ifFalse: [self inform: 'Profiles not supported.'. ^ false].
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	user := self mastodonApi getAccount: aUsername.
 	user isError ifTrue: [ 

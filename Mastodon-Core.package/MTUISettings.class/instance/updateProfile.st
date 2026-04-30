@@ -1,6 +1,8 @@
 initialization
 updateProfile 
 	| text dict |
+	(self mastodonApi supportsFeature: #profileUpdate)
+		ifFalse: [self inform: 'Profile updates not supported.'. ^ false].
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	text := usernameUpdateTextField contents asString.
