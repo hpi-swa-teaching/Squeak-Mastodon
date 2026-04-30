@@ -4,4 +4,11 @@ blueSkyProvider
 	baseURL := MTSettingsStore default at: #baseURL ifAbsent: ['https://bsky.social'].
 	baseURL isEmpty ifTrue: [baseURL := 'https://bsky.social'].
 	token := MTSettingsStore default at: #token ifAbsent: [nil].
-	^ MTBlueSkyApi with: baseURL token: token
+	
+	(blueSkyInstance notNil and: [blueSkyInstance baseURL = baseURL])
+		ifTrue: [
+			blueSkyInstance token: token.
+			^ blueSkyInstance].
+			
+	blueSkyInstance := MTBlueSkyApi with: baseURL token: token.
+	^ blueSkyInstance
