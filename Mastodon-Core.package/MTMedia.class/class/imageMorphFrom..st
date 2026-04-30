@@ -5,16 +5,15 @@ imageMorphFrom: anUrl
 	anUrl isEmpty ifTrue: [^ nil].
 	
 	cachedForm := MTImageCache default imageFormFrom: anUrl.
-	cachedForm ifNotNil: [^ ImageMorph new setNewImageFrom: cachedForm].
+	(cachedForm isKindOf: Form) ifTrue: [^ ImageMorph new setNewImageFrom: cachedForm].
 
 	[
 		doc := HTTPSocket httpGet: anUrl.
-		(doc isKindOf: Error) ifTrue: [
-			Transcript show: 'Failed to download image: ', anUrl; cr.
-			^ nil].
+		((doc isNil) or: [doc isKindOf: Error]) ifTrue: [^ nil].
 		doc binary; reset.
 		form := ImageReadWriter formFromStream: doc.
-		form ifNil: [^ nil].
+		(form isKindOf: Form) ifFalse: [^ nil].
+		
 		MTImageCache default cache: form from: anUrl. 
 		image := ImageMorph new.
 		image setNewImageFrom: form.

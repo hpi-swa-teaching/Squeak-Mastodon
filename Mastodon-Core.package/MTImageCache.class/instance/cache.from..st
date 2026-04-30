@@ -1,5 +1,6 @@
 image
 cache: anImageForm from: anUrl
-	self add: anUrl -> anImageForm.
+	(anImageForm isKindOf: Form) ifFalse: [^ self].
+	self at: anUrl put: anImageForm.
 
 
