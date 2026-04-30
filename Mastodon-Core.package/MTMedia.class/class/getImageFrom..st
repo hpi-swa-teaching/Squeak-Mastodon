@@ -1,6 +1,6 @@
 loading
 getImageFrom: anUrl
-	| doc form image len suffix cachedForm |
+	| doc form image cachedForm |
 	anUrl ifNil: [^ nil].
 	anUrl isEmpty ifTrue: [^ nil].
 	
@@ -13,11 +13,7 @@ getImageFrom: anUrl
 		((doc isNil) or: [doc isKindOf: Error]) ifTrue: [^ nil].
 		doc binary; reset.
 		
-		len := anUrl size.
-		suffix := anUrl copyFrom: len - 2 to: len.
-		
-		suffix = 'jpg' ifTrue: [form := ImageReadWriter formFromStream: doc.].
-		suffix = 'png' ifTrue: [form := PNGReadWriter formFromStream: doc.].
+		form := [ImageReadWriter formFromStream: doc] on: Error do: [nil].
 		
 		(form isKindOf: Form) ifFalse: [^ nil].
 		
