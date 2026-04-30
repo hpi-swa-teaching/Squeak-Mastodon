@@ -9,7 +9,6 @@ getTimelineWithCursor: aCursor
 	[
 		json := self deserialize: response.
 		feed := json at: 'feed' ifAbsent: [#()].
-		Transcript show: 'BlueSky timeline feed items count: ', feed size asString; cr.
 		toots := feed collect: [:item | self tootFromFeedItem: item].
 		^ MTResult value: toots
 	] on: Error do: [:ex |

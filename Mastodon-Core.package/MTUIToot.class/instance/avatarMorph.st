@@ -6,11 +6,12 @@ avatarMorph
 		placeholder := Morph new 
 			extent: 48@48; 
 			color: Color gray;
-			vResizing: #spaceFill;
-			hResizing: #shrinkWrap.
+			vResizing: #rigid;
+			hResizing: #rigid.
 		^ placeholder].
 	image
-		vResizing: #spaceFill;
-		hResizing: #shrinkWrap;
+		extent: 48@48;
+		vResizing: #rigid;
+		hResizing: #rigid;
 		setNewImageFrom: (image form scaledToSize: 48).
 	^ image
