@@ -5,8 +5,15 @@ getTimelineWithCursor: aCursor
 	aCursor ifNotNil: [url := url, '&cursor=', aCursor].
 	response := self getRequest: url.
 	response ifNil: [^ MTResult error: 'BlueSky timeline request failed'].
-	json := self deserialize: response.
-	feed := json at: 'feed' ifAbsent: [#()].
-	Transcript show: 'BlueSky timeline feed items count: ', feed size asString; cr.
-	toots := feed collect: [:item | self tootFromFeedItem: item].
-	^ MTResult value: toots
+	
+	[
+		json := self deserialize: response.
+		feed := json at: 'feed' ifAbsent: [#()].
+		Transcript show: 'BlueSky timeline feed items count: ', feed size asString; cr.
+		toots := feed collect: [:item | self tootFromFeedItem: item].
+		^ MTResult value: toots
+	] on: Error do: [:ex |
+		Transcript show: 'Error processing BlueSky timeline: ', ex description; cr.
+		Transcript show: 'Raw Response: ', response; cr.
+		^ MTResult error: 'BlueSky timeline processing failed'
+	].

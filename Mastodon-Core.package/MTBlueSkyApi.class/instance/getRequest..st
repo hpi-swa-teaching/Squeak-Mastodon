@@ -7,9 +7,9 @@ getRequest: url
 	response isSuccess
 		ifTrue: [
 			Transcript show: 'BlueSky API request successful: ', url; cr.
-			^ response content utf8ToSqueak]
+			^ response content]
 		ifFalse: [
 			Transcript show: 'BlueSky API request failed: ', url; cr.
 			Transcript show: 'HTTP Status: ', response code asString; cr.
-			Transcript show: 'Response: ', response content utf8ToSqueak; cr.
+			Transcript show: 'Response: ', response content; cr.
 			^ nil].
