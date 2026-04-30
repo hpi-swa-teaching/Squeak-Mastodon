@@ -22,7 +22,13 @@ exchangeAuthorizationCode: anAuthorizationCode
 		content: jsonString
 		type: 'application/json'.
 		
-	response isSuccess ifFalse: [^ nil].
+	response isSuccess ifFalse: [
+		Transcript show: 'Bluesky login failed. HTTP Status: ', response code asString; cr.
+		Transcript show: 'Response: ', response content; cr.
+		^ nil].
+	
 	json := self deserialize: response content utf8ToSqueak.
 	self token: (json at: 'accessJwt' ifAbsent: [nil]).
+	Transcript show: 'Bluesky login successful for handle: ', handle; cr.
+	Transcript show: 'Token: ', self token asString; cr.
 	^ self token

@@ -10,5 +10,14 @@ applyProviderSelection
 			^ false].
 	MTSettingsStore default at: #provider put: providerKey asSymbol.
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
+	
+	providerKey = 'bluesky' ifTrue: [
+		urlTextField helpText: 'Bluesky Handle (e.g. alice.bsky.social)'.
+		tokenTextField helpText: 'App Password'.
+	] ifFalse: [
+		urlTextField helpText: 'Server URL (with https://)'.
+		tokenTextField helpText: 'OAuth code or access token'.
+	].
+	
 	resultTextLabel contents: ('<i>Provider set to ', providerKey, '.</i>') asHtmlText.
 	^ true

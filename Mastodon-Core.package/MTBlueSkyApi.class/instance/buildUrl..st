@@ -1,3 +1,3 @@
 helpers
 buildUrl: aString
-	^ self baseURL, aString
+	^ 'https://bsky.social', aString
