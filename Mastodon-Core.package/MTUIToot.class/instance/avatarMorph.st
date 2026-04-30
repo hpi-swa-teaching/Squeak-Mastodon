@@ -4,6 +4,7 @@ avatarMorph
 	container := Morph new 
 		extent: 48@48; 
 		color: (Color gray alpha: 0.1);
+		layoutPolicy: TableLayout new;
 		vResizing: #rigid;
 		hResizing: #rigid.
 	
