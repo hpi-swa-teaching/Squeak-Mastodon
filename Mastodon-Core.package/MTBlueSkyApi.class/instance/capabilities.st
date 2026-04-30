@@ -1,3 +1,3 @@
 accessing
 capabilities
-	^ #(timeline) asSet
+	^ #(timeline auth) asSet

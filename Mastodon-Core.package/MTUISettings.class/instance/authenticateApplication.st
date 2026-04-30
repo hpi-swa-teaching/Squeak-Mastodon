@@ -30,20 +30,20 @@ authenticateApplication
 			self mastodonApi token: nil.
 			self mastodonApi registerApplication.
 			(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
-				resultTextLabel contents: '<i>Could not register OAuth app on this instance.</i>' asHtmlText.
+				resultTextLabel contents: '<i>Could not register app on this instance.</i>' asHtmlText.
 				^ false].
-			authorizationLink := self authorizationLinkFor: baseURL clientID: self mastodonApi clientID.
+			authorizationLink := self mastodonApi authorizationLinkFor: baseURL.
 			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
-			resultTextLabel contents: ('<i>Open link, authorize app, then paste OAuth code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
+			resultTextLabel contents: ('<i>Open link, authorize app, then paste code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
 
 	self mastodonApi token: nil.
 	(self mastodonApi clientID isNil or: [self mastodonApi clientSecret isNil]) ifTrue: [
-		resultTextLabel contents: '<i>No app registration found in this session. Click "Login / Get Link" to register an app for this instance, then paste the OAuth code.</i>' asHtmlText.
+		resultTextLabel contents: '<i>No app registration found in this session. Click "Login / Get Link" to register an app for this instance, then paste the code.</i>' asHtmlText.
 		^ false].
 	self mastodonApi exchangeAuthorizationCode: authorizationCode.
 	self mastodonApi token ifNil: [
-		resultTextLabel contents: '<i>OAuth code exchange failed. Paste code from authorize flow.</i>' asHtmlText.
+		resultTextLabel contents: '<i>Code exchange failed. Paste code from authorize flow.</i>' asHtmlText.
 		^ false].
 
 	[
@@ -51,5 +51,5 @@ authenticateApplication
 		MTSettingsStore default at: #token put: self mastodonApi token.
 		^ true
 	] on: Error do: [
-		resultTextLabel contents: '<i>OAuth code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
+		resultTextLabel contents: '<i>Code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
 		^ false]
