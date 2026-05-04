@@ -4,7 +4,8 @@ initialize
 	
 	loadedViews := Dictionary new.
 	menuMorph := MTUIMenu new.
-	scrollMorph := MTUIScrollPane new.	
+	scrollMorph := MTUIScrollPane new.
+	
 	MTSettingsStore reset.
 	
 	self mastodonApi: (MTMastodonApi with:

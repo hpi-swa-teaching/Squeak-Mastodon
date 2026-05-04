@@ -1,6 +1,9 @@
 {
 	"class" : {
-		"default" : "s1m_ba 5/4/2026 09:34",
+		"default" : "timbeier 5/4/2026 11:53",
 		"reset" : "mm 5/30/2017 11:50" },
 	"instance" : {
+		"demoToken" : "timbeier 5/3/2026 19:21",
+		"demoURL" : "timbeier 5/3/2026 19:19",
+		"initialize:" : "timbeier 5/4/2026 11:54",
 		"tootNum" : "PG 5/28/2017 19:00" } }
