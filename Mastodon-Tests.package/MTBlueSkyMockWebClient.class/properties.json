@@ -1,0 +1,20 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"getResponses",
+		"headers",
+		"postResponse",
+		"lastGetUrl",
+		"lastPostUrl",
+		"lastPostContent",
+		"lastPostType" ],
+	"name" : "MTBlueSkyMockWebClient",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
