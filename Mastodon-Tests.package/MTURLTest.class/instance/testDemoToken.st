@@ -1,4 +1,4 @@
-demo
+as yet unclassified
 testDemoToken
 	| mastodonApi |
 	MTSettingsStore reset.

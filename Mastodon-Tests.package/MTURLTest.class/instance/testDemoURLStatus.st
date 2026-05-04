@@ -1,4 +1,4 @@
-demo
+as yet unclassified
 testDemoURLStatus
 	| mastodonApi |
 	mastodonApi := MTMastodonApi new.
