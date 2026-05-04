@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testDemoToken" : "timbeier 5/4/2026 07:56",
+		"testDemoURLStatus" : "timbeier 5/4/2026 08:39",
 		"testFromJsonObject" : "mm 7/3/2017 18:49" } }

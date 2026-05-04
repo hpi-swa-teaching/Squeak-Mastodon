@@ -1,6 +1,6 @@
 render
 addRequestSection
-	| requestButton logoutButton requestWrapper |
+	| requestButton logoutButton requestWrapper demoButton |
 	self addMorphBack: (TextMorph new contents: 'Enter Mastodon email and password' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
@@ -39,6 +39,15 @@ addRequestSection
  		toSelector: #logout.
 	requestWrapper addMorphBack: logoutButton.
 	self addMorphBack: requestWrapper.
+	
+	demoButton := UiPushButton new.
+	demoButton text: 'Demo'.
+	self
+		connect: demoButton
+ 		signal: #clicked:
+ 		toSelector: #loginToDemo.
+	requestWrapper addMorphBack: demoButton.
+	
 	self addResultSection.
 	resultTextLabel contents: ' '.
 	
