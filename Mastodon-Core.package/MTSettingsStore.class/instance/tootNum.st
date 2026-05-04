@@ -1,3 +1,3 @@
-constant
+constants
 tootNum
 	^ 5
