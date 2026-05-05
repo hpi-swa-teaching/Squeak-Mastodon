@@ -1,14 +1,12 @@
 updating
 loadMoreToot
-	| newToots minValue |
+	| newToots |
 	self mastodonApi isAuthenticated ifFalse: [^false].
-			
-	minValue := self minID.
-	minValue isNumber ifTrue: [minValue := minValue - 1].
-	newToots := mastodonApi getPrivateTimelineMax: minValue.
-	
+
+	newToots := mastodonApi getPrivateTimelineMax: (self minID - 1).
+
 	newToots isError  
 		ifTrue: [self inform: 'An error occurred'. 
 				^ false].
-			
+
 	self appendToots: newToots value.

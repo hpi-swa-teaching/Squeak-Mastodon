@@ -13,9 +13,5 @@ initialize
 		addMenuMorph;
 		addScrollMorph.
 	self mastodonApi isAuthenticated
-		ifTrue: [
-			(self mastodonApi supportsFeature: #post)
-				ifTrue: [self loadNewTootView]
-				ifFalse: [self loadHomeTimelineView]]
+		ifTrue: [self loadNewTootView]
 		ifFalse: [self loadSettingsView]
-	

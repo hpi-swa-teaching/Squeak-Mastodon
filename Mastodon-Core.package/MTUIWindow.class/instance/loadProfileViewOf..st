@@ -2,8 +2,6 @@ views
 loadProfileViewOf: aMTUser 
 	| userTimeline |
 	self refreshProvider.
-	(self mastodonApi supportsFeature: #profile)
-		ifFalse: [self inform: 'Profiles not supported.'. ^ false].
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	userTimeline := MTUIUserTimeline new.
 	userTimeline id: aMTUser id.

@@ -2,8 +2,6 @@ views
 loadHomeTimelineView
 	| homeTimelineView |
 	self refreshProvider.
-	(self mastodonApi supportsFeature: #timeline)
-		ifFalse: [self inform: 'Timeline not supported.'. ^ false].
 	homeTimelineView := MTUIHomeTimeline new.
 							
 	homeTimelineView mastodonApi: (self mastodonApi).

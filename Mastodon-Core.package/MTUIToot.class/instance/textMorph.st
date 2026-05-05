@@ -9,7 +9,8 @@ textMorph
 		'<i><font color="#555555">' , createdAt , '</font></i>')).
 	text 
 		wrapFlag: true;
-		hResizing: #spaceFill;
-		vResizing: #shrinkWrap.
+		layoutPolicy: TableLayout new;
+		listDirection: #leftToRight;
+		hResizing: #spaceFill.
 		
 	^ text
