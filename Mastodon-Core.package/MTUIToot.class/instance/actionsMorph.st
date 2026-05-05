@@ -4,7 +4,7 @@ actionsMorph
 	actions 
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		hResizing: #spaceFill;
+		hResizing: #rigid;
 		vResizing: #shrinkWrap;
 		layoutInset: 0; 
 		cellInset: 1;

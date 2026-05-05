@@ -9,13 +9,14 @@ contentMorph
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 0; 
-		cellInset: 10;
+		cellInset: 60@0;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
-		color: Color transparent;
-		addMorphBack: self textMorph.
-	imageMorph := self imageMorph.
-	imageMorph ifNotNil:  [content addMorphBack: imageMorph].
-	content addMorphBack: self actionsMorph.
-		
-	^ content
+		cellPositioning: #topLeft;
+		color: Color transparent.
+		imageMorph := self imageMorph.
+		imageMorph ifNotNil:  [content addMorphBack: imageMorph].
+		content addMorphBack: self textMorph.
+		content addMorphBack: self actionsMorph.
+	
+	^	 content
