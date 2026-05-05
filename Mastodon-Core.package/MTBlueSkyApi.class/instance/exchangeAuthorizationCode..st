@@ -29,6 +29,4 @@ exchangeAuthorizationCode: anAuthorizationCode
 	
 	json := self deserialize: response content utf8ToSqueak.
 	self token: (json at: 'accessJwt' ifAbsent: [nil]).
-	Transcript show: 'Bluesky login successful for handle: ', handle; cr.
-	Transcript show: 'Token: ', self token asString; cr.
 	^ self token
