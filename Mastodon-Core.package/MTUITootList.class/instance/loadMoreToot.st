@@ -6,7 +6,7 @@ loadMoreToot
 	newToots := mastodonApi getPrivateTimelineMax: (self minID - 1).
 
 	newToots isError  
-		ifTrue: [self inform: 'An error occurred'. 
+		ifTrue: [self inform: (newToots error ifNil: ['An error occurred']). 
 				^ false].
 
 	self appendToots: newToots value.
