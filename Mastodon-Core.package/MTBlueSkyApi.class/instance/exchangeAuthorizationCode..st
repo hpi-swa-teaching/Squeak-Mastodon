@@ -15,7 +15,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 		password := anAuthorizationCode.
 	].
 	
-	url := 'https://bsky.social/xrpc/com.atproto.server.createSession'.
+	url := self buildUrl: '/xrpc/com.atproto.server.createSession'.
 	jsonString := '{ "identifier": "', handle, '", "password": "', password, '" }'.
 	
 	response := webClient httpPost: url
@@ -23,8 +23,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 		type: 'application/json'.
 		
 	response isSuccess ifFalse: [
-		Transcript show: 'Bluesky login failed. HTTP Status: ', response code asString; cr.
-		Transcript show: 'Response: ', response content; cr.
+		self inform: 'Bluesky login failed. HTTP Status: ', response code asString, '. Response: ', response content.
 		^ nil].
 	
 	json := self deserialize: response content utf8ToSqueak.

@@ -6,6 +6,5 @@ getRequest: url
 	response isSuccess
 		ifTrue: [^ response content]
 		ifFalse: [
-			Transcript show: 'BlueSky API request failed: ', url; cr.
-			Transcript show: 'HTTP Status: ', response code asString; cr.
+			self inform: 'BlueSky API request failed: ', url, '. HTTP Status: ', response code asString.
 			^ nil].
