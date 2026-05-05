@@ -23,7 +23,6 @@ exchangeAuthorizationCode: anAuthorizationCode
 		type: 'application/json'.
 		
 	response isSuccess ifFalse: [
-		self inform: 'Bluesky login failed. HTTP Status: ', response code asString, '. Response: ', response content.
 		^ nil].
 	
 	json := self deserialize: response content utf8ToSqueak.
