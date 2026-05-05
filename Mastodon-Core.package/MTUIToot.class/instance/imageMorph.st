@@ -1,28 +1,15 @@
 render
 imageMorph
-	| container url |
-	url := (self toot media at: 1 ifAbsent: [ ^ nil ]) previewUrl.
-	container := Morph new
-		color: (Color gray alpha: 0.05);
+	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) previewUrl).
+	image
+		layoutPolicy: TableLayout new;
+		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		extent: 300@200;
-		layoutPolicy: TableLayout new.
-
-	[ | img |
-		img := MTMedia imageMorphFrom: url.
-		(img notNil and: [img form notNil]) ifTrue: [
-			Project current addDeferredUIMessage: [
-				img
-					hResizing: #shrinkWrap;
-					vResizing: #shrinkWrap;
-					setNewImageFrom: (img form scaledToSize: 300).
-				container 
-					color: Color transparent;
-					addMorph: img;
-					extent: img extent.
-			].
-		].
-	] fork.
-		
-	^ container
+		layoutInset: 0; 
+		cellInset: 10;
+		wrapCentering: #topLeft;
+		listCentering: #topLeft;
+		color: Color transparent;
+		setNewImageFrom: (image form scaledToSize: 300).
+	^ image
