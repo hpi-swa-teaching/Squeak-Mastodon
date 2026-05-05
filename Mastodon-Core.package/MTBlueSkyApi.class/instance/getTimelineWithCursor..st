@@ -12,7 +12,5 @@ getTimelineWithCursor: aCursor
 		toots := feed collect: [:item | self tootFromFeedItem: item].
 		^ MTResult value: toots
 	] on: Error do: [:ex |
-		Transcript show: 'Error processing BlueSky timeline: ', ex description; cr.
-		Transcript show: 'Raw Response: ', response; cr.
 		^ MTResult error: 'BlueSky timeline processing failed'
 	].
