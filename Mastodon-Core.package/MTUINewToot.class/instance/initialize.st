@@ -6,6 +6,8 @@ initialize
 		 addNewTootTextarea;
 		 addNewTootButtons;
 		 addImageButton;
+		addNewScheduleArea;
+		addNewScheduleButton;
 		
 		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString , '/500') asHtmlText);
 		 addMorph: tootSizeLabel;
