@@ -1,5 +1,6 @@
 views
 loadNewTootViewWithAccount: anAccountID
+	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	self 
