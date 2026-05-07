@@ -1,6 +1,7 @@
 render
 displayUser: aUsername
 |user|
+	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	user := self mastodonApi getAccount: aUsername.
 	user isError ifTrue: [ 

@@ -1,6 +1,7 @@
 views
 loadSearchView
 	| searchView |
+	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	searchView := MTUISearch new.
 							

@@ -6,7 +6,7 @@ toot
 	text size > 500
 		ifTrue: [self inform: 'Not more than 500 characters allowed.'.
 			^ false].
-	
+
 	menu := DialogWindow new.
 	menu title: 'Visibility'.
 	menu createButton: 'public' value: 'public'.
@@ -15,9 +15,10 @@ toot
 	menu createButton: 'direct' value: 'direct'.
 	menu createCancelButton.
 	self addMorph: menu. 
-	
+
 	visibility := menu getUserResponse.
 	imageMorph
 		ifNil: [mastodonApi toot: text withVisibility: visibility]
 		ifNotNil: [self tootImagewithVisibility: visibility].
+
 	tootTextArea contents: ' '.
