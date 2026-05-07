@@ -1,3 +1,4 @@
+loading
 imageMorphFrom: anUrl
 	|doc form image cachedForm providerKey fetchUrl|
 
@@ -24,4 +25,5 @@ imageMorphFrom: anUrl
 
 	image := ImageMorph new.
 	image setNewImageFrom: form.
+	
 	^ image
