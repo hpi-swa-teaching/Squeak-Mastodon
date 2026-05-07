@@ -1,7 +1,16 @@
 loading
 imageMorphFrom: anUrl
-|doc form image cachedForm|
+|doc form image cachedForm providerKey placeholderForm|
 	anUrl ifNil: [^nil].
+
+	providerKey := MTSettingsStore default at: #provider ifAbsent: [#mastodon].
+	providerKey isString ifTrue: [providerKey := providerKey asLowercase asSymbol].
+	providerKey = #bluesky ifTrue: [
+		placeholderForm := Form extent: 48@48 depth: 32.
+		placeholderForm fillColor: Color lightGray.
+		image := ImageMorph new.
+		image setNewImageFrom: placeholderForm.
+		^ image].
 
 	cachedForm := MTImageCache default imageFormFrom: anUrl.
 	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
