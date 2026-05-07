@@ -1,5 +1,5 @@
 imageMorphFrom: anUrl
-	| doc form image cachedForm providerKey fetchUrl |
+	|doc form image cachedForm providerKey fetchUrl|
 
 	anUrl ifNil: [ ^ nil ].
 
