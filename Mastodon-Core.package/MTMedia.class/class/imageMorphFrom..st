@@ -12,7 +12,7 @@ imageMorphFrom: anUrl
 	providerKey isString ifTrue: [ providerKey := providerKey asLowercase asSymbol ].
 
 	providerKey = #bluesky ifTrue: [
-		fetchUrl := 'https://webp-converter.dropping.workers.dev?url=', anUrl
+		fetchUrl := 'https://webp-converter.dropping.workers.dev?url=', anUrl.
 	].
 
 	doc := HTTPSocket httpGet: fetchUrl.
