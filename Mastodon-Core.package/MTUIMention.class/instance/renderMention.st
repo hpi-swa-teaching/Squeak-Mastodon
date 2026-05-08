@@ -8,10 +8,11 @@ renderMention
 	self mentionMorphs: OrderedCollection new.
 	
 	self mention do: [:mention |
-		mention status ifNotNil: [ | textMorph spacingMorph |
+		mention status ifNotNil: [
+			| textMorph spacingMorph |
 			textMorph := TextMorph new.
 			
-			textMorph contentsWrapped: (MTUtils asTextFromHtml: '<b>@', mention account username, '</b><br>', mention status content).
+			textMorph contentsWrapped: (MTUtils asTextFromHtml: ('<b>@', mention account username, '</b><br>', mention status content,'<br>', (MTUtils relativeTimeString: (MTUtils timestampFromString: mention status createdAt)))).
 			
 			textMorph
 				width: 400;
