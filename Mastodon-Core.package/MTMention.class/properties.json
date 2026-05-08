@@ -6,12 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"accounts",
-		"status",
-		"mentionMorphs",
-		"mention" ],
-	"name" : "MTUIMention",
+		"id",
+		"type",
+		"createdAt",
+		"account",
+		"status" ],
+	"name" : "MTMention",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "MTMastodonModel",
 	"type" : "normal" }
