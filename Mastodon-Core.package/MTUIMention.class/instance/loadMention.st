@@ -6,4 +6,5 @@ loadMention
 	
 	self mention: result value.
 	
-	self renderMention
+	self renderMention.
+	self addArchiveNavigationButton

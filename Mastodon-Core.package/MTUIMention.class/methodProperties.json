@@ -2,18 +2,17 @@
 	"class" : {
 		"with:" : "Lian 5/7/2026 21:25" },
 	"instance" : {
-		"accounts" : "Lian 5/7/2026 20:47",
-		"accounts:" : "Lian 5/7/2026 20:47",
+		"addArchiveNavigationButton" : "Lian 5/9/2026 15:34",
 		"addMentionMorph:" : "Lian 5/7/2026 21:21",
 		"addMentionSection" : "Lian 5/7/2026 21:34",
-		"initialize" : "Lian 5/7/2026 21:23",
-		"loadMention" : "Lian 5/7/2026 22:09",
+		"archiveTootWithId:fromSender:" : "Lian 5/9/2026 14:26",
+		"initialize" : "Lian 5/9/2026 15:30",
+		"loadMention" : "Lian 5/9/2026 15:33",
 		"mastodonApi" : "Lian 5/7/2026 21:08",
 		"mastodonApi:" : "Lian 5/7/2026 21:08",
 		"mention" : "Lian 5/7/2026 21:26",
 		"mention:" : "Lian 5/7/2026 21:26",
 		"mentionMorphs" : "Lian 5/7/2026 21:18",
 		"mentionMorphs:" : "Lian 5/7/2026 21:18",
-		"renderMention" : "Silver 5/8/2026 14:35",
-		"status" : "Lian 5/7/2026 20:47",
-		"status:" : "Lian 5/7/2026 20:47" } }
+		"renderMention" : "Lian 5/9/2026 15:04",
+		"replyTootWithId:fromSender:" : "Lian 5/9/2026 14:26" } }

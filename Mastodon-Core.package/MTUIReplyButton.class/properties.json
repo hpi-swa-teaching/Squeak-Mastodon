@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mentionMorphs",
-		"mention" ],
-	"name" : "MTUIMention",
+		 ],
+	"name" : "MTUIReplyButton",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }

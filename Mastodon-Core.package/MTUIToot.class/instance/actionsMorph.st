@@ -1,17 +1,20 @@
 render
 actionsMorph
+
 	actions := Morph new.
-	actions 
+	actions
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		layoutInset: 0; 
+		layoutInset: 0;
 		cellInset: 1;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self repostButton render ;
-		addMorphBack: self heartButton render.
-		
+		addMorphBack: self repostButton render;
+		addMorphBack: self heartButton render;
+		addMorphBack: self replyButton render.
+	showArchiveButton ifTrue: [actions addMorphBack: self archiveButton render].
+	
 	^ actions

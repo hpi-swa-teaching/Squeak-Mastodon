@@ -8,7 +8,7 @@
 	"instvars" : [
 		"mentionMorphs",
 		"mention" ],
-	"name" : "MTUIMention",
+	"name" : "MTUIArchive",
 	"pools" : [
 		 ],
 	"super" : "MTUIView",

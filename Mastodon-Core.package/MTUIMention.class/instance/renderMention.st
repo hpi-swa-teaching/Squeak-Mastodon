@@ -8,23 +8,28 @@ renderMention
 	self mentionMorphs: OrderedCollection new.
 	
 	self mention do: [:mention |
-		mention status ifNotNil: [
-			| textMorph spacingMorph |
-			textMorph := TextMorph new.
+		mention status ifNotNil: [ | tootMorph spacingMorph |
+			tootMorph := MTUIToot for: mention status.
+			tootMorph showArchiveButton: true.
+			tootMorph render.
 			
-			textMorph contentsWrapped: (MTUtils asTextFromHtml: ('<b>@', mention account username, '</b><br>', mention status content,'<br>', (MTUtils relativeTimeString: (MTUtils timestampFromString: mention status createdAt)))).
+			tootMorph replyButton
+				target: self;
+				actionSelector: #replyTootWithId:fromSender:;
+				arguments: (Array with: mention status id with: tootMorph replyButton).
 			
-			textMorph
-				width: 400;
-				lock.
+			tootMorph archiveButton
+				target: self;
+				actionSelector: #archiveTootWithId:fromSender:;
+				arguments: (Array with: mention status id with: tootMorph archiveButton).
 			
-			spacingMorph := Morph new color: Color veryVeryLightGray.
-			
-			spacingMorph
+			spacingMorph := Morph new
+				color: Color veryVeryLightGray;
 				height: 1;
-				hResizing: #spaceFill.
+				hResizing: #spaceFill;
+				yourself.
 			
-			self addMorphBack: textMorph.
-			self addMentionMorph: textMorph.
+			self addMorphBack: tootMorph.
+			self addMentionMorph: tootMorph.
 			
 			self addMorphBack: spacingMorph]]
