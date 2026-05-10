@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"id",
+		"scheduledAt",
+		"params",
+		"media" ],
+	"name" : "MTScheduledToot",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }
