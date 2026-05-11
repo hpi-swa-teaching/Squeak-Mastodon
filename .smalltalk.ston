@@ -4,8 +4,7 @@ SmalltalkCISpec {
       #baseline : 'Mastodon',
       #directory : '',
       #platforms : [ #squeak ],
-      #load : [ 'tests' ],
-      #useLatestMetacello : true
+      #load : [ 'tests' ]
     }
   ],
   #testing : {
