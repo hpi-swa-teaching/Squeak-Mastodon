@@ -1,4 +1,4 @@
-tests
+test
 testClientSecret
 	| API |
 	API := MTMastodonApi new.

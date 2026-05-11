@@ -39,6 +39,7 @@ addRequestSection
  		toSelector: #logout.
 	requestWrapper addMorphBack: logoutButton.
 	self addMorphBack: requestWrapper.
+	
 	self addResultSection.
 	resultTextLabel contents: ' '.
 	

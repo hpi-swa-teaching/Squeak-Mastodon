@@ -1,4 +1,4 @@
-tests
+test
 testReset 
 	| API |
 	API := MTMastodonApi new.

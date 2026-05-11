@@ -1,4 +1,4 @@
-tests
+test
 testDeserializeAccount
 	| API json result |
 	API := MTMastodonApi new.

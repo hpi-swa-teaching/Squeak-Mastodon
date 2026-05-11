@@ -1,4 +1,4 @@
-tests
+test
 testDeserializeSearch
 	| API json result |
 	API := MTMastodonApi new.

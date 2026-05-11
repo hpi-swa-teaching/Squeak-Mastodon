@@ -1,4 +1,4 @@
-tests
+test
 testUsername
 	| API |
 	API := MTMastodonApi new.

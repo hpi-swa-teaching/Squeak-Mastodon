@@ -7,6 +7,8 @@
 		"testBaseURL" : "fs 8/3/2017 16:11",
 		"testClientID" : "fs 8/3/2017 16:12",
 		"testClientSecret" : "fs 8/3/2017 16:13",
+		"testDemoToken" : "timbeier 5/11/2026 12:43",
+		"testDemoURLStatus" : "timbeier 5/11/2026 12:47",
 		"testDeserializeAccount" : "fs 8/3/2017 16:52",
 		"testDeserializeSearch" : "fs 8/3/2017 16:48",
 		"testPassword" : "fs 8/3/2017 16:10",

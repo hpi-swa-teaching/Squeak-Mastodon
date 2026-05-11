@@ -1,4 +1,4 @@
-tests
+test
 testPassword
 	| API |
 	API := MTMastodonApi new.
