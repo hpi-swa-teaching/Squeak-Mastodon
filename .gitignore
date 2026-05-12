@@ -16,3 +16,5 @@ SqueakDebug.log
 # Metacello-github cache
 /github-cache
 github-*.zip
+
+docs.md
