@@ -12,7 +12,6 @@ actionsMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self repostButton render ;
-		addMorphBack: self heartButton render;
-		addMorphBack: self followButton render.
+		addMorphBack: self heartButton render.
 		
 	^ actions
