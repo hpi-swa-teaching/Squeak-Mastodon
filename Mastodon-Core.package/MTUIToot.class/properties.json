@@ -1,11 +1,9 @@
 {
-	"category" : "Mastodon-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "LS 8/4/2017 16:01",
-	"instvars" : [
+	"category": "Mastodon-Core",
+	"classinstvars": [],
+	"classvars": [],
+	"commentStamp": "LS 8/4/2017 16:01",
+	"instvars": [
 		"avatar",
 		"image",
 		"content",
@@ -14,9 +12,10 @@
 		"heartButton",
 		"toot",
 		"repostButton",
-		"followButton" ],
-	"name" : "MTUIToot",
-	"pools" : [
-		 ],
-	"super" : "Morph",
-	"type" : "normal" }
+		"followButton"
+	],
+	"name": "MTUIToot",
+	"pools": [],
+	"super": "Morph",
+	"type": "normal"
+}

@@ -1,11 +1,9 @@
 {
-	"category" : "Mastodon-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "PG 6/26/2017 15:45",
-	"instvars" : [
+	"category": "Mastodon-Core",
+	"classinstvars": [],
+	"classvars": [],
+	"commentStamp": "PG 6/26/2017 15:45",
+	"instvars": [
 		"id",
 		"createdAt",
 		"content",
@@ -21,9 +19,10 @@
 		"inReplyToAccountID",
 		"favourited",
 		"followedByUser",
-		"followUri" ],
-	"name" : "MTToot",
-	"pools" : [
-		 ],
-	"super" : "MTMastodonModel",
-	"type" : "normal" }
+		"followUri"
+	],
+	"name": "MTToot",
+	"pools": [],
+	"super": "MTMastodonModel",
+	"type": "normal"
+}
