@@ -11,7 +11,6 @@
 		"testAccountFromAuthorMapsProfile" : "LZ 5/4/2026 16:50",
 		"testAuthorFeedRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
 		"testAuthorizationHelpers" : "LZ 5/4/2026 16:50",
-		"testCapabilitiesAdvertiseTimelineAndAuth" : "LZ 5/4/2026 16:50",
 		"testClassConstructorSetsBaseURLAndToken" : "LZ 5/4/2026 16:50",
 		"testDeserializeJson" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeParsesHandleAndPassword" : "LZ 5/4/2026 16:50",
