@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "MTUIHomeTimeline",
+		"title",
+		"content" ],
+	"name" : "MTReplyTemplate",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "MTMastodonModel",
 	"type" : "normal" }
