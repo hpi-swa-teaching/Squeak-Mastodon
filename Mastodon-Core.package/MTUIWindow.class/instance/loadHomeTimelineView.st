@@ -1,6 +1,7 @@
 views
 loadHomeTimelineView
 	| homeTimelineView |
+	self refreshProvider.
 	homeTimelineView := MTUIHomeTimeline new.
 							
 	homeTimelineView mastodonApi: (self mastodonApi).
