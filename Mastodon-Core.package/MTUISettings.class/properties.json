@@ -8,8 +8,7 @@
 	"instvars" : [
 		"resultTextLabel",
 		"urlTextField",
-		"passwordTextField",
-		"usernameTextField",
+		"tokenTextField",
 		"usernameUpdateTextField",
 		"descriptionTextField",
 		"usernameSizeLabel",
