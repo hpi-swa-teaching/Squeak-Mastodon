@@ -1,5 +1,6 @@
 render
 actionsMorph
+	actions ifNotNil: [^ actions].
 	actions := Morph new.
 	actions 
 		layoutPolicy: TableLayout new;
