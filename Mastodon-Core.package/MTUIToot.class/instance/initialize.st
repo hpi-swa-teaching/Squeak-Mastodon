@@ -5,3 +5,4 @@ initialize
 	
 	self repostButton: MTUIRepostButton new.
 	self heartButton: MTUIStarButton new.
+	self followButton: MTUIFollowButton new.

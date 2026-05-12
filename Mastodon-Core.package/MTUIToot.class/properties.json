@@ -13,7 +13,8 @@
 		"actions",
 		"heartButton",
 		"toot",
-		"repostButton" ],
+		"repostButton",
+		"followButton" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],

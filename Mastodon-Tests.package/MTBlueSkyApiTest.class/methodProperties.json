@@ -17,6 +17,9 @@
 		"testExchangeAuthorizationCodeParsesHandleAndPassword" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeReturnsNilOnFailure" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeStoresToken" : "LZ 5/4/2026 16:50",
+		"testFollowCreatesFollowRecord" : "AE 5/12/2026 12:00",
+		"testFollowReturnsErrorWhenSessionFails" : "AE 5/12/2026 12:00",
+		"testGetCurrentDidReturnsDidFromSession" : "AE 5/12/2026 12:00",
 		"testGetPrivateTimelineShowsFeed" : "LZ 5/4/2026 16:50",
 		"testGetPrivateTimelineVariantsUseTimelineEndpoint" : "LZ 5/4/2026 16:50",
 		"testGetStatusesShowsAuthorFeed" : "LZ 5/4/2026 16:50",
@@ -24,4 +27,8 @@
 		"testIsAuthenticatedWithToken" : "LZ 5/4/2026 16:50",
 		"testTimelineRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
 		"testTootFromFeedItemMapsPost" : "LZ 5/4/2026 16:50",
+		"testTootFromFeedItemExtractsFollowStatus" : "AE 5/12/2026 12:00",
+		"testTootFromFeedItemNoFollowStatus" : "AE 5/12/2026 12:00",
+		"testUnfollowDeletesFollowRecord" : "AE 5/12/2026 12:00",
+		"testUnfollowReturnsErrorForInvalidUri" : "AE 5/12/2026 12:00",
 		"testVerifyCredentialsReturnsCurrentAccount" : "LZ 5/4/2026 16:50" } }

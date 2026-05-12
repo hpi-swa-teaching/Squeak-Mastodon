@@ -19,7 +19,9 @@
 		"favouritesCount",
 		"inReplyToID",
 		"inReplyToAccountID",
-		"favourited" ],
+		"favourited",
+		"followedByUser",
+		"followUri" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],
