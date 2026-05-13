@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user" ],
+	"name" : "MTReplyTemplateAccess",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
