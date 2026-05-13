@@ -13,6 +13,6 @@ render
 		color: Color white;
 		
 		addMorphBack: self avatarMorph;
-		addMorphBack: self contentMorph.
+		addMorphBack: self postMorph.
 		
 self layoutChanged.
