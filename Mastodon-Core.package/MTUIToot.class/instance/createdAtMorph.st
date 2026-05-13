@@ -6,8 +6,8 @@ createdAtMorph
 	createdAt 
 		wrapFlag: true;
 		autoFit: true;
-		layoutPolicy: TableLayout new;
+		layoutPolicy: ProportionalLayout;
  		listDirection: #leftToRight;
-		hResizing: #spaceFill.
+		hResizing: #shrinkWrap.
 		
 	^ createdAt

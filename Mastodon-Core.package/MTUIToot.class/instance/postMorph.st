@@ -1,15 +1,15 @@
 render
 postMorph
 	| contentMorph reblogMorph imageMorph createdAtMorph |
-	post := Morph new.
+	post := AlignmentMorph new.
 	post 
 		layoutPolicy: TableLayout new;
 		"listDirection: #topToBottom;"
 		wrapDirection: #topToBottom;
 		hResizing: #rigid;
 		vResizing: #rigid;
-		layoutInset: 50@0; 
-		cellInset: 10;
+		layoutInset: 0; 
+		cellInset: 60@0;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
