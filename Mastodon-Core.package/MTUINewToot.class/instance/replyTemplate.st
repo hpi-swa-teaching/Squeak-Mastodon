@@ -1,6 +1,6 @@
 reply-template
 replyTemplate
-	| templateTitleText templateContentText |
+	| templateTitleText templateContentText replyTemplate localReplyTemplateAccess |
 	
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	templateTitleText := replyTemplateTitle contents asString.
@@ -18,4 +18,13 @@ replyTemplate
 	templateContentText size > 500
 		ifTrue: [self inform: 'Not more than 500 characters allowed.'.
 			^ false].
+		
+	replyTemplate := MTReplyTemplate new.
+	replyTemplate title: templateTitleText.
+	replyTemplate content: templateContentText.
+	
+	localReplyTemplateAccess := MTReplyTemplateAccess new.	
+	localReplyTemplateAccess user: self mastodonApi.
+	localReplyTemplateAccess writeTemplate: replyTemplate.
+	
 	^ true
