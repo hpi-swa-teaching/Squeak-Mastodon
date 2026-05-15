@@ -12,5 +12,4 @@ imageMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		setNewImageFrom: (image form scaledToSize: 300).
-		
 	^ image
