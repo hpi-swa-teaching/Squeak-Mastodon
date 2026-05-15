@@ -27,4 +27,7 @@ replyTemplate
 	localReplyTemplateAccess user: self mastodonApi.
 	localReplyTemplateAccess writeTemplate: replyTemplate.
 	
+	replyTemplateTitle contents: ''.
+	replyTemplateTextArea contents: ''.
+	
 	^ true
