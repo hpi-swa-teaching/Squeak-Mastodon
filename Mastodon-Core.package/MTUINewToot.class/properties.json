@@ -9,7 +9,11 @@
 		"tootTextArea",
 		"imageTextArea",
 		"imageMorph",
-		"tootSizeLabel" ],
+		"tootSizeLabel",
+		"replyTemplateContentSizeLabel",
+		"replyTemplateTitleSizeLabel",
+		"replyTemplateTextArea",
+		"replyTemplateTitle" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

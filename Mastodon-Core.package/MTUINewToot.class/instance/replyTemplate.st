@@ -1,14 +1,21 @@
 reply-template
 replyTemplate
-	| menu |
-
+	| templateTitleText templateContentText |
+	
 	self mastodonApi isAuthenticated ifFalse: [^false].
-	
-	menu := DialogWindow new.
-	menu title: 'New Reply-Template'.
-	menu createButton: 'Save'.
-	menu createCancelButton.
-	self addMorph: menu.
-	
-	
-	
+	templateTitleText := replyTemplateTitle contents asString.
+	templateTitleText size == 0
+		ifTrue: [self inform: 'The template title is not allowed to be empty.'.
+			^ false].
+	templateTitleText size > 20
+		ifTrue: [self inform: 'Not more than 20 characters allowed.'.
+			^ false].
+		
+	templateContentText := replyTemplateTextArea contents asString.
+	templateContentText size == 0
+		ifTrue: [self inform: 'Template content is not allowed to be empty.'.
+			^ false].
+	templateContentText size > 500
+		ifTrue: [self inform: 'Not more than 500 characters allowed.'.
+			^ false].
+	^ true
