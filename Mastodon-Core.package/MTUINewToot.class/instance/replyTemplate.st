@@ -1,6 +1,6 @@
 reply-template
 replyTemplate
-	| templateTitleText templateContentText replyTemplate localReplyTemplateAccess |
+	| templateTitleText templateContentText replyTemplate localReplyTemplateAccess successfullySavedText |
 	
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	templateTitleText := replyTemplateTitle contents asString.
@@ -30,4 +30,14 @@ replyTemplate
 	replyTemplateTitle contents: ''.
 	replyTemplateTextArea contents: ''.
 	
+	successfullySavedText := TextMorph new.
+	successfullySavedText contents: 'Template successfully saved';
+							color: Color blue.
+	self addMorphBack: successfullySavedText.
+	
+	[
+		(Delay forSeconds: 3) wait.
+		successfullySavedText delete.
+	] fork.
+
 	^ true
