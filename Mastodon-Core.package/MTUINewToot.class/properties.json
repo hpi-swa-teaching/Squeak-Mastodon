@@ -10,7 +10,8 @@
 		"imageTextArea",
 		"imageMorph",
 		"tootSizeLabel",
-		"feedbackMorph" ],
+		"feedbackMorph",
+		"sendButton" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],
