@@ -1,5 +1,5 @@
 add/remove
-addBaseURL
+createBaseURL
 	self
 		addTextPreference: #mtBaseURL
 		default: self defaultBaseURL

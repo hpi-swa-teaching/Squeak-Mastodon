@@ -1,3 +1,3 @@
 get/set
-getBaseURL
+baseURL
 	^ Preferences valueOfPreference: #mtBaseURL

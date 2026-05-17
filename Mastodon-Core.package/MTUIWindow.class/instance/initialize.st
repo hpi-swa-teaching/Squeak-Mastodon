@@ -7,16 +7,18 @@ initialize
 	scrollMorph := MTUIScrollPane new.
 	
 	MTSettingsStore reset.
+	MTPreferences createAllPreferences.
 	
-	self mastodonApi: (MTMastodonApi with:
-						(MTSettingsStore default at: #baseURL ifAbsent: [''] )  
-						token: (MTSettingsStore default at: #token ifAbsent: [nil])).
+	self mastodonApi: (MTMastodonApi 
+						with: MTPreferences baseURL
+						token: MTPreferences accessToken).
 
 	self setLabel: 'Mastodon';
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi token
-		ifNil: [self loadSettingsView] 
-		ifNotNil: [self loadNewTootView]
+
+	self mastodonApi token isEmpty
+		ifFalse: [self loadSettingsView] 
+		ifTrue: [self loadNewTootView]
 	

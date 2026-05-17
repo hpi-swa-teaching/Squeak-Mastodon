@@ -1,6 +1,6 @@
 add/remove
 testRemoveBaseURL
 	MTPreferences
-		addBaseURL;
+		createBaseURL;
 		removeBaseURL.
-	self assert: MTPreferences getBaseURL isNil
+	self assert: MTPreferences baseURL isNil

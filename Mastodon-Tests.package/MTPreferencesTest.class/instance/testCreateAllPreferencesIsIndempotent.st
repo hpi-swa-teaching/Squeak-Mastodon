@@ -1,12 +1,12 @@
 add/remove
-testAddAllPreferencesIsIndempotent
+testCreateAllPreferencesIsIndempotent
 	MTPreferences 
 		removeAllPreferences;
-		addAllPreferences;
-		addAllPreferences.
+		createAllPreferences;
+		createAllPreferences.
 		
 	self preferencesAttributes do: [:each |
 		| key defaultValue |
 		key := each first.
-		defaultValue := each second. 
+		defaultValue := each second.
 		self assert: (Preferences valueOfPreference: key) equals: defaultValue ]

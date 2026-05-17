@@ -2,4 +2,4 @@ get/set-reset
 resetAllPreferences
 	self 
 		removeAllPreferences;
-		addAllPreferences
+		createAllPreferences

@@ -1,3 +1,3 @@
 get/set
-getAccessToken
+accessToken
 	^ Preferences valueOfPreference: #mtAccessToken

@@ -1,8 +1,8 @@
 add/remove
 testPersistenceOfPreferences
 	MTPreferences
-		addAllPreferences;
-		setBaseURL: 'https://mastodon.felixkoch.at';
-		addAllPreferences.
+		createAllPreferences;
+		baseURL: 'https://mastodon.felixkoch.at';
+		createAllPreferences.
 	
-	self assert: MTPreferences getBaseURL equals: 'https://mastodon.felixkoch.at'
+	self assert: MTPreferences baseURL equals: 'https://mastodon.felixkoch.at'

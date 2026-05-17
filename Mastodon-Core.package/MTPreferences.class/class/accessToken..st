@@ -1,3 +1,3 @@
 get/set
-setAccessToken: aText
+accessToken: aText
 	Preferences setPreference: #mtAccessToken toValue: aText

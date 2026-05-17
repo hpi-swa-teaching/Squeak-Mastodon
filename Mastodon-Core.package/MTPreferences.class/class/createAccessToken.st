@@ -1,5 +1,5 @@
 add/remove
-addAccessToken
+createAccessToken
 	self
 		addTextPreference: #mtAccessToken
 		default: self defaultAccessToken

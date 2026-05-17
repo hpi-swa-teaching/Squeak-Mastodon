@@ -1,3 +1,3 @@
 get/set
-setBaseURL: aText
+baseURL: aText
 	Preferences setPreference: #mtBaseURL toValue: aText

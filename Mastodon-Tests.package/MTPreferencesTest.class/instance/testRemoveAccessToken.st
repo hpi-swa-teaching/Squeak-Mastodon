@@ -1,6 +1,6 @@
 add/remove
 testRemoveAccessToken
 	MTPreferences
-		addAccessToken;
+		createAccessToken;
 		removeAccessToken.
-	self assert: MTPreferences getAccessToken isNil
+	self assert: MTPreferences accessToken isNil

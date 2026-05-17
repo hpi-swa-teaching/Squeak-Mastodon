@@ -1,7 +1,7 @@
 add/remove
 testRemoveAllPreferencesIsIndempotent
 	MTPreferences 
-		addAllPreferences;
+		createAllPreferences;
 		removeAllPreferences;
 		removeAllPreferences.
 	

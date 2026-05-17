@@ -1,7 +1,7 @@
 add/remove
 testRemoveAllPreferences
 	MTPreferences 
-		addAllPreferences;
+		createAllPreferences;
 		removeAllPreferences.
 	
 	self assert: (Preferences preferencesInCategory: MTPreferences defaultCategory) isEmpty
