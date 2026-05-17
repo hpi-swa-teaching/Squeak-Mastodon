@@ -9,9 +9,9 @@ textMorph
 		'<i><font color="#555555">' , createdAt , '</font></i>')).
 	text 
 		wrapFlag: true;
-		autoFit: true;
+		"autoFit: true;
 		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
-		hResizing: #spaceFill.
-		
+		listDirection: #leftToRight;"
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 	^ text
