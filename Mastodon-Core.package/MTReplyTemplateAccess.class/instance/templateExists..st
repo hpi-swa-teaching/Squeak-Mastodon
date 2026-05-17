@@ -1,5 +1,5 @@
 file operations
-templateExists: aTemplate
+templateExists: aTemplateName
 	| dir |
 	dir := FileDirectory on: './replyTemplates/', self user.
-	^ dir fileExists: aTemplate
+	^ dir fileExists: aTemplateName

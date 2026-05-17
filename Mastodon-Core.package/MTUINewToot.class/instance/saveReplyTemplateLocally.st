@@ -1,11 +1,12 @@
 reply-template
 saveReplyTemplateLocally
-
-	| localReplyTemplateAccess replyTemplate |
-	replyTemplate := MTReplyTemplate new.
-	replyTemplate title: replyTemplateTitle contents asString.
-	replyTemplate content: replyTemplateTextArea contents asString.
 	
-	localReplyTemplateAccess := MTReplyTemplateAccess new.	
-	localReplyTemplateAccess user: self mastodonApi username.
-	localReplyTemplateAccess writeTemplate: replyTemplate.
+	| replyTemplate |
+	replyTemplate := MTReplyTemplate new
+		title: replyTemplateTitle contents asString;
+		content: replyTemplateTextArea contents asString;
+		yourself.
+	
+	^ MTReplyTemplateAccess new	
+		user: self mastodonApi getCurrentUser value username;
+		writeTemplate: replyTemplate.
