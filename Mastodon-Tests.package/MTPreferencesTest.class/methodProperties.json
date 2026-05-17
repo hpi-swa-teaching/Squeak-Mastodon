@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"preferencesAttributes" : "timbeier 5/17/2026 15:25",
+		"setUp" : "timbeier 5/17/2026 14:45",
+		"tearDown" : "timbeier 5/17/2026 14:45",
+		"testAddAccesToken" : "timbeier 5/17/2026 15:20",
+		"testAddAllPreferences" : "timbeier 5/17/2026 15:28",
+		"testAddAllPreferencesIsIndempotent" : "timbeier 5/17/2026 15:29",
+		"testAddBaseURL" : "timbeier 5/17/2026 15:23",
+		"testGetSetAccessToken" : "timbeier 5/17/2026 15:15",
+		"testGetSetBaseURL" : "timbeier 5/17/2026 15:17",
+		"testPersistenceOfPreferences" : "timbeier 5/17/2026 15:33",
+		"testRemoveAccessToken" : "timbeier 5/17/2026 15:27",
+		"testRemoveAllPreferences" : "timbeier 5/17/2026 15:29",
+		"testRemoveAllPreferencesIsIndempotent" : "timbeier 5/17/2026 15:29",
+		"testRemoveBaseURL" : "timbeier 5/17/2026 15:26" } }
