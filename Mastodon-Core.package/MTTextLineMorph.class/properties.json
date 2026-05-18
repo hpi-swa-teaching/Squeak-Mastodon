@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTTextLineMorph",
+	"pools" : [
+		 ],
+	"super" : "UiTextLineMorph",
+	"type" : "normal" }

@@ -1,35 +1,31 @@
 render
 addRequestSection
 	| requestButton logoutButton requestWrapper |
-	self addMorphBack: (TextMorph new contents: 'Enter Mastodon email and password' asHtmlText).
+	self addMorphBack: (TextMorph new contents: 'Enter Mastodon instance. Leave code empty to get authorize link.' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper := MTUIView setMorph: requestWrapper.
 		
-	usernameTextField := UiLineEdit new.
-	usernameTextField theText: (MTSettingsStore default at: #username ifAbsent: ['']). 
-	usernameTextField helpText: 'Mastodon Email'.
-	requestWrapper addMorphBack: usernameTextField.
-	
-	passwordTextField := UiLineEdit new.
-	passwordTextField font: (StrikeFont passwordFontSize: 16).
-	passwordTextField theText: (MTSettingsStore default at: #password ifAbsent: ['']). 
-	passwordTextField helpText: 'Mastodon Password'.
-	requestWrapper addMorphBack: passwordTextField.
-	
-	
-	urlTextField := UiLineEdit new.
-	urlTextField theText: (MTSettingsStore default at: #baseURL ifAbsent: ['']). 
-	urlTextField helpText: 'Mastodon server URL (with https://)'.
+	urlTextField := MTLineEdit new.
+	urlTextField hResizing: #rigid; width: 500; height: 36.
+	urlTextField theText: 'https://'.
+	urlTextField helpText: 'Mastodon server URL'.
 	requestWrapper addMorphBack: urlTextField.
+
+	tokenTextField := MTLineEdit new.
+	tokenTextField hResizing: #rigid; width: 500; height: 36.
+	tokenTextField theText: ''.
+	tokenTextField helpText: 'OAuth code from authorize page'.
+	requestWrapper addMorphBack: tokenTextField.
 	
 	requestButton := UiPushButton new.
-	requestButton text: 'Login'.
+	requestButton text: 'Login / Get Link'.
 	self
 		connect: requestButton
  		signal: #clicked:
  		toSelector: #authenticateApplication.
 	requestWrapper addMorphBack: requestButton.
+	
 	
 	logoutButton := UiPushButton new.
 	logoutButton text: 'Logout'.
@@ -38,6 +34,10 @@ addRequestSection
  		signal: #clicked:
  		toSelector: #logout.
 	requestWrapper addMorphBack: logoutButton.
+	
+	urlTextField nextField: tokenTextField.
+	tokenTextField nextField: urlTextField.
+	
 	self addMorphBack: requestWrapper.
 	self addResultSection.
 	resultTextLabel contents: ' '.
