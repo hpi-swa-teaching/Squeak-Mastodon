@@ -2,6 +2,7 @@ image
 showImage
 	"| imageMorph |
 	imageMorph := self morphFromPath."
+	imageMorph ifNotNil: [
 	imageMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
@@ -13,4 +14,4 @@ showImage
 		listCentering: #topLeft;
 		color: Color transparent;
 		setNewImageFrom: (imageMorph form scaledToSize: 300).
-	self addMorphBack: imageMorph
+	self addMorphBack: imageMorph]
