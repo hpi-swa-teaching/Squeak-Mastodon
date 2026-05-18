@@ -24,7 +24,7 @@ render
 					actionSelector: #followUserForToot:fromSender:;
 					arguments: (Array with: toot with: tootMorph followButton).
 				tootMorph followButton active: toot followedByUser.
-				tootMorph actionsMorph addMorphBack: tootMorph followButton].
+				tootMorph headerMorph addMorphBack: tootMorph followButton].
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;

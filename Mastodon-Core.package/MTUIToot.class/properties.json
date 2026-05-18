@@ -12,7 +12,8 @@
 		"heartButton",
 		"toot",
 		"repostButton",
-		"followButton"
+		"followButton",
+		"header"
 	],
 	"name": "MTUIToot",
 	"pools": [],
