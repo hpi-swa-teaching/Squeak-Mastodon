@@ -4,10 +4,11 @@ actionsMorph
 	actions 
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		hResizing: #rigid;
+		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 0; 
 		cellInset: 1;
+		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;

@@ -6,8 +6,7 @@ accountMorph
 	account 
 		wrapFlag: true;
 		autoFit: true;
-		layoutPolicy: ProportionalLayout;
- 		listDirection: #leftToRight;
-		hResizing: #shrinkWrap.
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 		
 	^ account

@@ -1,7 +1,7 @@
 render
 render
 	self
-		layoutPolicy: ProportionalLayout new;
+		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;

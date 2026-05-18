@@ -4,8 +4,7 @@ contentMorph
 	content 
 		wrapFlag: true;
 		autoFit: true;
-		layoutPolicy: ProportionalLayout;
- 		listDirection: #leftToRight;
-		hResizing: #spaceFill.
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 		
 	^ content

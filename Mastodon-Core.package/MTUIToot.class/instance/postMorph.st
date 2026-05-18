@@ -4,18 +4,18 @@ postMorph
 	post := AlignmentMorph new.
 	post 
 		layoutPolicy: TableLayout new;
-		"listDirection: #topToBottom;"
-		wrapDirection: #topToBottom;
-		hResizing: #rigid;
-		vResizing: #rigid;
+		listDirection: #topToBottom;
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap;
 		layoutInset: 0; 
-		cellInset: 60@0;
+		cellInset: 0;
+		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self accountMorph.
 	contentMorph := self contentMorph.
-	self contentMorph ifNotNil: [post addMorphBack: self contentMorph].
+	contentMorph ifNotNil: [post addMorphBack: contentMorph].
 	reblogMorph := self reblogMorph.
 	reblogMorph ifNotNil: [post addMorphBack: reblogMorph].
 	imageMorph := self imageMorph.

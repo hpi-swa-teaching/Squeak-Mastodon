@@ -6,8 +6,7 @@ reblogMorph
 	reblog 
 		wrapFlag: true;
 		autoFit: true;
-		layoutPolicy: ProportionalLayout new;
- 		listDirection: #leftToRight;
-		hResizing: #spaceFill.
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 		
 	^ reblog
