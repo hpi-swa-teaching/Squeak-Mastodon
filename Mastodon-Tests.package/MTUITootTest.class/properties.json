@@ -1,5 +1,5 @@
 {
-	"category" : "Mastodon-Core",
+	"category" : "Mastodon-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "MTUIHomeTimeline",
+	"name" : "MTUITootTest",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "TestCase",
 	"type" : "normal" }
