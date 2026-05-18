@@ -4,8 +4,8 @@ imageMorph
 	image
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
+		hResizing: #rigid;
+		vResizing: #rigid;
 		layoutInset: 0; 
 		cellInset: 10;
 		wrapCentering: #topLeft;

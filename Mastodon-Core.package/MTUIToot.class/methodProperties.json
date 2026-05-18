@@ -1,29 +1,26 @@
 {
-	"class": {
-		"for:": "PG 5/28/2017 19:08",
-		"linkUrls:": "mm 7/10/2017 11:08"
-	},
-	"instance": {
-		"actionsMorph": "mm 7/3/2017 13:33",
-		"avatar": "NK 6/14/2016 18:43",
-		"avatarMorph": "mm 6/26/2017 16:37",
-		"content": "NK 6/14/2016 17:42",
-		"contentMorph": "mm 7/8/2017 19:32",
-		"followButton": "AE 5/12/2026 12:00",
-		"followButton:": "AE 5/12/2026 12:00",
-		"headerMorph": "JH 5/18/2026 12:00",
-		"heartButton": "NR 6/14/2016 21:16",
-		"heartButton:": "NR 6/14/2016 21:16",
-		"image": "NK 5/29/2016 23:18",
-		"imageMorph": "mm 6/27/2017 02:15",
-		"initialize": "mm 6/19/2017 17:12",
-		"ownerChanged": "NK 6/14/2016 18:30",
-		"render": "mm 7/3/2017 13:59",
-		"repostButton": "PG 5/28/2017 19:40",
-		"repostButton:": "PG 5/28/2017 19:40",
-		"text": "NK 5/29/2016 23:18",
-		"textMorph": "mm 7/10/2017 12:12",
-		"toot": "PG 5/28/2017 19:03",
-		"toot:": "PG 5/28/2017 19:03"
-	}
-}
+	"class" : {
+		"for:" : "PG 5/28/2017 19:08",
+		"linkUrls:" : "mm 7/10/2017 11:08" },
+	"instance" : {
+		"actionsMorph" : "mm 7/3/2017 13:33",
+		"avatar" : "NK 6/14/2016 18:43",
+		"avatarMorph" : "RZ 5/17/2026 20:56",
+		"content" : "NK 6/14/2016 17:42",
+		"contentMorph" : "RZ 5/17/2026 21:01",
+		"followButton" : "AE 5/12/2026 12:00",
+		"followButton:" : "AE 5/12/2026 12:00",
+		"headerMorph" : "JH 5/18/2026 12:00",
+		"heartButton" : "NR 6/14/2016 21:16",
+		"heartButton:" : "NR 6/14/2016 21:16",
+		"image" : "NK 5/29/2016 23:18",
+		"imageMorph" : "RZ 5/17/2026 20:56",
+		"initialize" : "mm 6/19/2017 17:12",
+		"ownerChanged" : "NK 6/14/2016 18:30",
+		"render" : "mm 7/3/2017 13:59",
+		"repostButton" : "PG 5/28/2017 19:40",
+		"repostButton:" : "PG 5/28/2017 19:40",
+		"text" : "NK 5/29/2016 23:18",
+		"textMorph" : "RZ 5/17/2026 21:00",
+		"toot" : "PG 5/28/2017 19:03",
+		"toot:" : "PG 5/28/2017 19:03" } }

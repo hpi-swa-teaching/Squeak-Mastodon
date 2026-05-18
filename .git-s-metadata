@@ -1,0 +1,34 @@
+GSMetadata {
+	#version : 1,
+	#mappers : [
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'Mastodon-Tests'
+			},
+			#path : FSAbsolutePath [ ]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'BaselineOfMastodon'
+			},
+			#path : FSAbsolutePath [ ]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'Mastodon-Core'
+			},
+			#path : FSAbsolutePath [ ]
+		},
+		GSCypressMapper {
+			#version : 1,
+			#package : MCPackage {
+				#name : 'Mastodon-Spike-Twitter'
+			},
+			#path : FSAbsolutePath [ ]
+		}
+	],
+	#name : 'Squeak-Mastodon'
+}
