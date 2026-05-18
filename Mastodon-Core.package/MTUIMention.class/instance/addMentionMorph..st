@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 addMentionMorph: aMorph
 
 	self mentionMorphs add: aMorph

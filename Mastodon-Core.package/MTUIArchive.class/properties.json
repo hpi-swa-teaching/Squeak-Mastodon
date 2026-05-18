@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"mentionMorphs",
-		"mention" ],
+		"archivedToots" ],
 	"name" : "MTUIArchive",
 	"pools" : [
 		 ],

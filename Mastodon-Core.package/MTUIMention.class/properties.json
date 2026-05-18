@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"mentionMorphs",
-		"mention" ],
+		"mention",
+		"mtuiWindow" ],
 	"name" : "MTUIMention",
 	"pools" : [
 		 ],

@@ -1,5 +1,7 @@
 {
 	"class" : {
-		 },
+		"with:" : "Mailin 5/18/2026 21:14" },
 	"instance" : {
-		 } }
+		"initialize" : "Mailin 5/18/2026 21:14",
+		"loadArchived" : "Mailin 5/18/2026 22:39",
+		"renderArchived" : "Mailin 5/18/2026 22:28" } }

@@ -1,19 +1,19 @@
 as yet unclassified
 renderMention
 
-	self mentionMorphs do: [:morph |
+	"self mentionMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
 	
-	self mentionMorphs: OrderedCollection new.
+	self mentionMorphs: OrderedCollection new."
 	
 	self mention do: [:mention |
-		mention status ifNotNil: [ | tootMorph spacingMorph |
+		mention status ifNotNil: [ | tootMorph |
 			tootMorph := MTUIToot new toot: mention status.
 			tootMorph showArchiveButton: true.
 			tootMorph render.
 			
-			tootMorph replyButton
+			"tootMorph replyButton
 				target: self;
 				actionSelector: #replyTootWithId:fromSender:;
 				arguments: (Array with: mention status id with: tootMorph replyButton).
@@ -27,9 +27,8 @@ renderMention
 				color: Color veryVeryLightGray;
 				height: 1;
 				hResizing: #spaceFill;
-				yourself.
+				yourself."
 			
 			self addMorphBack: tootMorph.
 			self addMentionMorph: tootMorph.
-			
-			self addMorphBack: spacingMorph]]
+			]]
