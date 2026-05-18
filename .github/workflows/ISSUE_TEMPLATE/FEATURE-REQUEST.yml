@@ -1,0 +1,24 @@
+name: "Feature Request"
+description: Create a new ticket for a new feature request
+title: "[G10] FEAT: <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: usecase
+    attributes:
+      label: "Was möchte ich tun?"
+      description: Was möchte ich tun?
+      placeholder: "Als Bluesky-User möchte ich ..."
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: Definition of done
+      placeholder: "- [ ] New tests added\n- [ ] All tests passing\n"
+    validations:
+      required: false
+  

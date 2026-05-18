@@ -1,0 +1,32 @@
+name: "Bug Report"
+description: Create a new ticket for a bug report
+title: "[G10] BUG: <title>"
+labels: [
+  "question"
+]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Was ist das Problem?"
+      description: Was ist das Problem?
+      placeholder: "Als Bluesky-User möchte ich ..."
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was erwarte ich?"
+      description: Was erwarte ich?
+      placeholder: "Ich erwarte, dass ..."
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: Definition of done
+      placeholder: "- [ ] New tests added\n- [ ] All tests passing\n"
+    validations:
+      required: false
+  
