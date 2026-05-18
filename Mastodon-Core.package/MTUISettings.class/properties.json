@@ -1,22 +1,23 @@
 {
-  "category": "Mastodon-Core",
-  "classinstvars": [],
-  "classvars": [],
-  "commentStamp": "LS 7/17/2017 11:32",
-  "instvars": [
-    "resultTextLabel",
-    "urlTextField",
-    "tokenTextField",
-    "providerTextField",
-    "usernameUpdateTextField",
-    "descriptionTextField",
-    "usernameSizeLabel",
-    "descriptionSizeLabel",
-    "avatarImageMorph",
-    "headerImageMorph"
-  ],
-  "name": "MTUISettings",
-  "pools": [],
-  "super": "MTUIView",
-  "type": "normal"
-}
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "LS 7/17/2017 11:32",
+	"instvars" : [
+		"resultTextLabel",
+		"urlTextField",
+		"tokenTextField",
+		"providerTextField",
+		"usernameUpdateTextField",
+		"descriptionTextField",
+		"usernameSizeLabel",
+		"descriptionSizeLabel",
+		"avatarImageMorph",
+		"headerImageMorph" ],
+	"name" : "MTUISettings",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

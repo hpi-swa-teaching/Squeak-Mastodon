@@ -4,13 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "timbeier 5/17/2026 17:20",
 	"instvars" : [
-		"token",
-		"webClient",
-		"baseURL" ],
-	"name" : "MTBlueSkyApi",
+		 ],
+	"name" : "MTPreferences",
 	"pools" : [
 		 ],
-	"super" : "MTSocialProvider",
+	"super" : "Object",
 	"type" : "normal" }

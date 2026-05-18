@@ -1,16 +1,14 @@
 {
-	"category" : "Mastodon-Core",
+	"category" : "Mastodon-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"token",
-		"webClient",
-		"baseURL" ],
-	"name" : "MTBlueSkyApi",
+		 ],
+	"name" : "MTSettingsStoreTest",
 	"pools" : [
 		 ],
-	"super" : "MTSocialProvider",
+	"super" : "TestCase",
 	"type" : "normal" }
