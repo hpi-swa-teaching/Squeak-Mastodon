@@ -10,7 +10,7 @@ headerMorph
 		autoFit: true;
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		hResizing: #spaceFill.
+		hResizing: #shrinkWrap.
 	header := Morph new.
 	header
 		layoutPolicy: TableLayout new;
