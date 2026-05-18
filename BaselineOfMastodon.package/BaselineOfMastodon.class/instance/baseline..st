@@ -10,4 +10,5 @@ baseline: spec
 				yourself.
 			spec
 				group: 'default' with: #('Mastodon-Core');
-				group: 'tests' with: #('Mastodon-Tests')]
+				group: 'tests' with: #('Mastodon-Tests');
+				yourself ]
