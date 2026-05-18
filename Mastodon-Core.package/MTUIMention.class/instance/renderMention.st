@@ -1,14 +1,18 @@
 as yet unclassified
 renderMention
-
 	"self mentionMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
 	
 	self mentionMorphs: OrderedCollection new."
+
+	| repliedIDs |
+	repliedIDs := ((self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value
+		select: [:toot | toot notNil and: [toot inReplyToID notNil]]
+		thenCollect: [:toot | toot inReplyToID asString]) asSet.
 	
 	self mention do: [:mention |
-		mention status ifNotNil: [ | tootMorph |
+		(mention status notNil and: [(repliedIDs includes: mention status id asString) not]) ifTrue: [ | tootMorph |
 			tootMorph := MTUIToot new toot: mention status.
 			tootMorph showArchiveButton: true.
 			tootMorph render.
@@ -30,5 +34,4 @@ renderMention
 				yourself."
 			
 			self addMorphBack: tootMorph.
-			self addMentionMorph: tootMorph.
-			]]
+			self addMentionMorph: tootMorph]]
