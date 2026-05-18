@@ -20,7 +20,7 @@ headerMorph
 		layoutInset: 0;
 		cellInset: 5;
 		wrapCentering: #center;
-		listCentering: #center;
+		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: nameText.
 	^ header
