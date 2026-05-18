@@ -4,7 +4,7 @@ getImageFrom: anUrl
 	anUrl ifNil: [^nil].
 	
 	cachedForm := MTImageCache default imageFormFrom: anUrl.
-	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
+	cachedForm ifNotNil: [^ (MTUIImageMorph new) setNewImageFrom: cachedForm].
 	
 	doc := HTTPSocket httpGet: anUrl.
 	doc binary; reset.
@@ -19,7 +19,7 @@ getImageFrom: anUrl
 	
 	MTImageCache default cache: form from: anUrl. 
 	
-	image := ImageMorph new.
+	image := MTUIImageMorph new.
 	image setNewImageFrom: form.
 	
 	^ image
