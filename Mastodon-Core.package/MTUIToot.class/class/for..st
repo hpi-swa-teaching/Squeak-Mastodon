@@ -1,4 +1,8 @@
 initialization
 for: aToot
 
-	^ self new toot: aToot
+	| tweetMorph |
+	tweetMorph := self new toot: aToot.
+	tweetMorph render.
+	
+	^ tweetMorph

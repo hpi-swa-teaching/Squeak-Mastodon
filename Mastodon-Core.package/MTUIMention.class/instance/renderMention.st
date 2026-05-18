@@ -9,7 +9,7 @@ renderMention
 	
 	self mention do: [:mention |
 		mention status ifNotNil: [ | tootMorph spacingMorph |
-			tootMorph := MTUIToot for: mention status.
+			tootMorph := MTUIToot new toot: mention status.
 			tootMorph showArchiveButton: true.
 			tootMorph render.
 			
