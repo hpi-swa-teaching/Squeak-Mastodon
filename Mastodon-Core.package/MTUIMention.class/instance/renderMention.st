@@ -1,11 +1,6 @@
 as yet unclassified
 renderMention
-	"self mentionMorphs do: [:morph |
-		self removeMorph: morph.
-		morph delete].
 	
-	self mentionMorphs: OrderedCollection new."
-
 	| repliedIDs |
 	repliedIDs := ((self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value
 		select: [:toot | toot notNil and: [toot inReplyToID notNil]]
@@ -34,4 +29,4 @@ renderMention
 				yourself."
 			
 			self addMorphBack: tootMorph.
-			self addMentionMorph: tootMorph]]
+			"self addMentionMorph: tootMorph"]]
