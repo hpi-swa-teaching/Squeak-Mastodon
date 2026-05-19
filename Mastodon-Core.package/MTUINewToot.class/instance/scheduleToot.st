@@ -29,5 +29,5 @@ scheduleToot
 	visibility := menu getUserResponse.
 	imageMorph
 		ifNil: [mastodonApi toot: text withVisibility: visibility scheduleAt: time]
-		ifNotNil: [self tootImagewithVisibility: visibility].
+		ifNotNil: [self tootImagewithVisibility: visibility scheduleAt: time].
 	tootTextArea contents: ' '
