@@ -6,7 +6,7 @@ loadTootsOf: aMTUser
 	toots := mastodonApi getStatuses: aMTUser id.
 	
 	toots isError  
-		ifTrue: [self inform: 'An error occurred'. 
+		ifTrue: [self inform: (toots error ifNil: ['An error occurred']). 
 				^ false].
 			
 	self setToots: toots value.
