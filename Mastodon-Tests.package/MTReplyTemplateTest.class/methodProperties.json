@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "SF 5/19/2026 10:59",
+		"testTemplateWritingSucceeds" : "SF 5/19/2026 11:00",
+		"testUserSpaceProtected" : "SF 5/19/2026 11:02" } }
