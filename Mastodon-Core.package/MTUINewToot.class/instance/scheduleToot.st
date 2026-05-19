@@ -8,6 +8,9 @@ scheduleToot
 		day: dayField theText asNumber
 		hour: hourField theText asNumber
 		minute: minuteField theText asNumber.
+	time < DateAndTime now ifTrue: [
+		self inform: 'Please pick a time in the future.'.
+		^ false].
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	text := tootTextArea contents asString.
 	text size > 500 ifTrue: [
