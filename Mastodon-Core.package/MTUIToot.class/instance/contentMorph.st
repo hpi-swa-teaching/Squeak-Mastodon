@@ -13,6 +13,7 @@ contentMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
+		addMorphBack: self headerMorph;
 		addMorphBack: self textMorph.
 	imageMorph := self imageMorph.
 	imageMorph ifNotNil:  [content addMorphBack: imageMorph].
