@@ -6,14 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"user",
 		"avatar",
 		"image",
 		"content",
 		"text",
 		"actions",
-		"heartButton",
-		"toot",
-		"repostButton" ],
+		"toot" ],
 	"name" : "MTUIScheduledToot",
 	"pools" : [
 		 ],

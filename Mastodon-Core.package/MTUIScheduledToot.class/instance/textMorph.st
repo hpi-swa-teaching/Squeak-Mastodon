@@ -1,11 +1,9 @@
 render
 textMorph
 
-	| scheduledAt stream |
-	stream := AttributedTextStream new.
-	scheduledAt := MTUtils timestampFromString: self toot scheduledAt.
-	scheduledAt asDateAndTime printOn: stream.
-	text := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', 'username', '</b> ', '<i><a href="mastodonUser:', 'account id', '">@', 'account name', '</a></i>', '<br>', self toot params text, '<br>', '<i><font color="#555555">', stream contents, '</font></i>').
+	| scheduledAt |
+	scheduledAt := MTUtils relativeTimeString: (MTUtils timestampFromString: self toot scheduledAt).
+	text := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self user displayName, '</b> ', '<i><a href="mastodonUser:', self user id, '">@', self user acct, '</a></i>', '<br>', self toot params text, '<br>', '<i><font color="#555555">', scheduledAt, '</font></i>').
 	text
 		wrapFlag: true;
 		autoFit: true;
