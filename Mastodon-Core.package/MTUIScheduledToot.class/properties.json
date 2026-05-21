@@ -6,11 +6,16 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"id",
-		"scheduledMorphs",
-		"scheduledToots" ],
-	"name" : "MTUIUserTimeline",
+		"avatar",
+		"image",
+		"content",
+		"text",
+		"actions",
+		"heartButton",
+		"toot",
+		"repostButton" ],
+	"name" : "MTUIScheduledToot",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "Morph",
 	"type" : "normal" }
