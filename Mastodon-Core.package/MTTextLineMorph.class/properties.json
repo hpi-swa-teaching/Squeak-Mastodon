@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"filter",
+		"max",
+		"length" ],
 	"name" : "MTTextLineMorph",
 	"pools" : [
 		 ],

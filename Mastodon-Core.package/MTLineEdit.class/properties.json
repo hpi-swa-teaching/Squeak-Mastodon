@@ -4,9 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lapl 5/22/2026 21:49",
 	"instvars" : [
-		"nextField" ],
+		"nextField",
+		"filter",
+		"max" ],
 	"name" : "MTLineEdit",
 	"pools" : [
 		 ],

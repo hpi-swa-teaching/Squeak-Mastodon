@@ -2,4 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"handleKeystroke:" : "NV 5/18/2026 17:41" } }
+		"filter" : "lapl 5/22/2026 21:45",
+		"filter:" : "lapl 5/22/2026 21:45",
+		"handleKeystroke:" : "lapl 5/22/2026 22:35",
+		"length" : "lapl 5/22/2026 22:24",
+		"length:" : "lapl 5/22/2026 22:24",
+		"max" : "lapl 5/22/2026 22:20",
+		"max:" : "lapl 5/22/2026 22:20" } }

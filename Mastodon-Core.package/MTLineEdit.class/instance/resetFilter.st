@@ -1,0 +1,4 @@
+accessing
+resetFilter
+
+	self filter: '.*'

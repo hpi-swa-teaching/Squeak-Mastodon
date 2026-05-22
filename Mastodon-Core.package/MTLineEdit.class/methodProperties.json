@@ -2,7 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"filter" : "lapl 5/22/2026 21:50",
+		"filter:" : "lapl 5/22/2026 21:55",
 		"focusNext" : "NV 5/18/2026 17:42",
+		"initialize" : "lapl 5/22/2026 22:30",
+		"max" : "lapl 5/22/2026 22:26",
+		"max:" : "lapl 5/22/2026 22:30",
 		"nextField" : "NV 5/18/2026 17:41",
 		"nextField:" : "NV 5/18/2026 17:42",
+		"resetFilter" : "lapl 5/22/2026 21:54",
+		"resetMax" : "lapl 5/22/2026 22:30",
 		"textMorphClass" : "NV 5/18/2026 17:41" } }
