@@ -1,5 +1,6 @@
 views
 loadNewTootViewWithMorph: aMorph
+	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	
 	self 
