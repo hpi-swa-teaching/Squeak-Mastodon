@@ -4,8 +4,8 @@ relativeTimeString: aTimeStamp
 
 	| diff dayDiff |
 	diff := TimeStamp now asUTC asSeconds - aTimeStamp asSeconds.
-	dayDiff := (diff / 86400) floor.
 	diff < 0 ifTrue: [
+		dayDiff := (diff / 86400) ceiling.
 		dayDiff = 0 ifTrue: [
 			diff > -60 ifTrue: [^ 'very soon'].
 			diff > -120 ifTrue: [^ 'in 1 minute'].
@@ -19,6 +19,7 @@ relativeTimeString: aTimeStamp
 		^ aTimeStamp asMonth asString].
 	diff = 0 ifTrue: [^ 'now'].
 	diff > 0 ifTrue: [
+		dayDiff := (diff / 86400) floor.
 		dayDiff = 0 ifTrue: [
 			diff < 60 ifTrue: [^ 'just now'].
 			diff < 120 ifTrue: [^ '1 minute ago'].
