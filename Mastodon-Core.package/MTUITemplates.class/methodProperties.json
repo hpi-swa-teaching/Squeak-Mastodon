@@ -2,13 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
+		"addDeleteReplyTemplateButton" : "Tom1Schaepsmeier 5/23/2026 14:05",
 		"addEditReplyTemplateButton" : "Tom1Schaepsmeier 5/23/2026 14:00",
 		"addNewReplyTemplateButton" : "Tom1Schaepsmeier 5/23/2026 14:00",
 		"addNewReplyTemplateTextArea" : "Tom1Schaepsmeier 5/23/2026 13:43",
 		"addNewReplyTemplateTitle" : "Tom1Schaepsmeier 5/23/2026 13:43",
 		"addReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 13:48",
-		"editReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 14:00",
-		"initialize" : "Tom1Schaepsmeier 5/23/2026 13:58",
+		"deleteReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 14:05",
+		"editReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 17:04",
+		"initialize" : "Tom1Schaepsmeier 5/23/2026 14:04",
 		"replyTemplateContentSizeLabel" : "Tom1Schaepsmeier 5/23/2026 13:44",
 		"replyTemplateContentSizeLabel:" : "Tom1Schaepsmeier 5/23/2026 13:44",
 		"replyTemplateTextArea" : "Tom1Schaepsmeier 5/23/2026 13:45",

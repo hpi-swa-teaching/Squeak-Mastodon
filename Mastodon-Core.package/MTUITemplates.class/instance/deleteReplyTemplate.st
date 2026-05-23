@@ -1,0 +1,2 @@
+delete-template
+deleteReplyTemplate

@@ -18,4 +18,6 @@ initialize
 		
 		addNewReplyTemplateButton;
 		
-		addEditReplyTemplateButton.
+		addEditReplyTemplateButton;
+		
+		addDeleteReplyTemplateButton.
