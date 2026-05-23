@@ -6,4 +6,3 @@ writeTemplate: aReplyTemplate
 	stream := FileStream newFileNamed: 'replyTemplates/', self user, '/', aReplyTemplate title.
 	stream nextPutAll:	aReplyTemplate content.
 	stream close.
-	^ true
