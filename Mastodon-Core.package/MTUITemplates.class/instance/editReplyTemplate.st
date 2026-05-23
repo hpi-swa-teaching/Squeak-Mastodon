@@ -1,0 +1,2 @@
+edit-template
+editReplyTemplate

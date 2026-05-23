@@ -1,2 +1,0 @@
-reply-template
-isReplyTemplateContentWithinBounds

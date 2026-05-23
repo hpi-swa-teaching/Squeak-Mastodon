@@ -1,20 +1,18 @@
 render
-addNewReplyTemplateTitle
-
+addNewReplyTemplateTextArea
 	| textareaWrapper |
+	
 	textareaWrapper := RectangleMorph new borderWidth: 1.
 	textareaWrapper := MTUIView setWrapper: textareaWrapper.
 	
-	replyTemplateTitle := MTUITextMorph new.
-	replyTemplateTitle 
+	replyTemplateTextArea := MTUITextMorph new.
+	replyTemplateTextArea 
 		textSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;
 		contents: '';
 		wrapFlag: true.
-		
-	textareaWrapper addMorphBack: replyTemplateTitle.
+	textareaWrapper addMorphBack: replyTemplateTextArea.
 	
 	self addMorphBack: textareaWrapper.
-	

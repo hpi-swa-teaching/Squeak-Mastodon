@@ -4,7 +4,7 @@
 		"instance:" : "JU 7/5/2016 11:34",
 		"open" : "mm 5/28/2017 14:09" },
 	"instance" : {
-		"addMenuButtons" : "LS 8/4/2017 16:28",
+		"addMenuButtons" : "Tom1Schaepsmeier 5/23/2026 13:39",
 		"addMenuMorph" : "LS 8/4/2017 16:28",
 		"addScrollMorph" : "NK 6/14/2016 17:48",
 		"addViewMorph" : "NK 5/30/2016 00:50",
@@ -21,6 +21,7 @@
 		"loadScreenshotView" : "LS 7/30/2017 19:33",
 		"loadSearchView" : "LS 7/30/2017 19:44",
 		"loadSettingsView" : "mm 5/28/2017 14:03",
+		"loadTemplatesView" : "Tom1Schaepsmeier 5/23/2026 13:31",
 		"loadView:as:activate:" : "mm 7/8/2017 19:32",
 		"loadedViews" : "NK 5/30/2016 19:24",
 		"mastodonApi" : "mm 5/28/2017 14:07",

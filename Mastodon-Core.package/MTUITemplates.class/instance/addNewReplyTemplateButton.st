@@ -3,10 +3,10 @@ addNewReplyTemplateButton
 	| addTemplateButton |
 	
 	addTemplateButton := UiPushButton new.
-	addTemplateButton text: 'Add Reply-Template'.
+	addTemplateButton text: 'Save Reply-Template'.
 	self
 		connect: addTemplateButton
 		signal: #clicked:
-		toSelector: #replyTemplate.
+		toSelector: #addReplyTemplate.
 		
 	self addMorphBack: addTemplateButton.

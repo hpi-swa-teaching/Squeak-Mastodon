@@ -11,17 +11,4 @@ initialize
 		addNewTootButtons;
 		 addImageButton;
 		
-		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
-		addMorphBack: (TextMorph new contents: '<b>New Reply-Template</b>' asHtmlText);
-		
-		addMorphBack: (TextMorph new contents: '<p>Title</p>' asHtmlText);
-		addNewReplyTemplateTitle;
-		replyTemplateTitleSizeLabel: (TextMorph new contents: (replyTemplateTitle contents size asString , '/20') asHtmlText);
-		addMorphBack: replyTemplateTitleSizeLabel;
-		
-		addMorphBack: (TextMorph new contents: '<p>Content</p>' asHtmlText);
-		addNewReplyTemplateTextarea;
-		replyTemplateContentSizeLabel: (TextMorph new contents: (replyTemplateTextArea contents size asString , '/500') asHtmlText);
-		addMorphBack: replyTemplateContentSizeLabel;
-		
-		addNewReplyTemplateButton.
+		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText).

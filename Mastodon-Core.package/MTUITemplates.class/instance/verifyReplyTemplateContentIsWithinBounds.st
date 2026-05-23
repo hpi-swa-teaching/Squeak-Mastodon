@@ -1,4 +1,4 @@
-reply-template
+add-template
 verifyReplyTemplateContentIsWithinBounds
 
 	| templateContentText |

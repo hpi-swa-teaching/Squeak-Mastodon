@@ -1,0 +1,3 @@
+accessing
+replyTemplateTitleSizeLabel: aSizeLabel
+	replyTemplateTitleSizeLabel := aSizeLabel

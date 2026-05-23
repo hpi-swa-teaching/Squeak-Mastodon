@@ -1,6 +1,6 @@
-reply-template
-replyTemplate
-	
+add-template
+addReplyTemplate
+
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
 	self verifyReplyTemplateTitleIsWithinBounds

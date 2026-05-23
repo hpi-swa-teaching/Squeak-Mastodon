@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addEditReplyTemplateButton" : "Tom1Schaepsmeier 5/23/2026 14:00",
+		"addNewReplyTemplateButton" : "Tom1Schaepsmeier 5/23/2026 14:00",
+		"addNewReplyTemplateTextArea" : "Tom1Schaepsmeier 5/23/2026 13:43",
+		"addNewReplyTemplateTitle" : "Tom1Schaepsmeier 5/23/2026 13:43",
+		"addReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 13:48",
+		"editReplyTemplate" : "Tom1Schaepsmeier 5/23/2026 14:00",
+		"initialize" : "Tom1Schaepsmeier 5/23/2026 13:58",
+		"replyTemplateContentSizeLabel" : "Tom1Schaepsmeier 5/23/2026 13:44",
+		"replyTemplateContentSizeLabel:" : "Tom1Schaepsmeier 5/23/2026 13:44",
+		"replyTemplateTextArea" : "Tom1Schaepsmeier 5/23/2026 13:45",
+		"replyTemplateTextArea:" : "Tom1Schaepsmeier 5/23/2026 13:45",
+		"replyTemplateTitleSizeLabel" : "Tom1Schaepsmeier 5/23/2026 13:45",
+		"replyTemplateTitleSizeLabel:" : "Tom1Schaepsmeier 5/23/2026 13:46",
+		"saveReplyTemplateLocally" : "Tom1Schaepsmeier 5/23/2026 13:48",
+		"showSuccessMessage" : "Tom1Schaepsmeier 5/23/2026 13:48",
+		"updateTextSize" : "Tom1Schaepsmeier 5/23/2026 13:54",
+		"verifyReplyTemplateContentIsWithinBounds" : "Tom1Schaepsmeier 5/23/2026 13:49",
+		"verifyReplyTemplateTitleIsWithinBounds" : "Tom1Schaepsmeier 5/23/2026 13:49" } }
