@@ -1,6 +1,9 @@
 render
 render
 	
+	self removeAllMorphs.
+	tootMorphs := OrderedCollection new. 
+	
 	self tootMorphs do: [:morph | self removeMorph: morph. morph delete].
 
 	self toots
