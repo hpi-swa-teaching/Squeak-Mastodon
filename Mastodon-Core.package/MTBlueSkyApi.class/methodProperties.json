@@ -3,12 +3,15 @@
 		"with:token:" : "LZ 4/30/2026 14:04" },
 	"instance" : {
 		"accountFromAuthor:" : "LZ 4/30/2026 14:04",
+		"authorizationLinkFor:" : "5/23/2026 23:49:47",
 		"baseURL" : "LZ 4/30/2026 14:04",
 		"baseURL:" : "LZ 4/30/2026 14:04",
 		"buildUrl:" : "LZ 4/30/2026 14:04",
-		"capabilities" : "LZ 4/30/2026 14:04",
+		"clientID" : "5/23/2026 23:49:47",
+		"clientSecret" : "5/23/2026 23:49:47",
 		"deserialize:" : "LZ 4/30/2026 14:04",
 		"displayName" : "LZ 4/30/2026 14:04",
+		"exchangeAuthorizationCode:" : "5/23/2026 23:49:47",
 		"getAuthorFeedFor:cursor:" : "LZ 4/30/2026 14:04",
 		"getPrivateTimeline" : "LZ 4/30/2026 14:04",
 		"getPrivateTimelineMax:" : "LZ 4/30/2026 14:04",
@@ -20,6 +23,8 @@
 		"getTimelineWithCursor:" : "LZ 4/30/2026 14:04",
 		"initialize" : "LZ 4/30/2026 14:04",
 		"isAuthenticated" : "LZ 4/30/2026 14:04",
+		"registerApplication" : "5/23/2026 23:49:47",
 		"token" : "LZ 4/30/2026 14:04",
 		"token:" : "LZ 4/30/2026 14:04",
-		"tootFromFeedItem:" : "LZ 4/30/2026 14:04" } }
+		"tootFromFeedItem:" : "LZ 4/30/2026 14:04",
+		"verifyCredentials" : "5/23/2026 23:49:47" } }
