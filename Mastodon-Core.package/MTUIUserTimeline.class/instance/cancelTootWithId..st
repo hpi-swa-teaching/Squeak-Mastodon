@@ -1,4 +1,4 @@
 actions
 cancelTootWithId: aTootId
-	
-	self shouldBeImplemented.
+
+	self mastodonApi cancelScheduledToot: aTootId

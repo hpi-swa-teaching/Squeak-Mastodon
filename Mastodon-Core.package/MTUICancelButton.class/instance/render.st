@@ -2,4 +2,4 @@ render
 render
 
 	super render.
-	self shouldBeImplemented
+	self labelGraphic: MTUIIcons cancel

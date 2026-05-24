@@ -12,7 +12,7 @@ renderScheduled
 			arguments: (Array with: toot id).
 		tootMorph scheduleButton
 			target: self;
-			actionSelector: #reschduleTootWithId:;
+			actionSelector: #rescheduleTootWithId:;
 			arguments: (Array with: toot id).
 		tootMorph cancelButton
 			target: self;
