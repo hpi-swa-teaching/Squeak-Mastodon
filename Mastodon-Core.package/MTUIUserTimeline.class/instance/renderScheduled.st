@@ -5,7 +5,7 @@ renderScheduled
 		self removeMorph: morph.
 		morph delete].
 	self scheduledToots do: [:toot | | tootMorph spacingMorph |
-		tootMorph := MTUIScheduledToot for: toot.
+		tootMorph := MTUIScheduledToot for: toot with: self user.
 		tootMorph editButton
 			target: self;
 			actionSelector: #editTootWithId:;

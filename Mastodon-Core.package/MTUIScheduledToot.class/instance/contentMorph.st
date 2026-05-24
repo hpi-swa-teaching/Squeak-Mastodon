@@ -14,7 +14,6 @@ contentMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self textMorph.
-	"listDirection: #topToBottom;"
 	imageMorph := self imageMorph.
 	imageMorph ifNotNil: [content addMorphBack: imageMorph].
 	content addMorphBack: self actionsMorph.

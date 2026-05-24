@@ -1,8 +1,8 @@
 render
 avatarMorph
 
-	image := nil.
-	"MTMedia imageMorphFrom: self toot acct avatar."
+	| image |
+	image := MTMedia imageMorphFrom: self user avatar.
 	image ifNotNil: [
 		image
 			vResizing: #spaceFill;
