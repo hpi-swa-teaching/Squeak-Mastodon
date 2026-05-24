@@ -11,9 +11,10 @@
 		"content",
 		"text",
 		"actions",
-		"heartButton",
+		"scheduleButton",
 		"toot",
-		"repostButton" ],
+		"cancelButton",
+		"editButton" ],
 	"name" : "MTUIScheduledToot",
 	"pools" : [
 		 ],
