@@ -8,16 +8,16 @@ renderScheduled
 		tootMorph := MTUIScheduledToot for: toot with: self user.
 		tootMorph editButton
 			target: self;
-			actionSelector: #editTootWithId:;
-			arguments: (Array with: toot id).
+			actionSelector: #editToot:;
+			arguments: (Array with: tootMorph).
 		tootMorph scheduleButton
 			target: self;
-			actionSelector: #rescheduleTootWithId:;
-			arguments: (Array with: toot id).
+			actionSelector: #rescheduleToot:;
+			arguments: (Array with: tootMorph).
 		tootMorph cancelButton
 			target: self;
-			actionSelector: #cancelTootWithId:;
-			arguments: (Array with: toot id).
+			actionSelector: #cancelToot:;
+			arguments: (Array with: tootMorph).
 		spacingMorph := Morph new color: Color veryVeryLightGray.
 		spacingMorph
 			height: 1;

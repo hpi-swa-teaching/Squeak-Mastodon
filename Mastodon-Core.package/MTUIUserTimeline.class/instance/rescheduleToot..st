@@ -1,4 +1,4 @@
 actions
-rescheduleTootWithId: aTootId
+rescheduleToot: aScheduledTootMorph
 	
 	self shouldBeImplemented.

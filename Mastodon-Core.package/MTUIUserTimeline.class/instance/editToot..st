@@ -1,4 +1,4 @@
 actions
-editTootWithId: aTootId
+editToot: aScheduledTootMorph
 	
 	self shouldBeImplemented.
