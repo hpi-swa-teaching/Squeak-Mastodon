@@ -1,7 +1,8 @@
 render
 addNewScheduleArea
 
-	| now |
+	| now container |
+	container := AlignmentMorph newRow.
 	now := DateAndTime today.
 	yearField := UiLineEdit new
 		helpText: 'YYYY';
@@ -15,9 +16,11 @@ addNewScheduleArea
 	hourField := UiLineEdit new helpText: 'hh'.
 	minuteField := UiLineEdit new helpText: 'mm'.
 	
-	self
+	container
 		addMorphBack: yearField;
 		addMorphBack: monthField;
 		addMorphBack: dayField;
 		addMorphBack: hourField;
-		addMorphBack: minuteField
+		addMorphBack: minuteField;
+		color: Color transparent.
+	self addMorphBack: container
