@@ -2,5 +2,5 @@ accessing
 initialize
 
 	super initialize.
-	self resetFilter.
-	self resetMax
+	self resetPattern.
+	self resetValidator

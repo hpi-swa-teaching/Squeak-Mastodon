@@ -2,10 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"filter" : "lapl 5/22/2026 21:45",
-		"filter:" : "lapl 5/22/2026 21:45",
-		"handleKeystroke:" : "lapl 5/22/2026 22:35",
-		"length" : "lapl 5/22/2026 22:24",
-		"length:" : "lapl 5/22/2026 22:24",
-		"max" : "lapl 5/22/2026 22:20",
-		"max:" : "lapl 5/22/2026 22:20" } }
+		"handleKeystroke:" : "lapl 5/25/2026 10:12",
+		"pattern" : "lapl 5/25/2026 10:07",
+		"pattern:" : "lapl 5/25/2026 10:07",
+		"validator" : "lapl 5/25/2026 10:02",
+		"validator:" : "lapl 5/25/2026 10:02" } }

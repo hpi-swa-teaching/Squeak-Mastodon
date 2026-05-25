@@ -6,35 +6,35 @@ addNewScheduleArea
 	yearField := MTLineEdit new
 		hResizing: #shrinkWrap;
 		height: 32;
-		filter: '[0-9]';
-		max: 4;
+		pattern: '[0-9]{0,4}';
 		helpText: 'YYYY';
 		theText: now year.
 	monthField := MTLineEdit new
 		hResizing: #shrinkWrap;
 		height: 32;
-		filter: '[0-9]';
-		max: 2;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber > 0 and: [str asNumber <= 12]];
 		helpText: 'MM';
 		theText: now month.
 	dayField := MTLineEdit new
 		hResizing: #shrinkWrap;
 		height: 32;
-		filter: '[0-9]';
-		max: 2;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber > 0 and: [str asNumber <= 31]];
 		helpText: 'DD';
 		theText: now dayOfMonth.
 	hourField := MTLineEdit new
 		hResizing: #shrinkWrap;
 		height: 32;
-		filter: '[0-9]';
-		max: 2;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | "Name already used in this method ->"
+		str asNumber < 24];
 		helpText: 'hh'.
 	minuteField := MTLineEdit new
 		hResizing: #shrinkWrap;
 		height: 32;
-		filter: '[0-9]';
-		max: 2;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber < 60];
 		helpText: 'mm'.
 	
 	yearField nextField: monthField.

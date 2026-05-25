@@ -1,4 +1,0 @@
-accessing
-resetFilter
-
-	self filter: '.*'
