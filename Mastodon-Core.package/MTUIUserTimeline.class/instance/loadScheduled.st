@@ -1,12 +1,21 @@
 updating
 loadScheduled
 
-	| scheduled |
-	scheduled := mastodonApi getScheduledTimeline.
-	scheduled isError ifTrue: [
-		self inform: 'An error occurred'.
-		^ false].
+	| res scheduled maxId |
+	maxId := 0.
+	self scheduledToots: OrderedCollection new.
+	[
+		res := mastodonApi getScheduledTimelineSince: maxId.
+		res isError ifTrue: [
+			self inform: 'An error occured'.
+			^ false].
+		scheduled := res value.
+		scheduled notEmpty] whileTrue: [
+		self scheduledToots: self scheduledToots, scheduled.
+		maxId := scheduled first id].
 	
-	self setScheduledToots: scheduled value.
+	self scheduledToots sort: [:a :b | a scheduledAt >= b scheduledAt].
+	self halt.
+	self scheduledToots notEmpty ifTrue: [self renderScheduled].
 	
 	^ true
