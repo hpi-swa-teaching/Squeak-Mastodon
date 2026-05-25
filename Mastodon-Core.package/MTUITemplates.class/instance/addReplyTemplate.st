@@ -14,6 +14,6 @@ addReplyTemplate
 	replyTemplateTitle contents: ''.
 	replyTemplateTextArea contents: ''.
 	
-	self showSuccessMessage.
+	self showSuccessMessage: 'Template saved successfully'.
 
 	^ true
