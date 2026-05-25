@@ -40,4 +40,5 @@
 		"testRemoveAccountNoMatchingUsername" : "timbeier 5/25/2026 10:35",
 		"testRemoveAccountOnEmptyList" : "timbeier 5/25/2026 10:35",
 		"testRemoveAllAccounts" : "timbeier 5/25/2026 10:36",
-		"testRemoveAllAccountsOnEmpty" : "timbeier 5/21/2026 21:44" } }
+		"testRemoveAllAccountsOnEmpty" : "timbeier 5/21/2026 21:44",
+		"testResetDefaultAccount" : "timbeier 5/25/2026 12:31" } }
