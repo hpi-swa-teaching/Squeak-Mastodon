@@ -1,23 +1,55 @@
 render
 addNewScheduleArea
 
-	| now |
+	| now container |
+	container := AlignmentMorph newRow.
 	now := DateAndTime today.
-	yearField := UiLineEdit new
+	yearField := MTLineEdit new
+		vResizing: #spaceFill;
+		height: 32;
+		pattern: '[0-9]{0,4}';
 		helpText: 'YYYY';
 		theText: now year.
-	monthField := UiLineEdit new
+	monthField := MTLineEdit new
+		hResizing: #spaceFill;
+		height: 32;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber > 0 and: [str asNumber <= 12]];
 		helpText: 'MM';
 		theText: now month.
-	dayField := UiLineEdit new
+	dayField := MTLineEdit new
+		hResizing: #spaceFill;
+		height: 32;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber > 0 and: [str asNumber <= 31]];
 		helpText: 'DD';
 		theText: now dayOfMonth.
-	hourField := UiLineEdit new helpText: 'hh'.
-	minuteField := UiLineEdit new helpText: 'mm'.
+	hourField := MTLineEdit new
+		hResizing: #spaceFill;
+		height: 32;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | "Name already used in this method ->"
+		str asNumber < 24];
+		helpText: 'hh'.
+	minuteField := MTLineEdit new
+		hResizing: #spaceFill;
+		height: 32;
+		pattern: '[0-9]{0,2}';
+		validator: [:str | str asNumber < 60];
+		helpText: 'mm'.
 	
-	self
+	yearField nextField: monthField.
+	monthField nextField: dayField.
+	dayField nextField: hourField.
+	hourField nextField: minuteField.
+	minuteField nextField: yearField.
+	
+	container
 		addMorphBack: yearField;
 		addMorphBack: monthField;
 		addMorphBack: dayField;
 		addMorphBack: hourField;
-		addMorphBack: minuteField
+		addMorphBack: minuteField;
+		color: Color transparent;
+		hResizing: #spaceFill.
+	self addMorphBack: container

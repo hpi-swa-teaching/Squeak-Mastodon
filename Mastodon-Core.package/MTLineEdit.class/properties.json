@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "lapl 5/22/2026 21:49",
+	"instvars" : [
+		"nextField",
+		"pattern",
+		"validator" ],
+	"name" : "MTLineEdit",
+	"pools" : [
+		 ],
+	"super" : "UiLineEdit",
+	"type" : "normal" }

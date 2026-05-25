@@ -1,0 +1,1 @@
+A MTLineEdit is an editable text field containing one line. It can switch to a next field when tab is pressed. Addtitionally, it can accept a filter (regex) and a maximum input length can be set.

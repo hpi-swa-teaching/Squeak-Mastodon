@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"focusNext" : "NV 5/18/2026 17:42",
+		"initialize" : "A^3 5/25/2026 10:59",
+		"nextField" : "NV 5/18/2026 17:41",
+		"nextField:" : "NV 5/18/2026 17:42",
+		"pattern" : "lapl 5/25/2026 10:07",
+		"pattern:" : "lapl 5/25/2026 10:09",
+		"resetPattern" : "lapl 5/25/2026 10:08",
+		"resetValidator" : "lapl 5/25/2026 10:08",
+		"textMorphClass" : "NV 5/18/2026 17:41",
+		"validator" : "lapl 5/25/2026 10:07",
+		"validator:" : "lapl 5/25/2026 10:10" } }
