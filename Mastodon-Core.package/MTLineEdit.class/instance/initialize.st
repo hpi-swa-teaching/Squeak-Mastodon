@@ -1,6 +1,7 @@
-accessing
+initialization
 initialize
 
 	super initialize.
-	self resetPattern.
-	self resetValidator
+	self
+		resetPattern;
+		resetValidator
