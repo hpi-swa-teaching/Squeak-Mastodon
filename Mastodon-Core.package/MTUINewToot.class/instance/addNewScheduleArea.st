@@ -1,7 +1,8 @@
 render
 addNewScheduleArea
 
-	| now |
+	| now container |
+	container := AlignmentMorph newRow.
 	now := DateAndTime today.
 	yearField := MTLineEdit new
 		hResizing: #shrinkWrap;
@@ -37,15 +38,18 @@ addNewScheduleArea
 		validator: [:str | str asNumber < 60];
 		helpText: 'mm'.
 	
+
 	yearField nextField: monthField.
 	monthField nextField: dayField.
 	dayField nextField: hourField.
 	hourField nextField: minuteField.
 	minuteField nextField: yearField.
-	
-	self
+
+	container
 		addMorphBack: yearField;
 		addMorphBack: monthField;
 		addMorphBack: dayField;
 		addMorphBack: hourField;
-		addMorphBack: minuteField
+		addMorphBack: minuteField;
+		color: Color transparent.
+	self addMorphBack: container
