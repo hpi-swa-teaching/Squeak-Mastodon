@@ -8,8 +8,6 @@ initialize
 		addMorphBack: (TextMorph new contents: '<b>New Reply-Template</b>' asHtmlText);
 		addMorphBack: (TextMorph new contents: '<p>Title</p>' asHtmlText);
 		addNewReplyTemplateTitle;
-		replyTemplateTitleSizeLabel: (TextMorph new contents: (replyTemplateTitle contents size asString , '/20') asHtmlText);
-		addMorphBack: replyTemplateTitleSizeLabel;
 		
 		addMorphBack: (TextMorph new contents: '<p>Content</p>' asHtmlText);
 		addNewReplyTemplateTextArea;

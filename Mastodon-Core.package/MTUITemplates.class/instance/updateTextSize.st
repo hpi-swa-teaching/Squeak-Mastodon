@@ -1,6 +1,7 @@
 updating
 updateTextSize
+
 	(self replyTemplateTextArea contents size) > 500
-		ifTrue: [replyTemplateTitleSizeLabel textColor: Color red];
-		ifFalse: [replyTemplateTitleSizeLabel textColor: Color black].
-	self replyTemplateTitleSizeLabel contents: (replyTemplateTextArea contents size asString, '/500') asHtmlText.
+		ifTrue: [replyTemplateContentSizeLabel textColor: Color red];
+		ifFalse: [replyTemplateContentSizeLabel textColor: Color black].
+	self replyTemplateContentSizeLabel contents: (replyTemplateTextArea contents size asString, '/20') asHtmlText.
