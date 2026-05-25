@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTBlueSkyApiTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

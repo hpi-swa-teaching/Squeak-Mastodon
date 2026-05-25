@@ -5,6 +5,19 @@ addRequestSection
 	
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper := MTUIView setMorph: requestWrapper.
+
+	providerTextField := UiLineEdit new.
+	providerTextField theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString.
+	providerTextField helpText: 'Provider (mastodon or bluesky)'.
+	requestWrapper addMorphBack: providerTextField.
+
+	providerButton := UiPushButton new.
+	providerButton text: 'Apply Provider'.
+	self
+		connect: providerButton
+		signal: #clicked:
+		toSelector: #applyProviderSelection.
+	requestWrapper addMorphBack: providerButton.
 		
 	urlTextField := MTLineEdit new.
 	urlTextField hResizing: #rigid; width: 500; height: 36.
