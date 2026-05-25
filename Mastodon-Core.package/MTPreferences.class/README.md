@@ -1,2 +1,0 @@
-MTPreferences encapsulates all Mastodon-specific preferences.
-It provides a uniform API for adding, reading, writing, resetting, and removing preferences in the Squeak Preference Browser. It is not supposed to be a replacement for Mastodon settings.

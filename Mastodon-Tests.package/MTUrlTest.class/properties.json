@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUrlTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
