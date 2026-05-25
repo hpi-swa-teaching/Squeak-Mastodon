@@ -1,4 +1,14 @@
 views
 loadMentionsView
-
-	self loadView: (MTUIMention with: mastodonApi) as: #mentionsView activate: #mentionsButton
+	| mentionsTimelineView |
+	self refreshProvider.
+	mentionsTimelineView := MTUIMentionsTimeline new.
+							
+	mentionsTimelineView 
+		mastodonApi: (self mastodonApi);
+		loadToots.
+	
+	self 
+		loadView: mentionsTimelineView
+		as: #mentionsView
+		activate: #mentionsButton.
