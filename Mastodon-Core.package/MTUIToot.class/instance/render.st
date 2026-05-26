@@ -11,8 +11,8 @@ render
 		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
 		listCentering: #topLeft;
-		color: Color white;
-		addMorphBack: self avatarMorph;
-		addMorphBack: self postMorph.
+		color: Color white.
+	self avatarMorph ifNotNil: [self addMorphBack: self avatarMorph].
+	self addMorphBack: self postMorph.
 	
 	self layoutChanged

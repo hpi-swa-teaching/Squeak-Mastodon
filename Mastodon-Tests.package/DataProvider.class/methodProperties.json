@@ -5,6 +5,8 @@
 		"mockPreviewForm" : "cs 5/18/2026 15:24",
 		"mockSearch" : "fs 8/3/2017 16:42",
 		"mockTootWithImage" : "cs 5/18/2026 15:24",
+		"mockTootWithNullAvatar" : "NV 5/26/2026 09:13",
+		"mockTootWithNullPreview" : "NV 5/26/2026 09:11",
 		"mockTootWithoutImage" : "cs 5/18/2026 15:25",
 		"mockTrendingResponse" : "NV 5/23/2026 23:23",
 		"urlsJson" : "cs 5/18/2026 15:24" },
