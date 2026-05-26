@@ -3,12 +3,11 @@ themeSelection
 
 	| menu theme |
 	menu := DialogWindow new.
-	menu title: 'Themes & Colours'.
-	menu createButton: 'Theme 1' value: 'one'.
-	menu createButton: 'Theme 2' value: 'two'.
-	menu createButton: 'Theme 3' value: 'three'.
+	menu title: 'Themes & Colors'.
+	menu createButton: 'Squeak/ Standard' value: 'one'.
+	menu createButton: 'Squeak/ Colorful Windows' value: 'two'.
 	menu createCancelButton.
 	self addMorph: menu.
 	
 	theme := menu getUserResponse.
-	self changeColourTo: theme.
+	self changeColorTo: theme.
