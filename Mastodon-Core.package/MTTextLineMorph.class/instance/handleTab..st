@@ -1,5 +1,5 @@
 helper
-checkFocus: char
+handleTab: char
 
 	| edit |
 	char = Character tab ifTrue: [

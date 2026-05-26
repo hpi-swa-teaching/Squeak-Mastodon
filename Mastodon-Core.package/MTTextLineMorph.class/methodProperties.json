@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"checkFocus:" : "lapl 5/26/2026 14:28",
-		"handleKeystroke:" : "lapl 5/26/2026 14:31",
-		"isRelevant:" : "lapl 5/26/2026 14:32",
+		"handleKeystroke:" : "lapl 5/26/2026 14:47",
+		"handleTab:" : "lapl 5/26/2026 14:46",
+		"isSpecialCharacter:" : "lapl 5/26/2026 14:46",
 		"match:" : "lapl 5/26/2026 14:20",
 		"pattern" : "lapl 5/25/2026 10:07",
 		"pattern:" : "lapl 5/25/2026 10:07",
