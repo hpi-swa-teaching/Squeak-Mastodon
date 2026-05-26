@@ -2,8 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"handleKeystroke:" : "lapl 5/25/2026 10:12",
+		"checkFocus:" : "lapl 5/26/2026 14:28",
+		"handleKeystroke:" : "lapl 5/26/2026 14:31",
+		"isRelevant:" : "lapl 5/26/2026 14:32",
+		"match:" : "lapl 5/26/2026 14:20",
 		"pattern" : "lapl 5/25/2026 10:07",
 		"pattern:" : "lapl 5/25/2026 10:07",
+		"validate:" : "lapl 5/26/2026 14:19",
 		"validator" : "lapl 5/25/2026 10:02",
 		"validator:" : "lapl 5/25/2026 10:02" } }
