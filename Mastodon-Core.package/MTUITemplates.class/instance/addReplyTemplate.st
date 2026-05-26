@@ -8,8 +8,7 @@ addReplyTemplate
 	self verifyReplyTemplateContentIsWithinBounds
 		ifFalse: [^ false.].
 		
-	self saveReplyTemplateLocally ifFalse: [self inform: 'A template with this name already exits'.
-		^ false].
+	self saveReplyTemplateLocally ifFalse: [^ false].
 	
 	replyTemplateTitle contents: ''.
 	replyTemplateTextArea contents: ''.
