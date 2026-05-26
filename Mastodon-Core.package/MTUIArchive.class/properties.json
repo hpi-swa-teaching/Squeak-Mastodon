@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"archivedToots" ],
+	"name" : "MTUIArchive",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

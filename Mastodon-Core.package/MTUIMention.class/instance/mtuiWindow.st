@@ -1,0 +1,4 @@
+accessing
+mtuiWindow
+
+	^ mtuiWindow
