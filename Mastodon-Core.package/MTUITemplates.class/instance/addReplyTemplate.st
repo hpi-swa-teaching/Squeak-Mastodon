@@ -12,6 +12,7 @@ addReplyTemplate
 	
 	replyTemplateTitle contents: ''.
 	replyTemplateTextArea contents: ''.
+	replyTemplateContentSizeLabel contents: '0/500'.
 	
 	self showSuccessMessage: 'Template saved successfully'.
 
