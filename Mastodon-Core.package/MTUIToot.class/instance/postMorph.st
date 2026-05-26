@@ -14,6 +14,7 @@ postMorph
 		listCentering: #topLeft;
 		color: Color transparent.
 	
+	self fillInteraction.
 	self fillAccount.
 	self fillContent.
 	self fillReblog.

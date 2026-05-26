@@ -12,6 +12,7 @@
 		"content",
 		"createdAt",
 		"heartButton",
+		"interaction",
 		"media",
 		"post",
 		"repostButton",

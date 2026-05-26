@@ -9,8 +9,6 @@ render
 		layoutInset: 10;
 		cellInset: 10;
 		cellPositioning: #topLeft;
-		wrapCentering: #leftTop;
-		listCentering: #topLeft;
 		color: Color white;
 		addMorphBack: self avatarMorph;
 		addMorphBack: self postMorph.
