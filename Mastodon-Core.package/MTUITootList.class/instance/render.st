@@ -7,11 +7,17 @@ render
 		do: [:toot | 
 			| tootMorph spacingMorph |
 			tootMorph := MTUIToot for: toot.
-			tootMorph repostButton
-				target: self;
-				actionSelector: #repostTootWithId:fromSender:;
-				arguments: (Array with: (toot id) with: tootMorph repostButton);
-				active: toot reblogged.
+			(self mastodonApi isKindOf: MTBlueSkyApi)
+				ifTrue: [tootMorph repostButton
+							target: self;
+							actionSelector: #repostBlueskyToot:fromSender:;
+							arguments: (Array with: toot with: tootMorph repostButton);
+							active: toot reblogged]
+				ifFalse: [tootMorph repostButton
+							target: self;
+							actionSelector: #repostTootWithId:fromSender:;
+							arguments: (Array with: (toot id) with: tootMorph repostButton);
+							active: toot reblogged].
 			tootMorph heartButton
 				target: self;
 				actionSelector: #favoriteTootWithId:fromSender:;
