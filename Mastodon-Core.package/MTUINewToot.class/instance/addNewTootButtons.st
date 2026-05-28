@@ -4,7 +4,7 @@ addNewTootButtons
 	
 	sendButton := MTUIPushButton new.
 	sendButton text: 'Toot'.
-	sendButton active: false.
+	sendButton enabled: false.
 	self
 		connect: sendButton
  		signal: #clicked:

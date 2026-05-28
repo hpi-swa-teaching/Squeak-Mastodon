@@ -11,7 +11,6 @@ initialize
 						token: (MTSettingsStore default at: #token ifAbsent: [nil])).
 
 	self setLabel: 'Mastodon';
-		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
 	self mastodonApi token

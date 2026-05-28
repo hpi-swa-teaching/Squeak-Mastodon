@@ -1,7 +1,7 @@
 initialization
-initialize 
+initialize
+
 	super initialize.
 	self addAccessSection.
 	self addRequestSection.
-	self addUpdateSection.
-	self addThemeSection
+	self addUpdateSection
