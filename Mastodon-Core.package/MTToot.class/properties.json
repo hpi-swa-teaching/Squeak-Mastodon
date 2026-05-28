@@ -19,7 +19,9 @@
 		"inReplyToAccountID",
 		"favourited",
 		"followedByUser",
-		"followUri"
+		"followUri",
+		"cid",
+		"repostUri"
 	],
 	"name": "MTToot",
 	"pools": [],
