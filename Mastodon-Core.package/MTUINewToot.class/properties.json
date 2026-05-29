@@ -11,7 +11,8 @@
 		"imageMorph",
 		"tootSizeLabel",
 		"feedbackMorph",
-		"sendButton" ],
+		"sendButton",
+		"imageButton" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],
