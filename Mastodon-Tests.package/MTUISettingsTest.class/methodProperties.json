@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testInitializeDoesNotRaiseWithoutApi" : "NV 5/26/2026 12:40",
+		"testInitializeWithoutApiShowsPlaceholders" : "NV 5/26/2026 12:39",
+		"testUpdateProfileRejectsLongDescription" : "NV 5/26/2026 12:40",
+		"testUpdateProfileRejectsLongUsername" : "NV 5/26/2026 12:39",
+		"testUpdateProfileRejectsWhenNotAuthenticated" : "NV 5/26/2026 12:24" } }
