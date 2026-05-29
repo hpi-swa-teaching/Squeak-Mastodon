@@ -6,8 +6,8 @@ showImage
 	imageMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
-		hResizing: #spaceFill;
-		vResizing: #shrinkWrap;
+		"hResizing: #spaceFill;
+		vResizing: #shrinkWrap;"
 		layoutInset: 0;
 		cellInset: 10;
 		wrapCentering: #topLeft;
