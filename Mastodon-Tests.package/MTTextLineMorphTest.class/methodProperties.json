@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testPattern" : "lapl 5/30/2026 14:51",
+		"testSpecialCharacter" : "lapl 5/30/2026 14:59",
+		"testTabHandling" : "lapl 5/30/2026 14:49",
+		"testValidator" : "lapl 5/30/2026 14:54" } }
