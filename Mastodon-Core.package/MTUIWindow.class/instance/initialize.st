@@ -8,8 +8,8 @@ initialize
 	
 	self mastodonApi: MTProviderFactory providerFromSettings.
 
+
 	self setLabel: self mastodonApi displayName;
-		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
 	self mastodonApi isAuthenticated

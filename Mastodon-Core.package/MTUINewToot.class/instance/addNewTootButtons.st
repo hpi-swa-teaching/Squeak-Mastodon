@@ -1,9 +1,10 @@
 render
 addNewTootButtons
-	| sendButton |
+	"| sendButton |"
 	
-	sendButton := UiPushButton new.
+	sendButton := MTUIPushButton new.
 	sendButton text: 'Toot'.
+	sendButton enabled: false.
 	self
 		connect: sendButton
  		signal: #clicked:
