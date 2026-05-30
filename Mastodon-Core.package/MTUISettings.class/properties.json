@@ -9,6 +9,7 @@
 		"resultTextLabel",
 		"urlTextField",
 		"tokenTextField",
+		"providerTextField",
 		"usernameUpdateTextField",
 		"descriptionTextField",
 		"usernameSizeLabel",

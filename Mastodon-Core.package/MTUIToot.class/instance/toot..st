@@ -1,3 +1,4 @@
 accessing
 toot: aToot
- 	toot := aToot 
+
+	toot := aToot

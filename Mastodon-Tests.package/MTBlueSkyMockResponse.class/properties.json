@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"success",
+		"content",
+		"code" ],
+	"name" : "MTBlueSkyMockResponse",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -6,14 +6,12 @@ initialize
 	menuMorph := MTUIMenu new.
 	scrollMorph := MTUIScrollPane new.	
 	
-	self mastodonApi: (MTMastodonApi with:
-						(MTSettingsStore default at: #baseURL ifAbsent: [''] )  
-						token: (MTSettingsStore default at: #token ifAbsent: [nil])).
+	self mastodonApi: MTProviderFactory providerFromSettings.
 
-	self setLabel: 'Mastodon';
+
+	self setLabel: self mastodonApi displayName;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi token
-		ifNil: [self loadSettingsView] 
-		ifNotNil: [self loadNewTootView]
-	
+	self mastodonApi isAuthenticated
+		ifTrue: [self loadNewTootView]
+		ifFalse: [self loadSettingsView]
