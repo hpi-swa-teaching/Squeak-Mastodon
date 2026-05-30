@@ -2,13 +2,18 @@ toot
 scheduleToot
 
 	| text menu visibility time |
-	time := DateAndTime
-		year: yearField theText asNumber
-		month: monthField theText asNumber
-		day: dayField theText asNumber
-		hour: hourField theText asNumber
-		minute: minuteField theText asNumber.
-	(time - self minimumScheduleingDelay) < DateAndTime now ifTrue: [
+	time := [
+		DateAndTime
+			year: yearField theText asNumber
+			month: monthField theText asNumber
+			day: dayField theText asNumber
+			hour: hourField theText asNumber
+			minute: minuteField theText asNumber]
+		on: Error
+		do: [:err |
+			self inform: 'Invalid date!'.
+			^ false].
+	time - self minimumScheduleingDelay < DateAndTime now ifTrue: [
 		self inform: 'Please pick a time at least 5 minutes in the future.'.
 		^ false].
 	self mastodonApi isAuthenticated ifFalse: [^ false].
