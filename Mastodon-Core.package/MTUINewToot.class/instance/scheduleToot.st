@@ -40,5 +40,5 @@ scheduleToot
 		do: [:err |
 			self inform: 'There was an API error:', String cr, err.
 			^ false].
-	MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self.
+	MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self messageArea.
 	tootTextArea contents: ''

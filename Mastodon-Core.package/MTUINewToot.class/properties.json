@@ -14,7 +14,8 @@
 		"monthField",
 		"dayField",
 		"minuteField",
-		"hourField" ],
+		"hourField",
+		"messageArea" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

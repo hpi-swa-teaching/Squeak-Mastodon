@@ -7,6 +7,7 @@ showSuccessMessage: aMessage on: aMorph
 		contents: aMessage;
 		color: Color blue.
 	aMorph addMorphBack: successfullyPerformedText.
+	
 	[
 		(Delay forSeconds: 3) wait.
-		successfullyPerformedText hide] fork
+		WorldState addDeferredUIMessage: [successfullyPerformedText delete]] fork
