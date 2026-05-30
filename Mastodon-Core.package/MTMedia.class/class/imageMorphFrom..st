@@ -1,18 +1,29 @@
 loading
 imageMorphFrom: anUrl
-|doc form image cachedForm|
-	anUrl ifNil: [^nil].
-	
-	cachedForm := MTImageCache default imageFormFrom: anUrl.
-	cachedForm ifNotNil: [^ (ImageMorph new) setNewImageFrom: cachedForm].
+	|doc form image cachedForm providerKey fetchUrl|
 
-	doc := HTTPSocket httpGet: anUrl.
+	anUrl ifNil: [ ^ nil ].
+
+	fetchUrl := anUrl.
+
+	cachedForm := MTImageCache default imageFormFrom: anUrl.
+	cachedForm ifNotNil: [^ (MTUIImageMorph new) setNewImageFrom: cachedForm].
+	
+	providerKey := MTSettingsStore default at: #provider ifAbsent: [ #mastodon ].
+	providerKey isString ifTrue: [ providerKey := providerKey asLowercase asSymbol ].
+
+	providerKey = #bluesky ifTrue: [
+		fetchUrl := 'https://webp-converter.dropping.workers.dev?url=', anUrl.
+	].
+
+	doc := HTTPSocket httpGet: fetchUrl.
 	doc binary; reset.
 	
 	form := ImageReadWriter formFromStream: doc.
 	
 	MTImageCache default cache: form from: anUrl. 
 		
-	image := ImageMorph new.
+	image := MTUIImageMorph new.
 	image setNewImageFrom: form.
+	
 	^ image

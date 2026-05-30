@@ -1,6 +1,7 @@
 views
 loadMentionsView
 	| mentionsTimelineView |
+	self refreshProvider.
 	mentionsTimelineView := MTUIMentionsTimeline new.
 							
 	mentionsTimelineView 

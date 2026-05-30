@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nextField" ],
+	"name" : "MTLineEdit",
+	"pools" : [
+		 ],
+	"super" : "UiLineEdit",
+	"type" : "normal" }
