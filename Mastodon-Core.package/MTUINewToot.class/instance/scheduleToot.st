@@ -29,10 +29,16 @@ scheduleToot
 	menu createButton: 'private' value: 'private'.
 	menu createButton: 'direct' value: 'direct'.
 	menu createCancelButton.
-	self addMorph: menu.
+	menu openInWorld.
 	
 	visibility := menu getUserResponse.
-	imageMorph
-		ifNil: [mastodonApi toot: text withVisibility: visibility scheduleAt: time]
-		ifNotNil: [self tootImagewithVisibility: visibility scheduleAt: time].
-	tootTextArea contents: ' '
+	[
+		imageMorph
+			ifNil: [mastodonApi toot: text withVisibility: visibility scheduleAt: time]
+			ifNotNil: [self tootImagewithVisibility: visibility scheduleAt: time]]
+		on: Error
+		do: [:err |
+			self inform: 'There was an API error:', String cr, err.
+			^ false].
+	MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self.
+	tootTextArea contents: ''
