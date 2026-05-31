@@ -1,9 +1,6 @@
 actions
 favoriteTootWithId: aTootId fromSender: aSender
-	| toot |
-	toot := self tootWithId: aTootId.
-	toot ifNil: [^ self].
-	(self api favourite: toot)
+	(self api favourite: aTootId)
 		ifNotNil: [:result | 
 			result isError
 				ifTrue: [self inform: result value]
