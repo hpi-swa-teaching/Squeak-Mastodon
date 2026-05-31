@@ -1,6 +1,13 @@
 actions
 favoriteTootWithId: aTootId fromSender: aSender
-	(self api favourite: aTootId)
+	| toot argument |
+	toots ifNil: [^ self].
+	toot := toots detect: [:t | t id = aTootId] ifNone: [nil].
+	argument := (self mastodonApi isKindOf: MTBlueSkyApi)
+		ifTrue: [toot]
+		ifFalse: [aTootId].
+	argument ifNil: [^ self].
+	(self mastodonApi favourite: argument)
 		ifNotNil: [:result | 
 			result isError
 				ifTrue: [self inform: result value]
