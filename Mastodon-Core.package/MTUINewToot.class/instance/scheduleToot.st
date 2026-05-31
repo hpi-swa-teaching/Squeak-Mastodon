@@ -1,12 +1,18 @@
 toot
 scheduleToot
 
-	| text visibility time |
-	time := self validateScheduledDate.
-	time ifNil: [^ false].
+	| text visibility time timeRes textRes |
+	timeRes := self validateScheduledDate.
+	timeRes isError ifTrue: [
+		self inform: timeRes error.
+		^ false].
+	time := timeRes value.
 	self mastodonApi isAuthenticated ifFalse: [^ false].
-	text := self validateTootText.
-	text ifNil: [^ false].
+	textRes := self validateTootText.
+	textRes isError ifTrue: [
+		self inform: textRes error.
+		^ false].
+	text := textRes value.
 	
 	visibility := self chooseVisibility.
 	
