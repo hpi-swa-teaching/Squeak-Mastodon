@@ -1,11 +1,12 @@
 helpers
 tootFromFeedItem: aFeedItem
-	| post record author viewer toot likeUri |
+	| post record author viewer toot likeUri followUri |
 	post := aFeedItem at: 'post' ifAbsent: [Dictionary new].
 	record := post at: 'record' ifAbsent: [Dictionary new].
 	author := post at: 'author' ifAbsent: [Dictionary new].
 	viewer := post at: 'viewer' ifAbsent: [Dictionary new].
 	likeUri := viewer at: 'like' ifAbsent: [nil].
+	followUri := viewer at: 'following' ifAbsent: [nil].
 	toot := MTToot new.
 	toot
 		id: (post at: 'uri' ifAbsent: [post at: 'cid' ifAbsent: ['']]);
@@ -20,5 +21,7 @@ tootFromFeedItem: aFeedItem
 		favouritesCount: (post at: 'likeCount' ifAbsent: [0]);
 		urls: (post at: 'uri' ifAbsent: ['']);
 		media: #();
+		followedByUser: followUri notNil;
+		followUri: (followUri ifNil: ['']);
 		yourself.
 	^ toot
