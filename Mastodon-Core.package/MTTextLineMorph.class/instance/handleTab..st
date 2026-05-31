@@ -1,10 +1,10 @@
 helper
 handleTab: char
 
-	| edit |
+	| lineEdit |
 	char = Character tab ifTrue: [
-		edit := self ownerThatIsA: MTLineEdit.
-		edit ifNotNil: [
-			edit focusNext.
+		lineEdit := self ownerThatIsA: MTLineEdit.
+		lineEdit ifNotNil: [
+			lineEdit focusNext.
 			^ true]].
 	^ false
