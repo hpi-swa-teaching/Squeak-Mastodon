@@ -2,7 +2,7 @@ actions
 favoriteTootWithId: aTootId fromSender: aButton
 	| toot argument |
 	toots ifNil: [^ self].
-	toot := toots detect: [:t | t id = aTootId] ifNone: [nil].
+	toot := (toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = aTootId] ifNone: [nil].
 	argument := (self mastodonApi isKindOf: MTBlueSkyApi)
 		ifTrue: [toot]
 		ifFalse: [aTootId].
