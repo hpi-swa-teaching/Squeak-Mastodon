@@ -13,4 +13,4 @@ toot
 		ifTrue: [mastodonApi toot: text withVisibility: visibility]
 		ifFalse: [self tootImagewithVisibility: visibility].
 	tootTextArea contents: ''.
-	self sendPostFeedback
+	self showFeedback

@@ -1,4 +1,4 @@
 toot
-removeFeedback
+hideFeedback
 
 	feedbackMorph hide
