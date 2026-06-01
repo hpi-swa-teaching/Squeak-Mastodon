@@ -1,7 +1,8 @@
 initialization
 initialize
+
 	super initialize.
-	self 
+	self
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		cellPositioning: #topLeft;
@@ -9,4 +10,4 @@ initialize
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		wrapCentering: #topLeft;
-		color: Color white.
+		color: Color white
