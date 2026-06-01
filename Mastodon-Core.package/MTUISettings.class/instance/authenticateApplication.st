@@ -23,7 +23,8 @@ authenticateApplication
 				^ false].
 			authorizationLink := self mastodonApi authorizationLinkFor: baseURL.
 			displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
-			resultTextLabel contents: ('<i>Open link, authorize app, then paste code here:</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
+			Clipboard clipboardText: authorizationLink.
+			resultTextLabel contents: ('<i>Authorization URL copied to clipboard.<br>Open link, authorize app, then paste OAuth code here.</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText.
 			^ false].
 
 	self mastodonApi token: nil.

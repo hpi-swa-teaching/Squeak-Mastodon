@@ -4,6 +4,7 @@ from: aJsonObject
 		id: (aJsonObject at: 'id');
 		createdAt: (aJsonObject at: 'created_at');
 		content: (aJsonObject at: 'content');
+		reblog: ((aJsonObject at: 'reblog') ifNotNil: [:json | MTToot from: json]);
 		"tags: (aJsonObject at: 'tags');"
 		acct: (MTAccount from: (aJsonObject at: 'account'));
 		"urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | MTUrl from: json]);"
