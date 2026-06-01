@@ -2,7 +2,6 @@ render
 render
 	
 	self tootMorphs do: [:morph | self removeMorph: morph. morph delete].
-
 	self toots
 		do: [:toot | 
 			| tootMorph spacingMorph |
@@ -31,6 +30,12 @@ render
 					arguments: (Array with: toot with: tootMorph followButton).
 				tootMorph followButton active: toot followedByUser.
 				tootMorph headerMorph addMorphBack: tootMorph followButton].
+				tootMorph profileButton render.
+				tootMorph profileButton
+    					target: self;
+    					actionSelector: #openProfileForToot:;
+    					arguments: (Array with: toot).
+				tootMorph headerMorph addMorphBack: tootMorph profileButton.
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
