@@ -28,13 +28,13 @@ addNewScheduleArea
 		hResizing: #spaceFill;
 		height: 32;
 		pattern: '[0-9]{0,2}';
-		validator: [:str | str asNumber < 24];
+		validator: [:str | str asNumber >= 0 and: [str asNumber < 24]];
 		helpText: 'hh'.
 	minuteField := MTLineEdit new
 		hResizing: #spaceFill;
 		height: 32;
 		pattern: '[0-9]{0,2}';
-		validator: [:str | str asNumber < 60];
+		validator: [:str | str asNumber >= 0 and: [str asNumber < 60]];
 		helpText: 'mm'.
 	
 	yearField nextField: monthField.
