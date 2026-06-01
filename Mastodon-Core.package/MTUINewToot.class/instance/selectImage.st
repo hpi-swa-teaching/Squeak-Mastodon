@@ -1,10 +1,12 @@
 image
 selectImage
 
-	imageButton enabled: false.
-	self removeOldMorph.
-	tootTextArea contents size = 0 ifTrue: [sendButton enabled: false].
-	self imageMorph: self loadImage.
-	self showImage.
-	imageButton enabled: true.
-	imageMorph = 'empty' ifFalse: [sendButton enabled: true]
+	self imageButton
+		enabled: false;
+		removeOldMorph.
+	self tootTextArea contents size = 0 ifTrue: [self sendButton enabled: false].
+	self
+		imageMorph: self loadImage;
+		showImage.
+	self imageButton enabled: true.
+	self imageMorph = 'empty' ifFalse: [self sendButton enabled: true]

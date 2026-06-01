@@ -1,5 +1,5 @@
 updating
 updateContent: aString
 
-	tootTextArea contents: aString.
+	self tootTextArea contents: aString.
 	self updateTextSize

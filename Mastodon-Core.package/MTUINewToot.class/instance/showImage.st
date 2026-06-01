@@ -1,8 +1,8 @@
 image
 showImage
 
-	imageMorph = 'empty' ifFalse: [
-		imageMorph
+	self imageMorph = 'empty' ifFalse: [
+		self imageMorph
 			layoutPolicy: TableLayout new;
 			listDirection: #leftToRight;
 			layoutInset: 0;
@@ -10,7 +10,7 @@ showImage
 			wrapCentering: #topLeft;
 			listCentering: #topLeft;
 			color: Color transparent;
-			setNewImageFrom: (imageMorph form scaledToSize: 300).
+			setNewImageFrom: (self imageMorph form scaledToSize: 300).
 		"hResizing: #spaceFill;
 		vResizing: #shrinkWrap;"
-		self addMorphBack: imageMorph]
+		self addMorphBack: self imageMorph]

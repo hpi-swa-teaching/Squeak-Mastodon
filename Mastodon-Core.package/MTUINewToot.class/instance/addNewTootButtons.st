@@ -1,9 +1,9 @@
 render
 addNewTootButtons
 
-	sendButton := MTUIPushButton new.
-	sendButton text: 'Toot'.
-	sendButton enabled: false.
-	self connect: sendButton signal: #clicked: toSelector: #toot.
+	self sendButton: MTUIPushButton new.
+	self sendButton text: 'Toot'.
+	self sendButton enabled: false.
+	self connect: self sendButton signal: #clicked: toSelector: #toot.
 	
-	self addMorphBack: sendButton
+	self addMorphBack: self sendButton

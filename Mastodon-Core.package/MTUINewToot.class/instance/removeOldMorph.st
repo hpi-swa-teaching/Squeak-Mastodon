@@ -1,5 +1,5 @@
 render
 removeOldMorph
 
-	imageMorph = 'empty' ifFalse: [self removeMorph: imageMorph].
+	self imageMorph = 'empty' ifFalse: [self removeMorph: self imageMorph].
 	self imageMorph: 'empty'
