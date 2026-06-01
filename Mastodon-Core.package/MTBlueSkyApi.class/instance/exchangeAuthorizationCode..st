@@ -27,4 +27,5 @@ exchangeAuthorizationCode: anAuthorizationCode
 	
 	json := self deserialize: response content utf8ToSqueak.
 	self token: (json at: 'accessJwt' ifAbsent: [nil]).
+	self did: (json at: 'did' ifAbsent: [nil]).
 	^ self token
