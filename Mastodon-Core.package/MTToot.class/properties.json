@@ -1,9 +1,11 @@
 {
-	"category": "Mastodon-Core",
-	"classinstvars": [],
-	"classvars": [],
-	"commentStamp": "PG 6/26/2017 15:45",
-	"instvars": [
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PG 6/26/2017 15:45",
+	"instvars" : [
 		"id",
 		"createdAt",
 		"content",
@@ -18,8 +20,11 @@
 		"inReplyToID",
 		"inReplyToAccountID",
 		"favourited",
+		"followedByUser",
+		"followUri",
 		"cid",
-		"likeUri" ],
+		"likeUri",
+		"repostUri" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],

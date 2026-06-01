@@ -27,12 +27,19 @@
 		"testGetStatusesShowsAuthorFeed": "LZ 5/4/2026 16:50",
 		"testGetStatusesVariantsUseAuthorFeedEndpoint": "LZ 5/4/2026 16:50",
 		"testIsAuthenticatedWithToken": "LZ 5/4/2026 16:50",
+		"testRepostCreatesRepostRecord" : "JH 5/28/2026 12:00",
+		"testRepostReturnsErrorWhenRequestFails" : "JH 5/28/2026 12:00",
+		"testRepostReturnsErrorWhenSessionFails" : "JH 5/28/2026 12:00",
 		"testTimelineRequestFailureReturnsErrorResult": "LZ 5/4/2026 16:50",
-		"testTootFromFeedItemMapsPost": "LZ 5/4/2026 16:50",
+		"testTootFromFeedItemMapsPost" : "JH 5/28/2026 12:00",
 		"testTootFromFeedItemExtractsFollowStatus": "AE 5/12/2026 12:00",
+		"testTootFromFeedItemExtractsRepostStatus" : "JH 5/28/2026 12:00",
 		"testTootFromFeedItemNoFollowStatus": "AE 5/12/2026 12:00",
+		"testTootFromFeedItemNoRepostStatus" : "JH 5/28/2026 12:00",
 		"testUnfollowDeletesFollowRecord": "AE 5/12/2026 12:00",
 		"testUnfollowReturnsErrorForInvalidUri": "AE 5/12/2026 12:00",
+		"testUnrepostDeletesRepostRecord" : "JH 5/28/2026 12:00",
+		"testUnrepostReturnsErrorForInvalidUri" : "JH 5/28/2026 12:00",
 		"testVerifyCredentialsReturnsCurrentAccount": "LZ 5/4/2026 16:50"
 	}
 }
