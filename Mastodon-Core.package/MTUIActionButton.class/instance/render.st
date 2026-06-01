@@ -1,10 +1,14 @@
 render
 render
-	self
-		height: 24;
-		width: 24;
-		borderWidth: 0;
-		color: Color transparent .
+
+	| buttonHeight buttonWidth |
+	buttonHeight := 24.
+	buttonWidth := 24.
 	
-	self active ifTrue: [
-		self color: Color veryLightGray ].
+	self
+		height: buttonHeight;
+		width: buttonWidth;
+		borderWidth: 0;
+		color: Color transparent.
+	
+	self active ifTrue: [self color: Color veryLightGray]
