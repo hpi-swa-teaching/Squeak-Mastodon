@@ -1,13 +1,9 @@
 render
 render
 
-	| buttonHeight buttonWidth |
-	buttonHeight := 24.
-	buttonWidth := 24.
-	
 	self
-		height: buttonHeight;
-		width: buttonWidth;
+		height: 24;
+		width: 24;
 		borderWidth: 0;
 		color: Color transparent.
 	

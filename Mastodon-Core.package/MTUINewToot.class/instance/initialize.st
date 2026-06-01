@@ -10,8 +10,8 @@ initialize
 		addMorphBack: feedbackMorph;
 		addNewTootButtons;
 		addImageButton;
-		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
-		addMorph: tootSizeLabel;
-		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText).
-	
+		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
+		imageMorph: 'empty'.
+	tootSizeLabel := TextMorph new contents: (tootTextArea contents size asString, '/', self maxTextSize asString) asHtmlText.
+	self addMorph: tootSizeLabel.
 	feedbackMorph hide
