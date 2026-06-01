@@ -1,16 +1,27 @@
 name: "Bug Report"
 description: Create a new ticket for a bug report
-title: "[G10] BUG: <title>"
+title: "[G<gruppe>] BUG: <title>"
 labels: [
   "question"
 ]
 body:
+  - type: dropdown
+    id: group
+    attributes:
+      label: "Gruppe"
+      description: Welche Gruppe?
+      options:
+        - G9
+        - G10
+        - G11
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
       label: "Was ist das Problem?"
       description: Was ist das Problem?
-      placeholder: "Als Bluesky-User möchte ich ..."
+      placeholder: "Als User möchte ich ..."
     validations:
       required: false
   - type: textarea
@@ -29,4 +40,3 @@ body:
       placeholder: "- [ ] New tests added\n- [ ] All tests passing\n"
     validations:
       required: false
-  
