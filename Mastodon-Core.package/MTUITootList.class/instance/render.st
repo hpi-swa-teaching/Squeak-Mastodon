@@ -7,6 +7,8 @@ render
 		do: [:toot | 
 			| tootMorph spacingMorph |
 			tootMorph := MTUIToot for: toot.
+			tootMorph := MTUIToot for: toot.
+tootMorph headerMorph on: MouseButtonEvent do: [:evt | self openProfileForToot: toot].
 			tootMorph repostButton
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
