@@ -1,18 +1,13 @@
 as yet unclassified
 loadArchived
 
-	| mentions myToots replyIds|
+	| mentions myToots archivedIds |
 	archivedToots := OrderedCollection new.
 	mentions := self mastodonApi getMention value.
-	myToots := (self mastodonApi getStatuses: (self mastodonApi getCurrentUser value id)) value.
+	myToots := (self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value.
 	myToots := myToots select: [:toot | toot notNil].
-	replyIds := (myToots
-	collect: [:toot | toot inReplyToID asString])
-	asSet.
+	archivedIds := (myToots collect: [:toot | toot inReplyToID asString]) asSet.
+	archivedIds addAll: self archivedIds.
 	
-	archivedToots := mentions select: [:mention |
-	replyIds includes: mention status id asString
-].
-	Transcript show: 'Archived matches: ', archivedToots size printString; cr.
-	self renderArchived.
-	
+	archivedToots := mentions select: [:mention | archivedIds includes: mention status id asString].
+	self renderArchived
