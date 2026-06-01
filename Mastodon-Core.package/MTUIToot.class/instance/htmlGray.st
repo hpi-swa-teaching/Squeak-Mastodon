@@ -1,4 +1,4 @@
-accessing
+constants
 htmlGray
 
 	^ '#666666'
