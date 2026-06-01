@@ -1,0 +1,34 @@
+name: "Feature Request"
+description: Create a new ticket for a new feature request
+title: "[G<gruppe>] FEAT: <title>"
+labels: [
+  "question"
+]
+body:
+  - type: dropdown
+    id: group
+    attributes:
+      label: "Gruppe"
+      description: Welche Gruppe?
+      options:
+        - G9
+        - G10
+        - G11
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: "Was möchte ich tun?"
+      description: Was möchte ich tun?
+      placeholder: "Als User möchte ich ..."
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: "Definition of done"
+      description: Definition of done
+      placeholder: "- [ ] New tests added\n- [ ] All tests passing\n"
+    validations:
+      required: false
