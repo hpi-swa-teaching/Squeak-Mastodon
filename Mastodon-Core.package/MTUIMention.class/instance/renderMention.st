@@ -18,6 +18,7 @@ renderMention
 			and: [(self isArchived: mention status id) not]) ifTrue: [ | tootMorph |
 			tootMorph := MTUIToot new toot: mention status.
 			tootMorph showArchiveButton: true.
+			
 			tootMorph render.
 			
 			tootMorph archiveButton
