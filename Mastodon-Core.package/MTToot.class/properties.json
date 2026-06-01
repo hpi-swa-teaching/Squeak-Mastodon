@@ -18,11 +18,10 @@
 		"inReplyToID",
 		"inReplyToAccountID",
 		"favourited",
-		"followedByUser",
-		"followUri"
-	],
-	"name": "MTToot",
-	"pools": [],
-	"super": "MTMastodonModel",
-	"type": "normal"
-}
+		"cid",
+		"likeUri" ],
+	"name" : "MTToot",
+	"pools" : [
+		 ],
+	"super" : "MTMastodonModel",
+	"type" : "normal" }
