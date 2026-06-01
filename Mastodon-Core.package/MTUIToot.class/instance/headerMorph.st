@@ -4,7 +4,7 @@ headerMorph
     header ifNotNil: [^ header].
     nameText := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: (
         '<b>' , self toot acct displayName , '</b> ',
-        '<i><a href="mastodonUser:', self toot acct id , '">@', self toot acct acct , '</a></i>')).
+        '<i>@', self toot acct acct , '</i>')).
     nameText
         wrapFlag: true;
         autoFit: true;

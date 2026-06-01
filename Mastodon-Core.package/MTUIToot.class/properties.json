@@ -15,7 +15,8 @@
 		"toot",
 		"repostButton",
 		"followButton",
-		"header" ],
+		"header",
+		"profileButton" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],
