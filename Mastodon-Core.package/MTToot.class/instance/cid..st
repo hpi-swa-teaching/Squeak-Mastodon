@@ -1,3 +1,3 @@
 accessing
-cid: aString
-	cid := aString
+cid: anObject
+	cid := anObject
