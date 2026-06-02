@@ -1,3 +1,4 @@
 accessing
 searchTextField
+
 	^ searchTextField
