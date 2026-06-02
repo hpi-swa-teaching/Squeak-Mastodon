@@ -1,4 +1,4 @@
 Account
 defaultHeaderURL
 
-^'header@mastodon.social'
+	^ 'header@mastodon.social'

@@ -1,3 +1,4 @@
 Account
 defaultPublicURL
-^ 'publicURL@mastodon.social'
+
+	^ 'publicURL@mastodon.social'

@@ -1,3 +1,4 @@
 Account
 defaultFederatedUsername
-^ 'username@mastodon.social'
+
+	^ 'username@mastodon.social'
