@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"username",
+		"baseURL",
+		"token" ],
+	"name" : "MTLoginCredentials",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

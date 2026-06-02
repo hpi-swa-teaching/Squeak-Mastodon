@@ -30,5 +30,5 @@ GSMetadata {
 			#path : FSAbsolutePath [ ]
 		}
 	],
-	#name : 'Squeak-Mastodon2'
+	#name : 'Squeak-Mastodon'
 }

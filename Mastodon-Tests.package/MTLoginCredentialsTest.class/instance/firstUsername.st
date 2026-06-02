@@ -1,0 +1,4 @@
+defaults
+firstUsername
+
+	^ 'user1'
