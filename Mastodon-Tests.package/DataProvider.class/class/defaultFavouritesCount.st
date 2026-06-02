@@ -1,0 +1,4 @@
+defaults
+defaultFavouritesCount
+
+	^ 7

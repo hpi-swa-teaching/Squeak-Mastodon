@@ -1,4 +1,4 @@
 defaults
-firstToken
+defaultToken
 
 	^ 't0k3n'
