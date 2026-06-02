@@ -7,13 +7,13 @@ initialize
 		addNewTootTextarea;
 		addNewTootButtons;
 		addImageButton;
-		addNewScheduleArea;
 		addNewScheduleButton;
 		messageArea: (AlignmentMorph newColumn
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
 			color: Color transparent);
 		addMorphBack: messageArea;
+		addNewScheduleArea;
 		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
 		addMorph: tootSizeLabel;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText)
