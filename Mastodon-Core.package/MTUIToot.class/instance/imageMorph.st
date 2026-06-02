@@ -1,15 +1,11 @@
 render
 imageMorph
 	image := MTMedia imageMorphFrom: ((self toot media at: 1 ifAbsent: [ ^ nil ]) previewUrl).
+	image cornerRadius: 20.
 	image
-		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
-		hResizing: #rigid;
-		vResizing: #rigid;
-		layoutInset: 0; 
-		cellInset: 10;
-		wrapCentering: #topLeft;
-		listCentering: #topLeft;
+		hResizing: #shrinkWrap;
+		vResizing: #shrinkWrap;
 		color: Color transparent;
 		setNewImageFrom: (image form scaledToSize: 300).
+	
 	^ image

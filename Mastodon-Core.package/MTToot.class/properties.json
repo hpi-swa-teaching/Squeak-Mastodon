@@ -24,7 +24,8 @@
 		"followUri",
 		"cid",
 		"likeUri",
-		"repostUri" ],
+		"repostUri",
+		"reblog" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],
