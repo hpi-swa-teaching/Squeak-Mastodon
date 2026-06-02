@@ -1,6 +1,5 @@
 toot
 toot
-
 	| text visibility |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	text := self validateTootText.

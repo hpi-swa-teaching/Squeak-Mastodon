@@ -1,6 +1,5 @@
 initialization
 initialize
-
 	super initialize.
 	self
 		cellInset: 10;

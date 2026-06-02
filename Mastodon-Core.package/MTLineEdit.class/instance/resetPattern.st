@@ -1,4 +1,3 @@
 accessing
 resetPattern
-
 	self pattern: '.*'

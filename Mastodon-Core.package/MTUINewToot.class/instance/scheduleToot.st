@@ -1,6 +1,5 @@
 toot
 scheduleToot
-
 	| text visibility time timeRes textRes |
 	timeRes := self validateScheduledDate.
 	timeRes isError ifTrue: [

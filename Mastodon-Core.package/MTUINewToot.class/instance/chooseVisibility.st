@@ -1,6 +1,5 @@
 toot
 chooseVisibility
-
 	| menu |
 	menu := DialogWindow new.
 	menu title: 'Visibility'.

@@ -1,6 +1,5 @@
 tests
 testDateValidation
-
 	| widget |
 	widget := MTUINewToot new.
 	widget yearField theText: '2026'.

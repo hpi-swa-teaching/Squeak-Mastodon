@@ -1,6 +1,5 @@
 tests
 testTabHandling
-
 	| lineEdit textMorph |
 	lineEdit := MTLineEdit new.
 	textMorph := lineEdit textMorph.

@@ -1,6 +1,5 @@
 toot
 validateScheduledDate
-
 	| time |
 	time := [
 		DateAndTime

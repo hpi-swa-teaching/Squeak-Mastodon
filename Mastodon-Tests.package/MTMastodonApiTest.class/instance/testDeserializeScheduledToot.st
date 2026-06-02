@@ -1,6 +1,5 @@
 tests
 testDeserializeScheduledToot
-
 	| api json result |
 	api := MTMastodonApi new.
 	json := DataProvider mockScheduledStatus.

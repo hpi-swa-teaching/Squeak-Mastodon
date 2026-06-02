@@ -1,6 +1,5 @@
 tests
 testValidator
-
 	| morph string |
 	morph := MTTextLineMorph new.
 	morph validator: [:s | s size <= 3].

@@ -1,6 +1,5 @@
 initialization
 from: aJsonObject
-
 	^ self new
 		text: (aJsonObject at: 'text');
 		mediaIDs: (aJsonObject at: 'media_ids');

@@ -1,7 +1,6 @@
 render
 addNewScheduleButton
 	| sendButton |
-	
 	sendButton := UiPushButton new.
 	sendButton text: 'Schedule'.
 	self

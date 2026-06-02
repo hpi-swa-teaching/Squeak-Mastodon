@@ -1,6 +1,5 @@
 endpoints
 toot: aString withMedia: aMediaID withVisibility: aVisibility scheduleAt: aDateAndTime
-
 	| url parameters response stream |
 	stream := AttributedTextStream new.
 	aDateAndTime printOn: stream.

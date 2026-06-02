@@ -1,6 +1,5 @@
 render
 addNewScheduleArea
-
 	| now container |
 	container := AlignmentMorph newRow.
 	now := DateAndTime today.
