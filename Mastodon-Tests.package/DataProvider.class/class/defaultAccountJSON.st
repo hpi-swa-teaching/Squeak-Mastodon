@@ -1,7 +1,8 @@
 Account
 defaultAccountJSON
 
-	^ '{',
+	^ Json readFromString: 
+	'{',
 		(self jsonField: 'id' value: self defaultId), ',',
 		(self jsonField: 'username' value: self defaultUsername), ',',
 		(self jsonField: 'acct' value: self defaultFederatedUsername), ',',
