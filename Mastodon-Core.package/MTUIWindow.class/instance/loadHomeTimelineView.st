@@ -1,14 +1,12 @@
 views
 loadHomeTimelineView
+
 	| homeTimelineView |
 	self refreshProvider.
-	homeTimelineView := MTUIHomeTimeline new.
-							
-	homeTimelineView mastodonApi: (self mastodonApi).
+	homeTimelineView := MTUITootList new.
+	
+	homeTimelineView mastodonApi: self mastodonApi.
 	homeTimelineView loadToots ifFalse: [^ false].
 	
-	self 
-		loadView: homeTimelineView
-		as: #homeTimelineView 
-		activate: #homeTimelineButton.
-	self layoutChanged.
+	self loadView: homeTimelineView as: #homeTimelineView activate: #homeTimelineButton.
+	self layoutChanged
