@@ -1,4 +1,0 @@
-Account
-defaultFollowingCount
-
-	^ 13

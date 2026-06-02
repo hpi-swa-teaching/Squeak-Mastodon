@@ -1,6 +1,5 @@
 as yet unclassified
 mockAccount
-
 	^ '{
    "id":11792,
    "username":"momomo",
