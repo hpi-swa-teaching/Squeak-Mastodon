@@ -1,5 +1,6 @@
 initialization
 with: anOrderedCollectionOfToots
-	^ (self new)
+
+	^ self new
 		toots: anOrderedCollectionOfToots;
 		render
