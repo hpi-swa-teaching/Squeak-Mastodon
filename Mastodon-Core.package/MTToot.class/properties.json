@@ -20,6 +20,11 @@
 		"inReplyToID",
 		"inReplyToAccountID",
 		"favourited",
+		"followedByUser",
+		"followUri",
+		"cid",
+		"likeUri",
+		"repostUri",
 		"reblog" ],
 	"name" : "MTToot",
 	"pools" : [

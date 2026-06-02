@@ -5,4 +5,5 @@ initialize
 	toot := MTToot new.
 	
 	self repostButton: MTUIRepostButton new.
-	self heartButton: MTUIStarButton new
+	self heartButton: MTUIStarButton new.
+	self followButton: MTUIFollowButton new.
