@@ -2,8 +2,8 @@ toot
 tootToMastodon
 	| text visibility |
 	text := tootTextArea contents asString.
-	text size > 500
-		ifTrue: [self inform: 'Not more than 500 characters allowed.'.
+	text size > self tootCharacterLimit
+		ifTrue: [self inform: 'Not more than ', self tootCharacterLimit asString, ' characters allowed.'.
 			^ false].
 	visibility := self addTootMenu getUserResponse.
 	imageMorph
