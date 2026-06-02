@@ -1,12 +1,11 @@
 {
 	"class" : {
-		"from:" : "LS 8/4/2017 16:08" },
+		"from:" : "timbeier 6/2/2026 06:33" },
 	"instance" : {
 		"acct" : "mm 5/28/2017 19:40",
 		"acct:" : "mm 5/28/2017 19:40",
 		"avatar" : "mm 5/28/2017 19:40",
 		"avatar:" : "mm 5/28/2017 19:40",
-		"buildUrl:" : "PG 6/26/2017 16:28",
 		"createdAt" : "mm 5/28/2017 19:40",
 		"createdAt:" : "mm 5/28/2017 19:40",
 		"displayName" : "mm 5/28/2017 19:40",
@@ -24,5 +23,6 @@
 		"statusesCount" : "mm 5/28/2017 19:41",
 		"statusesCount:" : "mm 5/28/2017 19:41",
 		"url" : "mm 5/28/2017 19:40",
+		"urlForPath:" : "timbeier 6/2/2026 06:33",
 		"username" : "mm 5/28/2017 19:40",
 		"username:" : "mm 5/28/2017 19:40" } }

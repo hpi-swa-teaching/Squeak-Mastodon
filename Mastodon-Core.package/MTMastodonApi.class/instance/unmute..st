@@ -1,6 +1,4 @@
 endpoints
 unmute: aUserID
-	| url response |
-	url := self buildUrl: '/api/v1/accounts/', aUserID ,'/unmute'.
-	response := self postRequest: url.
-	^ MTResult value: (self class deserialize: response intoObjectOf: MTRelationship)
+
+	^ self getObjectAt: '/api/v1/accounts/', aUserID, '/unmute' as: MTRelationship

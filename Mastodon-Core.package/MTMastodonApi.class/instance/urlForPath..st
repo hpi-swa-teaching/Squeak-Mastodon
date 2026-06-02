@@ -1,3 +1,3 @@
 helpers
-buildUrl: aString
+urlForPath: aString
 	^ self baseURL, aString

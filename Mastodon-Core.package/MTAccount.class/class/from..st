@@ -6,7 +6,7 @@ from: aJsonObject
 		acct: (aJsonObject at: 'acct');
 		displayName: (aJsonObject at: 'display_name');
 		createdAt: (aJsonObject at: 'created_at');
-		buildUrl: (aJsonObject at: 'url');
+		urlForPath: (aJsonObject at: 'url');
 		note: (aJsonObject at: 'note');
 		avatar: (aJsonObject at: 'avatar');
 		header: (aJsonObject at: 'header');

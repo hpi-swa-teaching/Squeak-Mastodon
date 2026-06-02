@@ -2,7 +2,7 @@ render
 displayUser: aUsername
 |user|
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^false].
 	user := self mastodonApi getAccount: aUsername.
 	user isError ifTrue: [ 
 		self inform: ('An error occured while loading user with screenName: ' , aUsername).

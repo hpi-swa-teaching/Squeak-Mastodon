@@ -1,3 +1,3 @@
 accessing
-buildUrl: anObject
+urlForPath: anObject
 	url := anObject

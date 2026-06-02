@@ -12,6 +12,6 @@ initialize
 	self setLabel: self mastodonApi displayName;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi isAuthenticated
+	self mastodonApi hasToken
 		ifTrue: [self loadNewTootView]
 		ifFalse: [self loadSettingsView]

@@ -1,7 +1,7 @@
 helpers
 getAuthorFeedFor: anAccountID cursor: aCursor
 	| url response json feed toots |
-	url := self buildUrl: '/xrpc/app.bsky.feed.getAuthorFeed?limit=30&actor=', anAccountID.
+	url := self urlForPath: '/xrpc/app.bsky.feed.getAuthorFeed?limit=30&actor=', anAccountID.
 	aCursor ifNotNil: [url := url, '&cursor=', aCursor].
 	response := self getRequest: url.
 	response ifNil: [^ MTResult error: 'BlueSky author feed request failed'].

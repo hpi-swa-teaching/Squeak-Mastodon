@@ -11,7 +11,7 @@
 		"testAccountFromAuthorMapsProfile" : "LZ 5/4/2026 16:50",
 		"testAuthorFeedRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
 		"testAuthorizationHelpers" : "LZ 5/4/2026 16:50",
-		"testClassConstructorSetsBaseURLAndToken" : "LZ 5/4/2026 16:50",
+		"testClassConstructorSetsBaseURLAndToken" : "timbeier 6/2/2026 07:47",
 		"testDeserializeJson" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeParsesHandleAndPassword" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeReturnsNilOnFailure" : "LZ 5/4/2026 16:50",
@@ -20,7 +20,7 @@
 		"testGetPrivateTimelineVariantsUseTimelineEndpoint" : "LZ 5/4/2026 16:50",
 		"testGetStatusesShowsAuthorFeed" : "LZ 5/4/2026 16:50",
 		"testGetStatusesVariantsUseAuthorFeedEndpoint" : "LZ 5/4/2026 16:50",
-		"testIsAuthenticatedWithToken" : "LZ 5/4/2026 16:50",
+		"testIsAuthenticatedWithToken" : "timbeier 6/2/2026 07:39",
 		"testTimelineRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
 		"testTootFromFeedItemMapsPost" : "LZ 5/4/2026 16:50",
 		"testVerifyCredentialsReturnsCurrentAccount" : "LZ 5/4/2026 16:50" } }

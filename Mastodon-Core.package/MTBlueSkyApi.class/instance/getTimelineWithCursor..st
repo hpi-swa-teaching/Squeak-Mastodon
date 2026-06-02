@@ -1,7 +1,7 @@
 helpers
 getTimelineWithCursor: aCursor
 	| url response json feed toots |
-	url := self buildUrl: '/xrpc/app.bsky.feed.getTimeline?limit=30'.
+	url := self urlForPath: '/xrpc/app.bsky.feed.getTimeline?limit=30'.
 	aCursor ifNotNil: [url := url, '&cursor=', aCursor].
 	response := self getRequest: url.
 	response ifNil: [^ MTResult error: 'BlueSky timeline request failed'].

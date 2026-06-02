@@ -1,7 +1,7 @@
 updating
 loadTootsOf: aMTUser
 	| toots |
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^false].
 			
 	toots := mastodonApi getStatuses: aMTUser id.
 	

@@ -1,7 +1,4 @@
 endpoints
 updateCredentials: aDictionary
-	| url response  |
-	
-	url := self buildUrl: '/api/v1/accounts/update_credentials'.
-	response := self patchRequest: url withParameters: aDictionary.
-	^ response
+
+	^ self patchObjectAt: '/api/v1/accounts/update_credentials' withParameters: aDictionary as: MTAccount

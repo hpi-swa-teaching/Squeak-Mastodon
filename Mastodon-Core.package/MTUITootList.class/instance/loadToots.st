@@ -1,7 +1,7 @@
 updating
 loadToots
 	| toots |	
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^false].
 
 	toots := mastodonApi getPrivateTimeline.
 	toots isError  

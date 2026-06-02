@@ -3,7 +3,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 	| url parameters response json |
 	(self clientID isNil or: [self clientSecret isNil]) ifTrue: [^ nil].
 
-	url := self buildUrl: '/oauth/token'.
+	url := self urlForPath: '/oauth/token'.
 	parameters := Dictionary newFromPairs: {
 		'grant_type'. 'authorization_code'.
 		'code'. anAuthorizationCode.

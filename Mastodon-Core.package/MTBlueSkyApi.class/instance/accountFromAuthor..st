@@ -11,7 +11,7 @@ accountFromAuthor: anAuthor
 		acct: handle;
 		displayName: displayName;
 		createdAt: createdAt;
-		buildUrl: (anAuthor at: 'did' ifAbsent: ['']);
+		urlForPath: (anAuthor at: 'did' ifAbsent: ['']);
 		note: '';
 		avatar: (anAuthor at: 'avatar' ifAbsent: ['']);
 		header: '';

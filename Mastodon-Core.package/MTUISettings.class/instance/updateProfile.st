@@ -1,7 +1,7 @@
 initialization
 updateProfile 
 	| text dict |
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^false].
 	
 	text := usernameUpdateTextField contents asString.
 	text size > 30
