@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUIDirectTootButton",
+	"pools" : [
+		 ],
+	"super" : "MTUIActionButton",
+	"type" : "normal" }
