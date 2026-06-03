@@ -8,7 +8,7 @@ initialize
 		layoutInset: 20;
 		addNewTootTextarea;
 		addMorphBack: self feedbackMorph;
-		addNewTootButtons;
+		addNewTootButton;
 		addImageButton;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
 		imageMorph: 'empty'.

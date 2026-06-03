@@ -11,7 +11,7 @@
 		"avatar",
 		"content",
 		"createdAt",
-		"heartButton",
+		"starButton",
 		"interaction",
 		"media",
 		"post",

@@ -8,7 +8,7 @@ render
 	self toots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIToot for: toot.
 		self renderRepostButtonOf: tootMorph for: toot.
-		self renderHeartButtonOf: tootMorph for: toot.
+		self renderStarButtonOf: tootMorph for: toot.
 		spacingMorph := Morph new color: Color veryVeryLightGray.
 		spacingMorph
 			height: 1;

@@ -4,7 +4,7 @@
 		"with:morph:" : "HB 6/1/2026 14:49" },
 	"instance" : {
 		"addImageButton" : "HB 6/1/2026 15:35",
-		"addNewTootButtons" : "HB 6/1/2026 15:35",
+		"addNewTootButton" : "MD 6/3/2026 14:23",
 		"addNewTootTextarea" : "HB 6/1/2026 15:35",
 		"addTootMenu" : "HB 6/1/2026 14:33",
 		"feedbackMorph" : "HB 6/1/2026 15:22",
@@ -16,7 +16,7 @@
 		"imageMorph:" : "HB 6/1/2026 14:51",
 		"imageTextArea" : "HB 6/1/2026 15:22",
 		"imageTextArea:" : "HB 6/1/2026 15:22",
-		"initialize" : "HB 6/1/2026 15:34",
+		"initialize" : "MD 6/3/2026 14:23",
 		"loadImage" : "HB 6/1/2026 16:10",
 		"maxTextSize" : "HB 6/1/2026 14:15",
 		"morphFromPath" : "HB 6/1/2026 15:23",

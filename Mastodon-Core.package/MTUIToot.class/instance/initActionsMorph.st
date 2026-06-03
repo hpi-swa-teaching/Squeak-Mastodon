@@ -2,7 +2,7 @@ render
 initActionsMorph
 
 	self repostButton: MTUIRepostButton new.
-	self heartButton: MTUIStarButton new.
+	self starButton: MTUIStarButton new.
 	self actions: Morph new.
 	self actions
 		layoutPolicy: TableLayout new;
@@ -16,4 +16,4 @@ initActionsMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self repostButton render;
-		addMorphBack: self heartButton render
+		addMorphBack: self starButton render

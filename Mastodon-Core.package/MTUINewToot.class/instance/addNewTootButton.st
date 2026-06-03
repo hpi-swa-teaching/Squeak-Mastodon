@@ -1,5 +1,5 @@
 render
-addNewTootButtons
+addNewTootButton
 
 	self sendButton: MTUIPushButton new.
 	self sendButton text: 'Toot'.
