@@ -21,7 +21,7 @@ elementMorph
 	actionsMorph := self actionsMorph.
 	
 	accountMorph ifNotNil: [profile addMorphBack: accountMorph].
-	noteMorph ifNotNil: [profile addMorphBack: accountMorph].
+	noteMorph ifNotNil: [profile addMorphBack: noteMorph].
 	createdAtMorph ifNotNil: [profile addMorphBack: createdAtMorph].
 	actionsMorph ifNotNil: [profile addMorphBack: actionsMorph].
 	
