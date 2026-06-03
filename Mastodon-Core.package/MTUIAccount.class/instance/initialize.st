@@ -1,4 +1,5 @@
 initialization
 initialize
+
 	super initialize.
-	self account: MTAccount new.
+	self account: MTAccount new

@@ -10,7 +10,7 @@ toot
 	
 	visibility := self addTootMenu.
 	self imageMorph = 'empty'
-		ifTrue: [mastodonApi toot: text withVisibility: visibility]
+		ifTrue: [self mastodonApi toot: text withVisibility: visibility]
 		ifFalse: [self tootImagewithVisibility: visibility].
 	self tootTextArea contents: ''.
 	self showFeedback
