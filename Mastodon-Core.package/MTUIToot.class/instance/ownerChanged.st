@@ -7,7 +7,7 @@ ownerChanged
 	postWidth := self owner width - 80.
 	postWidth := postWidth max: 0.
 	self post width: postWidth.
-	self account ifNotNil: [self account width: postWidth].
-	self content ifNotNil: [self content width: postWidth].
-	self reblog ifNotNil: [self reblog width: postWidth].
-	self createdAt ifNotNil: [self createdAt width: postWidth]
+	self accountMorph ifNotNil: [self accountMorph width: postWidth].
+	self textMorph ifNotNil: [self textMorph width: postWidth].
+	self reblogMorph ifNotNil: [self reblogMorph width: postWidth].
+	self createdAtMorph ifNotNil: [self createdAtMorph width: postWidth]

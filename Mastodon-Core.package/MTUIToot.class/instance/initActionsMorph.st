@@ -3,8 +3,8 @@ initActionsMorph
 
 	self repostButton: MTUIRepostButton new.
 	self heartButton: MTUIStarButton new.
-	self actions: Morph new.
-	self actions
+	self actionsMorph: Morph new.
+	self actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;

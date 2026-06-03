@@ -15,18 +15,18 @@ postMorph
 		color: Color transparent.
 	
 	self initInteraction.
-	self initAccount.
-	self initContent.
-	self initReblog.
+	self initAccountMorph.
+	self initTextMorph.
+	self initReblogMorph.
 	self initMedia.
-	self initCreatedAt.
+	self initCreatedAtMorph.
 	self initActionsMorph.
 	
-	post addMorphBack: self account.
-	self content ifNotNil: [self content text isEmpty ifFalse: [post addMorphBack: self content]].
-	self reblog ifNotNil: [post addMorphBack: self reblog].
+	post addMorphBack: self accountMorph.
+	self textMorph ifNotNil: [self textMorph text isEmpty ifFalse: [post addMorphBack: self textMorph]].
+	self reblogMorph ifNotNil: [post addMorphBack: self reblogMorph].
 	self media ifNotNil: [post addMorphBack: self media].
-	self createdAt ifNotNil: [post addMorphBack: self createdAt].
-	post addMorphBack: actions.
+	self createdAtMorph ifNotNil: [post addMorphBack: self createdAtMorph].
+	post addMorphBack: actionsMorph.
 	
 	^ post
