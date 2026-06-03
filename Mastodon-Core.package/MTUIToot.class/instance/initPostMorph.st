@@ -1,6 +1,7 @@
 render
-postMorph
-	| postMorph|
+initPostMorph
+
+	| postMorph |
 	postMorph := AlignmentMorph new.
 	postMorph
 		layoutPolicy: TableLayout new;
