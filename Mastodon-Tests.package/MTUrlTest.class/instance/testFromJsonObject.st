@@ -1,12 +1,9 @@
 as yet unclassified
 testFromJsonObject
-	| jsonObject jsonUrls url |
+
+	| url |
+	url := MTUrl from: (Json new stream: (ReadStream on: DataProvider defaultUrlsJson)) readAny.
 	
-	jsonUrls := (Json new stream: (ReadStream on: DataProvider urlsJson )) readAny.
-	jsonUrls do: [:j|
-		jsonObject := j].
-	url := MTUrl from: jsonObject.
-	
-	self assert: (url expandedUrl) equals: (jsonObject at: 'expanded_url').
-	self assert: (url displayUrl) equals: (jsonObject at: 'display_url').
-	self assert: (url shortUrl) equals: (jsonObject at: 'url').
+	self assert: url expandedUrl equals: DataProvider defaultExpandedUrl.
+	self assert: url displayUrl equals: DataProvider defaultDisplayUrl.
+	self assert: url shortUrl equals: DataProvider defaultShortUrl

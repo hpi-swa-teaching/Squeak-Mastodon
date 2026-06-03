@@ -7,6 +7,7 @@ defaultTootPlain
 	toot at: 'id' put: self defaultTootId.
 	toot at: 'created_at' put: self defaultTootCreatedAt.
 	toot at: 'content' put: self defaultContent.
+	toot at: 'account' put: self defaultAccount.
 	"toot at: 'reblog' put: null."
 	toot at: 'favourited' put: self defaultFavourited.
 	toot at: 'reblogged' put: self defaultReblogged.
