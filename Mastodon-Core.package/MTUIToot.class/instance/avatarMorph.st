@@ -1,8 +1,8 @@
 render
-initAvatarMorph
+avatarMorph
 
 	| avatar |
-	avatar := MTMedia imageMorphFrom: self toot acct avatar.
+	avatar := MTMedia imageMorphFrom: self object acct avatar.
 	avatar ifNotNil: [
 		avatar
 			hResizing: #shrinkWrap;

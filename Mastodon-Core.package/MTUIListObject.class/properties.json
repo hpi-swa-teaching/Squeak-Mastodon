@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"blockButton",
-		"followButton",
-		"directTootButton" ],
-	"name" : "MTUIAccount",
+		"object" ],
+	"name" : "MTUIListObject",
 	"pools" : [
 		 ],
-	"super" : "MTUIListObject",
+	"super" : "Morph",
 	"type" : "normal" }

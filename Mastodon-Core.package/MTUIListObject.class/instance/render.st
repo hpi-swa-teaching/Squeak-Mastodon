@@ -10,7 +10,7 @@ render
 		cellInset: 10;
 		cellPositioning: #topLeft;
 		color: Color white;
-		addMorphBack: self initAvatarMorph;
-		addMorphBack: self postMorph.
+		addMorphBack: self avatarMorph;
+		addMorphBack: self elementMorph.
 	
 	self layoutChanged

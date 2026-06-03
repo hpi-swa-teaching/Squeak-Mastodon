@@ -6,17 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"accountMorph",
-		"actionsMorph",
-		"textMorph",
-		"createdAtMorph",
 		"interaction",
-		"media",
 		"repostButton",
-		"starButton",
-		"reblogMorph" ],
+		"starButton" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "MTUIListObject",
 	"type" : "normal" }

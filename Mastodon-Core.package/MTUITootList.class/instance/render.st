@@ -6,7 +6,7 @@ render
 	self toots
 		do: [:toot | 
 			| tootMorph spacingMorph |
-			tootMorph := MTUIToot for: toot.
+			tootMorph := MTUIToot new for: toot.
 			tootMorph repostButton
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
