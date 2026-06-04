@@ -1,15 +1,15 @@
 {
 	"class" : {
-		"from:" : "SB 6/4/2026 21:06" },
+		"from:" : "SB 6/4/2026 21:29" },
 	"instance" : {
-		"acct" : "SB 6/4/2026 21:01",
-		"acct:" : "SB 6/4/2026 21:01",
 		"avatar" : "SB 6/4/2026 21:01",
 		"avatar:" : "SB 6/4/2026 21:01",
 		"createdAt" : "SB 6/4/2026 21:01",
 		"createdAt:" : "SB 6/4/2026 21:01",
 		"displayName" : "SB 6/4/2026 21:02",
 		"displayName:" : "SB 6/4/2026 21:02",
+		"federatedUsername" : "SB 6/4/2026 21:26",
+		"federatedUsername:" : "SB 6/4/2026 21:26",
 		"followersCount" : "SB 6/4/2026 21:02",
 		"followersCount:" : "SB 6/4/2026 21:02",
 		"followingCount" : "SB 6/4/2026 21:02",

@@ -1,4 +1,0 @@
-defaults
-defaultMediaId
-
-	^ 23

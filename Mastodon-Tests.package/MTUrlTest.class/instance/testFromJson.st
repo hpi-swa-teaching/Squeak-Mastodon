@@ -1,8 +1,8 @@
-as yet unclassified
-testFromJsonObject
+json
+testFromJson
 
 	| url |
-	url := MTUrl from: (Json new stream: (ReadStream on: DataProvider defaultUrlsJson)) readAny.
+	url := MTUrl from: DataProvider defaultUrlsJsonObject.
 	
 	self assert: url expandedUrl equals: DataProvider defaultExpandedUrl.
 	self assert: url displayUrl equals: DataProvider defaultDisplayUrl.

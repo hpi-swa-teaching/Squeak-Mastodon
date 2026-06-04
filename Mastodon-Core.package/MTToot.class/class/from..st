@@ -7,7 +7,7 @@ from: aJsonObject
 		content: (aJsonObject at: 'content');
 		reblog: ((aJsonObject at: 'reblog') ifNotNil: [:reblog | MTToot from: reblog]);
 		quote: ((aJsonObject at: 'quote') ifNotNil: [:quote | (quote at: 'quoted_status') ifNotNil: [:quoted_status | MTToot from: quoted_status]]);
-		acct: (MTAccount from: (aJsonObject at: 'account'));
+		account: (MTAccount from: (aJsonObject at: 'account'));
 		favourited: (MTUtils stringToBool: (aJsonObject at: 'favourited'));
 		reblogged: (MTUtils stringToBool: (aJsonObject at: 'reblogged'));
 		reblogsCount: (aJsonObject at: 'reblogs_count');

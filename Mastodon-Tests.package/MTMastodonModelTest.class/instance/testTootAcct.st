@@ -4,6 +4,6 @@ testTootAcct
 	
 	Model :=  MTToot new.
 	
-	Model acct: 'schmidtflo'.
+	Model account: 'schmidtflo'.
 		
-	self assert: (Model acct)  equals: ('schmidtflo'). 
+	self assert: (Model account)  equals: ('schmidtflo'). 

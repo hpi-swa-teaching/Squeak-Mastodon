@@ -4,7 +4,7 @@ from: aJsonObject
 	^ self new
 		id: (aJsonObject at: 'id');
 		username: (aJsonObject at: 'username');
-		acct: (aJsonObject at: 'acct');
+		federatedUsername: (aJsonObject at: 'acct');
 		displayName: (aJsonObject at: 'display_name');
 		createdAt: (aJsonObject at: 'created_at');
 		url: (aJsonObject at: 'url');
