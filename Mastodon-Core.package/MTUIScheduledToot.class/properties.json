@@ -1,0 +1,23 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"user",
+		"avatar",
+		"image",
+		"content",
+		"text",
+		"actions",
+		"scheduleButton",
+		"toot",
+		"cancelButton",
+		"editButton" ],
+	"name" : "MTUIScheduledToot",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

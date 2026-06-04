@@ -12,6 +12,7 @@ render
 		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
 		color: Color white.
+	
 	avatar := self avatarMorph.
 	avatar ifNotNil: [self addMorphBack: avatar].
 	self addMorphBack: self contentMorph.

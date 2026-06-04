@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user",
-		"scheduledMorphs",
-		"scheduledToots" ],
-	"name" : "MTUIUserTimeline",
+		 ],
+	"name" : "MTUICancelButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }

@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user",
-		"scheduledMorphs",
-		"scheduledToots" ],
-	"name" : "MTUIUserTimeline",
+		 ],
+	"name" : "MTUITimeButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }
