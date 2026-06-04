@@ -1,11 +1,16 @@
 toot
 toot
-	| text visibility |
+
+	| textRes text visibility |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
-	text := self validateTootText.
-	text ifNil: [^ false].
+	textRes := self validateTootText.
+	textRes isError ifTrue: [
+		self inform: textRes error.
+		^ false].
+	text := textRes value.
 	
 	visibility := self chooseVisibility.
+	
 	imageMorph
 		ifNil: [mastodonApi toot: text withVisibility: visibility]
 		ifNotNil: [self tootImagewithVisibility: visibility].

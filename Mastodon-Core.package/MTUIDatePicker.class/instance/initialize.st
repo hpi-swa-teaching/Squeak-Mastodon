@@ -16,4 +16,6 @@ initialize
 	self monthField nextField: dayField.
 	self dayField nextField: hourField.
 	self hourField nextField: minuteField.
-	self minuteField nextField: yearField
+	self minuteField nextField: yearField.
+	
+	self render
