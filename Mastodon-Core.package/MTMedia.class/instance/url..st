@@ -1,3 +1,4 @@
 accessing
-urlForPath: anObject
+url: anObject
+
 	url := anObject
