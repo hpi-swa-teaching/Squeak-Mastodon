@@ -18,7 +18,7 @@
 		"toot",
 		"reblog",
 		"followButton",
-		"profileButton" ],
+		"profileLink" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],
