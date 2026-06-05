@@ -1,5 +1,6 @@
 error handling
-error: aSTError
-	^ (self new)
-		error: aSTError;
+error: anError
+
+	^ self new
+		error: anError;
 		yourself

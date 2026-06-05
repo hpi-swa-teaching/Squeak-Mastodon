@@ -1,7 +1,8 @@
 actions
 logout
+
 	self clearTextFields.
-	self mastodonApi hasToken ifFalse: [^false].
+	self mastodonApi isLoggedIn ifFalse: [^ false].
 	MTSettingsStore reset.
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
 	self mastodonApi reset.
