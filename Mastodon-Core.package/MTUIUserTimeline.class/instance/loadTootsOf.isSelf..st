@@ -4,7 +4,7 @@ loadTootsOf: aMTUser isSelf: aBoolean
 	| toots |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	aBoolean ifTrue: [self loadScheduled].
+	aBoolean ifTrue: [self load].
 	
 	toots := mastodonApi getStatuses: aMTUser id.
 	

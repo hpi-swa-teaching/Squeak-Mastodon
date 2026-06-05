@@ -1,5 +1,5 @@
 actions
-loadScheduled
+load
 
 	| res scheduled maxId |
 	maxId := 0.
