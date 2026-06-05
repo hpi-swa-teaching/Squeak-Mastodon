@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"handleKeystroke:" : "lapl 6/6/2026 00:18",
-		"handleTab:" : "lapl 6/6/2026 00:20",
+		"handleKeystroke:" : "lapl 6/6/2026 00:27",
+		"handleTab:withShift:" : "lapl 6/6/2026 00:26",
 		"isSpecialCharacter:" : "lapl 6/2/2026 12:59",
 		"match:" : "lapl 5/26/2026 14:20",
 		"pattern" : "lapl 5/25/2026 10:07",

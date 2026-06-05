@@ -3,6 +3,8 @@
 		 },
 	"instance" : {
 		"testPattern" : "lapl 6/2/2026 13:02",
+		"testShiftTabMovesBack" : "lapl 6/6/2026 00:39",
 		"testSpecialCharacter" : "lapl 6/2/2026 13:02",
-		"testTabHandling" : "lapl 6/2/2026 13:02",
+		"testTabHandling" : "lapl 6/6/2026 00:37",
+		"testTabMovesForward" : "lapl 6/6/2026 00:38",
 		"testValidator" : "lapl 6/2/2026 13:03" } }
