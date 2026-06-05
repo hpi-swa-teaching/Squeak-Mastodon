@@ -1,6 +1,6 @@
 render
-addNewTootTextarea
-	| textareaWrapper |
+addNewScheduledTootTextarea
+	| textareaWrapper tootTextArea |
 	
 	textareaWrapper := RectangleMorph new borderWidth: 1.
 	textareaWrapper := MTUIView setWrapper: textareaWrapper.
@@ -16,4 +16,3 @@ addNewTootTextarea
 	textareaWrapper addMorphBack: tootTextArea.
 	
 	self addMorphBack: textareaWrapper.
-	

@@ -1,4 +1,4 @@
-toot
+actions
 scheduleToot: aText at: aDateAndTime visibility: aVisibility withMedia: imageID
 	[
 		imageID

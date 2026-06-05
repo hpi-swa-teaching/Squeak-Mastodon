@@ -8,7 +8,14 @@
 	"instvars" : [
 		"scheduledMorphs",
 		"scheduledToots",
-		"user" ],
+		"user",
+		"scheduledTootTextarea",
+		"messageArea",
+		"yearField",
+		"monthField",
+		"dayField",
+		"minuteField",
+		"hourField" ],
 	"name" : "MTUIScheduledTootsTimeline",
 	"pools" : [
 		 ],

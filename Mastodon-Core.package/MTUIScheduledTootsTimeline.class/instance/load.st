@@ -15,6 +15,6 @@ load
 		maxId := scheduled first id].
 	
 	self scheduledToots sort: [:a :b | a scheduledAt >= b scheduledAt].
-	self scheduledToots notEmpty ifTrue: [self renderScheduled].
+	"""self scheduledToots notEmpty ifTrue: [self renderScheduled]."""
 	
 	^ true

@@ -3,5 +3,5 @@ initialize
 	
 	super initialize.
 	
-	scheduledMorphs := OrderedCollection new
-	
+	scheduledMorphs := OrderedCollection new.
+	self renderNewScheduledTootsSection.

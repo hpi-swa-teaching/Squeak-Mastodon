@@ -1,4 +1,4 @@
-toot
+actions
 scheduleToot
 	| text visibility time timeRes textRes |
 	timeRes := self validateScheduledDate.

@@ -10,11 +10,6 @@
 		"imageTextArea",
 		"imageMorph",
 		"tootSizeLabel",
-		"yearField",
-		"monthField",
-		"dayField",
-		"minuteField",
-		"hourField",
 		"messageArea" ],
 	"name" : "MTUINewToot",
 	"pools" : [

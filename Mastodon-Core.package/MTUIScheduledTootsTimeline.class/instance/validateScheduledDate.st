@@ -1,4 +1,4 @@
-toot
+schedule-toot
 validateScheduledDate
 	| time |
 	time := [
