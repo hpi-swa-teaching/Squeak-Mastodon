@@ -7,3 +7,4 @@ addMenuButtons
 	menuMorph addButton: #screenshotButton for: #loadScreenshotView on: self with: MTUIIcons camera.
 	menuMorph addButton: #settingsButton for: #loadSettingsView on: self with: MTUIIcons settings.
 	menuMorph addButton: #mentionButton for: #loadMentionView on: self with: MTUIIcons bell.
+	menuMorph addButton: #scheduledTootsTimelineButton for: #loadScheduledTootsTimelineView on: self with: MTUIIcons home.

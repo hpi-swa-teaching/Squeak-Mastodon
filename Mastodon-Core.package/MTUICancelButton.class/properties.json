@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user" ],
-	"name" : "MTUIUserTimeline",
+		 ],
+	"name" : "MTUICancelButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }

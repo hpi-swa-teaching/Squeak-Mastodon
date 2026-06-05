@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user" ],
-	"name" : "MTUIUserTimeline",
+		 ],
+	"name" : "MTUIEditButton",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }
