@@ -1,9 +1,9 @@
 helper
-handleTab: char
+handleTab: event
+
 	| lineEdit |
-	char = Character tab ifTrue: [
-		lineEdit := self ownerThatIsA: MTLineEdit.
-		lineEdit ifNotNil: [
-			lineEdit focusNext.
-			^ true]].
-	^ false
+	event keyCharacter = Character tab ifFalse: [^ false].
+	lineEdit := self ownerThatIsA: MTLineEdit.
+	lineEdit ifNil: [^ false].
+	event shiftPressed ifFalse: [lineEdit focusNext] ifTrue: [lineEdit focusPrevious].
+	^ true
