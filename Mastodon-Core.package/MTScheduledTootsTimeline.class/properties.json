@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user" ],
-	"name" : "MTUIUserTimeline",
+		"scheduledMorphs",
+		"scheduledToots" ],
+	"name" : "MTScheduledTootsTimeline",
 	"pools" : [
 		 ],
 	"super" : "MTUITootList",

@@ -1,4 +1,4 @@
-accessing
+render
 renderScheduled
 
 	self scheduledMorphs do: [:morph |
