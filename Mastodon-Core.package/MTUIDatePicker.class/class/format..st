@@ -1,6 +1,6 @@
 printing
-format: dateTimeRes
+format: dateTime
 
 	| stream |
 	stream := AttributedTextStream new.
-	^ dateTimeRes unwrap printOn: stream
+	^ dateTime printOn: stream

@@ -1,9 +1,7 @@
-time-conversion
+helper
 validateScheduledDate: dateTimeRes
 
-	| timeRes |
-	timeRes := dateTimeRes.
-	timeRes isError ifTrue: [^ timeRes].
-	(MTMastodonApi isScheduledPostTimeValid: timeRes value) ifTrue: [^ MTResult error: 'Please pick a date at least 5 minutes in the future'].
+	dateTimeRes isError ifTrue: [^ dateTimeRes].
+	(MTMastodonApi isScheduledPostTimeValid: dateTimeRes value) ifTrue: [^ MTResult error: 'Please pick a date at least 5 minutes in the future'].
 	
-	^ MTResult value: (MTUIDatePicker format: dateTimeRes)
+	^ MTResult value: (MTUIDatePicker format: dateTimeRes value)
