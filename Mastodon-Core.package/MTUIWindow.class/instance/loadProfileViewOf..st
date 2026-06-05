@@ -4,9 +4,9 @@ loadProfileViewOf: aMTUser
 	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	userTimeline := MTUIUserTimeline new.
-	userTimeline user: aMTUser.
+	userTimeline id: aMTUser id.
 	userTimeline mastodonApi: self mastodonApi;
-		 loadTootsOf: aMTUser isSelf: true.
+		 loadTootsOf: aMTUser.
 	self
 		loadView: (MTUIProfile with: userTimeline from: aMTUser)
 		as: #profileView
