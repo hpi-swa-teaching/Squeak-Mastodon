@@ -1,4 +1,4 @@
 defaults
 defaultReblogged
 
-	^ false
+	^ true.

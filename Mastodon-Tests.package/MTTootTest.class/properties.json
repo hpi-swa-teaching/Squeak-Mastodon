@@ -1,14 +1,14 @@
 {
-	"category" : "Mastodon-Core",
+	"category" : "Mastodon-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"errors" ],
-	"name" : "MTError",
+		 ],
+	"name" : "MTTootTest",
 	"pools" : [
 		 ],
-	"super" : "MTMastodonModel",
+	"super" : "TestCase",
 	"type" : "normal" }
