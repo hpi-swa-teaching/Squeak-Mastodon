@@ -1,29 +1,30 @@
 time-conversion
-relativeTimeString: aTimeStamp 
+relativeTimeString: aTimeStamp
 	"converts a timestamp into a relative time like '2 hours ago'"
-	| diff dayDiff |
-	diff := TimeStamp now asUTC asSeconds - aTimeStamp asSeconds.
-	dayDiff := (diff / 86400) floor.
-	diff = 0
-		ifTrue: [^ 'now'].
-	diff > 0
-		ifTrue: [dayDiff = 0
-				ifTrue: [diff < 60
-						ifTrue: [^ 'just now'].
-					diff < 120
-						ifTrue: [^ '1 minute ago'].
-					diff < 3600
-						ifTrue: [^ (diff / 60) floor asString , ' minutes ago'].
-					diff < 7200
-						ifTrue: [^ '1 hour ago'].
-					diff < 86400
-						ifTrue: [^ (diff / 3600) floor asString , ' hours ago']].
-			dayDiff = 1
-				ifTrue: [^ 'yesterday'].
-			dayDiff < 7
-				ifTrue: [^ dayDiff asString , ' days ago'].
-			dayDiff < 31
-				ifTrue: [^ (dayDiff / 7) ceiling asString , ' weeks ago'].
-			dayDiff < 60
-				ifTrue: [^ 'last month'].
-			^ aTimeStamp asMonth asString]
+
+	| now diff units highestAssociation highestUnit count |
+	now := TimeStamp now asUTC.
+	diff := now - aTimeStamp.
+	units := {
+		#week -> (diff days // 7).
+		#day -> diff days.
+		#hour -> diff hours.
+		#minute -> diff minutes.
+		#second -> diff seconds}.
+	diff days abs < 60 ifFalse: [^ aTimeStamp asMonth asString].
+	diff asSeconds = 0 ifTrue: [^ 'now'].
+	highestAssociation := units detect: [:each | each value ~= 0].
+	highestUnit := highestAssociation key.
+	count := highestAssociation value.
+	highestUnit = #week ifTrue: [
+		diff days > 30 ifTrue: [^ 'last month'].
+		diff days < -30 ifTrue: [^ 'next month']].
+	highestUnit = #day ifTrue: [
+		count = 1 ifTrue: [^ 'yesterday'].
+		count = -1 ifTrue: [^ 'tomorrow']].
+	highestUnit = #second ifTrue: [
+		count abs < 60 ifTrue: [
+			count > 0 ifTrue: [^ 'just now'].
+			count < 0 ifTrue: [^ 'very soon']]].
+	
+	^ self relativeTimeStringFor: count abs unit: highestUnit isFuture: count < 0

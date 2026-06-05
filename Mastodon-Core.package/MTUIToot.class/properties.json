@@ -20,5 +20,5 @@
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "MTUIView",
 	"type" : "normal" }
