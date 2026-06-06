@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"interaction",
-		"repostButton",
-		"starButton",
-		"profileButton",
-		"actionsMorph" ],
-	"name" : "MTUIToot",
+		 ],
+	"name" : "MTUIProfileButton",
 	"pools" : [
 		 ],
-	"super" : "MTUIListObject",
+	"super" : "MTUIActionButton",
 	"type" : "normal" }
