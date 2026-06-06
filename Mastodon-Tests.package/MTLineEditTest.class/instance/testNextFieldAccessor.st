@@ -1,8 +1,9 @@
 tests
 testNextFieldAccessor
-	| selected other |
-	selected := MTLineEdit new.
-	other := MTLineEdit new.
-	selected nextField: other.
-	self assert: selected nextField == other.
+	| lineEdit nextLineEdit |
+	lineEdit := MTLineEdit new.
+	nextLineEdit := MTLineEdit new.
+	lineEdit nextField: nextLineEdit.
+	self assert: lineEdit nextField equals: nextLineEdit.
+	
 	

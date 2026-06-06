@@ -1,5 +1,5 @@
 icon
-repostActive
+reblogActive
 	^ (Form
 	extent: 22@22
 	depth: 32
