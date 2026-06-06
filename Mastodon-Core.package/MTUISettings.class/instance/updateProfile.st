@@ -1,6 +1,6 @@
 initialization
 updateProfile 
-	| text dict|
+	| text dict avatar header |
 	mastodonApi token isNil ifTrue: [
 		updateStatusLabel contents: 'Please log in first.'.
 		^ false].
@@ -15,10 +15,17 @@ updateProfile
 		ifTrue: [descriptionTextField contents: '   Not more than 160 characters description allowed.'.
 			^ false].
 		
-	dict := self uploadPictures.
-	dict at: 'display_name' put: self usernameUpdateTextField contents.
-	dict at: 'note' put: self descriptionTextField contents.
+	dict := Dictionary new.
+	dict at: 'display_name' put: self usernameUpdateTextField contents asString.
+	dict at: 'note' put: self descriptionTextField contents asString.
 	
-	[mastodonApi updateCredentials: dict. 
-		updateStatusLabel contents: '   Profile updated successfully']
+	avatar := self avatarImageMorph.
+	header := self headerImageMorph.
+	
+	[(avatar isNil and: [header isNil])
+		ifTrue: [mastodonApi updateCredentials: dict]
+		ifFalse: [mastodonApi updateCredentials: dict avatar: avatar header: header].
+	self avatarImageMorph: nil.
+	self headerImageMorph: nil.
+	updateStatusLabel contents: '   Profile updated successfully']
 		on: Error do: [:e | updateStatusLabel contents: ('   Failed to update profile: ', e messageText)].
