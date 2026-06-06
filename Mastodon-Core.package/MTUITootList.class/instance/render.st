@@ -20,6 +20,10 @@ render
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (toot id) with: tootMorph starButton).
 			tootMorph starButton active: toot favourited.
+			tootMorph profileButton
+				target: self;
+				actionSelector: #openProfileOfUser:;
+				arguments: (Array with: (tootMorph object acct)).
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
