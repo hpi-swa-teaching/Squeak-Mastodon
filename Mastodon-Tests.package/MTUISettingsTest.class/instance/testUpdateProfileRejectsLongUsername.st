@@ -8,4 +8,4 @@ testUpdateProfileRejectsLongUsername
 	api token: 'test-token'.
 	longName := String new: 31 withAll: $a.
 	settings usernameUpdateTextField contents: longName.
-	self assert: settings updateProfile equals: false.
+	self assert: settings updateProfile equals: false

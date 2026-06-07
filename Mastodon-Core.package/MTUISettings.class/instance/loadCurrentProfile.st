@@ -13,4 +13,4 @@ loadCurrentProfile
 		descriptionTextField contents: currentNote.
 		usernameSizeLabel contents: (currentName size asString , '/30') asHtmlText.
 		descriptionSizeLabel contents: (currentNote size asString , '/160') asHtmlText.
-	] on: Error do: [ ].
+	] on: Error do: [ ]

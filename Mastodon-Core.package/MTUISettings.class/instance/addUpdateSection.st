@@ -1,35 +1,20 @@
 render
 addUpdateSection
-	| updateButton requestWrapper avatarImageButton headerImageButton placeholderName placeholderNote row|
-	
+	| updateButton requestWrapper avatarImageButton headerImageButton row |
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
-	requestWrapper := RectangleMorph new borderWidth: 1.
-	requestWrapper := MTUIView setMorph: requestWrapper.
+	requestWrapper := MTUIView setMorph: (RectangleMorph new borderWidth: 1).
 	
-	placeholderName := 'New Username'.
-	placeholderNote := 'New Description'.
-	(mastodonApi notNil and: [mastodonApi token notNil]) ifTrue: [
-		[	| account |
-			account := (self mastodonApi verifyCredentials) value.
-			account displayName ifNotNil: [ :dn | dn isEmpty ifFalse: [ placeholderName := dn ]].
-			account note ifNotNil: [ :n | n isEmpty ifFalse: [ placeholderNote := n asString copyReplaceAll: '<br />' with: '' ]].
-			placeholderNote := placeholderNote copyReplaceAll: '<p>' with: ''.
-			placeholderNote := placeholderNote copyReplaceAll: '</p>' with: ''.
-		] on: Error do: [ ]].
-			
-	usernameUpdateTextField := MTUITextMorph new.
-	usernameUpdateTextField := MTUIView setTextField: usernameUpdateTextField withContent: 'New Username'.
+	usernameUpdateTextField := MTUIView setTextField: MTUITextMorph new withContent: 'New Username'.
 	requestWrapper addMorphBack: usernameUpdateTextField.
 		
-	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString , '/30') asHtmlText).
+	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/30') asHtmlText).
 	requestWrapper addMorphBack: usernameSizeLabel.
 	
-	descriptionTextField := MTUITextMorph new.
-	descriptionTextField := MTUIView setTextField: descriptionTextField withContent: 'New Description'.
+	descriptionTextField := MTUIView setTextField: MTUITextMorph new withContent: 'New Description'.
 	requestWrapper addMorphBack: descriptionTextField.
 	
-	self descriptionSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString , '/160') asHtmlText).
+	self descriptionSizeLabel: (TextMorph new contents: (descriptionTextField contents size asString, '/160') asHtmlText).
 	requestWrapper addMorphBack: descriptionSizeLabel.
 	
 	avatarImageButton := UiPushButton new.
@@ -38,7 +23,6 @@ addUpdateSection
 		connect: avatarImageButton
  		signal: #clicked:
  		toSelector: #selectAvatarImage.
-	
 	requestWrapper addMorphBack: avatarImageButton.
 	
 	headerImageButton := UiPushButton new.
@@ -47,7 +31,6 @@ addUpdateSection
 		connect: headerImageButton
  		signal: #clicked:
  		toSelector: #selectHeaderImage.
-	
 	requestWrapper addMorphBack: headerImageButton.
 
 	updateButton := UiPushButton new.
@@ -70,6 +53,6 @@ addUpdateSection
 	row addMorphBack: updateButton.
 	row addMorphBack: updateStatusLabel.
 	requestWrapper addMorphBack: row.
-	
-	self addMorphBack: requestWrapper.
+
+	self addMorphBack: requestWrapper
 	

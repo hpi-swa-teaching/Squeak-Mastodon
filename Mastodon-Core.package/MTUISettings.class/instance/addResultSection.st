@@ -1,4 +1,4 @@
 render
 addResultSection
-	resultTextLabel := (TextMorph new contents: '').
- 	self addMorphBack: resultTextLabel.
+	resultTextLabel := TextMorph new contents: ''.
+ 	self addMorphBack: resultTextLabel

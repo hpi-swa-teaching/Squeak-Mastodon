@@ -1,3 +1,3 @@
 accessing
-usernameUpdateTextField: anObject
-	usernameUpdateTextField := anObject
+usernameUpdateTextField: aTextField
+	usernameUpdateTextField := aTextField

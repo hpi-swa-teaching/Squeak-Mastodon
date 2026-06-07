@@ -1,3 +1,3 @@
 accessing
-headerImageMorph: anObject
-	headerImageMorph := anObject
+headerImageMorph: anImage
+	headerImageMorph := anImage

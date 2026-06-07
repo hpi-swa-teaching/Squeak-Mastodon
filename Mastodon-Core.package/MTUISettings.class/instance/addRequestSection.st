@@ -3,8 +3,7 @@ addRequestSection
 	| requestButton logoutButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Enter Mastodon instance. Leave code empty to get authorize link.' asHtmlText).
 	
-	requestWrapper := Morph new borderWidth: 1.
-	requestWrapper := MTUIView setMorph: requestWrapper.
+	requestWrapper := MTUIView setMorph: (Morph new borderWidth: 1).
 		
 	urlTextField := MTLineEdit new.
 	urlTextField hResizing: #rigid; width: 500; height: 36.
@@ -17,7 +16,7 @@ addRequestSection
 	tokenTextField theText: ''.
 	tokenTextField helpText: 'OAuth code from authorize page'.
 	requestWrapper addMorphBack: tokenTextField.
-	
+
 	requestButton := UiPushButton new.
 	requestButton text: 'Login / Get Link'.
 	self
@@ -25,7 +24,6 @@ addRequestSection
  		signal: #clicked:
  		toSelector: #authenticateApplication.
 	requestWrapper addMorphBack: requestButton.
-	
 	
 	logoutButton := UiPushButton new.
 	logoutButton text: 'Logout'.
@@ -40,5 +38,5 @@ addRequestSection
 	
 	self addMorphBack: requestWrapper.
 	self addResultSection.
-	resultTextLabel contents: ' '.
+	resultTextLabel contents: ' '
 	
