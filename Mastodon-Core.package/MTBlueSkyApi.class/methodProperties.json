@@ -2,7 +2,7 @@
 	"class" : {
 		"with:token:" : "LZ 4/30/2026 14:04" },
 	"instance" : {
-		"accountFromAuthor:" : "timbeier 6/2/2026 06:33",
+		"accountFromAuthor:" : "SB 6/4/2026 22:33",
 		"authorizationLinkFor:" : "5/23/2026 23:49:47",
 		"baseURL" : "timbeier 6/2/2026 07:47",
 		"baseURL:" : "LZ 4/30/2026 14:04",
@@ -25,6 +25,6 @@
 		"registerApplication" : "5/23/2026 23:49:47",
 		"token" : "LZ 4/30/2026 14:04",
 		"token:" : "LZ 4/30/2026 14:04",
-		"tootFromFeedItem:" : "LZ 4/30/2026 14:04",
+		"tootFromFeedItem:" : "SB 6/4/2026 21:12",
 		"urlForPath:" : "timbeier 6/2/2026 06:33",
-		"verifyCredentials" : "timbeier 6/2/2026 06:33" } }
+		"verifyCredentials" : "SB 6/4/2026 21:29" } }

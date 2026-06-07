@@ -1,0 +1,4 @@
+defaults
+defaultFavourited
+
+	^ true

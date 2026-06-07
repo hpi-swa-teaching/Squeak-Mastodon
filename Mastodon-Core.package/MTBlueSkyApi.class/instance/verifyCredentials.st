@@ -9,7 +9,7 @@ verifyCredentials
 	account
 		id: (json at: 'did' ifAbsent: ['']);
 		username: handle;
-		acct: handle;
+		federatedUsername: handle;
 		displayName: handle;
 		yourself.
 	^ MTResult value: account

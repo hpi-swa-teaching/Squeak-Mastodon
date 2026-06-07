@@ -3,7 +3,7 @@ testDeserializeSearch
 	| API json result |
 	API := MTMastodonApi new.
 	
-	json := DataProvider  mockSearch.
+	json := DataProvider defaultSearchResultJsonString.
 	
 	result := API class deserialize: json intoObjectOf: MTSearchResult.
 		
