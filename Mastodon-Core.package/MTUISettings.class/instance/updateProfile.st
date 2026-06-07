@@ -2,7 +2,7 @@ actions
 updateProfile 
 	| dict avatar header |
 	mastodonApi token isNil ifTrue: [
-		updateStatusLabel contents: 'Please log in first.'.
+		updateStatusLabel contents: '   Please log in first.'.
 		^ false].
 	
 	usernameUpdateTextField contents asString size > 30 ifTrue: [
