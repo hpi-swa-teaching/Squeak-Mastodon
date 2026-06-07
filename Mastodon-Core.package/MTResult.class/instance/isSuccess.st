@@ -1,4 +1,4 @@
-boolean
-isSuccess
-
-	^ self value notNil
+accessing
+isSuccess 
+	self value ifNotNil: [^ true].
+	^ false

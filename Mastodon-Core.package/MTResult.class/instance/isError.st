@@ -1,4 +1,4 @@
-boolean
-isError
-
-	^ self error notNil
+accessing
+isError 
+	self error ifNotNil: [^ true].
+	^ false

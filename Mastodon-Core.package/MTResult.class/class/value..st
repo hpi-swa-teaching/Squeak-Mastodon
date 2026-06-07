@@ -1,6 +1,5 @@
 initialization
-value: anObject
-
-	^ self new
-		value: anObject;
+value: aMTMastodonModel
+	^ (self new)
+		value: aMTMastodonModel;
 		yourself

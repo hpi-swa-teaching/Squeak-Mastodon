@@ -1,4 +1,7 @@
 helpers
 hasToken
 
-	^ token notNil
+	token ifNil: [
+		self inform: 'Please login first.'.
+		^ false].
+	^ true

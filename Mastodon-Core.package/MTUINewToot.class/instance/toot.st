@@ -2,7 +2,7 @@ toot
 toot
 
 	| text menu visibility |
-	self mastodonApi isLoggedIn ifFalse: [^ false].
+	self mastodonApi hasToken ifFalse: [^ false].
 	text := tootTextArea contents asString.
 	text size > 500 ifTrue: [
 		self inform: 'Not more than 500 characters allowed.'.
