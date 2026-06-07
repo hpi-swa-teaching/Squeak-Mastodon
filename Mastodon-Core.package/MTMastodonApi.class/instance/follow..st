@@ -1,4 +1,4 @@
 endpoints
 follow: aUserID
 
-	^ self getObjectAt: '/api/v1/accounts/', aUserID, '/follow' as: MTRelationship
+	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/follow' intoObjectOf: MTRelationship

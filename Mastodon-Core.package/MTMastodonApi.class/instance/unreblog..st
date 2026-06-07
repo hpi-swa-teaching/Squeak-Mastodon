@@ -1,4 +1,4 @@
 endpoints
 unreblog: aStatusID
 
-	^ self getObjectAt: '/api/v1/statuses/', aStatusID, '/unreblog' as: MTToot
+	^ self getRequestAt: '/api/v1/statuses/', aStatusID, '/unreblog' intoObjectOf: MTToot

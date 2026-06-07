@@ -1,4 +1,4 @@
 endpoints
 getRelationship: anAccountID
 
-	^ self getCollectionAt: '/api/v1/accounts/relationships?id=', anAccountID as: MTRelationship
+	^ self getRequestAt: '/api/v1/accounts/relationships?id=', anAccountID intoCollectionOf: MTRelationship

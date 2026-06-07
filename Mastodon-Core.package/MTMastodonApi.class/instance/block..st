@@ -1,4 +1,4 @@
 endpoints
 block: aUserID
 
-	^ self getObjectAt: '/api/v1/accounts/', aUserID, '/block' as: MTRelationship
+	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/block' intoObjectOf: MTRelationship

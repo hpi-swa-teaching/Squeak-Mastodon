@@ -1,4 +1,4 @@
 accessing
 webClient
 
-	^ webClient
+	^ webClient ifNil: [webClient := WebClient new]

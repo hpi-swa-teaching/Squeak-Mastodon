@@ -1,5 +1,5 @@
 endpoints
 getStatus: anStatusID
 
-	^ self getCollectionAt: '/api/v1/statuses/', anStatusID as: MTToot
+	^ self getRequestAt: '/api/v1/statuses/', anStatusID intoCollectionOf: MTToot
 	

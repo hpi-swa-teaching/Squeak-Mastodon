@@ -1,5 +1,5 @@
 endpoints
 mute: aUserID
 
-	^ self getObjectAt: '/api/v1/accounts/', aUserID, '/mute' as: MTRelationship
+	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/mute' intoObjectOf: MTRelationship
 	

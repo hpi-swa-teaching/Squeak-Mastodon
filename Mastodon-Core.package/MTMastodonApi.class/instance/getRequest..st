@@ -2,6 +2,6 @@ helpers-requesting
 getRequest: aUrl
 
     ^ self contentFromResponse:
-        (webClient
+        (self webClient
             httpGet: aUrl
             do: [:request | self authorizeRequest: request])

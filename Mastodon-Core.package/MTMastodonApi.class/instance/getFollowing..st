@@ -1,4 +1,4 @@
 endpoints
 getFollowing: aUserID
 
-	^ self getCollectionAt: '/api/v1/accounts/', aUserID, '/following' as: MTAccount
+	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/following' intoCollectionOf: MTAccount

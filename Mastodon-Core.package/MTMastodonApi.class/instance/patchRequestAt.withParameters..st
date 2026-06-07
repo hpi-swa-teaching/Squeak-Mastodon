@@ -1,9 +1,9 @@
 helpers-requesting
-postRequest: aPath withParameters: aCollection
+patchRequestAt: aURL withParameters: aCollection
 
 	| response |
 	response := self webClient
-		httpPost: aPath
+		httpPatch: aURL
 		content: (WebUtils encodeUrlEncodedForm: (Dictionary newFromPairs: aCollection))
 		type: 'application/x-www-form-urlencoded'
 		do: [:each | self authorizeRequest: each].

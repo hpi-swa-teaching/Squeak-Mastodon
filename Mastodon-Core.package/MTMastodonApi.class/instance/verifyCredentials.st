@@ -1,4 +1,4 @@
 authentification
 verifyCredentials
 
-	^ self getObjectAt: '/api/v1/accounts/verify_credentials' as: MTAccount
+	^ self getRequestAt: '/api/v1/accounts/verify_credentials' intoObjectOf: MTAccount
