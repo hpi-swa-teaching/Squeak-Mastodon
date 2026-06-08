@@ -2,6 +2,9 @@
 	"class" : {
 		"applyWrapperLayoutTo:" : "cs 6/14/2026 12:08" },
 	"instance" : {
+		"blockAccountWithId:fromSender:" : "MD 6/8/2026 12:25",
+		"directTootWithId:fromSender:" : "MD 6/8/2026 12:25",
+		"followAccountWithId:fromSender:" : "MD 6/8/2026 12:25",
 		"initialize" : "cs 6/14/2026 15:37",
 		"mastodonApi" : "cs 6/14/2026 15:28",
 		"mastodonApi:" : "cs 6/14/2026 15:28",

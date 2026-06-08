@@ -1,7 +1,7 @@
 render
 addUserInfo
 
-	| userInfo text |
+	| userInfo text actionsMorph |
 	userInfo := RectangleMorph new.
 	userInfo := MTUIView setWrapper: userInfo.
 	userInfo
@@ -21,9 +21,11 @@ addUserInfo
 		centered;
 		lock.
 	
+	actionsMorph := self addProfileInteractionButtonsFor: self user.
+	"actionsMorph centered."
 	userInfo addMorphBack: self userImageMorph.
 	userInfo addMorphBack: text.
-	
+	userInfo addMorphBack: actionsMorph.
 	self addMorphBack: userInfo.
-	self addProfileInteractionButtonsFor: user acct.
-	self addAccountMorph: accountMorph.
+	"actionsMorph := self addProfileInteractionButtonsFor: self user.
+	self addMorphBack: actionsMorph"
