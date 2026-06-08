@@ -12,10 +12,6 @@ initialize
 		initializeHourField;
 		initializeMinuteField.
 	
-	self yearField nextField: monthField.
-	self monthField nextField: dayField.
-	self dayField nextField: hourField.
-	self hourField nextField: minuteField.
-	self minuteField nextField: yearField.
+	self linkFields.
 	
 	self render

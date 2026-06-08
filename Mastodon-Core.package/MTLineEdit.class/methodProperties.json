@@ -2,12 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"focusNext" : "NV 5/18/2026 17:42",
+		"focusNext" : "lapl 6/6/2026 00:22",
+		"focusPrevious" : "lapl 6/6/2026 00:21",
 		"initialize" : "lapl 6/2/2026 12:56",
 		"nextField" : "NV 5/18/2026 17:41",
 		"nextField:" : "NV 5/18/2026 17:42",
 		"pattern" : "lapl 5/25/2026 10:07",
 		"pattern:" : "lapl 6/2/2026 12:56",
+		"previousField" : "lapl 6/6/2026 00:21",
+		"previousField:" : "lapl 6/6/2026 00:21",
 		"resetPattern" : "lapl 6/2/2026 12:57",
 		"resetValidator" : "lapl 6/2/2026 12:57",
 		"textMorphClass" : "NV 5/18/2026 17:41",
