@@ -1,0 +1,4 @@
+constants
+defaultSearchLimit
+
+	^ 5

@@ -1,6 +1,6 @@
-helpers-requesting
-postRequest: aPath withParameters: aCollection intoObjectOf: aClass
+requesting
+postRequest: aPath withParameters: aDictionary intoObjectOf: aClass
 
 	^ MTResult value: (self
-		deserialize: (self postRequest: (self urlForPath: aPath) withParameters: aCollection)
+		deserialize: (self postRequest: aPath withParameters: aDictionary)
 		intoObjectOf: aClass)

@@ -1,4 +1,4 @@
 generated
 defaultAccountList
 
-	^ {self defaultAccount}
+	^ {self defaultAccount. self defaultAccount}

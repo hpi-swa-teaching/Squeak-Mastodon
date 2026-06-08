@@ -1,7 +1,7 @@
-helpers-requesting
-getRequest: aUrl
+requesting
+getRequest: aPath
 
     ^ self contentFromResponse:
         (self webClient
-            httpGet: aUrl
+            httpGet: (self urlForPath: aPath)
             do: [:request | self authorizeRequest: request])

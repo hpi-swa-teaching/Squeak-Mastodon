@@ -1,4 +1,4 @@
-helpers
+helpers-requesting
 authorizeRequest: aRequest
 
     self token ifNotNil: [

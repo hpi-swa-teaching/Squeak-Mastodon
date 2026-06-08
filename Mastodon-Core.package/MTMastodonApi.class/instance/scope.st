@@ -1,4 +1,4 @@
-initialization
+constants
 scope
 
 	^ 'read write follow'

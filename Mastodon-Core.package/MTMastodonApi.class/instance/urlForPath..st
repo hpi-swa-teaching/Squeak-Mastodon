@@ -1,4 +1,4 @@
-helpers
-urlForPath: aString
+helpers-requesting
+urlForPath: aPath
 
-	^ self baseURL, aString
+	^ self baseURL, aPath

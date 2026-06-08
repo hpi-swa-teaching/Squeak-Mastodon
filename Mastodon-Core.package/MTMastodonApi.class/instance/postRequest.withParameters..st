@@ -1,10 +1,10 @@
-helpers-requesting
-postRequest: aPath withParameters: aCollection
+requesting
+postRequest: aPath withParameters: aDictionary
 
 	| response |
 	response := self webClient
-		httpPost: aPath
-		content: (WebUtils encodeUrlEncodedForm: (Dictionary newFromPairs: aCollection))
+		httpPost: (self urlForPath: aPath)
+		content: (WebUtils encodeUrlEncodedForm: aDictionary)
 		type: 'application/x-www-form-urlencoded'
 		do: [:each | self authorizeRequest: each].
 	^ self contentFromResponse: response

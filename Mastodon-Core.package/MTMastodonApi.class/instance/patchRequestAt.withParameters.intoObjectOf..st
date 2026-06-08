@@ -1,9 +1,9 @@
-helpers-requesting
-patchRequestAt: aPath withParameters: aCollection intoObjectOf: aClass
+requesting
+patchRequestAt: aPath withParameters: aDictionary intoObjectOf: aClass
 
 	^ MTResult value: 
 		(self
 			deserialize: (self 
-							patchRequestAt: (self urlForPath: aPath) 
-							withParameters: aCollection)
+							patchRequestAt: aPath
+							withParameters: aDictionary)
 			intoObjectOf: aClass)
