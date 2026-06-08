@@ -1,4 +1,0 @@
-accessing
-archivedToots
-
-	^ archivedToots

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addArchiveNavigationButton" : "Mailin 6/8/2026 17:08",
+		"addMentionSection" : "Mailin 6/8/2026 16:54",
+		"archiveTootWithId:" : "Mailin 6/8/2026 18:25",
+		"collectMentions" : "Mailin 6/8/2026 18:17",
+		"initialize" : "Mailin 6/8/2026 17:36",
+		"isArchived:" : "Mailin 6/8/2026 17:21",
+		"loadMentions" : "Mailin 6/8/2026 18:17",
+		"mtuiWindow" : "Mailin 6/8/2026 16:51",
+		"mtuiWindow:" : "Mailin 6/8/2026 16:50",
+		"openArchiveView" : "Mailin 6/8/2026 19:19",
+		"render" : "Mailin 6/8/2026 19:08" } }

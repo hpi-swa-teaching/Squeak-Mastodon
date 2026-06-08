@@ -1,4 +1,4 @@
 as yet unclassified
-createdAt: anObject
+createdAt: aTimeStamp
 
-	createdAt := anObject
+	createdAt := aTimeStamp

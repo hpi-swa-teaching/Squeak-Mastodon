@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"id",
-		"type",
-		"createdAt",
-		"acct",
-		"status" ],
-	"name" : "MTMention",
+		 ],
+	"name" : "MTUIArchiveTimeline",
 	"pools" : [
 		 ],
-	"super" : "MTMastodonModel",
+	"super" : "MTUITootList",
 	"type" : "normal" }
