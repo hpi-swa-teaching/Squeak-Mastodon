@@ -1,8 +1,9 @@
 as yet unclassified
-collectMentions
-	|mentions repliedIDs toots|
+collectMentions: aBlock
+
+	| mentions repliedIDs toots |
 	toots := OrderedCollection new.
-	mentions := self mastodonApi getMention value.
+	mentions := aBlock value. "collecting new Mentions or all mentions"
 	
 	repliedIDs := ((self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value
 		select: [:toot | toot notNil and: [toot inReplyToID notNil]]
@@ -11,9 +12,6 @@ collectMentions
 	mentions do: [:mention |
 		(mention status notNil
 			and: [(repliedIDs includes: mention status id asString) not]
-			and: [(self isArchived: mention status id) not]) ifTrue: [ | matchedMention |
-			matchedMention := mention status.
-			toots add: matchedMention.
-			]].
-	
-	self setToots: toots value.
+			and: [(self isArchived: mention status id) not]) ifTrue: [
+			toots add: mention status]].
+	^ toots 

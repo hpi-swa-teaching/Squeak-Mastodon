@@ -6,8 +6,7 @@ archiveTootWithId: anInteger
 	dir assureExistence.
 	
 	stream := dir forceNewFileNamed: anInteger asString.
-	
 	stream nextPutAll: anInteger asString.
 	stream close.
 	
-	self collectMentions
+	self mtuiWindow loadMentionTimelineView. "toot should despawn after archive button is pressed"

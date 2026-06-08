@@ -1,9 +1,9 @@
 as yet unclassified
-collectArchived
+collectArchived: aBlock
 
 	| mentions myToots archivedIds toots |
 	toots := OrderedCollection new.
-	mentions := self mastodonApi getMention value.
+	mentions := aBlock value.
 	
 	myToots := (self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value.
 	myToots := myToots select: [:toot | toot notNil].
@@ -13,4 +13,4 @@ collectArchived
 	
 	toots := mentions select: [:mention | archivedIds includes: mention status id asString].
 	toots select: [:toot| toot notNil].
-	self setToots: (toots collect: [:mention | mention status]) value.
+	^ toots collect: [:mention | mention status].
