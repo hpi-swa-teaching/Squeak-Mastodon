@@ -1,17 +1,17 @@
 render
 render
+
 	self
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		layoutInset: 10; 
+		layoutInset: 10;
 		cellInset: 0;
 		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
-		color: Color white;
-		
-		addMorphBack: self avatarMorph;
-		addMorphBack: self contentMorph.
-		
-	self layoutChanged.
+		color: Color white.
+	self avatarMorph ifNotNil: [self addMorphBack: self avatarMorph].
+	self addMorphBack: self contentMorph.
+	
+	self layoutChanged
