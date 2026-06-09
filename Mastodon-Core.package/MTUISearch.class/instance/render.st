@@ -7,7 +7,7 @@ render
 	self accounts
 		do: [:account | 
 			| accountMorph spacingMorph relationship |
-			accountMorph := MTUIAccount for: account.
+			accountMorph := MTUIAccount new for: account.
 			relationship := (self mastodonApi getRelationship: account id) value at: 1.
 			accountMorph followButton target: self;
 				 actionSelector: #followAccountWithId:fromSender:;

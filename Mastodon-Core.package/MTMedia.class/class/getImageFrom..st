@@ -2,7 +2,7 @@ loading
 getImageFrom: anUrl
 |doc form image len suffix cachedForm|
 	anUrl ifNil: [^nil].
-	
+
 	cachedForm := MTImageCache default imageFormFrom: anUrl.
 	cachedForm ifNotNil: [^ (MTUIImageMorph new) setNewImageFrom: cachedForm].
 	

@@ -1,5 +1,4 @@
 image
 cache: anImageForm from: anUrl
-	self add: anUrl -> anImageForm.
 
-
+	self add: anUrl -> anImageForm

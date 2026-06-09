@@ -1,0 +1,3 @@
+tests
+testTextMorphClassIsMTTextLineMorph
+	self assert: MTLineEdit new textMorphClass equals: MTTextLineMorph

@@ -1,29 +1,16 @@
 {
-	"class" : {
-		"for:" : "mm 6/21/2017 14:24" },
-	"instance" : {
-		"account" : "fw 6/19/2017 16:40",
-		"account:" : "fw 6/19/2017 16:40",
-		"actionsMorph" : "mm 7/16/2017 20:37",
-		"avatar" : "fw 6/19/2017 16:19",
-		"avatar:" : "mm 6/21/2017 13:22",
-		"avatarMorph" : "mm 6/21/2017 16:10",
-		"blockButton" : "fw 6/19/2017 16:23",
-		"blockButton:" : "fw 6/19/2017 16:23",
-		"content" : "mm 6/21/2017 13:25",
-		"content:" : "mm 6/21/2017 13:25",
-		"contentMorph" : "mm 6/21/2017 14:28",
-		"directTootButton" : "mm 7/16/2017 20:33",
-		"directTootButton:" : "mm 7/16/2017 20:33",
-		"followButton" : "fw 6/19/2017 16:24",
-		"followButton:" : "fw 6/19/2017 16:24",
-		"image" : "fw 6/19/2017 16:19",
-		"image:" : "mm 6/21/2017 13:23",
-		"initialize" : "mm 7/16/2017 20:36",
-		"note" : "mm 6/21/2017 13:23",
-		"note:" : "mm 6/21/2017 13:23",
-		"ownerChanged" : "fw 6/19/2017 16:19",
-		"render" : "mm 6/21/2017 16:10",
-		"text" : "fw 6/19/2017 16:19",
-		"text:" : "mm 6/21/2017 13:23",
-		"textMorph" : "mm 7/10/2017 12:09" } }
+	"class": {},
+	"instance": {
+		"accountMorph": "cs 6/4/2026 00:32",
+		"actionsMorph": "cs 6/4/2026 00:35",
+		"avatarMorph": "cs 6/4/2026 00:10",
+		"blockButton": "cs 6/4/2026 00:20",
+		"blockButton:": "cs 6/4/2026 00:20",
+		"directTootButton": "cs 6/4/2026 00:20",
+		"directTootButton:": "cs 6/4/2026 00:20",
+		"elementMorph": "cs 6/4/2026 00:55",
+		"followButton": "cs 6/4/2026 00:20",
+		"followButton:": "cs 6/4/2026 00:20",
+		"noteMorph": "cs 6/4/2026 00:21"
+	}
+}

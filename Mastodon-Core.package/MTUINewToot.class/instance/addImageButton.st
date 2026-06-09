@@ -1,12 +1,8 @@
 render
 addImageButton
-	| imageButton |
+
+	self imageButton: MTUIPushButton new.
+	self imageButton text: 'select Image'.
+	self connect: self imageButton signal: #clicked: toSelector: #selectImage.
 	
-	imageButton := UiPushButton new.
-	imageButton text: 'select Image'.
-	self
-		connect: imageButton
- 		signal: #clicked:
- 		toSelector: #selectImage.
-	
-	self addMorphBack: imageButton.
+	self addMorphBack: self imageButton

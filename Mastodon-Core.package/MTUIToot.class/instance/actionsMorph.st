@@ -1,19 +1,21 @@
 render
 actionsMorph
 
-	actions := Morph new.
-	actions
+	| actionsMorph |
+	self repostButton: MTUIRepostButton new.
+	self starButton: MTUIStarButton new.
+	actionsMorph := Morph new.
+	actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 0;
 		cellInset: 1;
-		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self repostButton render;
-		addMorphBack: self heartButton render.
+		addMorphBack: self starButton render.
 	
-	^ actions
+	^ actionsMorph

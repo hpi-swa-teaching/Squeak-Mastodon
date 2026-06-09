@@ -20,7 +20,8 @@
 		"inReplyToID",
 		"inReplyToAccountID",
 		"favourited",
-		"reblog" ],
+		"reblog",
+		"quote" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],
