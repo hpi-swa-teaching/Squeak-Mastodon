@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testNextFieldAccessor" : "NV 5/18/2026 17:49",
-		"testNextFieldIsNilByDefault" : "NV 5/18/2026 17:50" } }
+		"testNextFieldAccessor" : "NV 6/6/2026 16:45",
+		"testNextFieldIsNilByDefault" : "NV 5/18/2026 17:50",
+		"testTextMorphClassIsMTTextLineMorph" : "NV 6/6/2026 16:47" } }

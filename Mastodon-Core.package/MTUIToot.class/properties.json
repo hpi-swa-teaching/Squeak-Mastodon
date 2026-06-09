@@ -1,25 +1,15 @@
 {
-	"category" : "Mastodon-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
-		"account",
-		"actions",
-		"avatar",
-		"content",
-		"createdAt",
-		"starButton",
+	"category": "Mastodon-Core",
+	"classinstvars": [],
+	"classvars": [],
+	"commentStamp": "",
+	"instvars": [
 		"interaction",
-		"media",
-		"post",
 		"repostButton",
-		"toot",
-		"reblog" ],
-	"name" : "MTUIToot",
-	"pools" : [
-		 ],
-	"super" : "Morph",
-	"type" : "normal" }
+		"starButton"
+	],
+	"name": "MTUIToot",
+	"pools": [],
+	"super": "MTUIListObject",
+	"type": "normal"
+}

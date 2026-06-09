@@ -1,9 +1,7 @@
 {
 	"class" : {
 		"cameraCursor" : "NK 6/5/2016 19:39",
-		"loadNewTootWithMorph:" : "mm 7/10/2017 13:35",
-		"useMastodonCursor" : "mm 6/28/2017 17:00" },
+		"useMastodonCursor" : "NV 6/6/2026 16:23" },
 	"instance" : {
-		"getContentAtClick" : "NK 6/5/2016 19:39",
-		"getContentAtPoint:" : "NK 6/4/2016 18:31",
-		"isPoint:withinBounds:" : "NK 6/4/2016 18:31" } }
+		"getContentAtClick" : "NV 6/6/2026 16:18",
+		"getContentAtPoint:" : "NV 6/6/2026 16:24" } }
