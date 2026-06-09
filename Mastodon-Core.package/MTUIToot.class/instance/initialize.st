@@ -8,6 +8,6 @@ initialize
 	
 	self repostButton: MTUIRepostButton new.
 	self heartButton: MTUIStarButton new.
-	
 	self replyButton: MTUIReplyButton new.
 	self archiveButton: MTUIArchiveButton new.
+	self followButton: MTUIFollowButton new.

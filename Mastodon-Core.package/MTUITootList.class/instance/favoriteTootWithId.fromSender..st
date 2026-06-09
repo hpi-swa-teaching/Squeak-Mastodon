@@ -1,7 +1,18 @@
 actions
-favoriteTootWithId: anInteger fromSender: aButton
+favoriteTootWithId: aTootId fromSender: aButton
+	| toot argument result |
+	toots ifNil: [^ self].
+	toot := (toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = aTootId] ifNone: [nil].
+	argument := (self mastodonApi isKindOf: MTBlueSkyApi)
+		ifTrue: [toot]
+		ifFalse: [aTootId].
+	argument ifNil: [^ self].
 	aButton active
-		ifTrue:[self mastodonApi unfavourite: anInteger.
-				aButton active: false]
-		ifFalse:[	self mastodonApi favourite: anInteger.
-				aButton active: true.]
+		ifTrue: [result := self mastodonApi unfavourite: argument.
+			result isError ifTrue: [^ self inform: result error].
+			toot ifNotNil: [toot favourited: false].
+			aButton active: false]
+		ifFalse: [result := self mastodonApi favourite: argument.
+			result isError ifTrue: [^ self inform: result error].
+			toot ifNotNil: [toot favourited: true].
+			aButton active: true].

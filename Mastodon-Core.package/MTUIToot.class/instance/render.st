@@ -7,11 +7,12 @@ render
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 10;
-		cellInset: 0;
+		cellInset: 10;
 		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
-		color: Color white.
-	self avatarMorph ifNotNil: [self addMorphBack: self avatarMorph].
-	self addMorphBack: self contentMorph.
+		listCentering: #topLeft;
+		color: Color white;
+		addMorphBack: self avatarMorph;
+		addMorphBack: self postMorph.
 	
 	self layoutChanged

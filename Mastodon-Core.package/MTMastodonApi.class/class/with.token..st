@@ -1,6 +1,7 @@
 initialization
 with: aBaseURL token: aToken
+
 	^ self new
-		baseURL:  aBaseURL;
+		baseURL: aBaseURL;
 		token: aToken;
 		yourself
