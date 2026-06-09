@@ -1,16 +1,15 @@
 {
-	"category" : "Mastodon-Core",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
+	"category": "Mastodon-Core",
+	"classinstvars": [],
+	"classvars": [],
+	"commentStamp": "",
+	"instvars": [
 		"interaction",
 		"repostButton",
-		"starButton" ],
-	"name" : "MTUIToot",
-	"pools" : [
-		 ],
-	"super" : "MTUIListObject",
-	"type" : "normal" }
+		"starButton"
+	],
+	"name": "MTUIToot",
+	"pools": [],
+	"super": "MTUIListObject",
+	"type": "normal"
+}

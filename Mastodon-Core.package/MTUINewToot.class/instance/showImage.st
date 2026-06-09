@@ -1,17 +1,16 @@
 image
 showImage
-	"| imageMorph |
-	imageMorph := self morphFromPath."
-	imageMorph ifNotNil: [
-	imageMorph
-		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
+
+	self imageMorph = 'empty' ifFalse: [
+		self imageMorph
+			layoutPolicy: TableLayout new;
+			listDirection: #leftToRight;
+			layoutInset: 0;
+			cellInset: 10;
+			wrapCentering: #topLeft;
+			listCentering: #topLeft;
+			color: Color transparent;
+			setNewImageFrom: (self imageMorph form scaledToSize: 300).
 		"hResizing: #spaceFill;
 		vResizing: #shrinkWrap;"
-		layoutInset: 0;
-		cellInset: 10;
-		wrapCentering: #topLeft;
-		listCentering: #topLeft;
-		color: Color transparent;
-		setNewImageFrom: (imageMorph form scaledToSize: 300).
-	self addMorphBack: imageMorph]
+		self addMorphBack: self imageMorph]

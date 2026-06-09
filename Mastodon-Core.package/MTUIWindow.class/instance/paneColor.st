@@ -1,5 +1,4 @@
-accessing
+colors
 paneColor
-	
-	^ self userInterfaceTheme get: #customWindowColor for: #ClassCommentVersionsBrowser.
-	
+
+	^ self userInterfaceTheme get: #customWindowColor for: #ClassCommentVersionsBrowser
