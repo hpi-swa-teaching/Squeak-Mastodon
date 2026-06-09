@@ -9,5 +9,5 @@ toot
 	imageMorph
 		ifNil: [mastodonApi toot: text withVisibility: visibility]
 		ifNotNil: [self tootImagewithVisibility: visibility].
-	
-	tootTextArea contents: ' '
+	tootTextArea contents: ''.
+	self sendPostFeedback

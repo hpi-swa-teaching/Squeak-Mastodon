@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUILikedPostsTimeline",
+	"pools" : [
+		 ],
+	"super" : "MTUITootList",
+	"type" : "normal" }

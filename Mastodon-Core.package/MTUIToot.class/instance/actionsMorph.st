@@ -9,6 +9,7 @@ actionsMorph
 		vResizing: #shrinkWrap;
 		layoutInset: 0;
 		cellInset: 1;
+		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
