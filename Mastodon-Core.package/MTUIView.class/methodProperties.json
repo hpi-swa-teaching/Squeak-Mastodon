@@ -1,14 +1,11 @@
 {
-	"class": {
-		"setMorph:": "MD 6/1/2026 14:04",
-		"setTextField:withContent:": "MD 6/1/2026 14:04",
-		"setWrapper:": "HB 6/1/2026 14:02",
-		"with:": "MD 6/1/2026 13:53"
-	},
-	"instance": {
-		"initialize": "MD 6/1/2026 13:53",
-		"mastodonApi": "MD 6/1/2026 13:49",
-		"mastodonApi:": "MD 6/1/2026 13:49",
-		"ownerChanged": "MD 6/1/2026 13:49"
-	}
-}
+	"class" : {
+		"setMorph:" : "MD 6/1/2026 14:04",
+		"setTextField:withContent:" : "MD 6/1/2026 14:04",
+		"setWrapper:" : "HB 6/1/2026 14:02",
+		"with:" : "MD 6/1/2026 13:53" },
+	"instance" : {
+		"initialize" : "MD 6/1/2026 13:53",
+		"mastodonApi" : "MD 6/1/2026 13:49",
+		"mastodonApi:" : "MD 6/1/2026 13:49",
+		"ownerChanged" : "MD 6/1/2026 13:49" } }

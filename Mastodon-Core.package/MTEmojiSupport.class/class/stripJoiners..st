@@ -1,4 +1,3 @@
-as yet unclassified
+applying
 stripJoiners: aString
-	^ aString reject: [:c |
-		c asInteger = 16r200D]
+	^ aString reject: [:c | c asInteger = 16r200D]

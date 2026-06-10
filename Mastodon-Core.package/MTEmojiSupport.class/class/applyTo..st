@@ -1,12 +1,11 @@
-as yet unclassified
-applyTo: aText
+applying
+applyTo: aString
 
-	| emojiFont |
-	aText ifNil: [^ aText].
-	emojiFont := (TextConstants at: #NotoEmoji ifAbsent: [^ aText])
+	| emojiFont text |
+	aString ifNil: [^ aString].
+	emojiFont := (TextConstants at: #NotoEmoji ifAbsent: [^ aString])
 		fontOfSize: TextStyle default defaultFont pointSize.
-	emojiFont ifNil: [^ aText].
-	1 to: aText size do: [:i |
-		(aText string at: i) asInteger > 16rFFFF ifTrue: [
-			aText addAttribute: (TextFontReference toFont: emojiFont) from: i to: i]].
-	^ aText
+	text := aString string.
+	1 to: text size do: [:i | 
+		(text string at: i) asInteger > 16rFFFF ifTrue: [aString addAttribute: (TextFontReference toFont: emojiFont) from: i to: i]].
+	^ aString

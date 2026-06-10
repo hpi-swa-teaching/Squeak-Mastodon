@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"textSize" ],
-	"name" : "MTUITextMorph",
+		 ],
+	"name" : "MTUITextFormatter",
 	"pools" : [
 		 ],
-	"super" : "TextMorph",
+	"super" : "HtmlReadWriter",
 	"type" : "normal" }

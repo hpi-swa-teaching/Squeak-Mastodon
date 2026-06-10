@@ -1,9 +1,7 @@
 {
 	"class" : {
-		"applyTo:" : "NV 5/28/2026 12:59",
-		"downloadFont" : "NV 5/28/2026 12:59",
-		"ensureEmojiFont" : "NV 5/28/2026 12:59",
-		"registerAsFallback" : "NV 5/28/2026 13:01",
-		"stripJoiners:" : "NV 5/29/2026 21:50" },
+		"applyTo:" : "NV 6/9/2026 20:53",
+		"ensureEmojiFont" : "NV 6/9/2026 20:32",
+		"stripJoiners:" : "NV 6/9/2026 19:29" },
 	"instance" : {
 		 } }

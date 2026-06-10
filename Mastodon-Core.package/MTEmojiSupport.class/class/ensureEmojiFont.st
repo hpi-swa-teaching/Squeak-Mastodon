@@ -1,11 +1,8 @@
-as yet unclassified
+initialization
 ensureEmojiFont
 
-	| dir |
+	| bytes |
 	(TextConstants includesKey: #NotoEmoji) ifTrue: [^ self].
-	dir := FileDirectory default.
-	(dir fileExists: 'NotoEmoji-Regular.ttf') ifFalse: [self downloadFont].
-	(dir fileExists: 'NotoEmoji-Regular.ttf') ifFalse: [^ self].
-	[TTCFont newTextStyleFromTTFile: (dir fullNameFor: 'NotoEmoji-Regular.ttf')]
-		on: Error do: [^ self].
-	self registerAsFallback
+	bytes := (GitAssetLoader for: 'Squeak-Mastodon' basePath: 'assets') loadByteArray: 'NotoEmoji-Regular.ttf'.
+	bytes ifNil: [^ self].
+	[TTCFont installFromFontDescriptions: (TTFontReader readFrom: bytes readStream)] on: Error do: [^ self]
