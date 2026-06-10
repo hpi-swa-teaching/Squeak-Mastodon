@@ -9,8 +9,8 @@ render
 		layoutInset: 10;
 		cellInset: 10;
 		cellPositioning: #topLeft;
-		color: Color white;
-		addMorphBack: self avatarMorph;
-		addMorphBack: self elementMorph.
+		color: Color white.
+	self avatarMorph ifNotNil: [self addMorphBack: self avatarMorph].
+	self addMorphBack: self elementMorph.
 	
 	self layoutChanged

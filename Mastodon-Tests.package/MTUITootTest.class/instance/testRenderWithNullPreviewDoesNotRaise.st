@@ -6,8 +6,7 @@ testRenderWithNullPreviewDoesNotRaise
 	MTImageCache default
 		cache: DataProvider mockAvatarForm
 		from: (self avatarUrlFromJson: DataProvider mockAccount).
-	ui := MTUIToot new.
-	ui toot: (self tootFromJson: DataProvider mockTootWithNullPreview).
+	ui := MTUIToot new for: (self tootFromJson: DataProvider mockTootWithNullPreview).
 	parent := Morph new.
 	parent extent: 800 @ 600.
 	parent addMorphBack: ui.
