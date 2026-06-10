@@ -4,9 +4,18 @@ loadProfileView
 	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^false].
 	
-	currentUser := mastodonApi getCurrentUser.
+	(self mastodonApi isKindOf: MTBlueSkyApi) 
+	ifTrue: [
+		currentUser := self mastodonApi getProfileFor: ((self mastodonApi verifyCredentials) value) acct.
+	]
+	ifFalse:[
+		currentUser := mastodonApi getCurrentUser.
 	
-	(currentUser isError)
-		ifTrue: [ self inform: 'An Error occurred.'. 
-			     ^ false].
+	].
+	
+	currentUser isError 
+	ifTrue: [
+        	UIManager default inform: 'Could not load profile'.
+        	^ self
+    	].
 	self loadProfileViewOf: currentUser value.
