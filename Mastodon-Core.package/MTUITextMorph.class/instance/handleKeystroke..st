@@ -8,5 +8,4 @@ handleKeystroke: anEvent
 		MTEmojiSupport applyTo: text.
 		self newContents: text.
 		self editor selectFrom: interval first to: interval last].
-	self textSize: self contents asString size.
 	self owner owner updateTextSize.
