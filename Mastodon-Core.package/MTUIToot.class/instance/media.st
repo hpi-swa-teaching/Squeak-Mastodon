@@ -3,6 +3,7 @@ media
 
 	| media |
 	media := MTMedia imageMorphFrom: (self object media at: 1 ifAbsent: [^ nil]) previewUrl.
+	media ifNil: [^ nil].
 	media
 		cornerRadius: 20;
 		hResizing: #shrinkWrap;

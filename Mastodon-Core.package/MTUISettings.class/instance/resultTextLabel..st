@@ -1,3 +1,3 @@
 accessing
-resultTextLabel: anObject
-	resultTextLabel := anObject
+resultTextLabel: aTextMorph
+	resultTextLabel := aTextMorph

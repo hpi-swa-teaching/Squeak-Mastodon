@@ -36,10 +36,9 @@ authenticateApplication
 		resultTextLabel contents: '<i>Code exchange failed. Paste code from authorize flow.</i>' asHtmlText.
 		^ false].
 
-	[
-		self verifyAccount.
+	[	self verifyAccount.
 		MTSettingsStore default at: #token put: self mastodonApi token.
 		^ true
-	] on: Error do: [
-		resultTextLabel contents: '<i>Code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
+	] 	on: Error do: [
+		resultTextLabel contents: '<i>OAuth code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
 		^ false]
