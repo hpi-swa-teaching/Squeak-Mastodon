@@ -12,8 +12,8 @@ applyProviderSelection
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
 	
 	providerKey = 'bluesky' ifTrue: [
-		urlTextField helpText: 'Bluesky Server (empty for bsky.social)'.
-		tokenTextField helpText: 'handle:app-password (e.g. alice.bsky.social:xxxx-xxxx)'.
+		urlTextField helpText: 'Bluesky Handle (e.g. alice.bsky.social)'.
+		tokenTextField helpText: 'App Password'.
 	] ifFalse: [
 		urlTextField helpText: 'Server URL (with https://)'.
 		tokenTextField helpText: 'OAuth code or access token'.
