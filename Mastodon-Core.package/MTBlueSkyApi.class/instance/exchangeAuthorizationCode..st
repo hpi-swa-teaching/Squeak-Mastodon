@@ -3,6 +3,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 	| handle password url jsonString response json |
 	handle := self baseURL copyReplaceAll: 'https://' with: ''.
 	handle := handle copyReplaceAll: 'http://' with: ''.
+	(handle beginsWith: '@') ifTrue: [handle := handle allButFirst].
 	(handle isEmpty or: [handle = 'bsky.social']) ifTrue: [
 		(anAuthorizationCode includes: $:) ifTrue: [
 			handle := anAuthorizationCode copyUpTo: $:.
