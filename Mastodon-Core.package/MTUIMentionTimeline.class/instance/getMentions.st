@@ -1,4 +1,4 @@
 render
 getMentions
 
-	^[self mastodonApi getMention value.]
+	^self mastodonApi getMention value.
