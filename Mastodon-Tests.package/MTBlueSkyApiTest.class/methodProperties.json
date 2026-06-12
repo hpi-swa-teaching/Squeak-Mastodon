@@ -41,6 +41,7 @@
 		"testTootFromFeedItemNoRepostStatus" : "JH 5/28/2026 12:00",
 		"testTootReturnsErrorWhenRequestFails" : "JH 6/2/2026 17:27:59",
 		"testTootReturnsErrorWhenSessionFails" : "JH 6/2/2026 17:26:44",
+		"testTootUsesUtcTimestamp" : "JH 6/12/2026 13:13:47",
 		"testTootWithImageReturnsErrorWhenUploadFails" : "JH 6/2/2026 17:33:26",
 		"testTootWithImageUploadsBlobAndEmbeds" : "JH 6/2/2026 17:32:11",
 		"testUnfollowDeletesFollowRecord" : "AE 5/12/2026 12:00",
