@@ -8,12 +8,10 @@ textMorph
 		'<br>' , self account note, '<br>' , 
 		'<i><font color="#555555">' , 'on Mastodon since ', createdAt , '</font></i>')).
 		
-	text 
+	text
 		wrapFlag: true;
-		autoFit: true;
-		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
-		hResizing: #spaceFill.
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 			
 	^ text
 	
