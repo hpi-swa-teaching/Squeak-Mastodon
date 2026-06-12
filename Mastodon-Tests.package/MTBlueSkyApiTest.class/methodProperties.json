@@ -16,6 +16,7 @@
 		"testExchangeAuthorizationCodeParsesHandleAndPassword" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeReturnsNilOnFailure" : "LZ 5/4/2026 16:50",
 		"testExchangeAuthorizationCodeStoresToken" : "LZ 5/4/2026 16:50",
+		"testExchangeAuthorizationCodeUsesHandleDomain" : "PP 6/12/2026 12:30",
 		"testFollowCreatesFollowRecord" : "AE 5/12/2026 12:00",
 		"testFollowReturnsErrorWhenSessionFails" : "AE 5/12/2026 12:00",
 		"testGetCurrentDidReturnsDidFromSession" : "AE 5/12/2026 12:00",
