@@ -6,9 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "MTUIProfileButton",
+		"target",
+		"actionSelector",
+		"arguments" ],
+	"name" : "MTUIProfileLinkMorph",
 	"pools" : [
 		 ],
-	"super" : "MTUIActionButton",
+	"super" : "TextMorph",
 	"type" : "normal" }
