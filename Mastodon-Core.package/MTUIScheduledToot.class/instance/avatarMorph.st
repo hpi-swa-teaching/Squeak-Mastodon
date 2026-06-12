@@ -5,7 +5,7 @@ avatarMorph
 	image := MTMedia imageMorphFrom: self user avatar.
 	image ifNotNil: [
 		image
-			vResizing: #spaceFill;
-			hResizing: #shrinkWrap;
+			vResizing: #rigid;
+			hResizing: #rigid;
 			setNewImageFrom: (image form scaledToSize: 48).
 		^ image]

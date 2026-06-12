@@ -5,7 +5,7 @@ contentMorph
 	content := Morph new.
 	content
 		layoutPolicy: TableLayout new;
-		wrapDirection: #topToBottom;
+		listDirection: #topToBottom;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 0;
