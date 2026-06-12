@@ -8,17 +8,20 @@ render
 		do: [:account | 
 			| accountMorph spacingMorph relationship |
 			accountMorph := MTUIAccount for: account.
-			relationship := (self mastodonApi getRelationship: account id) value at: 1.
-			accountMorph followButton target: self;
-				 actionSelector: #followAccountWithId:fromSender:;
-				
-				arguments: (Array with: account id with: accountMorph followButton);
-				 active: relationship following.
-			accountMorph blockButton target: self;
-				 actionSelector: #blockAccountWithId:fromSender:;
-				
-				arguments: (Array with: account id with: accountMorph blockButton);
-				 active: relationship blocking.
+			relationship := (self mastodonApi isKindOf: MTBlueSkyApi)
+				ifTrue: [nil]
+				ifFalse: [(self mastodonApi getRelationship: account id) value at: 1].
+			relationship ifNotNil: [
+				accountMorph followButton target: self;
+					 actionSelector: #followAccountWithId:fromSender:;
+
+					arguments: (Array with: account id with: accountMorph followButton);
+					 active: relationship following.
+				accountMorph blockButton target: self;
+					 actionSelector: #blockAccountWithId:fromSender:;
+
+					arguments: (Array with: account id with: accountMorph blockButton);
+					 active: relationship blocking].
 			accountMorph directTootButton target: self;
 				 actionSelector: #directTootWithId:fromSender:;
 				
