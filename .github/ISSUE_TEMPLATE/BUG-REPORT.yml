@@ -1,9 +1,7 @@
 name: "Bug Report"
 description: Create a new ticket for a bug report
 title: "[G<gruppe>] BUG: <title>"
-labels: [
-  "question"
-]
+labels: []
 body:
   - type: dropdown
     id: group
@@ -11,7 +9,7 @@ body:
       label: "Gruppe"
       description: Welche Gruppe?
       options:
-        - G9
+        - G09
         - G10
         - G11
     validations:
@@ -37,6 +35,6 @@ body:
     attributes:
       label: "Definition of done"
       description: Definition of done
-      placeholder: "- [ ] New tests added\n- [ ] All tests passing\n"
+      placeholder: "- [ ] All tests passing\n- [ ] New tests added\n"
     validations:
       required: false
