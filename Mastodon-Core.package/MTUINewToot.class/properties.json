@@ -9,7 +9,10 @@
 		"tootTextArea",
 		"imageTextArea",
 		"imageMorph",
-		"tootSizeLabel" ],
+		"tootSizeLabel",
+		"replyTo",
+		"reloadMentionTimeline",
+		"mtuiWindow" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

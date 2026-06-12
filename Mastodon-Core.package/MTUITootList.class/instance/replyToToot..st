@@ -1,12 +1,13 @@
 actions
 replyToToot: aToot
 
-	| replyText |
-	replyText := UIManager default
-		request: 'Antwort eingeben:'
-		initialAnswer: '@', aToot acct username, ' '.
+	| replyWindow window |
+	replyWindow := MTUINewToot new.
+	replyWindow mastodonApi: self mastodonApi.
+	replyWindow replyTo: aToot.
 	
-	replyText ifNil: [^ self].
-	replyText isEmpty ifTrue: [^ self].
+	window := SystemWindow new.
+	window setLabel: 'Reply'.
+	window addMorph: replyWindow frame: (0 @ 0 extent: 1 @ 1).
 	
-	self mastodonApi replyTo: aToot id text: replyText
+	window openInWorld
