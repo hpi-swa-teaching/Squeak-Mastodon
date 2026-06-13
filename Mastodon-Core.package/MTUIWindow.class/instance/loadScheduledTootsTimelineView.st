@@ -16,6 +16,6 @@ loadScheduledTootsTimelineView
 	
 	self 
 		loadView: scheduledTootsTimelineView
-		as: #homeTimelineView 
-		activate: #homeTimelineButton.
+		as: #scheduledTootsTimelineView 
+		activate: #scheduledTootsTimelineButton.
 	self layoutChanged.
