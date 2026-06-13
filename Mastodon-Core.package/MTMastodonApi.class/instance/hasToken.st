@@ -1,0 +1,4 @@
+helpers
+hasToken
+
+	^ token notNil

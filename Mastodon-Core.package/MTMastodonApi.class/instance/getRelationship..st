@@ -1,6 +1,4 @@
 endpoints
 getRelationship: anAccountID
-	| url response |
-	url := self buildUrl: '/api/v1/accounts/relationships?id=', anAccountID.
-	response := self getRequest: url.
-	^ MTResult value: (self class deserialize: response intoCollectionOf: MTRelationship)
+
+	^ self getRequestAt: '/api/v1/accounts/relationships?id=', anAccountID intoCollectionOf: MTRelationship

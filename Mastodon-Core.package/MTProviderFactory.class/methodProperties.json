@@ -1,8 +1,12 @@
 {
 	"class" : {
-		"blueSkyProvider" : "LZ 4/30/2026 14:04",
-		"mastodonProvider" : "LZ 4/30/2026 14:04",
-		"providerFor:" : "LZ 4/30/2026 14:04",
-		"providerFromSettings" : "LZ 4/30/2026 14:04" },
+		"baseURL" : "timbeier 6/2/2026 07:47",
+		"blueSkyBaseURL" : "timbeier 6/2/2026 07:47",
+		"blueSkyProvider" : "timbeier 6/2/2026 20:28",
+		"defaultBlueSkyURL" : "timbeier 6/2/2026 06:04",
+		"mastodonProvider" : "timbeier 6/2/2026 20:26",
+		"providerFor:" : "timbeier 6/2/2026 06:02",
+		"providerFromSettings" : "timbeier 6/2/2026 06:02",
+		"token" : "timbeier 6/2/2026 06:12" },
 	"instance" : {
 		 } }

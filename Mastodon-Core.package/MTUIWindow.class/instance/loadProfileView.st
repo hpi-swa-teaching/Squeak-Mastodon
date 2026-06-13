@@ -4,7 +4,7 @@ loadProfileView
 
 	| currentUser |
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi hasToken ifFalse: [^false].
 	
 	currentUser := mastodonApi getCurrentUser.
 	

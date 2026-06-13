@@ -1,7 +1,7 @@
 views
 loadLiveTimelineView
 	| liveTimelineView |
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^false].
 	liveTimelineView := MTUILiveTimeline new.
 
 	liveTimelineView

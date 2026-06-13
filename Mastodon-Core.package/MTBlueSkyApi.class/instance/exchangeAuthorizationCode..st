@@ -15,7 +15,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 		password := anAuthorizationCode.
 	].
 	
-	url := self buildUrl: '/xrpc/com.atproto.server.createSession'.
+	url := self urlForPath: '/xrpc/com.atproto.server.createSession'.
 	jsonString := '{ "identifier": "', handle, '", "password": "', password, '" }'.
 	
 	response := webClient httpPost: url

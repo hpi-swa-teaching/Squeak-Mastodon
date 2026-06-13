@@ -1,3 +1,4 @@
 tests
 setUp
-	mastodonApi := MTMastodonApi with: 'https://mastodon.social' password: 'test' username: 'test@test.de'.
+
+	mastodonApi := MTMastodonApi with: 'https://mastodon.social' token: 't0k3n'

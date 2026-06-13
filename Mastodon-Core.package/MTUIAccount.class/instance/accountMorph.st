@@ -2,7 +2,7 @@ render
 accountMorph
 
 	| accountMorph |
-	accountMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self object displayName, '</b> <a href="mastodonUser:', self object id, '">@', self object acct, '</a>').
+	accountMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self object displayName, '</b> <a href="mastodonUser:', self object id, '">@', self object federatedUsername, '</a>').
 	accountMorph
 		readOnly: true;
 		wrapFlag: true;

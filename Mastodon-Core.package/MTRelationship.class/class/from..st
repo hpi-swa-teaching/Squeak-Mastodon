@@ -1,6 +1,7 @@
 initialization
 from: aJsonObject
-	^ (self new)
+
+	^ self new
 		id: (aJsonObject at: 'id');
 		following: (aJsonObject at: 'following');
 		followedBy: (aJsonObject at: 'followed_by');

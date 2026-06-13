@@ -1,3 +1,3 @@
 as yet unclassified
 mockTrendingResponse
-	^ '[', self mockTootWithImage, ',', self mockTootWithoutImage, ']'
+	^ '[', self defaultTootWithImageJsonString, ',', self defaultTootPlainJsonString, ']'

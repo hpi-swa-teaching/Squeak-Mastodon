@@ -2,7 +2,7 @@ tests
 testEncodeProfileFormIncludesTextFields
 
 	| account dict body |
-	account := MTMastodonApi deserialize: DataProvider mockAccount intoObjectOf: MTAccount.
+	account := mastodonApi deserialize: DataProvider defaultAccountJsonString intoObjectOf: MTAccount.
 	dict := Dictionary new.
 	dict at: 'display_name' put: account displayName.
 	dict at: 'note' put: account note.

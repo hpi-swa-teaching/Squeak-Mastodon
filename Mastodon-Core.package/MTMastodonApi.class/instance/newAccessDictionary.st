@@ -1,5 +1,9 @@
-accessing
+constants
 newAccessDictionary
-	| dictionary |
-	dictionary := Dictionary newFromPairs: {'password'. self password. 'username'. self username. 'scope'. self class scope. 'client_id'. self clientID. 'client_secret'. self clientSecret. 'grant_type'. 'password'}.
-	^ dictionary
+
+	^ Dictionary new
+		at: 'scope' put: self scope;
+		at: 'client_id' put: self clientID;
+		at: 'client_secret' put: self clientSecret;
+		at: 'grant_type' put: 'authorization_code';
+		yourself

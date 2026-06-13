@@ -3,8 +3,8 @@ loadTootsOf: aMTUser
 	"unused, but called by MTUIWindow>>loadProfileViewOf:"
 
 	| toots |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
-	
+	self mastodonApi hasToken ifFalse: [^false].
+			
 	toots := mastodonApi getStatuses: aMTUser id.
 	
 	toots isError ifTrue: [

@@ -1,5 +1,6 @@
 render
 addUserInfo
+
 	| userInfo text |
 	
 	userInfo := MTUIView setWrapper: RectangleMorph new.
@@ -13,19 +14,14 @@ addUserInfo
 	
 	text := TextMorph new.
 	text
-		contentsWrapped: (MTUtils asTextFromHtml: (
-			'<b><font size="20">', user displayName, '</font></b><br>',
-			'<font color="#cccccc">@', user acct, '</font><br><br>',
-			user note, '<br><br>',
-			'<b>', user statusesCount, '</b> Toots - <b>', user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers'));
+		contentsWrapped: (MTUtils asTextFromHtml: '<b><font size="20">', user displayName, '</font></b><br>', '<font color="#cccccc">@', user federatedUsername, '</font><br><br>', user note, '<br><br>', '<b>', user statusesCount, '</b> Toots - <b>', user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers');
 		wrapFlag: true;
 		width: 400;
 		color: Color white;
 		centered;
 		lock.
-		
+	
 	userInfo addMorphBack: self userImageMorph.
 	userInfo addMorphBack: text.
 	
 	self addMorphBack: userInfo
-	

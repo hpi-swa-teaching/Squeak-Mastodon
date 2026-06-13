@@ -1,9 +1,10 @@
-helpers
-postRequest: url withParameters: parameters
+requesting
+postRequest: aPath withParameters: aDictionary
+
 	| response |
-	response := webClient httpPost: url 
-			content: (WebUtils encodeUrlEncodedForm: parameters)
-			type: 'application/x-www-form-urlencoded'
-			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
-	response isSuccess 
-		ifTrue: [^ response content "utf8ToSqueak"]
+	response := self webClient
+		httpPost: (self urlForPath: aPath)
+		content: (WebUtils encodeUrlEncodedForm: aDictionary)
+		type: 'application/x-www-form-urlencoded'
+		do: [:each | self authorizeRequest: each].
+	^ self contentFromResponse: response

@@ -2,7 +2,7 @@ updating
 loadMoreToot
 
 	| newToots |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi hasToken ifFalse: [^false].
 	newToots := mastodonApi getStatuses: id since: minID.
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).

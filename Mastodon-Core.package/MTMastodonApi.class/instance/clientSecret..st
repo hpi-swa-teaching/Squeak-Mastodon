@@ -1,3 +1,4 @@
 accessing
-clientSecret: anObject
-	clientSecret := anObject
+clientSecret: aString
+
+	clientSecret := aString

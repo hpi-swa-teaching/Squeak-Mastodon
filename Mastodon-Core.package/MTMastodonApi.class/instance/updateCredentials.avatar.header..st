@@ -2,7 +2,7 @@ endpoints
 updateCredentials: aDictionary avatar: avatarForm header: headerForm
 
 	| url boundary response |
-	url := self buildUrl: '/api/v1/accounts/update_credentials'.
+	url := self urlForPath: '/api/v1/accounts/update_credentials'.
 	boundary := WebUtils multipartBoundary.
 	response := webClient
 		httpPost: url
@@ -12,5 +12,5 @@ updateCredentials: aDictionary avatar: avatarForm header: headerForm
 			req method: 'PATCH'.
 			req addHeader: 'Authorization' value: 'Bearer ', self token].
 	response isSuccess
-		ifTrue: [^ response content utf8ToSqueak]
+		ifTrue: [^ response content "utf8ToSqueak"]
 		ifFalse: [^ self error: 'update_credentials failed (', response code printString, ')']

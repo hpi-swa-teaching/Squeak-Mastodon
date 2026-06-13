@@ -1,12 +1,13 @@
 initialization
 from: aJsonObject
-	^ (self new)
+
+	^ self new
 		id: (aJsonObject at: 'id');
 		username: (aJsonObject at: 'username');
-		acct: (aJsonObject at: 'acct');
+		federatedUsername: (aJsonObject at: 'acct');
 		displayName: (aJsonObject at: 'display_name');
 		createdAt: (aJsonObject at: 'created_at');
-		buildUrl: (aJsonObject at: 'url');
+		url: (aJsonObject at: 'url');
 		note: (aJsonObject at: 'note');
 		avatar: (aJsonObject at: 'avatar');
 		header: (aJsonObject at: 'header');

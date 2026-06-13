@@ -8,10 +8,10 @@ accountFromAuthor: anAuthor
 	account
 		id: (anAuthor at: 'did' ifAbsent: [handle]);
 		username: handle;
-		acct: handle;
+		federatedUsername: handle;
 		displayName: displayName;
 		createdAt: createdAt;
-		buildUrl: (anAuthor at: 'did' ifAbsent: ['']);
+		url: (anAuthor at: 'did' ifAbsent: ['']);
 		note: '';
 		avatar: (anAuthor at: 'avatar' ifAbsent: ['']);
 		header: '';

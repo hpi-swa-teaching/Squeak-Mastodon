@@ -1,8 +1,9 @@
 initialization
 from: aJsonObject
-	^ (self new)
+
+	^ self new
 		id: (aJsonObject at: 'id');
 		type: (aJsonObject at: 'type');
-		buildUrl: (aJsonObject at: 'url');
+		url: (aJsonObject at: 'url');
 		previewUrl: (aJsonObject at: 'preview_url');
 		yourself

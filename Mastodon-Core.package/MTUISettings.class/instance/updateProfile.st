@@ -1,7 +1,7 @@
 actions
 updateProfile 
 	| dict avatar header |
-	mastodonApi token isNil ifTrue: [
+	self mastodonApi hasToken ifFalse: [
 		updateStatusLabel contents: '   Please log in first.'.
 		^ false].
 	

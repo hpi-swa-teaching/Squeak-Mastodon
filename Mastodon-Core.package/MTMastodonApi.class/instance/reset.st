@@ -1,5 +1,7 @@
 helpers
 reset
-	self username: nil;
+
+	self
+		username: nil;
 		password: nil;
-		baseURL: nil.
+		baseURL: nil

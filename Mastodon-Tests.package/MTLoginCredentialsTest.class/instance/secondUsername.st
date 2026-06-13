@@ -1,0 +1,4 @@
+defaults
+secondUsername
+
+	^ 'user2'

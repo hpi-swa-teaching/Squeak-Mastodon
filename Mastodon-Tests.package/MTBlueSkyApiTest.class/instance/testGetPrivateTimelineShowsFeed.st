@@ -8,7 +8,7 @@ testGetPrivateTimelineShowsFeed
 	result := api getPrivateTimeline.
 	toots := result value.
 	toot := toots first.
-	account := toot acct.
+	account := toot account.
 
 	self assert: result isSuccess equals: true.
 	self assert: client lastGetUrl equals: 'https://bsky.social/xrpc/app.bsky.feed.getTimeline?limit=30'.
