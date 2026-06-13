@@ -1,18 +1,17 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"tootLength" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tootTextArea",
-		"imageTextArea",
-		"imageMorph",
-		"tootSizeLabel",
-		"messageArea",
-		"datePicker" ],
-	"name" : "MTUINewToot",
+		"yearField",
+		"monthField",
+		"dayField",
+		"minuteField",
+		"hourField" ],
+	"name" : "MTUIDatePicker",
 	"pools" : [
 		 ],
 	"super" : "MTUIView",

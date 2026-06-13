@@ -1,7 +1,6 @@
 render
 render
 
-	| avatar |
 	self
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
@@ -12,8 +11,7 @@ render
 		cellPositioning: #topLeft;
 		wrapCentering: #leftTop;
 		color: Color white.
-	avatar := self avatarMorph.
-	avatar ifNotNil: [self addMorphBack: avatar].
+	self avatarMorph ifNotNil: [self addMorphBack: self avatarMorph].
 	self addMorphBack: self contentMorph.
 	
 	self layoutChanged
