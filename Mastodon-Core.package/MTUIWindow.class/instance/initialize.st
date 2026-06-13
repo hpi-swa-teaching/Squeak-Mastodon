@@ -7,7 +7,7 @@ initialize
 	self menuMorph: MTUIMenu new.
 	self scrollMorph: MTUIScrollPane new.
 	
-	self mastodonApi: MTProviderFactory providerFromSettings.
+	self mastodonApi: MTMastodonApi getInstance.
 	
 	self
 		setLabel: self mastodonApi displayName;

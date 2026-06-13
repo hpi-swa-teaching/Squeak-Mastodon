@@ -1,4 +1,0 @@
-accessing
-displayName
-
-	^ SubclassResponsibility
