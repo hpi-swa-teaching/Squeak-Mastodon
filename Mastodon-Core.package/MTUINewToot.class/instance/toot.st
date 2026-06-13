@@ -1,25 +1,16 @@
 toot
 toot
 
-	| text menu visibility |
+	| text visibility |
 	self mastodonApi hasToken ifFalse: [^ false].
-	text := tootTextArea contents asString.
-	text size > 500 ifTrue: [
-		self inform: 'Not more than 500 characters allowed.'.
+	text := self tootTextArea contents asString.
+	text size > self maxTextSize ifTrue: [
+		self inform: 'Not more than ', self maxTextSize asString, ' characters allowed.'.
 		^ false].
 	
-	menu := DialogWindow new.
-	menu title: 'Visibility'.
-	menu createButton: 'public' value: 'public'.
-	menu createButton: 'unlisted' value: 'unlisted'.
-	menu createButton: 'private' value: 'private'.
-	menu createButton: 'direct' value: 'direct'.
-	menu createCancelButton.
-	self addMorph: menu.
-	
-	visibility := menu getUserResponse.
-	imageMorph
-		ifNil: [mastodonApi toot: text withVisibility: visibility]
-		ifNotNil: [self tootImagewithVisibility: visibility].
-	tootTextArea contents: ''.
-	self sendPostFeedback
+	visibility := self addTootMenu.
+	self imageMorph = 'empty'
+		ifTrue: [self mastodonApi toot: text withVisibility: visibility]
+		ifFalse: [self tootImagewithVisibility: visibility].
+	self tootTextArea contents: ''.
+	self showFeedback

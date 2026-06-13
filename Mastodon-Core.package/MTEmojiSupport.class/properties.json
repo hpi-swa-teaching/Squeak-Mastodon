@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTEmojiSupport",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

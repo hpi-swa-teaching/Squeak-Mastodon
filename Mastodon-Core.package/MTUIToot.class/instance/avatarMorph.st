@@ -1,11 +1,11 @@
 render
 avatarMorph
 
-	| image |
-	image := MTMedia imageMorphFrom: self toot account avatar.
-	image ifNotNil: [
-		image
-			hResizing: #shrinkWrap;
-			vResizing: #shrinkWrap;
-			setNewImageFrom: (image form scaledToSize: 48).
-		^ image]
+	| avatar |
+	avatar := MTMedia imageMorphFrom: self object acct avatar.
+	avatar ifNil: [^ nil].
+	avatar
+		hResizing: #shrinkWrap;
+		vResizing: #shrinkWrap;
+		setNewImageFrom: (avatar form scaledToSize: 48).
+	^ avatar

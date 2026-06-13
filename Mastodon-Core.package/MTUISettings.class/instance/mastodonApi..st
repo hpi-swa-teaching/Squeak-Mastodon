@@ -1,3 +1,4 @@
 accessing
-mastodonApi: anObject
-	mastodonApi := anObject
+mastodonApi: aMastodonApi
+	mastodonApi := aMastodonApi.
+	self loadCurrentProfile

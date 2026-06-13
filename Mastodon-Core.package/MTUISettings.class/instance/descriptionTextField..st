@@ -1,3 +1,3 @@
 accessing
-descriptionTextField: anObject
-	descriptionTextField := anObject
+descriptionTextField: aTextField
+	descriptionTextField := aTextField

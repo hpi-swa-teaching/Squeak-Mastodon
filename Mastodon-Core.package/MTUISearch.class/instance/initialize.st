@@ -1,6 +1,6 @@
 initialization
-initialize 
-	
+initialize
+
 	super initialize.
 	self accountMorph: OrderedCollection new.
 	self cellInset: 10.

@@ -1,3 +1,3 @@
 accessing
 selectAvatarImage
-	self avatarImageMorph: self loadImage.
+	self avatarImageMorph: self loadImage

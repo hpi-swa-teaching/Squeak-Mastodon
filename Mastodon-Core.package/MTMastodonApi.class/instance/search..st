@@ -1,4 +1,4 @@
 endpoints
 search: aQuery
 
-	^ self getRequestAt: '/api/v1/search?q=', aQuery, '&resolve=true' intoObjectOf: MTSearchResult
+	^ self getRequestAt: '/api/v2/search?q=', aQuery, '&resolve=true' intoObjectOf: MTSearchResult

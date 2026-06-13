@@ -1,5 +1,6 @@
 initialization
 with: aMastodonApi morph: aMorph
-	^ (self new)
+
+	^ self new
 		mastodonApi: aMastodonApi;
 		imageMorph: aMorph

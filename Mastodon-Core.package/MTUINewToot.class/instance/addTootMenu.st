@@ -1,5 +1,6 @@
 render
 addTootMenu
+
 	| menu |
 	menu := DialogWindow new.
 	menu title: 'Visibility'.
@@ -9,4 +10,4 @@ addTootMenu
 	menu createButton: 'direct' value: 'direct'.
 	menu createCancelButton.
 	self addMorph: menu.
-	^ menu
+	^ menu getUserResponse

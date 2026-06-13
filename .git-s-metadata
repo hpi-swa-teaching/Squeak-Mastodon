@@ -28,6 +28,14 @@ GSMetadata {
 				#name : 'Mastodon-Core'
 			},
 			#path : FSAbsolutePath [ ]
+		},
+		GSBlobMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'NotoEmoji-Regular.ttf'
+			],
+			#encoding : 'bin'
 		}
 	],
 	#name : 'Squeak-Mastodon'

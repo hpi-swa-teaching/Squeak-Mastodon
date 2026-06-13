@@ -41,5 +41,5 @@ authenticateApplication
 		^ true]
 		on: Error
 		do: [
-			resultTextLabel contents: '<i>Code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
+			resultTextLabel contents: '<i>OAuth code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
 			^ false]

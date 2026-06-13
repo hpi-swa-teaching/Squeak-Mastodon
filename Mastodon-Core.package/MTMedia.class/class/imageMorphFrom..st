@@ -19,7 +19,7 @@ imageMorphFrom: anUrl
 		binary;
 		reset.
 	
-	form := ImageReadWriter formFromStream: doc.
+	[form := ImageReadWriter formFromStream: doc] on: Error do: [:e | ^ nil].
 	
 	MTImageCache default cache: form from: anUrl.
 	

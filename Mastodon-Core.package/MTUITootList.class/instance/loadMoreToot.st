@@ -1,5 +1,6 @@
 updating
 loadMoreToot
+
 	| newToots |
 	self mastodonApi hasToken ifFalse: [^false].
 

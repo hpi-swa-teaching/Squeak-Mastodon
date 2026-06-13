@@ -1,3 +1,3 @@
 accessing
-avatarImageMorph: anObject
-	avatarImageMorph := anObject
+avatarImageMorph: anImage
+	avatarImageMorph := anImage

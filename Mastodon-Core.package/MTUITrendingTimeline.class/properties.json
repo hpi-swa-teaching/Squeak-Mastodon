@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUITrendingTimeline",
+	"pools" : [
+		 ],
+	"super" : "MTUITootList",
+	"type" : "normal" }

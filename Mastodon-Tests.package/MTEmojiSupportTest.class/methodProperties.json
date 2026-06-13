@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"hasEmojiFontAt:in:" : "NV 5/28/2026 14:30",
+		"testApplyToLeavesAsciiUntagged" : "NV 5/28/2026 14:30",
+		"testApplyToReturnsGivenText" : "NV 5/28/2026 14:30",
+		"testApplyToReturnsNilForNil" : "NV 5/28/2026 14:30",
+		"testApplyToTagsOnlyAstralCharacters" : "NV 5/28/2026 14:31" } }
