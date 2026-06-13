@@ -1,7 +1,7 @@
 stepping
 step
 	| result |
-	self mastodonApi isAuthenticated ifFalse: [^ self].
+	self mastodonApi hasToken ifFalse: [^ self].
 
 	result := mastodonApi getLiveTimeline.
 	result isError ifTrue: [^ self].

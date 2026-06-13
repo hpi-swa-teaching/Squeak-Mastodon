@@ -5,6 +5,8 @@
 		"assertNoErrorDuring:" : "cs 5/18/2026 15:24",
 		"avatarUrlFromJson:" : "cs 5/18/2026 16:13",
 		"previewUrlFromJson:" : "cs 5/18/2026 16:13",
-		"testRenderWithImageDoesNotRaise" : "SB 6/4/2026 22:43",
-		"testRenderWithoutImageDoesNotRaise" : "SB 6/4/2026 22:43",
+		"testRenderWithImageDoesNotRaise" : "cs 6/13/2026 10:11",
+		"testRenderWithNullAvatarDoesNotRaise" : "6/13/2026 12:54:40",
+		"testRenderWithNullPreviewDoesNotRaise" : "cs 6/13/2026 10:11",
+		"testRenderWithoutImageDoesNotRaise" : "cs 6/13/2026 10:04",
 		"tootFromJson:" : "cs 5/18/2026 16:13" } }

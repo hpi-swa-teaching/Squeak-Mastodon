@@ -1,6 +1,4 @@
 endpoints
 getLiveTimeline
-	| url response |
-	url := self buildUrl: '/api/v1/timelines/public?local=true'.
-	response := self getRequest: url.
-	^ MTResult value: (self class deserialize: response intoCollectionOf: MTToot)
+
+	^ self getRequestAt: '/api/v1/timelines/public?local=true' intoCollectionOf: MTToot

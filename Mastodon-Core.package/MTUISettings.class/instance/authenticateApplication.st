@@ -2,7 +2,6 @@ actions
 authenticateApplication
 
 	| baseURL authorizationCode authorizationLink displayAuthorizationLink |
-	self applyProviderSelection ifFalse: [^ false].
 	self mastodonApi: MTProviderFactory providerFromSettings.
 	baseURL := urlTextField theText asString withBlanksTrimmed.
 	authorizationCode := tokenTextField theText asString withBlanksTrimmed.
