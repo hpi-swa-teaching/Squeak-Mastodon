@@ -1,5 +1,5 @@
 render
-elementMorph
+getElementMorph
 
 	| postMorph accountMorph contentMorph reblogMorph media createdAtMorph actionsMorph |
 	postMorph := AlignmentMorph new.
@@ -16,12 +16,12 @@ elementMorph
 		color: Color transparent.
 	
 	self determineInteractionType.
-	accountMorph := self accountMorph.
-	contentMorph := self contentMorph.
-	reblogMorph := self reblogMorph.
-	media := self media.
-	createdAtMorph := self createdAtMorph.
-	actionsMorph := self actionsMorph.
+	accountMorph := self getAccountMorph.
+	contentMorph := self getContentMorph.
+	reblogMorph := self getReblogMorph.
+	media := self getMedia.
+	createdAtMorph := self getCreatedAtMorph.
+	actionsMorph := self getActionsMorph.
 	
 	accountMorph ifNotNil: [postMorph addMorphBack: accountMorph].
 	contentMorph ifNotNil: [postMorph addMorphBack: contentMorph].

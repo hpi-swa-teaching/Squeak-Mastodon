@@ -1,5 +1,5 @@
 render
-reblogMorph
+getReblogMorph
 
 	| reblogMorph |
 	self object reblog ifNotNil: [
@@ -8,4 +8,5 @@ reblogMorph
 	self object quote ifNotNil: [
 		reblogMorph := MTUIToot new for: self object quote.
 		reblogMorph actionsMorph delete].
+	
 	^ reblogMorph

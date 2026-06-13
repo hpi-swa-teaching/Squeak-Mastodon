@@ -1,7 +1,7 @@
 defaults
 firstAccount
 
-	^ MTLoginCredentials
+	^ MTLoginCredentials new
 		createWithUsername: DataProvider defaultUsername
 		baseURL: DataProvider defaultBaseURL
 		token: DataProvider defaultToken

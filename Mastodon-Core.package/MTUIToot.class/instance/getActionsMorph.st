@@ -1,10 +1,8 @@
 render
-actionsMorph
+getActionsMorph
 
-	| actionsMorph |
-	self followButton: MTUIFollowButton new.
-	self blockButton: MTUIMuteButton new.
-	self directTootButton: MTUIDirectTootButton new.
+	self repostButton: MTUIRepostButton new.
+	self starButton: MTUIStarButton new.
 	actionsMorph := Morph new.
 	actionsMorph
 		layoutPolicy: TableLayout new;
@@ -16,8 +14,7 @@ actionsMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self followButton render;
-		addMorphBack: self blockButton render;
-		addMorphBack: self directTootButton render.
+		addMorphBack: self repostButton render;
+		addMorphBack: self starButton render.
 	
 	^ actionsMorph

@@ -1,8 +1,8 @@
 render
-media
+getMedia
 
 	| media |
-	media := MTMedia imageMorphFrom: (self object media at: 1 ifAbsent: [^ nil]) previewUrl.
+	media := MTMedia new imageMorphFrom: (self object media at: 1 ifAbsent: [^ nil]) previewUrl.
 	media ifNil: [^ nil].
 	media
 		cornerRadius: 20;

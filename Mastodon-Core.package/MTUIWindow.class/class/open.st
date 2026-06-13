@@ -1,6 +1,6 @@
 initialization
 open
 	"creates a new instance and opens it."
-	MTEmojiSupport ensureEmojiFont.
+	MTEmojiSupport new ensureEmojiFont.
 	self instance: self new.
 	self instance openWindow

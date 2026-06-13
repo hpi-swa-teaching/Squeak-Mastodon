@@ -2,16 +2,16 @@ comparing
 testInequalityOnBaseURL
 
 	| firstLoginCredentials secondLoginCredentials |
-	firstLoginCredentials := MTLoginCredentials
+	firstLoginCredentials := MTLoginCredentials new
 		createWithUsername: self firstUsername
 		baseURL: self firstBaseURL
 		token: self firstToken.
 	
-	secondLoginCredentials := MTLoginCredentials
+	secondLoginCredentials := MTLoginCredentials new
 		createWithUsername: self firstUsername
 		baseURL: self secondBaseURL
 		token: self firstToken.
 	
 	self deny: firstLoginCredentials = secondLoginCredentials.
 	self deny: (firstLoginCredentials equals: secondLoginCredentials).
-	self deny: (firstLoginCredentials hash = secondLoginCredentials hash)
+	self deny: firstLoginCredentials hash = secondLoginCredentials hash

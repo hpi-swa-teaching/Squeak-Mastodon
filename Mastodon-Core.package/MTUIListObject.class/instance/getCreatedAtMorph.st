@@ -1,5 +1,5 @@
 render
-createdAtMorph
+getCreatedAtMorph
 
 	| date createdAtMorph |
 	date := MTUtils relativeTimeString: (MTUtils timestampFromString: self object createdAt).

@@ -1,7 +1,7 @@
-as yet unclassified
+initialization
 createWithUsername: aUsername baseURL: aBaseURL token: aToken
 
-	^ self new
+	self
 		username: aUsername;
 		baseURL: aBaseURL;
 		token: aToken

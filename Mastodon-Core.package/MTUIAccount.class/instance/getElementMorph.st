@@ -1,5 +1,5 @@
 render
-elementMorph
+getElementMorph
 
 	| profile accountMorph noteMorph createdAtMorph actionsMorph |
 	profile := AlignmentMorph new.
@@ -15,10 +15,10 @@ elementMorph
 		listCentering: #topLeft;
 		color: Color transparent.
 	
-	accountMorph := self accountMorph.
-	noteMorph := self noteMorph.
-	createdAtMorph := self createdAtMorph.
-	actionsMorph := self actionsMorph.
+	accountMorph := self getAccountMorph.
+	noteMorph := self getNoteMorph.
+	createdAtMorph := self getCreatedAtMorph.
+	actionsMorph := self getActionsMorph.
 	
 	accountMorph ifNotNil: [profile addMorphBack: accountMorph].
 	noteMorph ifNotNil: [profile addMorphBack: noteMorph].

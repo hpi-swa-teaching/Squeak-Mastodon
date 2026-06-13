@@ -2,9 +2,9 @@ helpers
 testContainsEmptyFieldWithNilToken
 
 	| loginCredentials |
-	loginCredentials := MTLoginCredentials
+	loginCredentials := MTLoginCredentials new
 		createWithUsername: self firstUsername
 		baseURL: self firstBaseURL
 		token: nil.
-		
+	
 	self assert: loginCredentials containsEmptyField

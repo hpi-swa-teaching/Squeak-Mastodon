@@ -3,6 +3,6 @@ testApplyToLeavesAsciiUntagged
 
 	| text |
 	text := 'hello world' asText.
-	MTEmojiSupport applyTo: text.
+	MTEmojiSupport new applyTo: text.
 	1 to: text size do: [:i |
 		self deny: (self hasEmojiFontAt: i in: text)]

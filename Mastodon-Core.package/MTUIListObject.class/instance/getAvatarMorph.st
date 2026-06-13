@@ -1,4 +1,4 @@
 render
-avatarMorph
+getAvatarMorph
 
 	^ SubclassResponsibility

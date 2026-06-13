@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"getInstance" : "cs 6/13/2026 21:45",
-		"with:token:" : "timhb 6/7/2026 22:43" },
+		"mastodonInstance" : "cs 6/13/2026 22:15",
+		"mastodonInstance:" : "cs 6/13/2026 22:15" },
 	"instance" : {
 		"accessTokenParametersForCode:" : "timhb 6/8/2026 08:51",
 		"authorizationLink" : "timhb 6/7/2026 22:38",
@@ -90,4 +91,5 @@
 		"username:" : "timbeier 6/2/2026 07:50",
 		"verifyCredentials" : "timhb 6/7/2026 22:35",
 		"webClient" : "timhb 6/7/2026 22:25",
-		"webClient:" : "timbeier 6/2/2026 07:51" } }
+		"webClient:" : "timbeier 6/2/2026 07:51",
+		"with:token:" : "cs 6/13/2026 22:17" } }

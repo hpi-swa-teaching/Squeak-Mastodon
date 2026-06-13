@@ -1,4 +1,4 @@
-loading
+as yet unclassified
 imageMorphFrom: anUrl
 
 	| doc form image cachedForm fetchUrl |

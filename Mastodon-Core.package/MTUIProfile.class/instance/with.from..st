@@ -1,6 +1,7 @@
-initialization
-with: aTootList from: aMTUser 		
-	^ (self new)
+render
+with: aTootList from: aMTUser
+
+	^ self
 		user: aMTUser;
 		tootList: aTootList;
 		addUserInfo;

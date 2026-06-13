@@ -1,5 +1,5 @@
 render
-noteMorph
+getNoteMorph
 
 	| noteMorph |
 	noteMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self object note).

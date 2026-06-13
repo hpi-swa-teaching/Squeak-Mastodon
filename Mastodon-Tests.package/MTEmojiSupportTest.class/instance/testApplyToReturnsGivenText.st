@@ -3,4 +3,4 @@ testApplyToReturnsGivenText
 
 	| text |
 	text := 'hello' asText.
-	self assert: (MTEmojiSupport applyTo: text) == text
+	self assert: (MTEmojiSupport new applyTo: text) == text

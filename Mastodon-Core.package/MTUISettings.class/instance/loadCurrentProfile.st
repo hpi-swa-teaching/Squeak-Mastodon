@@ -6,9 +6,7 @@ loadCurrentProfile
 		account := (mastodonApi verifyCredentials) value.
 		currentName := account displayName ifNil: [''].
 		currentNote := account note ifNil: [''].
-		currentNote := currentNote copyReplaceAll: '<br />' with: ''.
-		currentNote := currentNote copyReplaceAll: '<p>' with: ''.
-		currentNote := currentNote copyReplaceAll: '</p>' with: ''.
+		currentNote := (MTUtils asTextFromHtml: currentNote).
 		usernameUpdateTextField contents: currentName.
 		descriptionTextField contents: currentNote.
 		usernameSizeLabel contents: (currentName size asString , '/30') asHtmlText.

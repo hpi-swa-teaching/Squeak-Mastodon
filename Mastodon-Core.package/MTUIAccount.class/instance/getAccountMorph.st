@@ -1,5 +1,5 @@
 render
-accountMorph
+getAccountMorph
 
 	| accountMorph |
 	accountMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self object displayName, '</b> <a href="mastodonUser:', self object id, '">@', self object federatedUsername, '</a>').

@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"applyTo:" : "NV 6/9/2026 20:53",
-		"ensureEmojiFont" : "NV 6/9/2026 20:32",
-		"stripJoiners:" : "NV 6/9/2026 19:29" },
+		 },
 	"instance" : {
-		 } }
+		"applyTo:" : "cs 6/13/2026 21:58",
+		"ensureEmojiFont" : "cs 6/13/2026 22:00",
+		"stripJoiners:" : "cs 6/13/2026 21:58" } }

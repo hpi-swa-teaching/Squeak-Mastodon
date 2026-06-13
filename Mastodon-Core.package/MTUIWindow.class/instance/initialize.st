@@ -13,6 +13,4 @@ initialize
 		setLabel: self mastodonApi displayName;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi hasToken
-		ifTrue: [self loadNewTootView]
-		ifFalse: [self loadSettingsView]
+	self mastodonApi hasToken ifTrue: [self loadNewTootView] ifFalse: [self loadSettingsView]

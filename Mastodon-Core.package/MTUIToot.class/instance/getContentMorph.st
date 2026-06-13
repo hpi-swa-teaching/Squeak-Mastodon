@@ -1,5 +1,5 @@
 render
-contentMorph
+getContentMorph
 
 	| contentMorph |
 	contentMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self object content removeClass: 'quote-inline').
