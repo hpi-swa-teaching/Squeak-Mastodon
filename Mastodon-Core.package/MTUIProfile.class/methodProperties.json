@@ -3,7 +3,8 @@
 		"with:from:" : "cs 6/14/2026 11:51",
 		"with:with:from:" : "MD 6/8/2026 14:47" },
 	"instance" : {
-		"addUserInfo" : "cs 6/14/2026 12:08",
+		"addGeneralUserInfo" : "HB 6/14/2026 13:58",
+		"addUserInfo" : "HB 6/14/2026 13:58",
 		"addUserTimeline" : "NV 6/7/2026 01:42",
 		"initialize" : "JS 6/4/2016 15:28",
 		"loadMoreToot" : "PG 5/28/2017 19:27",

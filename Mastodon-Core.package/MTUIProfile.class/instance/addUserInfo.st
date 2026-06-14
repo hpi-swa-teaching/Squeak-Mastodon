@@ -1,4 +1,4 @@
 render
 addUserInfo
 
-	^ self SubclassResponsibility
+	^ self subclassResponsibility
