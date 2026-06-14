@@ -1,7 +1,7 @@
-render
+initialization
 with: aTootList from: aMTUser
 
-	^ self
+	^ self new
 		user: aMTUser;
 		tootList: aTootList;
 		addUserInfo;

@@ -1,5 +1,5 @@
-as yet unclassified
-setWrapper: aWrapper
+layout-properties
+applyWrapperLayoutTo: aWrapper
 
 	aWrapper
 		layoutPolicy: TableLayout new;

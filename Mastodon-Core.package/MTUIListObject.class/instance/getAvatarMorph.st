@@ -1,4 +1,4 @@
 render
 getAvatarMorph
 
-	^ SubclassResponsibility
+	^ self SubclassResponsibility

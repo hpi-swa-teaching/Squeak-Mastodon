@@ -1,12 +1,11 @@
 {
 	"class" : {
-		 },
+		"createWithUsername:baseURL:token:" : "cs 6/14/2026 11:37" },
 	"instance" : {
 		"=" : "timbeier 5/25/2026 10:27",
 		"baseURL" : "timbeier 5/25/2026 10:25",
 		"baseURL:" : "timbeier 5/25/2026 10:25",
 		"containsEmptyField" : "timbeier 5/25/2026 10:50",
-		"createWithUsername:baseURL:token:" : "cs 6/13/2026 22:09",
 		"equals:" : "timbeier 5/25/2026 10:55",
 		"hash" : "timbeier 5/25/2026 12:12",
 		"token" : "timbeier 5/25/2026 10:25",

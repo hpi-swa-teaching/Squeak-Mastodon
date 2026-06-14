@@ -1,4 +1,4 @@
 render
 getElementMorph
 
-	^ SubclassResponsibility
+	^ self SubclassResponsibility

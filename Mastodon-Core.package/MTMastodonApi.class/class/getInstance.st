@@ -1,4 +1,4 @@
-initialization
+accessing
 getInstance
 
 	| baseURL token |

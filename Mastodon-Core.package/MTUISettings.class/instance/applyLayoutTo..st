@@ -1,5 +1,5 @@
 as yet unclassified
-setMorph: aMorph
+applyLayoutTo: aMorph
 
 	aMorph
 		layoutPolicy: TableLayout new;

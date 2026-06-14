@@ -2,12 +2,12 @@ comparing
 testInequalityOnUsername
 
 	| firstLoginCredentials secondLoginCredentials |
-	firstLoginCredentials := MTLoginCredentials new
+	firstLoginCredentials := MTLoginCredentials
 		createWithUsername: self firstUsername
 		baseURL: self firstBaseURL
 		token: self firstToken.
 	
-	secondLoginCredentials := MTLoginCredentials new
+	secondLoginCredentials := MTLoginCredentials
 		createWithUsername: self secondUsername
 		baseURL: self firstBaseURL
 		token: self firstToken.

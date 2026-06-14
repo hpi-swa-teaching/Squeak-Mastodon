@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 mastodonInstance: anObject
 
 	mastodonInstance := anObject

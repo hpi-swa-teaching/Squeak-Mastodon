@@ -4,16 +4,16 @@ addUpdateSection
 	| updateButton requestWrapper avatarImageButton headerImageButton row |
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
-	requestWrapper := self setMorph: (RectangleMorph new borderWidth: 1).
+	requestWrapper := self applyLayoutTo: (RectangleMorph new borderWidth: 1).
 	
-	usernameUpdateTextField := self setTextField: MTUITextMorph new withContent: 'New Username'.
+	usernameUpdateTextField := self applyLayoutToTextField: MTUITextMorph new withContent: 'New Username'.
 	requestWrapper addMorphBack: (TextMorph new contents: '<u>Display Name</u>' asHtmlText).
 	requestWrapper addMorphBack: usernameUpdateTextField.
 	
 	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/30') asHtmlText).
 	requestWrapper addMorphBack: usernameSizeLabel.
 	
-	descriptionTextField := self setTextField: MTUITextMorph new withContent: 'New Description'.
+	descriptionTextField := self applyLayoutToTextField: MTUITextMorph new withContent: 'New Description'.
 	requestWrapper addMorphBack: (TextMorph new contents: '<u>Bio</u>' asHtmlText).
 	requestWrapper addMorphBack: descriptionTextField.
 	

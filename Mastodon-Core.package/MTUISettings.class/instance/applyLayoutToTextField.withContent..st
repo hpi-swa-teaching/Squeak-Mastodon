@@ -1,9 +1,9 @@
 as yet unclassified
-setTextField: aTextField withContent: aString
+applyLayoutToTextField: aTextField withContent: aString
 
 	aTextField
 		hResizing: #spaceFill;
 		borderColor: Color gray;
-		borderColor: 1;
+		borderWidth: 1;
 		contents: aString.
 	^ aTextField

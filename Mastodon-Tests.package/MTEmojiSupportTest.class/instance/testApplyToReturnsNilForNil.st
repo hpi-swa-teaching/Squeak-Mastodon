@@ -1,4 +1,4 @@
 tests
 testApplyToReturnsNilForNil
 
-	self assert: (MTEmojiSupport new applyTo: nil) isNil
+	self assert: (MTEmojiSupport applyTo: nil) isNil

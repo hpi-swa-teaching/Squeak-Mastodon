@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"hasEmojiFontAt:in:" : "NV 5/28/2026 14:30",
-		"testApplyToLeavesAsciiUntagged" : "cs 6/13/2026 22:00",
-		"testApplyToReturnsGivenText" : "cs 6/13/2026 22:00",
-		"testApplyToReturnsNilForNil" : "cs 6/13/2026 22:00",
-		"testApplyToTagsOnlyAstralCharacters" : "cs 6/13/2026 22:00" } }
+		"testApplyToLeavesAsciiUntagged" : "cs 6/14/2026 12:03",
+		"testApplyToReturnsGivenText" : "cs 6/14/2026 12:03",
+		"testApplyToReturnsNilForNil" : "cs 6/14/2026 12:03",
+		"testApplyToTagsOnlyAstralCharacters" : "cs 6/14/2026 12:03" } }

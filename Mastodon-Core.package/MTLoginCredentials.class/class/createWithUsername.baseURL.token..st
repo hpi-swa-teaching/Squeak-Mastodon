@@ -1,7 +1,7 @@
 initialization
 createWithUsername: aUsername baseURL: aBaseURL token: aToken
 
-	self
+	^ self new
 		username: aUsername;
 		baseURL: aBaseURL;
 		token: aToken

@@ -4,7 +4,7 @@ addRequestSection
 	| requestButton logoutButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Enter server URL. Leave code empty to get authorize link.' asHtmlText).
 	
-	requestWrapper := self setMorph: (Morph new borderWidth: 1).
+	requestWrapper := self applyLayoutTo: (Morph new borderWidth: 1).
 	
 	urlTextField := MTLineEdit new.
 	urlTextField

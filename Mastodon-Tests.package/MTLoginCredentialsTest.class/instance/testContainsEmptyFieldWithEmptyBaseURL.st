@@ -2,7 +2,7 @@ helpers
 testContainsEmptyFieldWithEmptyBaseURL
 
 	| loginCredentials |
-	loginCredentials := MTLoginCredentials new
+	loginCredentials := MTLoginCredentials
 		createWithUsername: self firstUsername
 		baseURL: ''
 		token: self firstToken.

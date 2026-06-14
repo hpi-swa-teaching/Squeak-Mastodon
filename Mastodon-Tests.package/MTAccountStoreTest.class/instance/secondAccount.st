@@ -1,7 +1,7 @@
 defaults
 secondAccount
 
-	^ MTLoginCredentials new
+	^ MTLoginCredentials
 		createWithUsername: DataProvider secondUsername
 		baseURL: DataProvider secondBaseURL
 		token: DataProvider secondToken
