@@ -10,4 +10,5 @@ initialize
 		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString , '/500') asHtmlText);
 		 addMorph: tootSizeLabel;
 		
+		reloadMentionTimeline: false;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText)
