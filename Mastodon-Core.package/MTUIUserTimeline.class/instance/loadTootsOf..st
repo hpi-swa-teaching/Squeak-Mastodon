@@ -1,10 +1,8 @@
 updating
-loadTootsOf: aMTUser isSelf: aBoolean
+loadTootsOf: aMTUser
 
 	| toots |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
-	
-	aBoolean ifTrue: [self load].
 	
 	toots := mastodonApi getStatuses: aMTUser id.
 	

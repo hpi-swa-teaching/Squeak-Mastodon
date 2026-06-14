@@ -10,8 +10,7 @@
 		"imageTextArea",
 		"imageMorph",
 		"tootSizeLabel",
-		"messageArea",
-		"datePicker" ],
+		"messageArea" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],
