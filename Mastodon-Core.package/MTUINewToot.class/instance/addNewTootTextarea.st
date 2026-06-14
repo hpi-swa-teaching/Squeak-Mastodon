@@ -1,5 +1,5 @@
 render
-addNewScheduledTootTextarea
+addNewTootTextarea
 	| textareaWrapper |
 	
 	textareaWrapper := RectangleMorph new borderWidth: 1.
@@ -16,4 +16,3 @@ addNewScheduledTootTextarea
 	textareaWrapper addMorphBack: tootTextArea.
 	
 	self addMorphBack: textareaWrapper.
-	
