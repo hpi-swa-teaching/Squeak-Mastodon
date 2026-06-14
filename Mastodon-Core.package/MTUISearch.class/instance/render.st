@@ -4,7 +4,10 @@ render
 	self accountMorph do: [:morph |
 		self removeMorph: morph.
 		morph delete].
-	self accounts do: [:account | | accountMorph spacingMorph |
+	self spacingMorph do: [:morph |
+		self removeMorph: morph.
+		morph delete].
+	self accounts do: [:account | | accountMorph spacingMorph relationship |
 		accountMorph := MTUIAccount new for: account.
 		
 		self
@@ -19,4 +22,5 @@ render
 			hResizing: #spaceFill.
 		self addMorphBack: accountMorph.
 		self addAccountMorph: accountMorph.
-		self addMorphBack: spacingMorph]
+		self addMorphBack: spacingMorph.
+		self addSpacingMorph: spacingMorph]
