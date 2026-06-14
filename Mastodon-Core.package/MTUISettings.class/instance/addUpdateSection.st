@@ -48,4 +48,6 @@ addUpdateSection
 	row addMorphBack: updateStatusLabel.
 	requestWrapper addMorphBack: row.
 	
-	self addMorphBack: requestWrapper
+	self loadCurrentProfile.
+	
+	self addMorphBack: requestWrapper.
