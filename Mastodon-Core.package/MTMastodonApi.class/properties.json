@@ -1,7 +1,7 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		 ],
+		"mastodonInstance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",

@@ -4,7 +4,7 @@ getImageFrom: anUrl
 	| doc form image len suffix cachedForm |
 	anUrl ifNil: [^ nil].
 	
-	cachedForm := MTImageCache default imageFormFrom: anUrl.
+	cachedForm := MTImageCache default retrieveValueForKey: anUrl.
 	cachedForm ifNotNil: [^ MTUIImageMorph new setNewImageFrom: cachedForm].
 	
 	doc := HTTPSocket httpGet: anUrl.
@@ -18,7 +18,7 @@ getImageFrom: anUrl
 	suffix = 'jpg' ifTrue: [form := ImageReadWriter formFromStream: doc].
 	suffix = 'png' ifTrue: [form := PNGReadWriter formFromStream: doc].
 	
-	MTImageCache default cache: form from: anUrl.
+	MTImageCache default cacheValue: form forKey: anUrl.
 	
 	image := MTUIImageMorph new.
 	image setNewImageFrom: form.

@@ -5,11 +5,11 @@ testRenderClearsSubmorphs
 	
 	MTImageCache default flush.
 	MTImageCache default
-		cache: DataProvider mockAvatarForm
-		from: (self avatarUrlFromJson: DataProvider defaultAccountJsonString).
+		cacheValue: DataProvider mockAvatarForm
+		forKey: (self avatarUrlFromJson: DataProvider defaultAccountJsonString).
 	MTImageCache default
-		cache: DataProvider mockPreviewForm
-		from: (self previewUrlFromJson: DataProvider defaultTootWithImageJsonString).
+		cacheValue: DataProvider mockPreviewForm
+		forKey: (self previewUrlFromJson: DataProvider defaultTootWithImageJsonString).
 
 	parent := Morph new extent: 800 @ 600.
 	list := MTUITootList new.

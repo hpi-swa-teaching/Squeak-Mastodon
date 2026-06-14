@@ -6,7 +6,7 @@ imageMorphFrom: anUrl
 	
 	fetchUrl := anUrl.
 	
-	cachedForm := MTImageCache default imageFormFrom: anUrl.
+	cachedForm := MTImageCache default retrieveValueForKey: anUrl.
 	cachedForm ifNotNil: [^ MTUIImageMorph new setNewImageFrom: cachedForm].
 	
 	providerKey := MTSettingsStore default at: #provider ifAbsent: [#mastodon].
@@ -21,7 +21,7 @@ imageMorphFrom: anUrl
 	
 	[form := ImageReadWriter formFromStream: doc] on: Error do: [:e | ^ nil].
 	
-	MTImageCache default cache: form from: anUrl.
+	MTImageCache default cacheValue: form forKey: anUrl.
 	
 	image := MTUIImageMorph new.
 	image setNewImageFrom: form.

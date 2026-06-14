@@ -1,9 +1,11 @@
 {
 	"class" : {
-		"from:" : "SB 6/4/2026 21:29" },
+		"from:" : "cs 6/14/2026 17:59",
+		"getUsernameFromId:" : "cs 6/14/2026 18:06" },
 	"instance" : {
 		"avatar" : "SB 6/4/2026 21:01",
 		"avatar:" : "SB 6/4/2026 21:01",
+		"cacheUsername" : "cs 6/14/2026 18:06",
 		"createdAt" : "SB 6/4/2026 21:01",
 		"createdAt:" : "SB 6/4/2026 21:01",
 		"displayName" : "SB 6/4/2026 21:02",
