@@ -1,3 +1,4 @@
 updating
 loadMoreToot
-	self tootList loadMoreToot
+
+	self timelineMorph loadMoreToot

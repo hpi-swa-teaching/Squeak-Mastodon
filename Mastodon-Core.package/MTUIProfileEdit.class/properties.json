@@ -4,13 +4,16 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "LS 8/4/2017 16:01",
+	"commentStamp" : "",
 	"instvars" : [
 		"account",
-		"profileMorph",
-		"timelineMorph",
-		"saveButton" ],
-	"name" : "MTUIProfile",
+		"editedDisplayName",
+		"editedBio",
+		"editedAvatar",
+		"saveButton",
+		"profileView",
+		"container" ],
+	"name" : "MTUIProfileEdit",
 	"pools" : [
 		 ],
 	"super" : "MTUIView",
