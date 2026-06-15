@@ -4,7 +4,6 @@ renderScheduled
 	self scheduledMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
-	Transcript showln: self scheduledToots.
 	self scheduledToots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIScheduledToot for: toot with: self user.
 		tootMorph editButton
