@@ -1,4 +1,4 @@
 endpoints
 unblock: aUserID
 
-	^ self postRequest: '/api/v1/accounts/', aUserID, '/unblock' intoObjectOf: MTRelationship
+	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/unblock' intoObjectOf: MTRelationship

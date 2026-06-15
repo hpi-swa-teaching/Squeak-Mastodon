@@ -2,7 +2,7 @@ actions
 authenticateApplication
 
 	| baseURL authorizationCode authorizationLink displayAuthorizationLink |
-	self mastodonApi: MTMastodonApi getInstance.
+	self mastodonApi: MTProviderFactory providerFromSettings.
 	baseURL := urlTextField theText asString withBlanksTrimmed.
 	authorizationCode := tokenTextField theText asString withBlanksTrimmed.
 	

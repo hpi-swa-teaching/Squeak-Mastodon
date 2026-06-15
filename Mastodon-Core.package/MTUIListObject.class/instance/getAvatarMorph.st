@@ -1,4 +1,0 @@
-render
-getAvatarMorph
-
-	^ self SubclassResponsibility

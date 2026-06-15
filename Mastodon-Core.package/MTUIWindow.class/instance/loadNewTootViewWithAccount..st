@@ -1,6 +1,11 @@
 views
 loadNewTootViewWithAccount: anAccountID
+"is not in use because search function currently doesn't work"
 
-	self mastodonApi hasToken ifFalse: [^ false].
+	self refreshProvider.
+	self mastodonApi hasToken ifFalse: [^false].
 	
-	self loadView: (MTUINewToot content: '@', anAccountID asString) as: #newTootView activate: #newTootButton
+	self
+		loadView: (MTUINewToot with: mastodonApi content: '@', anAccountID asString)
+		as: #newTootView
+		activate: #newTootButton

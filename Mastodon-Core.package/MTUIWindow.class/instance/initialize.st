@@ -5,12 +5,14 @@ initialize
 	
 	self loadedViews: Dictionary new.
 	self menuMorph: MTUIMenu new.
-	self scrollMorph: ScrollPane new.
+	self scrollMorph: MTUIScrollPane new.
 	
-	self mastodonApi: MTMastodonApi getInstance.
+	self mastodonApi: MTProviderFactory providerFromSettings.
 	
 	self
 		setLabel: self mastodonApi displayName;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi hasToken ifTrue: [self loadNewTootView] ifFalse: [self loadSettingsView]
+	self mastodonApi hasToken
+		ifTrue: [self loadNewTootView]
+		ifFalse: [self loadSettingsView]

@@ -1,9 +1,10 @@
 views
 loadProfileView
-	"only necessary if displaying profiles is possible"
+"only necessary if displaying profiles is possible"
 
 	| currentUser |
-	self mastodonApi hasToken ifFalse: [^ false].
+	self refreshProvider.
+	self mastodonApi hasToken ifFalse: [^false].
 	
 	currentUser := mastodonApi getCurrentUser.
 	

@@ -1,6 +1,10 @@
 views
 loadSearchView
 
-	self mastodonApi hasToken ifFalse: [^ false].
+	| searchView |
+	self refreshProvider.
+	self mastodonApi hasToken ifFalse: [^false].
+	searchView := MTUISearch new.
 	
-	self loadView: MTUISearch new as: #searchView activate: #searchButton
+	searchView mastodonApi: self mastodonApi.
+	self loadView: (MTUISearch with: mastodonApi) as: #searchView activate: #searchButton

@@ -1,7 +1,9 @@
 render
 displayUser: aUsername
+"this method is not used because displaying users is currently not possible"
 
 	| user |
+	self refreshProvider.
 	self mastodonApi hasToken ifFalse: [^false].
 	user := self mastodonApi getAccount: aUsername.
 	user isError ifTrue: [

@@ -1,4 +1,4 @@
-initialization
+as yet unclassified
 createWithUsername: aUsername baseURL: aBaseURL token: aToken
 
 	^ self new

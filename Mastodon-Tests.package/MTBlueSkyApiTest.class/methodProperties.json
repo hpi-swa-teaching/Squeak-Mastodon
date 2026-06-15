@@ -1,0 +1,26 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"apiWithMockClient:token:" : "LZ 5/4/2026 16:50",
+		"sampleAuthor" : "LZ 5/4/2026 16:50",
+		"sampleFeedItem" : "LZ 5/4/2026 16:50",
+		"sampleLoginJson" : "LZ 5/4/2026 16:50",
+		"sampleSessionJson" : "LZ 5/4/2026 16:50",
+		"sampleTimelineJson" : "LZ 5/4/2026 16:50",
+		"testAccountFromAuthorMapsProfile" : "SB 6/4/2026 21:28",
+		"testAuthorFeedRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
+		"testAuthorizationHelpers" : "LZ 5/4/2026 16:50",
+		"testClassConstructorSetsBaseURLAndToken" : "timbeier 6/2/2026 07:47",
+		"testDeserializeJson" : "LZ 5/4/2026 16:50",
+		"testExchangeAuthorizationCodeParsesHandleAndPassword" : "LZ 5/4/2026 16:50",
+		"testExchangeAuthorizationCodeReturnsNilOnFailure" : "LZ 5/4/2026 16:50",
+		"testExchangeAuthorizationCodeStoresToken" : "LZ 5/4/2026 16:50",
+		"testGetPrivateTimelineShowsFeed" : "SB 6/4/2026 21:13",
+		"testGetPrivateTimelineVariantsUseTimelineEndpoint" : "LZ 5/4/2026 16:50",
+		"testGetStatusesShowsAuthorFeed" : "LZ 5/4/2026 16:50",
+		"testGetStatusesVariantsUseAuthorFeedEndpoint" : "LZ 5/4/2026 16:50",
+		"testIsAuthenticatedWithToken" : "timbeier 6/2/2026 07:39",
+		"testTimelineRequestFailureReturnsErrorResult" : "LZ 5/4/2026 16:50",
+		"testTootFromFeedItemMapsPost" : "SB 6/5/2026 18:20",
+		"testVerifyCredentialsReturnsCurrentAccount" : "SB 6/4/2026 21:28" } }
