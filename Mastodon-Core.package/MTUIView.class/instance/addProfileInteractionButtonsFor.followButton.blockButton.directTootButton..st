@@ -1,4 +1,4 @@
-as yet unclassified
+render
 addProfileInteractionButtonsFor: anAccount followButton: aFollowButton blockButton: aBlockButton directTootButton: aDirectTootButton
 
 	| relationship |

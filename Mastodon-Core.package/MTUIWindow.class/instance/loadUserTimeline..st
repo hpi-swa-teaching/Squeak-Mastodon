@@ -2,9 +2,8 @@ views
 loadUserTimeLineView: aMTUser
 
 	| userTimeline |
-	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
-	userTimeline := MTUIUserTimeline new.
+	self mastodonApi hasToken ifFalse: [^ false].
+	userTimeline := MTUIUserTimeline new window: self.
 	userTimeline id: aMTUser id.
 	userTimeline
 		mastodonApi: self mastodonApi;

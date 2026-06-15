@@ -9,8 +9,8 @@
 		"interaction",
 		"repostButton",
 		"starButton",
-		"profileButton",
-		"actionsMorph" ],
+		"actionsMorph",
+		"window" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],

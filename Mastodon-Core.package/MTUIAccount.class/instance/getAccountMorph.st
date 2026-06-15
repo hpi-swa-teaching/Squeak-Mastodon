@@ -1,7 +1,7 @@
 render
 getAccountMorph
 
-	| accountMorph start stop text currentUserId |
+	| accountMorph start stop text currentUserId followButton accountNameMorph following |
 	text := MTUtils asTextFromHtml: '<b>', self object displayName, '</b> ', '<i>@', self object federatedUsername, '<font color="', self htmlGray, '">', self interaction, '</font></i>'.
 	
 	start := text indexOfSubCollection: '@'.
@@ -10,20 +10,33 @@ getAccountMorph
 	text
 		addAttribute: (PluggableTextAttribute new
 			evalBlock: [:obj |
-				currentUserId := self owner mastodonApi getCurrentUser value id.
+				currentUserId := self mastodonApi getCurrentUser value id.
 				currentUserId = self object id
-					ifTrue: [self owner owner owner owner loadProfileViewOfCurrentUser: self object]
-					ifFalse: [self owner owner owner owner loadProfileViewOf: self object]];
+					ifTrue: [self window loadProfileViewOfCurrentUser: self object]
+					ifFalse: [self window loadProfileViewOf: self object]];
 			yourself)
 		from: start
 		to: stop.
 	
-	accountMorph := TextMorph new contentsWrapped: text.
-	accountMorph
+	accountNameMorph := TextMorph new contentsWrapped: text.
+	accountNameMorph
 		readOnly: true;
 		wrapFlag: true;
 		autoFit: true;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap.
 	
-	^ accountMorph
+	"following := ((self mastodonApi getRelationship: self object account id) value at: 1) following.
+	
+	followButton := MTUIFollowButton new.
+	followButton
+		target: self;
+		actionSelector: #followAccountWithId:fromSender:;
+		arguments: (Array with: self object account id with: followButton);
+		active: following.
+	
+	accountMorph := Morph new.
+	accountMorph addMorphBack: accountNameMorph.
+	accountMorph addMorphBack: followButton."
+	
+	^ accountNameMorph
