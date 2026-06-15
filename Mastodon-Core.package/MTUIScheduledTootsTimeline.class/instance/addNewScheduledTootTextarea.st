@@ -1,18 +1,18 @@
 render
 addNewScheduledTootTextarea
-	| textareaWrapper tootTextArea |
+	| textareaWrapper |
 	
 	textareaWrapper := RectangleMorph new borderWidth: 1.
 	textareaWrapper := MTUIView setWrapper: textareaWrapper.
 	
-	tootTextArea := MTUITextMorph new.
-	tootTextArea 
+	scheduledTootTextarea := MTUITextMorph new.
+	scheduledTootTextarea 
 		textSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;
 		contents: '';
 		wrapFlag: true.
-	textareaWrapper addMorphBack: tootTextArea.
+	textareaWrapper addMorphBack: scheduledTootTextarea.
 	
 	self addMorphBack: textareaWrapper.

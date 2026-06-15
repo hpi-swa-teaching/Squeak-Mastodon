@@ -17,6 +17,6 @@ scheduleToot
 	
 	(self scheduleToot: text at: time visibility: visibility withMedia: self getImageID) ifTrue: [
 		MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self messageArea.
-		tootTextArea contents: ''.
+		scheduledTootTextarea contents: ''.
 		^ false].
 	^ true

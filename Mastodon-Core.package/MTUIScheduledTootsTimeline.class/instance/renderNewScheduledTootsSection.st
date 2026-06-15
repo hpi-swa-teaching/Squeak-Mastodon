@@ -7,4 +7,9 @@ renderNewScheduledTootsSection
 		addMorphBack: (TextMorph new contents: '<b>Schedule new toot</b>' asHtmlText);
 		addNewScheduledTootTextarea;
 		addNewScheduleArea;
-		addNewScheduleButton.
+		addNewScheduleButton;
+		messageArea: (AlignmentMorph newColumn
+			hResizing: #spaceFill;
+			vResizing: #shrinkWrap;
+			color: Color transparent);
+		addMorphBack: messageArea.
