@@ -1,15 +1,18 @@
 render
 renderNewScheduledTootsSection
 
-	self 
+	self
 		cellInset: 10;
 		layoutInset: 20;
-		addMorphBack: (TextMorph new contents: '<b>Schedule new toot</b>' asHtmlText);
 		addNewScheduledTootTextarea;
 		addNewScheduleArea;
 		addNewScheduleButton;
+		addImageButton;
 		messageArea: (AlignmentMorph newColumn
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
 			color: Color transparent);
-		addMorphBack: messageArea.
+		addMorphBack: messageArea;
+		tootSizeLabel: (TextMorph new contents: (scheduledTootTextArea contents size asString, '/500') asHtmlText);
+		addMorph: tootSizeLabel;
+		addMorph: (TextMorph new contents: '<b>Schedule new toot</b>' asHtmlText)
