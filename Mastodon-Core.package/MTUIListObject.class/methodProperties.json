@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"avatarMorph" : "cs 6/4/2026 00:24",
-		"createdAtMorph" : "cs 6/4/2026 00:05",
-		"elementMorph" : "cs 6/4/2026 00:24",
 		"for:" : "cs 6/3/2026 18:43",
+		"getAvatarMorph" : "cs 6/14/2026 11:45",
+		"getCreatedAtMorph" : "cs 6/13/2026 22:46",
+		"getElementMorph" : "cs 6/14/2026 11:49",
 		"htmlGray" : "cs 5/25/2026 17:05",
 		"object" : "cs 6/3/2026 18:46",
 		"object:" : "cs 6/3/2026 18:46",
-		"render" : "NV 6/10/2026 19:39" } }
+		"render" : "cs 6/13/2026 22:51" } }

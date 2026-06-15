@@ -1,1 +1,0 @@
-MTSocialProvider is an abstract base class for social network providers.

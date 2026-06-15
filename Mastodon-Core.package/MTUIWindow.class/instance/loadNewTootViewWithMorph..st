@@ -1,8 +1,7 @@
 views
 loadNewTootViewWithMorph: aMorph
-"only gets called by MTScreenshot>>loadNewTootWithMorph: which isn't currently in use"
+	"only gets called by MTScreenshot>>loadNewTootWithMorph: which isn't currently in use"
 
-	self refreshProvider.
-	self mastodonApi hasToken ifFalse: [^false].
+	self mastodonApi hasToken ifFalse: [^ false].
 	
-	self loadView: (MTUINewToot with: mastodonApi morph: aMorph) as: #newTootView activate: #newTootButton
+	self loadView: (MTUINewToot morph: aMorph) as: #newTootView activate: #newTootButton

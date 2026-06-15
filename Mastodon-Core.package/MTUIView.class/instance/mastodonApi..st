@@ -1,4 +1,4 @@
 accessing
-mastodonApi: aMastodonApi
+mastodonApi: anObject
 
-	mastodonApi := aMastodonApi
+	mastodonApi := anObject
