@@ -1,5 +1,4 @@
 views
 loadSettingsView
 
-	self refreshProvider.
-	self loadView: (MTUISettings with: mastodonApi) as: #settingsView activate: #settingsButton
+	self loadView: MTUISettings new as: #settingsView activate: #settingsButton

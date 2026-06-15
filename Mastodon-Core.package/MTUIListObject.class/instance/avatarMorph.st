@@ -1,4 +1,0 @@
-render
-avatarMorph
-
-	^ SubclassResponsibility

@@ -1,7 +1,7 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		 ],
+		"mastodonInstance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -16,5 +16,5 @@
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],
-	"super" : "MTSocialProvider",
+	"super" : "Object",
 	"type" : "normal" }

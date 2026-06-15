@@ -1,0 +1,4 @@
+render
+getElementMorph
+
+	^ self SubclassResponsibility

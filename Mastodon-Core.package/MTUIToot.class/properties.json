@@ -8,7 +8,8 @@
 	"instvars" : [
 		"interaction",
 		"repostButton",
-		"starButton" ],
+		"starButton",
+		"actionsMorph" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],

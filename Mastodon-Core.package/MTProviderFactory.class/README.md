@@ -1,1 +1,0 @@
-MTProviderFactory builds provider instances from settings.
