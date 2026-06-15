@@ -1,4 +1,0 @@
-accessing
-profileButton
-
-	^ profileButton
