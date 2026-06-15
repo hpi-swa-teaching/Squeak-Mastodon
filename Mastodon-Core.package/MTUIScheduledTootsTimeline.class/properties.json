@@ -4,18 +4,19 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "A^3 6/15/2026 22:04",
 	"instvars" : [
 		"scheduledMorphs",
 		"scheduledToots",
 		"user",
-		"scheduledTootTextarea",
 		"messageArea",
 		"yearField",
 		"monthField",
 		"dayField",
 		"minuteField",
-		"hourField" ],
+		"hourField",
+		"tootSizeLabel",
+		"scheduledTootTextArea" ],
 	"name" : "MTUIScheduledTootsTimeline",
 	"pools" : [
 		 ],

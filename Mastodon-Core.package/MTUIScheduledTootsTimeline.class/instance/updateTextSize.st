@@ -1,7 +1,6 @@
 updating
 updateTextSize
-	| tootSizeLabel tootTextArea |
-	"(self tootTextArea contents size) > 500
+	(self scheduledTootTextarea contents size) > 500
 		ifTrue: [tootSizeLabel textColor: Color red];
-		ifFalse: [tootSizeLabel textColor: Color black]."
-	"self tootSizeLabel contents: (tootTextArea contents size asString, '/500') asHtmlText."
+		ifFalse: [tootSizeLabel textColor: Color black].
+	self tootSizeLabel contents: (scheduledTootTextArea contents size asString, '/500') asHtmlText.
