@@ -9,8 +9,7 @@
 		"minID",
 		"maxID",
 		"toots",
-		"tootMorphs",
-		"window" ],
+		"tootMorphs" ],
 	"name" : "MTUITootList",
 	"pools" : [
 		 ],

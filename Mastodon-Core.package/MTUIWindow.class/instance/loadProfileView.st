@@ -1,6 +1,5 @@
 views
 loadProfileView
-	"only necessary if displaying profiles is possible"
 
 	| currentUser |
 	self mastodonApi hasToken ifFalse: [^ false].

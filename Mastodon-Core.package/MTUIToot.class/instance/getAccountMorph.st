@@ -10,10 +10,10 @@ getAccountMorph
 	text
 		addAttribute: (PluggableTextAttribute new
 			evalBlock: [:obj |
-				currentUserId := self mastodonApi getCurrentUser value id.
-				currentUserId = self object account id
-					ifTrue: [self window loadProfileViewOfCurrentUser: self object account]
-					ifFalse: [self window loadProfileViewOf: self object account]];
+				currentUserId := MTMastodonApi getInstance getCurrentUser value id.
+				currentUserId = self object id
+					ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: self object "account"]
+					ifFalse: [MTUIWindow instance loadProfileViewOf: self object "account"]];
 			yourself)
 		from: start
 		to: stop.

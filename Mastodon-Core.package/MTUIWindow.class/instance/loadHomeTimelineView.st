@@ -2,7 +2,7 @@ views
 loadHomeTimelineView
 
 	| homeTimelineView |
-	homeTimelineView := MTUITootList new window: self.
+	homeTimelineView := MTUITootList new.
 	
 	homeTimelineView loadToots ifFalse: [^ false].
 	

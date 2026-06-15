@@ -9,7 +9,7 @@ render
 		morph delete].
 	
 	self toots do: [:toot | | tootMorph spacingMorph |
-		(tootMorph := MTUIToot new for: toot) window: self window.
+		tootMorph := MTUIToot new for: toot.
 		tootMorph repostButton
 			target: self;
 			actionSelector: #repostTootWithId:fromSender:;

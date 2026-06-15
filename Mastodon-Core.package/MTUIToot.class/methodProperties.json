@@ -3,9 +3,9 @@
 		 },
 	"instance" : {
 		"actionsMorph" : "cs 6/4/2026 00:35",
-		"actionsMorph:" : " 6/15/2026 18:26:40",
+		"actionsMorph:" : " 6/15/2026 18:25:32",
 		"determineInteractionType" : "cs 6/3/2026 23:36",
-		"getAccountMorph" : "HB 6/15/2026 18:15",
+		"getAccountMorph" : "HB 6/15/2026 18:51",
 		"getActionsMorph" : "cs 6/13/2026 22:43",
 		"getAvatarMorph" : "cs 6/13/2026 22:48",
 		"getContentMorph" : "cs 6/13/2026 22:50",
@@ -14,10 +14,7 @@
 		"getReblogMorph" : "cs 6/13/2026 22:45",
 		"interaction" : "cs 5/26/2026 14:06",
 		"interaction:" : "cs 5/26/2026 14:07",
-		"mastodonApi" : "HB 6/14/2026 15:04",
 		"repostButton" : "cs 6/3/2026 23:42",
 		"repostButton:" : "cs 6/3/2026 23:42",
 		"starButton" : "cs 6/3/2026 23:42",
-		"starButton:" : "cs 6/3/2026 12:02",
-		"window" : "HB 6/14/2026 15:17",
-		"window:" : "HB 6/14/2026 15:17" } }
+		"starButton:" : "cs 6/3/2026 12:02" } }

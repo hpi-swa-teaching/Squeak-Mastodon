@@ -2,7 +2,7 @@ views
 loadTrendingTimelineView
 
 	| trendingTimelineView |
-	trendingTimelineView := MTUITrendingTimeline new window: self.
+	trendingTimelineView := MTUITrendingTimeline new.
 	
 	trendingTimelineView loadToots ifFalse: [^ false].
 	
