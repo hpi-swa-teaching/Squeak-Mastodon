@@ -16,7 +16,8 @@
 		"minuteField",
 		"hourField",
 		"tootSizeLabel",
-		"scheduledTootTextArea" ],
+		"scheduledTootTextArea",
+		"imageMorph" ],
 	"name" : "MTUIScheduledTootsTimeline",
 	"pools" : [
 		 ],

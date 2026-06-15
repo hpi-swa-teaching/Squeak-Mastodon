@@ -7,6 +7,7 @@ renderNewScheduledTootsSection
 		addNewScheduledTootTextarea;
 		addNewScheduleArea;
 		addNewScheduleButton;
+		addImageButton;
 		messageArea: (AlignmentMorph newColumn
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
