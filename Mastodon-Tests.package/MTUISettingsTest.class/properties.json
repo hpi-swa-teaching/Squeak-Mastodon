@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"api",
+		"url",
+		"token" ],
 	"name" : "MTUISettingsTest",
 	"pools" : [
 		 ],
