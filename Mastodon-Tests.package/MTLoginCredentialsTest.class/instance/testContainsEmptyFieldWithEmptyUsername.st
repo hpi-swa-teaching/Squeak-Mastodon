@@ -6,5 +6,5 @@ testContainsEmptyFieldWithEmptyUsername
 		createWithUsername: ''
 		baseURL: self firstBaseURL
 		token: self firstToken.
-		
+	
 	self assert: loginCredentials containsEmptyField

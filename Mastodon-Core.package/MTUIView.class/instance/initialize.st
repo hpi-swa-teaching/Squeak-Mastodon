@@ -2,6 +2,7 @@ initialization
 initialize
 
 	super initialize.
+	self mastodonApi: MTMastodonApi getInstance.
 	self
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;

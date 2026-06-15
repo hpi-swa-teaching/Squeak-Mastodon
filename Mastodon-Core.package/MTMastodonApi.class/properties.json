@@ -16,5 +16,5 @@
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],
-	"super" : "MTSocialProvider",
+	"super" : "Object",
 	"type" : "normal" }

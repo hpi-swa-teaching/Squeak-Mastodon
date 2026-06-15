@@ -1,4 +1,0 @@
-render
-elementMorph
-
-	^ SubclassResponsibility

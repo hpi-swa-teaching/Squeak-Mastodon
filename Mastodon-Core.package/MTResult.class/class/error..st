@@ -1,5 +1,6 @@
 error handling
 error: aSTError
-	^ (self new)
+
+	^ self new
 		error: aSTError;
 		yourself
