@@ -2,8 +2,8 @@
 	"class" : {
 		"deserialize:intoCollectionOf:" : "timbeier 5/25/2026 11:56",
 		"deserialize:intoObjectOf:" : "timbeier 5/25/2026 11:56",
-		"isScheduledPostTimeValid:" : " 6/16/2026 12:51:39",
-		"minimumSchedulingDelay" : " 6/16/2026 12:51:39",
+		"isScheduledPostTimeValid:" : "6/16/2026 12:51:39",
+		"minimumSchedulingDelay" : "6/16/2026 12:51:39",
 		"scope" : "timbeier 5/25/2026 11:56",
 		"with:" : "timbeier 5/25/2026 11:56",
 		"with:password:username:" : "timbeier 5/25/2026 11:56",
