@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUITimeButton",
+	"pools" : [
+		 ],
+	"super" : "MTUIActionButton",
+	"type" : "normal" }

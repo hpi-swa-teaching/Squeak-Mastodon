@@ -12,7 +12,9 @@
 		"tootSizeLabel",
 		"replyTo",
 		"reloadMentionTimeline",
-		"mtuiWindow" ],
+		"mtuiWindow",
+		"messageArea",
+		"datePicker" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

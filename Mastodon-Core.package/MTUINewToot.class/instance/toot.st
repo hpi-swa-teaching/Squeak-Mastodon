@@ -1,23 +1,16 @@
 toot
 toot
 
-	| text menu visibility |
+	| textRes text visibility |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
-	text := tootTextArea contents asString.
-	text size > 500 ifTrue: [
-		self inform: 'Not more than 500 characters allowed.'.
+	textRes := self validateTootText.
+	textRes isError ifTrue: [
+		self inform: textRes error.
 		^ false].
+	text := textRes value.
 	
-	menu := DialogWindow new.
-	menu title: 'Visibility'.
-	menu createButton: 'public' value: 'public'.
-	menu createButton: 'unlisted' value: 'unlisted'.
-	menu createButton: 'private' value: 'private'.
-	menu createButton: 'direct' value: 'direct'.
-	menu createCancelButton.
-	self addMorph: menu.
+	visibility := self chooseVisibility.
 	
-	visibility := menu getUserResponse.
 	imageMorph
 		ifNil: [
 			replyTo
@@ -30,4 +23,6 @@ toot
 	
 	replyTo ifNil: [tootTextArea contents: ' '] ifNotNil: [self owner delete].
 	
-	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView]
+	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView].
+	tootTextArea contents: ''.
+	self sendPostFeedback
