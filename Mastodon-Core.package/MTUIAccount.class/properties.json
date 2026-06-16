@@ -15,7 +15,10 @@
 		"directTootButton",
 		"note",
 		"avatar",
-		"content" ],
+		"content",
+		"header",
+		"profileLink",
+		"mastodonApi" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],

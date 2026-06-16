@@ -5,10 +5,11 @@ render
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		layoutInset: 10; 
-		cellInset: 0;
+		layoutInset: 10;
+		cellInset: 10;
 		wrapCentering: #leftTop;
-		color: Color white;
-		
-		addMorphBack: self avatarMorph;
-		addMorphBack: self contentMorph.
+		listCentering: #topLeft;
+		color: Color white.
+	self avatarMorph ifNotNil: [:a | self addMorphBack: a].
+	self addMorphBack: self contentMorph.
+	self layoutChanged
