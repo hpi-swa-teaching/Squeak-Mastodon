@@ -1,8 +1,9 @@
 render
 actionsMorph
 
-	actions := Morph new.
-	actions
+	actionsMorph ifNotNil: [^ actionsMorph].
+	actionsMorph := Morph new.
+	actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -16,4 +17,4 @@ actionsMorph
 		addMorphBack: self scheduleButton render;
 		addMorphBack: self cancelButton render.
 	
-	^ actions
+	^ actionsMorph

@@ -1,8 +1,9 @@
 render
 actionsMorph
 
-	actions := Morph new.
-	actions
+	actionsMorph ifNotNil: [^ actionsMorph].
+	actionsMorph := Morph new.
+	actionsMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -16,6 +17,6 @@ actionsMorph
 		addMorphBack: self repostButton render;
 		addMorphBack: self heartButton render;
 		addMorphBack: self replyButton render.
-	showArchiveButton ifTrue: [actions addMorphBack: self archiveButton render].
+	showArchiveButton ifTrue: [actionsMorph addMorphBack: self archiveButton render].
 	
-	^ actions
+	^ actionsMorph

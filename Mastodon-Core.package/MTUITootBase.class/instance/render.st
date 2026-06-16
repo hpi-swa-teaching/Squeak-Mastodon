@@ -2,6 +2,7 @@ render
 render
 
 	self
+		removeAllMorphs;
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;

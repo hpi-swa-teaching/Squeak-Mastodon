@@ -1,6 +1,6 @@
 as yet unclassified
 renderMention
-	
+
 	| repliedIDs |
 	repliedIDs := ((self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value
 		select: [:toot | toot notNil and: [toot inReplyToID notNil]]
@@ -8,7 +8,7 @@ renderMention
 	
 	self mention do: [:mention |
 		(mention status notNil and: [(repliedIDs includes: mention status id asString) not]) ifTrue: [ | tootMorph |
-			tootMorph := MTUIToot new toot: mention status.
+			tootMorph := MTUIToot for: mention status.
 			tootMorph showArchiveButton: true.
 			tootMorph render.
 			
@@ -28,5 +28,5 @@ renderMention
 				hResizing: #spaceFill;
 				yourself."
 			
-			self addMorphBack: tootMorph.
+			self addMorphBack: tootMorph
 			"self addMentionMorph: tootMorph"]]

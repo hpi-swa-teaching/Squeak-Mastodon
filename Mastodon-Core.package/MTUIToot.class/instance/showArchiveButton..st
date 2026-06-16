@@ -1,4 +1,3 @@
-initialization
-showArchiveButton: aBoolean
-
-	showArchiveButton := aBoolean
+accessing
+showArchiveButton: anObject
+	showArchiveButton := anObject

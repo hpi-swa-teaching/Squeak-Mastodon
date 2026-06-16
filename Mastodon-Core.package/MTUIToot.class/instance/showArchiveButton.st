@@ -1,4 +1,3 @@
-initialization
+accessing
 showArchiveButton
-
 	^ showArchiveButton
