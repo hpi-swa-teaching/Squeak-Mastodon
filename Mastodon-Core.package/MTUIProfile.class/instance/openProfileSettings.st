@@ -1,7 +1,6 @@
-edit
+settings
 openProfileSettings
 
 	self
 		removeAllMorphs;
-		deleteAllSubmorphs;
-		addMorphBack: self profileEditMorph
+		addMorphBack: self profileSettingsMorph

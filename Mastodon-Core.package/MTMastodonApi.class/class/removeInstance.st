@@ -1,0 +1,4 @@
+accessing
+removeInstance
+
+	^ mastodonInstance := nil.

@@ -1,5 +1,5 @@
 helpers
 testHasAccount
 
-	MTAccountStore addAccount: self firstAccount.
-	self assert: (MTAccountStore hasAccount: self firstAccount)
+	MTCredentialStore addCredentials: DataProvider firstAccountCredentials.
+	self assert: (MTCredentialStore hasCredentials: DataProvider firstAccountCredentials)

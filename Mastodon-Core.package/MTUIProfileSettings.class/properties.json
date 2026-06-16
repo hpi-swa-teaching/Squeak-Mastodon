@@ -1,0 +1,21 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"account",
+		"editedDisplayName",
+		"editedAvatar",
+		"saveButton",
+		"profileView",
+		"container",
+		"editedNote",
+		"avatarImageMorph" ],
+	"name" : "MTUIProfileSettings",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

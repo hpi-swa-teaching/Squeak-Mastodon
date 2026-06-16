@@ -1,8 +1,8 @@
 remove
 testRemoveAccountNoMatchingURL
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		removeAccount: self firstAccountWithDifferentBaseURL.
+	MTCredentialStore
+		addCredentials: DataProvider firstAccountCredentials;
+		removeCredentials: DataProvider firstAccountCredentialsWithDifferentBaseURL.
 	
-	self assert: (MTAccountStore hasAccount: self firstAccount)
+	self assert: (MTCredentialStore hasCredentials: DataProvider firstAccountCredentials)

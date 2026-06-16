@@ -2,6 +2,5 @@ helpers
 reset
 
 	self
-		username: nil;
-		password: nil;
+		token: nil;
 		baseURL: nil

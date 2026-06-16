@@ -1,7 +1,7 @@
 defaultAccount
 testDefaultAccount
 
-	MTAccountStore addAccount: self firstAccount.
+	MTCredentialStore addCredentials: DataProvider firstAccountCredentials.
 		
-	self assert: MTAccountStore defaultAccount equals: self firstAccount.
+	self assert: MTCredentialStore lastAddedCredentials equals: self firstAccount.
 	

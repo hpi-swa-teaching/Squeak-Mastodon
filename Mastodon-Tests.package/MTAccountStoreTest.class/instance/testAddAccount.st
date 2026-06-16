@@ -1,5 +1,5 @@
 add
 testAddAccount
 
-	MTAccountStore addAccount: self firstAccount.
-	self assert: MTAccountStore numberOfAccounts equals: 1
+	MTCredentialStore addCredentials: DataProvider firstAccountCredentials.
+	self assert: MTCredentialStore numberOfCredentials equals: 1

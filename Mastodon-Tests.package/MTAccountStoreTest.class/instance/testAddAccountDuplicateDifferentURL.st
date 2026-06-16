@@ -1,8 +1,8 @@
 add
 testAddAccountDuplicateDifferentURL
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		addAccount: self firstAccountWithDifferentBaseURL.
+	MTCredentialStore	
+		addCredentials: DataProvider firstAccountCredentials;
+		addCredentials: DataProvider firstAccountCredentialsWithDifferentBaseURL.
 	
-	self assert: MTAccountStore numberOfAccounts equals: 2
+	self assert: MTCredentialStore numberOfCredentials equals: 2

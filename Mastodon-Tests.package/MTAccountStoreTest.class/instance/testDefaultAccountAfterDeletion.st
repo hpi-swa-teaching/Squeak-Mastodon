@@ -1,8 +1,8 @@
 defaultAccount
 testDefaultAccountAfterDeletion
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		removeAccount: self firstAccount.
+	MTCredentialStore	
+		addCredentials: DataProvider firstAccountCredentials;
+		removeCredentials: DataProvider firstAccountCredentials.
 	
-	self assert: MTAccountStore defaultAccount equals: self emptyLoginCredentials
+	self assert: MTCredentialStore lastAddedCredentials equals: self emptyLoginCredentials

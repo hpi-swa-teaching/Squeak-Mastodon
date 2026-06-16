@@ -1,15 +1,8 @@
 tests
-testReset 
-	| API |
-	API := MTMastodonApi new.
-	
-	API username: 'schmidtflo'.
-	API password: '123'.
-	API baseURL: 'https://mastodon.network'.
+testReset
 
-	API reset.
+	MTMastodonApi
+		changeInstanceTo: DataProvider firstAccountCredentials;
+		removeInstance.
 	
-	self assert: (API username) equals: (nil). 	
-	self assert: (API password) equals: (nil).
-	self assert: (API baseURL) equals: (nil).
-
+	self assert: MTMastodonApi getInstance isNil.

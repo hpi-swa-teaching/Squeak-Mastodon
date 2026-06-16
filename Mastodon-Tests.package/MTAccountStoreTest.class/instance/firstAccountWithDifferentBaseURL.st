@@ -2,6 +2,5 @@ defaults
 firstAccountWithDifferentBaseURL
 
 	^ MTLoginCredentials
-		createWithUsername: DataProvider defaultUsername
-		baseURL: DataProvider secondBaseURL
+		for: DataProvider secondBaseURL
 		token: DataProvider defaultToken

@@ -1,7 +1,8 @@
 render
 addUserInfo
 	
-	self profileMorph: nil.
+	self refreshProfile.
+	
 	self profileMorph
 		addMorphBack: self getSettingsToolbar;
 		addMorphBack: self getAccountAvatarMorph;

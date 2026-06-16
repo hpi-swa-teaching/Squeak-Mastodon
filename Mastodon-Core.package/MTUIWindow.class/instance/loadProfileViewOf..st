@@ -1,13 +1,6 @@
 views
-loadProfileViewOf: aMTUser
-"this method is not used because displaying users is currently not possible, it's called by MTUIWindow>>displayUser:"
+loadProfileViewOf: aMTAccount
 
-	| userTimeline |
-	self refreshProvider.
-	self mastodonApi hasToken ifFalse: [^false].
-	userTimeline := MTUIUserTimeline new.
-	userTimeline id: aMTUser id.
-	userTimeline
-		mastodonApi: self mastodonApi;
-		loadTootsOf: aMTUser.
-	self loadView: (MTUIProfile for: aMTUser) as: #profileView activate: #profileButton
+	MTMastodonApi getInstance hasToken ifFalse: [^ false].
+	
+	self loadView: (MTUIProfile for: aMTAccount) as: #profileView activate: #profileButton

@@ -7,6 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"username",
+		"account",
 		"baseURL",
 		"token" ],
 	"name" : "MTLoginCredentials",

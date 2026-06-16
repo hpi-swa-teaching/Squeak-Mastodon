@@ -1,4 +1,4 @@
 comparing
 hash
 
-	^ username hash bitXor: baseURL hash
+	^ self account id hash bitXor: self baseURL hash

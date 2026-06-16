@@ -2,7 +2,7 @@ render
 getAccountAvatarMorph
 
 	| image |
-	image := MTMedia imageMorphFrom: self account avatar.
+	image := MTMedia new imageMorphFrom: self account avatar.
 	image ifNil: [self error: 'Could not load avatar'].
 	
 	^ image

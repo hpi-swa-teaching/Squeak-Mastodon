@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"profileView" ],
+	"name" : "MTUISwitchAccounts",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

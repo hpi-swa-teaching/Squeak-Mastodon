@@ -1,9 +1,9 @@
 remove
 testRemoveAllAccounts
 	
-	MTAccountStore
-		addAccount: self firstAccount;
-		addAccount: self secondAccount;
-		removeAllAccounts.
+	MTCredentialStore
+		addCredentials: DataProvider firstAccountCredentials;
+		addCredentials: DataProvider secondAccountCredentials;
+		removeAllCredentials.
 		
-	self assert: MTAccountStore numberOfAccounts equals: 0
+	self assert: MTCredentialStore numberOfCredentials equals: 0

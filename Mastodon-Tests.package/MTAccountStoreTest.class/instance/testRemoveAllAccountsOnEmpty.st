@@ -1,4 +1,4 @@
 remove
 testRemoveAllAccountsOnEmpty
 
-	self shouldnt: [MTAccountStore removeAllAccounts] raise: Error
+	self shouldnt: [MTCredentialStore removeAllCredentials] raise: Error

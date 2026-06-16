@@ -1,7 +1,7 @@
 running
 tearDown
 	
-	MTAccountStore accounts: storedAccounts.
+	MTCredentialStore credentials: storedAccounts.
 	
 	super tearDown
 	

@@ -1,8 +1,8 @@
 add
 testAddAccountDuplicate
 
-	MTAccountStore 
-		addAccount: self firstAccount;
-		addAccount: self firstAccount.
+	MTCredentialStore 
+		addCredentials: DataProvider firstAccountCredentials;
+		addCredentials: DataProvider firstAccountCredentials.
 		
-	self assert: 1 equals: (MTAccountStore numberOfAccounts).
+	self assert: 1 equals: (MTCredentialStore numberOfCredentials).

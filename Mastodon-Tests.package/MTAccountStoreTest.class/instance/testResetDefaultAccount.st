@@ -1,8 +1,8 @@
 defaultAccount
 testResetDefaultAccount
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		resetDefaultAccount.
-		
-	self assert: self emptyLoginCredentials equals: MTAccountStore defaultAccount.
+	MTCredentialStore
+		addCredentials: DataProvider firstAccountCredentials;
+		resetLastAddedCredentials.
+	
+	self assert: self emptyLoginCredentials equals: MTCredentialStore lastAddedCredentials

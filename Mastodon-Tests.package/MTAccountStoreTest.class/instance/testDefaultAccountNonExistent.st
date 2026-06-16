@@ -1,6 +1,6 @@
 defaultAccount
 testDefaultAccountNonExistent
 
-	MTAccountStore defaultAccount: self secondAccount.
+	MTCredentialStore lastAddedCredentials: DataProvider secondAccountCredentials.
 	
-	self assert: MTAccountStore defaultAccount equals: self emptyLoginCredentials
+	self assert: MTCredentialStore lastAddedCredentials equals: self emptyLoginCredentials

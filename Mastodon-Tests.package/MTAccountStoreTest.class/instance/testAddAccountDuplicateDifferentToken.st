@@ -1,8 +1,8 @@
 add
 testAddAccountDuplicateDifferentToken
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		addAccount: self firstAccountWithDifferentToken.
+	MTCredentialStore
+		addCredentials: DataProvider firstAccountCredentials;
+		addCredentials: DataProvider firstAccountCredentialsWithDifferentToken.
 	
-	self assert: MTAccountStore numberOfAccounts equals: 1
+	self assert: MTCredentialStore numberOfCredentials equals: 1

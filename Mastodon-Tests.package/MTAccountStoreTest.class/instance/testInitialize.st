@@ -1,4 +1,4 @@
 initialization
 testInitialize
 
-	self assert: MTAccountStore accounts notNil
+	self assert: MTCredentialStore credentials notNil

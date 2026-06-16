@@ -1,7 +1,7 @@
 running
 setUp
 
-	storedAccounts := MTAccountStore accounts.
-	MTAccountStore removeAllAccounts.
+	storedAccounts := MTCredentialStore credentials.
+	MTCredentialStore removeAllCredentials.
 	
 	super setUp

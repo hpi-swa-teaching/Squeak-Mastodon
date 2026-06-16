@@ -1,4 +1,7 @@
-tests
+running
 setUp
 
-	mastodonApi := MTMastodonApi with: 'https://mastodon.social' token: 't0k3n'
+	instance := MTMastodonApi getInstance.
+	MTMastodonApi changeInstanceTo: DataProvider firstAccountCredentials.
+	
+	super setUp

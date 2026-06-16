@@ -1,8 +1,8 @@
 remove
 testRemoveAccount
 
-	MTAccountStore
-		addAccount: self firstAccount;
-		removeAccount: self firstAccount.
+	MTCredentialStore
+		addCredentials: DataProvider firstAccountCredentials;
+		removeCredentials: DataProvider firstAccountCredentials.
 
-	self assert: MTAccountStore numberOfAccounts equals: 0
+	self assert: MTCredentialStore numberOfCredentials equals: 0

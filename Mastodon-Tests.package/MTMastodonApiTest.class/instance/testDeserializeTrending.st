@@ -1,7 +1,7 @@
 tests
 testDeserializeTrending
 	| toots |
-	toots := mastodonApi
+	toots := MTMastodonApi getInstance
 		deserialize: DataProvider mockTrendingResponse
 		intoCollectionOf: MTToot.
 

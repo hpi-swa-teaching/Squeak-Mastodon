@@ -1,5 +1,5 @@
 add
 testAddAccountMissingArgumentsURL
 
-	MTAccountStore addAccount: self firstAccountWithMissingBaseURL.
-	self assert: MTAccountStore numberOfAccounts equals: 0
+	MTCredentialStore addCredentials: DataProvider firstAccountCredentialsWithMissingBaseURL.
+	self assert: MTCredentialStore numberOfCredentials equals: 0
