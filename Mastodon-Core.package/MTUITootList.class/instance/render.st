@@ -23,6 +23,10 @@ render
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (actionToot id) with: tootMorph heartButton).
 			tootMorph heartButton active: actionToot favourited.
+			tootMorph replyButton
+				target: self;
+				actionSelector: #replyToToot:;
+				arguments: (Array with: toot).
 			(self mastodonApi isKindOf: MTBlueSkyApi) ifTrue: [
 				tootMorph followButton render.
 				tootMorph followButton

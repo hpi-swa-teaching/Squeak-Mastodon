@@ -1,0 +1,4 @@
+toot
+reloadMentionTimeline
+
+	^ reloadMentionTimeline

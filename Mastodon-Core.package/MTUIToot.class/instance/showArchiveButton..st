@@ -1,4 +1,4 @@
 initialization
 showArchiveButton: aBoolean
 
-	showArchiveButton := aBoolean
+	showArchiveButton := aBoolean.
