@@ -1,3 +1,4 @@
-accessing
-showArchiveButton: anObject
-	showArchiveButton := anObject
+initialization
+showArchiveButton: aBoolean
+
+	showArchiveButton := aBoolean.

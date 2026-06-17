@@ -12,7 +12,17 @@ toot
 	visibility := self chooseVisibility.
 	
 	imageMorph
-		ifNil: [mastodonApi toot: text withVisibility: visibility]
-		ifNotNil: [self tootImagewithVisibility: visibility].
+		ifNil: [
+			replyTo
+				ifNil: [mastodonApi toot: text withVisibility: visibility]
+				ifNotNil: [mastodonApi replyTo: replyTo id text: text]]
+		ifNotNil: [
+			replyTo
+				ifNil: [self tootImagewithVisibility: visibility]
+				ifNotNil: [self replyTootImagewithVisibility: visibility]].
+	
+	replyTo ifNil: [tootTextArea contents: ' '] ifNotNil: [self owner delete].
+	
+	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView].
 	tootTextArea contents: ''.
 	self sendPostFeedback

@@ -9,7 +9,7 @@
 		"id",
 		"type",
 		"createdAt",
-		"account",
+		"acct",
 		"status" ],
 	"name" : "MTMention",
 	"pools" : [

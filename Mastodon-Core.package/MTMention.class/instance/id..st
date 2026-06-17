@@ -1,4 +1,4 @@
 as yet unclassified
-id: anObject
+id: anId
 
-	id := anObject
+	id := anId
