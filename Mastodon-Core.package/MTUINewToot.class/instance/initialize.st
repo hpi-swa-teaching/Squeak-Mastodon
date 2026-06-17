@@ -7,6 +7,7 @@ initialize
 		cellInset: 10;
 		layoutInset: 20;
 		addNewTootTextarea;
+		addMorphBack: self privacyButtons;
 		addMorphBack: self feedbackMorph;
 		addNewTootButton;
 		addImageButton;
