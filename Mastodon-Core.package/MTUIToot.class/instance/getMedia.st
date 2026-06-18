@@ -9,6 +9,7 @@ getMedia
 		listDirection: #leftToRight;
 		wrapDirection: #topToBottom;
 		vResizing: #shrinkWrap;
+		layoutInset: -5;
 		cellInset: 5;
 		color: Color white.
 	

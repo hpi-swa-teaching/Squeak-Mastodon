@@ -2,7 +2,9 @@ toot
 tootImageWithParameters: aDictionary
 
 	| imageID json |
-	json := self mastodonApi uploadMediaFrom: self imageMorph imageForm.
-	imageID := (self mastodonApi deserialize: json) at: 'id'.
-	aDictionary at: 'media_ids[]' put: imageID.
+	self media do: [:image |
+		json := self mastodonApi uploadMediaFrom: image.
+		imageID := (self mastodonApi deserialize: json) at: 'id'.
+		aDictionary add: 'media_ids[]' -> imageID asString].
+	
 	self mastodonApi tootWithParameters: aDictionary

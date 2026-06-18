@@ -1,12 +1,13 @@
 render
-privacyButtons
+addPrivacyButtons
 
 	| wrapper |
 	wrapper := Morph new
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
+		layoutInset: -5;
 		cellInset: 5;
-		color: Color white.
+		color: Color transparent.
 	
 	self visibilityButton: MTUIPushButton new.
 	self connect: self visibilityButton signal: #clicked: toSelector: #showVisibilityWindow.
@@ -18,4 +19,4 @@ privacyButtons
 	self quotePolicySetting: nil.
 	wrapper addMorphBack: self quotePolicyButton.
 	
-	^ wrapper
+	self addMorphBack: wrapper
