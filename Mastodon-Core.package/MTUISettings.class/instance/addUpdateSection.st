@@ -21,17 +21,20 @@ addUpdateSection
 	requestWrapper addMorphBack: descriptionSizeLabel.
 	
 	avatarImageButton := UiPushButton new.
-	avatarImageButton text: 'select Avatar Image'.
+	avatarImageButton text: 'Select Avatar Image'.
+	avatarImageButton setBalloonText: 'Choose a new avatar image'.
 	self connect: avatarImageButton signal: #clicked: toSelector: #selectAvatarImage.
 	requestWrapper addMorphBack: avatarImageButton.
 	
 	headerImageButton := UiPushButton new.
-	headerImageButton text: 'select Header Image'.
+	headerImageButton text: 'Select Header Image'.
+	headerImageButton setBalloonText: 'Choose a new header image'.
 	self connect: headerImageButton signal: #clicked: toSelector: #selectHeaderImage.
 	requestWrapper addMorphBack: headerImageButton.
 	
 	updateButton := UiPushButton new.
 	updateButton text: 'Save Changes'.
+	updateButton setBalloonText: 'Save your profile changes'.
 	self connect: updateButton signal: #clicked: toSelector: #updateProfile.
 	
 	updateStatusLabel := TextMorph new contents: ' '.

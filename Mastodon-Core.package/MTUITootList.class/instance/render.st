@@ -10,10 +10,10 @@ render
 		do: [:toot | 
 			| tootMorph spacingMorph |
 			tootMorph := MTUIToot new for: toot.
-			tootMorph repostButton
+			tootMorph reblogButton
 				target: self;
 				actionSelector: #repostTootWithId:fromSender:;
-				arguments: (Array with: (toot id) with: tootMorph repostButton);
+				arguments: (Array with: (toot id) with: tootMorph reblogButton);
 				active: toot reblogged.
 			tootMorph starButton
 				target: self;

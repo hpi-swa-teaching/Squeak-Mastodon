@@ -1,8 +1,8 @@
 render
 renderRepostButtonOf: aTootMorph for: aToot
 
-	aTootMorph repostButton
+	aTootMorph reblogButton
 		target: self;
 		actionSelector: #repostTootWithId:fromSender:;
-		arguments: (Array with: aToot id with: aTootMorph repostButton);
+		arguments: (Array with: aToot id with: aTootMorph reblogButton);
 		active: aToot reblogged

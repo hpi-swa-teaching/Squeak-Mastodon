@@ -8,12 +8,18 @@ addSearchSection
 	requestWrapper := MTUIView applyWrapperLayoutTo: requestWrapper.
 	requestWrapper wrapCentering: #topLeft.
 	
-	searchTextField := UiLineEdit new.
-	searchTextField helpText: '@User@Domain'.
+	searchTextField := MTLineEdit new.
+	searchTextField
+		hResizing: #rigid;
+		width: 800;
+		height: 36.
+	searchTextField helpText: 'Enter Username'.
+	searchTextField returnAction: [self search].
 	requestWrapper addMorphBack: searchTextField.
 	
 	searchButton := UiPushButton new.
 	searchButton text: 'Search User'.
+	searchButton setBalloonText: 'Search for a user by his @'.
 	self connect: searchButton signal: #clicked: toSelector: #search.
 	requestWrapper addMorphBack: searchButton.
 	

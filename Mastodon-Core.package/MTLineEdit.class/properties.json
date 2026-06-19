@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"nextField" ],
+		"nextField",
+		"returnAction" ],
 	"name" : "MTLineEdit",
 	"pools" : [
 		 ],

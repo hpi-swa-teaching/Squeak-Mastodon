@@ -1,4 +1,4 @@
 accessing
-repostButton: anObject
+reblogButton: anObject
 
 	repostButton := anObject

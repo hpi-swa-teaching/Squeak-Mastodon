@@ -28,4 +28,5 @@ render
 			hResizing: #spaceFill.
 		self addMorphBack: accountMorph.
 		self addAccountMorph: accountMorph.
-		self addMorphBack: spacingMorph]
+		self addMorphBack: spacingMorph.
+		self addAccountMorph: spacingMorph]

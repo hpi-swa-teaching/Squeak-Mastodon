@@ -26,11 +26,13 @@ addRequestSection
 	
 	requestButton := UiPushButton new.
 	requestButton text: 'Login / Get Link'.
+	requestButton setBalloonText: 'Log in, or get an authorization link if the code is empty'.
 	self connect: requestButton signal: #clicked: toSelector: #authenticateApplication.
 	requestWrapper addMorphBack: requestButton.
 	
 	logoutButton := UiPushButton new.
 	logoutButton text: 'Logout'.
+	logoutButton setBalloonText: 'Log out of this account'.
 	self connect: logoutButton signal: #clicked: toSelector: #logout.
 	requestWrapper addMorphBack: logoutButton.
 	
