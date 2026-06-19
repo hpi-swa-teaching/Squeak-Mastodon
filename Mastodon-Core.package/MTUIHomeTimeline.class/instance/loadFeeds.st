@@ -9,7 +9,7 @@ loadFeeds
 		^ false].
 	feeds := result value.
 	feeds isEmpty ifTrue: [feeds := OrderedCollection with: MTBlueSkyFeed home].
-	selectedFeed ifNil: [selectedFeed := feeds first].
+	((selectedFeed isNil) or: [selectedFeed == false]) ifTrue: [selectedFeed := feeds first].
 	selectedFeed := feeds
 		detect: [:feed | (feed uri = selectedFeed uri) and: [feed sourceType = selectedFeed sourceType]]
 		ifNone: [feeds first].

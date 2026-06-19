@@ -13,9 +13,10 @@ addFeed
 				result value isEmpty
 					ifTrue: [^ self inform: 'No feeds found'].
 				feed := self chooseFeedFrom: result value title: 'Add Feed'.
-				feed ifNil: [^ self]]].
+				((feed isNil) or: [feed == false]) ifTrue: [^ self]]].
 	result isError ifTrue: [^ self inform: result error].
 	feed ifNil: [feed := result value].
+	feed == false ifTrue: [^ self].
 	saveResult := self mastodonApi saveFeed: feed.
 	saveResult isError ifTrue: [^ self inform: saveResult error].
 	self refreshFeedsSelecting: feed uri

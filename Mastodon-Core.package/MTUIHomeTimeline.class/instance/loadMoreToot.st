@@ -3,10 +3,11 @@ loadMoreToot
 	| result page |
 	(self mastodonApi isKindOf: MTBlueSkyApi)
 		ifFalse: [^ super loadMoreToot].
-	selectedFeed ifNil: [^ false].
-	selectedFeed isTimeline ifTrue: [^ super loadMoreToot].
+	((selectedFeed isNil) or: [selectedFeed == false]) ifTrue: [^ false].
 	feedCursor ifNil: [^ false].
-	result := self mastodonApi getFeedPage: selectedFeed uri cursor: feedCursor.
+	result := selectedFeed isTimeline
+		ifTrue: [self mastodonApi getTimelinePageWithCursor: feedCursor]
+		ifFalse: [self mastodonApi getFeedPage: selectedFeed uri cursor: feedCursor].
 	result isError
 		ifTrue: [
 			self inform: (result error ifNil: ['An error occurred']).
