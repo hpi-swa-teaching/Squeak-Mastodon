@@ -1,5 +1,5 @@
 imageMorphFrom: anUrl
-	| doc form image cachedForm providerKey fetchUrl |
+	| form image cachedForm providerKey fetchUrl |
 
 	anUrl ifNil: [ ^ nil ].
 
@@ -18,6 +18,7 @@ imageMorphFrom: anUrl
 	image := MTUIImageMorph new.
 
 	form := [
+		| doc |
 		doc := HTTPSocket httpGet: fetchUrl.
 		doc binary; reset.
 		ImageReadWriter formFromStream: doc.
