@@ -1,9 +1,11 @@
 endpoints
 getFeedGenerator: aFeedUri
-	| url response json view |
-	url := self buildUrl: '/xrpc/app.bsky.feed.getFeedGenerator?feed=', aFeedUri.
-	response := self getRequest: url.
-	response ifNil: [^ MTResult error: 'BlueSky feed generator request failed'].
+	| path url response json view |
+	path := '/xrpc/app.bsky.feed.getFeedGenerator?feed=', (self urlEncode: aFeedUri).
+	url := self buildUrl: path.
+	response := self getAppViewRequest: url.
+	response ifNil: [response := self getPublicAppViewRequest: path].
+	response ifNil: [^ MTResult error: 'BlueSky feed information is temporarily unavailable'].
 	
 	[
 		json := self deserialize: response.

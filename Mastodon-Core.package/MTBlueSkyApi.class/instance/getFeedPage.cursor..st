@@ -1,10 +1,12 @@
 endpoints
 getFeedPage: aFeedUri cursor: aCursor
-	| url response json feed toots cursor |
-	url := self buildUrl: '/xrpc/app.bsky.feed.getFeed?feed=', aFeedUri, '&limit=30'.
-	aCursor ifNotNil: [url := url, '&cursor=', aCursor].
-	response := self getRequest: url.
-	response ifNil: [^ MTResult error: 'BlueSky feed request failed'].
+	| path url response json feed toots cursor |
+	path := '/xrpc/app.bsky.feed.getFeed?feed=', (self urlEncode: aFeedUri), '&limit=30'.
+	aCursor ifNotNil: [path := path, '&cursor=', (self urlEncode: aCursor)].
+	url := self buildUrl: path.
+	response := self getAppViewRequest: url.
+	response ifNil: [response := self getPublicAppViewRequest: path].
+	response ifNil: [^ MTResult error: 'BlueSky feed is temporarily unavailable'].
 	
 	[
 		json := self deserialize: response.
