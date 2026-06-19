@@ -3,6 +3,7 @@ getActionsMorph
 
 	self repostButton: MTUIRepostButton new.
 	self starButton: MTUIStarButton new.
+	self commentsButton: MTUICommentsButton new.
 	actionsMorph := Morph new.
 	actionsMorph
 		layoutPolicy: TableLayout new;
@@ -15,6 +16,7 @@ getActionsMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self repostButton render;
-		addMorphBack: self starButton render.
+		addMorphBack: self starButton render;
+		addMorphBack: self commentsButton render.
 	
 	^ actionsMorph

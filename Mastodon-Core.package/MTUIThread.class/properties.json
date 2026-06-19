@@ -6,13 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"interaction",
-		"repostButton",
-		"starButton",
-		"commentsButton",
-		"actionsMorph" ],
-	"name" : "MTUIToot",
+		"rootToot",
+		"depths" ],
+	"name" : "MTUIThread",
 	"pools" : [
 		 ],
-	"super" : "MTUIListObject",
+	"super" : "MTUITootList",
 	"type" : "normal" }

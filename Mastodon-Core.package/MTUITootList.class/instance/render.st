@@ -20,6 +20,10 @@ render
 				actionSelector: #favoriteTootWithId:fromSender:;
 				arguments: (Array with: (toot id) with: tootMorph starButton).
 			tootMorph starButton active: toot favourited.
+			tootMorph commentsButton
+				target: self;
+				actionSelector: #showThreadFor:;
+				arguments: (Array with: toot).
 			spacingMorph := Morph new color: Color veryVeryLightGray.
 			spacingMorph 
 				height: 1;
