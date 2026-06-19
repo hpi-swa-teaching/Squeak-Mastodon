@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"feeds",
+		"selectedFeed",
+		"feedToolbar",
+		"feedCursor" ],
 	"name" : "MTUIHomeTimeline",
 	"pools" : [
 		 ],

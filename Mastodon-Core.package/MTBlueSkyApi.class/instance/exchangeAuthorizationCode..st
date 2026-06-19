@@ -19,9 +19,17 @@ exchangeAuthorizationCode: anAuthorizationCode
 	url := self buildUrl: '/xrpc/com.atproto.server.createSession'.
 	jsonString := '{ "identifier": "', handle, '", "password": "', password, '" }'.
 
-	response := webClient httpPost: url
-		content: jsonString
-		type: 'application/json'.
+	(webClient isKindOf: WebClient) ifTrue: [webClient close].
+	[
+		response := webClient httpPost: url
+			content: jsonString
+			type: 'application/json'
+			do: [:req |
+				req addHeader: 'Accept-Encoding' value: 'identity'.
+				req addHeader: 'Connection' value: 'close']
+	] on: Error do: [:ex |
+		(webClient isKindOf: WebClient) ifTrue: [webClient close].
+		^ nil].
 
 	response isSuccess ifFalse: [
 		^ nil].
