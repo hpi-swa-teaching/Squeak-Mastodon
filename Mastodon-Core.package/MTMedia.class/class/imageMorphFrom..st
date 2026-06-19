@@ -1,5 +1,5 @@
 imageMorphFrom: anUrl
-	| form image cachedForm providerKey fetchUrl |
+	| image cachedForm providerKey fetchUrl form |
 
 	anUrl ifNil: [ ^ nil ].
 
@@ -17,18 +17,11 @@ imageMorphFrom: anUrl
 
 	image := MTUIImageMorph new.
 
-	form := [
-		| doc |
-		doc := HTTPSocket httpGet: fetchUrl.
-		doc binary; reset.
-		ImageReadWriter formFromStream: doc.
-	] on: Error do: [ :e | nil ].
+	form := self formFrom: fetchUrl.
 
-	form
-		ifNil: [ ^ image "leave empty on error" ]
-		ifNotNil: [
-			MTImageCache default cache: form from: anUrl.
-			image setNewImageFrom: form.
-		].
+	form ifNil: [ ^ image "leave empty on error" ].
+
+	MTImageCache default cache: form from: anUrl.
+	image setNewImageFrom: form.
 
 	^ image
