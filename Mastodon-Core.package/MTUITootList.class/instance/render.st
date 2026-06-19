@@ -2,6 +2,7 @@ render
 render
 	
 	self tootMorphs do: [:morph | self removeMorph: morph. morph delete].
+	tootMorphs := OrderedCollection new.
 	self toots
 		do: [:toot | 
 			| tootMorph spacingMorph actionToot |
@@ -47,5 +48,6 @@ render
 				
 			self addMorphBack: tootMorph.
 			self addTootMorph: tootMorph.
-			self addMorphBack: spacingMorph
+			self addMorphBack: spacingMorph.
+			self addTootMorph: spacingMorph
 			].

@@ -6,11 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"feeds",
-		"selectedFeed",
-		"feedToolbar" ],
-	"name" : "MTUIHomeTimeline",
+		"displayName",
+		"uri",
+		"sourceType",
+		"pinned" ],
+	"name" : "MTBlueSkyFeed",
 	"pools" : [
 		 ],
-	"super" : "MTUITootList",
+	"super" : "Object",
 	"type" : "normal" }
