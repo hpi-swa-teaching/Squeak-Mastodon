@@ -10,5 +10,6 @@
 		"testCustomFeedLoadMoreUsesSelectedFeedCursor" : "LZ 6/19/2026 14:19",
 		"testCustomFeedRefreshKeepsLoadedPosts" : "LZ 6/19/2026 14:19",
 		"testLoadFeedsTreatsFalseSelectedFeedAsMissing" : "LZ 6/19/2026 14:20",
+		"testRememberFeedDoesNotReloadTimeline" : "LZ 6/19/2026 14:20",
 		"testRenderShowsFeedToolbarForBluesky" : "LZ 6/19/2026 14:19",
 		"testSelectedCustomFeedLoadsFeedEndpoint" : "LZ 6/19/2026 14:20" } }

@@ -19,4 +19,4 @@ addFeed
 	feed == false ifTrue: [^ self].
 	saveResult := self mastodonApi saveFeed: feed.
 	saveResult isError ifTrue: [^ self inform: saveResult error].
-	self refreshFeedsSelecting: feed uri
+	self rememberFeed: feed
