@@ -3,16 +3,17 @@ initialize
 
 	super initialize.
 	self feedbackMorph: (TextMorph new contents: 'toot posted').
+	self media: OrderedCollection new.
 	self
 		cellInset: 10;
 		layoutInset: 20;
 		addNewTootTextarea;
-		addMorphBack: self privacyButtons;
+		addPrivacyButtons;
 		addMorphBack: self feedbackMorph;
 		addNewTootButton;
-		addImageButton;
-		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
-		imageMorph: 'empty'.
+		addImageButtons;
+		addMediaPreview;
+		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText).
 	self tootSizeLabel: (TextMorph new contents: (self tootTextArea contents size asString, '/', self maxTextSize asString) asHtmlText).
 	self addMorph: self tootSizeLabel.
 	self feedbackMorph hide

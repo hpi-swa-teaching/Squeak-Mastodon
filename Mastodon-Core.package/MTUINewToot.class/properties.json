@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"tootTextArea",
-		"imageMorph",
 		"tootSizeLabel",
 		"feedbackMorph",
 		"sendButton",
@@ -15,7 +14,9 @@
 		"visibilityButton",
 		"quotePolicyButton",
 		"visibilitySetting",
-		"quotePolicySetting" ],
+		"quotePolicySetting",
+		"media",
+		"mediaPreview" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

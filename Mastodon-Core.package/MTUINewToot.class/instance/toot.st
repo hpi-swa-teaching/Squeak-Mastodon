@@ -8,10 +8,11 @@ toot
 	text size > self maxTextSize ifTrue: [
 		self inform: 'Not more than ', self maxTextSize asString, ' characters allowed.'.
 		^ false].
-	parameters := Dictionary newFromPairs: {'status'. text. 'visibility'. self visibilitySetting. 'quote_approval_policy'. self quotePolicySetting}.
+	parameters := {'status' -> text. 'visibility' -> self visibilitySetting} asOrderedCollection.
+	self quotePolicySetting ifNotNil: [parameters add: 'quote_approval_policy' -> self quotePolicySetting].
 	
-	self imageMorph = 'empty'
-		ifTrue: [self mastodonApi tootWithParameters: parameters]
-		ifFalse: [self tootImageWithParameters: parameters].
+	self media
+		ifEmpty: [self mastodonApi tootWithParameters: parameters]
+		ifNotEmpty: [self tootImageWithParameters: parameters].
 	self tootTextArea contents: ''.
 	self showFeedback
