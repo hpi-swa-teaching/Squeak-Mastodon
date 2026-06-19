@@ -1,4 +1,3 @@
 accessing
-clientID: aString
-
-	clientID := aString
+clientID: anObject
+	clientID := anObject

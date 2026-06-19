@@ -1,4 +1,3 @@
 accessing
 clientSecret
-
 	^ clientSecret

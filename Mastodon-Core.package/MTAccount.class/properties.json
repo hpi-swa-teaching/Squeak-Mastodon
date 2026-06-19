@@ -17,7 +17,8 @@
 		"header",
 		"followersCount",
 		"followingCount",
-		"statusesCount" ],
+		"statusesCount",
+		"followUri" ],
 	"name" : "MTAccount",
 	"pools" : [
 		 ],

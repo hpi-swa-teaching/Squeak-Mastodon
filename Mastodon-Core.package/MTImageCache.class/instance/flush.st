@@ -1,0 +1,3 @@
+image
+flush
+	self removeAll.

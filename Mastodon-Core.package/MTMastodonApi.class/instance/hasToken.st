@@ -1,4 +1,0 @@
-helpers
-hasToken
-
-	^ token notNil

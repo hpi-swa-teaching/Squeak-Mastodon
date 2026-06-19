@@ -1,7 +1,7 @@
-requesting
-getRequest: aPath
-
-    ^ self contentFromResponse:
-        (self webClient
-            httpGet: (self urlForPath: aPath)
-            do: [:request | self authorizeRequest: request])
+helpers
+getRequest: url
+	| response |
+	response := webClient httpGet: url
+			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self token].
+	response isSuccess 
+		ifTrue: [^ response content "utf8ToSqueak"]

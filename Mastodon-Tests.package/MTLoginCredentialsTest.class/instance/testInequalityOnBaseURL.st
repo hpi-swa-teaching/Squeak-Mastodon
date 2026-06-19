@@ -14,4 +14,4 @@ testInequalityOnBaseURL
 	
 	self deny: firstLoginCredentials = secondLoginCredentials.
 	self deny: (firstLoginCredentials equals: secondLoginCredentials).
-	self deny: firstLoginCredentials hash = secondLoginCredentials hash
+	self deny: (firstLoginCredentials hash = secondLoginCredentials hash)

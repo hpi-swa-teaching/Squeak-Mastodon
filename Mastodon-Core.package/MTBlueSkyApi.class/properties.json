@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"token",
+		"webClient",
+		"baseURL",
+		"did" ],
+	"name" : "MTBlueSkyApi",
+	"pools" : [
+		 ],
+	"super" : "MTSocialProvider",
+	"type" : "normal" }

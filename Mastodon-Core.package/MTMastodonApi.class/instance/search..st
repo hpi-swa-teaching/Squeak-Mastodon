@@ -1,4 +1,6 @@
 endpoints
 search: aQuery
-
-	^ self getRequestAt: '/api/v2/search?q=', aQuery, '&resolve=true' intoObjectOf: MTSearchResult
+	| url response |
+	url := self buildUrl: '/api/v1/search?q=', aQuery, '&resolve=true'.
+	response := self getRequest: url.
+	^ MTResult value: (self class deserialize: response intoObjectOf: MTSearchResult)

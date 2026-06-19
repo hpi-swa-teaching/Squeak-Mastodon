@@ -1,4 +1,3 @@
 accessing
-password: aString
-
-	password := aString
+password: anObject
+	password := anObject

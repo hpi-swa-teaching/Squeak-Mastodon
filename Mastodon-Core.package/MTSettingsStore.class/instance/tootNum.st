@@ -1,0 +1,3 @@
+constant
+tootNum
+	^ 5

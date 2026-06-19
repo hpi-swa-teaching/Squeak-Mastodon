@@ -1,13 +1,21 @@
 views
 loadProfileView
-	"only necessary if displaying profiles is possible"
-
-	| currentUser |
-	self mastodonApi hasToken ifFalse: [^ false].
+	| currentUser|
+	self refreshProvider.
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
-	currentUser := mastodonApi getCurrentUser.
+	(self mastodonApi isKindOf: MTBlueSkyApi) 
+	ifTrue: [
+		currentUser := self mastodonApi getProfileFor: ((self mastodonApi verifyCredentials) value) acct.
+	]
+	ifFalse:[
+		currentUser := mastodonApi getCurrentUser.
 	
-	currentUser isError ifTrue: [
-		self inform: 'An Error occurred.'.
-		^ false].
-	self loadProfileViewOf: currentUser value
+	].
+	
+	currentUser isError 
+	ifTrue: [
+        	UIManager default inform: 'Could not load profile'.
+        	^ self
+    	].
+	self loadProfileViewOf: currentUser value.

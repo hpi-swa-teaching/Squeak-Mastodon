@@ -1,6 +1,10 @@
 {
 	"class" : {
-		"from:" : "timhb 6/8/2026 14:24" },
+		"from:" : "LS 8/4/2017 16:09" },
 	"instance" : {
-		"accounts" : "SB 6/4/2026 21:03",
-		"accounts:" : "SB 6/4/2026 21:03" } }
+		"accounts" : "mm 6/7/2017 18:30",
+		"accounts:" : "mm 6/7/2017 18:30",
+		"hashtags" : "mm 6/7/2017 17:48",
+		"hashtags:" : "mm 6/7/2017 17:48",
+		"statuses" : "mm 6/7/2017 17:48",
+		"statuses:" : "mm 6/7/2017 17:48" } }

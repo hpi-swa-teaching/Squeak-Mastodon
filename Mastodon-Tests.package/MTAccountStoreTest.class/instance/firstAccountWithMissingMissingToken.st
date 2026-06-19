@@ -2,6 +2,6 @@ defaults
 firstAccountWithMissingMissingToken
 
 	^ MTLoginCredentials
-		createWithUsername: DataProvider defaultUsername
-		baseURL: DataProvider defaultBaseURL
+		createWithUsername: self firstUsername
+		baseURL: self firstBaseURL
 		token: nil

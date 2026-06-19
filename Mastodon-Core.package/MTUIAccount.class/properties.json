@@ -6,11 +6,21 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"account",
+		"image",
+		"text",
 		"blockButton",
+		"actions",
 		"followButton",
-		"directTootButton" ],
+		"directTootButton",
+		"note",
+		"avatar",
+		"content",
+		"header",
+		"profileLink",
+		"mastodonApi" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],
-	"super" : "MTUIListObject",
+	"super" : "Morph",
 	"type" : "normal" }

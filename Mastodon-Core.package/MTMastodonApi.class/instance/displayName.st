@@ -1,4 +1,3 @@
-constants
+accessing
 displayName
-
 	^ 'Mastodon'
