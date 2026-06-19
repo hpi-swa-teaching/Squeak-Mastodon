@@ -2,4 +2,5 @@ initialization
 initialize
 	super initialize.
 	feeds := OrderedCollection with: MTBlueSkyFeed home.
-	selectedFeed := feeds first
+	selectedFeed := feeds first.
+	feedCursor := nil
