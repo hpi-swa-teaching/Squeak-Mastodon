@@ -6,7 +6,5 @@
 		"avatarUrlFromJson:" : "cs 5/18/2026 16:13",
 		"previewUrlFromJson:" : "cs 5/18/2026 16:13",
 		"testRenderWithImageDoesNotRaise" : "cs 6/14/2026 18:04",
-		"testRenderWithNullAvatarDoesNotRaise" : "6/13/2026 12:54:40",
-		"testRenderWithNullPreviewDoesNotRaise" : "cs 6/14/2026 18:04",
 		"testRenderWithoutImageDoesNotRaise" : "cs 6/14/2026 18:04",
 		"tootFromJson:" : "cs 5/18/2026 16:13" } }
