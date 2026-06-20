@@ -1,7 +1,7 @@
 event
 handleKeystroke: anEvent
-	| lineEdit |
+	| edit |
 	anEvent keyCharacter = Character tab ifTrue: [
-		lineEdit := self ownerThatIsA: MTLineEdit.
-		lineEdit ifNotNil: [lineEdit focusNext. ^ self]].
+		edit := self ownerThatIsA: MTLineEdit.
+		edit ifNotNil: [edit focusNext. ^ self]].
 	^ super handleKeystroke: anEvent

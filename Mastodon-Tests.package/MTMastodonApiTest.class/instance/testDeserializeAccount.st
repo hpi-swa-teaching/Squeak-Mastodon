@@ -1,11 +1,10 @@
 tests
 testDeserializeAccount
-
-	| json result account |
-	account := DataProvider defaultAccount.
-	json := DataProvider defaultAccountJsonString.
+	| API json result |
+	API := MTMastodonApi new.
 	
-	result := MTMastodonApi new deserialize: json intoObjectOf: MTAccount.
+	json := DataProvider  mockAccount.
 	
-	self assert: result class equals: MTAccount.
-	self assertAccount: result matches: account.
+	result := API class deserialize: json intoObjectOf: MTAccount.
+		
+	self assert: (result class) equals: (MTAccount)

@@ -1,4 +1,3 @@
 accessing
 viewMorph
-
 	^ viewMorph

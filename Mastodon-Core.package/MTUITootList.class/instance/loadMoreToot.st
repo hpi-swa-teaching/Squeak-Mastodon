@@ -1,8 +1,7 @@
 updating
 loadMoreToot
-
 	| newToots |
-	self mastodonApi hasToken ifFalse: [^false].
+	self mastodonApi isAuthenticated ifFalse: [^false].
 
 	newToots := mastodonApi getPrivateTimelineMax: (self minID - 1).
 

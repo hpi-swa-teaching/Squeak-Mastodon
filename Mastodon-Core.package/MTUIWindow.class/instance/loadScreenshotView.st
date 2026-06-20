@@ -1,6 +1,6 @@
 views
 loadScreenshotView
-
-	self mastodonApi hasToken ifFalse: [^false].
+	self refreshProvider.
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
-	MTScreenshot useMastodonCursor
+	MTScreenshot useMastodonCursor.

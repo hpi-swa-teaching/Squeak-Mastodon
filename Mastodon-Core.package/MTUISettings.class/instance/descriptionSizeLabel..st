@@ -1,3 +1,3 @@
 accessing
-descriptionSizeLabel: aTextMorph
-	descriptionSizeLabel := aTextMorph
+descriptionSizeLabel: anObject
+	descriptionSizeLabel := anObject

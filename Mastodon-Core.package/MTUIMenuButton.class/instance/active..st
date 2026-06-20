@@ -1,4 +1,3 @@
 accessing
 active: aBoolean
-
-	active := aBoolean
+	active := aBoolean.

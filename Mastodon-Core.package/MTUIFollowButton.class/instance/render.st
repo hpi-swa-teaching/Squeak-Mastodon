@@ -1,5 +1,4 @@
 render
-render
-
+render 
 	super render.
-	self labelGraphic: MTUIIcons follow
+	self labelGraphic: MTUIIcons follow.

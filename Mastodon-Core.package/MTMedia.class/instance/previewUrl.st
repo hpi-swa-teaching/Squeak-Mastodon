@@ -1,4 +1,3 @@
 accessing
 previewUrl
-
 	^ previewUrl

@@ -1,4 +1,3 @@
 accessing
 mastodonApi
-
-	^ mastodonApi
+	^mastodonApi 

@@ -1,6 +1,9 @@
 views
 loadNewTootViewWithAccount: anAccountID
-
-	self mastodonApi hasToken ifFalse: [^ false].
+	self refreshProvider.
+	self mastodonApi isAuthenticated ifFalse: [^false].
 	
-	self loadView: (MTUINewToot content: '@', anAccountID asString) as: #newTootView activate: #newTootButton
+	self 
+		loadView: (MTUINewToot with: mastodonApi content: ('@', anAccountID asString))
+		as: #newTootView 
+		activate: #newTootButton.

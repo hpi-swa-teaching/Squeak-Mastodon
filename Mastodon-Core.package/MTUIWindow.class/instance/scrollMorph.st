@@ -1,4 +1,3 @@
 accessing
 scrollMorph
-
 	^ scrollMorph

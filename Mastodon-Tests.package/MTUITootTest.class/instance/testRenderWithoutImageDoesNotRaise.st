@@ -4,10 +4,10 @@ testRenderWithoutImageDoesNotRaise
 	| ui parent |
 	MTImageCache default flush.
 	MTImageCache default
-		cacheValue: DataProvider mockAvatarForm
-		forKey: (self avatarUrlFromJson: DataProvider defaultAccountJsonString).
+		cache: DataProvider mockAvatarForm
+		from: (self avatarUrlFromJson: DataProvider mockAccount).
 	ui := MTUIToot new.
-	ui object: (self tootFromJson: DataProvider defaultTootPlainJsonString).
+	ui toot: (self tootFromJson: DataProvider mockTootWithoutImage).
 	parent := Morph new.
 	parent extent: 800 @ 600.
 	parent addMorphBack: ui.

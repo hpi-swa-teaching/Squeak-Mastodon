@@ -1,3 +1,3 @@
 accessing
-tootList: aTootList
-	tootList := aTootList
+tootList: anObject
+	tootList := anObject

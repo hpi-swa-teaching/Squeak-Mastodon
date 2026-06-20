@@ -1,3 +1,3 @@
 accessing
-user: aMTUser
-	user := aMTUser
+user: anObject
+	user := anObject

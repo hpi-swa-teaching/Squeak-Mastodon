@@ -1,5 +1,4 @@
 render
-render
-
+render 
 	super render.
-	self labelGraphic: MTUIIcons mute
+	self labelGraphic: MTUIIcons mute.

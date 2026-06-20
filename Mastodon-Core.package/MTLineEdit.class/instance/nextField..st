@@ -1,3 +1,3 @@
 accessing
-nextField: aMTLineEdit
-	nextField := aMTLineEdit
+nextField: aLineEdit
+	nextField := aLineEdit

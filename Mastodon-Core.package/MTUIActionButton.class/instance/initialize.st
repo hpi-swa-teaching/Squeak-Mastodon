@@ -1,5 +1,4 @@
 initialization
-initialize
-
+initialize 
 	super initialize.
-	self active: false
+	self active: false.

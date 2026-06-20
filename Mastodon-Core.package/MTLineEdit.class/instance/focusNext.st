@@ -1,3 +1,4 @@
 accessing
 focusNext
-	nextField ifNotNil: [self world activeHand newKeyboardFocus: nextField textMorph]
+	nextField ifNil: [^ self].
+	self world activeHand newKeyboardFocus: nextField textMorph

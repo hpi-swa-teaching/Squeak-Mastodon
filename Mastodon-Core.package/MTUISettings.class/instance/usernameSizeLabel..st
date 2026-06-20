@@ -1,3 +1,3 @@
 accessing
-usernameSizeLabel: aTextMorph
-	usernameSizeLabel := aTextMorph
+usernameSizeLabel: anObject
+	usernameSizeLabel := anObject

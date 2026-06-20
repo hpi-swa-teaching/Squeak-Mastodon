@@ -1,4 +1,3 @@
 change reporting
 ownerChanged
-
-	self width: self owner width
+	self width: self owner width.
