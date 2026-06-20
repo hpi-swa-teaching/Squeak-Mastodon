@@ -1,5 +1,9 @@
 render
 addScheduleArea
 
-	self addDatePicker.
-	self addScheduleButton
+	| container |
+	container := (MTUIExpandableMenu basicNew title: 'Schedule it') initialize.
+	self addDatePicker: container.
+	self addScheduleButton: container.
+	
+	self addMorphBack: container
