@@ -3,4 +3,5 @@ loadProfileViewOfCurrentUser: aMTUser
 
 	| userTimeline |
 	userTimeline := self loadUserTimeLineView: aMTUser.
-	self loadView: (MTUICurrentProfile with: userTimeline from: aMTUser) as: #profileView activate: #profileButton
+	self loadView: (MTUICurrentProfile with: userTimeline from: aMTUser) as: #profileView activate: #profileButton.
+	scrollMorph scrollToTop

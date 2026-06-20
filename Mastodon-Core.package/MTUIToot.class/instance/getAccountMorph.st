@@ -11,7 +11,8 @@ getAccountMorph
 		addAttribute: (PluggableTextAttribute new
 			evalBlock: [:obj |
 				currentUserId := MTMastodonApi getInstance getCurrentUser value id.
-				currentUserId = self object id
+				currentUserId = self object account id
+				
 					ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: self object account]
 					ifFalse: [MTUIWindow instance loadProfileViewOf: self object account]];
 			yourself)
