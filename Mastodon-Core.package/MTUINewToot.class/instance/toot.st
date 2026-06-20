@@ -24,5 +24,5 @@ toot
 	replyTo ifNil: [tootTextArea contents: ' '] ifNotNil: [self owner delete].
 	
 	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView].
-	tootTextArea contents: ''.
-	self sendPostFeedback
+	self cleanTextField.
+	MTUtils showSuccessMessage: 'Toot posted successfully!' on: self messageArea
