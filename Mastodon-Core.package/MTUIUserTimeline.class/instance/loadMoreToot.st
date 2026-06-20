@@ -3,7 +3,7 @@ loadMoreToot
 
 	| newToots |
 	self mastodonApi hasToken ifFalse: [^false].
-	newToots := mastodonApi getStatusesOf: id since: minID.
+	newToots := mastodonApi getStatuses: id since: minID.
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).
 		^ false].

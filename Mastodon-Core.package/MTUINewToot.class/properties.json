@@ -16,7 +16,9 @@
 		"visibilitySetting",
 		"quotePolicySetting",
 		"media",
-		"mediaPreview" ],
+		"mediaPreview",
+		"imageTextArea",
+		"imageMorph" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

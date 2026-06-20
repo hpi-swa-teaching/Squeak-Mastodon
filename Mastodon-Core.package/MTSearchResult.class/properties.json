@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"accounts" ],
+		"accounts",
+		"statuses",
+		"hashtags" ],
 	"name" : "MTSearchResult",
 	"pools" : [
 		 ],

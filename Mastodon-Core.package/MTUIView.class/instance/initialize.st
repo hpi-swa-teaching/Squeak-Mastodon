@@ -2,7 +2,7 @@ initialization
 initialize
 
 	super initialize.
-	self mastodonApi: MTMastodonApi getInstance.
+	self mastodonApi: MTProviderFactory providerFromSettings.
 	self
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;

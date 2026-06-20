@@ -2,8 +2,9 @@ render
 addMenuButtons
 	menuMorph addButton: #newTootButton for: #loadNewTootView on: self with:  MTUIIcons newToot.
 	menuMorph addButton: #homeTimelineButton for: #loadHomeTimelineView on: self with: MTUIIcons home.
-	menuMorph addButton: #trendingTimelineButton for: #loadTrendingTimelineView on: self with: MTUIIcons trending.
-	menuMorph addButton: #liveTimelineButton for: #loadLiveTimelineView on: self with: MTUIIcons world.
+	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
+		menuMorph addButton: #trendingTimelineButton for: #loadTrendingTimelineView on: self with: MTUIIcons trending.
+		menuMorph addButton: #liveTimelineButton for: #loadLiveTimelineView on: self with: MTUIIcons world].
 	(self mastodonApi isKindOf: MTBlueSkyApi) ifTrue: [
 		menuMorph addButton: #likedPostsButton for: #loadLikedPostsView on: self with: MTUIIcons heartBlack].
 	menuMorph addButton: #profileButton for: #loadProfileView on: self with: MTUIIcons user.

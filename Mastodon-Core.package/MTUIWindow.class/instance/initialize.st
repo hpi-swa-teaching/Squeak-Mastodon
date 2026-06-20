@@ -1,16 +1,17 @@
 initialization
 initialize
-
 	super initialize.
 	
-	self loadedViews: Dictionary new.
-	self menuMorph: MTUIMenu new.
-	self scrollMorph: ScrollPane new.
+	loadedViews := Dictionary new.
+	menuMorph := MTUIMenu new.
+	scrollMorph := MTUIScrollPane new.	
 	
-	self mastodonApi: MTMastodonApi getInstance.
-	
-	self
-		setLabel: self mastodonApi displayName;
+	self mastodonApi: MTProviderFactory providerFromSettings.
+
+	self setLabel: self mastodonApi displayName;
+		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi hasToken ifTrue: [self loadNewTootView] ifFalse: [self loadSettingsView]
+	self mastodonApi isAuthenticated
+		ifTrue: [self loadNewTootView]
+		ifFalse: [self loadSettingsView]
