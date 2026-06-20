@@ -10,7 +10,7 @@
 		"repostButton",
 		"starButton",
 		"actionsMorph",
-		"window" ],
+		"followButton" ],
 	"name" : "MTUIToot",
 	"pools" : [
 		 ],

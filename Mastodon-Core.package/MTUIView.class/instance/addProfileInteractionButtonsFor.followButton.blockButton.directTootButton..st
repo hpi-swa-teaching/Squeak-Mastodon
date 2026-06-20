@@ -2,7 +2,7 @@ render
 addProfileInteractionButtonsFor: anAccount followButton: aFollowButton blockButton: aBlockButton directTootButton: aDirectTootButton
 
 	| relationship |
-	relationship := (self mastodonApi getRelationship: anAccount id) value at: 1.
+	relationship := (MTMastodonApi getInstance getRelationship: anAccount id) value at: 1.
 	
 	aFollowButton
 		target: self;
