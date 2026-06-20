@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "lapl 6/20/2026 17:55",
+	"instvars" : [
+		"title",
+		"contents",
+		"container",
+		"expanded" ],
+	"name" : "MTUIExpandableMenu",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }
