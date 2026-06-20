@@ -12,8 +12,8 @@ getAccountMorph
 			evalBlock: [:obj |
 				currentUserId := MTMastodonApi getInstance getCurrentUser value id.
 				currentUserId = self object id
-					ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: self object "account"]
-					ifFalse: [MTUIWindow instance loadProfileViewOf: self object "account"]];
+					ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: self object account]
+					ifFalse: [MTUIWindow instance loadProfileViewOf: self object account]];
 			yourself)
 		from: start
 		to: stop.
