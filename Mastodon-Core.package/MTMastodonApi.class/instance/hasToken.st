@@ -1,4 +1,4 @@
 helpers
 hasToken
 
-	^ token notNil
+	^ self token notNil and: [self token notEmpty]

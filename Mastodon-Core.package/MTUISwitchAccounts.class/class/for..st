@@ -1,7 +1,7 @@
 as yet unclassified
 for: aMorph
 
-	self new
+	^ self new
 		profileView: aMorph;
 		render;
 		yourself.

@@ -1,18 +1,12 @@
 render
 accountRowFor: aCredential
 
-	| row avatar name handle baseUrl |
-	avatar := self avatarMorphFor: aCredential.
-	name := self displayNameFor: aCredential.
-	handle := self usernameFor: aCredential.
-	baseUrl := aCredential baseURL ifNil: ['Unknown server'].
+	| text |
+	text := self getFormattedTextFor: aCredential.
 	
-	row := self getRowContainer.
-	
-	row
-		addMorphBack: avatar;
-		addMorphBack: (self labelFor: name, String cr, handle, String cr, baseUrl).
-	
-	row on: #mouseUp send: #switchToCredentials: to: self withValue: aCredential.
-	
-	^ row
+	^ self getRowContainer
+		addMorphBack: (self labelFor: text);
+		addMorphBack: ((self mastodonApi hasToken and: [aCredential = self mastodonApi getCurrentCredentials])
+			ifTrue: [self getLogoutButtonFor: aCredential]
+			ifFalse: [self getLoginButtonFor: aCredential]);
+		addMorphBack: (self getDeleteButtonFor: aCredential)

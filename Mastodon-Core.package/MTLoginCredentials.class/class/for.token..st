@@ -1,7 +1,7 @@
 initialization
-for: aBaseURL token: aToken
+for: aBaseUrl token: aToken
 
 	^ self new
-		baseURL: aBaseURL;
+		baseUrl: aBaseUrl;
 		token: aToken;
 		yourself

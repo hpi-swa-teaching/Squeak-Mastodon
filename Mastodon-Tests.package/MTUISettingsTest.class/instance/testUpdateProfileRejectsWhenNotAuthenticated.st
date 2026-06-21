@@ -1,8 +1,7 @@
 tests
 testUpdateProfileRejectsWhenNotAuthenticated
 
-	| settings api |
+	| settings |
 	settings := MTUISettings new.
-	api := MTMastodonApi new.
-	settings mastodonApi: api.
+	MTMastodonApi getInstance token: 'token'.
 	self assert: settings updateProfile equals: false

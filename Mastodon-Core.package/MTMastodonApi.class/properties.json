@@ -1,7 +1,7 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"mastodonInstance" ],
+		"instance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -12,7 +12,7 @@
 		"clientSecret",
 		"token",
 		"webClient",
-		"baseURL" ],
+		"baseUrl" ],
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],

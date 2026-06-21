@@ -1,4 +1,4 @@
-render
+render-containers
 getContainer
 
 	^ Morph new
@@ -8,4 +8,5 @@ getContainer
 		cellPositioning: #center;
 		wrapCentering: #center;
 		hResizing: #spaceFill;
-		vResizing: #shrinkWrap
+		vResizing: #shrinkWrap;
+		cellInset: 10

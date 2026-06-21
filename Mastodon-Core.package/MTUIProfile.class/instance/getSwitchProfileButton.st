@@ -6,5 +6,5 @@ getSwitchProfileButton
 		target: self;
 		color: Color veryLightGray;
 		borderColor: Color gray;
-		actionSelector: #openProfileSettings;
+		actionSelector: #openSwitchAccounts;
 		yourself

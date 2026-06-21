@@ -1,11 +1,10 @@
 views
 loadProfileView
-	"only necessary if displaying profiles is possible"
 
 	| currentUser |
 	self mastodonApi hasToken ifFalse: [^ false].
 	
-	currentUser := mastodonApi getCurrentUser.
+	currentUser := self mastodonApi getCurrentUser.
 	
 	currentUser isError ifTrue: [
 		self inform: 'An Error occurred.'.

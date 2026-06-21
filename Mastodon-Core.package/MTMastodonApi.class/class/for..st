@@ -2,6 +2,6 @@ initialization
 for: aCredential
 
 	^ self new
-		baseURL: aCredential baseURL;
+		baseUrl: aCredential baseUrl;
 		token: aCredential token;
 		yourself

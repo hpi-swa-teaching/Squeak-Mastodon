@@ -3,4 +3,4 @@ reset
 
 	self
 		token: nil;
-		baseURL: nil
+		baseUrl: nil

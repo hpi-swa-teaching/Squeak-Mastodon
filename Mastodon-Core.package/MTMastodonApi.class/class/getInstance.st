@@ -1,4 +1,4 @@
 accessing
 getInstance
 
-	^ mastodonInstance
+	^ instance ifNil: [instance := self new]

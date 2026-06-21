@@ -4,7 +4,7 @@ testInequalityOnBaseURL
 	| firstLoginCredentials secondLoginCredentials |
 	firstLoginCredentials := DataProvider firstAccountCredentials.
 	
-	secondLoginCredentials := DataProvider firstAccountCredentials baseURL: DataProvider secondBaseURL.
+	secondLoginCredentials := DataProvider firstAccountCredentials baseUrl: DataProvider secondBaseURL.
 	
 	self deny: firstLoginCredentials = secondLoginCredentials.
 	self deny: (firstLoginCredentials equals: secondLoginCredentials).

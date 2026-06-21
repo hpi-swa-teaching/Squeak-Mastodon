@@ -1,0 +1,18 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"baseUrlField",
+		"temporaryApi",
+		"container",
+		"authorizationCodeField",
+		"resultTextMorph" ],
+	"name" : "MTUILogin",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

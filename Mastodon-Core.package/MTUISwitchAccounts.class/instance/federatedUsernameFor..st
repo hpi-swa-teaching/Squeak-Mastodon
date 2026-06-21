@@ -1,8 +1,8 @@
 helpers
-federatedUsernameFor: credentials
+federatedUsernameFor: aCredential
 
 	| account |
-	account := self accountFor: credentials.
+	account := self accountFor: aCredential.
 	account ifNil: [^ '@unknown'].
 	
 	^ account federatedUsername ifNil: ['@unknown']

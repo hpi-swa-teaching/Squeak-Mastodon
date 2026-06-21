@@ -1,4 +1,4 @@
 accessing
 removeInstance
 
-	^ mastodonInstance := nil.
+	^ instance := self new.

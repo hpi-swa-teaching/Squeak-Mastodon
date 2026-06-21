@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"username",
 		"account",
-		"baseURL",
-		"token" ],
+		"token",
+		"baseUrl" ],
 	"name" : "MTLoginCredentials",
 	"pools" : [
 		 ],

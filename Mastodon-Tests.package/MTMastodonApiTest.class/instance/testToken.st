@@ -3,6 +3,6 @@ testToken
 	| API |
 	API := MTMastodonApi new.
 	
-	API baseURL: 'https://mastodon.social'.
+	API baseUrl: DataProvider defaultBase.
 	
-	self assert: (API baseURL) equals: ('https://mastodon.social').
+	self assert: (API baseUrl) equals: (DataProvider defaultBaseURL).

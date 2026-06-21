@@ -3,6 +3,6 @@ testBaseURL
 	
 	| api |
 	api := MTMastodonApi getInstance.
-	api baseURL: DataProvider defaultBaseURL.
+	api baseUrl: DataProvider defaultBaseURL.
 	
-	self assert: (api baseURL) equals: DataProvider defaultBaseURL.
+	self assert: (api baseUrl) equals: DataProvider defaultBaseURL.

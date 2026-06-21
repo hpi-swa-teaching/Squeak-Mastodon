@@ -1,4 +1,4 @@
 accessing
 changeInstanceTo: aCredential
-
-	^ mastodonInstance :=  self for: aCredential
+	
+	^ instance :=  self for: aCredential

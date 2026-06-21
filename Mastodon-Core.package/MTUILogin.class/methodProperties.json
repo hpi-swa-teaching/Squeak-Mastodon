@@ -1,0 +1,25 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"authorizationLink" : "timhb 6/21/2026 14:01",
+		"close" : "timhb 6/21/2026 14:36",
+		"container" : "timhb 6/21/2026 14:05",
+		"container:" : "timhb 6/21/2026 14:05",
+		"getAuthorizationCodeField" : "timhb 6/21/2026 14:08",
+		"getAuthorizationLink" : "timhb 6/21/2026 17:28",
+		"getAuthorizationLinkButton" : "timhb 6/21/2026 14:01",
+		"getBaseUrlField" : "timhb 6/21/2026 13:51",
+		"getContainer" : "timhb 6/21/2026 13:46",
+		"getFormattedAuthorizationCode" : "timhb 6/21/2026 14:13",
+		"getFormattedBaseUrl" : "timhb 6/21/2026 14:13",
+		"getLoginButton" : "timhb 6/21/2026 14:35",
+		"initialize" : "timhb 6/21/2026 17:19",
+		"login" : "timhb 6/21/2026 14:59",
+		"loginWithOAuthCode" : "timhb 6/21/2026 14:33",
+		"render" : "timhb 6/21/2026 14:25",
+		"renderAuthorizationView" : "timhb 6/21/2026 14:27",
+		"renderUrlView" : "timhb 6/21/2026 17:26",
+		"resultTextMorph" : "timhb 6/21/2026 17:25",
+		"temporaryApi" : "timhb 6/21/2026 13:55",
+		"temporaryApi:" : "timhb 6/21/2026 13:55" } }

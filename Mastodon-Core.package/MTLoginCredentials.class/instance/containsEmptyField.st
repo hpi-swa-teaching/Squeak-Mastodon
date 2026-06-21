@@ -1,4 +1,4 @@
 helpers
 containsEmptyField
 
-	^ {self baseURL. self token} contains: [:each | each isNil or: [each = '']]
+	^ {self baseUrl. self token} contains: [:each | each isNil or: [each = '']]

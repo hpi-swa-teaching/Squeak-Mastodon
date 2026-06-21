@@ -1,4 +1,4 @@
-render
+render-containers
 getRowContainer
 
 	^ Morph new
@@ -6,6 +6,7 @@ getRowContainer
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		cellInset: 10;
-		hResizing: #rigid;
+		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		extent: 500 @ 80
+		extent: 500 @ 80;
+		color: Color veryVeryLightGray
