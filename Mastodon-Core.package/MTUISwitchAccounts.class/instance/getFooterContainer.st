@@ -5,6 +5,5 @@ getFooterContainer
 		layoutPolicy: TableLayout new;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		cellPositioning: #center;
 		color: Color transparent;
 		cellInset: 10

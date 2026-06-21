@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"instance" ],
+		 ],
 	"name" : "MTMastodonApiTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "MTTestCase",
 	"type" : "normal" }

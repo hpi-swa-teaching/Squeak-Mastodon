@@ -1,16 +1,14 @@
 {
 	"class" : {
-		"addCredentials:" : "timhb 6/15/2026 11:00",
-		"credentials" : "timhb 6/15/2026 10:38",
-		"credentials:" : "timhb 6/15/2026 10:38",
-		"emptyLoginCredentials" : "timhb 6/15/2026 11:02",
-		"hasCredentials:" : "timhb 6/15/2026 10:59",
-		"isEmpty" : "timhb 6/15/2026 10:46",
-		"lastAddedCredentials" : "timhb 6/15/2026 12:56",
-		"lastAddedCredentials:" : "timhb 6/15/2026 12:56",
-		"numberOfCredentials" : "timhb 6/15/2026 10:46",
-		"removeAllCredentials" : "timhb 6/15/2026 10:58",
-		"removeCredentials:" : "timhb 6/15/2026 10:57",
-		"resetLastAddedCredentials" : "timhb 6/15/2026 12:58" },
+		"getInstance" : "timhb 6/21/2026 18:21",
+		"removeInstance" : "timhb 6/21/2026 18:27",
+		"setInstance:" : "timhb 6/21/2026 18:21" },
 	"instance" : {
-		 } }
+		"addCredentials:" : "timhb 6/21/2026 18:17",
+		"credentials" : "timhb 6/21/2026 18:18",
+		"credentials:" : "timhb 6/21/2026 18:18",
+		"hasCredentials:" : "timhb 6/21/2026 18:18",
+		"isEmpty" : "timhb 6/21/2026 18:18",
+		"numberOfCredentials" : "timhb 6/21/2026 18:18",
+		"removeAllCredentials" : "timhb 6/21/2026 18:19",
+		"removeCredentials:" : "timhb 6/21/2026 18:19" } }

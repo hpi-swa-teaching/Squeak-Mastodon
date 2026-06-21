@@ -11,5 +11,5 @@ getAuthorizationLink
 	self renderAuthorizationView.
 		
 	Clipboard clipboardText: authorizationLink.
-	displayAuthorizationLink := authorizationLink authorizationLink copyReplaceAll: '&' with: '&amp;'.
+	displayAuthorizationLink := authorizationLink copyReplaceAll: '&' with: '&amp;'.
 	self resultTextMorph contents: ('<i>Authorization URL copied to clipboard.<br>Open link, authorize app, then paste OAuth code here.</i><br><b>', displayAuthorizationLink, '</b>') asHtmlText

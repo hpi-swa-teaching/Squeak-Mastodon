@@ -5,7 +5,7 @@ render
 	container := self getContainer.
 	
 	container addMorphBack: self getHeaderMorph.
-	MTCredentialStore credentials do: [:each | container addMorphBack: (self accountRowFor: each)].
+	MTCredentialStore getInstance credentials do: [:each | container addMorphBack: (self accountRowFor: each)].
 	container addMorphBack: self getFooterMorph.
 	
 	self addMorph: container

@@ -1,6 +1,6 @@
 actions
 deleteCredentials: aCredential
 
-	MTCredentialStore removeCredentials: aCredential.
-	aCredential = self mastodonApi getCurrentCredentials ifTrue: [MTMastodonApi removeInstance].
+	MTCredentialStore getInstance removeCredentials: aCredential.
+	(aCredential = self mastodonApi getCurrentCredentials) ifTrue: [MTMastodonApi removeInstance].
 	self refreshWindow

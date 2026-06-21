@@ -10,5 +10,5 @@
 	"name" : "MTUINewTootTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "MTTestCase",
 	"type" : "normal" }

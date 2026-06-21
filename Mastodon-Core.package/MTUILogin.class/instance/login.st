@@ -5,6 +5,6 @@ login
 	self loginWithOAuthCode ifFalse: [^ nil].
 	
 	credentials := self temporaryApi getCurrentCredentials.
-	MTCredentialStore addCredentials: credentials.
+	MTCredentialStore getInstance addCredentials: credentials.
 	MTMastodonApi changeInstanceTo: credentials.
 	self close.

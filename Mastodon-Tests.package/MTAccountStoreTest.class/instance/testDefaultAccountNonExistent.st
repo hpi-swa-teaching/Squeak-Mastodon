@@ -1,6 +1,0 @@
-defaultAccount
-testDefaultAccountNonExistent
-
-	MTCredentialStore lastAddedCredentials: DataProvider secondAccountCredentials.
-	
-	self assert: MTCredentialStore lastAddedCredentials equals: self emptyLoginCredentials

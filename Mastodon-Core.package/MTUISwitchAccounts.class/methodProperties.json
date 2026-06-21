@@ -8,14 +8,14 @@
 		"addAccountMorph" : "timhb 6/21/2026 16:34",
 		"changeViewToProfileView" : "timhb 6/17/2026 08:23",
 		"defaultAvatarMorph" : "timhb 6/16/2026 19:41",
-		"deleteCredentials:" : "timhb 6/21/2026 17:18",
+		"deleteCredentials:" : "timhb 6/21/2026 18:22",
 		"displayNameFor:" : "timhb 6/21/2026 12:43",
 		"federatedUsernameFor:" : "timhb 6/21/2026 12:09",
 		"getCloseButton" : "timhb 6/21/2026 13:19",
 		"getContainer" : "timhb 6/21/2026 15:00",
 		"getCreateNewAccountButton" : "timhb 6/21/2026 14:22",
 		"getDeleteButtonFor:" : "timhb 6/21/2026 13:10",
-		"getFooterContainer" : "timhb 6/21/2026 13:32",
+		"getFooterContainer" : "timhb 6/21/2026 17:50",
 		"getFooterMorph" : "timhb 6/21/2026 13:33",
 		"getFormattedTextFor:" : "timhb 6/21/2026 12:56",
 		"getHeaderContainer" : "timhb 6/21/2026 13:31",
@@ -30,4 +30,4 @@
 		"profileView" : "timhb 6/16/2026 07:24",
 		"profileView:" : "timhb 6/16/2026 07:24",
 		"refreshWindow" : "timhb 6/21/2026 12:46",
-		"render" : "timhb 6/21/2026 13:34" } }
+		"render" : "timhb 6/21/2026 18:25" } }

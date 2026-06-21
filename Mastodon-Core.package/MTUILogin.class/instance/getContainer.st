@@ -5,8 +5,7 @@ getContainer
 		color: Color transparent;
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
-		cellPositioning: #center;
-		wrapCentering: #center;
+		cellPositioning: #topLeft;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		cellInset: 5
