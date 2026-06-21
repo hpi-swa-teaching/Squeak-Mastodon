@@ -8,7 +8,8 @@ addTootMenu
 		createButton: 'unlisted' value: 'unlisted';
 		createButton: 'private' value: 'private';
 		createButton: 'direct' value: 'direct';
-		createCancelButton.
+		createCancelButton;
+		yourself.
 		
 	self addMorph: menu.
 	^ menu getUserResponse
