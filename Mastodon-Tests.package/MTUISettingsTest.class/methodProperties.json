@@ -4,10 +4,4 @@
 	"instance" : {
 		"setUp" : "timhb 6/15/2026 12:40",
 		"tearDown" : "timhb 6/15/2026 12:40",
-		"testInitializeDoesNotRaiseWithoutApi" : "NV 5/26/2026 12:40",
-		"testInitializeWithoutApiShowsPlaceholders" : "NV 6/7/2026 02:35",
-		"testSizeLabelsMatchTheirFields" : "NV 6/7/2026 02:37",
-		"testTextSizeCounterUpdate" : "NV 6/7/2026 02:45",
-		"testUpdateProfileRejectsLongDescription" : "timhb 6/16/2026 19:26",
-		"testUpdateProfileRejectsLongUsername" : "timhb 6/16/2026 19:27",
-		"testUpdateProfileRejectsWhenNotAuthenticated" : "timhb 6/16/2026 19:27" } }
+		"testInitializeDoesNotRaiseWithoutApi" : "NV 5/26/2026 12:40" } }
