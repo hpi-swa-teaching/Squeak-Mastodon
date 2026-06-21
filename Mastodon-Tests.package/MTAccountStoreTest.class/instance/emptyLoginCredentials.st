@@ -1,0 +1,4 @@
+defaults
+emptyLoginCredentials
+
+	^ MTLoginCredentials new

@@ -1,0 +1,21 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addArchiveNavigationButton" : "Mailin 6/8/2026 17:08",
+		"addMentionSection" : "Mailin 6/8/2026 16:54",
+		"archiveTootWithId:" : "Mailin 6/8/2026 22:21",
+		"collectMentions:" : "Mailin 6/12/2026 20:03",
+		"getMentions" : "Mailin 6/12/2026 20:04",
+		"getNewMentions" : "Mailin 6/12/2026 20:04",
+		"initialize" : "Mailin 6/8/2026 17:36",
+		"isArchived:" : "Mailin 6/8/2026 17:21",
+		"loadMentions" : "Mailin 6/12/2026 20:05",
+		"loadMoreToot" : "Mailin 6/12/2026 19:59",
+		"mentions:" : "Mailin 6/8/2026 21:00",
+		"mtuiWindow" : "Mailin 6/8/2026 16:51",
+		"mtuiWindow:" : "Mailin 6/8/2026 16:50",
+		"openArchiveView" : "Mailin 6/8/2026 19:19",
+		"refreshToots" : "Mailin 6/8/2026 22:07",
+		"render" : "Lian 6/12/2026 23:58",
+		"replyToToot:" : "Lian 6/13/2026 00:06" } }
