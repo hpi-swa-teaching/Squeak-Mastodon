@@ -5,14 +5,20 @@ editToot: aScheduledTootMorph
 	print the text into another submorph and invite to edit
 	save will delete and reschedule
 	"""
-	| menu |
+	| menu editTextMorph newTootText |
 	menu := DialogWindow new.
 	menu title: 'Edit toot'.
-	menu addPaneMorph: (MTUITextMorph new
-		textSize: 1;
-		vResizing: #spaceFill;
-		borderColor: Color lightGray;
-		contents: aScheduledTootMorph text).
-	menu createButton: 'Save' value: 'Test'.
+	editTextMorph := TextMorph new
+		hResizing: #spaceFill;
+		color: Color white;
+		contents: aScheduledTootMorph toot params text;
+		wrapFlag: true.
+	menu addMorphBack: editTextMorph.
+	menu createButton: 'Save' value: editTextMorph contents.
 	menu createCancelButton.
 	self addMorph: menu.
+	
+	newTootText := menu getUserResponse.
+	
+	((self mastodonApi cancelScheduledToot: aScheduledTootMorph toot id) isError) ifFalse: [^ false].
+	(self scheduleToot: newTootText at: (aScheduledTootMorph toot scheduledAt) visibility: 'public' withMedia: nil) ifTrue: [MTUtils showSuccessMessage: 'Toot edited successfully' on: self messageArea]
