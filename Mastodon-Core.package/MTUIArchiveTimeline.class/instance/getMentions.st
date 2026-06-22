@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 getMentions
 
 	^[self mastodonApi getMention value.]

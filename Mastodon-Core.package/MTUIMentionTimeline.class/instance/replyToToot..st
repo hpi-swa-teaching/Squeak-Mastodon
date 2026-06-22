@@ -1,4 +1,4 @@
-accessing
+actions
 replyToToot: aToot
 
 	| replyWindow window |

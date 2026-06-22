@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 loadArchived
 
 	self mastodonApi isAuthenticated ifFalse: [^ false].
