@@ -1,7 +1,7 @@
 tests
 testEncodeProfileFormIncludesAvatarAndHeader
 	| body |
-	body := mastodonApi
+	body := MTMastodonApi getInstance
 		encodeProfileForm: Dictionary new
 		avatar: DataProvider mockAvatarForm
 		header: DataProvider mockPreviewForm

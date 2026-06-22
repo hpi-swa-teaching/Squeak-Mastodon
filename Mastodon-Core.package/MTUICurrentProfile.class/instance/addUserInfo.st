@@ -1,7 +1,6 @@
 render
 addUserInfo
 
-	| userInfo |
-	userInfo := self addGeneralUserInfo.
-	
-	self addMorphBack: userInfo
+	self
+		addMorphBack: self getSettingsToolbar;
+		addMorphBack: self addGeneralUserInfo

@@ -6,5 +6,5 @@ updateTextSize
 		ifFalse: [self tootSizeLabel textColor: Color black].
 	self tootSizeLabel contents: (self tootTextArea contents size asString, '/', self maxTextSize asString) asHtmlText.
 	self tootTextArea contents size = 0
-		ifTrue: [self imageMorph = 'empty' ifTrue: [self sendButton enabled: false]]
+		ifTrue: [self media ifEmpty: [self sendButton enabled: false]]
 		ifFalse: [self sendButton enabled: true]

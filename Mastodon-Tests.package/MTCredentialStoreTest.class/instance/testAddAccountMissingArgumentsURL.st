@@ -1,0 +1,5 @@
+add
+testAddAccountMissingArgumentsURL
+
+	MTCredentialStore getInstance addCredentials: DataProvider firstAccountCredentialsWithMissingBaseURL.
+	self assert: MTCredentialStore getInstance numberOfCredentials equals: 0

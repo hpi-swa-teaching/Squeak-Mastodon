@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		"instance" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"credentials" ],
+	"name" : "MTCredentialStore",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

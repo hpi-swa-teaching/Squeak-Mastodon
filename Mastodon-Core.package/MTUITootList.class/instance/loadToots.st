@@ -4,7 +4,7 @@ loadToots
 	| toots |
 	self mastodonApi hasToken ifFalse: [^ false].
 	
-	toots := mastodonApi getPrivateTimeline.
+	toots := self mastodonApi getPrivateTimeline.
 	toots isError ifTrue: [
 		self inform: (toots error ifNil: ['An error occurred']).
 		^ false].

@@ -8,4 +8,4 @@ loadImage
 	fc setCaption: 'Select a picture file' translated.
 	fc setSuffixes: {'png'. 'gif'. 'jpg'. 'jpeg'}.
 	stream := fc open.
-	^ stream ifNotNil: [(Form fromBinaryStream: stream) asMorph]
+	^ stream ifNotNil: [(Form fromBinaryStream: stream)]

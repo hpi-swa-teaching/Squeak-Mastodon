@@ -1,0 +1,5 @@
+add
+testAddAccountMissingArgumentsToken
+
+	MTCredentialStore getInstance addCredentials: DataProvider firstAccountCredentialsWithMissingToken.
+	self assert: MTCredentialStore getInstance numberOfCredentials equals: 0
