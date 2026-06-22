@@ -13,14 +13,14 @@ addGeneralUserInfo
 	
 	text := TextMorph new.
 	text
-		contentsWrapped: (MTUtils asTextFromHtml: '<b><font size="20">', user displayName, '</font></b><br>', '<font color="#cccccc">@', user federatedUsername, '</font><br><br>', user note, '<br><br>', '<b>', user statusesCount, '</b> Toots - <b>', user followingCount, '</b> Following - <b>', user followersCount, '</b> Followers');
+		contentsWrapped: (MTUtils asTextFromHtml: '<b><font size="20">', account displayName, '</font></b><br>', '<font color="#cccccc">@', account federatedUsername, '</font><br><br>', account note, '<br><br>', '<b>', account statusesCount, '</b> Toots - <b>', account followingCount, '</b> Following - <b>', account followersCount, '</b> Followers');
 		wrapFlag: true;
 		width: 400;
 		color: Color white;
 		centered;
 		lock.
 	
-	userInfo addMorphBack: self userImageMorph.
+	userInfo addMorphBack: self getAccountAvatarMorph.
 	userInfo addMorphBack: text.
 	
 	^ userInfo

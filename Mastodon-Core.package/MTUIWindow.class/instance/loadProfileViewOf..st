@@ -7,6 +7,6 @@ loadProfileViewOf: aMTAccount
 		self informToLogIn.
 		^ false].
 	
-	userTimeline := self loadUserTimeLineView: aMTUser.
-	self loadView: (MTUIOtherProfile with: userTimeline from: aMTUser) as: #profileView activate: 'noButton'.
+	userTimeline := self loadUserTimeLineView: aMTAccount.
+	self loadView: (MTUIOtherProfile for: aMTAccount) as: #profileView activate: 'noButton'.
 	scrollMorph scrollToTop
