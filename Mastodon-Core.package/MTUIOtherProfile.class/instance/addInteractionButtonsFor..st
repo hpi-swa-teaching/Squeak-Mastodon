@@ -6,12 +6,6 @@ addInteractionButtonsFor: anAccount
 	blockButton := MTUIMuteButton new.
 	directTootButton := MTUIDirectTootButton new.
 	
-	self
-		addProfileInteractionButtonsFor: anAccount
-		followButton: followButton
-		blockButton: blockButton
-		directTootButton: directTootButton.
-	
 	actionsMorph := Morph new.
 	actionsMorph
 		layoutPolicy: TableLayout new;
@@ -26,5 +20,11 @@ addInteractionButtonsFor: anAccount
 		addMorphBack: followButton render;
 		addMorphBack: blockButton render;
 		addMorphBack: directTootButton render.
+	
+	self
+		addProfileInteractionButtonsFor: anAccount
+		followButton: followButton
+		blockButton: blockButton
+		directTootButton: directTootButton.
 	
 	^ actionsMorph
