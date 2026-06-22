@@ -11,10 +11,13 @@ exchangeAuthorizationCode: anAuthorizationCode
 		'client_secret'. self clientSecret.
 		'redirect_uri'. 'urn:ietf:wg:oauth:2.0:oob'}.
 
-	response := webClient httpPost: url
-		content: (WebUtils encodeUrlEncodedForm: parameters)
-		type: 'application/x-www-form-urlencoded'.
+	response := self retryNetworkRequest: [
+		webClient httpPost: url
+			content: (WebUtils encodeUrlEncodedForm: parameters)
+			type: 'application/x-www-form-urlencoded'
+	].
 
+	response ifNil: [^ nil].
 	response isSuccess ifFalse: [^ nil].
 	json := self deserialize: response content utf8ToSqueak.
 	self token: (json at: 'access_token' ifAbsent: [nil]).

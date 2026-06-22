@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"token",
-		"webClient",
 		"baseURL",
 		"did" ],
 	"name" : "MTBlueSkyApi",
