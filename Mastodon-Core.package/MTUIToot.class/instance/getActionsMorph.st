@@ -1,20 +1,18 @@
 render
 getActionsMorph
 
-|following|
+	"| following |"
 	self repostButton: MTUIRepostButton new.
 	self starButton: MTUIStarButton new.
-	self followButton: MTUIFollowButton new.
+	"self followButton: MTUIFollowButton new.
 	
 	following := ((MTMastodonApi getInstance getRelationship: self object account id) value at: 1) following.
 	followButton
 		target: self;
 		actionSelector: #followAccountWithId:fromSender:;
 		arguments: (Array with: self object account id with: followButton);
-		active: following.
-		
-	Transcript show: following; cr.
-
+		active: following."
+	
 	actionsMorph := Morph new.
 	actionsMorph
 		layoutPolicy: TableLayout new;
