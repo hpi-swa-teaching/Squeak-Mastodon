@@ -4,13 +4,10 @@ addHeader
 	| header |
 	header := StringMorph contents: '[+] ', self title.
 	header on: #mouseUp send: #value to: [
+		self expanded: self expanded not.
 		self expanded
-			ifTrue: [
-				self expanded: false.
-				header contents: '[+] ', self title]
-			ifFalse: [
-				self expanded: true.
-				header contents: '[-] ', self title].
+			ifFalse: [header contents: '[+] ', self title]
+			ifTrue: [header contents: '[-] ', self title].
 		self render.
 		self layoutChanged].
 	
