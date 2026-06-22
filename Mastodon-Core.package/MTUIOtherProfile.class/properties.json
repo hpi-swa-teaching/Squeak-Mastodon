@@ -1,17 +1,14 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"addSearchSection" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"searchTextField",
-		"accountMorph",
-		"accounts",
-		"spacingMorph" ],
-	"name" : "MTUISearch",
+		 ],
+	"name" : "MTUIOtherProfile",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "MTUIProfile",
 	"type" : "normal" }

@@ -8,7 +8,7 @@ loadProfileView
 	
 	currentUser := self mastodonApi getCurrentUser.
 	
-	currentUser isError ifTrue: [
-		self inform: 'An Error occurred.'.
-		^ false].
-	self loadProfileViewOf: currentUser value
+	(currentUser isError)
+		ifTrue: [ self inform: 'An Error occurred.'. 
+			     ^ false].
+	self loadProfileViewOfCurrentUser: currentUser value.
