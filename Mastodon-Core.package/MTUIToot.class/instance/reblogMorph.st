@@ -1,12 +1,13 @@
 render
 reblogMorph
 
+	reblogMorph ifNotNil: [^ reblogMorph].
 	self toot reblog ifNil: [^ nil].
-	reblog := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self toot reblog content, '</b>').
-	reblog
+	reblogMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self toot reblog content, '</b>').
+	reblogMorph
 		wrapFlag: true;
 		autoFit: true;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap.
 	
-	^ reblog
+	^ reblogMorph

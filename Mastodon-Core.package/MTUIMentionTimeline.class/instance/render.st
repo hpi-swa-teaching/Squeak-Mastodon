@@ -6,9 +6,8 @@ render
 	self toots
 		do: [:toot | 
 			| tootMorph spacingMorph |
-			tootMorph := MTUIToot new toot: toot.
+			tootMorph := MTUIToot for: toot.
 			tootMorph showArchiveButton: true.
-			tootMorph render.
 			
 			tootMorph repostButton
 				target: self;

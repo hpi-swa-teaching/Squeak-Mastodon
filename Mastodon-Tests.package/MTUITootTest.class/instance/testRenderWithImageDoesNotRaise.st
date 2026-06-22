@@ -9,8 +9,7 @@ testRenderWithImageDoesNotRaise
 	MTImageCache default
 		cache: DataProvider mockPreviewForm
 		from: (self previewUrlFromJson: DataProvider mockTootWithImage).
-	ui := MTUIToot new.
-	ui toot: (self tootFromJson: DataProvider mockTootWithImage).
+	ui := MTUIToot for: (self tootFromJson: DataProvider mockTootWithImage).
 	parent := Morph new.
 	parent extent: 800 @ 600.
 	parent addMorphBack: ui.

@@ -1,10 +1,11 @@
 initialization
 for: aToot with: aMTUser
 
-	| tweetMorph |
-	tweetMorph := self new
+	| tootMorph |
+	tootMorph := self basicNew
 		toot: aToot;
-		user: aMTUser.
-	tweetMorph render.
+		account: aMTUser;
+		initialize.
+	tootMorph render.
 	
-	^ tweetMorph
+	^ tootMorph

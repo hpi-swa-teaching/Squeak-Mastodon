@@ -6,5 +6,4 @@ ownerChanged
 	self postMorph ifNil: [^ self].
 	postWidth := self owner width - 80.
 	postWidth := postWidth max: 0.
-	super ownerChanged.
-	self reblogMorph ifNotNil: [self reblogMorph width: postWidth]
+	{self postMorph. self accountMorph. self contentMorph. self dateMorph} do: [:morph | morph ifNotNil: [morph width: postWidth]]

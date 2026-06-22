@@ -2,12 +2,14 @@ initialization
 initialize
 
 	super initialize.
-	toot := MTToot new.
+	self
+		postedAt: self toot createdAt;
+		content: self toot content.
 	
-	showArchiveButton := false.
-	
-	self repostButton: MTUIRepostButton new.
-	self heartButton: MTUIStarButton new.
-	self replyButton: MTUIReplyButton new.
-	self archiveButton: MTUIArchiveButton new.
-	self followButton: MTUIFollowButton new.
+	self
+		showArchiveButton: false;
+		repostButton: MTUIRepostButton new;
+		heartButton: MTUIStarButton new;
+		replyButton: MTUIReplyButton new;
+		archiveButton: MTUIArchiveButton new;
+		followButton: MTUIFollowButton new

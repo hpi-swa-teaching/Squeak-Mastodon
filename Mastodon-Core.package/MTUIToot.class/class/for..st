@@ -1,8 +1,11 @@
 initialization
 for: aToot
 
-	| tweetMorph |
-	tweetMorph := self new toot: aToot.
-	tweetMorph render.
+	| tootMorph |
+	tootMorph := self basicNew
+		toot: aToot;
+		account: aToot acct;
+		initialize.
+	tootMorph render.
 	
-	^ tweetMorph
+	^ tootMorph

@@ -1,3 +1,3 @@
 accessing
-followButton: aButton
-	followButton := aButton
+followButton: anObject
+	followButton := anObject

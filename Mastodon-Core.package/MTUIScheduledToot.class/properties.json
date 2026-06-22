@@ -6,18 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"user",
-		"avatar",
-		"image",
-		"content",
-		"text",
-		"actions",
 		"scheduleButton",
-		"toot",
 		"cancelButton",
 		"editButton" ],
 	"name" : "MTUIScheduledToot",
 	"pools" : [
 		 ],
-	"super" : "MTUIView",
+	"super" : "MTUITootBase",
 	"type" : "normal" }

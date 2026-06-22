@@ -14,6 +14,6 @@ postMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent.
-	{self accountMorph. self contentMorph. self reblogMorph. self imageMorph. self dateMorph. self actionsMorph} do: [:morph | morph ifNotNil: [postMorph addMorphBack: morph]].
+	{self accountMorph. self contentMorph. self imageMorph. self dateMorph. self actionsMorph} do: [:morph | morph ifNotNil: [postMorph addMorphBack: morph]].
 	
 	^ postMorph

@@ -2,7 +2,9 @@ initialization
 initialize
 
 	super initialize.
-	toot := MTToot new.
+	self
+		postedAt: self toot scheduledAt;
+		content: self toot params text.
 	
 	self
 		cancelButton: MTUICancelButton new;

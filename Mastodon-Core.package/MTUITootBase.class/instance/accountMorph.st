@@ -2,15 +2,15 @@ render
 accountMorph
 
 	| nameText |
-	account ifNotNil: [^ account].
-	nameText := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self toot acct displayName, '</b> ', '<i><a href="mastodonUser:', self toot acct id, '">@', self toot acct acct, '</a></i>').
+	accountMorph ifNotNil: [^ accountMorph].
+	nameText := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self account displayName, '</b> ', '<i><a href="mastodonUser:', self account id, '">@', self account acct, '</a></i>').
 	nameText
 		wrapFlag: true;
 		autoFit: true;
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap.
-	account := Morph new.
-	account
+	accountMorph := Morph new.
+	accountMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -21,4 +21,4 @@ accountMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: nameText.
-	^ account
+	^ accountMorph
