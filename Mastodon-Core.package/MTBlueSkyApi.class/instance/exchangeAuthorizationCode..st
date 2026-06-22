@@ -20,17 +20,16 @@ exchangeAuthorizationCode: anAuthorizationCode
 	jsonString := '{ "identifier": "', handle, '", "password": "', password, '" }'.
 
 	(webClient isKindOf: WebClient) ifTrue: [webClient close].
-	[
-		response := webClient httpPost: url
+	response := self retryNetworkRequest: [
+		webClient httpPost: url
 			content: jsonString
 			type: 'application/json'
 			do: [:req |
 				req addHeader: 'Accept-Encoding' value: 'identity'.
 				req addHeader: 'Connection' value: 'close']
-	] on: Error do: [:ex |
-		(webClient isKindOf: WebClient) ifTrue: [webClient close].
-		^ nil].
+	].
 
+	response ifNil: [^ nil].
 	response isSuccess ifFalse: [
 		^ nil].
 
