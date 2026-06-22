@@ -1,7 +1,7 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"default" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
@@ -10,5 +10,5 @@
 	"name" : "MTImageCache",
 	"pools" : [
 		 ],
-	"super" : "Dictionary",
+	"super" : "MTCache",
 	"type" : "normal" }

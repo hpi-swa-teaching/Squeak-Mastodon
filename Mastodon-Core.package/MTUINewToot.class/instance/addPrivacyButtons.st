@@ -1,0 +1,22 @@
+render
+addPrivacyButtons
+
+	| wrapper |
+	wrapper := Morph new
+		layoutPolicy: TableLayout new;
+		listDirection: #leftToRight;
+		layoutInset: -5;
+		cellInset: 5;
+		color: Color transparent.
+	
+	self visibilityButton: MTUIPushButton new.
+	self connect: self visibilityButton signal: #clicked: toSelector: #showVisibilityWindow.
+	self visibilitySetting: 'public'.
+	wrapper addMorphBack: self visibilityButton.
+	
+	self quotePolicyButton: MTUIPushButton new.
+	self connect: self quotePolicyButton signal: #clicked: toSelector: #showQuotePolicyWindow.
+	self quotePolicySetting: nil.
+	wrapper addMorphBack: self quotePolicyButton.
+	
+	self addMorphBack: wrapper

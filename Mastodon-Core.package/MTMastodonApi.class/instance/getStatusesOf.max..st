@@ -1,4 +1,4 @@
 endpoints
-getStatuses: anAccountID max: aMaxId
+getStatusesOf: anAccountID max: aMaxId
 
 	^ self getRequestAt: '/api/v1/accounts/', anAccountID, '/statuses?max_id=', aMaxId intoCollectionOf: MTToot
