@@ -8,13 +8,12 @@ initialize
 		addNewTootTextarea;
 		addNewTootButtons;
 		addImageButton;
-		addNewScheduleButton;
+		addScheduleArea;
 		messageArea: (AlignmentMorph newColumn
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
 			color: Color transparent);
 		addMorphBack: messageArea;
-		addDatePicker;
 		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
 		addMorph: tootSizeLabel;
 		reloadMentionTimeline: false;

@@ -1,0 +1,1 @@
+A MTUIExpandableMenu is a menu item that expands/collapses when clicked on. It can contain any internal contents.
