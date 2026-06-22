@@ -2,8 +2,8 @@ actions
 changeProfileImage
 
 	| newAvatar |
-	newAvatar := self loadImage scaledToSize: self defaultWidth @ self defaultWidth.
-	newAvatar ifNil: [^ nil].
+	newAvatar := self loadImage ifNil: [^ nil].
+	newAvatar := newAvatar scaledToSize: self defaultWidth @ self defaultWidth.
 	
 	self editedAvatar: newAvatar.
 	

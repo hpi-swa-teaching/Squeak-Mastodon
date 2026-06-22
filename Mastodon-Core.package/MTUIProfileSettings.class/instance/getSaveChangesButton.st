@@ -1,4 +1,4 @@
-render
+render-buttons
 getSaveChangesButton
 
 	self saveButton ifNotNil: [^ self saveButton].

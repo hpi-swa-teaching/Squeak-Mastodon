@@ -3,4 +3,4 @@ profileNoteText: aString
 
 	self editedNote: aString.
 	
-	^ true
+	^ true "<- needed for save functionality"

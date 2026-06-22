@@ -2,16 +2,12 @@ actions
 saveProfileChanges
 
 	| fields |
-	fields := Dictionary new.
-	
-	self
-		checkDisplayName;
-		checkNote.
-
-	fields
+	(self checkDisplayName and: [self checkNote]) ifFalse: [^ nil].
+	fields := Dictionary new
 		at: 'display_name' put: self profileNameText;
-		at: 'note' put: self profileNoteText.
+		at: 'note' put: self profileNoteText;
+		yourself.
 	
-	MTMastodonApi getInstance updateCredentials: fields avatar: self editedAvatar form header: nil.
+	self mastodonApi updateCredentials: fields avatar: self editedAvatar form header: nil.
 	self profileView render.
 	self delete

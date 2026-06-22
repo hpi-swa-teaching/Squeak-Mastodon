@@ -3,4 +3,4 @@ profileNameText: aString
 
 	self editedDisplayName: aString.
 	
-	^ true
+	^ true "<- needed for save functionality"
