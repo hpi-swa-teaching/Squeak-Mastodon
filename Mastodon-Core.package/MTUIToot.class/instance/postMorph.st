@@ -13,12 +13,7 @@ postMorph
 		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
-		color: Color transparent;
-		addMorphBack: self accountMorph.
-	self contentMorph ifNotNil: [postMorph addMorphBack: self contentMorph].
-	self reblogMorph ifNotNil: [postMorph addMorphBack: self reblogMorph].
-	self imageMorph ifNotNil: [postMorph addMorphBack: self imageMorph].
-	self dateMorph ifNotNil: [postMorph addMorphBack: self dateMorph].
-	postMorph addMorphBack: self actionsMorph.
+		color: Color transparent.
+	{self accountMorph. self contentMorph. self reblogMorph. self imageMorph. self dateMorph. self actionsMorph} do: [:morph | morph ifNotNil: [postMorph addMorphBack: morph]].
 	
 	^ postMorph
