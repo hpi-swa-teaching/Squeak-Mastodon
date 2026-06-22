@@ -1,7 +1,7 @@
 render
 getActionsMorph
-
 	"| following |"
+
 	self repostButton: MTUIRepostButton new.
 	self starButton: MTUIStarButton new.
 	"self followButton: MTUIFollowButton new.
@@ -12,7 +12,6 @@ getActionsMorph
 		actionSelector: #followAccountWithId:fromSender:;
 		arguments: (Array with: self object account id with: followButton);
 		active: following."
-	
 	actionsMorph := Morph new.
 	actionsMorph
 		layoutPolicy: TableLayout new;
@@ -25,7 +24,6 @@ getActionsMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self repostButton render;
-		addMorphBack: self starButton render;
-		addMorphBack: self followButton render.
-	
+		addMorphBack: self starButton render.
+	"addMorphBack: self followButton render."
 	^ actionsMorph
