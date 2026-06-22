@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"replyTemplateContentSizeLabel",
+		"replyTemplateTitleSizeLabel",
+		"replyTemplateTextArea",
+		"replyTemplateTitle" ],
+	"name" : "MTUITemplates",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }
