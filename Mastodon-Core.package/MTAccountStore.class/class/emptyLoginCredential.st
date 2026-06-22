@@ -1,4 +1,0 @@
-constants
-emptyLoginCredential
-
-	^ MTLoginCredentials new

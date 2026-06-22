@@ -1,3 +1,6 @@
 render
 addUserTimeline
-	self addMorphBack: self tootList
+	
+	self refreshTimeline.
+	
+	self addMorphBack: self timelineMorph

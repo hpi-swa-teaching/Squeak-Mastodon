@@ -1,8 +1,8 @@
 tests
 testBaseURL
-	| API |
-	API := MTMastodonApi new.
 	
-	API baseURL: 'https://mastodon.social'.
+	| api |
+	api := MTMastodonApi getInstance.
+	api baseUrl: DataProvider defaultBaseURL.
 	
-	self assert: (API baseURL) equals: ('https://mastodon.social').
+	self assert: (api baseUrl) equals: DataProvider defaultBaseURL.

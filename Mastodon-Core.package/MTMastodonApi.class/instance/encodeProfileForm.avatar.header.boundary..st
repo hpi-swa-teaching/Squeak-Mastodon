@@ -7,7 +7,7 @@ encodeProfileForm: aDictionary avatar: avatarForm header: headerForm boundary: b
 				nextPutAll: '--'; nextPutAll: boundary;
 				crlf;
 				nextPutAll: 'Content-Disposition: form-data; ';
-				nextPutAll: 'name="'; nextPutAll: key; nextPutAll: '"';
+				nextPutAll: 'name="', key, '"';
 				crlf;
 				crlf;
 				nextPutAll: value asString;

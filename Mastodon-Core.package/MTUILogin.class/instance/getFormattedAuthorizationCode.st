@@ -1,0 +1,4 @@
+accessing
+getFormattedAuthorizationCode
+
+	^ self getAuthorizationCodeField theText asString withBlanksTrimmed

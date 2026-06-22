@@ -1,0 +1,4 @@
+constants
+avatarSize
+
+	^ 200

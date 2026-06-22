@@ -1,1 +1,0 @@
-MTUISettings is a view to show the possible settings like logged in user accounts.

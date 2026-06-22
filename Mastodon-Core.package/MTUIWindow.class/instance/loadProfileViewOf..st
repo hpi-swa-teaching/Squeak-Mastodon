@@ -1,9 +1,8 @@
 views
-loadProfileViewOf: aMTUser
+loadProfileViewOf: aMTAccount
 
-	| userTimeline |
-	self mastodonApi hasToken ifFalse: [^ false].
-	userTimeline := MTUIUserTimeline new.
-	userTimeline id: aMTUser id.
-	userTimeline loadTootsOf: aMTUser.
-	self loadView: (MTUIProfile with: userTimeline from: aMTUser) as: #profileView activate: #profileButton
+	MTMastodonApi getInstance hasToken ifFalse: [
+		self informToLogIn.
+		^ false].
+	
+	self loadView: (MTUIProfile for: aMTAccount) as: #profileView activate: #profileButton

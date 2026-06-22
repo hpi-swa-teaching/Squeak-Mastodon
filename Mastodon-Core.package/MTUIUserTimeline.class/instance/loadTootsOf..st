@@ -1,11 +1,10 @@
 updating
 loadTootsOf: aMTUser
-	"unused, but called by MTUIWindow>>loadProfileViewOf:"
 
 	| toots |
-	self mastodonApi hasToken ifFalse: [^false].
-			
-	toots := mastodonApi getStatusesOf: aMTUser id.
+	self mastodonApi hasToken ifFalse: [^ false].
+	
+	toots := self mastodonApi getStatusesOf: aMTUser id.
 	
 	toots isError ifTrue: [
 		self inform: (toots error ifNil: ['An error occurred']).

@@ -10,5 +10,5 @@
 	"name" : "MTLoginCredentialsTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "MTTestCase",
 	"type" : "normal" }
