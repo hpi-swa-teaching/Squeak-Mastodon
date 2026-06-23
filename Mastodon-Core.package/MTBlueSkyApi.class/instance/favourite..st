@@ -9,7 +9,7 @@ favourite: aToot
 		'"record":{"$type":"app.bsky.feed.like",',
 		'"subject":{"uri":"', aToot id, '","cid":"', aToot cid, '"},',
 		'"createdAt":"', createdAt, '"}}'.
-	response := self postRequest: url body: body.
+	response := self postRequest: url content: body.
 	response ifNil: [^ MTResult error: 'BlueSky like request failed'].
 	[json := self deserialize: response]
 		on: Error do: [:ex | ^ MTResult error: 'BlueSky like response parsing failed'].
