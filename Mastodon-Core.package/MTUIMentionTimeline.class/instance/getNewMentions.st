@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 getNewMentions
 
 	^(self mastodonApi getMentionSince: self maxID) value.

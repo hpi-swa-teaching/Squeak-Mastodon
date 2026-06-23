@@ -13,10 +13,9 @@ actionsMorph
 		cellPositioning: #topLeft;
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
-		color: Color transparent;
-		addMorphBack: self repostButton render;
-		addMorphBack: self heartButton render;
-		addMorphBack: self replyButton render.
+		color: Color transparent.
+	
+	{self repostButton. self heartButton. self replyButton} do: [:button | actionsMorph addMorphBack: button render].
 	showArchiveButton ifTrue: [actionsMorph addMorphBack: self archiveButton render].
 	
 	^ actionsMorph

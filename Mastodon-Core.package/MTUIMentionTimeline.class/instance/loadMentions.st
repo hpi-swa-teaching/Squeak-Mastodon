@@ -1,4 +1,4 @@
-render
+updating
 loadMentions
 
 	self mastodonApi isAuthenticated ifFalse: [^ false].

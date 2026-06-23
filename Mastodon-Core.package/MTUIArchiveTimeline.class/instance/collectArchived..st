@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 collectArchived: aBlock
 
 	| mentions myToots archivedIds toots |

@@ -1,3 +1,3 @@
 accessing
 showArchiveButton: aBoolean
-	showArchiveButton := aBoolean.
+	showArchiveButton := aBoolean

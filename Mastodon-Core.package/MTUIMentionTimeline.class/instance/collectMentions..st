@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 collectMentions: aTootList
 
 	| mentions repliedIDs toots |
