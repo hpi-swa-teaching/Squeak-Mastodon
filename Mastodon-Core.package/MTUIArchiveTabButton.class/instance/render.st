@@ -13,6 +13,7 @@ render
 		cellInset: 10.
 	
 	self labelGraphic: MTUIIcons archive.
+	self setBalloonText: 'open archive'.
 	
 	text := TextMorph new.
 	

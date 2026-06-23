@@ -2,4 +2,5 @@ render
 render
 
 	super render.
-	self labelGraphic: MTUIIcons cancel
+	self labelGraphic: MTUIIcons cancel.
+	self setBalloonText: 'cancel'
