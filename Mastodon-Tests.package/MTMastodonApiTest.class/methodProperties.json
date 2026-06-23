@@ -12,6 +12,7 @@
 		"testDeserializeSearch" : "fs 8/3/2017 16:48",
 		"testGetPublicTimelineOmitsAuthorizationWithoutToken" : "JH 6/23/2026 22:24:30",
 		"testGetPublicTimelineReturnsErrorWhenRequestFails" : "JH 6/23/2026 22:26:12",
+		"testGetPublicTimelineSkipsMalformedStatuses" : "JH 6/23/2026 22:49:05",
 		"testGetPublicTimelineUsesPublicEndpoint" : "JH 6/23/2026 22:22:48",
 		"testPassword" : "fs 8/3/2017 16:10",
 		"testReset" : "fs 8/3/2017 16:04",
