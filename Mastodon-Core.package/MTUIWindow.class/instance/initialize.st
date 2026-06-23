@@ -12,8 +12,4 @@ initialize
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.
-	self mastodonApi token notNil
-		ifTrue: [self loadNewTootView]
-		ifFalse: [(self mastodonApi isKindOf: MTMastodonApi)
-			ifTrue: [self loadHomeTimelineView]
-			ifFalse: [self loadSettingsView]]
+	self loadSettingsView.
