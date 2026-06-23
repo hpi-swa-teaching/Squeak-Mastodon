@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"deserialize:intoCollectionOf:" : "timbeier 5/25/2026 11:56",
-		"deserialize:intoObjectOf:" : "timbeier 5/25/2026 11:56",
+		"deserialize:intoCollectionOf:" : "JH 6/23/2026 22:57:25",
+		"deserialize:intoObjectOf:" : "JH 6/23/2026 22:58:05",
 		"scope" : "timbeier 5/25/2026 11:56",
 		"with:" : "timbeier 5/25/2026 11:56",
 		"with:password:username:" : "timbeier 5/25/2026 11:56",
@@ -30,10 +30,10 @@
 		"getFavourites" : "LS 7/30/2017 20:06",
 		"getFollowers:" : "LS 7/30/2017 20:06",
 		"getFollowing:" : "LS 7/30/2017 20:06",
-		"getPrivateTimeline" : "LS 7/30/2017 20:06",
+		"getPrivateTimeline" : "JH 6/23/2026 22:55:08",
 		"getPrivateTimelineMax:" : "LS 7/30/2017 20:06",
 		"getPrivateTimelineSince:" : "LS 7/30/2017 20:06",
-		"getPublicTimeline" : "JH 6/23/2026 22:47:30",
+		"getPublicTimeline" : "JH 6/23/2026 22:56:30",
 		"getRegistrationParameters" : "LS 8/4/2017 16:08",
 		"getRelationship:" : "LS 7/30/2017 20:06",
 		"getRequest:" : "JH 6/23/2026 22:04:18",

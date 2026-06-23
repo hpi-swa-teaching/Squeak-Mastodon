@@ -10,6 +10,7 @@
 		"testClientSecret" : "fs 8/3/2017 16:13",
 		"testDeserializeAccount" : "fs 8/3/2017 16:52",
 		"testDeserializeSearch" : "fs 8/3/2017 16:48",
+		"testGetPrivateTimelineReturnsErrorWhenRequestFails" : "JH 6/23/2026 22:58:50",
 		"testGetPublicTimelineOmitsAuthorizationWithoutToken" : "JH 6/23/2026 22:24:30",
 		"testGetPublicTimelineReturnsErrorWhenRequestFails" : "JH 6/23/2026 22:26:12",
 		"testGetPublicTimelineSkipsMalformedStatuses" : "JH 6/23/2026 22:49:05",
