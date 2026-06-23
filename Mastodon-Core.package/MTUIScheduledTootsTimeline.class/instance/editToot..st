@@ -19,6 +19,7 @@ editToot: aScheduledTootMorph
 	self addMorph: menu.
 	
 	newTootText := menu getUserResponse.
+	newTootText ifFalse: [^ self].
 	
 	((self mastodonApi cancelScheduledToot: aScheduledTootMorph toot id) isError) ifFalse: [^ false].
 	(self scheduleToot: newTootText at: (aScheduledTootMorph toot scheduledAt) visibility: 'public' withMedia: nil) ifTrue: [MTUtils showSuccessMessage: 'Toot edited successfully' on: self messageArea]
