@@ -24,6 +24,7 @@
 		"testExchangeAuthorizationCodeUsesHandleDomain" : "PP 6/12/2026 12:30",
 		"testFollowCreatesFollowRecord" : "AE 5/12/2026 12:00",
 		"testFollowReturnsErrorWhenSessionFails" : "AE 5/12/2026 12:00",
+		"testGetCurrentDidCachesDid" : "JH 6/23/2026 21:32:30",
 		"testGetCurrentDidReturnsDidFromSession" : "AE 5/12/2026 12:00",
 		"testGetFeedFallsBackToPublicAppView" : "LZ 6/19/2026 14:20",
 		"testGetFeedLoadsCustomFeed" : "LZ 6/19/2026 14:18",
