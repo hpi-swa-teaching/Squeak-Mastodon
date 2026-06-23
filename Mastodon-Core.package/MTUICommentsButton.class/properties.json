@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUICommentsButton",
+	"pools" : [
+		 ],
+	"super" : "MTUIActionButton",
+	"type" : "normal" }

@@ -10,20 +10,21 @@ render
 	
 	self toots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIToot new for: toot.
-		tootMorph repostButton
+		tootMorph reblogButton
 			target: self;
 			actionSelector: #repostTootWithId:fromSender:;
-			arguments: (Array with: toot id with: tootMorph repostButton);
+			arguments: (Array with: toot id with: tootMorph reblogButton);
 			active: toot reblogged.
 		tootMorph starButton
 			target: self;
 			actionSelector: #favoriteTootWithId:fromSender:;
 			arguments: (Array with: toot id with: tootMorph starButton).
 		tootMorph starButton active: toot favourited.
-		spacingMorph := Morph new color: Color veryVeryLightGray.
-		spacingMorph
-			height: 1;
-			hResizing: #spaceFill.
+		tootMorph commentsButton
+			target: self;
+			actionSelector: #showThreadFor:;
+			arguments: (Array with: toot).
+		spacingMorph := self separatorAfter: toot.
 		
 		self addMorphBack: tootMorph.
 		self addTootMorph: tootMorph.

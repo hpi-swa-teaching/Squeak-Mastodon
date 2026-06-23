@@ -7,8 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"interaction",
-		"repostButton",
+		"reblogButton",
 		"starButton",
+		"commentsButton",
 		"actionsMorph" ],
 	"name" : "MTUIToot",
 	"pools" : [

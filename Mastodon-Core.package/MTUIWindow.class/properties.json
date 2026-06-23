@@ -10,7 +10,8 @@
 		"viewMorph",
 		"scrollMorph",
 		"loadedViews",
-		"mastodonApi" ],
+		"mastodonApi",
+		"viewHistory" ],
 	"name" : "MTUIWindow",
 	"pools" : [
 		 ],
