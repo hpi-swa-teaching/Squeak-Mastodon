@@ -1,8 +1,8 @@
 render-buttons
 getLoginButton
 
-	^ SimpleButtonMorph new
-		label: 'Login';
-		target: self;
-		actionSelector: #login; 
-		yourself
+	| button |
+	button := MTUIPushButton new.
+	button text: 'Login'.
+	self connect: button signal: #clicked: toSelector: #login.
+	^ button

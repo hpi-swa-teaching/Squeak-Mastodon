@@ -8,8 +8,7 @@
 	"instvars" : [
 		"account",
 		"profileMorph",
-		"timelineMorph",
-		"saveButton" ],
+		"timelineMorph" ],
 	"name" : "MTUIProfile",
 	"pools" : [
 		 ],

@@ -1,8 +1,8 @@
 render-buttons
 getAuthorizationLinkButton
 
-	^ SimpleButtonMorph new
-		label: 'Get Authentication Link';
-		target: self;
-		actionSelector: #getAuthorizationLink;
-		yourself
+	| button |
+	button := MTUIPushButton new.
+	button text: 'Get Authentication Link'.
+	self connect: button signal: #clicked: toSelector: #getAuthorizationLink.
+	^ button
