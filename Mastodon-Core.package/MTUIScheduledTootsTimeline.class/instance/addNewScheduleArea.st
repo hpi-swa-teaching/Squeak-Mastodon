@@ -49,5 +49,6 @@ addNewScheduleArea
 		addMorphBack: hourField;
 		addMorphBack: minuteField;
 		color: Color transparent;
-		hResizing: #spaceFill.
+		hResizing: #spaceFill;
+		vResizing: #shrinkWrap.
 	self addMorphBack: container
