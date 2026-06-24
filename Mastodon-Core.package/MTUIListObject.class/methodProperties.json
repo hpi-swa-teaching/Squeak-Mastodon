@@ -6,7 +6,9 @@
 		"getAvatarMorph" : "cs 6/14/2026 11:45",
 		"getCreatedAtMorph" : "cs 6/13/2026 22:46",
 		"getElementMorph" : "cs 6/14/2026 11:49",
+		"getTextColor:" : "HB 6/24/2026 11:36",
 		"htmlGray" : "cs 5/25/2026 17:05",
+		"makeClickable:from:to:for:and:" : "HB 6/24/2026 11:36",
 		"object" : "cs 6/3/2026 18:46",
 		"object:" : "cs 6/3/2026 18:46",
 		"render" : "cs 6/13/2026 22:51" } }

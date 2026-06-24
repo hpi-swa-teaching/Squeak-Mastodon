@@ -9,6 +9,6 @@ makeClickable: aText from: start to: stop for: anAccount and: anId
 						ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: anAccount]
 						ifFalse: [MTUIWindow instance loadProfileViewOf: anAccount]];
 				yourself.
-			TextColor color: (self getTextColor: self object account)}
+			TextColor color: (self getTextColor: anAccount)}
 		from: start
 		to: stop
