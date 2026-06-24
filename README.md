@@ -141,26 +141,6 @@ The project uses an extensible provider pattern (`MTProviderFactory`, `MTSocialP
 - Screenshot support (`MTScreenshot`)
 - Media model with metadata (`MTMedia`)
 
-## Testing
-
-The project includes comprehensive tests:
-
-```bash
-# Run all tests in Squeak
-MTAccountStoreTest suite run.
-MTMastodonApiTest suite run.
-MTBlueSkyApiTest suite run.
-MTLoginCredentialsTest suite run.
-# ... and more
-```
-
-Run tests using:
-
-```smalltalk
-TestRunner open.
-# Select Mastodon-Tests group
-```
-
 ## Configuration
 
 ### Settings
@@ -189,14 +169,6 @@ Login credentials are handled securely via `MTLoginCredentials` with support for
 
 ---
 
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-Copyright (c) 2017 Software Architecture Group Teaching (HPI)
-
----
-
 ## Support
 
 For issues, questions, or suggestions:
@@ -204,5 +176,11 @@ For issues, questions, or suggestions:
 - Check existing GitHub issues
 - Review the code and test files for examples
 - Check the screenshots for feature demonstrations
+
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2017 Software Architecture Group Teaching (HPI)
 
 ---
