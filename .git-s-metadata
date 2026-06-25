@@ -36,6 +36,14 @@ GSMetadata {
 				'NotoEmoji-Regular.ttf'
 			],
 			#encoding : 'bin'
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'reply.png'
+			],
+			#encoding : Class [ #PNGReadWriter ]
 		}
 	],
 	#name : 'Squeak-Mastodon'

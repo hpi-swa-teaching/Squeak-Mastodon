@@ -1,6 +1,7 @@
 render
 getActionsMorph
 
+	self replyButton: MTUIReplyButton new.
 	self reblogButton: MTUIReblogButton new.
 	self starButton: MTUIStarButton new.
 	self commentsButton: MTUICommentsButton new.
@@ -15,6 +16,7 @@ getActionsMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
+		addMorphBack: self replyButton render;
 		addMorphBack: self reblogButton render;
 		addMorphBack: self starButton render;
 		addMorphBack: self commentsButton render.

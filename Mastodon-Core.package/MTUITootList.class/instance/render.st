@@ -10,6 +10,10 @@ render
 	
 	self toots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIToot new for: toot.
+		tootMorph replyButton
+			target: self;
+			actionSelector: #replyToToot:;
+			arguments: (Array with: toot). 
 		tootMorph reblogButton
 			target: self;
 			actionSelector: #repostTootWithId:fromSender:;

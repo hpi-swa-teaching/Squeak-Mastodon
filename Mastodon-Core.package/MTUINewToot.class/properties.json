@@ -16,7 +16,8 @@
 		"visibilitySetting",
 		"quotePolicySetting",
 		"media",
-		"mediaPreview" ],
+		"mediaPreview",
+		"inReplyToId" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

@@ -10,6 +10,7 @@ toot
 		^ false].
 	parameters := {'status' -> text. 'visibility' -> self visibilitySetting} asOrderedCollection.
 	self quotePolicySetting ifNotNil: [parameters add: 'quote_approval_policy' -> self quotePolicySetting].
+	self inReplyToId ifNotNil: [parameters add: 'in_reply_to_id' -> self inReplyToId].
 	
 	self media
 		ifEmpty: [self mastodonApi tootWithParameters: parameters]
