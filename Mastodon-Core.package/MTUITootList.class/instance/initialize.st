@@ -3,6 +3,6 @@ initialize
 
 	super initialize.
 	
-	self scrollBar addDependent: self.
+	self scrollBar ifNotNil: [self scrollBar addDependent: self].
 	
 	self loadToots

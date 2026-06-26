@@ -1,4 +1,4 @@
 accessing
 instance
 
-	^ Instance
+	^ instance ifNil: [instance := self new]
