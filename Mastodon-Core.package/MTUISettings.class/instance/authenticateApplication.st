@@ -38,8 +38,9 @@ authenticateApplication
 
 	[
 		self verifyAccount.
-		MTSettingsStore default at: #token put: self mastodonApi token.
+		"MTSettingsStore default at: #token put: self mastodonApi token.
+		self storeCurrentSession: mastodonApi."
 		^ true
 	] on: Error do: [
 		resultTextLabel contents: '<i>Code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
-		^ false]
+		^ false].
