@@ -1,7 +1,6 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"Instance",
 		"instance" ],
 	"classvars" : [
 		 ],
