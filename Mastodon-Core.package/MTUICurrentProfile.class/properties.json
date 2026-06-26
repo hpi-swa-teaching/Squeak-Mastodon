@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUICurrentProfile",
+	"pools" : [
+		 ],
+	"super" : "MTUIProfile",
+	"type" : "normal" }

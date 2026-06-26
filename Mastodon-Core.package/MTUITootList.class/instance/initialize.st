@@ -2,4 +2,7 @@ initialization
 initialize
 
 	super initialize.
-	self tootMorphs: OrderedCollection new
+	
+	self scrollBar addDependent: self.
+	
+	self loadToots

@@ -1,8 +1,6 @@
 views
-loadProfileViewOf: aMTAccount
+loadProfileViewOf: aUser
 
-	MTMastodonApi getInstance hasToken ifFalse: [
-		self informToLogIn.
-		^ false].
+	self ensureLoggedIn ifFalse: [^ false].
 	
-	self loadView: (MTUIProfile for: aMTAccount) as: #profileView activate: #profileButton
+	self loadView: (MTUIOtherProfile for: aUser) as: #profileView activate: 'noButton'

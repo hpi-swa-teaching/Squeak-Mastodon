@@ -1,13 +1,6 @@
-views
+views-timelines
 loadHomeTimelineView
 
-	| homeTimelineView |
-	self mastodonApi hasToken ifFalse: [
-		self informToLogIn.
-		^ false].
-	homeTimelineView := MTUITootList new.
+	self ensureLoggedIn ifFalse: [^ nil].
 	
-	homeTimelineView loadToots ifFalse: [^ false].
-	
-	self loadView: homeTimelineView as: #homeTimelineView activate: #homeTimelineButton.
-	self layoutChanged
+	self loadView: MTUIHomeTimeline new as: #homeTimelineView activate: #homeTimelineButton

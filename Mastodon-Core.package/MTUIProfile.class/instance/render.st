@@ -4,4 +4,3 @@ render
 	self 
 		addUserInfo;
 		addUserTimeline
-		

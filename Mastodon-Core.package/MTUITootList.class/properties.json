@@ -6,8 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"minID",
-		"maxID",
 		"toots",
 		"tootMorphs" ],
 	"name" : "MTUITootList",

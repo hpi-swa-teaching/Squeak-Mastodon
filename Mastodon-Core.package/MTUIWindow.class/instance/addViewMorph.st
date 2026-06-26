@@ -3,7 +3,7 @@ addViewMorph
 
 	self scrollMorph scroller addMorph: self viewMorph.
 	
-	self scrollMorph
+	"self scrollMorph
 		resizeScrollBars;
 		resizeScroller;
-		setScrollDeltas
+		setScrollDeltas"

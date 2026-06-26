@@ -1,0 +1,4 @@
+updating
+getToots
+
+	^ self subclassResponsibility
