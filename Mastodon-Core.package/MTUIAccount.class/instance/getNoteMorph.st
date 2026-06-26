@@ -2,7 +2,7 @@ render
 getNoteMorph
 
 	| noteMorph |
-	noteMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self object note).
+	noteMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self account note).
 	noteMorph
 		readOnly: true;
 		wrapFlag: true;

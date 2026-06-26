@@ -1,0 +1,4 @@
+accessing
+toot
+	
+	^ self object

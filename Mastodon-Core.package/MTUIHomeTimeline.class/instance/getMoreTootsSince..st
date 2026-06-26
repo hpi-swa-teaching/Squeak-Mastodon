@@ -1,4 +1,4 @@
 updating
 getMoreTootsSince: aNumber
 
-	^ self mastodonApi getMoreTootsSince: aNumber
+	^ self mastodonApi getHomeTimelineSince: aNumber

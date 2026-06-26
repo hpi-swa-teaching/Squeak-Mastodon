@@ -1,6 +1,5 @@
 views
-loadNewTootViewWithAccount: anAccountID
-
-	self ensureLoggedIn ifFalse: [^ false].
+loadNewTootViewWithAccount: aUsername
 	
-	self loadView: (MTUINewToot content: '@', anAccountID asString) as: #newTootView activate: #newTootButton
+	self ensureLoggedIn ifFalse: [^ false].
+	self loadView: (MTUINewToot content: '@',  aUsername asString) as: #newTootView activate: #newTootButton

@@ -1,4 +1,4 @@
 accessing
 directTootButton
 
-	^ directTootButton
+	^ directTootButton ifNil: [directTootButton := self getDirectTootButton]

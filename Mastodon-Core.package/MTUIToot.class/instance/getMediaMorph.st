@@ -1,5 +1,5 @@
 render
-getMedia
+getMediaMorph
 
 	| media image |
 	self object media size = 0 ifTrue: [^ nil].

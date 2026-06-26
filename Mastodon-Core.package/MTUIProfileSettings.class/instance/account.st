@@ -1,4 +1,4 @@
 accessing
 account
 
-	^ account
+	^ account ifNil: [account := self mastodonApi getCurrentUser value]

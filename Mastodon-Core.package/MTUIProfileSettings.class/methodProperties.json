@@ -1,17 +1,18 @@
 {
 	"class" : {
-		"for:profileView:" : "timhb 6/15/2026 09:17" },
+		"for:profileView:" : "timhb 6/26/2026 19:53" },
 	"instance" : {
-		"account" : "timhb 6/14/2026 13:11",
+		"account" : "timhb 6/26/2026 19:52",
 		"account:" : "timhb 6/14/2026 13:11",
 		"avatarImageMorph" : "timhb 6/15/2026 20:44",
 		"avatarImageMorph:" : "timhb 6/15/2026 20:44",
 		"changeProfileImage" : "timhb 6/22/2026 08:51",
+		"changeViewToProfileView" : "timhb 6/26/2026 19:51",
 		"checkDisplayName" : "timhb 6/14/2026 14:10",
 		"checkNote" : "timhb 6/15/2026 08:55",
-		"container" : "timhb 6/16/2026 19:28",
+		"container" : "timhb 6/26/2026 19:53",
 		"container:" : "timhb 6/14/2026 13:57",
-		"defaultWidth" : "timhb 6/14/2026 13:29",
+		"defaultWidth" : "timhb 6/26/2026 19:56",
 		"editedAvatar" : "timhb 6/15/2026 20:38",
 		"editedAvatar:" : "timhb 6/14/2026 13:11",
 		"editedDisplayName" : "timhb 6/14/2026 13:11",
@@ -23,10 +24,11 @@
 		"getEmptySettingsToolbar" : "timhb 6/14/2026 14:01",
 		"getNameField" : "timhb 6/14/2026 13:48",
 		"getNoteField" : "timhb 6/15/2026 20:20",
-		"getProfileContainer" : "timhb 6/14/2026 13:47",
+		"getProfileContainer" : "timhb 6/26/2026 19:58",
 		"getSaveButton" : "timhb 6/14/2026 13:52",
 		"getSaveChangesButton" : "timhb 6/14/2026 13:20",
 		"getSettingsToolbar" : "timhb 6/14/2026 14:00",
+		"initialize" : "timhb 6/26/2026 19:53",
 		"loadImage" : "timhb 6/15/2026 20:35",
 		"noteMorph" : "timhb 6/15/2026 15:42",
 		"noteMorph:" : "timhb 6/15/2026 15:42",
@@ -39,4 +41,4 @@
 		"render" : "timhb 6/14/2026 13:59",
 		"saveButton" : "timhb 6/14/2026 13:11",
 		"saveButton:" : "timhb 6/14/2026 13:11",
-		"saveProfileChanges" : "timhb 6/22/2026 09:25" } }
+		"saveProfileChanges" : "timhb 6/26/2026 19:57" } }

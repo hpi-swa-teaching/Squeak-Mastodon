@@ -1,4 +1,4 @@
-updating
+updating-subclass
 getToots
 
 	^ self subclassResponsibility

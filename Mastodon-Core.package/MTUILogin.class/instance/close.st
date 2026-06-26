@@ -1,4 +1,7 @@
 actions
 close
 
-	self removeAllMorphs.
+	self
+		removeAllMorphs;
+		changeViewToProfileView;
+		delete
