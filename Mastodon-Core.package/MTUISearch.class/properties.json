@@ -8,8 +8,7 @@
 	"instvars" : [
 		"searchTextField",
 		"accountMorph",
-		"accounts",
-		"spacingMorph" ],
+		"accounts" ],
 	"name" : "MTUISearch",
 	"pools" : [
 		 ],

@@ -1,4 +1,4 @@
-as yet unclassified
+action
 blockAccountWithId: anInteger fromSender: aButton
 
 	aButton active

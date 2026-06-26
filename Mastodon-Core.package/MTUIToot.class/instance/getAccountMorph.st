@@ -1,24 +1,8 @@
 render
 getAccountMorph
 
-	| accountMorph start stop text currentUserId |
-	text := MTUtils asTextFromHtml: '<b>', self object account displayName, '</b> ', '<i>@', self object account federatedUsername, '<font color="', self htmlGray, '">', self interaction, '</font></i>'.
-	
-	start := text indexOfSubCollection: '@'.
-	stop := start + self object account federatedUsername asString size.
-	
-	text
-		addAttribute: (PluggableTextAttribute new
-			evalBlock: [:obj |
-				currentUserId := MTMastodonApi getInstance getCurrentUser value id.
-				currentUserId = self object account id
-					ifTrue: [MTUIWindow instance loadProfileViewOfCurrentUser: self object account]
-					ifFalse: [MTUIWindow instance loadProfileViewOf: self object account]];
-			yourself)
-		from: start
-		to: stop.
-	
-	accountMorph := TextMorph new contentsWrapped: text.
+	| accountMorph |
+	accountMorph := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self object account displayName, '</b> ', '<i><a href="mastodonUser:', self object account id, '">@', self object account federatedUsername, '</a><font color="', self htmlGray, '">', self interaction, '</font></i>').
 	accountMorph
 		readOnly: true;
 		wrapFlag: true;

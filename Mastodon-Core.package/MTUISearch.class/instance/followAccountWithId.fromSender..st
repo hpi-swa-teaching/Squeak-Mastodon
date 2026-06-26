@@ -1,4 +1,4 @@
-as yet unclassified
+action
 followAccountWithId: anInteger fromSender: aButton
 
 	aButton active

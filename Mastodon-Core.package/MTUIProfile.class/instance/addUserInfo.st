@@ -1,4 +1,11 @@
 render
 addUserInfo
-
-	^ self subclassResponsibility
+	
+	self refreshProfile.
+	
+	self profileMorph
+		addMorphBack: self getSettingsToolbar;
+		addMorphBack: self getAccountAvatarMorph;
+		addMorphBack: self getProfileTextMorph.
+	
+	self addMorphBack: self profileMorph
