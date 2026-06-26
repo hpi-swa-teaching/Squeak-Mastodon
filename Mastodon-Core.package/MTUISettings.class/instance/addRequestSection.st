@@ -1,17 +1,13 @@
 render
 addRequestSection
-	| requestButton logoutButton providerButton sessions requestWrapper |
+	| requestButton logoutButton providerButton requestWrapper |
 	self addMorphBack: (TextMorph new contents: 'Enter server URL. Leave code empty to get authorize link (Mastodon only).' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper := MTUIView setMorph: requestWrapper.
 	
-	sessions := (MTSettingsStore default
-   					 at: #sessions
-   					 ifAbsent: [OrderedCollection new]).
-	
 	sessionsComboBox := UiComboBox new.
-	self refreshSessionsComboBox: sessions.
+	self loadComboBox.
 	self
 	    connect: sessionsComboBox
 	    signal: #currentIndexChanged:text:
@@ -65,5 +61,5 @@ addRequestSection
 	
 	self addMorphBack: requestWrapper.
 	self addResultSection.
-	resultTextLabel contents: ' '.
+	resultTextLabel contents: ' ' asHtmlText.
 	

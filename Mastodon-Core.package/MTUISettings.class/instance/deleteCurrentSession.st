@@ -1,12 +1,13 @@
 render
-storeCurrentSession: anAPIInstance
+deleteCurrentSession
 	| sessions |
-
+	
 	sessions := (MTSettingsStore default at: #sessions ifAbsent: [OrderedCollection new]).
-	sessions add: anAPIInstance.
+	
+	sessions removeAt: sessionsComboBox currentIndex.
 	
 	MTSettingsStore default
         at: #sessions
         put: sessions.
 
-    self addSessionToComboBox: anAPIInstance.
+	"self refreshSessionsComboBox."

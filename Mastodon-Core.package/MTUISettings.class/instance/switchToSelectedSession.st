@@ -1,20 +1,22 @@
 render
 switchToSelectedSession
-	| session provider |
+	| sessions selectedSession provider |
 
-	session := sessionsComboBox currentItem.
-	
-	
-	(session isKindOf: MTBlueSkyApi) 
+	sessions := (MTSettingsStore default at: #sessions ifAbsent: [OrderedCollection new]).
+	selectedSession := sessions at: sessionsComboBox currentIndex.
+
+	(selectedSession isKindOf: MTBlueSkyApi) 
 	ifTrue: [
 		provider := 'bluesky'.
+		MTProviderFactory blueSkyInstance: selectedSession.
 	]
 	ifFalse:[
 		provider := 'mastodon'.
+		MTProviderFactory mastodonInstance: selectedSession.
 	].
 
 	MTSettingsStore default at: #provider put: provider.
-	MTSettingsStore default at: #baseURL put: session baseURL.
-	MTSettingsStore default at: #token put: session token.
+	MTSettingsStore default at: #baseURL put: selectedSession baseURL.
+	MTSettingsStore default at: #token put: selectedSession token.
 	
 	
