@@ -19,4 +19,6 @@ switchToSelectedSession
 	MTSettingsStore default at: #baseURL put: selectedSession baseURL.
 	MTSettingsStore default at: #token put: selectedSession token.
 	
+	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
+	
 	
