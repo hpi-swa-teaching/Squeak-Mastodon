@@ -32,36 +32,30 @@ SqueakMastodon is a graphical Mastodon client implemented entirely in Squeak. It
 - Squeak Git Browser
 - A Mastodon account
 
-### 1. Clone the repository
+### 1. Make sure [Metacello](https://github.com/Metacello/metacello) is installed
 
-Clone this repository using the Git Browser or with Git:
+If you're using Squeak, it most likely is.
 
-```bash
-git clone https://github.com/hpi-swa-teaching/Squeak-Mastodon.git
-```
-
-### 2. Load the Widgets dependency
+### 2. Load SqueakMastodon
 
 Evaluate the following expression in a Workspace:
 
 ```smalltalk
-(Smalltalk at: #Metacello) new
-    repository: 'github://hpi-swa/widgets:master/repository';
-    baseline: 'Widgets';
+Metacello new
+    baseline: 'Mastodon';
+    repository: 'github://hpi-swa-teaching/Squeak-Mastodon:swt26-g11\/main';
     load.
 ```
 
-### 3. Load the project
-
-Open the cloned repository with the **Git Browser** and load all packages into your image.
-
-### 4. Start the application
+### 3. Start the application
 
 Evaluate:
 
 ```smalltalk
 MTUIWindow open
 ```
+
+### 4. Have fun
 
 Login into your favorite Mastodon instance and start tooting!
 
