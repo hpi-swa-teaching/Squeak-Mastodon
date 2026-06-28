@@ -1,4 +1,5 @@
 helpers
 minID
 
-	^ self toots ifNil: [^ 0] ifNotNil: [self toots last id]
+	(self toots isNil or: [self toots isEmpty]) ifTrue: [^ 0].
+	^ self toots last id

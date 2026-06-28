@@ -1,5 +1,5 @@
 render
-addGeneralUserInfo
+getGeneralUserInfo
 
 	| userInfo text |
 	userInfo := MTUIView applyWrapperLayoutTo: RectangleMorph new.

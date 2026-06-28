@@ -2,7 +2,6 @@ render
 render
 
 	self removePreviousResults.
-	
 	self accounts do: [:account | | container |
 		container := self getContainer.
 		container
