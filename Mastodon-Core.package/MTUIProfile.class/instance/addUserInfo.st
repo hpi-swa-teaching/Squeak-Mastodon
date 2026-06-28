@@ -3,10 +3,10 @@ addUserInfo
 
 	| userInfo currentUserId |
 	currentUserId := MTMastodonApi getInstance getCurrentUser value id.
-	userInfo := self addGeneralUserInfo.
+	userInfo := self getGeneralUserInfo.
 	
 	currentUserId = self account id
 		ifTrue: [userInfo addMorph: self getSettingsToolbar]
-		ifFalse: [userInfo addMorphBack: (self addInteractionButtonsFor: self account)].
+		ifFalse: [userInfo addMorphBack: self getInteractionButtons].
 		
 	self addMorphBack: userInfo

@@ -1,6 +1,6 @@
 render
 getAccountMorph
-	| accountMorph start stop text currentUserId account |
+	| accountMorph start stop text account |
 	account := self toot account.
 	text := MTUtils asTextFromHtml: '<b>', account displayName, '</b> ', '<i>@', account federatedUsername, '<font color="', self htmlGray, '">', self interaction, '</font></i>'.
 	
@@ -16,7 +16,7 @@ getAccountMorph
 				makeClickable: text
 				from: start
 				to: stop
-				for: (MTAccount getAccountFromId: self object inReplyToAccountID)]].
+				for: (self mastodonApi getAccount: self object inReplyToAccountID) value]].
 	
 	accountMorph := TextMorph new contentsWrapped: text.
 	accountMorph

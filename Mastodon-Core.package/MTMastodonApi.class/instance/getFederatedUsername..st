@@ -2,9 +2,9 @@ endpoints
 getFederatedUsername: anID
 
 	| name account |
-	name := MTUsernameCache default retrieveValueForKey: anID.
-	name ifNil: [
+	account := MTAccountCache default retrieveValueForKey: anID.
+	account ifNil: [
 		account := self getAccount: anID value.
-		MTUsernameCache default cacheValue: account forKey: anID.
-		name := account federatedUsername].
+		MTAccountCache default cacheValue: account forKey: anID.
+		name := account value federatedUsername].
 	^ name

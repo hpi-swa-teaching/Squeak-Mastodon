@@ -1,4 +1,4 @@
-render-containers
+render-container
 getActionContainer
 
 	^ Morph new
