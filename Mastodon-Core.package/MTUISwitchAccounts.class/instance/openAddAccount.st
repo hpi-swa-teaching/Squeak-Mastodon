@@ -3,4 +3,4 @@ openAddAccount
 
 	self 
 		removeAllMorphs;
-		addMorphBack: self addAccountMorph
+		addMorphBack: self getLoginView

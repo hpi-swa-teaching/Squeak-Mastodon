@@ -1,4 +1,4 @@
 actions
-addAccountMorph
+getLoginView
 
 	^ MTUILogin new
