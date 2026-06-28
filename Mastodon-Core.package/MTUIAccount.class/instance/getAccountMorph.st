@@ -7,7 +7,7 @@ getAccountMorph
 	start := text indexOfSubCollection: '@'.
 	stop := start + self object federatedUsername asString size.
 	
-	self makeClickable: text from: start to: stop for: self object and: MTMastodonApi getInstance getCurrentUser value id.
+	self makeClickable: text from: start to: stop for: self object.
 	
 	accountMorph := TextMorph new contentsWrapped: text.
 	accountMorph

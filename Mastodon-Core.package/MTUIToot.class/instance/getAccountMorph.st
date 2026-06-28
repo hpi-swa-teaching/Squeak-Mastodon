@@ -1,14 +1,12 @@
 render
 getAccountMorph
 
-	| accountMorph start stop text currentUserId |
+	| accountMorph start stop text |
 	text := MTUtils asTextFromHtml: '<b>', self object account displayName, '</b> ', '<i>@', self object account federatedUsername, '<font color="', self htmlGray, '">', self interaction, '</font></i>'.
-	
-	currentUserId := MTMastodonApi getInstance getCurrentUser value id.
 	
 	start := text indexOfSubCollection: '@'.
 	stop := start + self object account federatedUsername asString size.
-	self makeClickable: text from: start to: stop for: self object account and: currentUserId.
+	self makeClickable: text from: start to: stop for: self object account.
 	
 	interaction ifNotNil: [
 		start := text indexOfSubCollection: '@' startingAt: stop.
@@ -18,8 +16,7 @@ getAccountMorph
 				makeClickable: text
 				from: start
 				to: stop
-				for: (MTAccount getAccountFromId: self object inReplyToAccountID)
-				and: currentUserId]].
+				for: (MTAccount getAccountFromId: self object inReplyToAccountID)]].
 	
 	accountMorph := TextMorph new contentsWrapped: text.
 	accountMorph
