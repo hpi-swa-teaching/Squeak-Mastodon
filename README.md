@@ -1,8 +1,70 @@
-# SWT17-Project-15 [![Build Status](https://travis-ci.org/hpi-swa-teaching/SWT17-Project-15.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/SWT17-Project-15)[![Build status](https://ci.appveyor.com/api/projects/status/hrvnchpt0ynuxw46?svg=true)](https://ci.appveyor.com/project/DonMoritzio/swt17-project-15)
+# SqueakMastodon
 
-Smalltalk Client for Mastodon - a decentralized Twitter alternative.
+> A native Mastodon client for Squeak.
 
-<img src="screenshots/toot.png" width="500">
-<img src="screenshots/status.png" width="500">
+Originally created in **2017** as part of the *Software Engineering (SWE)* course at the **[Hasso Plattner Institute](https://hpi.de)**, this project was revisited, modernized, and extended by a new student team in **2026**.
+
+## Overview
+
+SqueakMastodon is a graphical Mastodon client implemented entirely in Squeak. It provides a native Morphic interface for interacting with Mastodon instances through the official API.
+
+## Features
+- Login to any Mastodon instance
+- Browse home, trending and live timelines
+- Compose and publish toots with images
+- View user profiles and individual toots
+- Search for users
+- Interact with other users and toots
+- Switch between accounts
+- Edit profile information
+
+## Screenshots
+<img src="screenshots/live-timeline.png" width="500">
+<img src="screenshots/post-toots.png" width="500">
+<img src="screenshots/profile.png" width="500">
 <img src="screenshots/search.png" width="500">
 
+## Installation
+
+### Prerequisites
+
+- Squeak 6.x (or newer)
+- Squeak Git Browser
+- A Mastodon account
+
+### 1. Clone the repository
+
+Clone this repository using the Git Browser or with Git:
+
+```bash
+git clone https://github.com/hpi-swa-teaching/Squeak-Mastodon.git
+```
+
+### 2. Load the Widgets dependency
+
+Evaluate the following expression in a Workspace:
+
+```smalltalk
+(Smalltalk at: #Metacello) new
+    repository: 'github://hpi-swa/widgets:master/repository';
+    baseline: 'Widgets';
+    load.
+```
+
+### 3. Load the project
+
+Open the cloned repository with the **Git Browser** and load all packages into your image.
+
+### 4. Start the application
+
+Evaluate:
+
+```smalltalk
+MTUIWindow open
+```
+
+Login into your favorite Mastodon instance and start tooting!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

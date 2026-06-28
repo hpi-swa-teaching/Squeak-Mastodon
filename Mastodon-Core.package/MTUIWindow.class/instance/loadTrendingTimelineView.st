@@ -1,13 +1,6 @@
-views
+views-timelines
 loadTrendingTimelineView
 
-	| trendingTimelineView |
-	self mastodonApi hasToken ifFalse: [
-		self informToLogIn.
-		^ false].
-	trendingTimelineView := MTUITrendingTimeline new.
+	self ensureLoggedIn ifFalse: [^ false].
 	
-	trendingTimelineView loadToots ifFalse: [^ false].
-	
-	self loadView: trendingTimelineView as: #trendingTimelineView activate: #trendingTimelineButton.
-	self layoutChanged
+	self loadView: MTUITrendingTimeline new as: #trendingTimelineView activate: #trendingTimelineButton

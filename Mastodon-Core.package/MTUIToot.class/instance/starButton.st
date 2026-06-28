@@ -1,4 +1,4 @@
 accessing
 starButton
 
-	^ starButton
+	^ starButton ifNil: [starButton := self getStarButton]

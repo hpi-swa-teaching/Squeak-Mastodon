@@ -2,5 +2,5 @@ render
 determineInteractionType
 
 	self interaction: ''.
-	self object inReplyToAccountID ifNotNil: [self interaction: '&nbsp;&nbsp;replied to: @', (MTAccount getUsernameFromId: self object inReplyToAccountID)].
-	self object reblog ifNotNil: [self interaction: '&nbsp;&nbsp;reblogged:']
+	self toot inReplyToAccountID ifNotNil: [self interaction: '&nbsp;&nbsp;replied to: @', (self mastodonApi getFederatedUsername: self toot inReplyToAccountID)].
+	self toot reblog ifNotNil: [self interaction: '&nbsp;&nbsp;reblogged:']

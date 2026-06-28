@@ -1,0 +1,4 @@
+render
+getAccount
+
+	^ self subclassResponsibility

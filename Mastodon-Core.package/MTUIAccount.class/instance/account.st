@@ -1,0 +1,4 @@
+accessing
+account
+
+	^ self object

@@ -1,4 +1,4 @@
 endpoints
 unfollow: aUserID
 
-	^ self getRequestAt: '/api/v1/accounts/', aUserID, '/unfollow' intoObjectOf: MTRelationship
+	^ self postRequest: '/api/v1/accounts/', aUserID, '/unfollow' intoObjectOf: MTRelationship

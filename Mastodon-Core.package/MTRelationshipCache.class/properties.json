@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTRelationshipCache",
+	"pools" : [
+		 ],
+	"super" : "MTCache",
+	"type" : "normal" }

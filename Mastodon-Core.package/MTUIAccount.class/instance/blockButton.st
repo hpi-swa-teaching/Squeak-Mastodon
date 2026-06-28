@@ -1,4 +1,4 @@
 accessing
 blockButton
 
-	^ blockButton
+	^ blockButton ifNil: [blockButton := self getBlockButton]

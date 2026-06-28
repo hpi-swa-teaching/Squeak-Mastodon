@@ -1,13 +1,13 @@
 updating
 refreshToots
 
-	| newToots |
+	| result |
 	self mastodonApi hasToken ifFalse: [^false].
 			
-	newToots := mastodonApi getPrivateTimelineSince: maxID.
+	result := self getMoreTootsSince: self maxID.
 	
-	newToots isError ifTrue: [
-		self inform: (newToots error ifNil: ['An error occurred']).
+	result isError ifTrue: [
+		self inform: (result error ifNil: ['An error occurred']).
 		^ false].
 	
-	self prependToots: newToots value
+	self prependToots: result value

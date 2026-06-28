@@ -1,9 +1,11 @@
 render-buttons
 getCloseButton
 
-	^ SimpleButtonMorph new
-		label: 'X';
-		target: self;
-		actionSelector: #changeViewToProfileView;
-		color: Color veryVeryLightGray;
-		extent: 20 @ 20
+	| button |
+	button := MTUIPushButton new.
+	button
+		text: 'Back to Profile Page';
+		setBalloonText: 'Return to your currently logged-in profile';
+		color: Color veryVeryLightGray.
+	self connect: button signal: #clicked: toSelector: #changeViewToProfileView.
+	^ button

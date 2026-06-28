@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"searchTextField",
-		"accountMorph",
+		"accountMorphs",
 		"accounts",
 		"spacingMorph" ],
 	"name" : "MTUISearch",

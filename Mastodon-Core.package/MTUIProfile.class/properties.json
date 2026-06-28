@@ -9,7 +9,7 @@
 		"account",
 		"profileMorph",
 		"timelineMorph",
-		"saveButton" ],
+		"relationship" ],
 	"name" : "MTUIProfile",
 	"pools" : [
 		 ],

@@ -15,7 +15,5 @@ from: aJsonObject
 		inReplyToAccountID: (aJsonObject at: 'in_reply_to_account_id');
 		inReplyToID: (aJsonObject at: 'in_reply_to_id');
 		urls: (aJsonObject at: 'url');
-		media: ((aJsonObject at: 'media_attachments') collect: [:json | "tags: (aJsonObject at: 'tags');"
-		"urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | MTUrl from: json]);"
-		MTMedia from: json]);
+		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
 		yourself

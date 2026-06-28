@@ -1,4 +1,9 @@
 endpoints
-getAccount: anAccountID
-	
-	^ self getRequestAt: '/api/v1/accounts/', anAccountID intoObjectOf: MTAccount
+getAccount: anID
+
+	| account |
+	account := MTAccountCache default retrieveValueForKey: anID.
+	account ifNil: [
+		account := self getAccount: anID value. 
+		MTAccountCache cacheValue: account forKey: anID].
+	^ account
