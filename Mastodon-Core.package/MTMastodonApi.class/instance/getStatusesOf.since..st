@@ -1,4 +1,4 @@
 endpoints-timelines
 getStatusesOf: anAccountID since: aSinceID
 
-	^ self getRequestAt: '/api/v1/accounts/', anAccountID, '/statuses?since_id=', aSinceID intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/accounts/', anAccountID, '/statuses?since_id=', aSinceID intoCollectionOf: MTToot

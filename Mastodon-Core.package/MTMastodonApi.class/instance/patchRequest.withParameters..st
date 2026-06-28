@@ -1,5 +1,5 @@
 requesting
-patchRequestAt: aPath withParameters: aDictionary
+patchRequest: aPath withParameters: aDictionary
 
 	| response |
 	response := self webClient

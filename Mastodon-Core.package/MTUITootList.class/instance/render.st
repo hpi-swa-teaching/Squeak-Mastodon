@@ -2,7 +2,7 @@ render
 render
 
 	self removeAllMorphs.
-	
+
 	self tootMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
