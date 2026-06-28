@@ -11,13 +11,10 @@ showVisibilityWindow
 	self addMorph: menu.
 	
 	response := menu getUserResponse.
-	response = false ifFalse: [self visibilitySetting: response].
-	
-	response = 'private' or: [
-		response = 'direct'
+	response = false ifFalse: [
+		self visibilitySetting: response.
+		(response = 'private' or: [response = 'direct'])
 			ifTrue: [
 				self quotePolicySetting: 'nobody'.
 				self quotePolicyButton enabled: false]
-			ifFalse: [
-				self quotePolicySetting: nil.
-				self quotePolicyButton enabled: true]]
+			ifFalse: [self quotePolicyButton enabled: true]]
