@@ -15,6 +15,8 @@ SqueakMastodon is a graphical Mastodon client implemented entirely in Squeak. It
 - View user profiles and individual toots
 - Search for users
 - Interact with other users and toots
+- Switch between accounts
+- Edit profile information
 
 ## Screenshots
 
