@@ -10,12 +10,12 @@ deleteReplyTemplate
 	menu := DialogWindow new.
 	menu title: 'Choose template'.
 	
-	userTemplates do: [:template | 
-		menu createButton: (template name) value: (template)].
+	userTemplates do: [:template | menu createButton: template name value: template].
 	menu createCancelButton.
 	self addMorph: menu.
 	
 	selectedTemplateName := menu getUserResponse name.
+	selectedTemplateName = false ifTrue: [^ false].
 	(replyTemplateAccess deleteTemplate: selectedTemplateName)
 		ifTrue: [ self showSuccessMessage: 'Template deleted successfully' ]
 		ifFalse: []
