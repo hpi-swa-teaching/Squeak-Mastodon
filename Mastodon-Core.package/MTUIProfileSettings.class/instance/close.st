@@ -1,6 +1,6 @@
 actions
 close
 
-	self
+	self 
 		removeAllMorphs;
 		changeViewToProfileView
