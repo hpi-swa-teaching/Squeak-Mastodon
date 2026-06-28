@@ -1,9 +1,11 @@
 render-buttons
 getCreateNewAccountButton
 
-	^ SimpleButtonMorph new
-		label: '+ Add Account';
-		target: self;
-		actionSelector: #openAddAccount;
-		color: Color veryVeryLightGray;
-		yourself
+	| button |
+	button := MTUIPushButton new.
+	button
+		text: '+ Add Account';
+		setBalloonText: 'Add a new account';
+		color: Color veryVeryLightGray.
+	self connect: button signal: #clicked: toSelector: #openAddAccount.
+	^ button

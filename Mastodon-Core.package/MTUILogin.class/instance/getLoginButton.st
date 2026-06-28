@@ -1,8 +1,9 @@
 render-buttons
 getLoginButton
 
-	^ SimpleButtonMorph new
-		label: 'Login';
-		target: self;
-		actionSelector: #login; 
-		yourself
+	| button |
+	button := MTUIPushButton new.
+	button text: 'Login'.
+	button setBalloonText: 'Log in with the access code from your authorized Mastodon instance'.
+	self connect: button signal: #clicked: toSelector: #login.
+	^ button
