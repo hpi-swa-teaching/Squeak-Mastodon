@@ -1,6 +1,10 @@
 actions
 repostToot: anID
 
-	self active ifFalse: [
-		self mastodonApi reblog: anID.
-		self active: true]
+	self active
+		ifTrue: [
+			self mastodonApi unreblog: anID.
+			self active: false]
+		ifFalse: [
+			self mastodonApi reblog: anID.
+			self active: true]

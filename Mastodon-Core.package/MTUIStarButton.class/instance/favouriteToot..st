@@ -1,6 +1,10 @@
 actions
 favouriteToot: anID
 
-	self active ifFalse: [
-		self mastodonApi favourite: anID.
-		self active: true]
+	self active
+		ifTrue: [
+			self mastodonApi unfavourite: anID.
+			self active: false]
+		ifFalse: [
+			self mastodonApi favourite: anID.
+			self active: true]
