@@ -1,4 +1,4 @@
-render
+render-container
 getProfileContainer
 
 	^ (MTUIView applyWrapperLayoutTo:  RectangleMorph new)
