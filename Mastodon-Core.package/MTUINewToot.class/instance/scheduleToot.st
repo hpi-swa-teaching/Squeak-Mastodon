@@ -19,5 +19,7 @@ scheduleToot
 	(self scheduleToot: text at: time visibility: visibility withMedia: self getImageID) ifTrue: [
 		MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self messageArea.
 		self cleanTextField.
+		
+		replyTo ifNotNil: [self owner delete].
 		^ false].
 	^ true
