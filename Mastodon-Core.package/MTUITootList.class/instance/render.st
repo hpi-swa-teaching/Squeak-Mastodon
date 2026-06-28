@@ -10,4 +10,4 @@ render
 	self toots do: [:toot |
 		self
 			addTootMorph: (MTUIToot for: toot);
-			addMorphBack: self getSpacingMorph]
+			addMorphBack: (self getSpacingMorphAfter: toot)]

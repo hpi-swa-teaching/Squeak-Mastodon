@@ -5,6 +5,6 @@ getActionsMorph
 	
 	^ self actionsMorph
 		addMorphBack: self replyButton render;
-		addMorphBack: self repostButton render;
+		addMorphBack: self reblogButton render;
 		addMorphBack: self starButton render;
 		addMorphBack: self commentsButton render

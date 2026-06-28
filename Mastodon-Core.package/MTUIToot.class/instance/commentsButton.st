@@ -1,4 +1,4 @@
 accessing
 commentsButton
 
-	^ commentsButton
+	^ commentsButton ifNil: [commentsButton := self getCommentsButton]

@@ -1,6 +1,6 @@
 render-buttons
-getRepostButton
+getReblogButton
 	
-	^ MTUIRepostButton new
+	^ MTUIReblogButton new
 		arguments: {self toot id};
 		active: self toot reblogged

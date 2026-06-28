@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"rootToot",
-		"depths" ],
+		"depths",
+		"toots" ],
 	"name" : "MTUIThread",
 	"pools" : [
 		 ],

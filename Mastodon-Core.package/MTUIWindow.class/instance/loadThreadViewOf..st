@@ -6,7 +6,7 @@ loadThreadViewOf: aToot
 
 	thread := MTUIThread new.
 	thread rootToot: aToot.
-	thread loadThread ifFalse: [^ false].
+	thread loadToots ifFalse: [^ false].
 
 	self viewMorph ifNil: [^ self].
 	self viewHistory addLast: (self viewMorph -> self scrollMorph scroller offset copy).

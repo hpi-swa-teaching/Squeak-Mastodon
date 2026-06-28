@@ -1,4 +1,4 @@
 accessing
 reblogButton
 
-	^ reblogButton
+	^ reblogButton ifNil: [reblogButton := self getReblogButton]

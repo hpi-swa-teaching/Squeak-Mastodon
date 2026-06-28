@@ -1,18 +1,16 @@
 updating
-loadThread
+getToots
 
 	| context thread |
-	self mastodonApi hasToken ifFalse: [^ false].
-	self rootToot ifNil: [^ false].
-
+	self rootToot ifNil: [^ MTResult value: OrderedCollection new].
+	
 	context := self mastodonApi getContextOf: self rootToot id.
-	context isError ifTrue: [^ false].
-
+	context isError ifTrue: [^ context].
+	
 	thread := OrderedCollection new.
 	thread addAll: (context value at: #ancestors).
 	thread add: self rootToot.
 	thread addAll: (context value at: #descendants).
-
+	
 	self computeDepthsFor: thread.
-	self setToots: thread.
-	^ true
+	^ MTResult value: thread

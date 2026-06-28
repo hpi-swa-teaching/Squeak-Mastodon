@@ -1,5 +1,5 @@
 render
-getSpacingMorph
+getSpacingMorphAfter: aToot
 
 	^ Morph new
 		color: Color veryVeryLightGray;

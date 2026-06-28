@@ -1,4 +1,4 @@
 accessing
 replyButton
 
-	^ replyButton
+	^ replyButton ifNil: [replyButton := self getReplyButton]

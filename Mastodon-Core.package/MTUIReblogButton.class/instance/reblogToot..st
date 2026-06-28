@@ -1,5 +1,5 @@
 actions
-repostToot: anID
+reblogToot: anID
 
 	self active
 		ifTrue: [
