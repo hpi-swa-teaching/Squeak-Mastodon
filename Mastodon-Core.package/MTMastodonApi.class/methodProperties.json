@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"changeInstanceTo:" : "timhb 6/28/2026 13:57",
-		"flushCaches" : "timhb 6/28/2026 13:58",
+		"flushCaches" : "timhb 6/28/2026 14:03",
 		"for:" : "timhb 6/21/2026 12:54",
 		"getInstance" : "timhb 6/22/2026 13:13",
 		"removeInstance" : "timhb 6/28/2026 13:56" },
@@ -17,6 +17,8 @@
 		"clientSecret" : "timbeier 6/2/2026 07:49",
 		"clientSecret:" : "timbeier 6/2/2026 07:49",
 		"contentFromResponse:" : "timhb 6/16/2026 20:55",
+		"currentUser" : "timhb 6/28/2026 14:04",
+		"currentUser:" : "timhb 6/28/2026 14:04",
 		"defaultSearchLimit" : "timhb 6/8/2026 14:12",
 		"deserialize:" : "timhb 6/26/2026 19:29",
 		"deserialize:intoCollectionOf:" : "timbeier 6/2/2026 20:37",
@@ -30,7 +32,7 @@
 		"follow:" : "timhb 6/28/2026 11:13",
 		"getAccount:" : "timhb 6/28/2026 13:19",
 		"getCurrentCredentials" : "timhb 6/21/2026 13:04",
-		"getCurrentUser" : "timhb 6/7/2026 22:35",
+		"getCurrentUser" : "timhb 6/28/2026 14:02",
 		"getFavourites" : "timhb 6/7/2026 22:36",
 		"getFederatedUsername:" : "timhb 6/28/2026 13:42",
 		"getFollowers:" : "timhb 6/7/2026 22:36",
@@ -58,8 +60,6 @@
 		"isLoggedIn" : "timhb 6/8/2026 08:31",
 		"mute:" : "timhb 6/7/2026 22:35",
 		"newAccessDictionary" : "timhb 6/8/2026 08:46",
-		"password" : "timbeier 6/2/2026 07:54",
-		"password:" : "timbeier 6/2/2026 07:54",
 		"patchRequestAt:withParameters:" : "timhb 6/21/2026 11:10",
 		"patchRequestAt:withParameters:intoObjectOf:" : "timhb 6/8/2026 09:20",
 		"postBlock:" : "timhb 6/8/2026 14:07",
@@ -94,7 +94,6 @@
 		"updateCredentials:avatar:header:" : "timhb 6/22/2026 08:52",
 		"uploadMediaFrom:" : "timhb 6/8/2026 08:29",
 		"urlForPath:" : "timhb 6/21/2026 12:54",
-		"username:" : "timbeier 6/2/2026 07:50",
 		"verifyCredentials" : "timhb 6/16/2026 21:44",
 		"webClient" : "timhb 6/7/2026 22:25",
 		"webClient:" : "timbeier 6/2/2026 07:51" } }

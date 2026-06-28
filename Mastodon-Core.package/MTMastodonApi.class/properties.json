@@ -6,13 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"username",
-		"password",
 		"clientID",
 		"clientSecret",
 		"token",
 		"webClient",
-		"baseUrl" ],
+		"baseUrl",
+		"currentUser" ],
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],
