@@ -5,6 +5,5 @@ getFederatedUsername: anID
 	account := MTAccountCache default retrieveValueForKey: anID.
 	account ifNil: [
 		account := self getAccount: anID.
-		MTAccountCache default cacheValue: account forKey: anID.
-		^ account federatedUsername].
+		MTAccountCache default cacheValue: account value forKey: anID].
 	^ account federatedUsername
