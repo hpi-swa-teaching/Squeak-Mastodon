@@ -1,6 +1,7 @@
 actions
 close
 
-	self removeAllMorphs.
-	
-	MTUIWindow instance loadProfileView
+	self
+		removeAllMorphs;
+		changeViewToProfileView;
+		delete

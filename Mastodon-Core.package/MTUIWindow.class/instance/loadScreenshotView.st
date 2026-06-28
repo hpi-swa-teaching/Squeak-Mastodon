@@ -1,8 +1,6 @@
 views
 loadScreenshotView
 
-	self mastodonApi hasToken ifFalse: [
-		self informToLogIn.
-		^ false].
+	self ensureLoggedIn ifFalse: [^ false].
 	
 	MTScreenshot useMastodonCursor

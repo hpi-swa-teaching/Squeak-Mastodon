@@ -1,14 +1,20 @@
 {
 	"class" : {
-		 },
+		"for:" : "timhb 6/26/2026 18:37" },
 	"instance" : {
-		"for:" : "cs 6/3/2026 18:43",
-		"getAvatarMorph" : "cs 6/14/2026 11:45",
-		"getCreatedAtMorph" : "cs 6/13/2026 22:46",
-		"getElementMorph" : "cs 6/14/2026 11:49",
+		"applyProperties" : "timhb 6/26/2026 18:42",
+		"defaultAvatarSize" : "timhb 6/26/2026 18:47",
+		"getAccount" : "timhb 6/26/2026 18:52",
+		"getActionContainer" : "timhb 6/26/2026 18:41",
+		"getAvatarMorph" : "timhb 6/26/2026 22:01",
+		"getContainer" : "timhb 6/26/2026 18:41",
+		"getCreatedAtMorph" : "timhb 6/26/2026 19:36",
+		"getElementMorph" : "timhb 6/26/2026 18:51",
 		"getTextColor:" : "HB 6/24/2026 11:36",
 		"htmlGray" : "cs 5/25/2026 17:05",
+		"initialize" : "timhb 6/26/2026 18:42",
 		"makeClickable:from:to:for:" : "HB 6/28/2026 11:44",
+		"mastodonApi" : "timhb 6/26/2026 17:21",
 		"object" : "cs 6/3/2026 18:46",
 		"object:" : "cs 6/3/2026 18:46",
-		"render" : "cs 6/13/2026 22:51" } }
+		"render" : "timhb 6/26/2026 18:39" } }

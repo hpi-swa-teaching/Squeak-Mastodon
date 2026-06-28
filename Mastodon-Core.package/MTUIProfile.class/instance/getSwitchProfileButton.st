@@ -1,4 +1,4 @@
-render
+render-buttons
 getSwitchProfileButton
 
 	^ SimpleButtonMorph new

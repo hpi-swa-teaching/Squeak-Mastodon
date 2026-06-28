@@ -4,13 +4,6 @@ GSMetadata {
 		GSCypressMapper {
 			#version : 1,
 			#package : MCPackage {
-				#name : 'Mastodon-Spike-Twitter'
-			},
-			#path : FSAbsolutePath [ ]
-		},
-		GSCypressMapper {
-			#version : 1,
-			#package : MCPackage {
 				#name : 'Mastodon-Tests'
 			},
 			#path : FSAbsolutePath [ ]

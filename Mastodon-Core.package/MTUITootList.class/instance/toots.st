@@ -1,4 +1,4 @@
 accessing
 toots
 
-	^ toots
+	^ toots ifNil: [toots := OrderedCollection new]

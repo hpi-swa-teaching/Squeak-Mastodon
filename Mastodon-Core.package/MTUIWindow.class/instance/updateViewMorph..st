@@ -1,7 +1,7 @@
 render
 updateViewMorph: aMorph
 
-	self scrollMorph scroller hasSubmorphs ifTrue: [self scrollMorph scroller removeMorph: self viewMorph].
-	
+	self viewMorph ifNotNil: [self viewMorph close].
 	self viewMorph: aMorph.
-	self addViewMorph
+	self addViewMorph.
+	self scrollMorph scrollToTop

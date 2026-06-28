@@ -1,4 +1,4 @@
 accessing
 repostButton
 
-	^ repostButton
+	^ repostButton ifNil: [repostButton := self getRepostButton]

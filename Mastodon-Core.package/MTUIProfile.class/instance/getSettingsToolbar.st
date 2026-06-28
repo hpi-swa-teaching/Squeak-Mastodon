@@ -2,9 +2,10 @@ render
 getSettingsToolbar
 
 	| toolbar |
-	toolbar := self getEmptySettingsToolbar.
+	toolbar := self getToolbarContainer.
 	toolbar
 		addMorphBack: self getProfileEditButton;
-		addMorphBack: self getSwitchProfileButton.
+		addMorphBack: self getProfileSwitchButton;
+		listCentering: #center.
 	
 	^ toolbar
