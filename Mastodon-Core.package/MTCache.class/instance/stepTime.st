@@ -1,0 +1,4 @@
+stepping
+stepTime
+
+	^ self subclassResponsibility

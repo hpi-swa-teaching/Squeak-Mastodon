@@ -1,19 +1,14 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"instance" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"clientID",
-		"clientSecret",
-		"token",
-		"webClient",
-		"baseUrl",
-		"currentUser" ],
-	"name" : "MTMastodonApi",
+		 ],
+	"name" : "MTAccountCache",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "MTCache",
 	"type" : "normal" }

@@ -1,6 +1,7 @@
 views
 loadProfileViewOf: aUser
-
+	
 	self ensureLoggedIn ifFalse: [^ false].
 	
-	self loadView: (MTUIOtherProfile for: aUser) as: #profileView activate: 'noButton'
+	self loadView: (MTUIProfile for: aUser) as: #profileView activate: #profileButton.
+	self scrollMorph scrollToTop

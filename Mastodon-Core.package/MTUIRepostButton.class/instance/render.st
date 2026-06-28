@@ -1,5 +1,4 @@
 render
 render
 
-	super render.
-	self labelGraphic: MTUIIcons reblog.
+	super render
