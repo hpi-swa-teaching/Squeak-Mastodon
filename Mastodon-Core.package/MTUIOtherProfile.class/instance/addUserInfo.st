@@ -2,7 +2,7 @@ render
 addUserInfo
 
 	| userInfo |
-	userInfo := self addGeneralUserInfo.
+	userInfo := self getGeneralUserInfo.
 	
-	userInfo addMorphBack: (self addInteractionButtonsFor: self account).
+	userInfo addMorphBack: self getInteractionButtons.
 	self addMorphBack: userInfo

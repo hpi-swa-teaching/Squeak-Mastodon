@@ -1,4 +1,4 @@
 accessing
 container
 
-	^ container ifNil: [container := self getProfileContainer vResizing: #spaceFill]
+	^ container ifNil: [container := self getProfileContainer]

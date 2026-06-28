@@ -1,4 +1,4 @@
 accessing
 tootMorphs
 
-	^ tootMorphs
+	^ tootMorphs ifNil: [tootMorphs := OrderedCollection new]

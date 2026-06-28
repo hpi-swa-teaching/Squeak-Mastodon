@@ -5,7 +5,7 @@ initialize
 	
 	self loadedViews: Dictionary new.
 	self menuMorph: MTUIMenu new.
-	self scrollMorph: ScrollPane new.
+	self scrollMorph: MTUIScrollPane new.
 	
 	self
 		setLabel: self mastodonApi displayName;

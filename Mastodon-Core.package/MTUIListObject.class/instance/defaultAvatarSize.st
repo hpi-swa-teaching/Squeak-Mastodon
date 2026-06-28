@@ -1,0 +1,4 @@
+constants
+defaultAvatarSize
+
+	^ 48

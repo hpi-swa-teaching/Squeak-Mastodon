@@ -1,4 +1,5 @@
 render
 addTootMorph: aMorph
 
-	tootMorphs addFirst: aMorph
+	self tootMorphs addFirst: aMorph.
+	self addMorphBack: aMorph

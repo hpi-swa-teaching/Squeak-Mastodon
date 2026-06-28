@@ -1,4 +1,4 @@
 accessing
-following: anObject
+following: aBoolean
 
-	following := anObject
+	following := aBoolean

@@ -1,4 +1,5 @@
 render
 addAccountMorph: aMorph
 
-	accountMorph addFirst: aMorph
+	self accountMorphs addFirst: aMorph.
+	self addMorphBack: aMorph

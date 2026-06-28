@@ -1,3 +1,4 @@
 stepping
 stepTime
-^ 15000
+
+	^ self refreshInterval

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"blockButton",
 		"followButton",
-		"directTootButton" ],
+		"directTootButton",
+		"relationship" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],

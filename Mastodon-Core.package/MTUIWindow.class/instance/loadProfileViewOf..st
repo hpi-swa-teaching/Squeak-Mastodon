@@ -1,12 +1,6 @@
 views
-loadProfileViewOf: aMTAccount
+loadProfileViewOf: aUser
 
-	| userTimeline |
-
-	MTMastodonApi getInstance hasToken ifFalse: [
-		self informToLogIn.
-		^ false].
+	self ensureLoggedIn ifFalse: [^ false].
 	
-	userTimeline := self loadUserTimeLineView: aMTAccount.
-	self loadView: (MTUIOtherProfile for: aMTAccount) as: #profileView activate: 'noButton'.
-	scrollMorph scrollToTop
+	self loadView: (MTUIOtherProfile for: aUser) as: #profileView activate: 'noButton'

@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"relationship",
+		"blockButton",
+		"directTootButton" ],
 	"name" : "MTUIOtherProfile",
 	"pools" : [
 		 ],

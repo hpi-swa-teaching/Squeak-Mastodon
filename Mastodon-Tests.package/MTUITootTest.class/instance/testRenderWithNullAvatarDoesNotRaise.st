@@ -3,7 +3,7 @@ testRenderWithNullAvatarDoesNotRaise
 
 	| ui parent |
 	MTImageCache default flush.
-	ui := MTUIToot new for: (self tootFromJson: DataProvider mockTootWithNullAvatar).
+	ui := MTUIToot for: (self tootFromJson: DataProvider mockTootWithNullAvatar).
 	parent := Morph new.
 	parent extent: 800 @ 600.
 	parent addMorphBack: ui.

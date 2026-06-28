@@ -9,5 +9,6 @@ saveProfileChanges
 		yourself.
 	
 	self mastodonApi updateCredentials: fields avatar: self editedAvatar form header: nil.
-	self profileView account: self mastodonApi getCurrentUser value.
-	self closeWindow
+	self
+		changeViewToProfileView;
+		delete

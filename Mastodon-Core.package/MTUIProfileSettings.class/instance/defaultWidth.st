@@ -1,4 +1,4 @@
 constants
 defaultWidth
 
-	^ self profileView avatarSize
+	^ 48

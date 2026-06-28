@@ -2,5 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"loadToots" : "timhb 6/21/2026 17:36",
-		"name" : "NV 5/22/2026 14:36" } }
+		"getMoreTootsSince:" : "timhb 6/26/2026 15:38",
+		"getMoreTootsUpTo:" : "timhb 6/26/2026 15:39",
+		"getToots" : "timhb 6/26/2026 15:50" } }

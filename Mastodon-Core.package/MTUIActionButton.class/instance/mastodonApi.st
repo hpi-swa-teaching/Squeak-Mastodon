@@ -1,0 +1,4 @@
+accessing
+mastodonApi
+	
+	^ MTMastodonApi getInstance
