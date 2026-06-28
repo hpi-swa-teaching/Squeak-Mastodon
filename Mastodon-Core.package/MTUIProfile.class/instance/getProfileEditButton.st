@@ -1,10 +1,9 @@
 render-buttons
 getProfileEditButton
 
-	^ SimpleButtonMorph new
-		label: 'Edit';
-		target: self;
-		color: Color veryLightGray;
-		borderColor: Color gray;
-		actionSelector: #openProfileSettings;
-		yourself
+	| button |
+	button := MTUIPushButton new.
+	button text: 'Edit Profile'.
+	button setBalloonText: 'Change username, description, avatar of current profile'.
+	self connect: button signal: #clicked: toSelector: #openProfileSettings.
+	^ button
