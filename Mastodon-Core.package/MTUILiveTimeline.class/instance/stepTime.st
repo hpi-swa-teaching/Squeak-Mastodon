@@ -1,4 +1,0 @@
-stepping
-stepTime
-
-	^ self refreshInterval
