@@ -19,7 +19,10 @@ SqueakMastodon is a graphical Mastodon client implemented entirely in Squeak. It
 - Edit profile information
 
 ## Screenshots
-
+<img src="screenshots/live-timeline.png" width="500">
+<img src="screenshots/post-toots.png" width="500">
+<img src="screenshots/profile.png" width="500">
+<img src="screenshots/search.png" width="500">
 
 ## Installation
 
