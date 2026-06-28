@@ -2,9 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"activeButton:" : "HB 6/6/2026 14:00",
+		"activeButton:" : "HB 6/28/2026 12:13",
 		"addButton:for:on:with:" : "HB 6/1/2026 14:05",
 		"buttons" : "HB 6/1/2026 14:04",
-		"deactivateAllButtons" : "HB 6/6/2026 13:26",
 		"drawButtons" : "HB 6/6/2026 13:25",
 		"initialize" : "NK 5/30/2016 17:31" } }

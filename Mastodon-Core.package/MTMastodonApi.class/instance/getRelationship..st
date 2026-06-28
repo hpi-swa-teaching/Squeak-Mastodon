@@ -1,4 +1,11 @@
 endpoints
-getRelationship: anAccountID
+getRelationship: anID
 
-	^ self getRequestAt: '/api/v1/accounts/relationships?id=', anAccountID intoCollectionOf: MTRelationship
+	| relationship |
+	relationship := MTRelationshipCache default retrieveValueForKey: anID.
+	relationship ifNil: [
+		relationship := (self
+			getRequestAt: '/api/v1/accounts/relationships?id=', anID
+			intoCollectionOf: MTRelationship) value at: 1.
+		MTRelationshipCache default cacheValue: relationship forKey: anID].
+	^ relationship

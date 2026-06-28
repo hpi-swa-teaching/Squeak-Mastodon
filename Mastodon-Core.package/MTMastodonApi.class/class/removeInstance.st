@@ -1,4 +1,4 @@
 accessing
 removeInstance
 
-	^ instance := self new.
+	self changeInstanceTo: self new

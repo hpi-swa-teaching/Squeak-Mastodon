@@ -5,8 +5,4 @@
 		"assertNoErrorDuring:" : "cs 5/18/2026 15:24",
 		"avatarUrlFromJson:" : "cs 5/18/2026 16:13",
 		"previewUrlFromJson:" : "cs 5/18/2026 16:13",
-		"testRenderWithImageDoesNotRaise" : "timhb 6/26/2026 18:49",
-		"testRenderWithNullAvatarDoesNotRaise" : "timhb 6/26/2026 18:49",
-		"testRenderWithNullPreviewDoesNotRaise" : "timhb 6/26/2026 18:49",
-		"testRenderWithoutImageDoesNotRaise" : "timhb 6/26/2026 18:49",
 		"tootFromJson:" : "cs 5/18/2026 16:13" } }
