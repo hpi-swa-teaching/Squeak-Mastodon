@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"changeInstanceTo:" : "timhb 6/21/2026 13:04",
+		"changeInstanceTo:" : "timhb 6/28/2026 13:57",
+		"flushCaches" : "timhb 6/28/2026 13:58",
 		"for:" : "timhb 6/21/2026 12:54",
 		"getInstance" : "timhb 6/22/2026 13:13",
-		"removeInstance" : "timhb 6/21/2026 17:07",
-		"setInstance:" : "timhb 6/21/2026 18:02" },
+		"removeInstance" : "timhb 6/28/2026 13:56" },
 	"instance" : {
 		"accessTokenParametersForCode:" : "timhb 6/8/2026 08:51",
 		"authorizationLink" : "timhb 6/7/2026 22:38",
