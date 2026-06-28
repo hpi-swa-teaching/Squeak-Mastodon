@@ -3,11 +3,11 @@ initialize
 
 	super initialize.
 	
-	self loadedViews: Dictionary new.
-	self menuMorph: MTUIMenu new.
-	self scrollMorph: ScrollPane new.
-	
 	self
+		loadedViews: Dictionary new;
+		menuMorph: MTUIMenu new;
+		scrollMorph: ScrollPane new;
+		minimumExtent: 600 @ 500;
 		setLabel: self mastodonApi displayName;
 		addMenuMorph;
 		addScrollMorph.

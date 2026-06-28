@@ -5,7 +5,6 @@ from: aJsonObject
 		id: (aJsonObject at: 'id');
 		username: (aJsonObject at: 'username');
 		federatedUsername: (aJsonObject at: 'acct');
-		cacheUsername;
 		cacheAccount;
 		displayName: (aJsonObject at: 'display_name');
 		createdAt: (aJsonObject at: 'created_at');
