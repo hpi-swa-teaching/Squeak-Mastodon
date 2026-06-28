@@ -9,6 +9,7 @@
 		"tootTextArea",
 		"tootSizeLabel",
 		"feedbackMorph",
+		"titleMorph",
 		"sendButton",
 		"imageButton",
 		"visibilityButton",
@@ -16,7 +17,8 @@
 		"visibilitySetting",
 		"quotePolicySetting",
 		"media",
-		"mediaPreview" ],
+		"mediaPreview",
+		"inReplyToId" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

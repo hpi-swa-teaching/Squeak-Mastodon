@@ -3,5 +3,4 @@ close
 
 	self
 		removeAllMorphs;
-		changeViewToProfileView;
-		delete
+		changeViewToProfileView

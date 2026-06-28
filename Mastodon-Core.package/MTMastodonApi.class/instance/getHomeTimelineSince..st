@@ -1,5 +1,5 @@
 endpoints-timelines
 getHomeTimelineSince: aNumber
 	
-	^ self getRequestAt: '/api/v1/timelines/home?since_id=', aNumber intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/timelines/home?since_id=', aNumber intoCollectionOf: MTToot
 	

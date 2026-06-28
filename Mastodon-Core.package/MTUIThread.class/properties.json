@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rootToot",
+		"depths",
+		"toots" ],
+	"name" : "MTUIThread",
+	"pools" : [
+		 ],
+	"super" : "MTUITootList",
+	"type" : "normal" }

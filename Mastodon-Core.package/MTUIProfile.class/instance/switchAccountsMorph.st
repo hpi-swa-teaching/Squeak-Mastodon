@@ -1,4 +1,4 @@
 switching
 switchAccountsMorph
 
-	^ MTUISwitchAccounts for: self.
+	^ MTUISwitchAccounts new

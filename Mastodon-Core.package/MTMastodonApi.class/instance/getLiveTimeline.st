@@ -1,4 +1,4 @@
 endpoints-timelines
 getLiveTimeline
 
-	^ self getRequestAt: '/api/v1/timelines/public?local=true' intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/timelines/public?local=true' intoCollectionOf: MTToot

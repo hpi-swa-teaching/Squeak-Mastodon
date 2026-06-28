@@ -1,3 +1,3 @@
-as yet unclassified
+fixtures
 mockTrendingResponse
 	^ '[', self defaultTootWithImageJsonString, ',', self defaultTootPlainJsonString, ']'

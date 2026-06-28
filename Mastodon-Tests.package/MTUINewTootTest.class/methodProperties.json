@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"testNewTootIsntReply" : "NV 6/23/2026 19:56",
+		"testReplyToPrefillsMentionHandle" : "NV 6/28/2026 12:48",
+		"testReplyToSetsInReplyToId" : "NV 6/23/2026 19:55",
 		"testTootButtonEnabled" : "cs 6/18/2026 03:16" } }

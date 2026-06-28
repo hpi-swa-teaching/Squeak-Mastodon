@@ -2,7 +2,7 @@ render
 render
 
 	self removeAllMorphs.
-	
+
 	self tootMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
@@ -10,4 +10,4 @@ render
 	self toots do: [:toot |
 		self
 			addTootMorph: (MTUIToot for: toot);
-			addMorphBack: self getSpacingMorph]
+			addMorphBack: (self getSpacingMorphAfter: toot)]

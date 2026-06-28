@@ -1,0 +1,4 @@
+constants
+numberOfTries
+
+	^ 5
