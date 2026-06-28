@@ -7,6 +7,7 @@ replyToToot: aToot
 	replyWindow mtuiWindow: self mtuiWindow.
 	replyWindow replyTo: aToot.
 	replyWindow reloadMentionTimeline: true.
+	replyWindow addTemplateButtonInReply.
 	
 	window := SystemWindow new.
 	window setLabel: 'Reply'.

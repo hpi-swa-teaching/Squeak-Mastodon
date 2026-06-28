@@ -9,6 +9,7 @@
 		"addNewTootTextarea" : "Tom1Schaepsmeier 5/9/2026 12:13",
 		"addScheduleArea" : "lapl 6/20/2026 18:17",
 		"addScheduleButton:" : "lapl 6/20/2026 18:15",
+		"addTemplateButtonInReply" : "Mailin 6/28/2026 17:48",
 		"chooseVisibility" : "lapl 6/2/2026 13:00",
 		"cleanTextField" : "lapl 6/20/2026 17:16",
 		"datePicker" : "lapl 6/4/2026 15:18",
@@ -41,6 +42,7 @@
 		"tootTextArea:" : "mm 7/8/2017 18:51",
 		"updateContent:" : "LS 7/17/2017 12:03",
 		"updateTextSize" : "LS 7/17/2017 12:03",
+		"useReplyTemplates" : "Mailin 6/28/2026 17:48",
 		"validateTootText" : "lapl 6/2/2026 13:01",
 		"yearField" : "lapl 5/31/2026 12:57",
 		"yearField:" : "lapl 5/31/2026 12:57" } }
