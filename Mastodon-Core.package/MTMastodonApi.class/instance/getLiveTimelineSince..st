@@ -1,5 +1,5 @@
 endpoints-timelines
 getLiveTimelineSince: aNumber
 	
-	^ self getRequestAt: '/api/v1/timelines/public?local=true&since_id=', aNumber intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/timelines/public?local=true&since_id=', aNumber intoCollectionOf: MTToot
 	

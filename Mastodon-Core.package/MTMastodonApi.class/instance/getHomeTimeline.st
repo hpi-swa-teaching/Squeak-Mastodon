@@ -1,4 +1,4 @@
 endpoints-timelines
 getHomeTimeline
 	
-	^ self getRequestAt: '/api/v1/timelines/home' intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/timelines/home' intoCollectionOf: MTToot

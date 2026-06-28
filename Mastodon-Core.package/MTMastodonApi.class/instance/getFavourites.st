@@ -1,5 +1,5 @@
 endpoints
 getFavourites
 
-	^ self getRequestAt: '/api/v1/favourites' intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/favourites' intoCollectionOf: MTToot
 	
