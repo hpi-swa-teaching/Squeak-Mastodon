@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "RZ 6/28/2026 21:56",
+		"testDeleteCurrentSession" : "RZ 6/28/2026 22:34",
+		"testStoreCurrentSession" : "RZ 6/28/2026 21:57",
+		"testStoreMultipleSessions" : "RZ 6/28/2026 21:59",
+		"testSwitchToSelectedSession" : "RZ 6/28/2026 22:36" } }
