@@ -12,5 +12,5 @@ cancelToot: aScheduledTootMorph
 	menu getUserResponse ifFalse: [^ self].
 	self mastodonApi cancelScheduledToot: aScheduledTootMorph toot id.
 	self
-		loadScheduled;
-		render
+		load;
+		renderScheduled

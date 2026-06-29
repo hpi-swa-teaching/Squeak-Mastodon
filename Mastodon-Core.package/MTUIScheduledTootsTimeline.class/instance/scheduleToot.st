@@ -1,5 +1,6 @@
 actions
 scheduleToot
+
 	| text visibility time timeRes textRes |
 	timeRes := self validateScheduledDate.
 	timeRes isError ifTrue: [
@@ -16,7 +17,9 @@ scheduleToot
 	visibility := self chooseVisibility.
 	
 	(self scheduleToot: text at: time visibility: visibility withMedia: self getImageID) ifTrue: [
-		MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self messageArea.
-		scheduledTootTextArea contents: ''.
-		^ false].
+		MTUtils showSuccessMessage: 'Toot scheduled successfully!' on: self messageArea.
+		scheduledTootTextArea contents: ''].
+	self
+		load;
+		renderScheduled.
 	^ true
