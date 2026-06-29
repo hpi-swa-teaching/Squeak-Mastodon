@@ -22,7 +22,7 @@ editToot: aScheduledTootMorph
 	self addMorph: menu.
 	
 	newTootText := menu getUserResponse.
-	newTootText ifFalse: [^ self].
+	newTootText == false ifTrue: [^ self].
 
 	(self mastodonApi cancelScheduledToot: aScheduledTootMorph toot id) isError ifFalse: [^ false].
 	(self
