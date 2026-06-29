@@ -7,7 +7,7 @@ unfavourite: aToot
 	body := '{"repo":"', did,
 		'","collection":"app.bsky.feed.like",',
 		'"rkey":"', rkey, '"}'.
-	response := self postRequest: url body: body.
+	response := self postRequest: url content: body.
 	response ifNil: [^ MTResult error: 'BlueSky unlike request failed'].
 	aToot likeUri: nil.
 	aToot favourited: false.
