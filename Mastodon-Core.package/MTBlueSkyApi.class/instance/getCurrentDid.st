@@ -1,8 +1,9 @@
 helpers
 getCurrentDid
 	| url response json |
+	did ifNotNil: [^ did].
 	url := self buildUrl: '/xrpc/com.atproto.server.getSession'.
 	response := self getRequest: url.
 	response ifNil: [^ nil].
 	json := self deserialize: response.
-	^ json at: 'did' ifAbsent: [nil]
+	^ did := (json at: 'did' ifAbsent: [nil])
