@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"getAccountDictionary",
+		"getFollowersDictionary",
+		"accountDictionary" ],
+	"name" : "MTDataProviderAPI",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

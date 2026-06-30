@@ -1,15 +1,16 @@
 endpoints
-updateCredentials: aDictionary avatar: avatarForm header: headerForm
+updateCredentials: aDictionary avatar: anAvatarForm header: aHeaderForm
 
 	| url boundary response |
+	self halt.
 	url := self urlForPath: '/api/v1/accounts/update_credentials'.
 	boundary := WebUtils multipartBoundary.
 	response := self webClient
 		httpPost: url
 		content: (self
 			encodeProfileForm: aDictionary
-			avatar: avatarForm
-			header: headerForm
+			avatar: anAvatarForm
+			header: aHeaderForm
 			boundary: boundary)
 		type: 'multipart/form-data; boundary=', boundary
 		do: [:req |
