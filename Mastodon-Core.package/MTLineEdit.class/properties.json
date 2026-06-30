@@ -7,7 +7,6 @@
 	"commentStamp" : "lapl 5/26/2026 14:08",
 	"instvars" : [
 		"nextField",
-		"previousField",
 		"pattern",
 		"validator" ],
 	"name" : "MTLineEdit",

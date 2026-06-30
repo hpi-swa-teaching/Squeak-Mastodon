@@ -1,5 +1,4 @@
-switch-focus
+accessing
 focusNext
-
 	nextField ifNil: [^ self].
-	self world activeHand newKeyboardFocus: self nextField textMorph
+	self world activeHand newKeyboardFocus: nextField textMorph

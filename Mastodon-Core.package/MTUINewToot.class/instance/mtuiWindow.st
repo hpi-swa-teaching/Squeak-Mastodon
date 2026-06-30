@@ -1,4 +1,0 @@
-toot
-mtuiWindow
-
-	^ mtuiWindow

@@ -1,4 +1,0 @@
-render
-openArchiveView
-
-	self mtuiWindow loadArchiveTimelineView

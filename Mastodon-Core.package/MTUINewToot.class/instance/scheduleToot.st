@@ -1,8 +1,7 @@
 toot
 scheduleToot
-
 	| text visibility time timeRes textRes |
-	timeRes := MTUtils validateScheduledDate: self datePicker dateTime.
+	timeRes := self validateScheduledDate.
 	timeRes isError ifTrue: [
 		self inform: timeRes error.
 		^ false].

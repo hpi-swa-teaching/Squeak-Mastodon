@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"archiveTootWithId:" : "Mailin 6/8/2026 22:21",
+		"collectMentions:" : "Mailin 6/12/2026 20:03",
+		"getMentions" : "Mailin 6/12/2026 20:04",
+		"getNewMentions" : "Mailin 6/12/2026 20:04",
+		"isArchived:" : "Mailin 6/8/2026 17:21",
+		"loadMentions" : "Mailin 6/12/2026 20:05",
+		"mentions:" : "Mailin 6/8/2026 21:00",
+		"refreshToots" : "Mailin 6/8/2026 22:07",
+		"render" : "lapl 6/22/2026 21:45",
+		"replyToToot:" : "Lian 6/13/2026 00:06" } }

@@ -1,4 +1,4 @@
 as yet unclassified
-status: aStatus
+status: anObject
 
-	status := aStatus
+	status := anObject

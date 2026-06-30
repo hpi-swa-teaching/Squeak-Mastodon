@@ -1,4 +1,4 @@
-ui
+time-conversion
 showSuccessMessage: aMessage on: aMorph
 
 	| successfullyPerformedText |

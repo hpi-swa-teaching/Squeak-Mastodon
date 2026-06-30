@@ -1,4 +1,4 @@
 as yet unclassified
-type: aType
+type: anObject
 
-	type := aType
+	type := anObject
