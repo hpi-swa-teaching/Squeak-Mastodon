@@ -15,7 +15,7 @@ deleteReplyTemplate
 	self addMorph: menu.
 	
 	selectedTemplateName := menu getUserResponse name.
-	selectedTemplateName = false ifTrue: [^ false].
+	selectedTemplateName ifFalse: [^ false].
 	(replyTemplateAccess deleteTemplate: selectedTemplateName)
 		ifTrue: [ self showSuccessMessage: 'Template deleted successfully' ]
 		ifFalse: []
