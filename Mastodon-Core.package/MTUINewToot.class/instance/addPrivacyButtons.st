@@ -18,7 +18,7 @@ addPrivacyButtons
 	self quotePolicyButton: MTUIPushButton new.
 	self quotePolicyButton setBalloonText: 'Choose who can quote this toot'.
 	self connect: self quotePolicyButton signal: #clicked: toSelector: #showQuotePolicyWindow.
-	self quotePolicySetting: nil.
+	self quotePolicySetting: 'public'.
 	wrapper addMorphBack: self quotePolicyButton.
 	
 	self addMorphBack: wrapper
