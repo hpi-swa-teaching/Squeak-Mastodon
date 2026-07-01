@@ -15,7 +15,7 @@ loadProfileView
 	
 	currentUser isError 
 	ifTrue: [
-        	UIManager default inform: 'Could not load profile'.
-        	^ self
-    	].
+		self inform: 'Could not load profile'.
+		^ self
+	].
 	self loadProfileViewOf: currentUser value.
