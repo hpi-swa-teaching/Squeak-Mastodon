@@ -1,7 +1,7 @@
 as yet unclassified
 setUp
-    super setUp.
+	super setUp.
 
-    MTSettingsStore default removeKey: #sessions ifAbsent: [].
+	MTSettingsStore default removeKey: #sessions ifAbsent: [].
 
-    view := MTUISettings new.
+	view := MTUISettings new.

@@ -1,14 +1,14 @@
 as yet unclassified
 testStoreCurrentSession
 
-    | api sessions |
+	| api sessions |
 
-    api := MTMastodonApi new.
-    api username: 'Alice'.
+	api := MTMastodonApi new.
+	api username: 'Alice'.
 
-    view storeCurrentSession: api.
+	view storeCurrentSession: api.
 
-    sessions := MTSettingsStore default at: #sessions.
+	sessions := MTSettingsStore default at: #sessions.
 
-    self assert: sessions size equals: 1.
-    self assert: sessions first == api.
+	self assert: sessions size equals: 1.
+	self assert: sessions first == api.
