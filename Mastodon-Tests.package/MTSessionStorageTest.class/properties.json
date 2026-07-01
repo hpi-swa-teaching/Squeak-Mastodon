@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"view" ],
+		"view",
+		"storedSettings" ],
 	"name" : "MTSessionStorageTest",
 	"pools" : [
 		 ],
