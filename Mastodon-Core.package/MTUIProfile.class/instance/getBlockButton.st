@@ -1,6 +1,6 @@
 render-buttons
 getBlockButton
 
-	^ MTUIMuteButton new
+	^ MTUIBlockButton new
 		arguments: {self account id};
 		active: self relationship blocking

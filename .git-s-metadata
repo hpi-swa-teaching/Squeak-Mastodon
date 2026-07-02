@@ -34,9 +34,145 @@ GSMetadata {
 			#version : 1,
 			#path : FSAbsolutePath [
 				'assets',
-				'reply.png'
+				'icons',
+				'block.png'
 			],
 			#encoding : Class [ #PNGReadWriter ]
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'camera.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'directMessage.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'follow.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'followActive.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'globe.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'home.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'newToot.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'reblog.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'reply.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'search.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'star.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'starActive.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'thread.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'trending.png'
+			],
+			#encoding : @16
+		},
+		GSImageMapper {
+			#version : 1,
+			#path : FSAbsolutePath [
+				'assets',
+				'icons',
+				'account.png'
+			],
+			#encoding : @16
 		}
 	],
 	#name : 'Squeak-Mastodon'
