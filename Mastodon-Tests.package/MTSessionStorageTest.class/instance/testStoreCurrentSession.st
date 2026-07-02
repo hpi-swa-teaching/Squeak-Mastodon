@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testStoreCurrentSession
 
 	| api sessions |

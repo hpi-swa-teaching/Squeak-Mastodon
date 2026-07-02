@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testFromJsonObject
 
 	| jsonObject jsonUrls url |

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 cornerRadius: anInteger
 
 	cornerRadius := anInteger.

@@ -1,4 +1,4 @@
-as yet unclassified
+image
 setNewImageFrom: anImageMorph
 
 	| image rounded |

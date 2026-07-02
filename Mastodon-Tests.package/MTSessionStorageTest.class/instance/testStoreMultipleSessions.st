@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testStoreMultipleSessions
 
 	| api1 api2 sessions |

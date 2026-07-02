@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 cornerRadius
 
 	cornerRadius ifNil: [^ 0].
