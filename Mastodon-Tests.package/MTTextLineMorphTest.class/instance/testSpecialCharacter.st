@@ -1,5 +1,6 @@
 tests
 testSpecialCharacter
+
 	| morph |
 	morph := MTTextLineMorph new.
 	self assert: (morph isSpecialCharacter: Character backspace).

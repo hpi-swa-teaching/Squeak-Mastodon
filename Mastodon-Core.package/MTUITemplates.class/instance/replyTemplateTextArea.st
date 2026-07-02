@@ -1,3 +1,4 @@
 accessing
 replyTemplateTextArea
-	^replyTemplateTextArea
+
+	^ replyTemplateTextArea

@@ -1,6 +1,7 @@
 initialization
 from: aJsonObject
-	^ (self new)
+
+	^ self new
 		id: (aJsonObject at: 'id');
 		username: (aJsonObject at: 'username');
 		acct: (aJsonObject at: 'acct');

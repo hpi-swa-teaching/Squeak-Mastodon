@@ -6,14 +6,14 @@ addNewReplyTemplateTitle
 	textareaWrapper := MTUIView setWrapper: textareaWrapper.
 	
 	replyTemplateTitle := MTUITextMorph new.
-	replyTemplateTitle 
+	replyTemplateTitle
 		textSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;
 		contents: '';
 		wrapFlag: true.
-		
+	
 	textareaWrapper addMorphBack: replyTemplateTitle.
 	
-	self addMorphBack: textareaWrapper.
+	self addMorphBack: textareaWrapper

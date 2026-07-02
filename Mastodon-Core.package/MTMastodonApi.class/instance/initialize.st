@@ -1,3 +1,4 @@
 initialization
 initialize
-	webClient := WebClient new.
+
+	webClient := WebClient new

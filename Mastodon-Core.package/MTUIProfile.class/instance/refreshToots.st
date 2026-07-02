@@ -1,3 +1,4 @@
 updating
 refreshToots
+
 	self tootList refreshToots

@@ -1,5 +1,6 @@
 icon
 cameraCursor
+
 	^ (Cursor extent: 16@16 fromArray: #(
 	2r0111111001111110
 	2r1111111001111111

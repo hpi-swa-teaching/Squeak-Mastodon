@@ -1,8 +1,7 @@
-tests
+useless tests
 testPassword
-	| API |
-	API := MTMastodonApi new.
-	
-	API password: 'testpassword'.
-	
-	self assert: (API password) equals: ('testpassword').
+
+	| api |
+	api := MTMastodonApi new.
+	api password: 'testpassword'.
+	self assert: api password equals: 'testpassword'

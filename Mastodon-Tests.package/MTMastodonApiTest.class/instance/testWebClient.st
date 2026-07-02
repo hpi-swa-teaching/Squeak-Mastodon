@@ -1,4 +1,4 @@
-tests
+useless tests
 testWebClient
 	| API client |
 	API := MTMastodonApi new.

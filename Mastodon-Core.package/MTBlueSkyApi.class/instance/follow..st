@@ -1,5 +1,6 @@
 endpoints
 follow: aUserDid
+
 	| url jsonString response currentDid json now |
 	currentDid := self getCurrentDid.
 	currentDid ifNil: [^ MTResult error: 'Could not determine current user DID'].

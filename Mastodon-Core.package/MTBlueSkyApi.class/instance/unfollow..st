@@ -1,5 +1,6 @@
 endpoints
 unfollow: aFollowUri
+
 	| url jsonString response parts repo rkey |
 	parts := aFollowUri findTokens: '/'.
 	parts size < 4 ifTrue: [^ MTResult error: 'Invalid follow URI'].

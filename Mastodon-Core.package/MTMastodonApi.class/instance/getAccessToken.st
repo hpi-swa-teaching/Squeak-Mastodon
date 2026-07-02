@@ -7,5 +7,4 @@ getAccessToken
 	parameters := self newAccessDictionary.
 	response := self postRequest: url withParameters: parameters.
 	json := self deserialize: response.
-	self token: (json at: 'access_token').
-
+	self token: (json at: 'access_token')

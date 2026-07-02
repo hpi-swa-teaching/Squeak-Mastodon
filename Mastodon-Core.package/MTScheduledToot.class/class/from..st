@@ -1,6 +1,7 @@
 initialization
 from: aJsonObject
-	^ (self new)
+
+	^ self new
 		id: (aJsonObject at: 'id');
 		scheduledAt: (aJsonObject at: 'scheduled_at');
 		params: (MTScheduledTootParams from: (aJsonObject at: 'params'));

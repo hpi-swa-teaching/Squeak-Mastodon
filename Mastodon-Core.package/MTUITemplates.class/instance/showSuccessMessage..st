@@ -3,11 +3,11 @@ showSuccessMessage: aMessage
 
 	| successfullyPerformedText |
 	successfullyPerformedText := TextMorph new.
-	successfullyPerformedText contents: aMessage;
-								color: Color blue.
+	successfullyPerformedText
+		contents: aMessage;
+		color: Color blue.
 	self addMorphBack: successfullyPerformedText.
 	
 	[
 		(Delay forSeconds: 3) wait.
-		successfullyPerformedText delete.
-	] fork
+		successfullyPerformedText delete] fork

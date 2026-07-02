@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"cameraCursor" : "NK 6/5/2016 19:39",
-		"loadNewTootWithMorph:" : "mm 7/10/2017 13:35",
-		"useMastodonCursor" : "mm 6/28/2017 17:00" },
+		"cameraCursor" : "lapl 7/2/2026 14:44",
+		"loadNewTootWithMorph:" : "lapl 7/2/2026 14:44",
+		"useMastodonCursor" : "lapl 7/2/2026 14:45" },
 	"instance" : {
-		"getContentAtClick" : "NK 6/5/2016 19:39",
-		"getContentAtPoint:" : "NK 6/4/2016 18:31",
-		"isPoint:withinBounds:" : "NK 6/4/2016 18:31" } }
+		"getContentAtClick" : "lapl 7/2/2026 15:39",
+		"getContentAtPoint:" : "lapl 7/2/2026 15:39",
+		"isPoint:withinBounds:" : "lapl 7/2/2026 15:39" } }

@@ -1,6 +1,7 @@
 layout-properties
-setTextField: aTextField withContent: aString 
-	aTextField 
+setTextField: aTextField withContent: aString
+
+	aTextField
 		textSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;

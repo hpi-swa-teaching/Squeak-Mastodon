@@ -1,8 +1,11 @@
 tests
 testFollowCreatesFollowRecord
+
 	| api client result |
 	client := MTBlueSkyMockWebClient new.
-	client respondToGet: 'https://bsky.social/xrpc/com.atproto.server.getSession' with: self sampleSessionJson.
+	client
+		respondToGet: 'https://bsky.social/xrpc/com.atproto.server.getSession'
+		with: self sampleSessionJson.
 	client postResponse: (MTBlueSkyMockResponse successWith: '{"uri":"at://did:plc:alice/app.bsky.graph.follow/new123","cid":"cid-follow"}').
 	api := self apiWithMockClient: client token: 'test-token'.
 	

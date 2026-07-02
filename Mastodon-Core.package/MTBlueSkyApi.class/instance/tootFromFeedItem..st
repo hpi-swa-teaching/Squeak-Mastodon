@@ -1,5 +1,6 @@
 helpers
 tootFromFeedItem: aFeedItem
+
 	| post record author viewer authorViewer toot likeUri followUri repostUri |
 	post := aFeedItem at: 'post' ifAbsent: [Dictionary new].
 	record := post at: 'record' ifAbsent: [Dictionary new].

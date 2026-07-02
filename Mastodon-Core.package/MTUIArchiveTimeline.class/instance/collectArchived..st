@@ -12,5 +12,5 @@ collectArchived: aBlock
 	archivedIds addAll: self archivedIds.
 	
 	toots := mentions select: [:mention | archivedIds includes: mention status id asString].
-	toots select: [:toot| toot notNil].
-	^ toots collect: [:mention | mention status].
+	toots select: [:toot | toot notNil].
+	^ toots collect: [:mention | mention status]

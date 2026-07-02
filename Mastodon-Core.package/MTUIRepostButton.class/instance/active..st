@@ -1,7 +1,7 @@
 accessing
-active: aBool 
+active: aBool
+
 	super active: aBool.
-	aBool 
-		ifTrue: [self labelGraphic: MTUIIcons retweetActive] 
+	aBool
+		ifTrue: [self labelGraphic: MTUIIcons retweetActive]
 		ifFalse: [self labelGraphic: MTUIIcons retweet]
-	

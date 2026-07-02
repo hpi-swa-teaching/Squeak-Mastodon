@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testPattern" : "lapl 6/2/2026 13:02",
+		"testPattern" : "lapl 7/2/2026 15:19",
 		"testShiftTabMovesBack" : "lapl 6/6/2026 00:39",
-		"testSpecialCharacter" : "lapl 6/2/2026 13:02",
+		"testSpecialCharacter" : "lapl 7/2/2026 15:19",
 		"testTabHandling" : "lapl 6/6/2026 00:37",
 		"testTabMovesForward" : "lapl 6/6/2026 00:38",
-		"testValidator" : "lapl 6/2/2026 13:03" } }
+		"testValidator" : "lapl 7/2/2026 15:19" } }

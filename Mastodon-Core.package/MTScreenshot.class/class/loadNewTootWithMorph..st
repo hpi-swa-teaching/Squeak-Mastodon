@@ -1,3 +1,4 @@
 actions
 loadNewTootWithMorph: aMorph
-	MTUIWindow instance loadNewTootViewWithMorph: aMorph.
+
+	MTUIWindow instance loadNewTootViewWithMorph: aMorph

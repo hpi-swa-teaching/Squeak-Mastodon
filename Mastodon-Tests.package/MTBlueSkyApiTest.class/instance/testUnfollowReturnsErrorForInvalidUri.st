@@ -1,5 +1,6 @@
 tests
 testUnfollowReturnsErrorForInvalidUri
+
 	| api client result |
 	client := MTBlueSkyMockWebClient new.
 	api := self apiWithMockClient: client token: 'test-token'.

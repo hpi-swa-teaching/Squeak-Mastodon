@@ -1,15 +1,13 @@
 {
 	"class" : {
 		"for:with:" : "lapl 6/16/2026 12:35",
-		"linkUrls:" : "mm 7/10/2017 11:08" },
+		"linkUrls:" : "lapl 7/2/2026 14:50" },
 	"instance" : {
 		"actionsMorph" : "lapl 6/16/2026 12:29",
-		"cancelButton" : "A^3 5/24/2026 15:55",
-		"cancelButton:" : "A^3 5/24/2026 15:55",
-		"editButton" : "A^3 5/24/2026 15:55",
-		"editButton:" : "A^3 5/24/2026 15:55",
-		"initialize" : "lapl 6/16/2026 12:32",
-		"scheduleButton" : "A^3 5/24/2026 15:55",
-		"scheduleButton:" : "A^3 5/24/2026 15:55",
-		"user" : "lapl 5/21/2026 16:06",
-		"user:" : "lapl 5/21/2026 16:06" } }
+		"cancelButton" : "lapl 7/2/2026 15:56",
+		"cancelButton:" : "lapl 7/2/2026 15:57",
+		"editButton" : "lapl 7/2/2026 15:57",
+		"editButton:" : "lapl 7/2/2026 15:57",
+		"initialize" : "lapl 7/2/2026 15:57",
+		"scheduleButton" : "lapl 7/2/2026 15:57",
+		"scheduleButton:" : "lapl 7/2/2026 15:57" } }

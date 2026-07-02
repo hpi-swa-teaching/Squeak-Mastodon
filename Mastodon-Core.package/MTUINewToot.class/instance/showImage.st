@@ -1,7 +1,6 @@
 image
 showImage
-	"| imageMorph |
-	imageMorph := self morphFromPath."
+
 	imageMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;

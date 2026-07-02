@@ -1,10 +1,9 @@
 render
 addViewMorph
-	scrollMorph scroller
-		addMorph: (viewMorph).
+
+	scrollMorph scroller addMorph: viewMorph.
 	
-	scrollMorph 
+	scrollMorph
 		resizeScrollBars;
 		resizeScroller;
 		setScrollDeltas
-	

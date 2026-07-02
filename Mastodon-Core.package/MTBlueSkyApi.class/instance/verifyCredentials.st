@@ -1,5 +1,6 @@
 authentification
 verifyCredentials
+
 	| url response json account handle |
 	url := self buildUrl: '/xrpc/com.atproto.server.getSession'.
 	response := self getRequest: url.

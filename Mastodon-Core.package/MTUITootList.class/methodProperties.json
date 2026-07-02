@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"with:" : "PG 5/28/2017 19:09" },
+		"with:" : "lapl 7/2/2026 14:50" },
 	"instance" : {
-		"addTootMorph:" : "mm 6/21/2017 16:56",
+		"addTootMorph:" : "lapl 7/2/2026 16:00",
 		"appendToots:" : "mm 6/27/2017 02:19",
 		"favoriteTootWithId:fromSender:" : "JH 6/1/2026 14:00",
 		"followUserForToot:fromSender:" : "AW 6/1/2026 13:54",
