@@ -16,5 +16,5 @@ editReplyTemplate
 	selectedTemplateName := menu getUserResponse.
 	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplateName.
 	self showSuccessMessage: 'Template deleted successfully'.
-	replyTemplateTextArea contents: selectedReplyTemplate content.
-	replyTemplateTitle contents: selectedReplyTemplate title
+	self replyTemplateTextArea contents: selectedReplyTemplate content.
+	self replyTemplateTitle contents: selectedReplyTemplate title

@@ -17,7 +17,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 		'redirect_uri'.
 		'urn:ietf:wg:oauth:2.0:oob'}.
 	
-	response := webClient
+	response := self webClient
 		httpPost: url
 		content: (WebUtils encodeUrlEncodedForm: parameters)
 		type: 'application/x-www-form-urlencoded'.

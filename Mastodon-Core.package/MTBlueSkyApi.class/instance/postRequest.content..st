@@ -2,7 +2,7 @@ helpers
 postRequest: url content: jsonString
 
 	| response |
-	response := webClient
+	response := self webClient
 		httpPost: url
 		content: jsonString
 		type: 'application/json'

@@ -11,8 +11,8 @@ initialize
 		addNewReplyTemplateTitle;
 		addMorphBack: (TextMorph new contents: '<p>Content</p>' asHtmlText);
 		addNewReplyTemplateTextArea;
-		replyTemplateContentSizeLabel: (TextMorph new contents: (replyTemplateTextArea contents size asString, '/', self maxTextSize) asHtmlText);
-		addMorphBack: replyTemplateContentSizeLabel;
+		replyTemplateContentSizeLabel: (TextMorph new contents: (self replyTemplateTextArea contents size asString, '/', self maxTextSize) asHtmlText);
+		addMorphBack: self replyTemplateContentSizeLabel;
 		addNewReplyTemplateButton;
 		addEditReplyTemplateButton;
 		addDeleteReplyTemplateButton

@@ -2,7 +2,7 @@ helpers
 patchRequest: url withParameters: parameters
 
 	| response |
-	response := webClient
+	response := self webClient
 		httpPost: url
 		content: (WebUtils encodeUrlEncodedForm: parameters)
 		type: 'application/x-www-form-urlencoded'
@@ -10,4 +10,4 @@ patchRequest: url withParameters: parameters
 			req
 				addHeader: 'Authorization' value: 'Bearer ', self token;
 				method: 'PATCH'].
-	response isSuccess ifTrue: [^ response content utf8ToSqueak]
+	response isSuccess ifTrue: [^ response content]

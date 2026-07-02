@@ -7,36 +7,36 @@ addRequestSection
 	requestWrapper := Morph new borderWidth: 1.
 	requestWrapper := MTUIView setMorph: requestWrapper.
 	
-	providerTextField := UiLineEdit new.
-	providerTextField theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString.
-	providerTextField helpText: 'Provider (mastodon or bluesky)'.
-	requestWrapper addMorphBack: providerTextField.
+	self providerTextField: (UiLineEdit new
+		theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString;
+		helpText: 'Provider (mastodon or bluesky)';
+		yourself).
+	requestWrapper addMorphBack: self providerTextField.
 	
-	providerButton := UiPushButton new.
-	providerButton text: 'Apply Provider'.
-	self connect: providerButton signal: #clicked: toSelector: #applyProviderSelection.
-	requestWrapper addMorphBack: providerButton.
+	self providerButton: (UiPushButton new text: 'Apply Provider').
+	self connect: self providerButton signal: #clicked: toSelector: #applyProviderSelection.
+	requestWrapper addMorphBack: self providerButton.
 	
 	lineEditWidth := 500.
 	lineEditHeight := 36.
 	
-	urlTextField := MTLineEdit new.
-	urlTextField
+	self urlTextField: (MTLineEdit new
 		hResizing: #rigid;
 		width: lineEditWidth;
-		height: lineEditHeight.
-	urlTextField theText: 'https://'.
-	urlTextField helpText: 'Mastodon server URL'.
-	requestWrapper addMorphBack: urlTextField.
+		height: lineEditHeight;
+		theText: 'https://';
+		helpText: 'Mastodon server URL';
+		yourself).
+	requestWrapper addMorphBack: self urlTextField.
 	
-	tokenTextField := MTLineEdit new.
-	tokenTextField
+	self tokenTextField: (MTLineEdit new
 		hResizing: #rigid;
 		width: lineEditWidth;
-		height: lineEditHeight.
-	tokenTextField theText: ''.
-	tokenTextField helpText: 'OAuth code from authorize page'.
-	requestWrapper addMorphBack: tokenTextField.
+		height: lineEditHeight;
+		theText: '';
+		helpText: 'OAuth code from authorize page';
+		yourself).
+	requestWrapper addMorphBack: self tokenTextField.
 	
 	requestButton := UiPushButton new.
 	requestButton text: 'Login / Get Link'.
@@ -48,9 +48,9 @@ addRequestSection
 	self connect: logoutButton signal: #clicked: toSelector: #logout.
 	requestWrapper addMorphBack: logoutButton.
 	
-	urlTextField nextField: tokenTextField.
-	tokenTextField nextField: urlTextField.
+	self urlTextField nextField: self tokenTextField.
+	self tokenTextField nextField: self urlTextField.
 	
 	self addMorphBack: requestWrapper.
 	self addResultSection.
-	resultTextLabel contents: ' '
+	self resultTextLabel contents: ' '

@@ -8,7 +8,7 @@ uploadMediaFrom: aForm
 	"content type multipart needs an unique boundary to seperate the parts"
 	file := self encodeForm: aForm.
 	
-	response := webClient
+	response := self webClient
 		httpPost: url
 		content: (self encodeMultipartForm: file boundary: boundary)
 		type: 'multipart/form-data; boundary=', boundary

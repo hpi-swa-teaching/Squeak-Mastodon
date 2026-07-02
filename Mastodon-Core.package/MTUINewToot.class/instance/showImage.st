@@ -1,7 +1,7 @@
 image
 showImage
 
-	imageMorph
+	self imageMorph
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -11,5 +11,5 @@ showImage
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		setNewImageFrom: (imageMorph form scaledToSize: 300).
-	self addMorphBack: imageMorph
+		setNewImageFrom: (self imageMorph form scaledToSize: 300).
+	self addMorphBack: self imageMorph

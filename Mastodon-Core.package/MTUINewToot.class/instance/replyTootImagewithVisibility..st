@@ -2,11 +2,11 @@ toot
 replyTootImagewithVisibility: aVisibility
 
 	| imageID json |
-	json := mastodonApi uploadMediaFrom: imageMorph imageForm.
-	imageID := (mastodonApi deserialize: json) at: 'id'.
+	json := self mastodonApi uploadMediaFrom: self imageMorph imageForm.
+	imageID := (self mastodonApi deserialize: json) at: 'id'.
 	
-	mastodonApi
-		replyTo: replyTo id
-		text: tootTextArea contents asString
+	self mastodonApi
+		replyTo: self replyTo id
+		text: self tootTextArea contents asString
 		tootImageWithMedia: imageID
 		withVisibility: aVisibility

@@ -6,7 +6,7 @@ loadTootsOf: aMTUser isSelf: aBoolean
 	
 	aBoolean ifTrue: [self loadScheduled].
 	
-	toots := mastodonApi getStatuses: aMTUser id.
+	toots := self mastodonApi getStatuses: aMTUser id.
 	
 	toots isError ifTrue: [
 		self inform: 'An error occurred'.

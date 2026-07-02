@@ -1,8 +1,7 @@
 render
 contentMorph
 
-	content := Morph new.
-	content
+	self content: (Morph new
 		layoutPolicy: TableLayout new;
 		wrapDirection: #topToBottom;
 		hResizing: #spaceFill;
@@ -12,7 +11,8 @@ contentMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self textMorph.
-	content addMorphBack: self actionsMorph.
+		addMorphBack: self textMorph;
+		yourself).
+	self content addMorphBack: self actionsMorph.
 	
-	^ content
+	^ self content

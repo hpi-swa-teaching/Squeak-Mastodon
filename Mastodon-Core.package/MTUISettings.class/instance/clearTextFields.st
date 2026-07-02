@@ -1,6 +1,9 @@
 render
 clearTextFields
 
-	tokenTextField theText: ''.
-	urlTextField theText: ''.
-	providerTextField ifNotNil: [providerTextField theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString]
+	self tokenTextField theText: ''.
+	self urlTextField theText: ''.
+	self providerTextField ifNotNil: [
+		self providerTextField theText: (MTSettingsStore default
+			at: #provider
+			ifAbsent: [#mastodon]) asString]

@@ -7,4 +7,4 @@ loadSearchView
 	searchView := MTUISearch new.
 	
 	searchView mastodonApi: self mastodonApi.
-	self loadView: (MTUISearch with: mastodonApi) as: #searchView activate: #searchButton
+	self loadView: (MTUISearch with: self mastodonApi) as: #searchView activate: #searchButton

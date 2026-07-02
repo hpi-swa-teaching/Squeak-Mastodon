@@ -1,4 +1,4 @@
 accessing
 buildUrl: anObject
 
-	url := anObject
+	self url: anObject

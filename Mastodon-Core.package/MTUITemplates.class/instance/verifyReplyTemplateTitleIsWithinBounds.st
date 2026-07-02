@@ -2,7 +2,7 @@ add-template
 verifyReplyTemplateTitleIsWithinBounds
 
 	| templateTitleText |
-	templateTitleText := replyTemplateTitle contents asString.
+	templateTitleText := self replyTemplateTitle contents asString.
 	templateTitleText size == 0 ifTrue: [
 		self inform: 'The template title is not allowed to be empty.'.
 		^ false].

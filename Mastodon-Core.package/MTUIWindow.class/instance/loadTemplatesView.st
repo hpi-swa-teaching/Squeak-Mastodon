@@ -4,4 +4,4 @@ loadTemplatesView
 	self refreshProvider.
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	self loadView: (MTUITemplates with: mastodonApi) as: #templatesView activate: #templatesButton
+	self loadView: (MTUITemplates with: self mastodonApi) as: #templatesView activate: #templatesButton

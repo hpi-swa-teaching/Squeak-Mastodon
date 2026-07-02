@@ -8,4 +8,4 @@ logout
 	self mastodonApi reset.
 	MTAccountStore resetDefaultAccount.
 	
-	resultTextLabel contents: '<i>Successfully logged out</i>' asHtmlText
+	self resultTextLabel contents: '<i>Successfully logged out</i>' asHtmlText

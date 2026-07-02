@@ -4,15 +4,17 @@
 	"instance" : {
 		"account" : "lapl 7/2/2026 15:45",
 		"account:" : "lapl 7/2/2026 15:45",
-		"actionsMorph" : "lapl 7/2/2026 15:45",
+		"actions" : "lapl 7/2/2026 20:31",
+		"actions:" : "lapl 7/2/2026 20:31",
+		"actionsMorph" : "lapl 7/2/2026 20:20",
 		"avatar" : "lapl 7/2/2026 15:45",
 		"avatar:" : "lapl 7/2/2026 15:45",
-		"avatarMorph" : "lapl 7/2/2026 15:45",
+		"avatarMorph" : "lapl 7/2/2026 20:20",
 		"blockButton" : "lapl 7/2/2026 15:45",
 		"blockButton:" : "lapl 7/2/2026 15:45",
 		"content" : "lapl 7/2/2026 15:45",
 		"content:" : "lapl 7/2/2026 15:45",
-		"contentMorph" : "lapl 7/2/2026 19:06",
+		"contentMorph" : "lapl 7/2/2026 20:21",
 		"directTootButton" : "lapl 7/2/2026 15:45",
 		"directTootButton:" : "lapl 7/2/2026 15:45",
 		"followButton" : "lapl 7/2/2026 15:45",
@@ -26,4 +28,4 @@
 		"render" : "lapl 7/2/2026 15:45",
 		"text" : "lapl 7/2/2026 15:45",
 		"text:" : "lapl 7/2/2026 15:45",
-		"textMorph" : "lapl 7/2/2026 15:45" } }
+		"textMorph" : "lapl 7/2/2026 20:22" } }

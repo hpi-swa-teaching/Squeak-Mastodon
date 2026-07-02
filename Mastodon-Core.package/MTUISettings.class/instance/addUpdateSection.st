@@ -4,22 +4,19 @@ addUpdateSection
 	| updateButton requestWrapper avatarImageButton headerImageButton |
 	self addMorphBack: (TextMorph new contents: '<b>Edit profile</b>' asHtmlText).
 	
-	requestWrapper := RectangleMorph new borderWidth: 1.
-	requestWrapper := MTUIView setMorph: requestWrapper.
+	requestWrapper := MTUIView setMorph: (RectangleMorph new borderWidth: 1).
 	
-	usernameUpdateTextField := MTUITextMorph new.
-	usernameUpdateTextField := MTUIView setTextField: usernameUpdateTextField withContent: 'New Username'.
-	requestWrapper addMorphBack: usernameUpdateTextField.
+	self usernameUpdateTextField: (MTUIView setTextField: MTUITextMorph new withContent: 'New Username').
+	requestWrapper addMorphBack: self usernameUpdateTextField.
 	
-	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/', self maxUsernameSize) asHtmlText).
-	requestWrapper addMorphBack: usernameSizeLabel.
+	self usernameSizeLabel: (TextMorph new contents: (self usernameUpdateTextField contents size asString, '/', self maxUsernameSize) asHtmlText).
+	requestWrapper addMorphBack: self usernameSizeLabel.
 	
-	descriptionTextField := MTUITextMorph new.
-	descriptionTextField := MTUIView setTextField: descriptionTextField withContent: 'New Description'.
-	requestWrapper addMorphBack: descriptionTextField.
+	self descriptionTextField: (MTUIView setTextField: MTUITextMorph new withContent: 'New Description').
+	requestWrapper addMorphBack: self descriptionTextField.
 	
-	self descriptionSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/', self maxProfileDescriptionSize) asHtmlText).
-	requestWrapper addMorphBack: descriptionSizeLabel.
+	self descriptionSizeLabel: (TextMorph new contents: (self usernameUpdateTextField contents size asString, '/', self maxProfileDescriptionSize) asHtmlText).
+	requestWrapper addMorphBack: self descriptionSizeLabel.
 	
 	avatarImageButton := UiPushButton new.
 	avatarImageButton text: 'select Avatar Image'.

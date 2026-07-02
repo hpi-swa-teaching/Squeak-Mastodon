@@ -8,9 +8,9 @@ addReplyTemplate
 	
 	self saveReplyTemplateLocally ifFalse: [^ false].
 	
-	replyTemplateTitle contents: ''.
-	replyTemplateTextArea contents: ''.
-	replyTemplateContentSizeLabel contents: '0/', self maxTextSize.
+	self replyTemplateTitle contents: ''.
+	self replyTemplateTextArea contents: ''.
+	self replyTemplateContentSizeLabel contents: '0/', self maxTextSize.
 	
 	self showSuccessMessage: 'Template saved successfully'.
 	

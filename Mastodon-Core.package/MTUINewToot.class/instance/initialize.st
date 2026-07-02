@@ -14,9 +14,9 @@ initialize
 			vResizing: #shrinkWrap;
 			color: Color transparent;
 			yourself);
-		addMorphBack: messageArea;
-		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/', self maxTextSize) asHtmlText);
-		addMorph: tootSizeLabel;
+		addMorphBack: self messageArea;
+		tootSizeLabel: (TextMorph new contents: (self tootTextArea contents size asString, '/', self maxTextSize) asHtmlText);
+		addMorph: self tootSizeLabel;
 		reloadMentionTimeline: false;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
 		yourself

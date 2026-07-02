@@ -1,4 +1,4 @@
 initialization
 initialize
 
-	webClient := WebClient new
+	self webClient: WebClient new

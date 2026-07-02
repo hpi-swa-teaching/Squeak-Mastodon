@@ -2,6 +2,4 @@ initialization
 initialize
 
 	super initialize.
-	buttons := OrderedCollection new.
-	
-	^ self
+	self buttons: OrderedCollection new

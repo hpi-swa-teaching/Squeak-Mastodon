@@ -9,4 +9,4 @@ addButton: anId for: anAction on: aTarget with: anImage
 		labelGraphic: anImage;
 		actionSelector: anAction.
 	
-	buttons add: button
+	self buttons add: button

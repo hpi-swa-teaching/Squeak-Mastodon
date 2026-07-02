@@ -1,8 +1,7 @@
 render
 actionsMorph
 
-	actions := Morph new.
-	actions
+	self actions: (Morph new
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -14,6 +13,6 @@ actionsMorph
 		color: Color transparent;
 		addMorphBack: self followButton render;
 		addMorphBack: self blockButton render;
-		addMorphBack: self directTootButton render.
-	
-	^ actions
+		addMorphBack: self directTootButton render;
+		yourself).
+	^ self actions

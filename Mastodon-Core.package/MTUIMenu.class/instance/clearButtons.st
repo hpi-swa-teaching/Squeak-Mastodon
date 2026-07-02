@@ -1,5 +1,5 @@
 morphic
 clearButtons
 
-	buttons do: [:button | button delete].
-	buttons := OrderedCollection new
+	self buttons do: [:button | button delete].
+	self buttons: OrderedCollection new
