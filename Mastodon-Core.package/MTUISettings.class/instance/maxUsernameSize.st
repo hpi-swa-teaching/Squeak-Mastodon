@@ -1,0 +1,4 @@
+constants
+maxUsernameSize
+
+	^ 30

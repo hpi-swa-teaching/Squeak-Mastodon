@@ -10,7 +10,7 @@ addReplyTemplate
 	
 	replyTemplateTitle contents: ''.
 	replyTemplateTextArea contents: ''.
-	replyTemplateContentSizeLabel contents: '0/500'.
+	replyTemplateContentSizeLabel contents: '0/', self maxTextSize.
 	
 	self showSuccessMessage: 'Template saved successfully'.
 	

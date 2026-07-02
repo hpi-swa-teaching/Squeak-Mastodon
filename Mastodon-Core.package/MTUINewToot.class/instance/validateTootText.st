@@ -3,5 +3,5 @@ validateTootText
 
 	| text |
 	text := tootTextArea contents asString.
-	text size > 500 ifTrue: [^ MTResult error: 'Not more than 500 characters allowed.'].
+	text size > self maxTextSize ifTrue: [^ MTResult error: 'Not more than ', self maxTextSize, ' characters allowed.'].
 	^ MTResult value: text

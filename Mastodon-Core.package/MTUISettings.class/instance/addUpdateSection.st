@@ -11,14 +11,14 @@ addUpdateSection
 	usernameUpdateTextField := MTUIView setTextField: usernameUpdateTextField withContent: 'New Username'.
 	requestWrapper addMorphBack: usernameUpdateTextField.
 	
-	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/30') asHtmlText).
+	self usernameSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/', self maxUsernameSize) asHtmlText).
 	requestWrapper addMorphBack: usernameSizeLabel.
 	
 	descriptionTextField := MTUITextMorph new.
 	descriptionTextField := MTUIView setTextField: descriptionTextField withContent: 'New Description'.
 	requestWrapper addMorphBack: descriptionTextField.
 	
-	self descriptionSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/160') asHtmlText).
+	self descriptionSizeLabel: (TextMorph new contents: (usernameUpdateTextField contents size asString, '/', self maxProfileDescriptionSize) asHtmlText).
 	requestWrapper addMorphBack: descriptionSizeLabel.
 	
 	avatarImageButton := UiPushButton new.

@@ -1,7 +1,7 @@
 render
 addRequestSection
 
-	| requestButton logoutButton requestWrapper |
+	| requestButton logoutButton requestWrapper lineEditWidth lineEditHeight |
 	self addMorphBack: (TextMorph new contents: 'Enter Mastodon instance. Leave code empty to get authorize link.' asHtmlText).
 	
 	requestWrapper := Morph new borderWidth: 1.
@@ -17,11 +17,14 @@ addRequestSection
 	self connect: providerButton signal: #clicked: toSelector: #applyProviderSelection.
 	requestWrapper addMorphBack: providerButton.
 	
+	lineEditWidth := 500.
+	lineEditHeight := 36.
+	
 	urlTextField := MTLineEdit new.
 	urlTextField
 		hResizing: #rigid;
-		width: 500;
-		height: 36.
+		width: lineEditWidth;
+		height: lineEditHeight.
 	urlTextField theText: 'https://'.
 	urlTextField helpText: 'Mastodon server URL'.
 	requestWrapper addMorphBack: urlTextField.
@@ -29,8 +32,8 @@ addRequestSection
 	tokenTextField := MTLineEdit new.
 	tokenTextField
 		hResizing: #rigid;
-		width: 500;
-		height: 36.
+		width: lineEditWidth;
+		height: lineEditHeight.
 	tokenTextField theText: ''.
 	tokenTextField helpText: 'OAuth code from authorize page'.
 	requestWrapper addMorphBack: tokenTextField.

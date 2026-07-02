@@ -13,7 +13,6 @@ contentMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: self textMorph.
-	"listDirection: #topToBottom;"
 	content addMorphBack: self actionsMorph.
 	
 	^ content

@@ -1,0 +1,4 @@
+constants
+maxTitleSize
+
+	^ 20

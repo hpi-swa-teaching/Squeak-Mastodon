@@ -5,13 +5,13 @@ updateProfile
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
 	text := usernameUpdateTextField contents asString.
-	text size > 30 ifTrue: [
-		self inform: 'Not more than 30 characters username allowed.'.
+	text size > self maxUsernameSize ifTrue: [
+		self inform: 'Not more than ', self maxUsernameSize, ' characters username allowed.'.
 		^ false].
 	
 	text := descriptionTextField contents asString.
-	text size > 160 ifTrue: [
-		self inform: 'Not more than 160 characters description allowed.'.
+	text size > self maxProfileDescriptionSize ifTrue: [
+		self inform: 'Not more than ', self maxProfileDescriptionSize, ' characters description allowed.'.
 		^ false].
 	
 	dict := self uploadPictures.

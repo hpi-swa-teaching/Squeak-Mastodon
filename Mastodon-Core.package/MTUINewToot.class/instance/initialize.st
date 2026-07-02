@@ -15,7 +15,7 @@ initialize
 			color: Color transparent;
 			yourself);
 		addMorphBack: messageArea;
-		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
+		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/', self maxTextSize) asHtmlText);
 		addMorph: tootSizeLabel;
 		reloadMentionTimeline: false;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText);
