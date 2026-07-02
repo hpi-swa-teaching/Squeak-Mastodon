@@ -1,5 +1,6 @@
 actions
 openProfileForAccount: anAccount
+
 	| result |
 	result := self mastodonApi getProfileFor: anAccount acct.
 	result isError ifTrue: [

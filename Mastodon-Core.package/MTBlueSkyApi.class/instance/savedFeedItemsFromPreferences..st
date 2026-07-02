@@ -1,5 +1,6 @@
 helpers
 savedFeedItemsFromPreferences: preferences
+
 	| v2 old items |
 	items := OrderedCollection new.
 	v2 := preferences
@@ -20,8 +21,10 @@ savedFeedItemsFromPreferences: preferences
 				at: 'pinned' put: true;
 				yourself)].
 		(old at: 'saved' ifAbsent: [#()]) do: [:uri |
-			(items detect: [:item | (item at: 'value' ifAbsent: ['']) = uri] ifNone: [nil])
-				ifNil: [items add: (Dictionary new
+			(items
+				detect: [:item | (item at: 'value' ifAbsent: ['']) = uri]
+				ifNone: [nil]) ifNil: [
+				items add: (Dictionary new
 					at: 'id' put: uri;
 					at: 'type' put: 'feed';
 					at: 'value' put: uri;

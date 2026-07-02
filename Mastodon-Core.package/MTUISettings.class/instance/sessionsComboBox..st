@@ -1,4 +1,4 @@
 render
 sessionsComboBox: anUiComboBox
 
-	sessionsComboBox := anUiComboBox.
+	sessionsComboBox := anUiComboBox

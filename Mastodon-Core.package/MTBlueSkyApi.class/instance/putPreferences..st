@@ -1,5 +1,6 @@
 endpoints
 putPreferences: aCollection
+
 	| url body response |
 	url := self buildUrl: '/xrpc/app.bsky.actor.putPreferences'.
 	body := '{"preferences":', (self jsonStringFor: aCollection), '}'.

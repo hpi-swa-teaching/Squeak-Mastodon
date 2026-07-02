@@ -1,5 +1,6 @@
 updating
 loadToots
+
 	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
 		self mastodonApi token isNil ifTrue: [^ self loadPublicToots].
 		^ super loadToots].

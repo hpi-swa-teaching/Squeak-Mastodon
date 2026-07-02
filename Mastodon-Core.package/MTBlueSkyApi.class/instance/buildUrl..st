@@ -1,5 +1,6 @@
 helpers
 buildUrl: aString
+
 	| host |
 	host := self baseURL ifNil: [''].
 	host := host copyReplaceAll: 'https://' with: ''.

@@ -1,5 +1,6 @@
 helpers
 getTimelineWithCursor: aCursor
+
 	| result |
 	result := self getTimelinePageWithCursor: aCursor.
 	result isError ifTrue: [^ result].

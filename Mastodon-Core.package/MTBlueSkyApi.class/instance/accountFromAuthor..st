@@ -1,5 +1,6 @@
 helpers
 accountFromAuthor: anAuthor
+
 	| account displayName handle createdAt |
 	handle := anAuthor at: 'handle' ifAbsent: [''].
 	displayName := anAuthor at: 'displayName' ifAbsent: [handle].

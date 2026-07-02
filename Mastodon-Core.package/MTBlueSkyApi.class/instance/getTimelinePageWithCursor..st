@@ -1,5 +1,6 @@
 helpers
 getTimelinePageWithCursor: aCursor
+
 	| url response json feed toots |
 	url := self buildUrl: '/xrpc/app.bsky.feed.getTimeline?limit=30'.
 	aCursor ifNotNil: [url := url, '&cursor=', (self urlEncode: aCursor)].
@@ -10,7 +11,6 @@ getTimelinePageWithCursor: aCursor
 		json := self deserialize: response.
 		feed := json at: 'feed' ifAbsent: [#()].
 		toots := feed collect: [:item | self tootFromFeedItem: item].
-		^ MTResult value: (MTBlueSkyFeedPage toots: toots cursor: (json at: 'cursor' ifAbsent: [nil]))
-	] on: Error do: [:ex |
-		^ MTResult error: 'BlueSky timeline processing failed'
-	].
+		^ MTResult value: (MTBlueSkyFeedPage toots: toots cursor: (json at: 'cursor' ifAbsent: [nil]))]
+		on: Error
+		do: [:ex | ^ MTResult error: 'BlueSky timeline processing failed']

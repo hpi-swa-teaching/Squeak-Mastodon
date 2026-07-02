@@ -1,5 +1,6 @@
 helpers
 savedFeedUrisFromPreferences: preferences
+
 	| v2 old uris |
 	uris := OrderedCollection new.
 	v2 := preferences
@@ -7,8 +8,10 @@ savedFeedUrisFromPreferences: preferences
 		ifNone: [nil].
 	v2 ifNotNil: [
 		(v2 at: 'items' ifAbsent: [#()]) do: [:item |
-			((item at: 'type' ifAbsent: ['']) = 'feed') ifTrue: [
-				uris add: (item at: 'value' ifAbsent: [''])]].
+			(item at: 'type' ifAbsent: ['']) = 'feed' ifTrue: [
+				uris add: (item
+					at: 'value'
+					ifAbsent: [''])]].
 		^ uris].
 	old := preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPref']

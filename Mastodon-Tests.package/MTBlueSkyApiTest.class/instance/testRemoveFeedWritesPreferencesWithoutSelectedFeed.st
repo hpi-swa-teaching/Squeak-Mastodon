@@ -1,8 +1,11 @@
 tests
 testRemoveFeedWritesPreferencesWithoutSelectedFeed
+
 	| api client feed result |
 	client := MTBlueSkyMockWebClient new.
-	client respondToGet: 'https://bsky.social/xrpc/app.bsky.actor.getPreferences' with: self samplePreferencesJson.
+	client
+		respondToGet: 'https://bsky.social/xrpc/app.bsky.actor.getPreferences'
+		with: self samplePreferencesJson.
 	client postResponse: (MTBlueSkyMockResponse successWith: '{}').
 	api := self apiWithMockClient: client token: 'feed-token'.
 	feed := MTBlueSkyFeed new

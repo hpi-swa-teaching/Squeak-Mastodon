@@ -1,5 +1,6 @@
 helpers
 savedFeedItemFor: aFeed
+
 	^ Dictionary new
 		at: 'id' put: aFeed uri;
 		at: 'type' put: 'feed';

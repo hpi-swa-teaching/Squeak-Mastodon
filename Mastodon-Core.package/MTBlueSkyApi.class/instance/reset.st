@@ -5,4 +5,4 @@ reset
 		token: nil;
 		baseURL: nil;
 		did: nil;
-		username: nil.
+		username: nil

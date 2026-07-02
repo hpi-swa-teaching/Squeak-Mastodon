@@ -1,21 +1,18 @@
 views
 loadProfileView
-	| currentUser|
+
+	| currentUser |
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	(self mastodonApi isKindOf: MTBlueSkyApi) 
-	ifTrue: [
-		currentUser := self mastodonApi getProfileFor: ((self mastodonApi verifyCredentials) value) acct.
-	]
-	ifFalse:[
-		currentUser := mastodonApi getCurrentUser.
+	(self mastodonApi isKindOf: MTBlueSkyApi)
+		ifTrue: [currentUser := self mastodonApi getProfileFor: self mastodonApi verifyCredentials value acct]
+		ifFalse: [
+			currentUser := mastodonApi getCurrentUser.
+			
+			].
 	
-	].
-	
-	currentUser isError 
-	ifTrue: [
+	currentUser isError ifTrue: [
 		self inform: 'Could not load profile'.
-		^ self
-	].
-	self loadProfileViewOf: currentUser value.
+		^ self].
+	self loadProfileViewOf: currentUser value

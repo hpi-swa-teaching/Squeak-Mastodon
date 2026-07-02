@@ -1,3 +1,4 @@
 reset
 reset
-	default := self new.
+
+	default := self new

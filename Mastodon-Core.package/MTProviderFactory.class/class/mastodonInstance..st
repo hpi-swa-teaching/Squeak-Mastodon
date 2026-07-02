@@ -1,4 +1,4 @@
 accessing
 mastodonInstance: aMTMastodonApiInstance
 
-	mastodonInstance := aMTMastodonApiInstance.
+	mastodonInstance := aMTMastodonApiInstance

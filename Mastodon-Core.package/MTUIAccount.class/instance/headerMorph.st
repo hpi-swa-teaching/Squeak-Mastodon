@@ -1,5 +1,6 @@
 render
 headerMorph
+
 	header ifNotNil: [^ header].
 	profileLink := MTUIProfileLinkMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self account displayName, '</b> ', '<i><a href="mastodonUser:', self account id, '">@', self account acct, '</a></i>').
 	profileLink

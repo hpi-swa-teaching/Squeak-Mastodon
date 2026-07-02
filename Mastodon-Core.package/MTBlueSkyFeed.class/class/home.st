@@ -1,5 +1,6 @@
 instance creation
 home
+
 	^ self new
 		displayName: 'Home';
 		uri: '';

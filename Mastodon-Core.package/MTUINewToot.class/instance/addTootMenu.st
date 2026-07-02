@@ -1,5 +1,6 @@
 render
 addTootMenu
+
 	| menu |
 	menu := DialogWindow new.
 	menu title: 'Visibility'.

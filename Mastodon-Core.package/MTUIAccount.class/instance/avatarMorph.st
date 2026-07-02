@@ -1,5 +1,6 @@
 render
 avatarMorph
+
 	image ifNil: [
 		image := MTMedia imageMorphFrom: self account avatar.
 		image ifNotNil: [

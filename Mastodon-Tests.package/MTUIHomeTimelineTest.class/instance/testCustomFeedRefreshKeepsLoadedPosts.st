@@ -1,5 +1,6 @@
 tests
 testCustomFeedRefreshKeepsLoadedPosts
+
 	| client api timeline feed toot |
 	client := MTBlueSkyMockWebClient new.
 	api := self apiWithMockClient: client token: 'feed-token'.

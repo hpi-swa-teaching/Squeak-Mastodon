@@ -1,4 +1,5 @@
 initialization
 initialize
+
 	super initialize.
-	tootMorphs := OrderedCollection new.
+	tootMorphs := OrderedCollection new

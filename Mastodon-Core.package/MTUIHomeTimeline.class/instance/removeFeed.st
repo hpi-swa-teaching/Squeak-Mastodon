@@ -1,5 +1,6 @@
 actions
 removeFeed
+
 	| result |
 	selectedFeed isTimeline ifTrue: [^ self].
 	result := self mastodonApi removeFeed: selectedFeed.

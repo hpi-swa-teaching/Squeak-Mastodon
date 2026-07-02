@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "JH 7/2/2026 01:22",
-		"tearDown" : "JH 7/2/2026 01:24",
-		"testDeleteCurrentSession" : "RZ 6/28/2026 22:34",
-		"testStoreCurrentSession" : "RZ 6/28/2026 21:57",
-		"testStoreMultipleSessions" : "RZ 6/28/2026 21:59",
-		"testSwitchToSelectedSession" : "RZ 6/28/2026 22:36" } }
+		"setUp" : "Pagpeter 7/2/2026 15:35",
+		"tearDown" : "Pagpeter 7/2/2026 15:35",
+		"testDeleteCurrentSession" : "Pagpeter 7/2/2026 15:35",
+		"testStoreCurrentSession" : "Pagpeter 7/2/2026 15:35",
+		"testStoreMultipleSessions" : "Pagpeter 7/2/2026 15:35",
+		"testSwitchToSelectedSession" : "Pagpeter 7/2/2026 15:35" } }

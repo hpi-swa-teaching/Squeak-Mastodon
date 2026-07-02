@@ -1,5 +1,6 @@
 endpoints
 getPublicTimeline
+
 	| url response |
 	url := self buildUrl: '/api/v1/timelines/public'.
 	response := self getRequest: url.

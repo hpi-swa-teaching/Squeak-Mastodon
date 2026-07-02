@@ -1,8 +1,11 @@
 tests
 testSearchFeedsReturnsFeeds
+
 	| api client result feeds |
 	client := MTBlueSkyMockWebClient new.
-	client respondToGet: 'https://bsky.social/xrpc/app.bsky.unspecced.getPopularFeedGenerators?limit=10&query=science%20news' with: self sampleFeedSearchJson.
+	client
+		respondToGet: 'https://bsky.social/xrpc/app.bsky.unspecced.getPopularFeedGenerators?limit=10&query=science%20news'
+		with: self sampleFeedSearchJson.
 	api := self apiWithMockClient: client token: 'feed-token'.
 	
 	result := api searchFeeds: 'science news'.
@@ -11,4 +14,6 @@ testSearchFeedsReturnsFeeds
 	feeds := result value.
 	self assert: feeds size equals: 2.
 	self assert: feeds first displayName equals: 'Science'.
-	self assert: client lastGetUrl equals: 'https://bsky.social/xrpc/app.bsky.unspecced.getPopularFeedGenerators?limit=10&query=science%20news'
+	self
+		assert: client lastGetUrl
+		equals: 'https://bsky.social/xrpc/app.bsky.unspecced.getPopularFeedGenerators?limit=10&query=science%20news'

@@ -1,5 +1,6 @@
 endpoints
 toot: aText withImage: aForm
+
 	| url jsonString response currentDid json now blob |
 	currentDid := self getCurrentDid.
 	currentDid ifNil: [^ MTResult error: 'Could not determine current user DID'].

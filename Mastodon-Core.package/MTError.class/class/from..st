@@ -1,5 +1,6 @@
 initialization
-from: aJsonObject		
-	^ (self new)
+from: aJsonObject
+
+	^ self new
 		errors: (aJsonObject at: 'errors');
-		yourself 
+		yourself

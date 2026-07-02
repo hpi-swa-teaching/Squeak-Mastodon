@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"setMorph:" : "LS 7/30/2017 20:23",
-		"setTextField:withContent:" : "LS 7/30/2017 20:46",
-		"setWrapper:" : "mm 7/30/2017 20:00",
-		"with:" : "PG 5/28/2017 19:09" },
+		"setMorph:" : "Pagpeter 7/2/2026 15:35",
+		"setTextField:withContent:" : "Pagpeter 7/2/2026 15:35",
+		"setWrapper:" : "Pagpeter 7/2/2026 15:35",
+		"with:" : "Pagpeter 7/2/2026 15:35" },
 	"instance" : {
-		"initialize" : "mm 7/8/2017 19:35",
-		"mastodonApi" : "PG 5/28/2017 18:38",
-		"mastodonApi:" : "PG 5/28/2017 19:26",
-		"ownerChanged" : "NK 5/29/2016 23:06" } }
+		"initialize" : "Pagpeter 7/2/2026 15:35",
+		"mastodonApi" : "Pagpeter 7/2/2026 15:35",
+		"mastodonApi:" : "Pagpeter 7/2/2026 15:35",
+		"ownerChanged" : "Pagpeter 7/2/2026 15:35" } }

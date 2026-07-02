@@ -1,5 +1,6 @@
 endpoints
 search: aQuery
+
 	| url response json actors accounts |
 	url := self buildUrl: '/xrpc/app.bsky.actor.searchActors?q=', aQuery.
 	response := self getRequest: url.
@@ -8,4 +9,6 @@ search: aQuery
 		json := self deserialize: response.
 		actors := json at: 'actors' ifAbsent: [#()].
 		actors do: [:actor | accounts add: (self accountFromAuthor: actor)]].
-	^ MTResult value: (MTSearchResult new accounts: accounts; yourself)
+	^ MTResult value: (MTSearchResult new
+		accounts: accounts;
+		yourself)

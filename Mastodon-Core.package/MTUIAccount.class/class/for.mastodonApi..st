@@ -1,5 +1,6 @@
 initialization
 for: anAccount mastodonApi: anApi
+
 	| accountMorph |
 	accountMorph := self new.
 	accountMorph account: anAccount.

@@ -1,10 +1,10 @@
 render
 render
+
 	self accountMorph do: [:morph |
 		self removeMorph: morph.
 		morph delete].
-	self accounts do: [:account |
-		| card spacingMorph relationship |
+	self accounts do: [:account | | card spacingMorph relationship |
 		card := MTUIAccount for: account mastodonApi: self mastodonApi.
 		(self mastodonApi isKindOf: MTBlueSkyApi)
 			ifTrue: [
@@ -43,7 +43,9 @@ render
 					arguments: (Array with: account acct with: card directTootButton);
 					active: true].
 		spacingMorph := Morph new color: Color veryVeryLightGray.
-		spacingMorph height: 1; hResizing: #spaceFill.
+		spacingMorph
+			height: 1;
+			hResizing: #spaceFill.
 		self addMorphBack: card.
 		self addAccountMorph: card.
 		self addMorphBack: spacingMorph]

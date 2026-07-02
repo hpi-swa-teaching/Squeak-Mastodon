@@ -1,22 +1,12 @@
 helpers
 getPublicAppViewRequest: path
+
 	| response |
-	response := self retryNetworkRequest: [
-		| client |
-		client := (webClient isKindOf: WebClient)
-			ifTrue: [WebClient new]
-			ifFalse: [webClient].
+	response := self retryNetworkRequest: [ | client |
+		client := (webClient isKindOf: WebClient) ifTrue: [WebClient new] ifFalse: [webClient].
 		[
-			client
-				httpGet: 'https://public.api.bsky.app', path
-				do: [:req |
-					req addHeader: 'Accept-Encoding' value: 'identity'.
-					req addHeader: 'Connection' value: 'close']
-		] ensure: [
-			(client isKindOf: WebClient) ifTrue: [client close]
-		]
-	].
+			client httpGet: 'https://public.api.bsky.app', path do: [:req |
+				req addHeader: 'Accept-Encoding' value: 'identity'.
+				req addHeader: 'Connection' value: 'close']] ensure: [(client isKindOf: WebClient) ifTrue: [client close]]].
 	response ifNil: [^ nil].
-	response isSuccess
-		ifTrue: [^ response content]
-		ifFalse: [^ nil]
+	response isSuccess ifTrue: [^ response content] ifFalse: [^ nil]

@@ -1,4 +1,4 @@
 render
 sessionsComboBox
 
-	^sessionsComboBox.
+	^ sessionsComboBox

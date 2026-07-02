@@ -1,5 +1,6 @@
 render
 contentMorph
+
 	content ifNotNil: [^ content].
 	content := AlignmentMorph new.
 	content

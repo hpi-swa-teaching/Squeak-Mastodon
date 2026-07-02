@@ -1,5 +1,6 @@
 endpoints
 getPreferences
+
 	| url response json |
 	url := self buildUrl: '/xrpc/app.bsky.actor.getPreferences'.
 	response := self getRequest: url.
@@ -7,7 +8,6 @@ getPreferences
 	
 	[
 		json := self deserialize: response.
-		^ MTResult value: (json at: 'preferences' ifAbsent: [#()])
-	] on: Error do: [:ex |
-		^ MTResult error: 'BlueSky preferences processing failed'
-	].
+		^ MTResult value: (json at: 'preferences' ifAbsent: [#()])]
+		on: Error
+		do: [:ex | ^ MTResult error: 'BlueSky preferences processing failed']
