@@ -29,7 +29,9 @@ addRequestSection
 		
 	urlTextField := MTLineEdit new.
 	urlTextField hResizing: #rigid; width: 500; height: 36.
-	urlTextField theText: 'https://'.
+	urlTextField theText: ((MTSettingsStore default at: #provider ifAbsent: [#mastodon]) = #bluesky
+		ifTrue: ['']
+		ifFalse: ['https://']).
 	urlTextField helpText: 'Mastodon server URL'.
 	requestWrapper addMorphBack: urlTextField.
 

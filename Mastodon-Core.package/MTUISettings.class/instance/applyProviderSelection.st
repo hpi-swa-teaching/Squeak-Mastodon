@@ -1,6 +1,6 @@
 actions
 applyProviderSelection
-	| providerKey |
+	| providerKey current |
 	providerTextField ifNil: [^ false].
 	providerKey := (providerTextField theText asString) withBlanksTrimmed asLowercase.
 	providerKey isEmpty ifTrue: [providerKey := 'mastodon'].
@@ -10,6 +10,10 @@ applyProviderSelection
 			^ false].
 	MTSettingsStore default at: #provider put: providerKey asSymbol.
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
+
+	current := urlTextField theText asString withBlanksTrimmed.
+	(current isEmpty or: [current = 'https://']) ifTrue: [
+		urlTextField theText: (providerKey = 'bluesky' ifTrue: [''] ifFalse: ['https://'])].
 	
 	providerKey = 'bluesky' ifTrue: [
 		urlTextField helpText: 'Bluesky Handle (e.g. alice.bsky.social)'.
