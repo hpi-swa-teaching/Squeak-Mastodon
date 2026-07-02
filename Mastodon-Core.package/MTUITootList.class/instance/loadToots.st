@@ -1,13 +1,13 @@
 updating
 loadToots
 
-	| toots |
+	| result |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	toots := mastodonApi getPrivateTimeline.
-	toots isError ifTrue: [
-		self inform: (toots error ifNil: ['An error occurred']).
+	result := mastodonApi getPrivateTimeline.
+	result isError ifTrue: [
+		self inform: (result error ifNil: ['An error occurred']).
 		^ false].
 	
-	self setToots: toots value.
+	self setToots: result value.
 	^ true
