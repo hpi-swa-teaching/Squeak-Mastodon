@@ -1,9 +1,9 @@
 tests
 testTootCreatedAt
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model createdAt: 1500000000.
+	model createdAt: 1500000000.
 	
-	self assert: Model createdAt equals: 1500000000
+	self assert: model createdAt equals: 1500000000

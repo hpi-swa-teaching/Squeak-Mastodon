@@ -1,9 +1,9 @@
 tests
 testTootFavourited
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model favourited: false.
+	model favourited: false.
 	
-	self assert: Model favourited equals: false
+	self assert: model favourited equals: false

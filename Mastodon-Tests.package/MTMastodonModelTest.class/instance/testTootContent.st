@@ -1,9 +1,9 @@
 tests
 testTootContent
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model content: 'HPI ist cool'.
+	model content: 'HPI ist cool'.
 	
-	self assert: Model content equals: 'HPI ist cool'
+	self assert: model content equals: 'HPI ist cool'

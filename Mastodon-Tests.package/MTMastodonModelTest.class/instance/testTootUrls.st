@@ -1,9 +1,9 @@
 tests
 testTootUrls
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model urls: false.
+	model urls: false.
 	
-	self assert: Model urls equals: false
+	self assert: model urls equals: false

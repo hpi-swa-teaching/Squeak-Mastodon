@@ -1,9 +1,9 @@
 tests
 testTootTags
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model tags: '#hashtags'.
+	model tags: '#hashtags'.
 	
-	self assert: Model tags equals: '#hashtags'
+	self assert: model tags equals: '#hashtags'

@@ -1,9 +1,9 @@
 tests
 testTootInReplyToAccountId
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model inReplyToAccountID: 1337.
+	model inReplyToAccountID: 1337.
 	
-	self assert: Model inReplyToAccountID equals: 1337
+	self assert: model inReplyToAccountID equals: 1337

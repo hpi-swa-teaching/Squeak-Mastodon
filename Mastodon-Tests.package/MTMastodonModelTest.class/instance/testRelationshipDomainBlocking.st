@@ -1,9 +1,9 @@
 tests
 testRelationshipDomainBlocking
 
-	| Model |
-	Model := MTRelationship new.
+	| model |
+	model := MTRelationship new.
 	
-	Model domainBlocking: 'domain'.
+	model domainBlocking: 'domain'.
 	
-	self assert: Model domainBlocking equals: 'domain'
+	self assert: model domainBlocking equals: 'domain'

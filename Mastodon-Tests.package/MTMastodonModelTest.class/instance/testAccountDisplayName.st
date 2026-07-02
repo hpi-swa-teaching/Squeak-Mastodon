@@ -1,9 +1,9 @@
 tests
 testAccountDisplayName
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model displayName: 'Florian'.
+	model displayName: 'Florian'.
 	
-	self assert: Model displayName equals: 'Florian'
+	self assert: model displayName equals: 'Florian'

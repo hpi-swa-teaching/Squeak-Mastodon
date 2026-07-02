@@ -1,11 +1,11 @@
 tests
 testDeserializeSearch
 
-	| API json result |
-	API := MTMastodonApi new.
+	| api json result |
+	api := MTMastodonApi new.
 	
 	json := DataProvider mockSearch.
 	
-	result := API class deserialize: json intoObjectOf: MTSearchResult.
+	result := api class deserialize: json intoObjectOf: MTSearchResult.
 	
 	self assert: result class equals: MTSearchResult

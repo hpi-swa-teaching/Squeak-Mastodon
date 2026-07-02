@@ -1,9 +1,9 @@
 tests
 testTootAcct
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model acct: 'schmidtflo'.
+	model acct: 'schmidtflo'.
 	
-	self assert: Model acct equals: 'schmidtflo'
+	self assert: model acct equals: 'schmidtflo'

@@ -1,9 +1,9 @@
 tests
 testRelationshipFollowing
 
-	| Model |
-	Model := MTRelationship new.
+	| model |
+	model := MTRelationship new.
 	
-	Model following: 'name'.
+	model following: 'name'.
 	
-	self assert: Model following equals: 'name'
+	self assert: model following equals: 'name'

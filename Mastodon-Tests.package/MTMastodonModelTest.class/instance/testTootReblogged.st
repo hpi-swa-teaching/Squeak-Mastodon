@@ -1,9 +1,9 @@
 tests
 testTootReblogged
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model reblogged: true.
+	model reblogged: true.
 	
-	self assert: Model reblogged equals: true
+	self assert: model reblogged equals: true

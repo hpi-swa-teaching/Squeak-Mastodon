@@ -1,9 +1,9 @@
 tests
 testSearchResultAccounts
 
-	| Model |
-	Model := MTSearchResult new.
+	| model |
+	model := MTSearchResult new.
 	
-	Model accounts: 'schmidtflo'.
+	model accounts: 'schmidtflo'.
 	
-	self assert: Model accounts equals: 'schmidtflo'
+	self assert: model accounts equals: 'schmidtflo'

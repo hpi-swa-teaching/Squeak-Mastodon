@@ -1,9 +1,9 @@
 tests
 testTootInReplyToId
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model inReplyToID: 1337.
+	model inReplyToID: 1337.
 	
-	self assert: Model inReplyToID equals: 1337
+	self assert: model inReplyToID equals: 1337

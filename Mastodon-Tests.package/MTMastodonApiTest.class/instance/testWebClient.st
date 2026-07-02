@@ -1,9 +1,9 @@
 tests
 testWebClient
 
-	| API client |
-	API := MTMastodonApi new.
+	| api client |
+	api := MTMastodonApi new.
 	client := WebClient new.
-	API webClient: client.
+	api webClient: client.
 	
-	self assert: API webClient equals: client
+	self assert: api webClient equals: client

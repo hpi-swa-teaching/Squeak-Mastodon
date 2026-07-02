@@ -1,9 +1,9 @@
 tests
 testClientID
 
-	| API |
-	API := MTMastodonApi new.
+	| api |
+	api := MTMastodonApi new.
 	
-	API clientID: 'thisisaid'.
+	api clientID: 'thisisaid'.
 	
-	self assert: API clientID equals: 'thisisaid'
+	self assert: api clientID equals: 'thisisaid'

@@ -1,9 +1,9 @@
 tests
 testErrorErrors
 
-	| Model |
-	Model := MTError new.
+	| model |
+	model := MTError new.
 	
-	Model errors: Array.
+	model errors: Array.
 	
-	self assert: Model errors equals: Array
+	self assert: model errors equals: Array

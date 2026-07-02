@@ -1,9 +1,9 @@
 tests
 testRelationshipBlocking
 
-	| Model |
-	Model := MTRelationship new.
+	| model |
+	model := MTRelationship new.
 	
-	Model blocking: true.
+	model blocking: true.
 	
-	self assert: Model blocking equals: true
+	self assert: model blocking equals: true

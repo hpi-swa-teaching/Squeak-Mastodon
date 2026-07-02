@@ -1,9 +1,9 @@
 tests
 testAccountFollowersCount
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model followersCount: 5.
+	model followersCount: 5.
 	
-	self assert: Model followersCount equals: 5
+	self assert: model followersCount equals: 5

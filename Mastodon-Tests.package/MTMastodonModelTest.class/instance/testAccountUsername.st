@@ -1,9 +1,9 @@
 tests
 testAccountUsername
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model username: 'schmidtflo'.
+	model username: 'schmidtflo'.
 	
-	self assert: Model username equals: 'schmidtflo'
+	self assert: model username equals: 'schmidtflo'

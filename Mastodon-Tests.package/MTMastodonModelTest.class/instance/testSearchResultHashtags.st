@@ -1,9 +1,9 @@
 tests
 testSearchResultHashtags
 
-	| Model |
-	Model := MTSearchResult new.
+	| model |
+	model := MTSearchResult new.
 	
-	Model hashtags: '#Hashtag'.
+	model hashtags: '#Hashtag'.
 	
-	self assert: Model hashtags equals: '#Hashtag'
+	self assert: model hashtags equals: '#Hashtag'

@@ -1,9 +1,9 @@
 tests
 testSearchResultStatuses
 
-	| Model |
-	Model := MTSearchResult new.
+	| model |
+	model := MTSearchResult new.
 	
-	Model statuses: 'not available'.
+	model statuses: 'not available'.
 	
-	self assert: Model statuses equals: 'not available'
+	self assert: model statuses equals: 'not available'

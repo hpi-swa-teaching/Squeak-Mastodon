@@ -1,9 +1,9 @@
 tests
 testAccountId
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model id: 42.
+	model id: 42.
 	
-	self assert: Model id equals: 42
+	self assert: model id equals: 42

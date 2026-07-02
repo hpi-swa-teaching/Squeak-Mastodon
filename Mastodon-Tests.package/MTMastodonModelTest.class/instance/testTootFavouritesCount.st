@@ -1,9 +1,9 @@
 tests
 testTootFavouritesCount
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model favouritesCount: 42.
+	model favouritesCount: 42.
 	
-	self assert: Model favouritesCount equals: 42
+	self assert: model favouritesCount equals: 42

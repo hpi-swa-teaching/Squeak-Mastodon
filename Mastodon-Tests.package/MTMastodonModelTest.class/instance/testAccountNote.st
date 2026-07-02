@@ -1,9 +1,9 @@
 tests
 testAccountNote
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model note: 'a note'.
+	model note: 'a note'.
 	
-	self assert: Model note equals: 'a note'
+	self assert: model note equals: 'a note'

@@ -1,9 +1,9 @@
 tests
 testTootMentions
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model mentions: false.
+	model mentions: false.
 	
-	self assert: Model mentions equals: false
+	self assert: model mentions equals: false

@@ -1,9 +1,9 @@
 tests
 testAccountHeader
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model header: 'header'.
+	model header: 'header'.
 	
-	self assert: Model header equals: 'header'
+	self assert: model header equals: 'header'

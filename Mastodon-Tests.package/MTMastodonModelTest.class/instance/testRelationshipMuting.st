@@ -1,9 +1,9 @@
 tests
 testRelationshipMuting
 
-	| Model |
-	Model := MTRelationship new.
+	| model |
+	model := MTRelationship new.
 	
-	Model muting: 'nobody'.
+	model muting: 'nobody'.
 	
-	self assert: Model muting equals: 'nobody'
+	self assert: model muting equals: 'nobody'

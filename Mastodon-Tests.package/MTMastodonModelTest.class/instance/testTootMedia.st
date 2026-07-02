@@ -1,9 +1,9 @@
 tests
 testTootMedia
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model media: false.
+	model media: false.
 	
-	self assert: Model media equals: false
+	self assert: model media equals: false

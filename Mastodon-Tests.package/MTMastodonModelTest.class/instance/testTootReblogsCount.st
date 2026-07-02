@@ -1,9 +1,9 @@
 tests
 testTootReblogsCount
 
-	| Model |
-	Model := MTToot new.
+	| model |
+	model := MTToot new.
 	
-	Model reblogsCount: 5.
+	model reblogsCount: 5.
 	
-	self assert: Model reblogsCount equals: 5
+	self assert: model reblogsCount equals: 5

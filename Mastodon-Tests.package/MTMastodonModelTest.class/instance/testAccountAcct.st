@@ -1,9 +1,9 @@
 tests
 testAccountAcct
 
-	| Model |
-	Model := MTAccount new.
+	| model |
+	model := MTAccount new.
 	
-	Model acct: 'ein acct'.
+	model acct: 'ein acct'.
 	
-	self assert: Model acct equals: 'ein acct'
+	self assert: model acct equals: 'ein acct'

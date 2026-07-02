@@ -1,9 +1,9 @@
 tests
 testClientSecret
 
-	| API |
-	API := MTMastodonApi new.
+	| api |
+	api := MTMastodonApi new.
 	
-	API clientSecret: 'thisisasecret'.
+	api clientSecret: 'thisisasecret'.
 	
-	self assert: API clientSecret equals: 'thisisasecret'
+	self assert: api clientSecret equals: 'thisisasecret'
