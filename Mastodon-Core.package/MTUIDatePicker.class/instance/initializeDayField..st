@@ -7,4 +7,5 @@ initializeDayField: initialDay
 		pattern: '[0-9]{0,2}';
 		validator: [:str | str asNumber <= 31];
 		helpText: 'DD';
-		theText: initialDay)
+		theText: initialDay;
+		yourself)

@@ -8,7 +8,8 @@ rescheduleToot: aScheduledTootMorph
 		addPaneMorph: datePicker;
 		createButton: 'Confirm' value: true;
 		createCancelButton;
-		openNearMorph: self.
+		openNearMorph: self;
+		yourself.
 	menu paneMorph width: 500.
 	menu getUserResponse ifFalse: [^ self].
 	
@@ -19,4 +20,5 @@ rescheduleToot: aScheduledTootMorph
 	self mastodonApi rescheduleToot: aScheduledTootMorph toot id at: timeRes value.
 	self
 		loadScheduled;
-		render
+		render;
+		yourself
