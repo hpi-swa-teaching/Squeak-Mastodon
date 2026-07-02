@@ -1,10 +1,10 @@
 {
-	"class": {},
-	"instance": {
-		"displayName": "Pagpeter 7/2/2026 15:35",
-		"retryAmount": "Pagpeter 7/2/2026 15:35",
-		"retryNetworkRequest:": "Pagpeter 7/2/2026 15:35",
-		"webClient": "Pagpeter 7/2/2026 15:35",
-		"webClient:": "Pagpeter 7/2/2026 15:35"
-	}
-}
+	"class" : {
+		 },
+	"instance" : {
+		"displayName" : "Pagpeter 7/2/2026 15:35",
+		"retryAmount" : "Pagpeter 7/2/2026 15:35",
+		"retryAmount:" : "Pagpeter 7/2/2026 15:35",
+		"retryNetworkRequest:" : "Pagpeter 7/2/2026 15:35",
+		"webClient" : "Pagpeter 7/2/2026 15:35",
+		"webClient:" : "Pagpeter 7/2/2026 15:35" } }
