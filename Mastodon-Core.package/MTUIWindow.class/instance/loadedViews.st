@@ -1,4 +1,0 @@
-accessing
-loadedViews
-
-	^ loadedViews
