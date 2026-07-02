@@ -1,4 +1,4 @@
 icon
 reblogActive
 
-	^ self getIcon: 'reblog' inColor: #fern inSize: 30 @ 30
+	^ self getIcon: 'reblog' inColor: #clover inSize: 30 @ 30

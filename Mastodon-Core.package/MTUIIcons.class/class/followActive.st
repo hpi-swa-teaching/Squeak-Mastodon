@@ -1,4 +1,4 @@
 icon
 followActive
 
-	^ self getIcon: 'followActive' inColor: #fern inSize: 30 @ 30
+	^ self getIcon: 'followActive' inColor: #clover inSize: 30 @ 30

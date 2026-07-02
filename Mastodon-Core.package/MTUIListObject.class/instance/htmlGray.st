@@ -1,4 +1,4 @@
 constants
 htmlGray
 
-	^ '#666666'
+	^ '#9c9c9c'
