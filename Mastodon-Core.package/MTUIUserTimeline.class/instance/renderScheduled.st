@@ -4,10 +4,6 @@ renderScheduled
 	self removeAllMorphs.
 	self scheduledToots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIScheduledToot for: toot with: self user.
-		tootMorph editButton
-			target: self;
-			actionSelector: #editToot:;
-			arguments: (Array with: tootMorph).
 		tootMorph scheduleButton
 			target: self;
 			actionSelector: #rescheduleToot:;
