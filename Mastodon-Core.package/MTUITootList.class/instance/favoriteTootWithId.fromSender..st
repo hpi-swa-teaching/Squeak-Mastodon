@@ -2,8 +2,8 @@ actions
 favoriteTootWithId: aTootId fromSender: aButton
 
 	| toot argument result |
-	toots ifNil: [^ self].
-	toot := (toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = aTootId] ifNone: [nil].
+	self toots ifNil: [^ self].
+	toot := (self toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = aTootId] ifNone: [nil].
 	argument := (self mastodonApi isKindOf: MTBlueSkyApi) ifTrue: [toot] ifFalse: [aTootId].
 	argument ifNil: [^ self].
 	aButton active

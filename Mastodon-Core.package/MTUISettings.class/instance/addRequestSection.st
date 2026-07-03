@@ -9,8 +9,8 @@ addRequestSection
 	
 	sessionsComboBox := UiComboBox new.
 	self loadComboBox.
-	self connect: sessionsComboBox signal: #currentIndexChanged:text: toSelector: #switchToSelectedSession.
-	requestWrapper addMorphBack: sessionsComboBox.
+	self connect: self sessionsComboBox signal: #currentIndexChanged:text: toSelector: #switchToSelectedSession.
+	requestWrapper addMorphBack: self sessionsComboBox.
 	
 	providerTextField := UiLineEdit new.
 	providerTextField theText: (MTSettingsStore default at: #provider ifAbsent: [#mastodon]) asString.
@@ -57,4 +57,4 @@ addRequestSection
 	
 	self addMorphBack: requestWrapper.
 	self addResultSection.
-	resultTextLabel contents: ' ' asHtmlText
+	self resultTextLabel contents: ' ' asHtmlText

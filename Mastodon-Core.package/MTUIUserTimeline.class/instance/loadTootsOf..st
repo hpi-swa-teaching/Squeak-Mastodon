@@ -4,7 +4,7 @@ loadTootsOf: aMTUser
 	| result |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	result := mastodonApi getStatuses: aMTUser id.
+	result := self mastodonApi getStatuses: aMTUser id.
 	
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).

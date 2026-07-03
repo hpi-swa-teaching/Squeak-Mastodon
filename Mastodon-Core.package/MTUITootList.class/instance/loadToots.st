@@ -4,7 +4,7 @@ loadToots
 	| result |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	result := mastodonApi getPrivateTimeline.
+	result := self mastodonApi getPrivateTimeline.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

@@ -4,7 +4,7 @@ loadToots
 	| result page |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	result := mastodonApi getLikesPageWithCursor: nil.
+	result := self mastodonApi getLikesPageWithCursor: nil.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

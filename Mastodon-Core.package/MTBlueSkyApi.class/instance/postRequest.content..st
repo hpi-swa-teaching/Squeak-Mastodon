@@ -3,7 +3,7 @@ postRequest: url content: jsonString
 
 	| response |
 	response := self retryNetworkRequest: [
-		webClient
+		self webClient
 			httpPost: url
 			content: jsonString
 			type: 'application/json'

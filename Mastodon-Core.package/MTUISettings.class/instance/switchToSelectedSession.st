@@ -3,7 +3,7 @@ switchToSelectedSession
 
 	| sessions selectedSession provider |
 	sessions := MTSettingsStore default at: #sessions ifAbsent: [OrderedCollection new].
-	selectedSession := sessions at: sessionsComboBox currentIndex.
+	selectedSession := sessions at: self sessionsComboBox currentIndex.
 	
 	(selectedSession isKindOf: MTBlueSkyApi)
 		ifTrue: [

@@ -4,6 +4,6 @@ deleteCurrentSession
 	| sessions |
 	sessions := MTSettingsStore default at: #sessions ifAbsent: [OrderedCollection new].
 	
-	sessions removeAt: sessionsComboBox currentIndex.
+	sessions removeAt: self sessionsComboBox currentIndex.
 	
 	MTSettingsStore default at: #sessions put: sessions.

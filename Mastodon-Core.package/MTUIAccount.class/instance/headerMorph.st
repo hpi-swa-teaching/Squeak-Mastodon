@@ -1,7 +1,7 @@
 render
 headerMorph
 
-	header ifNotNil: [^ header].
+	self header ifNotNil: [^ self header].
 	profileLink := MTUIProfileLinkMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self account displayName, '</b> ', '<i><a href="mastodonUser:', self account id, '">@', self account acct, '</a></i>').
 	profileLink
 		wrapFlag: true;
@@ -9,7 +9,7 @@ headerMorph
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap.
 	header := Morph new.
-	header
+	self header
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -20,4 +20,4 @@ headerMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: profileLink.
-	^ header
+	^ self header

@@ -2,8 +2,8 @@ updating
 loadSelectedFeed
 
 	| result page |
-	(selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [selectedFeed := MTBlueSkyFeed home].
-	selectedFeed isTimeline ifTrue: [
+	(self selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [selectedFeed := MTBlueSkyFeed home].
+	self selectedFeed isTimeline ifTrue: [
 		result := self mastodonApi getTimelinePageWithCursor: nil.
 		result isError ifTrue: [
 			self inform: (result error ifNil: ['An error occurred']).
@@ -12,7 +12,7 @@ loadSelectedFeed
 		feedCursor := page cursor.
 		self setToots: page toots.
 		^ true].
-	result := self mastodonApi getFeedPage: selectedFeed uri cursor: nil.
+	result := self mastodonApi getFeedPage: self selectedFeed uri cursor: nil.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

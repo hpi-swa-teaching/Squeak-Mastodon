@@ -9,12 +9,12 @@ addSearchSection
 	requestWrapper wrapCentering: #topLeft.
 	
 	searchTextField := MTLineEdit new.
-	searchTextField
+	self searchTextField
 		hResizing: #rigid;
 		width: 500;
 		height: 36.
-	searchTextField helpText: self searchHelpText.
-	requestWrapper addMorphBack: searchTextField.
+	self searchTextField helpText: self searchHelpText.
+	requestWrapper addMorphBack: self searchTextField.
 	
 	searchButton := UiPushButton new.
 	searchButton text: 'Search User'.

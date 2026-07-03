@@ -5,11 +5,11 @@ loadMoreToot
 	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
 		self mastodonApi token isNil ifTrue: [^ false].
 		^ super loadMoreToot].
-	(selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [^ false].
+	(self selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [^ false].
 	feedCursor ifNil: [^ false].
-	result := selectedFeed isTimeline
+	result := self selectedFeed isTimeline
 		ifTrue: [self mastodonApi getTimelinePageWithCursor: feedCursor]
-		ifFalse: [self mastodonApi getFeedPage: selectedFeed uri cursor: feedCursor].
+		ifFalse: [self mastodonApi getFeedPage: self selectedFeed uri cursor: feedCursor].
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

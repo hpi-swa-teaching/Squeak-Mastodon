@@ -3,7 +3,7 @@ refreshToots
 
 	| newToots |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
-	newToots := mastodonApi getStatuses: id max: maxID.
+	newToots := self mastodonApi getStatuses: self id max: self maxID.
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).
 		^ false].

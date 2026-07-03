@@ -18,7 +18,7 @@ exchangeAuthorizationCode: anAuthorizationCode
 		'urn:ietf:wg:oauth:2.0:oob'}.
 	
 	response := self retryNetworkRequest: [
-		webClient
+		self webClient
 			httpPost: url
 			content: (WebUtils encodeUrlEncodedForm: parameters)
 			type: 'application/x-www-form-urlencoded'].

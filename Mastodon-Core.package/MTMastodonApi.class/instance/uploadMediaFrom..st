@@ -7,7 +7,7 @@ uploadMediaFrom: aForm
 	file := self encodeForm: aForm.
 	
 	response := self retryNetworkRequest: [
-		webClient
+		self webClient
 			httpPost: url
 			content: (self encodeMultipartForm: file boundary: boundary)
 			type: 'multipart/form-data; boundary=', boundary

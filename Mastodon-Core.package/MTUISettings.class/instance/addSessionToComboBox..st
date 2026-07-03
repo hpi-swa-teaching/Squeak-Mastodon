@@ -5,4 +5,4 @@ addSessionToComboBox: aMTApiInstance
 	sessions := OrderedCollection new.
 	sessions add: aMTApiInstance.
 	
-	sessionsComboBox addItemListFrom: sessions using: [:session :item | item text: session username]
+	self sessionsComboBox addItemListFrom: sessions using: [:session :item | item text: session username]

@@ -2,8 +2,8 @@ actions
 repostTootWithId: anInteger fromSender: aButton
 
 	| toot result |
-	toots ifNil: [^ self].
-	toot := (toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = anInteger] ifNone: [nil].
+	self toots ifNil: [^ self].
+	toot := (self toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = anInteger] ifNone: [nil].
 	aButton active
 		ifTrue: [
 			result := self mastodonApi unreblog: anInteger.

@@ -3,7 +3,7 @@ getPublicAppViewRequest: path
 
 	| response |
 	response := self retryNetworkRequest: [ | client |
-		client := (webClient isKindOf: WebClient) ifTrue: [WebClient new] ifFalse: [webClient].
+		client := (self webClient isKindOf: WebClient) ifTrue: [WebClient new] ifFalse: [self webClient].
 		[
 			client httpGet: 'https://public.api.bsky.app', path do: [:req |
 				req addHeader: 'Accept-Encoding' value: 'identity'.

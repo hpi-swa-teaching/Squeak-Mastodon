@@ -3,7 +3,7 @@ formRequest: url method: httpMethod withParameters: parameters
 
 	| response |
 	response := self retryNetworkRequest: [
-		webClient
+		self webClient
 			httpPost: url
 			content: (WebUtils encodeUrlEncodedForm: parameters)
 			type: 'application/x-www-form-urlencoded'

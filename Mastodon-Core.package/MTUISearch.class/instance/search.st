@@ -2,8 +2,8 @@ action
 search
 
 	| query queryResult |
-	query := searchTextField theText asString.
-	queryResult := mastodonApi search: query.
+	query := self searchTextField theText asString.
+	queryResult := self mastodonApi search: query.
 	self accounts: queryResult value accounts.
 	
 	WorldState addDeferredUIMessage: [self render]

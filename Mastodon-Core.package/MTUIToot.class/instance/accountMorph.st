@@ -1,7 +1,7 @@
 render
 accountMorph
 
-	account ifNotNil: [^ account].
+	self account ifNotNil: [^ self account].
 	profileLink := MTUIProfileLinkMorph new contentsWrapped: (MTUtils asTextFromHtml: '<b>', self toot acct displayName, '</b> ', '<i><a href="mastodonUser:', self toot acct id, '">@', self toot acct acct, '</a></i>').
 	profileLink
 		wrapFlag: true;
@@ -9,7 +9,7 @@ accountMorph
 		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap.
 	account := Morph new.
-	account
+	self account
 		layoutPolicy: TableLayout new;
 		listDirection: #leftToRight;
 		hResizing: #spaceFill;
@@ -20,4 +20,4 @@ accountMorph
 		listCentering: #topLeft;
 		color: Color transparent;
 		addMorphBack: profileLink.
-	^ account
+	^ self account

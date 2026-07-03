@@ -8,7 +8,7 @@ loadProfileView
 	(self mastodonApi isKindOf: MTBlueSkyApi)
 		ifTrue: [currentUser := self mastodonApi getProfileFor: self mastodonApi verifyCredentials value acct]
 		ifFalse: [
-			currentUser := mastodonApi getCurrentUser.
+			currentUser := self mastodonApi getCurrentUser.
 			
 			].
 	

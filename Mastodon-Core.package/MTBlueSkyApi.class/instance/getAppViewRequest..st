@@ -3,7 +3,7 @@ getAppViewRequest: url
 
 	| response |
 	response := self retryNetworkRequest: [
-		webClient httpGet: url do: [:req |
+		self webClient httpGet: url do: [:req |
 			self token ifNotNil: [req addHeader: 'Authorization' value: 'Bearer ', self token].
 			req addHeader: 'Accept-Encoding' value: 'identity'.
 			req addHeader: 'Connection' value: 'close'.

@@ -6,12 +6,12 @@ loadFeeds
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		feeds := OrderedCollection with: MTBlueSkyFeed home.
-		selectedFeed := feeds first.
+		selectedFeed := self feeds first.
 		^ false].
 	feeds := result value.
-	feeds isEmpty ifTrue: [feeds := OrderedCollection with: MTBlueSkyFeed home].
-	(selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [selectedFeed := feeds first].
-	selectedFeed := feeds
-		detect: [:feed | feed uri = selectedFeed uri and: [feed sourceType = selectedFeed sourceType]]
-		ifNone: [feeds first].
+	self feeds isEmpty ifTrue: [feeds := OrderedCollection with: MTBlueSkyFeed home].
+	(self selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [selectedFeed := self feeds first].
+	selectedFeed := self feeds
+		detect: [:feed | feed uri = self selectedFeed uri and: [feed sourceType = self selectedFeed sourceType]]
+		ifNone: [self feeds first].
 	^ true
