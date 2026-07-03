@@ -2,7 +2,7 @@ render
 render
 
 	self
-		height: 24;
-		width: 24;
+		height: 30;
+		width: 38;
 		borderWidth: 0;
 		color: Color transparent
