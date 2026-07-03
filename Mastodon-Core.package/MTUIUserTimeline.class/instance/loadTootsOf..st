@@ -11,4 +11,5 @@ loadTootsOf: aMTUser
 		^ false].
 	
 	self setToots: result value.
-	self render
+	self render.
+	^ true

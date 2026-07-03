@@ -8,4 +8,5 @@ displayUser: aUsername
 	user isError ifTrue: [
 		self inform: 'An error occurred while loading user with screenName: ', aUsername.
 		^ false].
-	self loadProfileViewOf: user value
+	self loadProfileViewOf: user value.
+	^ true

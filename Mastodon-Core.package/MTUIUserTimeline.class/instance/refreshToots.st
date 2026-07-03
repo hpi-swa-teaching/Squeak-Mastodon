@@ -7,4 +7,5 @@ refreshToots
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).
 		^ false].
-	self prependToots: newToots value
+	self prependToots: newToots value.
+	^ true

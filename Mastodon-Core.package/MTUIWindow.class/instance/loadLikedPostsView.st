@@ -9,4 +9,5 @@ loadLikedPostsView
 	likedPostsView loadToots ifFalse: [^ false].
 	
 	self loadView: likedPostsView as: #likedPostsView activate: #likedPostsButton.
-	self layoutChanged
+	self layoutChanged.
+	^ true

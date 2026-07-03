@@ -18,4 +18,5 @@ updateProfile
 	dict at: 'display_name' put: self usernameUpdateTextField contents.
 	dict at: 'note' put: self descriptionTextField contents.
 	
-	mastodonApi updateCredentials: dict
+	mastodonApi updateCredentials: dict.
+	^ true

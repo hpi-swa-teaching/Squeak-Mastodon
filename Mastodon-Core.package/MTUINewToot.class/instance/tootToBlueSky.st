@@ -9,7 +9,8 @@ tootToBlueSky
 	result := imageMorph
 		ifNil: [mastodonApi toot: text]
 		ifNotNil: [mastodonApi toot: text withImage: imageMorph imageForm].
-	result isError ifTrue: [^ self inform: result error].
+	result isError ifTrue: [self inform: result error. ^ false].
 	tootTextArea contents: ''.
 	self removeOldMorph.
-	self sendPostFeedback
+	self sendPostFeedback.
+	^ true

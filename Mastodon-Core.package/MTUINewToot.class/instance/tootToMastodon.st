@@ -11,4 +11,5 @@ tootToMastodon
 		ifNil: [mastodonApi toot: text withVisibility: visibility]
 		ifNotNil: [self tootImagewithVisibility: visibility].
 	tootTextArea contents: ''.
-	self sendPostFeedback
+	self sendPostFeedback.
+	^ true

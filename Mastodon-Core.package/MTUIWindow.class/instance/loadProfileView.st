@@ -14,5 +14,6 @@ loadProfileView
 	
 	currentUser isError ifTrue: [
 		self inform: 'Could not load profile'.
-		^ self].
-	self loadProfileViewOf: currentUser value
+		^ false].
+	self loadProfileViewOf: currentUser value.
+	^ true

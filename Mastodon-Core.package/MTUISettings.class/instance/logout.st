@@ -7,6 +7,5 @@ logout
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
 	self mastodonApi reset.
 	MTAccountStore resetDefaultAccount.
-	MTUIWindow instance loadSettingsView
-	"self addResultSection.
-	resultTextLabel contents: '<i>Successfully logged out</i>' asHtmlText"
+	MTUIWindow instance loadSettingsView.
+	^ true

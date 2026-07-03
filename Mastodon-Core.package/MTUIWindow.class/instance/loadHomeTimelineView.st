@@ -9,4 +9,5 @@ loadHomeTimelineView
 	homeTimelineView loadToots ifFalse: [^ false].
 	
 	self loadView: homeTimelineView as: #homeTimelineView activate: #homeTimelineButton.
-	self layoutChanged
+	self layoutChanged.
+	^ true

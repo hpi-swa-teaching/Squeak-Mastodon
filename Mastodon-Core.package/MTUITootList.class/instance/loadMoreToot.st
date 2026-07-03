@@ -10,4 +10,5 @@ loadMoreToot
 		self inform: (newToots error ifNil: ['An error occurred']).
 		^ false].
 	
-	self appendToots: newToots value
+	self appendToots: newToots value.
+	^ true
