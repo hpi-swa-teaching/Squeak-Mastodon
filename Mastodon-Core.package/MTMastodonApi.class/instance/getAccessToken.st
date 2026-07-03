@@ -1,6 +1,5 @@
 authentication
 getAccessToken
-	"retrieves and saves Bearer Token"
 
 	| url parameters json response |
 	url := self buildUrl: '/oauth/token'.

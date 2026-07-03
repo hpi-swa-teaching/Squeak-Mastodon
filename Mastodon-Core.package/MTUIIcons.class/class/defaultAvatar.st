@@ -1,6 +1,5 @@
 icon
 defaultAvatar
-	"48x48"
 
 	^ Form
 		extent: 32 @ 32

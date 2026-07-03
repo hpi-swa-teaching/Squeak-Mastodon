@@ -1,6 +1,5 @@
 time-conversion
 monthStringToNumber: aString
-	"Parses following string format: 'Jun'"
 
 	aString = 'Jan' ifTrue: [^ 1].
 	aString = 'Feb' ifTrue: [^ 2].

@@ -26,8 +26,7 @@ imageMorphFrom: anUrl
 		do: [:e | nil].
 	
 	form
-		ifNil: [^ image
-		"leave it empty / unset"]
+		ifNil: [^ image]
 		ifNotNil: [
 			MTImageCache default cache: form from: anUrl.
 			image setNewImageFrom: form].

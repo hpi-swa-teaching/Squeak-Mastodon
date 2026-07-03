@@ -1,6 +1,5 @@
 updating
 appendToots: anOrderedCollection
-	"Adds toots which are older than the toots that are already in the collection"
 
 	anOrderedCollection isEmpty ifTrue: [^ self].
 	self toots: self toots, anOrderedCollection.

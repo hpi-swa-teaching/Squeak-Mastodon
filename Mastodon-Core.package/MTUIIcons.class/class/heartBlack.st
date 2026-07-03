@@ -1,6 +1,5 @@
 icon
 heartBlack
-	"Heart icon recoloured to black, preserving alpha, for the sidebar tab."
 
 	| source form |
 	source := self heart.

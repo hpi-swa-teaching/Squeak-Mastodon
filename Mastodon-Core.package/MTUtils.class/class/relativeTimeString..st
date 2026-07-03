@@ -1,6 +1,5 @@
 time-conversion
 relativeTimeString: aTimeStamp
-	"converts a timestamp into a relative time like '2 hours ago'"
 
 	| diff dayDiff |
 	diff := TimeStamp now asUTC asSeconds - aTimeStamp asSeconds.

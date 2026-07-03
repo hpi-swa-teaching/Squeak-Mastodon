@@ -2,7 +2,6 @@ regex
 linkUrls: aString
 
 	| result |
-	"test :=  'https?\://([a-zA-Z0-9_-]+)\.[a-zA-Z0-9]+(/[a-zA-Z0-9_-]*)?'."
 	result := aString.
 	aString
 		regex: 'https?\://([a-zA-Z0-9_-]+)(\.[a-zA-Z0-9]*)+(/[a-zA-Z0-9_-]*)*'

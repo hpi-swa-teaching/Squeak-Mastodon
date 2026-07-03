@@ -1,6 +1,5 @@
 actions
 loadImage
-	"Open file chooser with a system window UI that has a caption pane and shows only picture files."
 
 	| fc stream |
 	fc := FileChooser new.

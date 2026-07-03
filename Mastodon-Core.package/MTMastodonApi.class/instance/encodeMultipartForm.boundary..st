@@ -2,7 +2,6 @@ helpers
 encodeMultipartForm: form boundary: boundary
 
 	^ String streamContents: [:stream |
-		" file field "
 		stream
 			nextPutAll: '--';
 			nextPutAll: boundary;
