@@ -20,5 +20,4 @@ rescheduleToot: aScheduledTootMorph
 	self mastodonApi rescheduleToot: aScheduledTootMorph toot id at: timeRes value.
 	self
 		loadScheduled;
-		render;
-		yourself
+		render

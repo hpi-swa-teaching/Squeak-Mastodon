@@ -2,7 +2,7 @@
 	"class" : {
 		"with:token:" : "lapl 7/2/2026 14:46" },
 	"instance" : {
-		"accountFromAuthor:" : "lapl 7/2/2026 15:40",
+		"accountFromAuthor:" : "lapl 7/3/2026 18:36",
 		"authorizationLinkFor:" : "lapl 7/2/2026 15:40",
 		"buildUrl:" : "lapl 7/2/2026 15:40",
 		"clientID" : "lapl 7/2/2026 15:40",
@@ -26,14 +26,13 @@
 		"getStatuses:since:" : "lapl 7/2/2026 15:41",
 		"getTimelineWithCursor:" : "lapl 7/2/2026 15:41",
 		"initialize" : "lapl 7/2/2026 20:27",
-		"isAuthenticated" : "lapl 7/2/2026 20:28",
 		"postRequest:body:" : "lapl 7/2/2026 20:28",
 		"postRequest:content:" : "lapl 7/2/2026 20:28",
 		"registerApplication" : "lapl 7/3/2026 18:16",
 		"repost:cid:" : "lapl 7/2/2026 15:41",
-		"tootFromFeedItem:" : "lapl 7/2/2026 15:41",
+		"tootFromFeedItem:" : "lapl 7/3/2026 18:39",
 		"type" : "lapl 7/3/2026 16:28",
 		"unfavourite:" : "lapl 7/2/2026 20:28",
 		"unfollow:" : "lapl 7/2/2026 15:41",
 		"unrepost:" : "lapl 7/2/2026 15:41",
-		"verifyCredentials" : "lapl 7/2/2026 15:41" } }
+		"verifyCredentials" : "lapl 7/3/2026 18:36" } }

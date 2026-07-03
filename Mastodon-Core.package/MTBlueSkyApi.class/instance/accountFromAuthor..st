@@ -5,8 +5,7 @@ accountFromAuthor: anAuthor
 	handle := anAuthor at: 'handle' ifAbsent: [''].
 	displayName := anAuthor at: 'displayName' ifAbsent: [handle].
 	createdAt := anAuthor at: 'createdAt' ifAbsent: ['1970-01-01T00:00:00.000Z'].
-	account := MTAccount new.
-	account
+	account := MTAccount new
 		id: (anAuthor at: 'did' ifAbsent: [handle]);
 		username: handle;
 		acct: handle;

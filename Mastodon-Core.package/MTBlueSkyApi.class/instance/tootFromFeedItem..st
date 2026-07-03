@@ -10,8 +10,7 @@ tootFromFeedItem: aFeedItem
 	likeUri := viewer at: 'like' ifAbsent: [nil].
 	repostUri := viewer at: 'repost' ifAbsent: [nil].
 	followUri := authorViewer at: 'following' ifAbsent: [nil].
-	toot := MTToot new.
-	toot
+	toot := MTToot new
 		id: (post at: 'uri' ifAbsent: [post at: 'cid' ifAbsent: ['']]);
 		cid: (post at: 'cid' ifAbsent: [nil]);
 		createdAt: (record at: 'createdAt' ifAbsent: ['1970-01-01T00:00:00.000Z']);
