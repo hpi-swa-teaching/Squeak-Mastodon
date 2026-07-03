@@ -11,6 +11,5 @@ verifyCredentials
 		id: (json at: 'did' ifAbsent: ['']);
 		username: handle;
 		acct: handle;
-		displayName: handle;
-		yourself.
+		displayName: handle.
 	^ MTResult value: account

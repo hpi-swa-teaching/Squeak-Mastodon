@@ -26,6 +26,5 @@ tootFromFeedItem: aFeedItem
 		media: #();
 		followedByUser: followUri notNil;
 		followUri: (followUri ifNil: ['']);
-		repostUri: (repostUri ifNil: ['']);
-		yourself.
+		repostUri: (repostUri ifNil: ['']).
 	^ toot

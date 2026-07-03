@@ -2,7 +2,7 @@
 	"class" : {
 		"with:token:" : "Pagpeter 7/2/2026 15:32" },
 	"instance" : {
-		"accountFromAuthor:" : "Pagpeter 7/2/2026 15:32",
+		"accountFromAuthor:" : "JH 7/3/2026 02:25",
 		"authorizationLinkFor:" : "Pagpeter 7/2/2026 15:32",
 		"baseURL" : "Pagpeter 7/2/2026 15:32",
 		"baseURL:" : "Pagpeter 7/2/2026 15:32",
@@ -16,7 +16,7 @@
 		"displayName" : "Pagpeter 7/2/2026 15:32",
 		"escapeJsonString:" : "Pagpeter 7/2/2026 15:32",
 		"exchangeAuthorizationCode:" : "Pagpeter 7/2/2026 15:32",
-		"favourite:" : "Pagpeter 7/2/2026 15:32",
+		"favourite:" : "JH 7/3/2026 02:34",
 		"feedFromGeneratorView:" : "Pagpeter 7/2/2026 15:32",
 		"feedFromUrlOrUri:" : "JH 7/3/2026 01:15",
 		"follow:" : "Pagpeter 7/2/2026 15:32",
@@ -65,7 +65,7 @@
 		"token:" : "Pagpeter 7/2/2026 15:32",
 		"toot:" : "Pagpeter 7/2/2026 15:32",
 		"toot:withImage:" : "Pagpeter 7/2/2026 15:32",
-		"tootFromFeedItem:" : "Pagpeter 7/2/2026 15:32",
+		"tootFromFeedItem:" : "JH 7/3/2026 02:26",
 		"unfavourite:" : "Pagpeter 7/2/2026 15:32",
 		"unfollow:" : "Pagpeter 7/2/2026 15:32",
 		"unrepost:" : "Pagpeter 7/2/2026 15:32",
@@ -73,4 +73,4 @@
 		"urlEncode:" : "Pagpeter 7/2/2026 15:32",
 		"username" : "Pagpeter 7/2/2026 15:32",
 		"username:" : "Pagpeter 7/2/2026 15:32",
-		"verifyCredentials" : "Pagpeter 7/2/2026 15:32" } }
+		"verifyCredentials" : "JH 7/3/2026 02:27" } }

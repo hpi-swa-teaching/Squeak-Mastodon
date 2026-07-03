@@ -2,8 +2,8 @@ initialization
 uploadPictures
 
 	| avatar header urls |
-	self avatarImageMorph ifNotNil: [avatar := mastodonApi uploadMediaFrom: self avatarImageMorph].
-	self headerImageMorph ifNotNil: [header := mastodonApi uploadMediaFrom: self headerImageMorph].
+	avatar := self avatarImageMorph ifNotNil: [mastodonApi uploadMediaFrom: self avatarImageMorph].
+	header := self headerImageMorph ifNotNil: [mastodonApi uploadMediaFrom: self headerImageMorph].
 	
 	urls := Dictionary new.
 	avatar ifNotNil: [urls at: 'avatar' put: ((mastodonApi deserialize: avatar) at: 'url')].

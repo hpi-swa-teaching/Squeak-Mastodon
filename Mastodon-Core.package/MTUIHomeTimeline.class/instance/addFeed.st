@@ -6,6 +6,7 @@ addFeed
 	query ifNil: [^ self].
 	query := query withBlanksTrimmed.
 	query isEmpty ifTrue: [^ self].
+	feed := nil.
 	((query beginsWith: 'at://') or: [query includesSubstring: 'bsky.app/profile/'])
 		ifTrue: [result := self mastodonApi feedFromUrlOrUri: query]
 		ifFalse: [

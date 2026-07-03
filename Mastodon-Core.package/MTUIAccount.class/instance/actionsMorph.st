@@ -1,6 +1,7 @@
 render
 actionsMorph
 
+	| actions |
 	actions := Morph new.
 	actions
 		layoutPolicy: TableLayout new;

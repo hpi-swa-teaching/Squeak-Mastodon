@@ -3,7 +3,8 @@ mapATag: aTag
 
 	| rx strm result href |
 	result := OrderedCollection new.
-	
+	href := nil.
+
 	"<a href="
 	"http://google.de"
 	">"

@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "Pagpeter 7/2/2026 22:36",
 	"instvars" : [
-		"active",
-		"id" ],
+		"active" ],
 	"name" : "MTUIActionButton",
 	"pools" : [
 		 ],
