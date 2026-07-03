@@ -1,0 +1,4 @@
+accessing
+feedCursor
+
+	^ feedCursor

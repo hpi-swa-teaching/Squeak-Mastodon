@@ -8,9 +8,9 @@ testSwitchToSelectedSession
 		baseURL: 'https://mastodon.social';
 		token: 'abc'.
 	
-	view storeCurrentSession: api.
+	self view storeCurrentSession: api.
 	
-	view switchToSelectedSession.
+	self view switchToSelectedSession.
 	
 	self assert: (MTSettingsStore default at: #provider) equals: 'mastodon'.
 	

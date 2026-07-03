@@ -4,7 +4,7 @@ render
 	self tootMorphs do: [:morph |
 		self removeMorph: morph.
 		morph delete].
-	tootMorphs := OrderedCollection new.
+	self tootMorphs: OrderedCollection new.
 	self toots do: [:toot | | tootMorph spacingMorph actionToot |
 		tootMorph := MTUIToot for: toot.
 		actionToot := toot reblogOrSelf.

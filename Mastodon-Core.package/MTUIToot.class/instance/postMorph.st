@@ -2,7 +2,7 @@ render
 postMorph
 
 	| contentMorph reblogMorph imageMorph createdAtMorph |
-	post := AlignmentMorph new.
+	self post: AlignmentMorph new.
 	self post
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;

@@ -1,7 +1,7 @@
 render
 imageMorph
 
-	image := MTMedia imageMorphFrom: (self toot media at: 1 ifAbsent: [^ nil]) previewUrl.
+	self image: (MTMedia imageMorphFrom: (self toot media at: 1 ifAbsent: [^ nil]) previewUrl).
 	self image cornerRadius: 20.
 	self image
 		hResizing: #shrinkWrap;

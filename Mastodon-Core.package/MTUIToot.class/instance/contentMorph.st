@@ -1,7 +1,7 @@
 render
 contentMorph
 
-	content := TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self toot content).
+	self content: (TextMorph new contentsWrapped: (MTUtils asTextFromHtml: self toot content)).
 	self content
 		wrapFlag: true;
 		autoFit: true;

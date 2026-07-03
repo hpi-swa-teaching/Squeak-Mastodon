@@ -7,4 +7,5 @@ getCurrentDid
 	response := self getRequest: url.
 	response ifNil: [^ nil].
 	json := self deserialize: response.
-	^ did := json at: 'did' ifAbsent: [nil]
+	self did: (json at: 'did' ifAbsent: [nil]).
+	^ self did

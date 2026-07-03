@@ -2,5 +2,5 @@ toot
 sendPostFeedback
 
 	self updateTextSize.
-	feedbackMorph show.
+	self feedbackMorph show.
 	self addAlarm: #removeFeedback after: 5000

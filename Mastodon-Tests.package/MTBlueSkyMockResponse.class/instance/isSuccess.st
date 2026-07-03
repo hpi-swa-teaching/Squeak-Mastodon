@@ -1,4 +1,4 @@
 accessing
 isSuccess
 
-	^ success
+	^ self success

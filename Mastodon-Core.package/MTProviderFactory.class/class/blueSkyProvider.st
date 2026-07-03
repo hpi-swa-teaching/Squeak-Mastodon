@@ -10,5 +10,5 @@ blueSkyProvider
 		self blueSkyInstance token: token.
 		^ self blueSkyInstance].
 	
-	blueSkyInstance := MTBlueSkyApi with: baseURL token: token.
+	self blueSkyInstance: (MTBlueSkyApi with: baseURL token: token).
 	^ self blueSkyInstance

@@ -11,8 +11,8 @@ testLoadComboBoxSelectsActiveSession
 		username: 'bob.bsky.social';
 		baseURL: 'bob.bsky.social'.
 
-	view storeCurrentSession: mastodon.
-	view storeCurrentSession: bluesky.
+	self view storeCurrentSession: mastodon.
+	self view storeCurrentSession: bluesky.
 
 	MTProviderFactory blueSkyInstance: bluesky.
 	MTSettingsStore default at: #provider put: 'bluesky'.

@@ -5,8 +5,8 @@ testStoreMultipleSessions
 	api1 := MTMastodonApi new.
 	api2 := MTMastodonApi new.
 	
-	view storeCurrentSession: api1.
-	view storeCurrentSession: api2.
+	self view storeCurrentSession: api1.
+	self view storeCurrentSession: api2.
 	
 	sessions := MTSettingsStore default at: #sessions.
 	

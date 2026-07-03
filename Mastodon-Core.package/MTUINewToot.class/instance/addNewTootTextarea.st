@@ -5,7 +5,7 @@ addNewTootTextarea
 	textareaWrapper := RectangleMorph new borderWidth: 1.
 	textareaWrapper := MTUIView setWrapper: textareaWrapper.
 	
-	tootTextArea := MTUITextMorph new.
+	self tootTextArea: MTUITextMorph new.
 	self tootTextArea
 		textSize: 1;
 		hResizing: #spaceFill;

@@ -4,8 +4,8 @@ authenticateApplication
 	| baseURL authorizationCode authorizationLink displayAuthorizationLink |
 	self applyProviderSelection ifFalse: [^ false].
 	self socialProvider: MTProviderFactory providerFromSettings.
-	baseURL := urlTextField theText asString withBlanksTrimmed.
-	authorizationCode := tokenTextField theText asString withBlanksTrimmed.
+	baseURL := self urlTextField theText asString withBlanksTrimmed.
+	authorizationCode := self tokenTextField theText asString withBlanksTrimmed.
 	
 	baseURL isEmpty ifFalse: [
 		((baseURL beginsWith: 'https://') or: [baseURL beginsWith: 'http://']) ifFalse: [baseURL := 'https://', baseURL].
@@ -39,8 +39,8 @@ authenticateApplication
 		self verifyAccount.
 		MTSettingsStore default at: #token put: self socialProvider token.
 		self storeCurrentSession: self socialProvider.
-		urlTextField theText: ''.
-		tokenTextField theText: ''.
+		self urlTextField theText: ''.
+		self tokenTextField theText: ''.
 		^ true]
 		on: Error
 		do: [

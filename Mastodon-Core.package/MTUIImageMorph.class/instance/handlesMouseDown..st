@@ -1,4 +1,4 @@
 event handling
 handlesMouseDown: anEvent
 
-	^ (target notNil and: [actionSelector notNil]) or: [super handlesMouseDown: anEvent]
+	^ (self target notNil and: [self actionSelector notNil]) or: [super handlesMouseDown: anEvent]

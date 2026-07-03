@@ -3,9 +3,9 @@ initialize
 
 	super initialize.
 	
-	loadedViews := Dictionary new.
-	menuMorph := MTUIMenu new.
-	scrollMorph := MTUIScrollPane new.
+	self loadedViews: Dictionary new.
+	self menuMorph: MTUIMenu new.
+	self scrollMorph: MTUIScrollPane new.
 	
 	self socialProvider: MTProviderFactory providerFromSettings.
 	

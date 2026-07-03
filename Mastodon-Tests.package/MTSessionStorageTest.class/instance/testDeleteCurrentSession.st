@@ -5,12 +5,12 @@ testDeleteCurrentSession
 	api1 := MTMastodonApi new.
 	api2 := MTMastodonApi new.
 	
-	view storeCurrentSession: api1.
-	view storeCurrentSession: api2.
+	self view storeCurrentSession: api1.
+	self view storeCurrentSession: api2.
 	
-	view sessionsComboBox currentIndex: 1.
+	self view sessionsComboBox currentIndex: 1.
 	
-	view deleteCurrentSession.
+	self view deleteCurrentSession.
 	
 	sessions := MTSettingsStore default at: #sessions.
 	

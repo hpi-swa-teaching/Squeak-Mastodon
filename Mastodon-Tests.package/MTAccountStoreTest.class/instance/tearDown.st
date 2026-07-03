@@ -1,6 +1,6 @@
 running
 tearDown
 
-	MTAccountStore accounts: storedAccounts.
+	MTAccountStore accounts: self storedAccounts.
 	
 	super tearDown

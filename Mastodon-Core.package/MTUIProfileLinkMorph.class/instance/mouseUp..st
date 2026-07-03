@@ -1,5 +1,5 @@
 event handling
 mouseUp: anEvent
 
-	(target isNil or: [actionSelector isNil]) ifTrue: [^ super mouseUp: anEvent].
-	target perform: actionSelector withArguments: self arguments
+	(self target isNil or: [self actionSelector isNil]) ifTrue: [^ super mouseUp: anEvent].
+	self target perform: self actionSelector withArguments: self arguments

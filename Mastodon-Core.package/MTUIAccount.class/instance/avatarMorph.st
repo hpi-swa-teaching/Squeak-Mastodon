@@ -2,7 +2,7 @@ render
 avatarMorph
 
 	self image ifNil: [
-		image := MTMedia imageMorphFrom: self account avatar.
+		self image: (MTMedia imageMorphFrom: self account avatar).
 		self image ifNotNil: [
 			self image
 				hResizing: #shrinkWrap;

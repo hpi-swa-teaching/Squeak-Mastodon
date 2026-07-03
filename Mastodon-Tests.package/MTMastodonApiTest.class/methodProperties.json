@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"apiWithMockClient:" : "Pagpeter 7/2/2026 15:35",
-		"setUp" : "Pagpeter 7/2/2026 15:35",
-		"testApiUrl" : "Pagpeter 7/2/2026 15:35",
+		"mastodonApi" : "JH 7/3/2026 19:56",
+		"mastodonApi:" : "JH 7/3/2026 19:57",
+		"setUp" : "JH 7/3/2026 19:58",
+		"testApiUrl" : "JH 7/3/2026 19:59",
 		"testBaseURL" : "JH 7/3/2026 00:34",
 		"testClientID" : "JH 7/3/2026 00:34",
 		"testClientSecret" : "JH 7/3/2026 00:35",

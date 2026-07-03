@@ -8,7 +8,7 @@ addSearchSection
 	requestWrapper := MTUIView setWrapper: requestWrapper.
 	requestWrapper wrapCentering: #topLeft.
 	
-	searchTextField := MTLineEdit new.
+	self searchTextField: MTLineEdit new.
 	self searchTextField
 		hResizing: #rigid;
 		width: 500;

@@ -2,7 +2,7 @@ render
 contentMorph
 
 	self content ifNotNil: [^ self content].
-	content := AlignmentMorph new.
+	self content: AlignmentMorph new.
 	self content
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;

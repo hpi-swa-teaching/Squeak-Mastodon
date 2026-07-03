@@ -10,6 +10,6 @@ loadToots
 		^ false].
 	
 	page := result value.
-	likeCursor := page cursor.
+	self likeCursor: page cursor.
 	self setToots: page toots.
 	^ true

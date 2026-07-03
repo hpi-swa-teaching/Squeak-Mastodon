@@ -1,5 +1,5 @@
 render
 addResultSection
 
-	resultTextLabel := TextMorph new contents: ''.
+	self resultTextLabel: (TextMorph new contents: '').
 	self addMorphBack: self resultTextLabel

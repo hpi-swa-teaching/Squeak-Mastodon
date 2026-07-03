@@ -5,7 +5,7 @@ testStoreCurrentSession
 	api := MTMastodonApi new.
 	api username: 'Alice'.
 	
-	view storeCurrentSession: api.
+	self view storeCurrentSession: api.
 	
 	sessions := MTSettingsStore default at: #sessions.
 	

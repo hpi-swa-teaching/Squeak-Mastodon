@@ -40,5 +40,5 @@ renderFeedToolbar
 		height: 32.
 	self connect: removeButton signal: #clicked: toSelector: #removeFeed.
 	toolbar addMorphBack: removeButton.
-	feedToolbar := toolbar.
+	self feedToolbar: toolbar.
 	self addMorphBack: self feedToolbar

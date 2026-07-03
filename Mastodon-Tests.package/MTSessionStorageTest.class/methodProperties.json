@@ -2,10 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "Pagpeter 7/2/2026 15:35",
-		"tearDown" : "Pagpeter 7/2/2026 15:35",
-		"testDeleteCurrentSession" : "Pagpeter 7/2/2026 15:35",
-		"testLoadComboBoxSelectsActiveSession" : "JH 7/3/2026 16:01",
-		"testStoreCurrentSession" : "Pagpeter 7/2/2026 15:35",
-		"testStoreMultipleSessions" : "Pagpeter 7/2/2026 15:35",
-		"testSwitchToSelectedSession" : "Pagpeter 7/2/2026 15:35" } }
+		"setUp" : "JH 7/3/2026 20:54",
+		"storedSettings" : "JH 7/3/2026 20:52",
+		"storedSettings:" : "JH 7/3/2026 20:53",
+		"tearDown" : "JH 7/3/2026 20:55",
+		"testDeleteCurrentSession" : "JH 7/3/2026 20:56",
+		"testLoadComboBoxSelectsActiveSession" : "JH 7/3/2026 20:57",
+		"testStoreCurrentSession" : "JH 7/3/2026 20:58",
+		"testStoreMultipleSessions" : "JH 7/3/2026 20:59",
+		"testSwitchToSelectedSession" : "JH 7/3/2026 21:00",
+		"view" : "JH 7/3/2026 20:50",
+		"view:" : "JH 7/3/2026 20:51" } }

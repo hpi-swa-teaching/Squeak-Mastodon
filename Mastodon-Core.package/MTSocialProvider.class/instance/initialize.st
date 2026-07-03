@@ -1,4 +1,4 @@
 initialize-release
 initialize
 
-	webClient := WebClient new
+	self webClient: WebClient new

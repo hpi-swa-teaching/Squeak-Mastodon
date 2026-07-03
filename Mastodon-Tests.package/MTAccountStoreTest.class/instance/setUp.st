@@ -1,7 +1,7 @@
 running
 setUp
 
-	storedAccounts := MTAccountStore accounts.
+	self storedAccounts: MTAccountStore accounts.
 	MTAccountStore removeAllAccounts.
 	
 	super setUp

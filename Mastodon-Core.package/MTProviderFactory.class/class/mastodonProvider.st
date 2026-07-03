@@ -10,5 +10,5 @@ mastodonProvider
 		self mastodonInstance token: token.
 		^ self mastodonInstance].
 	
-	mastodonInstance := MTMastodonApi with: baseURL token: token.
+	self mastodonInstance: (MTMastodonApi with: baseURL token: token).
 	^ self mastodonInstance
