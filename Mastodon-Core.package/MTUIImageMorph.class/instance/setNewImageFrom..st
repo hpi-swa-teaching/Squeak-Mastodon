@@ -1,15 +1,13 @@
 as yet unclassified
 setNewImageFrom: anImageMorph
 
-	| image rounded |
-	image := anImageMorph.
-	
-	rounded := Form extent: image extent depth: 32.
+	| rounded |
+	rounded := Form extent: anImageMorph extent depth: 32.
 	rounded fillColor: Color transparent.
 	
 	(FormCanvas on: rounded)
-		fillRoundRect: (0 @ 0 extent: image extent)
+		fillRoundRect: (0 @ 0 extent: anImageMorph extent)
 		radius: self cornerRadius
-		fillStyle: (InfiniteForm with: image).
+		fillStyle: (InfiniteForm with: anImageMorph).
 	
 	super setNewImageFrom: rounded

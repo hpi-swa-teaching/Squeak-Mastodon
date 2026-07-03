@@ -1,16 +1,16 @@
 updating
 loadTootsOf: aMTUser isSelf: aBoolean
 
-	| toots |
+	| timeline |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
 	aBoolean ifTrue: [self loadScheduled].
 	
-	toots := self mastodonApi getStatuses: aMTUser id.
+	timeline := self mastodonApi getStatuses: aMTUser id.
 	
-	toots isError ifTrue: [
+	timeline isError ifTrue: [
 		self inform: 'An error occurred'.
 		^ false].
 	
-	self setToots: toots value.
+	self setToots: timeline value.
 	self render

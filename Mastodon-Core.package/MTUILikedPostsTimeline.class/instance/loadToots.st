@@ -1,13 +1,13 @@
 updating
 loadToots
 
-	| toots |
+	| likedToots |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	toots := self mastodonApi getLikes.
-	toots isError ifTrue: [
-		self inform: (toots error ifNil: ['An error occurred']).
+	likedToots := self mastodonApi getLikes.
+	likedToots isError ifTrue: [
+		self inform: (likedToots error ifNil: ['An error occurred']).
 		^ false].
 	
-	self setToots: toots value.
+	self setToots: likedToots value.
 	^ true
