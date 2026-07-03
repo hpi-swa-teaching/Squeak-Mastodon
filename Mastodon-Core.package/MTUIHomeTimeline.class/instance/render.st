@@ -1,5 +1,5 @@
 render
 render
 
-	(self mastodonApi isKindOf: MTBlueSkyApi) ifTrue: [self renderFeedToolbar].
+	self mastodonApi showsFeedToolbar ifTrue: [self renderFeedToolbar].
 	^ super render
