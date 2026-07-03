@@ -19,5 +19,5 @@
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "MTUIView",
 	"type" : "normal" }

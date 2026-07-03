@@ -3,7 +3,7 @@ contentMorph
 
 	self content: (Morph new
 		layoutPolicy: TableLayout new;
-		wrapDirection: #topToBottom;
+		listDirection: #topToBottom;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		layoutInset: 0;
