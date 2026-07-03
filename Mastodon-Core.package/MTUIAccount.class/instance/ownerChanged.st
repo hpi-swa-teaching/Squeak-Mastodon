@@ -1,4 +1,4 @@
-change reporting
+layout
 ownerChanged
 
 	self content width: self owner width - 120.
