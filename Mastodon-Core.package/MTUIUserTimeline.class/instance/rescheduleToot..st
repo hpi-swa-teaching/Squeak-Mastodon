@@ -16,7 +16,7 @@ rescheduleToot: aScheduledTootMorph
 	timeRes := MTUtils validateScheduledDate: datePicker dateTime.
 	timeRes isError ifTrue: [
 		self inform: timeRes error.
-		^ false].
+		^ self].
 	self mastodonApi rescheduleToot: aScheduledTootMorph toot id at: timeRes value.
 	self
 		loadScheduled;

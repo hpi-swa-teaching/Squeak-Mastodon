@@ -2,11 +2,11 @@ toot
 toot
 
 	| textRes text visibility |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	textRes := self validateTootText.
 	textRes isError ifTrue: [
 		self inform: textRes error.
-		^ false].
+		^ self].
 	text := textRes value.
 	
 	visibility := self chooseVisibility.

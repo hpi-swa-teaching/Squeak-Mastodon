@@ -2,7 +2,7 @@ updating
 loadTootsOf: aMTUser isSelf: aBoolean
 
 	| timeline |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	
 	aBoolean ifTrue: [self loadScheduled].
 	
@@ -10,7 +10,7 @@ loadTootsOf: aMTUser isSelf: aBoolean
 	
 	timeline isError ifTrue: [
 		self inform: 'An error occurred'.
-		^ false].
+		^ self].
 	
 	self setToots: timeline value.
 	self render

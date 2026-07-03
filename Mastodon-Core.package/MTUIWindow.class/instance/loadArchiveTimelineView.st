@@ -2,7 +2,7 @@ views
 loadArchiveTimelineView
 
 	| archiveView |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	archiveView := MTUIArchiveTimeline new mastodonApi: self mastodonApi.
 	archiveView loadArchived.
 	

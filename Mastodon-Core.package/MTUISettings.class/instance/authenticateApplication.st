@@ -38,4 +38,5 @@ authenticateApplication
 		on: Error
 		do: [
 			self resultTextLabel contents: '<i>OAuth code exchange succeeded, but verify_credentials failed.</i>' asHtmlText.
-			^ false]
+			^ false].
+	^ true

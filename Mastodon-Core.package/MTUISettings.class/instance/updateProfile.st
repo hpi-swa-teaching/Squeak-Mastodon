@@ -2,17 +2,17 @@ initialization
 updateProfile
 
 	| text dict |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	
 	text := self usernameUpdateTextField contents asString.
 	text size > self maxUsernameSize ifTrue: [
 		self inform: 'Not more than ', self maxUsernameSize, ' characters username allowed.'.
-		^ false].
+		^ self].
 	
 	text := self descriptionTextField contents asString.
 	text size > self maxProfileDescriptionSize ifTrue: [
 		self inform: 'Not more than ', self maxProfileDescriptionSize, ' characters description allowed.'.
-		^ false].
+		^ self].
 	
 	dict := self uploadPictures.
 	dict at: 'display_name' put: self usernameUpdateTextField contents.
