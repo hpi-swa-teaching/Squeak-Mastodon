@@ -1,6 +1,5 @@
 initialization
 initializeScrollBars
-	"Initialize vertical and horizontal scroll bars."
 
 	(scrollBar := MTUIScrollBar on: self getValue: nil setValue: #vScrollBarValue:)
 		menuSelector: #vScrollBarMenuButtonPressed:;
@@ -15,8 +14,6 @@ initializeScrollBars
 	scroller offset: 0 @ 0.
 	self addMorph: scroller.
 	
-	"scrollBar initializeEmbedded: retractableScrollBar not."
-	"hScrollBar initializeEmbedded: retractableScrollBar not."
 	retractableScrollBar ifFalse: [
 		self
 			addMorph: scrollBar;

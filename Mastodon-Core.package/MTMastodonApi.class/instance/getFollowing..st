@@ -1,6 +1,5 @@
 endpoints
 getFollowing: aUserID
-	"returns all users this UserID follows"
 
 	| url response |
 	url := self buildUrl: '/api/v1/accounts/', aUserID, '/following'.

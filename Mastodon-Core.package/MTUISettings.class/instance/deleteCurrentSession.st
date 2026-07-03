@@ -7,6 +7,3 @@ deleteCurrentSession
 	sessions removeAt: sessionsComboBox currentIndex.
 	
 	MTSettingsStore default at: #sessions put: sessions.
-	
-	
-	"self refreshSessionsComboBox."

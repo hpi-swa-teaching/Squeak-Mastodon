@@ -1,6 +1,5 @@
 authentification
 registerApplication
-	"retrieves and saves ClientID and Client Secret"
 
 	| url parameters json response |
 	url := self buildUrl: '/api/v1/apps'.
