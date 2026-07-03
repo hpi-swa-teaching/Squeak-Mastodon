@@ -1,4 +1,4 @@
 accessing
 resetDefaultAccount
 
-	self defaultAccount: self emptyLoginCredential
+	defaultAccount := self emptyLoginCredential
