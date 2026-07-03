@@ -25,4 +25,4 @@ toot
 	
 	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView].
 	self cleanTextField.
-	"MTUtils showSuccessMessage: 'Toot posted successfully!' on: self messageArea"
+	MTUtils showSuccessMessage: 'Toot posted successfully!' on: self messageArea
