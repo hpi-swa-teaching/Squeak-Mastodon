@@ -11,8 +11,6 @@
 		"withAccount:" : "timbeier 5/25/2026 11:56" },
 	"instance" : {
 		"authorizationLinkFor:" : "lapl 7/2/2026 16:30",
-		"baseURL" : "lapl 7/2/2026 15:41",
-		"baseURL:" : "lapl 7/2/2026 15:41",
 		"block:" : "lapl 7/2/2026 15:42",
 		"buildUrl:" : "lapl 7/2/2026 15:42",
 		"cancelScheduledToot:" : "lapl 7/2/2026 15:42",
@@ -21,7 +19,6 @@
 		"clientSecret" : "lapl 7/2/2026 15:42",
 		"clientSecret:" : "lapl 7/2/2026 15:42",
 		"deleteRequest:" : "lapl 7/2/2026 20:24",
-		"deserialize:" : "lapl 7/2/2026 15:42",
 		"displayName" : "lapl 7/2/2026 15:42",
 		"encodeForm:" : "lapl 7/2/2026 15:42",
 		"encodeMultipartForm:boundary:" : "lapl 7/2/2026 15:42",
@@ -56,8 +53,6 @@
 		"rescheduleToot:at:" : "lapl 6/4/2026 17:36",
 		"reset" : "lapl 7/2/2026 15:44",
 		"search:" : "lapl 7/2/2026 15:44",
-		"token" : "lapl 7/2/2026 15:44",
-		"token:" : "lapl 7/2/2026 15:44",
 		"toot:withMedia:withVisibility:" : "lapl 7/2/2026 15:44",
 		"toot:withMedia:withVisibility:scheduleAt:" : "lapl 7/2/2026 15:44",
 		"toot:withVisibility:" : "lapl 7/2/2026 15:44",
@@ -71,6 +66,4 @@
 		"uploadMediaFrom:" : "lapl 7/2/2026 20:26",
 		"username" : "lapl 7/2/2026 15:44",
 		"username:" : "lapl 7/2/2026 15:44",
-		"verifyCredentials" : "lapl 7/2/2026 15:44",
-		"webClient" : "lapl 7/2/2026 15:44",
-		"webClient:" : "lapl 7/2/2026 15:44" } }
+		"verifyCredentials" : "lapl 7/2/2026 15:44" } }

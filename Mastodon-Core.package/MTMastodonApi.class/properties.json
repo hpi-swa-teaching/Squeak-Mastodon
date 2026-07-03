@@ -9,10 +9,7 @@
 		"username",
 		"password",
 		"clientID",
-		"clientSecret",
-		"token",
-		"webClient",
-		"baseURL" ],
+		"clientSecret" ],
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],
