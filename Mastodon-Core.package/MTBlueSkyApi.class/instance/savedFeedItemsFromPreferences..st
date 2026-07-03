@@ -6,28 +6,14 @@ savedFeedItemsFromPreferences: preferences
 	v2 := preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPrefV2']
 		ifNone: [nil].
-	v2 ifNotNil: [
-		(v2 at: 'items' ifAbsent: [#()]) do: [:item | items add: item].
-		^ items].
+	v2 ifNotNil: [^ (v2 at: 'items' ifAbsent: [#()]) asOrderedCollection].
 	old := preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPref']
 		ifNone: [nil].
-	old ifNotNil: [
-		(old at: 'pinned' ifAbsent: [#()]) do: [:uri |
-			items add: (Dictionary new
-				at: 'id' put: uri;
-				at: 'type' put: 'feed';
-				at: 'value' put: uri;
-				at: 'pinned' put: true;
-				yourself)].
-		(old at: 'saved' ifAbsent: [#()]) do: [:uri |
-			(items
-				detect: [:item | (item at: 'value' ifAbsent: ['']) = uri]
-				ifNone: [nil]) ifNil: [
-				items add: (Dictionary new
-					at: 'id' put: uri;
-					at: 'type' put: 'feed';
-					at: 'value' put: uri;
-					at: 'pinned' put: false;
-					yourself)]]].
+	old ifNil: [^ items].
+	(old at: 'pinned' ifAbsent: [#()]) do: [:uri |
+		items add: (self savedFeedItemForUri: uri pinned: true)].
+	(old at: 'saved' ifAbsent: [#()]) do: [:uri |
+		(items anySatisfy: [:item | (item at: 'value' ifAbsent: ['']) = uri])
+			ifFalse: [items add: (self savedFeedItemForUri: uri pinned: false)]].
 	^ items
