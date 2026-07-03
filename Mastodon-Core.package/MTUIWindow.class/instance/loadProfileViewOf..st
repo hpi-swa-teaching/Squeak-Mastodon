@@ -8,5 +8,5 @@ loadProfileViewOf: aMTUser
 	userTimeline user: aMTUser.
 	userTimeline
 		mastodonApi: self mastodonApi;
-		loadTootsOf: aMTUser isSelf: self.
+		loadTootsOf: aMTUser.
 	self loadView: (MTUIProfile with: userTimeline from: aMTUser) as: #profileView activate: #profileButton
