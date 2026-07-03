@@ -13,7 +13,6 @@ addSearchSection
 		hResizing: #rigid;
 		width: 500;
 		height: 36.
-	self searchTextField helpText: self searchHelpText.
 	requestWrapper addMorphBack: self searchTextField.
 	
 	searchButton := UiPushButton new.
