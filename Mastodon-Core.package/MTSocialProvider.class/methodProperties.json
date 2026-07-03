@@ -2,13 +2,22 @@
 	"class" : {
 		 },
 	"instance" : {
+		"baseURL" : "JH 7/3/2026 06:12",
+		"baseURL:" : "JH 7/3/2026 06:13",
 		"characterLimit" : "JH 7/3/2026 04:41",
+		"deserialize:" : "JH 7/3/2026 06:14",
 		"displayName" : "Pagpeter 7/2/2026 15:35",
+		"initialize" : "JH 7/3/2026 06:15",
+		"isAuthenticated" : "JH 7/3/2026 06:16",
 		"retryAmount" : "Pagpeter 7/2/2026 15:35",
 		"retryAmount:" : "Pagpeter 7/2/2026 15:35",
 		"retryNetworkRequest:" : "JH 7/3/2026 06:02",
 		"searchHint" : "JH 7/3/2026 04:46",
 		"showsFeedToolbar" : "JH 7/3/2026 05:10",
 		"showsLikedPosts" : "JH 7/3/2026 05:05",
+		"token" : "JH 7/3/2026 06:17",
+		"token:" : "JH 7/3/2026 06:18",
+		"username" : "JH 7/3/2026 06:19",
+		"username:" : "JH 7/3/2026 06:20",
 		"webClient" : "Pagpeter 7/2/2026 15:35",
 		"webClient:" : "Pagpeter 7/2/2026 15:35" } }
