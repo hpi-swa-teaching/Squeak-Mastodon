@@ -1,4 +1,4 @@
-image
+accessing
 setNewImageFrom: anImageMorph
 
 	| source rounded |

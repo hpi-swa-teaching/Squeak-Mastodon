@@ -1,4 +1,4 @@
-events
+event handling
 mouseUp: anEvent
 
 	(target isNil or: [actionSelector isNil]) ifTrue: [^ super mouseUp: anEvent].

@@ -1,4 +1,4 @@
-accessing
+events-processing
 handleKeystroke: anEvent
 
 	super handleKeystroke: anEvent.

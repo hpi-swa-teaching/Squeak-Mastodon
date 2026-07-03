@@ -1,4 +1,4 @@
-accessing
+rounding
 cornerRadius
 
 	cornerRadius ifNil: [^ 0].

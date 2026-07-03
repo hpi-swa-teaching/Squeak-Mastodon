@@ -1,4 +1,4 @@
-helpers
+initialize-release
 reset
 
 	self

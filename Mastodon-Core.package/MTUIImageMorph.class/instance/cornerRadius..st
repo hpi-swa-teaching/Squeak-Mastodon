@@ -1,4 +1,4 @@
-accessing
+rounding
 cornerRadius: anInteger
 
 	cornerRadius := anInteger.

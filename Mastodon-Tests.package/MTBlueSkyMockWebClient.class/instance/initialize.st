@@ -1,4 +1,4 @@
-initialization
+initialize-release
 initialize
 
 	getResponses := Dictionary new.

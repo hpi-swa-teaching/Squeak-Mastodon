@@ -1,4 +1,4 @@
-accessing
+testing
 isSuccess
 
 	self value ifNotNil: [^ true].
