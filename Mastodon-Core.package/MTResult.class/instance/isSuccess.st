@@ -1,5 +1,4 @@
 accessing
 isSuccess
 
-	self value ifNotNil: [^ true].
-	^ false
+	^ self value notNil

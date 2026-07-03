@@ -1,0 +1,1 @@
+MTUtils is the utility class of the Mastodon project.

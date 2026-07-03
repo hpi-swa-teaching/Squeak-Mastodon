@@ -6,7 +6,7 @@ addUpdateSection
 	
 	requestWrapper := MTUIView setMorph: (RectangleMorph new borderWidth: 1).
 	
-	self usernameUpdateTextField: (MTUIView setTextField: MTUITextMorph new withContent: 'New Username').
+	self usernameUpdateTextField: (MTUIView setTextField: (MTUITextMorph new recipient: self) withContent: 'New Username').
 	requestWrapper addMorphBack: self usernameUpdateTextField.
 	
 	self usernameSizeLabel: (TextMorph new contents: (self usernameUpdateTextField contents size asString, '/', self maxUsernameSize) asHtmlText).

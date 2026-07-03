@@ -1,4 +1,4 @@
-A MTUrl is an entity that contains different versions of urls mentioned in a toot.
+A MTUrl is an Object that contains different versions of URLs mentioned in a toot.
 
 Instance Variables
 	displayUrl:		<String>

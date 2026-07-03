@@ -5,6 +5,7 @@ addNewReplyTemplateTitle
 	textareaWrapper := MTUIView setWrapper: (RectangleMorph new borderWidth: 1).
 	
 	self replyTemplateTitle: (MTUITextMorph new
+		recipient: self;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;
