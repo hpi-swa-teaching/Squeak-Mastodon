@@ -1,4 +1,4 @@
-authentification
+authentication
 exchangeAuthorizationCode: anAuthorizationCode
 
 	| url parameters response json |

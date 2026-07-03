@@ -1,4 +1,4 @@
-authentification
+authentication
 registerApplication
 
 	self

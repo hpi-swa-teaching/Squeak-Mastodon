@@ -1,4 +1,4 @@
-authentification
+authentication
 verifyCredentials
 
 	| url response json account handle |

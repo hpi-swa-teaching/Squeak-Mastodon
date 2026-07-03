@@ -1,4 +1,4 @@
-authentification
+authentication
 exchangeAuthorizationCode: anAuthorizationCode
 
 	| handle password url jsonString response json |

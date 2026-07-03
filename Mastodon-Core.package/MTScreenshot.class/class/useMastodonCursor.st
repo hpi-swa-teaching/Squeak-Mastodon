@@ -13,14 +13,14 @@ useMastodonCursor
 					textMorph := submorph.
 					textMorph := textMorph textMorph backgroundColor: Color white.
 					textMorph exportAsPNGNamed: 'upload.png'.
-					"TODO: open new tweet with iamge window"
+					"TODO: open new tweet with image window"
 					
 					^ self]]].
 	textMorph isNil
 		ifTrue: [
 			"self openImageTweetWindowFor: morphUnderCursor"
 			morphUnderCursor exportAsPNGNamed: 'upload.png'.
-			"TODO: open new tweet with iamge window"
+			"TODO: open new tweet with image window"
 			
 			
 			"If there are no textMorph with syntax hightlighting, take the last one found"]
@@ -29,6 +29,6 @@ useMastodonCursor
 			textMorph := textMorph textMorph backgroundColor: Color white.
 			textMorph exportAsPNGNamed: 'upload.png'.
 			
-			"TODO: open new tweet with iamge window"
+			"TODO: open new tweet with image window"
 			
 			]

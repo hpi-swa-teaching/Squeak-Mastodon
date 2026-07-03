@@ -1,4 +1,4 @@
-authentification
+authentication
 getAccessToken
 	"retrieves and saves Bearer Token"
 

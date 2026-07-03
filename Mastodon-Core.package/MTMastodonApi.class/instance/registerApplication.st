@@ -1,4 +1,4 @@
-authentification
+authentication
 registerApplication
 
 	| url parameters json response |
