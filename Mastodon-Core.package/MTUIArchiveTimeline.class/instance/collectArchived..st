@@ -11,5 +11,5 @@ collectArchived: aBlock
 	archivedIds addAll: self archivedIds.
 	
 	posts := mentions select: [:mention | archivedIds includes: mention status id asString].
-	posts select: [:toot | toot notNil].
+	posts := posts select: [:toot | toot notNil].
 	^ posts collect: [:mention | mention status]
