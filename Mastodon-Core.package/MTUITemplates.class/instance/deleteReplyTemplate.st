@@ -2,7 +2,6 @@ delete-template
 deleteReplyTemplate
 
 	| replyTemplateAccess userTemplates menu selectedTemplateName |
-
 	replyTemplateAccess := MTReplyTemplateAccess new.
 	replyTemplateAccess user: self mastodonApi getCurrentUser value username.
 	userTemplates := replyTemplateAccess templateDirectoryContent.
@@ -15,7 +14,7 @@ deleteReplyTemplate
 	self addMorph: menu.
 	
 	selectedTemplateName := menu getUserResponse name.
-	selectedTemplateName = false ifTrue: [^ false].
+	selectedTemplateName ifFalse: [^ self].
 	(replyTemplateAccess deleteTemplate: selectedTemplateName)
-		ifTrue: [ self showSuccessMessage: 'Template deleted successfully' ]
+		ifTrue: [self showSuccessMessage: 'Template deleted successfully']
 		ifFalse: []
