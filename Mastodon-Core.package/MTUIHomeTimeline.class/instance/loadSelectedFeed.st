@@ -2,7 +2,7 @@ updating
 loadSelectedFeed
 
 	| result page |
-	(selectedFeed isNil or: [selectedFeed == false]) ifTrue: [selectedFeed := MTBlueSkyFeed home].
+	(selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [selectedFeed := MTBlueSkyFeed home].
 	selectedFeed isTimeline ifTrue: [
 		result := self mastodonApi getTimelinePageWithCursor: nil.
 		result isError ifTrue: [

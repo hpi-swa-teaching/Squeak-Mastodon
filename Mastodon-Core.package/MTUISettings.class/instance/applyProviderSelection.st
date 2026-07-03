@@ -5,7 +5,7 @@ applyProviderSelection
 	providerTextField ifNil: [^ false].
 	providerKey := providerTextField theText asString withBlanksTrimmed asLowercase.
 	providerKey isEmpty ifTrue: [providerKey := 'mastodon'].
-	(providerKey = 'mastodon' or: [providerKey = 'bluesky']) ifFalse: [
+	(#('mastodon' 'bluesky') includes: providerKey) ifFalse: [
 		resultTextLabel contents: '<i>Unknown provider. Use mastodon or bluesky.</i>' asHtmlText.
 		^ false].
 	MTSettingsStore default at: #provider put: providerKey asSymbol.

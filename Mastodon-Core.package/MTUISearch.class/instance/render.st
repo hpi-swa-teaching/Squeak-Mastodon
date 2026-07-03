@@ -25,7 +25,7 @@ render
 						actionSelector: #openProfileForAccount:;
 						arguments: (Array with: account)]]
 			ifFalse: [
-				relationship := (self mastodonApi getRelationship: account id) value at: 1.
+				relationship := (self mastodonApi getRelationship: account id) value first.
 				card contentMorph addMorphBack: card actionsMorph.
 				card followButton
 					target: self;

@@ -8,7 +8,7 @@ search: aQuery
 	response ifNotNil: [
 		json := self deserialize: response.
 		actors := json at: 'actors' ifAbsent: [#()].
-		actors do: [:actor | accounts add: (self accountFromAuthor: actor)]].
+		accounts := (actors collect: [:actor | self accountFromAuthor: actor]) asOrderedCollection].
 	^ MTResult value: (MTSearchResult new
 		accounts: accounts;
 		yourself)

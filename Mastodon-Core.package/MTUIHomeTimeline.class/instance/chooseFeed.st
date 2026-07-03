@@ -3,6 +3,6 @@ chooseFeed
 
 	| feed |
 	feed := self chooseFeedFrom: feeds title: 'Feeds'.
-	(feed isNil or: [feed == false]) ifTrue: [^ self].
+	(feed isKindOf: MTBlueSkyFeed) not ifTrue: [^ self].
 	selectedFeed := feed.
 	self loadSelectedFeed

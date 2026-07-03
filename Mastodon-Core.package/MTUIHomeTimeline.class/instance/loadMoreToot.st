@@ -5,7 +5,7 @@ loadMoreToot
 	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
 		self mastodonApi token isNil ifTrue: [^ false].
 		^ super loadMoreToot].
-	(selectedFeed isNil or: [selectedFeed == false]) ifTrue: [^ false].
+	(selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [^ false].
 	feedCursor ifNil: [^ false].
 	result := selectedFeed isTimeline
 		ifTrue: [self mastodonApi getTimelinePageWithCursor: feedCursor]
