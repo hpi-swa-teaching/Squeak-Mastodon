@@ -1,5 +1,5 @@
 toot
-replyTootImagewithVisibility: aVisibility
+replyTootImageWithVisibility: aVisibility
 
 	| imageID json |
 	json := self mastodonApi uploadMediaFrom: self imageMorph imageForm.

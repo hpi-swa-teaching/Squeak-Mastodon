@@ -18,8 +18,8 @@ toot
 				ifNotNil: [self mastodonApi replyTo: self replyTo id text: text]]
 		ifNotNil: [
 			self replyTo
-				ifNil: [self tootImagewithVisibility: visibility]
-				ifNotNil: [self replyTootImagewithVisibility: visibility]].
+				ifNil: [self tootImageWithVisibility: visibility]
+				ifNotNil: [self replyTootImageWithVisibility: visibility]].
 	
 	self replyTo ifNil: [self tootTextArea contents: ' '] ifNotNil: [self owner delete].
 	
