@@ -2,9 +2,9 @@ updating
 loadTootsOf: aMTUser
 
 	| result |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
-	result := self mastodonApi getStatuses: aMTUser id.
+	result := self socialProvider getStatuses: aMTUser id.
 	
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).

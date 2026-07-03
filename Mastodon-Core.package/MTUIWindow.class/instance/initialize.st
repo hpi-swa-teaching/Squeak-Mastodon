@@ -7,10 +7,10 @@ initialize
 	menuMorph := MTUIMenu new.
 	scrollMorph := MTUIScrollPane new.
 	
-	self mastodonApi: MTProviderFactory providerFromSettings.
+	self socialProvider: MTProviderFactory providerFromSettings.
 	
 	self
-		setLabel: self mastodonApi displayName;
+		setLabel: self socialProvider displayName;
 		paneColor: Color veryVeryLightGray;
 		addMenuMorph;
 		addScrollMorph.

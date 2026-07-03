@@ -2,9 +2,9 @@ updating
 loadToots
 
 	| result |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
-	result := self mastodonApi getPrivateTimeline.
+	result := self socialProvider getPrivateTimeline.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

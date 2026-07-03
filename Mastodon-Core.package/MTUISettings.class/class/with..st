@@ -1,4 +1,4 @@
 initialization
-with: aMastodonApi
+with: aSocialProvider
 
-	^ self new mastodonApi: aMastodonApi
+	^ self new socialProvider: aSocialProvider

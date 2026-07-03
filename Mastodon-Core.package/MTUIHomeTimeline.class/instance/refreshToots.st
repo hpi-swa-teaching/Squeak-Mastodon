@@ -1,7 +1,7 @@
 updating
 refreshToots
 
-	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
-		self mastodonApi token isNil ifTrue: [^ self loadPublicToots].
+	(self socialProvider isKindOf: MTBlueSkyApi) ifFalse: [
+		self socialProvider token isNil ifTrue: [^ self loadPublicToots].
 		^ super refreshToots].
 	^ false

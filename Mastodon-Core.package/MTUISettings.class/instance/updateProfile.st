@@ -2,7 +2,7 @@ initialization
 updateProfile
 
 	| text dict |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
 	text := self usernameUpdateTextField contents asString.
 	text size > 30 ifTrue: [
@@ -18,5 +18,5 @@ updateProfile
 	dict at: 'display_name' put: self usernameUpdateTextField contents.
 	dict at: 'note' put: self descriptionTextField contents.
 	
-	self mastodonApi updateCredentials: dict.
+	self socialProvider updateCredentials: dict.
 	^ true

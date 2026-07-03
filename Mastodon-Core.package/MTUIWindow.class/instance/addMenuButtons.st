@@ -3,7 +3,7 @@ addMenuButtons
 
 	self menuMorph addButton: #newTootButton for: #loadNewTootView on: self with: MTUIIcons newTweet.
 	self menuMorph addButton: #homeTimelineButton for: #loadHomeTimelineView on: self with: MTUIIcons home.
-	self mastodonApi showsLikedPosts ifTrue: [
+	self socialProvider showsLikedPosts ifTrue: [
 		self menuMorph
 			addButton: #likedPostsButton
 			for: #loadLikedPostsView

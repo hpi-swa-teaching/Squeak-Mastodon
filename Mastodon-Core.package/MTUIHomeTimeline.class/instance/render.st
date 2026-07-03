@@ -1,5 +1,5 @@
 render
 render
 
-	self mastodonApi showsFeedToolbar ifTrue: [self renderFeedToolbar].
+	self socialProvider showsFeedToolbar ifTrue: [self renderFeedToolbar].
 	^ super render

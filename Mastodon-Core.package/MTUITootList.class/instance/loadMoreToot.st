@@ -2,9 +2,9 @@ updating
 loadMoreToot
 
 	| newToots |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
-	newToots := self mastodonApi getPrivateTimelineMax: self minID - 1.
+	newToots := self socialProvider getPrivateTimelineMax: self minID - 1.
 	
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).

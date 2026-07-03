@@ -1,6 +1,6 @@
 initialization
-with: aMastodonApi content: aString
+with: aSocialProvider content: aString
 
 	^ self new
-		mastodonApi: aMastodonApi;
+		socialProvider: aSocialProvider;
 		updateContent: aString

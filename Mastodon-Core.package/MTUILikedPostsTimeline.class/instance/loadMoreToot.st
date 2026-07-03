@@ -2,10 +2,10 @@ updating
 loadMoreToot
 
 	| result page |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	likeCursor ifNil: [^ false].
 	
-	result := self mastodonApi getLikesPageWithCursor: likeCursor.
+	result := self socialProvider getLikesPageWithCursor: likeCursor.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		^ false].

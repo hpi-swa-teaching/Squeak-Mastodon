@@ -7,10 +7,10 @@
 		"samplePreferencesJson" : "Pagpeter 7/2/2026 15:35",
 		"sampleTimelineJson" : "Pagpeter 7/2/2026 15:35",
 		"sampleTimelineWithCursorJson" : "Pagpeter 7/2/2026 15:35",
-		"testCustomFeedLoadMoreUsesSelectedFeedCursor" : "Pagpeter 7/2/2026 15:35",
-		"testCustomFeedRefreshKeepsLoadedPosts" : "Pagpeter 7/2/2026 15:35",
-		"testLoadFeedsTreatsFalseSelectedFeedAsMissing" : "Pagpeter 7/2/2026 15:35",
-		"testLoggedOutMastodonLoadsPublicTimeline" : "Pagpeter 7/2/2026 15:35",
+		"testCustomFeedLoadMoreUsesSelectedFeedCursor" : "JH 7/3/2026 15:49",
+		"testCustomFeedRefreshKeepsLoadedPosts" : "JH 7/3/2026 15:50",
+		"testLoadFeedsTreatsFalseSelectedFeedAsMissing" : "JH 7/3/2026 15:51",
+		"testLoggedOutMastodonLoadsPublicTimeline" : "JH 7/3/2026 15:52",
 		"testRememberFeedDoesNotReloadTimeline" : "JH 7/3/2026 03:35",
-		"testRenderShowsFeedToolbarForBluesky" : "Pagpeter 7/2/2026 15:35",
-		"testSelectedCustomFeedLoadsFeedEndpoint" : "Pagpeter 7/2/2026 15:35" } }
+		"testRenderShowsFeedToolbarForBluesky" : "JH 7/3/2026 15:53",
+		"testSelectedCustomFeedLoadsFeedEndpoint" : "JH 7/3/2026 15:54" } }

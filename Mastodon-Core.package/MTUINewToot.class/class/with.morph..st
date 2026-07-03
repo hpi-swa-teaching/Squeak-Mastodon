@@ -1,6 +1,6 @@
 initialization
-with: aMastodonApi morph: aMorph
+with: aSocialProvider morph: aMorph
 
 	^ self new
-		mastodonApi: aMastodonApi;
+		socialProvider: aSocialProvider;
 		imageMorph: aMorph

@@ -1,9 +1,9 @@
 initialization
-for: anAccount mastodonApi: anApi
+for: anAccount socialProvider: anApi
 
 	| accountMorph |
 	accountMorph := self new.
 	accountMorph account: anAccount.
-	accountMorph mastodonApi: anApi.
+	accountMorph socialProvider: anApi.
 	accountMorph render.
 	^ accountMorph

@@ -3,8 +3,8 @@ followAccountWithId: anInteger fromSender: aButton
 
 	aButton active
 		ifTrue: [
-			self mastodonApi unfollow: anInteger.
+			self socialProvider unfollow: anInteger.
 			aButton active: false]
 		ifFalse: [
-			self mastodonApi follow: anInteger.
+			self socialProvider follow: anInteger.
 			aButton active: true]

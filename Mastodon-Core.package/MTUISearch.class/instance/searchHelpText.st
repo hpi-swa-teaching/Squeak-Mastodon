@@ -1,4 +1,4 @@
 accessing
 searchHelpText
 
-	^ self mastodonApi searchHint
+	^ self socialProvider searchHint

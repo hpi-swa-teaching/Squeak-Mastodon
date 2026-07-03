@@ -3,12 +3,12 @@ loadProfileView
 
 	| currentUser |
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
-	(self mastodonApi isKindOf: MTBlueSkyApi)
-		ifTrue: [currentUser := self mastodonApi getProfileFor: self mastodonApi verifyCredentials value acct]
+	(self socialProvider isKindOf: MTBlueSkyApi)
+		ifTrue: [currentUser := self socialProvider getProfileFor: self socialProvider verifyCredentials value acct]
 		ifFalse: [
-			currentUser := self mastodonApi getCurrentUser.
+			currentUser := self socialProvider getCurrentUser.
 			
 			].
 	

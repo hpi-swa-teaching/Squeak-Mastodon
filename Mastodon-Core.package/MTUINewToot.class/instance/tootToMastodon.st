@@ -8,7 +8,7 @@ tootToMastodon
 		^ false].
 	visibility := self addTootMenu getUserResponse.
 	self imageMorph
-		ifNil: [self mastodonApi toot: text withVisibility: visibility]
+		ifNil: [self socialProvider toot: text withVisibility: visibility]
 		ifNotNil: [self tootImagewithVisibility: visibility].
 	self tootTextArea contents: ''.
 	self sendPostFeedback.

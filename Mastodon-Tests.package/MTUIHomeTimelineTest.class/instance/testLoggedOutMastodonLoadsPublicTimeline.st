@@ -9,7 +9,7 @@ testLoggedOutMastodonLoadsPublicTimeline
 	api := MTMastodonApi with: 'https://mastodon.social' token: nil.
 	api instVarNamed: 'webClient' put: client.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	
 	self assert: timeline loadToots equals: true.
 	self assert: timeline toots size equals: 1.

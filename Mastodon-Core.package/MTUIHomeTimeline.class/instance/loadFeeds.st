@@ -2,7 +2,7 @@ updating
 loadFeeds
 
 	| result |
-	result := self mastodonApi getSavedFeeds.
+	result := self socialProvider getSavedFeeds.
 	result isError ifTrue: [
 		self inform: (result error ifNil: ['An error occurred']).
 		feeds := OrderedCollection with: MTBlueSkyFeed home.

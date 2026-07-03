@@ -8,7 +8,7 @@ render
 	self toots do: [:toot | | tootMorph spacingMorph actionToot |
 		tootMorph := MTUIToot for: toot.
 		actionToot := toot reblogOrSelf.
-		(self mastodonApi isKindOf: MTBlueSkyApi)
+		(self socialProvider isKindOf: MTBlueSkyApi)
 			ifTrue: [
 				tootMorph repostButton
 					target: self;
@@ -26,7 +26,7 @@ render
 			actionSelector: #favoriteTootWithId:fromSender:;
 			arguments: (Array with: actionToot id with: tootMorph heartButton).
 		tootMorph heartButton active: actionToot favourited.
-		(self mastodonApi isKindOf: MTBlueSkyApi) ifTrue: [
+		(self socialProvider isKindOf: MTBlueSkyApi) ifTrue: [
 			tootMorph followButton render.
 			tootMorph followButton
 				target: self;

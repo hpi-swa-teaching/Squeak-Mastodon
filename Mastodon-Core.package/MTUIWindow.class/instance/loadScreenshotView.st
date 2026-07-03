@@ -2,7 +2,7 @@ views
 loadScreenshotView
 
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
 	MTScreenshot useMastodonCursor.
 	^ true

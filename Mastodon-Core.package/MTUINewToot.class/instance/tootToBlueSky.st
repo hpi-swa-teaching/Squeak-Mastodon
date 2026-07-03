@@ -7,8 +7,8 @@ tootToBlueSky
 		self inform: 'Not more than ', self tootCharacterLimit asString, ' characters allowed.'.
 		^ false].
 	result := self imageMorph
-		ifNil: [self mastodonApi toot: text]
-		ifNotNil: [self mastodonApi toot: text withImage: self imageMorph imageForm].
+		ifNil: [self socialProvider toot: text]
+		ifNotNil: [self socialProvider toot: text withImage: self imageMorph imageForm].
 	result isError ifTrue: [self inform: result error. ^ false].
 	self tootTextArea contents: ''.
 	self removeOldMorph.

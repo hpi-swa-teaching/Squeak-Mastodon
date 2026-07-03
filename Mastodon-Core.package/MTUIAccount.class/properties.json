@@ -17,7 +17,7 @@
 		"content",
 		"header",
 		"profileLink",
-		"mastodonApi" ],
+		"socialProvider" ],
 	"name" : "MTUIAccount",
 	"pools" : [
 		 ],

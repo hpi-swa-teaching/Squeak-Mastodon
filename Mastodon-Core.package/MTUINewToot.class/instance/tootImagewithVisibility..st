@@ -2,6 +2,6 @@ toot
 tootImagewithVisibility: aVisibility
 
 	| imageID json |
-	json := self mastodonApi uploadMediaFrom: self imageMorph imageForm.
-	imageID := (self mastodonApi deserialize: json) at: 'id'.
-	self mastodonApi toot: self tootTextArea contents asString withMedia: imageID withVisibility: aVisibility
+	json := self socialProvider uploadMediaFrom: self imageMorph imageForm.
+	imageID := (self socialProvider deserialize: json) at: 'id'.
+	self socialProvider toot: self tootTextArea contents asString withMedia: imageID withVisibility: aVisibility

@@ -1,5 +1,5 @@
 accessing
-mastodonApi: anObject
+socialProvider: anObject
 
-	super mastodonApi: anObject.
+	super socialProvider: anObject.
 	self searchTextField ifNotNil: [self searchTextField helpText: self searchHelpText]

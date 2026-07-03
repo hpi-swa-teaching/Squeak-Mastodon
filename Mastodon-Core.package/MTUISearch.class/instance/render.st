@@ -5,8 +5,8 @@ render
 		self removeMorph: morph.
 		morph delete].
 	self accounts do: [:account | | card spacingMorph relationship |
-		card := MTUIAccount for: account mastodonApi: self mastodonApi.
-		(self mastodonApi isKindOf: MTBlueSkyApi)
+		card := MTUIAccount for: account socialProvider: self socialProvider.
+		(self socialProvider isKindOf: MTBlueSkyApi)
 			ifTrue: [
 				card followButton render.
 				card followButton
@@ -25,7 +25,7 @@ render
 						actionSelector: #openProfileForAccount:;
 						arguments: (Array with: account)]]
 			ifFalse: [
-				relationship := (self mastodonApi getRelationship: account id) value first.
+				relationship := (self socialProvider getRelationship: account id) value first.
 				card contentMorph addMorphBack: card actionsMorph.
 				card followButton
 					target: self;

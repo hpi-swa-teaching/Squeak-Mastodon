@@ -11,7 +11,7 @@ testLoadFeedsTreatsFalseSelectedFeedAsMissing
 		with: self sampleFeedGeneratorJson.
 	api := self apiWithMockClient: client token: 'feed-token'.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	timeline selectedFeed: false.
 	
 	self assert: timeline loadFeeds equals: true.

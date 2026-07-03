@@ -1,6 +1,6 @@
 helpers
 refreshProvider
 
-	self mastodonApi: MTProviderFactory providerFromSettings.
-	self setLabel: self mastodonApi displayName.
+	self socialProvider: MTProviderFactory providerFromSettings.
+	self setLabel: self socialProvider displayName.
 	self refreshMenuButtons

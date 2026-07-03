@@ -2,10 +2,10 @@ actions
 logout
 
 	self clearTextFields.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	MTSettingsStore reset.
 	MTUIWindow instance ifNotNil: [MTUIWindow instance refreshProvider].
-	self mastodonApi reset.
+	self socialProvider reset.
 	MTAccountStore resetDefaultAccount.
 	MTUIWindow instance loadSettingsView.
 	^ true

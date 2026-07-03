@@ -14,7 +14,7 @@ testRenderShowsFeedToolbarForBluesky
 		with: self sampleTimelineJson.
 	api := self apiWithMockClient: client token: 'feed-token'.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	
 	self assert: timeline loadToots equals: true.
 	toolbar := timeline feedToolbar.

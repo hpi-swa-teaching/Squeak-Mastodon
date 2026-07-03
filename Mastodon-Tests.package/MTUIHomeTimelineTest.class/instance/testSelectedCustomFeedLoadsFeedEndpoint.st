@@ -13,7 +13,7 @@ testSelectedCustomFeedLoadsFeedEndpoint
 		sourceType: #feed;
 		yourself.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	timeline selectedFeed: feed.
 	
 	self assert: timeline loadSelectedFeed equals: true.

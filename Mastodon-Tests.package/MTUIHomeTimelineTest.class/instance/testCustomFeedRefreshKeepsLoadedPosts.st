@@ -13,7 +13,7 @@ testCustomFeedRefreshKeepsLoadedPosts
 		content: 'Already loaded';
 		yourself.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	timeline selectedFeed: feed.
 	timeline toots: (OrderedCollection with: toot).
 	

@@ -1,4 +1,4 @@
 accessing
 tootCharacterLimit
 
-	^ self mastodonApi characterLimit
+	^ self socialProvider characterLimit
