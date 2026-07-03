@@ -1,4 +1,4 @@
 accessing
-actionsMorph: anObject
+actionsMorph: aMorph
 
-	actionsMorph := anObject
+	actionsMorph := aMorph

@@ -1,10 +1,8 @@
 views
 loadProfileViewForCurrentUser
 
-	| currentUserResult |
+	| currentUser |
 	self ensureLoggedIn ifFalse: [^ false].
-	currentUserResult := self mastodonApi getCurrentUser.
+	currentUser := self mastodonApi getCurrentUser.
 	
-	(MTUtils isError: currentUserResult) ifTrue: [^ false].
-	
-	self loadView: (MTUIProfile for: currentUserResult value) as: #profileView activate: #profileButton
+	self loadView: (MTUIProfile for: currentUser value) as: #profileView activate: #profileButton

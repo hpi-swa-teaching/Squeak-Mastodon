@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"instance" ],
+		"instanceAPI",
+		"instanceWindow",
+		"instanceCredentials" ],
 	"name" : "MTTestCase",
 	"pools" : [
 		 ],

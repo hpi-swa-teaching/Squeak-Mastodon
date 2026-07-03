@@ -1,13 +1,10 @@
 updating
 loadToots
 
-	| result |
+	| toots |
 	self mastodonApi hasToken ifFalse: [^ false].
 	
-	result := self getToots.
-	result isError ifTrue: [
-		self inform: (result error ifNil: ['An error occurred']).
-		^ false].
+	toots := self getToots.
 	
-	self setToots: result value.
+	self setToots: toots.
 	^ true

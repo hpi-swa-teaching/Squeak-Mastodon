@@ -1,4 +1,4 @@
-accessing
+helpers
 getFormattedBaseUrl
 
 	| baseUrl |

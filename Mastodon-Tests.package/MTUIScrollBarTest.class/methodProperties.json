@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"newScrollBarWithValue:max:min:" : "timhb 7/3/2026 09:42",
+		"testSetValueNormalChangeDoesNotSignal" : "timhb 7/3/2026 10:00",
+		"testSetValueSignalsBeginReached" : "timhb 7/3/2026 09:55",
+		"testSetValueSignalsEndReached" : "timhb 7/3/2026 10:00",
+		"testSetValueWithDifferentValueNoError" : "timhb 7/3/2026 09:51",
+		"testSetValueWithMaxValueNoError" : "timhb 7/3/2026 09:53",
+		"testSetValueWithMinValueNoError" : "timhb 7/3/2026 09:53",
+		"testSetValueWithSameValueNoError" : "timhb 7/3/2026 09:54",
+		"testSetValueWithSccrollDeltaSignalsEndReached" : "timhb 7/3/2026 10:01" } }

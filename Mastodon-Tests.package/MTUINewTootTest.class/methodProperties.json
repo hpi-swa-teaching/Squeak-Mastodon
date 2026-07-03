@@ -2,6 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
+		"pngTestStream" : "timhb 7/3/2026 14:17",
+		"testInitialize" : "timhb 7/3/2026 14:59",
+		"testLoadImageFromReturnsForm" : "timhb 7/3/2026 14:15",
+		"testLoadImageFromReturnsNilWhenCanceled" : "timhb 7/3/2026 14:13",
+		"testNewTootIsNotReply" : "timhb 7/3/2026 14:10",
 		"testNewTootIsntReply" : "NV 6/23/2026 19:56",
 		"testReplyToPrefillsMentionHandle" : "NV 6/28/2026 12:48",
 		"testReplyToSetsInReplyToId" : "NV 6/23/2026 19:55",

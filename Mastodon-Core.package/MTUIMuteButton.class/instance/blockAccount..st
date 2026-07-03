@@ -7,8 +7,10 @@ blockAccount: anID
 		ifTrue: [
 			self mastodonApi unblock: anID.
 			cache ifNotNil: [cache blocking: false].
-			self active: false]
+			self active: false;
+				balloonText: 'block account']
 		ifFalse: [
 			self mastodonApi block: anID.
 			cache ifNotNil: [cache blocking: true].
-			self active: true]
+			self active: true;
+				balloonText: 'unblock account']

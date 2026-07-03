@@ -1,0 +1,4 @@
+helpers
+authorizationLinkCalled
+
+	^ authorizationLinkCalled = true

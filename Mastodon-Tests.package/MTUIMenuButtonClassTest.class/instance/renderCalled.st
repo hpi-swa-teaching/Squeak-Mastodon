@@ -1,0 +1,4 @@
+render
+renderCalled
+
+	^ renderCalled = true

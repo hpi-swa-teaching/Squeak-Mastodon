@@ -7,8 +7,10 @@ followAccount: anID
 		ifTrue: [
 			self mastodonApi unfollow: anID.
 			cache ifNotNil: [cache following: false].
-			self active: false]
+			self active: false;
+				balloonText: 'Follow user']
 		ifFalse: [
 			self mastodonApi follow: anID.
 			cache ifNotNil: [cache following: true].
-			self active: true]
+			self active: true;
+				balloonText: 'Unfollow user']

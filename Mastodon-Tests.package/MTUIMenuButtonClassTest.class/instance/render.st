@@ -1,0 +1,4 @@
+render
+render
+
+	renderCalled := true

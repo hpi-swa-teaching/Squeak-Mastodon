@@ -10,6 +10,7 @@ firstTootRebloggedJson
 	json := JsonObject new
 		at: 'account' put: self firstAccountJson;
 		at: 'application' put: application;
+		at: 'content' put: '';
 		at: 'bookmarked' put: false;
 		at: 'created_at' put: '2026-06-30T11:15:00.000Z';
 		at: 'favourited' put: false;
@@ -21,6 +22,7 @@ firstTootRebloggedJson
 			put: 'https://mastodon.de/users/', self firstAccount username, '/statuses/116810000000000010';
 		at: 'url' put: 'https://mastodon.de/@', self firstAccount username, '/116810000000000010';
 		at: 'visibility' put: 'public';
+		at: 'media_attachments' put: {};
 		yourself.
 	
 	^ json

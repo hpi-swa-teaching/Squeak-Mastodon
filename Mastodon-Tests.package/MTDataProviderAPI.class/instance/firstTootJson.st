@@ -29,7 +29,7 @@ firstTootJson
 		at: 'in_reply_to_account_id' put: nil;
 		at: 'in_reply_to_id' put: nil;
 		at: 'language' put: 'en';
-		at: 'media_attachments' put: #();
+		at: 'media_attachments' put: { self mediaJson };
 		at: 'mentions' put: #();
 		at: 'muted' put: false;
 		at: 'pinned' put: false;

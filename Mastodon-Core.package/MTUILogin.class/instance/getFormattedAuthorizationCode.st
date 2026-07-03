@@ -1,4 +1,4 @@
-accessing
+helpers
 getFormattedAuthorizationCode
 
 	^ self getAuthorizationCodeField theText asString withBlanksTrimmed

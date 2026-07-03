@@ -13,7 +13,7 @@ getGeneralUserInfo
 	
 	text := TextMorph new.
 	text
-		contentsWrapped: (MTUtils asTextFromHtml: '<b><font size="20">', account displayName, '</font></b><br>', '<font color="#cccccc">@', account federatedUsername, '</font><br><br>', account note, '<br><br>', '<b>', account statusesCount, '</b> Toots - <b>', account followingCount, '</b> Following - <b>', account followersCount, '</b> Followers');
+		contentsWrapped: (MTUtils asTextFromHtml: '<b><font size="20">', self account displayName, '</font></b><br>', '<font color="#cccccc">@', self account federatedUsername, '</font><br><br>', self account note, '<br><br>', '<b>', account statusesCount, '</b> Toots - <b>', self account followingCount, '</b> Following - <b>', self account followersCount, '</b> Followers');
 		wrapFlag: true;
 		width: 400;
 		color: Color white;

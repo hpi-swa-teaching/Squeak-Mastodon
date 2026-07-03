@@ -1,6 +1,6 @@
 initialization
 from: aJsonObject
-
+	
 	^ self new
 		id: (aJsonObject at: 'id');
 		createdAt: (aJsonObject at: 'created_at');

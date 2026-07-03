@@ -1,4 +1,4 @@
 accessing
 media
 
-	^ media
+	^ media ifNil: [media := OrderedCollection new]

@@ -1,4 +1,4 @@
 accessing
 quotePolicyButton
 
-	^ quotePolicyButton
+	^ quotePolicyButton ifNil: [quotePolicyButton := self getQuotePolicyButton]

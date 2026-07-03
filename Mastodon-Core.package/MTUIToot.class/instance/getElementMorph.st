@@ -2,7 +2,6 @@ render
 getElementMorph
 
 	| container |
-	self determineInteractionType.
 	container := self getContainer.
 	{
 		self getAccountMorph.

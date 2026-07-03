@@ -1,4 +1,4 @@
 accessing
 visibilityButton
 
-	^ visibilityButton
+	^ visibilityButton ifNil: [visibilityButton := self getVisibilityButton]

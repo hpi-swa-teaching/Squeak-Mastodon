@@ -2,7 +2,6 @@ endpoints
 updateCredentials: aDictionary avatar: anAvatarForm header: aHeaderForm
 
 	| url boundary response |
-	self halt.
 	url := self urlForPath: '/api/v1/accounts/update_credentials'.
 	boundary := WebUtils multipartBoundary.
 	response := self webClient

@@ -1,0 +1,4 @@
+constants
+maxTextLength
+
+	^ 500

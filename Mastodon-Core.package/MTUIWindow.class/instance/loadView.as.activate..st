@@ -1,6 +1,6 @@
-views-helper
+views-helpers
 loadView: aView as: aSymbol activate: aButton
 
 	self viewHistory: OrderedCollection new.
-	menuMorph activeButton: aButton.
+	self menuMorph activeButton: aButton.
 	self updateViewMorph: aView

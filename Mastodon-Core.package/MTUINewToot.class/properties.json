@@ -18,7 +18,8 @@
 		"quotePolicySetting",
 		"media",
 		"mediaPreview",
-		"inReplyToId" ],
+		"inReplyToId",
+		"tootLengthLabel" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

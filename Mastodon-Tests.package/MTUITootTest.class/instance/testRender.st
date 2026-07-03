@@ -1,4 +1,4 @@
-running
+render
 testRender
 
 	| morph rendered |

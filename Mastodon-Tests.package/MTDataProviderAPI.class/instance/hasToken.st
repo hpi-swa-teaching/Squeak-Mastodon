@@ -1,0 +1,4 @@
+meta
+hasToken
+
+	^ true

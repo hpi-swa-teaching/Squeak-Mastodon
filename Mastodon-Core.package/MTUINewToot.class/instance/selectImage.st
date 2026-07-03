@@ -3,8 +3,10 @@ selectImage
 
 	| image |
 	self imageButton enabled: false.
-	image := self loadImage.
+	
+	image := self loadImage ifNil: [self imageButton enabled: true. ^ nil].
+	
 	self media add: image.
-	self mediaPreview addMorphBack: (image scaledToSize: 300) asMorph.
-	self media ifNotEmpty: [self sendButton enabled: true].
+	self mediaPreview addMorphBack: (image scaledToSize: self defaultImageSize) asMorph.
+	self sendButton enabled: true.
 	self imageButton enabled: true

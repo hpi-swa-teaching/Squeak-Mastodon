@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUIFollowButtonTest",
+	"pools" : [
+		 ],
+	"super" : "MTTestCase",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
-render
+render-buttons
 addPrivacyButtons
 
 	| wrapper |

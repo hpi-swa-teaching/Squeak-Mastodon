@@ -9,4 +9,4 @@ balloonTextForId: aSymbol
 		[#profileButton] -> ['Your profile'].
 		[#searchButton] -> ['Search users'].
 		[#screenshotButton] -> ['Take a screenshot'].
-		[#settingsButton] -> ['Settings'] }
+		[#settingsButton] -> ['Settings'] } otherwise: ['']

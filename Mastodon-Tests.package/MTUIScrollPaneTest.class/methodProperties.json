@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testHorizontalScrollBarSetValueDoesNotRaiseError" : "timhb 7/3/2026 10:44",
+		"testInitializeScrollBarsAddsScrollerAsMorph" : "timhb 7/3/2026 10:43",
+		"testInitializeScrollBarsCreatesHorizontalScrollBar" : "timhb 7/3/2026 10:19",
+		"testInitializeScrollBarsCreatesScroller" : "timhb 7/3/2026 10:20",
+		"testInitializeScrollBarsCreatesVerticalScrollBar" : "timhb 7/3/2026 10:19",
+		"testVerticalScrollBarSetValueDoesNotRaiseError" : "timhb 7/3/2026 10:44" } }

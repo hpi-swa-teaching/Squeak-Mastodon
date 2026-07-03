@@ -1,7 +1,8 @@
 toot
 showFeedback
 
-	self removeMedia.
-	self updateTextSize.
+	self removeMedia;
+		updateTextLength.
+		
 	self feedbackMorph show.
 	self addAlarm: #hideFeedback after: 5000

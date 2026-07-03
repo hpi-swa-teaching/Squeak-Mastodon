@@ -1,13 +1,9 @@
 updating
 refreshToots
 
-	| result |
-	self mastodonApi hasToken ifFalse: [^false].
-			
-	result := self getMoreTootsSince: self maxID.
+	| toots |
+	self mastodonApi hasToken ifFalse: [^ false].
 	
-	result isError ifTrue: [
-		self inform: (result error ifNil: ['An error occurred']).
-		^ false].
+	toots := self getMoreTootsSince: self maxID.
 	
-	self prependToots: result value
+	self prependToots: toots

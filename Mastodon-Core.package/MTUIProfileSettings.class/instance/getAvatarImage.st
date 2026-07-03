@@ -1,4 +1,4 @@
 helpers
 getAvatarImage
 	
-	^ ImageMorph new image: (MTUtils formFromUrl: self account avatar)
+	^ ImageMorph new image: (self mastodonApi imageFormFrom: self account avatar)

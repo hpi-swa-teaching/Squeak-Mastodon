@@ -1,8 +1,7 @@
-helpers-requesting
+endpoints
 imageFormFrom: aURL
 	
 	| form cachedForm |
-	self halt.
 	cachedForm := MTImageCache default retrieveValueForKey: aURL.
 	cachedForm ifNotNil: [^ cachedForm].
 	
