@@ -12,6 +12,6 @@ addReplyTemplate
 	self replyTemplateTextArea contents: ''.
 	self replyTemplateContentSizeLabel contents: '0/', self maxTextSize.
 	
-	self showSuccessMessage: 'Template saved successfully'.
+	MTUtils showSuccessMessage: 'Template saved successfully' on: self.
 	
 	^ true
