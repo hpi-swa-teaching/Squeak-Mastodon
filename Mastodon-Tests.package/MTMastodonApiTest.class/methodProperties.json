@@ -39,7 +39,6 @@
 		"testGetStatusesReturnsToots" : "JH 7/4/2026 00:49",
 		"testGetStatusesSinceReturnsToots" : "JH 7/4/2026 00:53",
 		"testMuteReturnsRelationship" : "JH 7/4/2026 01:12",
-		"testNewAccessDictionaryContainsCredentials" : "JH 7/4/2026 00:38",
 		"testPassword" : "JH 7/3/2026 00:36",
 		"testReblogReblogsStatus" : "JH 7/3/2026 07:07",
 		"testReblogReturnsErrorWhenRequestFails" : "JH 7/3/2026 07:08",
