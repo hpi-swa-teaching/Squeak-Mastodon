@@ -11,6 +11,6 @@ urlEncode: aString
 			ifFalse: [
 				stream
 					nextPut: $%;
-					nextPut: (hex at: value // 16 + 1);
-					nextPut: (hex at: value \\ 16 + 1)]].
+					nextPut: (hex at: value // hex size + 1);
+					nextPut: (hex at: value \\ hex size + 1)]].
 	^ stream contents

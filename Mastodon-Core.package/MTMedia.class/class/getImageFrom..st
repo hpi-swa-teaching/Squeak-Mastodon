@@ -1,7 +1,7 @@
 loading
 getImageFrom: anUrl
 
-	| doc form image len suffix cachedForm |
+	| doc form image cachedForm |
 	anUrl ifNil: [^ nil].
 	
 	cachedForm := MTImageCache default imageFormFrom: anUrl.
@@ -12,11 +12,8 @@ getImageFrom: anUrl
 		binary;
 		reset.
 	
-	len := anUrl size.
-	suffix := anUrl copyFrom: len - 2 to: len.
-	
-	suffix = 'jpg' ifTrue: [form := ImageReadWriter formFromStream: doc].
-	suffix = 'png' ifTrue: [form := PNGReadWriter formFromStream: doc].
+	(anUrl endsWith: 'jpg') ifTrue: [form := ImageReadWriter formFromStream: doc].
+	(anUrl endsWith: 'png') ifTrue: [form := PNGReadWriter formFromStream: doc].
 	
 	MTImageCache default cache: form from: anUrl.
 	

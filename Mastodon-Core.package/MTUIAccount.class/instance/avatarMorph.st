@@ -7,5 +7,5 @@ avatarMorph
 			self image
 				hResizing: #shrinkWrap;
 				vResizing: #shrinkWrap;
-				setNewImageFrom: (self image form scaledToSize: 48)]].
+				setNewImageFrom: (self image form scaledToSize: MTUIImageMorph avatarSize)]].
 	^ self image

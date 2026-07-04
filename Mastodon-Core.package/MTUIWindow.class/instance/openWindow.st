@@ -2,4 +2,4 @@ initialization
 openWindow
 
 	self openInWorld.
-	^ self openInWorldExtent: 650 @ 700
+	^ self openInWorldExtent: self defaultWindowWidth @ self defaultWindowHeight
