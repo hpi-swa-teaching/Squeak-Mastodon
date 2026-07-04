@@ -1,4 +1,4 @@
 helpers
 testContainsEmptyFieldWithNilToken
 	
-	self assert: DataProvider firstAccountCredentialsWithMissingToken containsEmptyField
+	self assert: MTDataProvider firstAccountCredentialsWithMissingToken containsEmptyField

@@ -1,4 +1,5 @@
 accessing
-followingCount: anObject
+followingCount: aNumber
+	" The reported follows of this profile. See https://docs.joinmastodon.org/entities/Account/ "
 
-	followingCount := anObject
+	followingCount := aNumber

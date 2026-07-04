@@ -2,7 +2,7 @@ tests
 testDeserializeTrending
 	| toots |
 	toots := MTMastodonApi getInstance
-		deserialize: DataProvider mockTrendingResponse
+		deserialize: MTDataProvider mockTrendingResponse
 		intoCollectionOf: MTToot.
 
 	self assert: toots size equals: 2.

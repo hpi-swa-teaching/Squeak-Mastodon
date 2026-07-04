@@ -1,4 +1,4 @@
 accessing
 quotePolicySetting
 
-	^ quotePolicySetting
+	^ quotePolicySetting ifNil: [quotePolicySetting := self defaultQuotePolicySetting]

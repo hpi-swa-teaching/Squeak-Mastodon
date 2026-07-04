@@ -1,16 +1,12 @@
-render
+actions
 showVisibilityWindow
 
-	| menu response |
+	| menu visibility |
 	menu := self getVisibilityWindow.
 	self addMorph: menu.
 	
-	response := menu getUserResponse.
+	visibility := menu getUserResponse ifNil: [^ nil].
 	
-	response ifTrue: [
-		self visibilitySetting: response.
-		(response = 'private' or: [response = 'direct'])
-			ifTrue: [
-				self quotePolicySetting: 'nobody'.
-				self quotePolicyButton enabled: false]
-			ifFalse: [self quotePolicyButton enabled: true]]
+	self 
+		visibilitySetting: visibility;
+		updateQuotePolicy.

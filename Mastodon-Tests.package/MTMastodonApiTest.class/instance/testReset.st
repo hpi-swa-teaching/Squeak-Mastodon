@@ -2,7 +2,7 @@ tests
 testReset
 
 	MTMastodonApi
-		changeInstanceTo: DataProvider firstAccountCredentials;
+		changeInstanceTo: MTDataProvider firstAccountCredentials;
 		removeInstance.
 	
 	self assert: MTMastodonApi getInstance baseUrl isNil.

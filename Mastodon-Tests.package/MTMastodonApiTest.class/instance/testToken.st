@@ -3,6 +3,6 @@ testToken
 	| API |
 	API := MTMastodonApi new.
 	
-	API baseUrl: DataProvider defaultBaseURL.
+	API baseUrl: MTDataProvider defaultBaseURL.
 	
-	self assert: (API baseUrl) equals: (DataProvider defaultBaseURL).
+	self assert: (API baseUrl) equals: (MTDataProvider defaultBaseURL).

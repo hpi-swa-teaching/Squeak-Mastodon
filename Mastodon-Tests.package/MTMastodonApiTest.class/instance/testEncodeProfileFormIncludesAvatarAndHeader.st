@@ -3,8 +3,8 @@ testEncodeProfileFormIncludesAvatarAndHeader
 	| body |
 	body := MTMastodonApi getInstance
 		encodeProfileForm: Dictionary new
-		avatar: DataProvider mockAvatarForm
-		header: DataProvider mockPreviewForm
+		avatar: MTDataProvider mockAvatarForm
+		header: MTDataProvider mockPreviewForm
 		boundary: 'BOUND'.
 	self assert: (body indexOfSubCollection: 'name="avatar"') > 0.
 	self assert: (body indexOfSubCollection: 'filename="avatar.png"') > 0.

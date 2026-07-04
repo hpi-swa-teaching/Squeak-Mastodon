@@ -11,9 +11,9 @@ from: aJsonObject
 		favourited: (MTUtils stringToBool: (aJsonObject at: 'favourited'));
 		reblogged: (MTUtils stringToBool: (aJsonObject at: 'reblogged'));
 		reblogsCount: (aJsonObject at: 'reblogs_count');
-		favouritesCount: (aJsonObject at: 'favouritesCount');
+		favouritesCount: (aJsonObject at: 'favourites_count');
 		inReplyToAccountID: (aJsonObject at: 'in_reply_to_account_id');
 		inReplyToID: (aJsonObject at: 'in_reply_to_id');
-		urls: (aJsonObject at: 'url');
-		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
+		url: (aJsonObject at: 'url');
+		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMediaAttachment from: json]);
 		yourself

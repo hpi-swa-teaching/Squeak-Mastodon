@@ -1,0 +1,4 @@
+comparing
+testRelationshipHashEquals
+
+	self assert: MTDataProvider firstAccountRelationship hash equals: MTDataProvider firstAccountRelationship hash

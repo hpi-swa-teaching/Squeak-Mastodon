@@ -2,11 +2,14 @@ image
 selectImage
 
 	| image |
-	self imageButton enabled: false.
+	self selectImageButton enabled: false.
 	
-	image := self loadImage ifNil: [self imageButton enabled: true. ^ nil].
+	image := self loadImage.
+	image ifNotNil: [self media add: image].
 	
-	self media add: image.
-	self mediaPreview addMorphBack: (image scaledToSize: self defaultImageSize) asMorph.
-	self sendButton enabled: true.
-	self imageButton enabled: true
+	self
+		updateMediaPreview;
+		updateTootButton;
+		updateSelectImageButton.
+	
+	^ image

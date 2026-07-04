@@ -1,4 +1,6 @@
 accessing
-inReplyToId: anObject
+inReplyToId: aTootID
 
-	inReplyToId := anObject
+	inReplyToId := aTootID.
+	
+	self updateTitleMorph

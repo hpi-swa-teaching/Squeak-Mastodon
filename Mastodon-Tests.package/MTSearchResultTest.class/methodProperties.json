@@ -2,5 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAccounts" : "SB 6/5/2026 18:02",
-		"testFromJson" : "timhb 6/8/2026 14:13" } }
+		"testEmptySearchResultEquals" : "timhb 7/4/2026 23:58",
+		"testFromEmptyJson" : "timhb 7/5/2026 00:05",
+		"testFromJson" : "timhb 7/5/2026 00:05",
+		"testSearchResultEquals" : "timhb 7/4/2026 23:56",
+		"testSearchResultEqualsDifferentClass" : "timhb 7/4/2026 23:58",
+		"testSearchResultEqualsNil" : "timhb 7/4/2026 23:57",
+		"testSearchResultHashEquals" : "timhb 7/4/2026 23:58",
+		"testSearchResultHashNotEquals" : "timhb 7/4/2026 23:57",
+		"testSearchResultNotEquals" : "timhb 7/4/2026 23:57" } }

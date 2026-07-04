@@ -1,0 +1,20 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"removeMediaCalled",
+		"selectImageCalled",
+		"tootCalled",
+		"showVisibilityWindowCalled",
+		"showQuotePolicyWindowCalled",
+		"updateCharacterLengthLabelCalled",
+		"updateTootButtonCalled" ],
+	"name" : "MTUINewTootClassTest",
+	"pools" : [
+		 ],
+	"super" : "MTUINewToot",
+	"type" : "normal" }

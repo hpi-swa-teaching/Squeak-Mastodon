@@ -1,4 +1,4 @@
-render
+actions
 showQuotePolicyWindow
 
 	| menu response |

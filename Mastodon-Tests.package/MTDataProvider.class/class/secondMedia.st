@@ -1,0 +1,4 @@
+media
+secondMedia
+
+	^ self mediaFrom: self secondMediaJson

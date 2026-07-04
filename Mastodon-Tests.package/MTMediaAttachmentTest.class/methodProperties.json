@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testFromJson" : "timhb 7/5/2026 00:00",
+		"testMediaEquals" : "timhb 7/5/2026 00:08",
+		"testMediaEqualsDifferentClass" : "timhb 7/5/2026 00:08",
+		"testMediaEqualsNil" : "timhb 7/5/2026 00:08",
+		"testMediaHashEquals" : "timhb 7/5/2026 00:08",
+		"testMediaHashNotEquals" : "timhb 7/5/2026 00:09",
+		"testMediaNotEquals" : "timhb 7/5/2026 00:08" } }

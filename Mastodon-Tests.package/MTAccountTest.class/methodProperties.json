@@ -2,16 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAvatar" : "SB 6/4/2026 21:46",
-		"testCreatedAt" : "SB 6/4/2026 21:46",
-		"testDisplayName" : "SB 6/4/2026 21:46",
-		"testFederatedUsername" : "SB 6/4/2026 21:46",
-		"testFollowersCount" : "SB 6/4/2026 21:46",
-		"testFollowingCount" : "SB 6/4/2026 21:46",
-		"testFromJson" : "SB 6/4/2026 22:36",
-		"testHeader" : "SB 6/4/2026 21:46",
-		"testId" : "SB 6/4/2026 21:47",
-		"testNote" : "SB 6/4/2026 21:47",
-		"testStatusesCount" : "SB 6/4/2026 21:47",
-		"testUrl" : "SB 6/4/2026 21:47",
-		"testUsername" : "SB 6/4/2026 21:47" } }
+		"testAccountEquals" : "timhb 7/5/2026 00:11",
+		"testAccountEqualsDifferentClass" : "timhb 7/5/2026 00:12",
+		"testAccountEqualsNil" : "timhb 7/5/2026 00:11",
+		"testAccountHashEquals" : "timhb 7/5/2026 00:12",
+		"testAccountHashNotEquals" : "timhb 7/5/2026 00:12",
+		"testAccountNotEquals" : "timhb 7/5/2026 00:11",
+		"testFromJson" : "timhb 7/4/2026 20:58" } }

@@ -1,0 +1,4 @@
+updating
+updateCharacterLengthLabel
+
+	updateCharacterLengthLabelCalled := true

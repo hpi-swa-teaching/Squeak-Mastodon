@@ -1,7 +1,9 @@
-json
+initialization
 testFromJson
 
-	| searchResult |
-	searchResult := MTSearchResult from: DataProvider defaultSearchResultJsonObject.
+	| result expected |
+	result := MTSearch from: MTDataProvider firstSearchResultJson.
 	
-	self assert: searchResult accounts size equals: DataProvider defaultAccountList size.
+	expected := MTDataProvider firstSearchResult.
+	
+	self assertSearch: result matches: expected

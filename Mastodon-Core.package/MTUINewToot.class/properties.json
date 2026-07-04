@@ -19,7 +19,12 @@
 		"media",
 		"mediaPreview",
 		"inReplyToId",
-		"tootLengthLabel" ],
+		"tootLengthLabel",
+		"selectImageButton",
+		"tootButton",
+		"whoCanQuoteButton",
+		"characterLengthLabel",
+		"clearImagesButton" ],
 	"name" : "MTUINewToot",
 	"pools" : [
 		 ],

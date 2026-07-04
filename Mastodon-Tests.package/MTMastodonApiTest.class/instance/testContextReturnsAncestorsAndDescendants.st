@@ -2,7 +2,7 @@ tests
 testContextReturnsAncestorsAndDescendants
 
 	| result |
-	result := self mastodonApi postContextFrom: DataProvider mockContextResponse.
+	result := self mastodonApi postContextFrom: MTDataProvider mockContextResponse.
 	
 	self assert: (result at: #ancestors) size equals: 1.
 	self assert: (result at: #descendants) size equals: 2.

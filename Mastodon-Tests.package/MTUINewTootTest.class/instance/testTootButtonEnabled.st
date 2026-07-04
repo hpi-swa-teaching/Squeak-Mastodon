@@ -5,5 +5,5 @@ testTootButtonEnabled
 	Model := MTUINewToot new.
 	
 	self
-		assert: Model tootTextArea contents size = 0 equals: Model sendButton enabled = false;
-		assert: Model media isEmpty equals: Model sendButton enabled = false
+		assert: Model tootTextArea contents size = 0 equals: Model tootButton enabled = false;
+		assert: Model media isEmpty equals: Model tootButton enabled = false

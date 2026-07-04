@@ -2,7 +2,7 @@ initialization
 testCreateCredentials
 
 	| loginCredentials |
-	loginCredentials := DataProvider firstAccountCredentials.
+	loginCredentials := MTDataProvider firstAccountCredentials.
 	
-	self assert: loginCredentials baseUrl equals: DataProvider defaultBaseURL.
-	self assert: loginCredentials token equals: DataProvider defaultToken
+	self assert: loginCredentials baseUrl equals: MTDataProvider defaultBaseURL.
+	self assert: loginCredentials token equals: MTDataProvider defaultToken

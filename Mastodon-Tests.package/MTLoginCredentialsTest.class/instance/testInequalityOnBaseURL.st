@@ -2,9 +2,9 @@ comparing
 testInequalityOnBaseURL
 
 	| firstLoginCredentials secondLoginCredentials |
-	firstLoginCredentials := DataProvider firstAccountCredentials.
+	firstLoginCredentials := MTDataProvider firstAccountCredentials.
 	
-	secondLoginCredentials := DataProvider firstAccountCredentials baseUrl: DataProvider secondBaseURL.
+	secondLoginCredentials := MTDataProvider firstAccountCredentials baseUrl: MTDataProvider secondBaseURL.
 	
 	self deny: firstLoginCredentials = secondLoginCredentials.
 	self deny: (firstLoginCredentials equals: secondLoginCredentials).

@@ -1,5 +1,5 @@
 add
 testAddAccount
 
-	MTCredentialStore getInstance addCredentials: DataProvider firstAccountCredentials.
+	MTCredentialStore getInstance addCredentials: MTDataProvider firstAccountCredentials.
 	self assert: MTCredentialStore getInstance numberOfCredentials equals: 1

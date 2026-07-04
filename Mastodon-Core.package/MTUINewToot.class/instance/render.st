@@ -5,12 +5,12 @@ render
 		cellInset: 10;
 		layoutInset: 20.
 	
-	self 
-		addMorphBack: self tootLengthLabel;
-		addMorphBack: self getNewTootTextArea;
+	self
+		addMorphBack: self titleMorph;
+		addMorphBack: self characterLengthLabel;
+		addMorphBack: self getTootTextArea;
 		addMorphBack: self getPrivacyButtons;
 		addMorphBack: self feedbackMorph;
-		addMorphBack: self addNewTootButton;
-		addMorphBack: self addImageButtons;
-		addMorphBack: self addMediaPreview;
-		addMorph: self titleMorph.
+		addMorphBack: self tootButton;
+		addMorphBack: self getImageButtons;
+		addMorphBack: self mediaPreview

@@ -1,4 +1,7 @@
-accessing
+accessing-morphs
 mediaPreview
 
-	^ mediaPreview
+	^ mediaPreview ifNil: [
+		mediaPreview := self getMediaPreview.
+		self updateMediaPreview.
+		^ mediaPreview]

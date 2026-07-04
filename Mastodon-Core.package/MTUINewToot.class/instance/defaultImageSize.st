@@ -1,4 +1,0 @@
-image
-defaultImageSize
-
-	^ 300

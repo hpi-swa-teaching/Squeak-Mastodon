@@ -1,6 +1,6 @@
 running
 setUp
-
+	
 	instanceAPI := MTMastodonApi getInstance.
 	instanceWindow := MTUIWindow instance.
 	instanceCredentials := MTCredentialStore getInstance.

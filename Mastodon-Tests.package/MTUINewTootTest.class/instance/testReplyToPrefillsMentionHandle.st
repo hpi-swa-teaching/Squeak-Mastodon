@@ -2,7 +2,7 @@ tests
 testReplyToPrefillsMentionHandle
 
 	| toot newToot |
-	toot := MTToot from: DataProvider defaultTootPlainJsonObject.
+	toot := MTToot from: MTDataProvider defaultTootPlainJsonObject.
 	newToot := MTUINewToot replyTo: toot.
 
 	self

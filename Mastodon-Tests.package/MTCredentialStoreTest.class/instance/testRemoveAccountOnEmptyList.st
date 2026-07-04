@@ -2,5 +2,5 @@ remove
 testRemoveAccountOnEmptyList
 
 	self
-		shouldnt: [MTCredentialStore getInstance removeCredentials: DataProvider firstAccountCredentials]
+		shouldnt: [MTCredentialStore getInstance removeCredentials: MTDataProvider firstAccountCredentials]
 		raise: Error

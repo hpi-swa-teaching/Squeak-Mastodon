@@ -1,0 +1,4 @@
+comparing
+testRelationshipEquals
+
+	self assert: MTDataProvider firstAccountRelationship equals: MTDataProvider firstAccountRelationship

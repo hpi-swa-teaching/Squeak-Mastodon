@@ -1,4 +1,0 @@
-constants
-maxTextLength
-
-	^ 500

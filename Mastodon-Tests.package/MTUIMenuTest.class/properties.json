@@ -10,5 +10,5 @@
 	"name" : "MTUIMenuTest",
 	"pools" : [
 		 ],
-	"super" : "MTTestCase",
+	"super" : "MTUIViewTest",
 	"type" : "normal" }

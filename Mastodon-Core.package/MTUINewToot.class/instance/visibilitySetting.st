@@ -1,4 +1,7 @@
 accessing
 visibilitySetting
 
-	^ visibilitySetting
+	^ visibilitySetting ifNil: [
+		visibilitySetting := self defaultVisibilitySetting.
+		self updateQuotePolicy.
+		^ visibilitySetting]

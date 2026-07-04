@@ -1,0 +1,4 @@
+actions
+showVisibilityWindow
+
+	showVisibilityWindowCalled := true

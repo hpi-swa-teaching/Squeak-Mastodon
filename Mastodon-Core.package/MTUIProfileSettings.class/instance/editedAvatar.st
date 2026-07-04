@@ -1,4 +1,7 @@
 accessing
 editedAvatar
 
-	^ editedAvatar ifNil: [editedAvatar := MTMedia new imageMorphFrom: account avatar]
+	| form |
+	^ editedAvatar ifNil: [
+		form := self mastodonApi imageFormFrom: self account avatar.
+		editedAvatar := MTUIImageMorph new setNewImageFrom: form]

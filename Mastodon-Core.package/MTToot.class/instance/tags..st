@@ -1,4 +1,5 @@
 accessing
-tags: anObject
+tags: aHastagCollection
+	" Hashtags used within the status content. See https://docs.joinmastodon.org/entities/Status/ "
 
-	tags := anObject
+	tags := aHastagCollection

@@ -2,8 +2,8 @@ tests
 testDeserializeSearchResult
 
 	| json searchResult result |
-	searchResult := DataProvider defaultSearchResult.
-	json := DataProvider defaultSearchResultJsonString.
+	searchResult := MTDataProvider defaultSearchResult.
+	json := MTDataProvider defaultSearchResultJsonString.
 	
 	result := MTMastodonApi new deserialize: json intoObjectOf: MTSearchResult.
 	

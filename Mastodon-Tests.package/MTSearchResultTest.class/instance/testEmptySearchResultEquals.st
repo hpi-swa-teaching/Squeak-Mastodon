@@ -1,0 +1,4 @@
+comparing
+testEmptySearchResultEquals
+
+	self assert: MTDataProvider emptySearchResult equals: MTDataProvider emptySearchResult

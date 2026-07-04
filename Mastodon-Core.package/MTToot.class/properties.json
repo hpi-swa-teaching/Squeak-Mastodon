@@ -11,7 +11,6 @@
 		"content",
 		"tags",
 		"mentions",
-		"urls",
 		"media",
 		"reblogged",
 		"reblogsCount",
@@ -21,7 +20,8 @@
 		"favourited",
 		"reblog",
 		"quote",
-		"account" ],
+		"account",
+		"url" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],

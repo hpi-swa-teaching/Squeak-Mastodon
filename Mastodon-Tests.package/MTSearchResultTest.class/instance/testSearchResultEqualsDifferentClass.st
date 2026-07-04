@@ -1,0 +1,4 @@
+comparing
+testSearchResultEqualsDifferentClass
+
+	self deny: MTDataProvider firstSearchResult equals: MTDataProvider firstAccount
