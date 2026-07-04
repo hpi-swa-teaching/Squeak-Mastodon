@@ -8,8 +8,11 @@
 		"tearDown" : "JH 7/3/2026 20:55",
 		"testDeleteCurrentSession" : "JH 7/3/2026 20:56",
 		"testLoadComboBoxSelectsActiveSession" : "JH 7/3/2026 20:57",
+		"testMastodonProviderDefaultsToMastodonWorld" : "JH 7/4/2026 04:23",
+		"testResetCreatesFreshStore" : "JH 7/4/2026 04:20",
 		"testStoreCurrentSession" : "JH 7/3/2026 20:58",
 		"testStoreMultipleSessions" : "JH 7/3/2026 20:59",
 		"testSwitchToSelectedSession" : "JH 7/3/2026 21:00",
+		"testTootNumIsFive" : "JH 7/4/2026 05:35",
 		"view" : "JH 7/3/2026 20:50",
 		"view:" : "JH 7/3/2026 20:51" } }

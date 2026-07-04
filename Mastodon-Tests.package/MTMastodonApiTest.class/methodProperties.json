@@ -43,6 +43,7 @@
 		"testPassword" : "JH 7/3/2026 00:36",
 		"testReblogReblogsStatus" : "JH 7/3/2026 07:07",
 		"testReblogReturnsErrorWhenRequestFails" : "JH 7/3/2026 07:08",
+		"testRegisterApplicationStoresCredentials" : "JH 7/4/2026 05:39",
 		"testRegistrationParameters" : "JH 7/4/2026 00:39",
 		"testReset" : "JH 7/3/2026 00:36",
 		"testSearchReturnsSearchResult" : "JH 7/4/2026 01:11",
