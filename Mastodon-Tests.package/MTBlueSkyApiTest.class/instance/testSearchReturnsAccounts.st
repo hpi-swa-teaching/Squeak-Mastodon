@@ -1,4 +1,4 @@
-tests
+search endpoints
 testSearchReturnsAccounts
 
 	| api client result |

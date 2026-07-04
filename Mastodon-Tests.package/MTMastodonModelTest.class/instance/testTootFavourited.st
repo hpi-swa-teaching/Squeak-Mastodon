@@ -1,4 +1,4 @@
-tests
+toot
 testTootFavourited
 
 	| model |

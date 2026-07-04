@@ -1,4 +1,4 @@
-tests
+follow endpoints
 testFollowReturnsErrorWhenSessionFails
 
 	| api client result |

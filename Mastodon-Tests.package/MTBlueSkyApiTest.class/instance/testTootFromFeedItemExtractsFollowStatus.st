@@ -1,4 +1,4 @@
-tests
+feed items
 testTootFromFeedItemExtractsFollowStatus
 
 	| api client feedItem toot author viewer |

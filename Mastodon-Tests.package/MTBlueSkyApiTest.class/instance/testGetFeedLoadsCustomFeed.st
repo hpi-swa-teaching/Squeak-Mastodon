@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testGetFeedLoadsCustomFeed
 
 	| api client result toots |

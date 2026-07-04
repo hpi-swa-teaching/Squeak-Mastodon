@@ -1,4 +1,4 @@
-tests
+feed items
 testTootFromFeedItemExtractsRepostStatus
 
 	| api client feedItem toot viewer |

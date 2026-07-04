@@ -1,4 +1,4 @@
-tests
+authentication
 testExchangeAuthorizationCodeParsesHandleAndPassword
 
 	| api client |

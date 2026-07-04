@@ -1,4 +1,4 @@
-tests
+feed items
 testAccountFromAuthorMapsProfile
 
 	| api account |

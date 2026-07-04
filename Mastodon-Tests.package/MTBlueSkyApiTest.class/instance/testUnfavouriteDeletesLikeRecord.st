@@ -1,4 +1,4 @@
-tests
+like endpoints
 testUnfavouriteDeletesLikeRecord
 
 	| api client toot result |

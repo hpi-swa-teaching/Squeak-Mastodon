@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testRemoveFeedWritesPreferencesWithoutSelectedFeed
 
 	| api client feed result |

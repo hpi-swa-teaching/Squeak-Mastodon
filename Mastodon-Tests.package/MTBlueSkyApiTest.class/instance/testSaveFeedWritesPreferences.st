@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testSaveFeedWritesPreferences
 
 	| api client feed result |

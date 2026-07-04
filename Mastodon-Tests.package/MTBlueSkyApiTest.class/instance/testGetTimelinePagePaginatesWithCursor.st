@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetTimelinePagePaginatesWithCursor
 
 	| api client result |

@@ -1,4 +1,4 @@
-tests
+authentication
 testIsAuthenticatedWithToken
 
 	| api |

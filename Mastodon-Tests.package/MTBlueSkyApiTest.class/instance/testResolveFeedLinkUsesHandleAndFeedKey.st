@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testResolveFeedLinkUsesHandleAndFeedKey
 
 	| api client result |

@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPrivateTimelineReturnsErrorWhenRequestFails
 
 	| api client result |

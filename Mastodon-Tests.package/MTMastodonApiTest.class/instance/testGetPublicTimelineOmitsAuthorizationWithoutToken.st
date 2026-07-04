@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPublicTimelineOmitsAuthorizationWithoutToken
 
 	| api client result |

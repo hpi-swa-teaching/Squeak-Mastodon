@@ -1,4 +1,4 @@
-tests
+authentication
 testGetCurrentDidCachesDid
 
 	| api client first second |

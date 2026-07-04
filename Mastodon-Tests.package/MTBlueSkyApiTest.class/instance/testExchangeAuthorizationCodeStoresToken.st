@@ -1,4 +1,4 @@
-tests
+authentication
 testExchangeAuthorizationCodeStoresToken
 
 	| api client token |

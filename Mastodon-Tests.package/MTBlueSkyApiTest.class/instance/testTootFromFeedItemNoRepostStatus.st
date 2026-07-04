@@ -1,4 +1,4 @@
-tests
+feed items
 testTootFromFeedItemNoRepostStatus
 
 	| api client feedItem toot |

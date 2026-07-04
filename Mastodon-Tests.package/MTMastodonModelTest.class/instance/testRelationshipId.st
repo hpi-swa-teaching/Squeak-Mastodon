@@ -1,4 +1,4 @@
-tests
+relationship
 testRelationshipId
 
 	| model |

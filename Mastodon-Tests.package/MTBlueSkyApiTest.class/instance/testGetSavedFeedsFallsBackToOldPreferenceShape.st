@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testGetSavedFeedsFallsBackToOldPreferenceShape
 
 	| api client result feeds |

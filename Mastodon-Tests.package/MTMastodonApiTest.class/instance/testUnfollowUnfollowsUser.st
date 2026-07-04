@@ -1,4 +1,4 @@
-tests
+action endpoints
 testUnfollowUnfollowsUser
 
 	| api client result |

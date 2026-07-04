@@ -1,4 +1,4 @@
-tests
+posting
 testTootEscapesSpecialCharacters
 
 	| api client result |

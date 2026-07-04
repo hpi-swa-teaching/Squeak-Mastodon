@@ -1,4 +1,4 @@
-tests
+profile endpoints
 testGetProfileForReturnsAccount
 
 	| api client result account |

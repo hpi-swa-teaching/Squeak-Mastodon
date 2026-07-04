@@ -1,4 +1,4 @@
-tests
+media
 testMediaPreviewURL
 
 	| model |

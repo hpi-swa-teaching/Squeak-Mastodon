@@ -1,4 +1,4 @@
-tests
+feed items
 testTootFromFeedItemMapsPost
 
 	| api toot account |

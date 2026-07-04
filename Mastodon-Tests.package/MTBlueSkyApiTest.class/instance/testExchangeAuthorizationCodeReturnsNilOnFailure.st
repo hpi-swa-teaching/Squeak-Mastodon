@@ -1,4 +1,4 @@
-tests
+authentication
 testExchangeAuthorizationCodeReturnsNilOnFailure
 
 	| api client token |

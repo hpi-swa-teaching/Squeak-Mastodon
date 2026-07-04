@@ -1,4 +1,4 @@
-tests
+status endpoints
 testAuthorFeedRequestFailureReturnsErrorResult
 
 	| api result |

@@ -1,4 +1,4 @@
-tests
+follow endpoints
 testUnfollowDeletesFollowRecord
 
 	| api client result |

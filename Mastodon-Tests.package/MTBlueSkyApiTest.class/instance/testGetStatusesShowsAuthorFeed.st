@@ -1,4 +1,4 @@
-tests
+status endpoints
 testGetStatusesShowsAuthorFeed
 
 	| api client result toots |

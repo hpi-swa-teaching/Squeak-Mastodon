@@ -1,4 +1,4 @@
-tests
+rendering
 testRenderBuildsClickableProfileLink
 
 	| ui parent |

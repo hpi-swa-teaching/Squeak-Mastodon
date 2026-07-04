@@ -1,4 +1,4 @@
-tests
+account
 testAccountCreatedAt
 
 	| model |

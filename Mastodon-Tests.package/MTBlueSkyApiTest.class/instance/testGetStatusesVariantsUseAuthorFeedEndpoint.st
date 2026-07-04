@@ -1,4 +1,4 @@
-tests
+status endpoints
 testGetStatusesVariantsUseAuthorFeedEndpoint
 
 	| api client result |

@@ -1,4 +1,4 @@
-tests
+like endpoints
 testFavouriteReturnsErrorWhenRequestFails
 
 	| api client toot result |

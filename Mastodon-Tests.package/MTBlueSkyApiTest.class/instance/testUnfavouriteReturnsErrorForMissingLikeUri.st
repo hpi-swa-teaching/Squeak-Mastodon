@@ -1,4 +1,4 @@
-tests
+like endpoints
 testUnfavouriteReturnsErrorForMissingLikeUri
 
 	| api client toot result |

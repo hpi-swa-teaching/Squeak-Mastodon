@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPublicTimelineUsesPublicEndpoint
 
 	| api client result |

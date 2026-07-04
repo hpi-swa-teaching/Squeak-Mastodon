@@ -1,4 +1,4 @@
-tests
+authentication
 testExchangeAuthorizationCodeUsesHandleDomain
 
 	| api client token |

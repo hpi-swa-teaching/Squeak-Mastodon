@@ -1,4 +1,4 @@
-tests
+like endpoints
 testGetLikesReturnsErrorWhenRequestFails
 
 	| api client result |

@@ -1,4 +1,4 @@
-tests
+action endpoints
 testFollowFollowsUser
 
 	| api client result |

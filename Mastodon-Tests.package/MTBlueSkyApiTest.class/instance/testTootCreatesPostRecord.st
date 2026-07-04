@@ -1,4 +1,4 @@
-tests
+posting
 testTootCreatesPostRecord
 
 	| api client result |

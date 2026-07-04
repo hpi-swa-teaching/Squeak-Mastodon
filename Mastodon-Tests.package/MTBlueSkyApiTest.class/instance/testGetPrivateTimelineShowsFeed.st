@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPrivateTimelineShowsFeed
 
 	| api client result toots toot account |

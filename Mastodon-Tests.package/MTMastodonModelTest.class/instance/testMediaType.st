@@ -1,4 +1,4 @@
-tests
+media
 testMediaType
 
 	| model |

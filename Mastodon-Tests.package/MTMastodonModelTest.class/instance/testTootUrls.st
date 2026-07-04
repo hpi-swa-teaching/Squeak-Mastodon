@@ -1,4 +1,4 @@
-tests
+toot
 testTootUrls
 
 	| model |

@@ -1,4 +1,4 @@
-tests
+rendering
 testRenderWithoutImageDoesNotRaise
 
 	| ui parent |

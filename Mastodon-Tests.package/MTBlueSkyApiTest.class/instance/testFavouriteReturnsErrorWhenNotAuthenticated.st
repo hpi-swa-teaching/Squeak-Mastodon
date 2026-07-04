@@ -1,4 +1,4 @@
-tests
+like endpoints
 testFavouriteReturnsErrorWhenNotAuthenticated
 
 	| api client toot result |

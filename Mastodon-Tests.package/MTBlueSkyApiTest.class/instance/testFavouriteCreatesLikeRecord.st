@@ -1,4 +1,4 @@
-tests
+like endpoints
 testFavouriteCreatesLikeRecord
 
 	| api client toot result |

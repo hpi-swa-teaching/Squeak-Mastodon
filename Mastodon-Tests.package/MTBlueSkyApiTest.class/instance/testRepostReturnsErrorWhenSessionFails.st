@@ -1,4 +1,4 @@
-tests
+repost endpoints
 testRepostReturnsErrorWhenSessionFails
 
 	| api client result |

@@ -1,4 +1,4 @@
-tests
+repost endpoints
 testUnrepostReturnsErrorForInvalidUri
 
 	| api client result |

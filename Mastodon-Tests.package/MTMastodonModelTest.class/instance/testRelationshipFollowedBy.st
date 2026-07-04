@@ -1,4 +1,4 @@
-tests
+relationship
 testRelationshipFollowedBy
 
 	| model |

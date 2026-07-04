@@ -1,4 +1,4 @@
-tests
+follow endpoints
 testUnfollowReturnsErrorForInvalidUri
 
 	| api client result |

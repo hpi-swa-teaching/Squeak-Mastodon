@@ -1,4 +1,4 @@
-tests
+like endpoints
 testGetLikesReturnsLikedPosts
 
 	| api client result |

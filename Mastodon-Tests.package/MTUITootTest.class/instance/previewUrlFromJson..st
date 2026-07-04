@@ -1,4 +1,4 @@
-tests
+support
 previewUrlFromJson: tootJsonString
 
 	| jsonObject mediaArray |

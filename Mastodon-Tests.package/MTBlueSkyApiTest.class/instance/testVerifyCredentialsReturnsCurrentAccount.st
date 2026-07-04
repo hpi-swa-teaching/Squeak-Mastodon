@@ -1,4 +1,4 @@
-tests
+authentication
 testVerifyCredentialsReturnsCurrentAccount
 
 	| api client result account |

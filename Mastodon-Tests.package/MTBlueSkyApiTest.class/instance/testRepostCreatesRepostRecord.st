@@ -1,4 +1,4 @@
-tests
+repost endpoints
 testRepostCreatesRepostRecord
 
 	| api client result |

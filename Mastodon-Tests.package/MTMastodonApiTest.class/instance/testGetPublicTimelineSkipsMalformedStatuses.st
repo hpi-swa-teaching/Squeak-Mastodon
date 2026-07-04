@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPublicTimelineSkipsMalformedStatuses
 
 	| api client result |

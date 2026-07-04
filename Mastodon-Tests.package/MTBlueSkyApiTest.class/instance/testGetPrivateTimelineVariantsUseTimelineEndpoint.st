@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testGetPrivateTimelineVariantsUseTimelineEndpoint
 
 	| api client result |

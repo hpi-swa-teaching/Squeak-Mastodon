@@ -1,4 +1,4 @@
-tests
+posting
 testTootWithImageReturnsErrorWhenUploadFails
 
 	| api client result |

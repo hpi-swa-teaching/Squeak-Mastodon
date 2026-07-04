@@ -1,4 +1,4 @@
-tests
+configuration
 testPassword
 
 	| api |

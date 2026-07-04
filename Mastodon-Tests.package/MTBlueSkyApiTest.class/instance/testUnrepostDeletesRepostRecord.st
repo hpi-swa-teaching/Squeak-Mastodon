@@ -1,4 +1,4 @@
-tests
+repost endpoints
 testUnrepostDeletesRepostRecord
 
 	| api client result |

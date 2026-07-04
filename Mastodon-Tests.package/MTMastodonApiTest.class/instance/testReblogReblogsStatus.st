@@ -1,4 +1,4 @@
-tests
+action endpoints
 testReblogReblogsStatus
 
 	| api client result |

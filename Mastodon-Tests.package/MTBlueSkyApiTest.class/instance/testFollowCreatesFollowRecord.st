@@ -1,4 +1,4 @@
-tests
+follow endpoints
 testFollowCreatesFollowRecord
 
 	| api client result |

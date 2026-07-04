@@ -1,4 +1,4 @@
-tests
+search endpoints
 testSearchReturnsEmptyWhenRequestFails
 
 	| api client result |

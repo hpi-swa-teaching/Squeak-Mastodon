@@ -1,4 +1,4 @@
-tests
+account
 testAccountAcct
 
 	| model |

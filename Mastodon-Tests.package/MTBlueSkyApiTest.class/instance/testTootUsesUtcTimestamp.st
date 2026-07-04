@@ -1,4 +1,4 @@
-tests
+posting
 testTootUsesUtcTimestamp
 
 	| api client json createdAt |

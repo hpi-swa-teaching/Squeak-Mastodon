@@ -1,4 +1,4 @@
-tests
+helpers
 testAuthorizationHelpers
 
 	| api |

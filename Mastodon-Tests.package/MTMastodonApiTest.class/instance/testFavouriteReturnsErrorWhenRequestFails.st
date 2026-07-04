@@ -1,4 +1,4 @@
-tests
+action endpoints
 testFavouriteReturnsErrorWhenRequestFails
 
 	| api client result |

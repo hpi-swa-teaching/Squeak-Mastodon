@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testGetFeedFallsBackToPublicAppView
 
 	| api client result |

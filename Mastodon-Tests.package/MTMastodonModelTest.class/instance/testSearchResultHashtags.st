@@ -1,4 +1,4 @@
-tests
+search result
 testSearchResultHashtags
 
 	| model |

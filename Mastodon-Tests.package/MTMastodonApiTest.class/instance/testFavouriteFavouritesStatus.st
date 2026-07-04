@@ -1,4 +1,4 @@
-tests
+action endpoints
 testFavouriteFavouritesStatus
 
 	| api client result |

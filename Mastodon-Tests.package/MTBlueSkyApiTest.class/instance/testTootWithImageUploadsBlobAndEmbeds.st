@@ -1,4 +1,4 @@
-tests
+posting
 testTootWithImageUploadsBlobAndEmbeds
 
 	| api client result |

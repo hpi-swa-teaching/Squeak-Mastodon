@@ -1,4 +1,4 @@
-tests
+profile endpoints
 testGetProfileForReturnsErrorWhenRequestFails
 
 	| api client result |

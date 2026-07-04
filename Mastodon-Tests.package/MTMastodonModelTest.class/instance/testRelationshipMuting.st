@@ -1,4 +1,4 @@
-tests
+relationship
 testRelationshipMuting
 
 	| model |

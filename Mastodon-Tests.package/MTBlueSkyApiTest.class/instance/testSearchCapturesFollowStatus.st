@@ -1,4 +1,4 @@
-tests
+search endpoints
 testSearchCapturesFollowStatus
 
 	| api client accounts |

@@ -1,4 +1,4 @@
-tests
+action endpoints
 testReblogReturnsErrorWhenRequestFails
 
 	| api client result |

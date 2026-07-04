@@ -1,4 +1,4 @@
-tests
+authentication
 testGetCurrentDidReturnsDidFromSession
 
 	| api client did |

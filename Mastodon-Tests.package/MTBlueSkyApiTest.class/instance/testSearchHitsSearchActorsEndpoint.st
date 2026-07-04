@@ -1,4 +1,4 @@
-tests
+search endpoints
 testSearchHitsSearchActorsEndpoint
 
 	| api client |

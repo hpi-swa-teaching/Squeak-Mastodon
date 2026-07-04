@@ -1,4 +1,4 @@
-tests
+timeline endpoints
 testTimelineRequestFailureReturnsErrorResult
 
 	| api result |

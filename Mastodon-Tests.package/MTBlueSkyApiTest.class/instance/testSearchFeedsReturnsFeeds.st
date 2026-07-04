@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testSearchFeedsReturnsFeeds
 
 	| api client result feeds |

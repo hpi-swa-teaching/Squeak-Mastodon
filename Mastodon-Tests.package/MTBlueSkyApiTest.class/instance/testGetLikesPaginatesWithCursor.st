@@ -1,4 +1,4 @@
-tests
+like endpoints
 testGetLikesPaginatesWithCursor
 
 	| api client result |

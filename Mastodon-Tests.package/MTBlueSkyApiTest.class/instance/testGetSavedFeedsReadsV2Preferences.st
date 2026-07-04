@@ -1,4 +1,4 @@
-tests
+feed endpoints
 testGetSavedFeedsReadsV2Preferences
 
 	| api client result feeds |

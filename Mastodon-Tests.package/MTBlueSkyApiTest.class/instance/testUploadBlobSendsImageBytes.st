@@ -1,4 +1,4 @@
-tests
+posting
 testUploadBlobSendsImageBytes
 
 	| api client blob |

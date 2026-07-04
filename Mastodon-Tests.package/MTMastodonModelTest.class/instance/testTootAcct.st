@@ -1,4 +1,4 @@
-tests
+toot
 testTootAcct
 
 	| model |
