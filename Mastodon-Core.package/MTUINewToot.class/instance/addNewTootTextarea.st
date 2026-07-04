@@ -7,7 +7,6 @@ addNewTootTextarea
 	
 	self tootTextArea: MTUITextMorph new.
 	self tootTextArea
-		textSize: 1;
 		hResizing: #spaceFill;
 		borderColor: Color gray;
 		borderColor: 1;
