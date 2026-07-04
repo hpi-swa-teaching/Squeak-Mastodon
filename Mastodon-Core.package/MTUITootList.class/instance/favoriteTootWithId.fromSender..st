@@ -4,7 +4,7 @@ favoriteTootWithId: aTootId fromSender: aButton
 	| toot argument result |
 	self toots ifNil: [^ self].
 	toot := (self toots collect: [:t | t reblogOrSelf]) detect: [:t | t id = aTootId] ifNone: [nil].
-	argument := (self socialProvider isKindOf: MTBlueSkyApi) ifTrue: [toot] ifFalse: [aTootId].
+	argument := self socialProvider favouriteArgumentForToot: toot id: aTootId.
 	argument ifNil: [^ self].
 	aButton active
 		ifTrue: [

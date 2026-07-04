@@ -2,13 +2,10 @@ render
 activateSession: aSession
 
 	| provider |
-	(aSession isKindOf: MTBlueSkyApi)
-		ifTrue: [
-			provider := 'bluesky'.
-			MTProviderFactory blueSkyInstance: aSession]
-		ifFalse: [
-			provider := 'mastodon'.
-			MTProviderFactory mastodonInstance: aSession].
+	provider := aSession providerName.
+	provider = 'bluesky'
+		ifTrue: [MTProviderFactory blueSkyInstance: aSession]
+		ifFalse: [MTProviderFactory mastodonInstance: aSession].
 	
 	MTSettingsStore default at: #provider put: provider.
 	MTSettingsStore default at: #baseURL put: aSession baseURL.

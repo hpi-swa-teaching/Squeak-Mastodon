@@ -7,7 +7,7 @@ testLoggedOutMastodonLoadsPublicTimeline
 		respondToGet: 'https://mastodon.social/api/v1/timelines/public'
 		with: '[', DataProvider mockTootWithoutImage, ']'.
 	api := MTMastodonApi with: 'https://mastodon.social' token: nil.
-	api instVarNamed: 'webClient' put: client.
+	api webClient: client.
 	timeline := MTUIHomeTimeline new.
 	timeline socialProvider: api.
 	

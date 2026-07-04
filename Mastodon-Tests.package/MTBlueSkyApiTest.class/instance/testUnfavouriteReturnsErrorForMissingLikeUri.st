@@ -4,7 +4,7 @@ testUnfavouriteReturnsErrorForMissingLikeUri
 	| api client toot result |
 	client := MTBlueSkyMockWebClient new.
 	api := self apiWithMockClient: client token: 'like-token'.
-	api instVarNamed: 'did' put: 'did:plc:alice'.
+	api did: 'did:plc:alice'.
 	toot := MTToot new
 		likeUri: nil;
 		favouritesCount: 3;

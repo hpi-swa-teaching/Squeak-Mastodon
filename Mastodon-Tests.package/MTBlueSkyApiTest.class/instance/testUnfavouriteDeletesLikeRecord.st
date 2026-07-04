@@ -5,7 +5,7 @@ testUnfavouriteDeletesLikeRecord
 	client := MTBlueSkyMockWebClient new.
 	client postResponse: (MTBlueSkyMockResponse successWith: '{}').
 	api := self apiWithMockClient: client token: 'like-token'.
-	api instVarNamed: 'did' put: 'did:plc:alice'.
+	api did: 'did:plc:alice'.
 	toot := MTToot new
 		likeUri: 'at://did:plc:alice/app.bsky.feed.like/rkey789';
 		favourited: true;

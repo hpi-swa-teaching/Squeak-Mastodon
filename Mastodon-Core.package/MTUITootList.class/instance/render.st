@@ -26,7 +26,7 @@ render
 			actionSelector: #favoriteTootWithId:fromSender:;
 			arguments: (Array with: actionToot id with: tootMorph heartButton).
 		tootMorph heartButton active: actionToot favourited.
-		(self socialProvider isKindOf: MTBlueSkyApi) ifTrue: [
+		self socialProvider showsProfileActions ifTrue: [
 			tootMorph followButton render.
 			tootMorph followButton
 				target: self;

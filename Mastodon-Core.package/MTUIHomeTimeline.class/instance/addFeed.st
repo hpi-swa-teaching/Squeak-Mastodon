@@ -14,7 +14,7 @@ addFeed
 			result isSuccess ifTrue: [
 				result value isEmpty ifTrue: [^ self inform: 'No feeds found'].
 				feed := self chooseFeedFrom: result value title: 'Add Feed'.
-				(feed isKindOf: MTBlueSkyFeed) not ifTrue: [^ self]]].
+				(self isValidFeed: feed) ifFalse: [^ self]]].
 	result isError ifTrue: [^ self inform: result error].
 	feed ifNil: [feed := result value].
 	saveResult := self socialProvider saveFeed: feed.

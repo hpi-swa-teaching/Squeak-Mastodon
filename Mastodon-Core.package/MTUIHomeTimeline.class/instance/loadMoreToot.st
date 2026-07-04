@@ -2,10 +2,10 @@ updating
 loadMoreToot
 
 	| result page |
-	(self socialProvider isKindOf: MTBlueSkyApi) ifFalse: [
+	self socialProvider usesFeeds ifFalse: [
 		self socialProvider token isNil ifTrue: [^ false].
 		^ super loadMoreToot].
-	(self selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [^ false].
+	(self isValidFeed: self selectedFeed) ifFalse: [^ false].
 	self feedCursor ifNil: [^ false].
 	result := self selectedFeed isTimeline
 		ifTrue: [self socialProvider getTimelinePageWithCursor: self feedCursor]

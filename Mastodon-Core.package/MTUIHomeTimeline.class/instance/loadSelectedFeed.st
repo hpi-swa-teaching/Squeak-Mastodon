@@ -2,7 +2,7 @@ updating
 loadSelectedFeed
 
 	| result page |
-	(self selectedFeed isKindOf: MTBlueSkyFeed) not ifTrue: [self selectedFeed: MTBlueSkyFeed home].
+	(self isValidFeed: self selectedFeed) ifFalse: [self selectedFeed: MTBlueSkyFeed home].
 	self selectedFeed isTimeline ifTrue: [
 		result := self socialProvider getTimelinePageWithCursor: nil.
 		result isError ifTrue: [

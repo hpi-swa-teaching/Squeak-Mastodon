@@ -5,7 +5,7 @@ testFavouriteReturnsErrorWhenRequestFails
 	client := MTBlueSkyMockWebClient new.
 	client postResponse: (MTBlueSkyMockResponse failureWith: '' code: 500).
 	api := self apiWithMockClient: client token: 'like-token'.
-	api instVarNamed: 'did' put: 'did:plc:alice'.
+	api did: 'did:plc:alice'.
 	toot := MTToot new
 		id: 'at://did:plc:bob/app.bsky.feed.post/abc';
 		cid: 'cid-post';
