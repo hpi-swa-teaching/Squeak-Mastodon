@@ -38,6 +38,7 @@ authenticateApplication
 	[
 		self verifyAccount.
 		MTSettingsStore default at: #token put: self socialProvider token.
+		MTSettingsStore default at: #refreshToken put: self socialProvider refreshToken.
 		self storeCurrentSession: self socialProvider.
 		self urlTextField theText: ''.
 		self tokenTextField theText: ''.

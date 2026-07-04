@@ -2,7 +2,7 @@ helpers
 postRequest: url content: jsonString
 
 	| response |
-	response := self retryNetworkRequest: [
+	response := self sendWithRetry: [
 		self webClient
 			httpPost: url
 			content: jsonString

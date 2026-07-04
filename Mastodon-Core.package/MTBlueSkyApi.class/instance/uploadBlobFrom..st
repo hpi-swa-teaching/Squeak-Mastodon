@@ -7,7 +7,7 @@ uploadBlobFrom: aForm
 		yourself.
 	PNGReadWriter putForm: aForm onStream: pngStream.
 	url := self buildUrl: '/xrpc/com.atproto.repo.uploadBlob'.
-	response := self retryNetworkRequest: [
+	response := self sendWithRetry: [
 		self webClient
 			httpPost: url
 			content: pngStream contents
