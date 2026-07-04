@@ -1,4 +1,4 @@
-tests
+public timeline
 testLoggedOutMastodonLoadsPublicTimeline
 
 	| client api timeline |

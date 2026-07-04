@@ -1,4 +1,4 @@
-tests
+deleting
 testDeleteCurrentSession
 
 	| api1 api2 sessions |

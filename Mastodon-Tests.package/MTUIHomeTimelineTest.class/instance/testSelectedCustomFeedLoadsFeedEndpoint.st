@@ -1,4 +1,4 @@
-tests
+feeds
 testSelectedCustomFeedLoadsFeedEndpoint
 
 	| client api timeline feed |

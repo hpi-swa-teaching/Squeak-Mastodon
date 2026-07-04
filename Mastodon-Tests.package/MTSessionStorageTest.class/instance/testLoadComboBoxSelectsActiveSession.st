@@ -1,4 +1,4 @@
-tests
+switching
 testLoadComboBoxSelectsActiveSession
 
 	| mastodon bluesky reloadedView |

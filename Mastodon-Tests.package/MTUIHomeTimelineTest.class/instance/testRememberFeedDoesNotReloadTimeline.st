@@ -1,4 +1,4 @@
-tests
+feeds
 testRememberFeedDoesNotReloadTimeline
 
 	| timeline addedFeed loadedToot |

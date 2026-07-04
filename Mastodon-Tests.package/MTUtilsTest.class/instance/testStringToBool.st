@@ -1,4 +1,4 @@
-tests
+converting
 testStringToBool
 
 	self assert: (MTUtils stringToBool: true) equals: true.

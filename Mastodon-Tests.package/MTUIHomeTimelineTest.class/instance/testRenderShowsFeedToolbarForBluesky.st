@@ -1,4 +1,4 @@
-tests
+rendering
 testRenderShowsFeedToolbarForBluesky
 
 	| client api timeline toolbar buttons |

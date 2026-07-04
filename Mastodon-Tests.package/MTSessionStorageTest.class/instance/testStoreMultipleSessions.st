@@ -1,4 +1,4 @@
-tests
+storing
 testStoreMultipleSessions
 
 	| api1 api2 sessions |

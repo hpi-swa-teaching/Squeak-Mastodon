@@ -1,4 +1,4 @@
-tests
+time
 testMonthStringToNumber
 
 	self assert: (MTUtils monthStringToNumber: 'Jan') equals: 1.

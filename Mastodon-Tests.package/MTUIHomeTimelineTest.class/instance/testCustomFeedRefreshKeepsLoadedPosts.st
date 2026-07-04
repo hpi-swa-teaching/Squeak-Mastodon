@@ -1,4 +1,4 @@
-tests
+feeds
 testCustomFeedRefreshKeepsLoadedPosts
 
 	| client api timeline feed toot |

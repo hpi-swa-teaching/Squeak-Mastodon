@@ -1,4 +1,4 @@
-tests
+storing
 testStoreCurrentSession
 
 	| api sessions |

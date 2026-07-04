@@ -1,4 +1,4 @@
-tests
+time
 testRelativeTimeString
 
 	| now |

@@ -1,4 +1,4 @@
-tests
+time
 testTimestampFromString
 
 	| ts |

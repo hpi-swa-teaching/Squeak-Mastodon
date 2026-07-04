@@ -1,4 +1,4 @@
-tests
+switching
 testSwitchToSelectedSession
 
 	| api |

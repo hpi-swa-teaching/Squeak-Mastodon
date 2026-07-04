@@ -1,4 +1,4 @@
-tests
+feeds
 testLoadFeedsTreatsFalseSelectedFeedAsMissing
 
 	| client api timeline |

@@ -1,4 +1,4 @@
-tests
+feeds
 testCustomFeedLoadMoreUsesSelectedFeedCursor
 
 	| client api timeline feed |
