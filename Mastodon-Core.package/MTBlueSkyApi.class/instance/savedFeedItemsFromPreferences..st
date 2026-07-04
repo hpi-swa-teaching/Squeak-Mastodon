@@ -11,8 +11,8 @@ savedFeedItemsFromPreferences: preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPref']
 		ifNone: [nil].
 	old ifNil: [^ items].
-	(old at: 'pinned' ifAbsent: [#()]) do: [:uri |
-		items add: (self savedFeedItemForUri: uri pinned: true)].
+	items addAll: ((old at: 'pinned' ifAbsent: [#()])
+		collect: [:uri | self savedFeedItemForUri: uri pinned: true]).
 	(old at: 'saved' ifAbsent: [#()]) do: [:uri |
 		(items anySatisfy: [:item | (item at: 'value' ifAbsent: ['']) = uri])
 			ifFalse: [items add: (self savedFeedItemForUri: uri pinned: false)]].
