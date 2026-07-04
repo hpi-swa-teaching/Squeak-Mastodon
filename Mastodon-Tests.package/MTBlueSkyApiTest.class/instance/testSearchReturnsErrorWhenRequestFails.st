@@ -1,5 +1,5 @@
 search endpoints
-testSearchReturnsEmptyWhenRequestFails
+testSearchReturnsErrorWhenRequestFails
 
 	| api client result |
 	client := MTBlueSkyMockWebClient new.
@@ -8,5 +8,4 @@ testSearchReturnsEmptyWhenRequestFails
 	
 	result := api search: 'ghost'.
 	
-	self assert: result isSuccess equals: true.
-	self assert: result value accounts isEmpty equals: true
+	self assert: result isError equals: true
