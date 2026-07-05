@@ -1,3 +1,4 @@
 endpoints
 getPrivateTimeline
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

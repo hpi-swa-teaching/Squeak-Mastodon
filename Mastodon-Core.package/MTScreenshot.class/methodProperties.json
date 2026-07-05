@@ -1,8 +1,8 @@
 {
 	"class" : {
-		"cameraCursor" : "lapl 7/2/2026 14:44",
+		"cameraCursor" : "lapl 7/5/2026 21:14",
 		"loadNewTootWithMorph:" : "lapl 7/2/2026 14:44",
-		"useMastodonCursor" : "lapl 7/2/2026 14:45" },
+		"useMastodonCursor" : "lapl 7/5/2026 21:14" },
 	"instance" : {
 		"getContentAtClick" : "lapl 7/2/2026 15:39",
 		"getContentAtPoint:" : "lapl 7/3/2026 18:53" } }

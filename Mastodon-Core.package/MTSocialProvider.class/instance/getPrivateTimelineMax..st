@@ -1,3 +1,4 @@
 endpoints
 getPrivateTimelineMax: aMaxID
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

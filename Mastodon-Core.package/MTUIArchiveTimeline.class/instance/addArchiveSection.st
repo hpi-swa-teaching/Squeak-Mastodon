@@ -7,4 +7,4 @@ addArchiveSection
 		contents: 'Archive' asHtmlText;
 		lock.
 	
-	self addMorphBack: title.
+	self addMorphBack: title

@@ -1,3 +1,4 @@
 accessing
 repliesCount
+
 	^ repliesCount

@@ -14,7 +14,6 @@ useMastodonCursor
 					textMorph := textMorph textMorph backgroundColor: Color white.
 					textMorph exportAsPNGNamed: 'upload.png'.
 					"TODO: open new tweet with iamge window"
-					
 					^ self]]].
 	textMorph isNil
 		ifTrue: [
@@ -29,5 +28,5 @@ useMastodonCursor
 			textMorph := textMorph textMorph backgroundColor: Color white.
 			textMorph exportAsPNGNamed: 'upload.png'.
 			
-			"TODO: open new tweet with image window"
-			]
+			
+			"TODO: open new tweet with image window"]

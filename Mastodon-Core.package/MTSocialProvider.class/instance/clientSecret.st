@@ -1,3 +1,4 @@
 accessing
 clientSecret
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

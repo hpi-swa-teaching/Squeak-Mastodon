@@ -1,7 +1,7 @@
 render
 useReplyTemplates
 
-	| replyTemplateAccess userTemplates menu selectedTemplateName selectedReplyTemplate|
+	| replyTemplateAccess userTemplates menu selectedTemplateName selectedReplyTemplate |
 	replyTemplateAccess := MTReplyTemplateAccess new.
 	replyTemplateAccess user: self mastodonApi getCurrentUser value username.
 	userTemplates := replyTemplateAccess templateDirectoryContent.
@@ -16,4 +16,4 @@ useReplyTemplates
 	selectedTemplateName = false ifTrue: [^ false].
 	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplateName.
 	
-	self updateContent: self tootTextArea contents, selectedReplyTemplate content.
+	self updateContent: self tootTextArea contents, selectedReplyTemplate content

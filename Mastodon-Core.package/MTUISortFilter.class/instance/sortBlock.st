@@ -9,5 +9,5 @@ sortBlock
 	self sortKey = #replies ifTrue: [block := [:toot | toot repliesCount]].
 	
 	block ifNil: [^ nil].
-	^ [:first :second |"Special case equality such that our sort is stable"
+	^ [:first :second | "Special case equality such that our sort is stable"
 	(block value: first) = (block value: second) or: ((block value: first) < (block value: second) xor: reverseSortDirection)]

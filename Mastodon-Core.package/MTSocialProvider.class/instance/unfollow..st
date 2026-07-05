@@ -1,3 +1,4 @@
 endpoints
 unfollow: aFollowUri
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

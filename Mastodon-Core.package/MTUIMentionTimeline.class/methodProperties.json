@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"addArchiveNavigationButton" : "Mailin 6/8/2026 17:08",
-		"addMentionSection" : "Mailin 6/8/2026 16:54",
-		"archiveTootWithId:" : "Mailin 6/8/2026 22:21",
+		"addMentionSection" : "lapl 7/5/2026 21:14",
+		"archiveTootWithId:" : "lapl 7/5/2026 21:14",
 		"collectMentions:" : "lapl 7/5/2026 20:01",
 		"getMentions" : "lapl 7/2/2026 16:01",
 		"getNewMentions" : "lapl 7/2/2026 16:01",
@@ -17,4 +17,4 @@
 		"openArchiveView" : "Mailin 6/8/2026 19:19",
 		"refreshToots" : "lapl 7/3/2026 18:42",
 		"render" : "lapl 7/2/2026 16:28",
-		"replyToToot:" : "Mailin 6/28/2026 18:51" } }
+		"replyToToot:" : "lapl 7/5/2026 21:14" } }

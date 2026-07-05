@@ -1,3 +1,4 @@
 endpoints
 favourite: aToot
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

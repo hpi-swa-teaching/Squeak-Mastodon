@@ -8,9 +8,8 @@ replyToToot: aToot
 	replyWindow replyTo: aToot.
 	replyWindow reloadMentionTimeline: true.
 	replyWindow addTemplateButtonInReply.
-
+	
 	window := SystemWindow new.
 	window setLabel: 'Reply'.
 	window addMorph: replyWindow frame: (0 @ 0 extent: 1 @ 1).
-	window openInWorld.
-	
+	window openInWorld

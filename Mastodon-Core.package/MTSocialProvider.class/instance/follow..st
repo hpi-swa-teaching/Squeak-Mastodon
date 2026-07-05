@@ -1,3 +1,4 @@
 endpoints
 follow: aUserDid
-^ self subclassResponsibility
+
+	^ self subclassResponsibility

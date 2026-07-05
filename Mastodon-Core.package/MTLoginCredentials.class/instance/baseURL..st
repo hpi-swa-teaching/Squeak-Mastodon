@@ -1,4 +1,4 @@
 accessing
 baseURL: anObject
 
-	baseURL := anObject.
+	baseURL := anObject

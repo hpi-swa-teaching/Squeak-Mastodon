@@ -1,8 +1,8 @@
 add
 testAddAccountDuplicate
 
-	MTAccountStore 
+	MTAccountStore
 		addAccount: self firstAccount;
 		addAccount: self firstAccount.
-		
-	self assert: 1 equals: (MTAccountStore numberOfAccounts).
+	
+	self assert: 1 equals: MTAccountStore numberOfAccounts
