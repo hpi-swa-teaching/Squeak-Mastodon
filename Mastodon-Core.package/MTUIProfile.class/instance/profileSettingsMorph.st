@@ -1,4 +1,4 @@
-settings
+constants
 profileSettingsMorph
 
 	^ MTUIProfileSettings new

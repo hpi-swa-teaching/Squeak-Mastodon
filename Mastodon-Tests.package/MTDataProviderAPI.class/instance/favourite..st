@@ -1,6 +1,8 @@
 endpoints
 favourite: aTootID
 
+	favouriteCalled := true.
+	
 	^ aTootID
 		caseOf: {
 			[self firstToot id] -> [self firstTootFavourited].

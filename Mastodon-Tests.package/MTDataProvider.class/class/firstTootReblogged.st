@@ -1,4 +1,4 @@
-toots-properties
+toots
 firstTootReblogged
 
-	^ MTUtils stringToBool: (self firstTootJson at: 'reblogged')
+	^ self tootFrom: self firstTootRebloggedJson

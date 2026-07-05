@@ -1,4 +1,0 @@
-defaults
-defaultReblogsCount
-
-	^ 2

@@ -2,9 +2,9 @@ render-buttons
 getVisibilityButton
 
 	| button |
-	button := MTUIPushButton new 
-		text: 'Visibility: ';
-		setBalloonText: 'Choose who can see this toot'.
+	button := MTUIPushButton new
+		text: self visibilityButtonText;
+		setBalloonText: self visibilityButtonBalloonText.
 	
 	self connect: button signal: #clicked: toSelector: #showVisibilityWindow.
 	

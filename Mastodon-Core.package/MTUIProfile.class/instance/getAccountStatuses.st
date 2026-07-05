@@ -1,0 +1,4 @@
+render
+getAccountStatuses
+	
+	^ self timelineMorph

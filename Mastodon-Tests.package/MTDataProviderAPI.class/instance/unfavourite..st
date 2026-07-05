@@ -1,6 +1,8 @@
 endpoints
 unfavourite: aTootID
-
+	
+	unfavouriteCalled := true.
+	
 	^ aTootID
 		caseOf: {
 			[self firstToot id] -> [self firstToot].

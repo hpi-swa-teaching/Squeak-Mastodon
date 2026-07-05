@@ -1,6 +1,8 @@
 endpoints
 getAccount: anAccountID
 
+	getAccountCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self firstAccount id] -> [self firstAccount].

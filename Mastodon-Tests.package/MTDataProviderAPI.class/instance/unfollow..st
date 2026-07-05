@@ -1,6 +1,8 @@
 endpoints
 unfollow: anAccountID
-
+	
+	unfollowCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self secondAccount id] -> [self secondAccountRelationship].

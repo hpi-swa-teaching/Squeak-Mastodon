@@ -1,4 +1,0 @@
-defaults
-defaultImageId
-
-	^ 77

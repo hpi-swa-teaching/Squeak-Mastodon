@@ -1,4 +1,4 @@
-switching
+constants
 switchAccountsMorph
 
 	^ MTUISwitchAccounts new

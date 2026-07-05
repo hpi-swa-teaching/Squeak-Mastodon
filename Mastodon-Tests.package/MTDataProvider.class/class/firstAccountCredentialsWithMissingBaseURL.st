@@ -3,4 +3,4 @@ firstAccountCredentialsWithMissingBaseURL
 
 	^ MTLoginCredentials
 		for: nil
-		token: self defaultToken
+		token: self firstToken

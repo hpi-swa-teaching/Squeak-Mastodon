@@ -2,5 +2,5 @@ credentials
 firstAccountCredentials
 
 	^ MTLoginCredentials
-		for: self defaultBaseURL
-		token: self defaultToken
+		for: self firstBaseURL
+		token: self firstToken

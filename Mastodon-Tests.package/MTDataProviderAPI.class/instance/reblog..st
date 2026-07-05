@@ -1,6 +1,8 @@
 endpoints
 reblog: aTootID
 
+	reblogCalled := true.
+
 	^ aTootID
 		caseOf: {
 			[self firstToot id] -> [self firstTootReblogged].

@@ -1,4 +1,4 @@
 helpers
 updateOwnerTextLength
-
-	self owner ifNotNil: [:owner | owner owner ifNotNil: [:outerOwner | outerOwner updateCharacterLengthLabel]]
+	
+	self owner ifNotNil: [:owner | owner owner ifNotNil: [:outerOwner | outerOwner updateForText]]

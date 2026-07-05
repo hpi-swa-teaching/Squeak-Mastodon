@@ -1,4 +1,4 @@
 responses-relationships
 secondAccountRelationship
 
-	^ MTRelationship from: self secondAccountRelationshipJson
+	^ MTDataProvider secondAccountRelationship

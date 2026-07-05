@@ -1,4 +1,4 @@
-defaults
+credentials
 secondBaseURL
 
 	^ 'https://squeak.de'

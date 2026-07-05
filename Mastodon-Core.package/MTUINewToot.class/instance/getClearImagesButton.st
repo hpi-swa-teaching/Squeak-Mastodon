@@ -3,9 +3,9 @@ getClearImagesButton
 
 	| button |
 	button := MTUIPushButton new
-		text: 'Clear Images';
-		setBalloonText: 'Remove all attached images'.
-		
+		text: self clearImagesButtonText;
+		setBalloonText: self clearImagesButtonBalloonText.
+	
 	self connect: button signal: #clicked: toSelector: #removeMedia.
 	
 	^ button

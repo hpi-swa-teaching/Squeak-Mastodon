@@ -2,7 +2,7 @@ render-buttons
 testGetStarButtonActionTogglesActiveOnFavourited
 
 	| morph rendered |
-	morph := MTUIToot for: self mastodonApi firstTootFavourited.
+	morph := MTUIToot for: MTDataProvider firstTootFavourited.
 	rendered := morph getStarButton.
 	
 	self assert: rendered active equals: true.

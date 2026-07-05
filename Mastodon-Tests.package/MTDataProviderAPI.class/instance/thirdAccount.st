@@ -1,4 +1,4 @@
 responses-accounts
 thirdAccount
 
-	^ MTAccount from: self thirdAccountJson
+	^ MTDataProvider thirdAccount

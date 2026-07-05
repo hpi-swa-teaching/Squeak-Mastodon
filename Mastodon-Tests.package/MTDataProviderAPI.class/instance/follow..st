@@ -1,6 +1,8 @@
 endpoints
 follow: anAccountID
 
+	followCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self secondAccount id] -> [self secondAccountRelationship following: true].

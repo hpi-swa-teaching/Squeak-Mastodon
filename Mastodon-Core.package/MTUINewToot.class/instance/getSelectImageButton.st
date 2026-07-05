@@ -3,8 +3,8 @@ getSelectImageButton
 
 	| button |
 	button := MTUIPushButton new
-		text: 'Select Image';
-		setBalloonText: 'Attach image(s) to this toot'.
+		text: self selectImageButtonText;
+		setBalloonText: self selectImageButtonBalloonText.
 	
 	self connect: button signal: #clicked: toSelector: #selectImage.
 	

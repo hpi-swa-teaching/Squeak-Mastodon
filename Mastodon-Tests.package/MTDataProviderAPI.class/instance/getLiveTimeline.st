@@ -1,4 +1,6 @@
 endpoints-timelines
-getLiveTimeline
+getLiveTimeline	
+	
+	getLiveTimelineCalled := true.
 
 	^ {self firstToot. self secondToot. self thirdToot}

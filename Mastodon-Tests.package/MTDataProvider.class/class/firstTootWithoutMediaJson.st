@@ -30,7 +30,7 @@ firstTootWithoutMediaJson
 		at: 'in_reply_to_id' put: nil;
 		at: 'language' put: 'en';
 		at: 'media_attachments' put: {};
-		at: 'mentions' put: #();
+		at: 'mentions' put: {};
 		at: 'muted' put: false;
 		at: 'pinned' put: false;
 		at: 'poll' put: nil;
@@ -43,7 +43,7 @@ firstTootWithoutMediaJson
 		at: 'replies_count' put: 0;
 		at: 'sensitive' put: false;
 		at: 'spoiler_text' put: '';
-		at: 'tagged_collections' put: #();
+		at: 'tagged_collections' put: {};
 		at: 'tags' put: {
 			JsonObject new
 				at: 'name' put: 'smalltalk';

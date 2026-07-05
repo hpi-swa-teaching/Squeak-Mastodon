@@ -3,4 +3,4 @@ firstAccountCredentialsWithEmptyBaseURL
 
 	^ MTLoginCredentials
 		for: ''
-		token: self defaultToken
+		token: self firstToken

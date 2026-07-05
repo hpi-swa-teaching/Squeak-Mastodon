@@ -1,4 +1,0 @@
-defaults
-defaultFollowersCount
-
-	^ 9

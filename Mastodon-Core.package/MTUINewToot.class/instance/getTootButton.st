@@ -3,8 +3,8 @@ getTootButton
 
 	| button |
 	button := MTUIPushButton new
-		text: 'Toot';
-		setBalloonText: 'Post new toot'.
+		text: self tootButtonText;
+		setBalloonText: self tootButtonBalloonText.
 	
 	self connect: button signal: #clicked: toSelector: #toot.
 	

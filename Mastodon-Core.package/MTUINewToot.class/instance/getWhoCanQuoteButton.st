@@ -3,8 +3,8 @@ getWhoCanQuoteButton
 
 	| button |
 	button := MTUIPushButton new
-		text: 'Who can quote: '; 
-		setBalloonText: 'Choose who can quote this toot'.
+		text: self whoCanQuoteButtonText;
+		setBalloonText: self whoCanQuoteButtonBalloonText.
 	
 	self connect: button signal: #clicked: toSelector: #showQuotePolicyWindow.
 	

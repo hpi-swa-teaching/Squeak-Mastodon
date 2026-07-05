@@ -2,5 +2,5 @@ credentials
 firstAccountCredentialsWithMissingToken
 
 	^ MTLoginCredentials
-		for: self defaultBaseURL
+		for: self firstBaseURL
 		token: nil

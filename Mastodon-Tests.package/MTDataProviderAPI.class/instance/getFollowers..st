@@ -1,5 +1,7 @@
 endpoints
 getFollowers: anAccountID
+	
+	getFollowersCalled := true.
 
 	^ anAccountID
 		caseOf: {

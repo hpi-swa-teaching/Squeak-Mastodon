@@ -3,6 +3,6 @@ testRemoveAccountOnEmptyAPI
 
 	| switchAccountView credential |
 	switchAccountView := MTUISwitchAccounts new.
-	credential := MTLoginCredentials for: MTDataProvider defaultBaseURL token: MTDataProvider defaultToken.
+	credential := MTLoginCredentials for: MTDataProvider firstBaseURL token: MTDataProvider firstToken.
 	
 	self shouldnt: [switchAccountView deleteCredentials: credential] raise: Error

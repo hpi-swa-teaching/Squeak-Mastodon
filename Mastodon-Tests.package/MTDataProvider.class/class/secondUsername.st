@@ -1,4 +1,4 @@
-defaults
+credentials
 secondUsername
 
 	^ 'user2'

@@ -1,6 +1,8 @@
 endpoints
 getRelationship: anAccountID
-
+	
+	getRelationshipCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self firstAccount id] -> [self firstAccountRelationship]. 

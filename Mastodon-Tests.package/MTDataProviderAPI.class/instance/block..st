@@ -1,6 +1,8 @@
 endpoints
 block: anAccountID
 
+	blockCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self secondAccount id] -> [self secondAccountRelationship blocking: true].

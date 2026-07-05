@@ -1,4 +1,4 @@
 responses-toots
 firstTootReply
 
-	^ MTToot from: self firstTootReplyJson
+	^ MTDataProvider firstTootReply

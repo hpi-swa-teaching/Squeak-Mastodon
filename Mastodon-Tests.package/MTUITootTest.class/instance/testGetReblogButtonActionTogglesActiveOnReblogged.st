@@ -2,7 +2,7 @@ render-buttons
 testGetReblogButtonActionTogglesActiveOnReblogged
 
 	| morph rendered |
-	morph := MTUIToot for: self mastodonApi firstTootReblogged.
+	morph := MTUIToot for: MTDataProvider secondTootReblogged.
 	rendered := morph getReblogButton.
 	
 	self assert: rendered active equals: true.

@@ -1,6 +1,8 @@
 endpoints
 mute: anAccountID
-
+	
+	muteCalled := true.
+	
 	^ anAccountID
 		caseOf: {
 			[self secondAccount id] -> [self secondAccountRelationship muting: true].

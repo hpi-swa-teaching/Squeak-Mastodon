@@ -1,6 +1,8 @@
 endpoints
 unblock: anAccountID
 
+	unblockCalled := true.
+
 	^ anAccountID
 		caseOf: {
 			[self secondAccount id] -> [self secondAccountRelationship blocking: false].

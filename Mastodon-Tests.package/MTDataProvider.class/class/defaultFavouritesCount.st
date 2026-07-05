@@ -1,4 +1,0 @@
-defaults
-defaultFavouritesCount
-
-	^ 7

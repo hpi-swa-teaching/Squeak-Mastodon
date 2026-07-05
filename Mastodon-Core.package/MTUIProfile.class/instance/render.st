@@ -1,6 +1,6 @@
 render
 render
 
-	self 
-		addUserInfo;
-		addUserTimeline
+	self
+		addMorphBack: self getAccountBanner;
+		addMorphBack: self getAccountStatuses

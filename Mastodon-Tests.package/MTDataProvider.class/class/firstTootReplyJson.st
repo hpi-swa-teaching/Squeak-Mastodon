@@ -37,7 +37,7 @@ firstTootReplyJson
 		at: 'in_reply_to_account_id' put: self firstAccount id;
 		at: 'in_reply_to_id' put: self firstTootID;
 		at: 'language' put: 'de';
-		at: 'media_attachments' put: #();
+		at: 'media_attachments' put: {};
 		at: 'mentions' put: {mention};
 		at: 'muted' put: false;
 		at: 'pinned' put: false;

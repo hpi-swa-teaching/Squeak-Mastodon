@@ -1,4 +1,4 @@
-switching
+accessing
 openSwitchAccounts
 
 	self

@@ -1,0 +1,4 @@
+called
+getCurrentUserCalled
+
+	^ getCurrentUserCalled

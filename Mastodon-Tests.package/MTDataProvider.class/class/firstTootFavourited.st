@@ -1,4 +1,4 @@
-toots-properties
+toots
 firstTootFavourited
 
-	^ MTUtils stringToBool: (self firstTootJson at: 'favourited')
+	^ self tootFrom: self firstTootFavouritedJson

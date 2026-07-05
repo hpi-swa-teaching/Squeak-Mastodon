@@ -1,13 +1,14 @@
 tests
 testEncodeProfileFormIncludesTextFields
 
-	| account dict body |
-	account := MTMastodonApi getInstance deserialize: MTDataProvider defaultAccountJsonString intoObjectOf: MTAccount.
+	| account dict body form |
+	account := MTDataProvider firstAccount.
+	form := MTDataProvider emptyImageForm.
 	
-	dict := Dictionary new.
-	dict at: 'display_name' put: account displayName.
-	dict at: 'note' put: account note.
-	body := MTMastodonApi getInstance encodeProfileForm: dict avatar: nil header: nil boundary: 'BOUND'.
+	dict := Dictionary new
+		at: 'display_name' put: account displayName;
+		at: 'note' put: account note.
+	body := self mastodonApi encodeProfileForm: dict avatar: form header: nil boundary: 'BOUND'.
 	
 	dict keysAndValuesDo: [:key :value |
 		self assert: (body indexOfSubCollection: 'name="', key, '"') > 0.

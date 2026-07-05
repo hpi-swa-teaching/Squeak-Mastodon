@@ -5,5 +5,5 @@ testInstanceCreation
 	MTMastodonApi changeInstanceTo: MTDataProvider firstAccountCredentials.
 	api := MTMastodonApi getInstance.
 	
-	self assert: (api baseUrl) equals: MTDataProvider defaultBaseURL.
-	self assert: (api token) equals: MTDataProvider defaultToken.
+	self assert: (api baseUrl) equals: MTDataProvider firstBaseURL.
+	self assert: (api token) equals: MTDataProvider firstToken.
