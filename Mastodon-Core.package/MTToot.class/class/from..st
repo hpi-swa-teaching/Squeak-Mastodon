@@ -12,7 +12,7 @@ from: aJsonObject
 		reblogged: (MTUtils stringToBool: (aJsonObject at: 'reblogged'));
 		reblog: (MTToot from: (aJsonObject at: 'reblog'));
 		reblogsCount: (aJsonObject at: 'reblogs_count');
-		favouritesCount: (aJsonObject at: 'favouritesCount');
+		favouritesCount: (aJsonObject at: 'favourites_count');
 		repliesCount: (aJsonObject at: 'replies_count');
 		urls: (aJsonObject at: 'url');
 		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
