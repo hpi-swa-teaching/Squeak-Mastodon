@@ -11,6 +11,7 @@
 		"testCustomFeedRefreshKeepsLoadedPosts" : "JH 7/3/2026 15:50",
 		"testFreshTimelineHasNoCursorsOrWindow" : "JH 7/4/2026 04:11",
 		"testHomeTimelineName" : "JH 7/4/2026 03:41",
+		"testIsValidFeedRecognizesBlueSkyFeed" : "JH 7/5/2026 02:04",
 		"testLikedPostsTimelineName" : "JH 7/4/2026 03:47",
 		"testLoadFeedsTreatsFalseSelectedFeedAsMissing" : "JH 7/3/2026 15:51",
 		"testLoggedOutMastodonLoadsPublicTimeline" : "JH 7/4/2026 22:13",
