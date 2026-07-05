@@ -1,4 +1,4 @@
 called
 searchCalled
 
-	^ searchCalled
+	^ searchCalled ifNil: [^ false]

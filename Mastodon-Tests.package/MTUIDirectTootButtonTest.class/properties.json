@@ -10,5 +10,5 @@
 	"name" : "MTUIDirectTootButtonTest",
 	"pools" : [
 		 ],
-	"super" : "MTTestCase",
+	"super" : "MTUIActionButtonTest",
 	"type" : "normal" }

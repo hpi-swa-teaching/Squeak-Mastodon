@@ -1,4 +1,4 @@
 called-timelines
 getHomeTimelineMaxCalled
 
-	^ getHomeTimelineMaxCalled
+	^ getHomeTimelineMaxCalled ifNil: [^ false]

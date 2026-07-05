@@ -1,4 +1,4 @@
 called
 tootWithParametersCalled
 
-	^ tootWithParametersCalled
+	^ tootWithParametersCalled ifNil: [^ false]

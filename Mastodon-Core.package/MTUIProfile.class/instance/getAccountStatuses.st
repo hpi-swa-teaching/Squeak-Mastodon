@@ -1,4 +1,4 @@
 render
 getAccountStatuses
 	
-	^ self timelineMorph
+	^ MTUIUserTimeline for: self account id

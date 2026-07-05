@@ -1,4 +1,4 @@
 called
 muteCalled
 
-	^ muteCalled
+	^ muteCalled ifNil: [^ false]

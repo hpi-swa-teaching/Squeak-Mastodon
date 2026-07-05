@@ -1,5 +1,5 @@
 called-timelines
 getHomeTimelineSinceCalled
 
-	^ getHomeTimelineSinceCalled
+	^ getHomeTimelineSinceCalled ifNil: [^ false]
 

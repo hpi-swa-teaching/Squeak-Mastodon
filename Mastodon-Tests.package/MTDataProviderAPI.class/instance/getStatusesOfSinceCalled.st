@@ -1,4 +1,4 @@
 called-timelines
 getStatusesOfSinceCalled
 
-	^ getStatusesOfSinceCalled
+	^ getStatusesOfSinceCalled ifNil: [^ false]

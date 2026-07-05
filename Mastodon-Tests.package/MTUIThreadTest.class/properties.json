@@ -10,5 +10,5 @@
 	"name" : "MTUIThreadTest",
 	"pools" : [
 		 ],
-	"super" : "MTTestCase",
+	"super" : "MTUITootListTest",
 	"type" : "normal" }

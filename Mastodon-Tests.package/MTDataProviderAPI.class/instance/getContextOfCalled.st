@@ -1,4 +1,4 @@
 called
 getContextOfCalled
 
-	^ getContextOfCalled
+	^ getContextOfCalled ifNil: [^ false]

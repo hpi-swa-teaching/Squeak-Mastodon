@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "timhb 6/30/2026 10:59",
 		"testGetAccountMorph" : "timhb 7/1/2026 07:42",
 		"testGetActionsMorph" : "timhb 7/1/2026 07:42",
 		"testGetCommentsButton" : "timhb 7/1/2026 07:44",

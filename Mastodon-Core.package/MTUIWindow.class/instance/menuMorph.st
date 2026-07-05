@@ -1,4 +1,7 @@
-accessing
+accessing-morph
 menuMorph
 
-	^ menuMorph
+	^ menuMorph ifNil: [
+		menuMorph := MTUIMenu new
+			color: Color transparent;
+			yourself]

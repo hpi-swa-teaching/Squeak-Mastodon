@@ -1,4 +1,4 @@
 meta
 hasToken
 
-	^ true
+	^ self token notEmpty

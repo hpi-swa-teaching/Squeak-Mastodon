@@ -1,4 +1,4 @@
 called
 getRelationshipCalled
 
-	^ getRelationshipCalled
+	^ getRelationshipCalled ifNil: [^ false]

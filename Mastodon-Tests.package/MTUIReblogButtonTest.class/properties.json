@@ -10,5 +10,5 @@
 	"name" : "MTUIReblogButtonTest",
 	"pools" : [
 		 ],
-	"super" : "MTTestCase",
+	"super" : "MTUIActionButtonTest",
 	"type" : "normal" }

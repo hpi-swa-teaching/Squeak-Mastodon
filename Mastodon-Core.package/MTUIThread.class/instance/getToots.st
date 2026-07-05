@@ -6,9 +6,9 @@ getToots
 	context := self mastodonApi getContextOf: self rootToot id.
 	
 	thread := OrderedCollection new
-		addAll: (context at: #ancestors);
+		addAll: (context ancestors);
 		add: self rootToot;
-		addAll: (context at: #descendants).
+		addAll: (context descendants).
 	
 	self computeDepthsFor: thread.
 	

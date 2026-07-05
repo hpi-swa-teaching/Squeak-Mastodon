@@ -1,17 +1,12 @@
 render
 getNameField
 
-	| field |
-	field := PluggableTextMorph
-		on: self
-		text: #profileNameText
-		accept: #profileNameText:
-		readSelection: nil
-		menu: nil.
-	
-	field
-		width: 400;
+	| wrapper |
+	wrapper := (MTUIView applyWrapperLayoutTo: RectangleMorph new)
 		hResizing: #rigid;
-		vResizing: #shrinkWrap.
+		width: self fieldWidth;
+		yourself.
 	
-	^ field
+	wrapper addMorphBack: self nameText.
+	
+	^ wrapper

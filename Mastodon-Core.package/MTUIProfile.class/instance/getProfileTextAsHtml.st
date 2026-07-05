@@ -1,4 +1,4 @@
-render
+helpers
 getProfileTextAsHtml
 
 	^ String streamContents: [:stream |

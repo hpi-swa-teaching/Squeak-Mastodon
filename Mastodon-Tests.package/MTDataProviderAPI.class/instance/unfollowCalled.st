@@ -1,4 +1,4 @@
 called
 unfollowCalled
 
-	^ unfollowCalled
+	^ unfollowCalled ifNil: [^ false]

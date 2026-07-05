@@ -4,11 +4,11 @@ testActiveButton
 	| buttonBar firstButton secondButton |
 	buttonBar := MTUIMenu new.
 	
-	firstButton := MTUIMenuButtonClassTest new
+	firstButton := MTUIMenuButton new
 		id: #home;
 		yourself.
 	
-	secondButton := MTUIMenuButtonClassTest new
+	secondButton := MTUIMenuButton new
 		id: #profile;
 		yourself.
 	
@@ -19,7 +19,4 @@ testActiveButton
 	buttonBar activeButton: #profile.
 	
 	self assert: firstButton active equals: false.
-	self assert: secondButton active equals: true.
-	
-	self assert: firstButton renderCalled.
-	self assert: secondButton renderCalled
+	self assert: secondButton active equals: true

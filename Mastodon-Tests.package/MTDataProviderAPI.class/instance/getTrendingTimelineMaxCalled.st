@@ -1,4 +1,4 @@
 called-timelines
 getTrendingTimelineMaxCalled
 
-	^ getTrendingTimelineMaxCalled
+	^ getTrendingTimelineMaxCalled ifNil: [^ false]

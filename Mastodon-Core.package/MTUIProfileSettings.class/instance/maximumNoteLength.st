@@ -1,0 +1,4 @@
+constants
+maximumNoteLength
+
+	^ 160

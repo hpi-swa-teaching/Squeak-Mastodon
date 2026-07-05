@@ -1,0 +1,4 @@
+defaults
+createNewAccountButtonText
+
+	^ '+ Add Account'

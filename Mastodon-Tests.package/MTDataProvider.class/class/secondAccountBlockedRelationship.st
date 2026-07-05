@@ -1,0 +1,4 @@
+model-relationships
+secondAccountBlockedRelationship
+
+	^ self relationshipFrom: self secondAccountBlockedRelationshipJson

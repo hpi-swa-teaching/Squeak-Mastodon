@@ -1,5 +1,5 @@
 endpoints-timelines
 getStatus: anStatusID
 
-	^ self getRequest: '/api/v1/statuses/', anStatusID intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/statuses/', anStatusID intoObjectOf: MTToot
 	

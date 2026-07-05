@@ -1,4 +1,0 @@
-actions
-getAuthorizationLink
-
-	authorizationLinkCalled := true

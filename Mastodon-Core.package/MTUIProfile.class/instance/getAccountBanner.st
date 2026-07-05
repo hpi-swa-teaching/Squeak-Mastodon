@@ -1,12 +1,12 @@
 render
 getAccountBanner
 
-	| banner accountId |
-	accountId := self mastodonApi getCurrentUser id.
-	banner := self getGeneralUserBanner.
+	| accountBanner currentAccountId |
+	currentAccountId := self mastodonApi getCurrentUser value id.
+	accountBanner := self getGeneralAccountBanner.
 	
-	accountId = self account id
-		ifTrue: [banner addMorphFront: self getSettingsToolbar]
-		ifFalse: [banner addMorphBack: self getInteractionButtons].
-	
-	^ banner
+	currentAccountId = self account id
+		ifTrue: [accountBanner addMorph: self settingsButtons]
+		ifFalse: [accountBanner addMorphBack: self interactionButtons].
+		
+	^ accountBanner

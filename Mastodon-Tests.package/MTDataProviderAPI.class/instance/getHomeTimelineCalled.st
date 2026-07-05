@@ -1,4 +1,4 @@
 called-timelines
 getHomeTimelineCalled
 
-	^ getHomeTimelineCalled
+	^ getHomeTimelineCalled ifNil: [^ false]

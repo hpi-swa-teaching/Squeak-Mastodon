@@ -13,4 +13,6 @@ render
 		addMorphBack: self feedbackMorph;
 		addMorphBack: self tootButton;
 		addMorphBack: self getImageButtons;
-		addMorphBack: self mediaPreview
+		addMorphBack: self mediaPreview.
+	
+	self feedbackMorph hide

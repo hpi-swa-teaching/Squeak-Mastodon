@@ -2,9 +2,9 @@ render-buttons
 getLogoutButtonFor: aCredential
 
 	^ SimpleButtonMorph new
-		label: 'Logout';
-		setBalloonText: 'Log out of current account';
+		label: self logoutButtonText;
+		setBalloonText: self logoutButtonBalloonText;
 		target: self;
 		actionSelector: #logout;
-		color: Color paleRed;
+		color: self logoutButtonColor;
 		yourself

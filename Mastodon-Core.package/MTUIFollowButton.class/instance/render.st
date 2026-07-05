@@ -1,4 +1,0 @@
-render
-render
-
-	super render

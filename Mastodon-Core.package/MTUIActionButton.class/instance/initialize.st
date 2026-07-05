@@ -2,4 +2,8 @@ initialization
 initialize
 
 	super initialize.
-	self active: false
+	
+	self
+		target: self;
+		actionSelector: #doActionFor:;
+		render

@@ -1,4 +1,4 @@
 called
 imageFormFromCalled
 
-	^ imageFormFromCalled
+	^ imageFormFromCalled ifNil: [^ false]

@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"active:" : "NV 6/28/2026 14:50",
-		"followAccount:" : "timhb 7/1/2026 07:51",
-		"initialize" : "timhb 6/28/2026 11:30",
-		"render" : "HB 6/28/2026 13:52" } }
+		"buttonBalloonTextWhenActive" : "timhb 7/5/2026 15:16",
+		"buttonBalloonTextWhenInactive" : "timhb 7/5/2026 15:16",
+		"buttonLabelGraphicWhenActive" : "timhb 7/5/2026 15:38",
+		"buttonLabelGraphicWhenInactive" : "timhb 7/5/2026 15:38",
+		"doActiveActionFor:" : "timhb 7/5/2026 15:18",
+		"doInactiveActionFor:" : "timhb 7/5/2026 15:18" } }

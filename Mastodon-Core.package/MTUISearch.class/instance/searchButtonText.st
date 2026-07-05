@@ -1,0 +1,4 @@
+defaults
+searchButtonText
+
+	^ 'Search User'

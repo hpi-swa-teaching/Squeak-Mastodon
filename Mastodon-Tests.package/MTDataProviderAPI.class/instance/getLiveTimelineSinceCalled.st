@@ -1,4 +1,4 @@
 called-timelines
 getLiveTimelineSinceCalled
 
-	^ getLiveTimelineSinceCalled
+	^ getLiveTimelineSinceCalled ifNil: [^ false]

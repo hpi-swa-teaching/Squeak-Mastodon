@@ -1,4 +1,4 @@
 called
 tootWithParameterAndMediaCalled
 
-	^ tootWithParameterAndMediaCalled
+	^ tootWithParameterAndMediaCalled ifNil: [^ false]

@@ -2,7 +2,7 @@ initialization
 initialize
 
 	super initialize.
-
+	
 	self render.
 	
-	self feedbackMorph hide
+	self tootTextArea addDependent: self.

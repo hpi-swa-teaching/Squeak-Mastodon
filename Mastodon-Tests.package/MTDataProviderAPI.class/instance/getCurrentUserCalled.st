@@ -1,4 +1,4 @@
 called
 getCurrentUserCalled
 
-	^ getCurrentUserCalled
+	^ getCurrentUserCalled ifNil: [^ false]

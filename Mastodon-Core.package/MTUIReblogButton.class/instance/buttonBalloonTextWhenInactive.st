@@ -1,0 +1,4 @@
+defaults
+buttonBalloonTextWhenInactive
+
+	^ 'Reblog toot'

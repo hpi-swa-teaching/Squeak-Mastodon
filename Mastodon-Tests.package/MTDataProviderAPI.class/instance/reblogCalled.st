@@ -1,4 +1,4 @@
 called
 reblogCalled
 
-	^ reblogCalled
+	^ reblogCalled ifNil: [^ false]

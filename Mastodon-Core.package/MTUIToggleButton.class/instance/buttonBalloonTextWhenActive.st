@@ -1,0 +1,4 @@
+defaults
+buttonBalloonTextWhenActive
+
+	^ self subclassResponsibility

@@ -1,6 +1,4 @@
 credentials
 secondAccountCredentials
 
-	^ MTLoginCredentials
-		for: self secondBaseURL
-		token: self secondToken
+	^ MTLoginCredentials baseUrl: self secondBaseURL token: self secondToken account: self secondAccount

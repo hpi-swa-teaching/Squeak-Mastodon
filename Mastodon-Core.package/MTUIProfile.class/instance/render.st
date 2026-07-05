@@ -2,5 +2,5 @@ render
 render
 
 	self
-		addMorphBack: self getAccountBanner;
-		addMorphBack: self getAccountStatuses
+		addMorphBack: self accountBanner;
+		addMorphBack: self accountStatuses

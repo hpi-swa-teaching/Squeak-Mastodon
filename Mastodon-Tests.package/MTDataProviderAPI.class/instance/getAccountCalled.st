@@ -1,4 +1,4 @@
 called
 getAccountCalled
 
-	^ getAccountCalled
+	^ getAccountCalled ifNil: [^ false]

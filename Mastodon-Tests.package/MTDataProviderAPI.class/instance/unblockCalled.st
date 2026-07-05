@@ -1,4 +1,4 @@
 called
 unblockCalled
 
-	^ unblockCalled
+	^ unblockCalled ifNil: [^ false]

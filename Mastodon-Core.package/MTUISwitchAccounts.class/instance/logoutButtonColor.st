@@ -1,0 +1,4 @@
+defaults
+logoutButtonColor
+
+	^ Color paleRed

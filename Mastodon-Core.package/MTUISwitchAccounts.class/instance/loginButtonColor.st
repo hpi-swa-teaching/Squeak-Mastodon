@@ -1,0 +1,4 @@
+defaults
+loginButtonColor
+
+	^ Color paleGreen

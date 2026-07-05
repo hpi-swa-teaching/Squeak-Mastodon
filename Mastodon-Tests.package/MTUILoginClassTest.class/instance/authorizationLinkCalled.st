@@ -1,4 +1,0 @@
-helpers
-authorizationLinkCalled
-
-	^ authorizationLinkCalled = true

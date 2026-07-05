@@ -2,10 +2,10 @@ render-buttons
 getDeleteButtonFor: aCredential
 
 	^ SimpleButtonMorph new
-		label: 'Delete';
-		setBalloonText: 'Remove this account';
+		label: self deleteButtonText;
+		setBalloonText: self deleteButtonBalloonText;
 		target: self;
 		actionSelector: #deleteCredentials:;
 		arguments: {aCredential};
-		color: Color red;
+		color: self deleteButtonColor;
 		yourself

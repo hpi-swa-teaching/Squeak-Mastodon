@@ -1,4 +1,4 @@
 accessing
-accountMorphs: anObject
+accountMorphs: aMorphCollection
 
-	accountMorphs := anObject
+	accountMorphs := aMorphCollection

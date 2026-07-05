@@ -1,7 +1,7 @@
 layout-properties
 applyWrapperLayoutTo: aWrapper
 
-	aWrapper
+	^ aWrapper
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		cellPositioning: #topLeft;
@@ -11,5 +11,5 @@ applyWrapperLayoutTo: aWrapper
 		color: Color white;
 		cellInset: 10;
 		borderWidth: 1;
-		layoutInset: 2.
-	^ aWrapper
+		layoutInset: 2;
+		yourself

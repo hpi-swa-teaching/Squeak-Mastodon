@@ -1,0 +1,4 @@
+defaults
+buttonLabelGraphicWhenActive
+
+	^ MTUIIcons reblogActive

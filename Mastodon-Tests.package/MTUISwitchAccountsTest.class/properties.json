@@ -10,5 +10,5 @@
 	"name" : "MTUISwitchAccountsTest",
 	"pools" : [
 		 ],
-	"super" : "MTTestCase",
+	"super" : "MTUIViewTest",
 	"type" : "normal" }

@@ -15,5 +15,6 @@ updateCredentials: aDictionary avatar: anAvatarForm header: aHeaderForm
 		do: [:req |
 			req method: 'PATCH'.
 			req addHeader: 'Authorization' value: 'Bearer ', self token].
-	response isSuccess ifTrue: [^ response content].
-	^ nil
+	
+	self flushCurrentUserCache.
+	^ self contentFromResponse: response

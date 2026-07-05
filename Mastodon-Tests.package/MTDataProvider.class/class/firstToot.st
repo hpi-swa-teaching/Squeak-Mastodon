@@ -1,4 +1,4 @@
-toots
+model-toots
 firstToot
 
 	^ self tootFrom: self firstTootJson

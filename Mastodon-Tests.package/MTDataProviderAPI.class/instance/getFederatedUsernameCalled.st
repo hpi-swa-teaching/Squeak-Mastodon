@@ -1,4 +1,4 @@
 called
 getFederatedUsernameCalled
 
-	^ getFederatedUsernameCalled
+	^ getFederatedUsernameCalled ifNil: [^ false]

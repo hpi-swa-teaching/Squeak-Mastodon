@@ -1,4 +1,4 @@
 called
 getStatusCalled
 
-	^ getStatusCalled
+	^ getStatusCalled ifNil: [^ false]

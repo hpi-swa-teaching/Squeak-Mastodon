@@ -1,4 +1,4 @@
 called
 updateCredentialsAvatarHeaderCalled
 
-	^ updateCredentialsAvatarHeaderCalled
+	^ updateCredentialsAvatarHeaderCalled ifNil: [^ false]

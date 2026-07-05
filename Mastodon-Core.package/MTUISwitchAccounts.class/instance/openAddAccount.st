@@ -1,6 +1,6 @@
 actions
 openAddAccount
 
-	self 
+	self
 		removeAllMorphs;
-		addMorphBack: self getLoginView
+		addMorphBack: self loginViewMorph

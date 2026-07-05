@@ -1,4 +1,4 @@
-constants
+defaults
 avatarSize
 
-	^ 200
+	^ 400

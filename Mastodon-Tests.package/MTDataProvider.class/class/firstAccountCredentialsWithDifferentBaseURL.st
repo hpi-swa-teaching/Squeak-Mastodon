@@ -1,6 +1,4 @@
 credentials
 firstAccountCredentialsWithDifferentBaseURL
 
-	^ MTLoginCredentials
-		for: self secondBaseURL
-		token: self firstToken
+	^ MTLoginCredentials baseUrl: self secondBaseURL token: self firstToken account: self firstAccount

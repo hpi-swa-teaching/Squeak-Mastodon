@@ -1,4 +1,4 @@
 called
 favouriteCalled
 
-	^ favouriteCalled
+	^ favouriteCalled ifNil: [^ false]

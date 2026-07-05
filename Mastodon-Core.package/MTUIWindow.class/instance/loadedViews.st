@@ -1,4 +1,4 @@
 accessing
 loadedViews
 
-	^ loadedViews
+	^ loadedViews ifNil: [loadedViews := Dictionary new]

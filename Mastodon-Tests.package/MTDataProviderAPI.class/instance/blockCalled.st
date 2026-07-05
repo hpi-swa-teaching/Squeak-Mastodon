@@ -1,4 +1,4 @@
 called
 blockCalled
 
-	^ blockCalled
+	^ blockCalled ifNil: [^ false]

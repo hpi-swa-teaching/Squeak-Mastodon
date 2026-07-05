@@ -7,4 +7,5 @@ loadToots
 	toots := self getToots.
 	
 	self setToots: toots.
+	
 	^ true

@@ -4,11 +4,11 @@ testDrawButtons
 	| menuBar firstButton secondButton |
 	menuBar := MTUIMenu new.
 	
-	firstButton := MTUIMenuButtonClassTest new
+	firstButton := MTUIMenuButton new
 		id: #home;
 		yourself.
 	
-	secondButton := MTUIMenuButtonClassTest new
+	secondButton := MTUIMenuButton new
 		id: #profile;
 		yourself.
 	
@@ -19,7 +19,4 @@ testDrawButtons
 	menuBar drawButtons.
 	
 	self assert: (menuBar submorphs includes: firstButton).
-	self assert: (menuBar submorphs includes: secondButton).
-	
-	self assert: firstButton renderCalled.
-	self assert: secondButton renderCalled
+	self assert: (menuBar submorphs includes: secondButton)

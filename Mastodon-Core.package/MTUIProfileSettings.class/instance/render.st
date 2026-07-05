@@ -1,10 +1,12 @@
 render
 render
 
-	self container
-		addMorphBack: self getSettingsToolbar;
-		addMorphBack: self getEditableAvatar;
-		addMorphBack: self getNameField;
-		addMorphBack: self getNoteField.
+	| container |
+	container := self getProfileContainer
+		addMorphBack: self toolbarButtons;
+		addMorphBack: self avatarField;
+		addMorphBack: self nameField;
+		addMorphBack: self noteField;
+		yourself.
 	
-	self addMorph: self container
+	self addMorph: container

@@ -1,0 +1,4 @@
+defaults
+buttonLabelGraphicWhenActive
+
+	^ self subclassResponsibility

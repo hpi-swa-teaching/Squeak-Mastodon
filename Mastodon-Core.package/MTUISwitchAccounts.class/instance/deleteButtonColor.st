@@ -1,0 +1,4 @@
+defaults
+deleteButtonColor
+
+	^ Color red

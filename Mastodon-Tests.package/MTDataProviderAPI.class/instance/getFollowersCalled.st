@@ -1,4 +1,4 @@
 called
 getFollowersCalled
 
-	^ getFollowersCalled
+	^ getFollowersCalled ifNil: [^ false]

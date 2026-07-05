@@ -1,4 +1,4 @@
 called-timelines
 getStatusesOfMaxCalled
 
-	^ getStatusesOfMaxCalled
+	^ getStatusesOfMaxCalled ifNil: [^ false]

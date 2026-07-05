@@ -1,4 +1,4 @@
 credentials
 secondUsername
 
-	^ 'user2'
+	^ self secondAccount username

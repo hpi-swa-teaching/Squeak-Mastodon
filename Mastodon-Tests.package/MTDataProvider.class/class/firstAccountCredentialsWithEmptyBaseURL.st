@@ -1,6 +1,4 @@
 credentials
 firstAccountCredentialsWithEmptyBaseURL
 
-	^ MTLoginCredentials
-		for: ''
-		token: self firstToken
+	^ MTLoginCredentials baseUrl: '' token: self firstToken account: self firstAccount

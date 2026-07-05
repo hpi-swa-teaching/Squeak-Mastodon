@@ -1,4 +1,4 @@
 helpers
 informToLogIn
 
-	self inform: 'Please login first'
+	self inform: self informToLogInMessage

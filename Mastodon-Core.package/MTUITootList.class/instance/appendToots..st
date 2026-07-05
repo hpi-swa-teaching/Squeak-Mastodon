@@ -1,4 +1,4 @@
-render
+helpers
 appendToots: anOrderedCollection
 
 	anOrderedCollection ifNotEmpty: [

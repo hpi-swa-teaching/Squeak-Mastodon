@@ -1,4 +1,4 @@
 called
 unmuteCalled
 
-	^ unmuteCalled
+	^ unmuteCalled ifNil: [^ false]

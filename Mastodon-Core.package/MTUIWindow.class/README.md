@@ -1,1 +1,1 @@
-MTUIWindow is the main wrapper for all of the views and resposible for connecting them properly.
+MTUIWindow is the main wrapper for all of the views and resposible for connecting them properly. It's a singleton.

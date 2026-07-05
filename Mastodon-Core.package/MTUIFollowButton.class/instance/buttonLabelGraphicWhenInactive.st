@@ -1,0 +1,4 @@
+defaults
+buttonLabelGraphicWhenInactive
+
+	^ MTUIIcons follow

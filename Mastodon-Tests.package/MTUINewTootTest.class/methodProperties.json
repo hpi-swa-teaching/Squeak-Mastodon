@@ -45,6 +45,8 @@
 		"testGetWhoCanQuoteButtonClickCallsShowQuotePolicyWindow" : "timhb 7/5/2026 00:30",
 		"testGetWhoCanQuoteButtonNoError" : "timhb 7/4/2026 19:31",
 		"testGetWhoCanQuoteButtonNotNil" : "timhb 7/4/2026 19:32",
+		"testHideFeedbackHidesFeedbackMorph" : "timhb 7/5/2026 22:27",
+		"testHideFeedbackNoError" : "timhb 7/5/2026 22:27",
 		"testInReplyToIdUpdatesTitleToNewToot" : "timhb 7/5/2026 11:13",
 		"testInReplyToIdUpdatesTitleToReply" : "timhb 7/5/2026 11:14",
 		"testInitializeNoError" : "timhb 7/5/2026 00:35",

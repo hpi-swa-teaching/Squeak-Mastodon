@@ -1,4 +1,4 @@
-render
+helpers
 prependToots: anOrderedCollection
 
 	anOrderedCollection ifNotEmpty: [

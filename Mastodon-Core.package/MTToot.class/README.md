@@ -1,4 +1,4 @@
-A MTToot is an Object that represents a single Toot.
+A MTToot is an Object that represents a single Toot, also known and referenced as a status or post.
 
 Instance Variables
 	createdAt:		<String>

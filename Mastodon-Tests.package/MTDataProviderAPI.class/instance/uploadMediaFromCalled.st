@@ -1,4 +1,4 @@
 called
 uploadMediaFromCalled
 
-	^ uploadMediaFromCalled
+	^ uploadMediaFromCalled ifNil: [^ false]

@@ -2,7 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"active:" : "NV 6/28/2026 16:35",
-		"initialize" : "NV 6/28/2026 16:38",
-		"reblogToot:" : "timhb 7/1/2026 07:53",
-		"render" : "NV 6/28/2026 16:35" } }
+		"buttonBalloonTextWhenActive" : "timhb 7/5/2026 15:20",
+		"buttonBalloonTextWhenInactive" : "timhb 7/5/2026 15:20",
+		"buttonLabelGraphicWhenActive" : "timhb 7/5/2026 15:38",
+		"buttonLabelGraphicWhenInactive" : "timhb 7/5/2026 15:38",
+		"doActiveActionFor:" : "timhb 7/5/2026 15:29",
+		"doInactiveActionFor:" : "timhb 7/5/2026 15:29" } }
