@@ -1,4 +1,3 @@
 file operations
 assureTemplateDirectory
-
-	(FileDirectory on: './replyTemplates/', self user) assureExistence
+	(FileDirectory on: (FileDirectory default fullNameFor: 'replyTemplates/', self user)) assureExistence.

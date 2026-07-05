@@ -16,8 +16,18 @@ scheduleToot
 	
 	visibility := self chooseVisibility.
 	
-	(self scheduleToot: text at: time visibility: visibility withMedia: self getImageID) ifTrue: [
+	(replyTo
+		ifNil: [self scheduleToot: text at: time visibility: visibility withMedia: self getImageID]
+		ifNotNil: [
+			self
+				scheduleReplyToot: text
+				replyTo: replyTo id
+				at: time
+				visibility: visibility
+				withMedia: self getImageID]) ifTrue: [
 		MTUtils showSuccessMessage: 'Scheduled post successfully!' on: self messageArea.
 		self cleanTextField.
+		
+		replyTo ifNotNil: [self owner delete].
 		^ false].
 	^ true
