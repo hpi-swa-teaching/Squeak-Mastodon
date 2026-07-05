@@ -5,4 +5,5 @@ with: aTootList from: aMTUser
 		user: aMTUser;
 		tootList: aTootList;
 		addUserInfo;
+		addSortFilterWithObservers: {aTootList};
 		addUserTimeline

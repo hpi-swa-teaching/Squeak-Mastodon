@@ -1,4 +1,4 @@
 accessing
 minID
 
-	^ minID
+	^ (self toots detectMin: [:toot | toot tootTime]) id

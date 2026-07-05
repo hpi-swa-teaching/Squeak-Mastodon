@@ -15,4 +15,5 @@ loadTootsOf: aMTUser
 		^ self].
 	
 	self setToots: timeline value.
+	self sortToots.
 	self render

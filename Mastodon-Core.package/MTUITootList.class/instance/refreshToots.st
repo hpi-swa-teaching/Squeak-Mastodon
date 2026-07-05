@@ -10,4 +10,5 @@ refreshToots
 		self inform: (newToots error ifNil: ['An error occurred']).
 		^ self].
 	
-	self prependToots: newToots value
+	self prependToots: newToots value.
+	self sortToots

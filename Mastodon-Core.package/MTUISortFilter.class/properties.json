@@ -1,15 +1,15 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		"maxID" ],
+		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"toots",
-		"tootMorphs",
-		"sortBlock" ],
-	"name" : "MTUITootList",
+		"observers",
+		"sortKey",
+		"sortDirection" ],
+	"name" : "MTUISortFilter",
 	"pools" : [
 		 ],
 	"super" : "MTUIView",
