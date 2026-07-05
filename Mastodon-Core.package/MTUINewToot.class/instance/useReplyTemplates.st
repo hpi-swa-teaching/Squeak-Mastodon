@@ -16,4 +16,5 @@ useReplyTemplates
 	selectedTemplateName = false ifTrue: [^ false].
 	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplateName.
 	
-	self updateContent: self tootTextArea contents, selectedReplyTemplate content
+	self updateContent: self tootTextArea contents, selectedReplyTemplate content.
+	^ true
