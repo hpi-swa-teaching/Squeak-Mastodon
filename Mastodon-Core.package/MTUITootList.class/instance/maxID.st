@@ -1,4 +1,4 @@
 accessing
 maxID
 
-	^ (self toots detectMin: [:toot | toot createdAt]) id
+	^ (self toots detectMax: [:toot | toot createdAt]) id

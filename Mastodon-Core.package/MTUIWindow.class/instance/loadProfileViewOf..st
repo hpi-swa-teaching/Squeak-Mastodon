@@ -6,7 +6,7 @@ loadProfileViewOf: aMTUser
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	userTimeline := MTUIUserTimeline new.
 	userTimeline
-		id: aMTUser id;
+		user: aMTUser;
 		mastodonApi: self mastodonApi;
 		loadTootsOf: aMTUser.
 	self loadView: (MTUIProfile with: userTimeline from: aMTUser) as: #profileView activate: #profileButton
