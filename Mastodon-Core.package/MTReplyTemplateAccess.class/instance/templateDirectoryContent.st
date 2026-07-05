@@ -1,5 +1,5 @@
 file operations
 templateDirectoryContent
 	| dir |
-	dir := FileDirectory on: './replyTemplates/', self user.
+	dir := FileDirectory on: (FileDirectory default fullNameFor: 'replyTemplates/', self user).
 	^ dir fileEntries

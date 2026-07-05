@@ -1,20 +1,19 @@
-delete-template
-deleteReplyTemplate
+render
+useReplyTemplates
 
-	| replyTemplateAccess userTemplates menu selectedTemplateName |
+	| replyTemplateAccess userTemplates menu selectedTemplateName selectedReplyTemplate|
 	replyTemplateAccess := MTReplyTemplateAccess new.
 	replyTemplateAccess user: self mastodonApi getCurrentUser value username.
 	userTemplates := replyTemplateAccess templateDirectoryContent.
 	
 	menu := DialogWindow new.
 	menu title: 'Choose template'.
-	
 	userTemplates do: [:template | menu createButton: template name value: template].
 	menu createCancelButton.
 	self addMorph: menu.
 	
-	selectedTemplateName := menu getUserResponse name.
-	selectedTemplateName ifFalse: [^ self].
-	(replyTemplateAccess deleteTemplate: selectedTemplateName)
-		ifTrue: [self showSuccessMessage: 'Template deleted successfully']
-		ifFalse: []
+	selectedTemplateName := menu getUserResponse.
+	selectedTemplateName = false ifTrue: [^ false].
+	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplateName.
+	
+	self updateContent: self tootTextArea contents, selectedReplyTemplate content.

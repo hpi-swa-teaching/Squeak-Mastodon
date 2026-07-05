@@ -6,7 +6,7 @@ writeTemplate: aReplyTemplate
 	ifFalse: [^ false].
 	
 	self assureTemplateDirectory.
-	stream := FileStream fileNamed: 'replyTemplates/', self user, '/', aReplyTemplate title.
+	stream := FileStream fileNamed: (FileDirectory default fullNameFor: 'replyTemplates/', self user), '/', aReplyTemplate title.
 	stream nextPutAll:	aReplyTemplate content.
 	stream close.
 	^ true.
