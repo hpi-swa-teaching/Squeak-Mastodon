@@ -11,4 +11,4 @@ testSearchCapturesFollowStatus
 	accounts := (api search: 'alice') value accounts.
 	
 	self assert: accounts first followUri equals: 'at://did:plc:me/app.bsky.graph.follow/abc123'.
-	self assert: (accounts second) followUri equals: ''
+	self assert: accounts second followUri equals: ''

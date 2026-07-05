@@ -12,7 +12,9 @@ testGetProfileForReturnsAccount
 	account := result value.
 	
 	self assert: result isSuccess equals: true.
-	self assert: client lastGetUrl equals: 'https://bsky.social/xrpc/app.bsky.actor.getProfile?actor=alice.bsky.social'.
+	self
+		assert: client lastGetUrl
+		equals: 'https://bsky.social/xrpc/app.bsky.actor.getProfile?actor=alice.bsky.social'.
 	self assert: (client headerAt: 'Authorization') equals: 'Bearer profile-token'.
 	self assert: account class equals: MTAccount.
 	self assert: account id equals: 'did:plc:alice'.

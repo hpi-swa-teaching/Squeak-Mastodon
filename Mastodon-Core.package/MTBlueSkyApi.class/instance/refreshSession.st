@@ -5,8 +5,11 @@ refreshSession
 	self refreshToken ifNil: [^ false].
 	url := self buildUrl: '/xrpc/com.atproto.server.refreshSession'.
 	response := self retryNetworkRequest: [
-		self webClient httpPost: url content: '' type: 'application/json' do: [:req |
-			req addHeader: 'Authorization' value: 'Bearer ', self refreshToken]].
+		self webClient
+			httpPost: url
+			content: ''
+			type: 'application/json'
+			do: [:req | req addHeader: 'Authorization' value: 'Bearer ', self refreshToken]].
 	(response isNil or: [response isSuccess not]) ifTrue: [^ false].
 	succeeded := [
 		json := self deserialize: response content utf8ToSqueak.

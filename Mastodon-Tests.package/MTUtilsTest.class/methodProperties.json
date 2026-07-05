@@ -4,6 +4,6 @@
 	"instance" : {
 		"testAsTextFromHtml" : "JH 7/3/2026 07:20",
 		"testMonthStringToNumber" : "JH 7/3/2026 07:24",
-		"testRelativeTimeString" : "JH 7/3/2026 07:30",
+		"testRelativeTimeString" : "JH 7/5/2026 04:16",
 		"testStringToBool" : "JH 7/3/2026 07:22",
 		"testTimestampFromString" : "JH 7/3/2026 07:27" } }

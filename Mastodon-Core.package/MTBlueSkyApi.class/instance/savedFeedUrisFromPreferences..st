@@ -7,9 +7,10 @@ savedFeedUrisFromPreferences: preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPrefV2']
 		ifNone: [nil].
 	v2 ifNotNil: [
-		^ (((v2 at: 'items' ifAbsent: [#()])
-			select: [:item | (item at: 'type' ifAbsent: ['']) = 'feed'])
-			collect: [:item | item at: 'value' ifAbsent: ['']]) asOrderedCollection].
+		^ (((v2 at: 'items' ifAbsent: [#()]) select: [:item | (item at: 'type' ifAbsent: ['']) = 'feed']) collect: [:item |
+			item
+				at: 'value'
+				ifAbsent: ['']]) asOrderedCollection].
 	old := preferences
 		detect: [:pref | (pref at: '$type' ifAbsent: ['']) = 'app.bsky.actor.defs#savedFeedsPref']
 		ifNone: [nil].

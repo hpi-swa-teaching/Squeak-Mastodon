@@ -25,10 +25,8 @@ imageMorphFrom: anUrl
 		on: Error
 		do: [:e | nil].
 	
-	form
-		ifNil: [^ image]
-		ifNotNil: [
-			MTImageCache default cache: form from: anUrl.
-			image setNewImageFrom: form].
+	form ifNil: [^ image] ifNotNil: [
+		MTImageCache default cache: form from: anUrl.
+		image setNewImageFrom: form].
 	
 	^ image

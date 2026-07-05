@@ -14,4 +14,4 @@ testSearchReturnsAccounts
 	self assert: result value accounts size equals: 2.
 	self assert: result value accounts first acct equals: 'alice.bsky.social'.
 	self assert: result value accounts first displayName equals: 'Alice Example'.
-	self assert: (result value accounts second) acct equals: 'bob.example.com'
+	self assert: result value accounts second acct equals: 'bob.example.com'

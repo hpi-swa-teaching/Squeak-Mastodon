@@ -17,11 +17,9 @@ useMastodonCursor
 		ifTrue: [
 			morphUnderCursor exportAsPNGNamed: 'upload.png'.
 			
-			
 			]
 		ifFalse: [
 			textMorph := textMorph textMorph backgroundColor: Color white.
 			textMorph exportAsPNGNamed: 'upload.png'.
-			
 			
 			]

@@ -9,7 +9,10 @@ addRequestSection
 	
 	self sessionsComboBox: UiComboBox new.
 	self loadComboBox.
-	self connect: self sessionsComboBox signal: #currentIndexChanged:text: toSelector: #switchToSelectedSession.
+	self
+		connect: self sessionsComboBox
+		signal: #currentIndexChanged:text:
+		toSelector: #switchToSelectedSession.
 	requestWrapper addMorphBack: self sessionsComboBox.
 	
 	self providerTextField: UiLineEdit new.

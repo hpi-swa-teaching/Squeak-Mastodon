@@ -9,7 +9,9 @@ tootToBlueSky
 	result := self imageMorph
 		ifNil: [self socialProvider toot: text]
 		ifNotNil: [self socialProvider toot: text withImage: self imageMorph imageForm].
-	result isError ifTrue: [self inform: result error. ^ false].
+	result isError ifTrue: [
+		self inform: result error.
+		^ false].
 	self tootTextArea contents: ''.
 	self removeOldMorph.
 	self sendPostFeedback.

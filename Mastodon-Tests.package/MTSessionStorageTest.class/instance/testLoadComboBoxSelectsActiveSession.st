@@ -10,14 +10,14 @@ testLoadComboBoxSelectsActiveSession
 	bluesky
 		username: 'bob.bsky.social';
 		baseURL: 'bob.bsky.social'.
-
+	
 	self view storeCurrentSession: mastodon.
 	self view storeCurrentSession: bluesky.
-
+	
 	MTProviderFactory blueSkyInstance: bluesky.
 	MTSettingsStore default at: #provider put: 'bluesky'.
 	MTSettingsStore default at: #baseURL put: 'bob.bsky.social'.
-
+	
 	reloadedView := MTUISettings new.
-
+	
 	self assert: reloadedView sessionsComboBox currentIndex equals: 2
