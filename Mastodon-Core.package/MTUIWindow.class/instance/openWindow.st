@@ -2,4 +2,4 @@ initialization
 openWindow
 
 	self openInWorld.
-	^ self openInWorldExtent: self defaultWindowWidth @ self defaultWindowHeight
+	^ self openInWorldExtent: self class defaultWindowWidth @ self class defaultWindowHeight

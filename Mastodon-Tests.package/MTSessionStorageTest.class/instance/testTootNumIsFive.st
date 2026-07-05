@@ -1,4 +1,4 @@
 settings store
 testTootNumIsFive
 
-	self assert: MTSettingsStore default tootNum equals: 5
+	self assert: MTSettingsStore tootNum equals: 5

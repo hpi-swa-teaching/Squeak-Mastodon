@@ -3,7 +3,7 @@ addMenuMorph
 
 	self
 		addMorph: self menuMorph
-		fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 0 @ 1) offsets: (0 @ 0 corner: self menuWidth @ 0 negated)).
+		fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 0 @ 1) offsets: (0 @ 0 corner: self class menuWidth @ 0 negated)).
 	self menuMorph color: Color transparent.
 	self addMenuButtons.
 	self menuMorph drawButtons
