@@ -1,4 +1,4 @@
-render
+accessing
 sessionsComboBox
 
 	^ sessionsComboBox
