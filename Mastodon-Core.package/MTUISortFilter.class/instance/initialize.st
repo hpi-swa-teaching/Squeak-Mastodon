@@ -1,4 +1,4 @@
-render
+initialization
 initialize
 
 	super initialize.
