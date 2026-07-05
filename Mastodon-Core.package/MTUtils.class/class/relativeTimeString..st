@@ -5,12 +5,14 @@ relativeTimeString: aTimeStamp
 	| now diff units highestAssociation highestUnit count |
 	now := TimeStamp now asUTC.
 	diff := now - aTimeStamp.
+	
 	units := {
-		#week -> (diff days // 7).
+		#week -> (diff days abs // 7 * diff days sign).
 		#day -> diff days.
 		#hour -> diff hours.
 		#minute -> diff minutes.
 		#second -> diff seconds}.
+	
 	diff days abs < 60 ifFalse: [^ aTimeStamp asMonth asString].
 	diff asSeconds = 0 ifTrue: [^ 'now'].
 	highestAssociation := units detect: [:each | each value ~= 0].
