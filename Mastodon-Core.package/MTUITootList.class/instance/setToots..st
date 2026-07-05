@@ -1,10 +1,6 @@
-updating
+actions
 setToots: anOrderedCollection
-	"Initializes toott collection and sets min/max ID"
-	
+	"Initializes toot collection"
+
 	self toots: anOrderedCollection.
-	
-	self toots notEmpty ifTrue: [
-		self minID: toots last id.
-		self maxID: toots first id.
-		self render]
+	self render

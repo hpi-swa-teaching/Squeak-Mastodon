@@ -13,8 +13,8 @@ from: aJsonObject
 		reblog: (MTToot from: (aJsonObject at: 'reblog'));
 		reblogsCount: (aJsonObject at: 'reblogs_count');
 		favouritesCount: (aJsonObject at: 'favouritesCount');
-		"tags: (aJsonObject at: 'tags');"
-		"urls: (((aJsonObject at: 'entities') at:'urls') collect: [:json | MTUrl from: json]);"
+		repliesCount: (aJsonObject at: 'replies_count');
+		favouritesCount: (aJsonObject at: 'favourites_count');
 		urls: (aJsonObject at: 'url');
 		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
 		yourself

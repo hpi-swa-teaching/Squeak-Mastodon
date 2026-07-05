@@ -17,6 +17,7 @@
 		"reblogged",
 		"reblogsCount",
 		"favouritesCount",
+		"repliesCount",
 		"inReplyToID",
 		"inReplyToAccountID",
 		"favourited",

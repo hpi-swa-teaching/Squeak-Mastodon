@@ -1,14 +1,15 @@
 updating
-loadToots
+loadTootsOf: aMTUser
 
 	| toots |
 	self mastodonApi isAuthenticated ifFalse: [^ false].
 	
-	toots := mastodonApi getPrivateTimeline.
+	toots := mastodonApi getStatuses: aMTUser id.
+	
 	toots isError ifTrue: [
 		self inform: (toots error ifNil: ['An error occurred']).
 		^ false].
 	
 	self setToots: toots value.
 	self sortToots.
-	^ true
+	self render
