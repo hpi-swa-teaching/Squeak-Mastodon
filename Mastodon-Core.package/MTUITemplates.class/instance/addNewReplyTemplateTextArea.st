@@ -12,6 +12,7 @@ addNewReplyTemplateTextArea
 		contents: '';
 		wrapFlag: true;
 		yourself).
+		
 	textareaWrapper addMorphBack: self replyTemplateTextArea.
 	
 	self addMorphBack: textareaWrapper
