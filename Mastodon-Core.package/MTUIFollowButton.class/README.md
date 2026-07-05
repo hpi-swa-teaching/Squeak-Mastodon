@@ -1,0 +1,1 @@
+A MTUIFollowButton is a button to follow a user

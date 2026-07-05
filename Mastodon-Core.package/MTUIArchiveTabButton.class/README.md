@@ -1,0 +1,1 @@
+A MTUIArchiveTabButton is only visible in the MentionView and opens the archive

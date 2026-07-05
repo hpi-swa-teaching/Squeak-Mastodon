@@ -1,0 +1,1 @@
+A MTUIStarButton is a button to mark a toot as favourite

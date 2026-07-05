@@ -1,0 +1,1 @@
+MTUIIcons contains all symbols as bit arrays

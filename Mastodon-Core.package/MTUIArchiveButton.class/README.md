@@ -1,0 +1,1 @@
+A MTUIArchiveButton is only visible in the mentionView and will archive a specific toot

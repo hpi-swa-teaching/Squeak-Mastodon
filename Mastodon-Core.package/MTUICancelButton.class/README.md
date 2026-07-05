@@ -1,0 +1,1 @@
+A MTUICancelButton is a button only shown on a scheduled toot in the profileView

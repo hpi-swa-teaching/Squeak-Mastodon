@@ -1,0 +1,1 @@
+MTMention is an Object that represents a Toot with a specific type
