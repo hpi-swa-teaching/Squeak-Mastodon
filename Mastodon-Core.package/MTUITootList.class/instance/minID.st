@@ -1,4 +1,4 @@
 accessing
 minID
 
-	^ (self toots detectMin: [:toot | toot tootTime]) id
+	^ (self toots detectMin: [:toot | toot createdAt]) id
