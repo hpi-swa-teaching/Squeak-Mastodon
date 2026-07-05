@@ -1,7 +1,8 @@
 actions
 chooseFeed
+
 	| feed |
-	feed := self chooseFeedFrom: feeds title: 'Feeds'.
-	((feed isNil) or: [feed == false]) ifTrue: [^ self].
-	selectedFeed := feed.
+	feed := self chooseFeedFrom: self feeds title: 'Feeds'.
+	(self isValidFeed: feed) ifFalse: [^ self].
+	self selectedFeed: feed.
 	self loadSelectedFeed

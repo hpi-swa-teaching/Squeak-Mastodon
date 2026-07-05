@@ -1,3 +1,4 @@
 accessing
 window
-    ^ self ownerThatIsA: MTUIWindow
+
+	^ self ownerThatIsA: MTUIWindow

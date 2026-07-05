@@ -1,9 +1,10 @@
 updating
 loadPublicToots
-	| toots |
-	toots := self mastodonApi getPublicTimeline.
-	toots isError
-		ifTrue: [self inform: (toots error ifNil: ['An error occurred']).
-				^ false].
-	self setToots: toots value.
+
+	| result |
+	result := self socialProvider getPublicTimeline.
+	result isError ifTrue: [
+		self inform: (result error ifNil: ['An error occurred']).
+		^ false].
+	self setToots: result value.
 	^ true

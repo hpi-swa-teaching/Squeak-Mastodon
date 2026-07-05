@@ -1,5 +1,6 @@
 morphic
-drawButtons 
-	buttons do: [ :button |
+drawButtons
+
+	self buttons do: [:button |
 		self addMorphBack: button.
-		button render ]
+		button render]

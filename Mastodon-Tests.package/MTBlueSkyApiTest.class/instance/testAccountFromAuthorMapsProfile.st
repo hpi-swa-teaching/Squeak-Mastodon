@@ -1,9 +1,10 @@
-tests
+feed items
 testAccountFromAuthorMapsProfile
+
 	| api account |
 	api := MTBlueSkyApi new.
 	account := api accountFromAuthor: self sampleAuthor.
-
+	
 	self assert: account class equals: MTAccount.
 	self assert: account id equals: 'did:plc:alice'.
 	self assert: account username equals: 'alice.bsky.social'.

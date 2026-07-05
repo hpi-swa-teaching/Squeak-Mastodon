@@ -1,7 +1,7 @@
 actions
 rememberFeed: aFeed
-	((aFeed isNil) or: [aFeed == false]) ifTrue: [^ self].
-	feeds ifNil: [feeds := OrderedCollection with: MTBlueSkyFeed home].
-	(feeds detect: [:feed | feed uri = aFeed uri] ifNone: [nil])
-		ifNil: [feeds add: aFeed].
-	((selectedFeed isNil) or: [selectedFeed == false]) ifTrue: [selectedFeed := feeds first]
+
+	(self isValidFeed: aFeed) ifFalse: [^ self].
+	self feeds ifNil: [self feeds: (OrderedCollection with: MTBlueSkyFeed home)].
+	(self feeds detect: [:feed | feed uri = aFeed uri] ifNone: [nil]) ifNil: [self feeds add: aFeed].
+	(self isValidFeed: self selectedFeed) ifFalse: [self selectedFeed: self feeds first]

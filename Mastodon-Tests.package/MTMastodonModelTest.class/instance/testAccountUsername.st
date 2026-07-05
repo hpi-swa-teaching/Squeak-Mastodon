@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountUsername
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model username: 'schmidtflo'.
 	
-	Model username: 'schmidtflo'.
-	
-	self assert: (Model username)  equals: ('schmidtflo'). 
+	self assert: model username equals: 'schmidtflo'

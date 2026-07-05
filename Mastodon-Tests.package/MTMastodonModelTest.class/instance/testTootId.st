@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootId
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model id: 42.
 	
-	Model id: 42.
-		
-	self assert: (Model id)  equals: (42). 
+	self assert: model id equals: 42

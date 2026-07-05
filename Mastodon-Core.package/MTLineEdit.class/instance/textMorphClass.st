@@ -1,3 +1,4 @@
-accessing
+accessing - private
 textMorphClass
+
 	^ MTTextLineMorph

@@ -1,6 +1,6 @@
 toot
 toot
-	self mastodonApi isAuthenticated ifFalse: [^ false].
-	(self mastodonApi isKindOf: MTBlueSkyApi)
-		ifTrue: [self tootToBlueSky]
-		ifFalse: [self tootToMastodon]
+
+	self socialProvider isAuthenticated ifFalse: [^ false].
+	self socialProvider supportsVisibility ifTrue: [self tootToMastodon] ifFalse: [self tootToBlueSky].
+	^ true

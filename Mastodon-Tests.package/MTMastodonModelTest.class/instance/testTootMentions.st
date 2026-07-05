@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootMentions
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model mentions: false.
 	
-	Model mentions: false.
-		
-	self assert: (Model mentions)  equals: (false). 
+	self assert: model mentions equals: false

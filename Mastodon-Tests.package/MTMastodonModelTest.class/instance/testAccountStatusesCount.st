@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountStatusesCount
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model statusesCount: 1337.
 	
-	Model statusesCount: 1337.
-	
-	self assert: (Model statusesCount)  equals: (1337). 
+	self assert: model statusesCount equals: 1337

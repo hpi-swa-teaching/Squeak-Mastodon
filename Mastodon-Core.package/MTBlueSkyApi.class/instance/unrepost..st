@@ -1,5 +1,6 @@
 endpoints
 unrepost: aRepostUri
+
 	| url jsonString response parts repo rkey |
 	parts := aRepostUri findTokens: '/'.
 	parts size < 4 ifTrue: [^ MTResult error: 'Invalid repost URI'].

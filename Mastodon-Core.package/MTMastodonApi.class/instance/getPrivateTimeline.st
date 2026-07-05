@@ -1,5 +1,6 @@
 endpoints
 getPrivateTimeline
+
 	| url response |
 	url := self buildUrl: '/api/v1/timelines/home'.
 	response := self getRequest: url.

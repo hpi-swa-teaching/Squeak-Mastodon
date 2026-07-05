@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootAcct
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model acct: 'schmidtflo'.
 	
-	Model acct: 'schmidtflo'.
-		
-	self assert: (Model acct)  equals: ('schmidtflo'). 
+	self assert: model acct equals: 'schmidtflo'

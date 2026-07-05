@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootUrls
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model urls: false.
 	
-	Model urls: false.
-		
-	self assert: (Model urls)  equals: (false). 
+	self assert: model urls equals: false

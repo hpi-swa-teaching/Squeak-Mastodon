@@ -1,5 +1,6 @@
-tests
+follow endpoints
 testUnfollowDeletesFollowRecord
+
 	| api client result |
 	client := MTBlueSkyMockWebClient new.
 	client postResponse: (MTBlueSkyMockResponse successWith: '{}').

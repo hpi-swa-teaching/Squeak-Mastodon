@@ -1,5 +1,6 @@
-tests
+feeds
 testCustomFeedRefreshKeepsLoadedPosts
+
 	| client api timeline feed toot |
 	client := MTBlueSkyMockWebClient new.
 	api := self apiWithMockClient: client token: 'feed-token'.
@@ -12,7 +13,7 @@ testCustomFeedRefreshKeepsLoadedPosts
 		content: 'Already loaded';
 		yourself.
 	timeline := MTUIHomeTimeline new.
-	timeline mastodonApi: api.
+	timeline socialProvider: api.
 	timeline selectedFeed: feed.
 	timeline toots: (OrderedCollection with: toot).
 	

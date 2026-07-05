@@ -1,17 +1,14 @@
 helpers
 escapeJsonString: aString
-	| stream |
+
+	| stream escapes |
+	escapes := Dictionary new
+		at: $\ put: '\\';
+		at: $" put: '\"';
+		at: Character lf put: '\n';
+		at: Character cr put: '\r';
+		at: Character tab put: '\t';
+		yourself.
 	stream := WriteStream on: String new.
-	aString do: [:char |
-		char = $\
-			ifTrue: [stream nextPutAll: '\\']
-			ifFalse: [char = $"
-				ifTrue: [stream nextPutAll: '\"']
-				ifFalse: [char = Character lf
-					ifTrue: [stream nextPutAll: '\n']
-					ifFalse: [char = Character cr
-						ifTrue: [stream nextPutAll: '\r']
-						ifFalse: [char = Character tab
-							ifTrue: [stream nextPutAll: '\t']
-							ifFalse: [stream nextPut: char]]]]]].
+	aString do: [:char | stream nextPutAll: (escapes at: char ifAbsent: [String with: char])].
 	^ stream contents

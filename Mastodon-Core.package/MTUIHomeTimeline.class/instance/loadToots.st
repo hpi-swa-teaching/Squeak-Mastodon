@@ -1,8 +1,9 @@
 updating
 loadToots
-	(self mastodonApi isKindOf: MTBlueSkyApi) ifFalse: [
-		self mastodonApi token isNil ifTrue: [^ self loadPublicToots].
+
+	self socialProvider usesFeeds ifFalse: [
+		self socialProvider token isNil ifTrue: [^ self loadPublicToots].
 		^ super loadToots].
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	self loadFeeds ifFalse: [^ false].
 	^ self loadSelectedFeed

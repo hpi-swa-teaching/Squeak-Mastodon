@@ -1,9 +1,10 @@
 render
 renderFeedToolbar
+
 	| toolbar feedButton addButton removeButton |
-	feedToolbar ifNotNil: [
-		self removeMorph: feedToolbar.
-		feedToolbar delete].
+	self feedToolbar ifNotNil: [
+		self removeMorph: self feedToolbar.
+		self feedToolbar delete].
 	toolbar := Morph new.
 	toolbar
 		layoutPolicy: TableLayout new;
@@ -17,14 +18,11 @@ renderFeedToolbar
 		layoutInset: 4.
 	feedButton := UiPushButton new.
 	feedButton
-		text: selectedFeed displayName;
+		text: self selectedFeed displayName;
 		hResizing: #rigid;
 		width: 260;
 		height: 32.
-	self
-		connect: feedButton
-		signal: #clicked:
-		toSelector: #chooseFeed.
+	self connect: feedButton signal: #clicked: toSelector: #chooseFeed.
 	toolbar addMorphBack: feedButton.
 	addButton := UiPushButton new.
 	addButton
@@ -32,10 +30,7 @@ renderFeedToolbar
 		hResizing: #rigid;
 		width: 32;
 		height: 32.
-	self
-		connect: addButton
-		signal: #clicked:
-		toSelector: #addFeed.
+	self connect: addButton signal: #clicked: toSelector: #addFeed.
 	toolbar addMorphBack: addButton.
 	removeButton := UiPushButton new.
 	removeButton
@@ -43,10 +38,7 @@ renderFeedToolbar
 		hResizing: #rigid;
 		width: 32;
 		height: 32.
-	self
-		connect: removeButton
-		signal: #clicked:
-		toSelector: #removeFeed.
+	self connect: removeButton signal: #clicked: toSelector: #removeFeed.
 	toolbar addMorphBack: removeButton.
-	feedToolbar := toolbar.
-	self addMorphBack: feedToolbar
+	self feedToolbar: toolbar.
+	self addMorphBack: self feedToolbar

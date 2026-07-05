@@ -1,16 +1,9 @@
 image
 showImage
-	"| imageMorph |
-	imageMorph := self morphFromPath."
-	imageMorph
-		layoutPolicy: TableLayout new;
-		listDirection: #leftToRight;
-		hResizing: #spaceFill;
+
+	self imageMorph
+		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
-		layoutInset: 0;
-		cellInset: 10;
-		wrapCentering: #topLeft;
-		listCentering: #topLeft;
 		color: Color transparent;
-		setNewImageFrom: (imageMorph form scaledToSize: 300).
-	self addMorphBack: imageMorph
+		setNewImageFrom: (self imageMorph form scaledToSize: 300).
+	self addMorphBack: self imageMorph

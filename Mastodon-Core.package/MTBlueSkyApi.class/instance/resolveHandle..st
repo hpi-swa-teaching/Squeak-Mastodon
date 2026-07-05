@@ -1,5 +1,6 @@
 helpers
 resolveHandle: aHandle
+
 	| url response json |
 	url := self buildUrl: '/xrpc/com.atproto.identity.resolveHandle?handle=', aHandle.
 	response := self getRequest: url.
@@ -7,7 +8,6 @@ resolveHandle: aHandle
 	
 	[
 		json := self deserialize: response.
-		^ MTResult value: (json at: 'did' ifAbsent: [''])
-	] on: Error do: [:ex |
-		^ MTResult error: 'BlueSky handle resolve processing failed'
-	].
+		^ MTResult value: (json at: 'did' ifAbsent: [''])]
+		on: Error
+		do: [:ex | ^ MTResult error: 'BlueSky handle resolve processing failed']

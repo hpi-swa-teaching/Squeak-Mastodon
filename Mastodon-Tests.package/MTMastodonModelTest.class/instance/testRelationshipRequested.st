@@ -1,9 +1,9 @@
-as yet unclassified
+relationship
 testRelationshipRequested
-	| Model |
+
+	| model |
+	model := MTRelationship new.
 	
-	Model := MTRelationship new.
+	model requested: true.
 	
-	Model requested: true.
-		
-	self assert: (Model requested)  equals: (true). 
+	self assert: model requested equals: true

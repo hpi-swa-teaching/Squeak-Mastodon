@@ -1,5 +1,6 @@
-tests
+feeds
 testRememberFeedDoesNotReloadTimeline
+
 	| timeline addedFeed loadedToot |
 	addedFeed := MTBlueSkyFeed new
 		displayName: 'Science';
@@ -14,6 +15,6 @@ testRememberFeedDoesNotReloadTimeline
 	
 	timeline rememberFeed: addedFeed.
 	
-	self assert: ((timeline feeds detect: [:feed | feed uri = addedFeed uri] ifNone: [nil]) notNil).
+	self assert: (timeline feeds anySatisfy: [:feed | feed uri = addedFeed uri]).
 	self assert: timeline selectedFeed isTimeline equals: true.
 	self assert: timeline toots first content equals: 'Already loaded'

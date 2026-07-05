@@ -1,13 +1,15 @@
 updating
 loadTootsOf: aMTUser
-	| toots |
-	self mastodonApi isAuthenticated ifFalse: [^false].
-			
-	toots := mastodonApi getStatuses: aMTUser id.
+
+	| result |
+	self socialProvider isAuthenticated ifFalse: [^ false].
 	
-	toots isError  
-		ifTrue: [self inform: (toots error ifNil: ['An error occurred']). 
-				^ false].
-			
-	self setToots: toots value.
+	result := self socialProvider getStatuses: aMTUser id.
+	
+	result isError ifTrue: [
+		self inform: (result error ifNil: ['An error occurred']).
+		^ false].
+	
+	self setToots: result value.
 	self render.
+	^ true

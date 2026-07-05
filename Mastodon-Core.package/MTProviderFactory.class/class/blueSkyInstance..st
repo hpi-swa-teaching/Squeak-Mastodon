@@ -1,4 +1,4 @@
 accessing
 blueSkyInstance: aMTBlueSkyApiInstance
 
-	blueSkyInstance := aMTBlueSkyApiInstance.
+	blueSkyInstance := aMTBlueSkyApiInstance

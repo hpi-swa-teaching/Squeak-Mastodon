@@ -1,8 +1,9 @@
 helpers
 jsonStringFor: anObject
+
 	anObject ifNil: [^ 'null'].
-	(anObject == true) ifTrue: [^ 'true'].
-	(anObject == false) ifTrue: [^ 'false'].
+	anObject == true ifTrue: [^ 'true'].
+	anObject == false ifTrue: [^ 'false'].
 	(anObject isKindOf: String) ifTrue: [^ '"', (self escapeJsonString: anObject), '"'].
 	(anObject isKindOf: Symbol) ifTrue: [^ self jsonStringFor: anObject asString].
 	(anObject isKindOf: Number) ifTrue: [^ anObject printString].

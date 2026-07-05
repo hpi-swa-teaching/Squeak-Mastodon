@@ -1,0 +1,4 @@
+authentication
+exchangeAuthorizationCode: anAuthorizationCode
+
+	^ self subclassResponsibility

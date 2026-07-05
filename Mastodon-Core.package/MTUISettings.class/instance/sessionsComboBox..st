@@ -1,4 +1,4 @@
-render
+accessing
 sessionsComboBox: anUiComboBox
 
-	sessionsComboBox := anUiComboBox.
+	sessionsComboBox := anUiComboBox

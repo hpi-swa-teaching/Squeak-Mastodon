@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootTags
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model tags: '#hashtags'.
 	
-	Model tags: '#hashtags'.
-		
-	self assert: (Model tags)  equals: ('#hashtags'). 
+	self assert: model tags equals: '#hashtags'

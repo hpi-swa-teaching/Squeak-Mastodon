@@ -1,5 +1,6 @@
 endpoints
 getFeedGenerator: aFeedUri
+
 	| path url response json view |
 	path := '/xrpc/app.bsky.feed.getFeedGenerator?feed=', (self urlEncode: aFeedUri).
 	url := self buildUrl: path.
@@ -10,7 +11,6 @@ getFeedGenerator: aFeedUri
 	[
 		json := self deserialize: response.
 		view := json at: 'view' ifAbsent: [Dictionary new].
-		^ MTResult value: (self feedFromGeneratorView: view)
-	] on: Error do: [:ex |
-		^ MTResult error: 'BlueSky feed generator processing failed'
-	].
+		^ MTResult value: (self feedFromGeneratorView: view)]
+		on: Error
+		do: [:ex | ^ MTResult error: 'BlueSky feed generator processing failed']

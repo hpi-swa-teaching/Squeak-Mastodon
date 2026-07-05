@@ -1,8 +1,10 @@
-helpers
+initialize-release
 reset
-	self username: nil;
+
+	self
+		username: nil;
 		password: nil;
 		clientID: nil;
 		clientSecret: nil;
 		token: nil;
-		baseURL: nil.
+		baseURL: nil

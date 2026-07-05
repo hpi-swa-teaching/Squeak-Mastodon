@@ -1,14 +1,16 @@
 {
 	"class" : {
-		 },
+		"avatarSize" : "JH 7/5/2026 00:48" },
 	"instance" : {
-		"actionSelector:" : "LZ 6/5/2026 12:00",
-		"arguments" : "LZ 6/5/2026 12:00",
-		"arguments:" : "LZ 6/5/2026 12:00",
-		"cornerRadius" : "Simon Bachran 5/18/2026 00:45",
-		"cornerRadius:" : "Simon Bachran 5/18/2026 00:21",
-		"handlesMouseDown:" : "LZ 6/5/2026 12:00",
-		"mouseDown:" : "LZ 6/5/2026 12:00",
-		"mouseUp:" : "LZ 6/5/2026 12:00",
-		"setNewImageFrom:" : "Simon Bachran 5/18/2026 00:44",
-		"target:" : "LZ 6/5/2026 12:00" } }
+		"actionSelector" : "JH 7/3/2026 18:30",
+		"actionSelector:" : "Pagpeter 7/2/2026 15:35",
+		"arguments" : "Pagpeter 7/2/2026 15:35",
+		"arguments:" : "Pagpeter 7/2/2026 15:35",
+		"cornerRadius" : "Pagpeter 7/2/2026 15:35",
+		"cornerRadius:" : "Pagpeter 7/2/2026 15:35",
+		"handlesMouseDown:" : "JH 7/3/2026 18:31",
+		"mouseDown:" : "JH 7/3/2026 18:32",
+		"mouseUp:" : "JH 7/3/2026 18:33",
+		"setNewImageFrom:" : "JH 7/3/2026 01:19",
+		"target" : "JH 7/3/2026 18:34",
+		"target:" : "Pagpeter 7/2/2026 15:35" } }

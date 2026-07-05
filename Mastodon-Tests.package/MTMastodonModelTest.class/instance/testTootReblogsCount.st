@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootReblogsCount
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model reblogsCount: 5.
 	
-	Model reblogsCount: 5.
-		
-	self assert: (Model reblogsCount)  equals: (5). 
+	self assert: model reblogsCount equals: 5

@@ -1,15 +1,14 @@
 {
 	"class" : {
-		"createWithUsername:baseURL:token:" : "timbeier 5/25/2026 10:24" },
+		"createWithUsername:baseURL:token:" : "Pagpeter 7/2/2026 15:35" },
 	"instance" : {
-		"=" : "timbeier 5/25/2026 10:27",
-		"baseURL" : "timbeier 5/25/2026 10:25",
-		"baseURL:" : "timbeier 5/25/2026 10:25",
-		"containsEmptyField" : "timbeier 5/25/2026 10:50",
-		"equals:" : "timbeier 5/25/2026 10:55",
-		"hash" : "timbeier 5/25/2026 12:12",
-		"initialize" : "timbeier 5/25/2026 10:25",
-		"token" : "timbeier 5/25/2026 10:25",
-		"token:" : "timbeier 5/25/2026 10:25",
-		"username" : "timbeier 5/25/2026 10:25",
-		"username:" : "timbeier 5/25/2026 10:25" } }
+		"=" : "JH 7/3/2026 05:46",
+		"baseURL" : "Pagpeter 7/2/2026 15:35",
+		"baseURL:" : "Pagpeter 7/2/2026 15:35",
+		"containsEmptyField" : "Pagpeter 7/2/2026 15:35",
+		"equals:" : "JH 7/3/2026 05:46",
+		"hash" : "JH 7/3/2026 05:47",
+		"token" : "Pagpeter 7/2/2026 15:35",
+		"token:" : "Pagpeter 7/2/2026 15:35",
+		"username" : "Pagpeter 7/2/2026 15:35",
+		"username:" : "Pagpeter 7/2/2026 15:35" } }

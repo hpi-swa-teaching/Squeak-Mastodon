@@ -2,9 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertNoErrorDuring:" : "cs 5/18/2026 15:24",
-		"avatarUrlFromJson:" : "cs 5/18/2026 16:13",
-		"previewUrlFromJson:" : "cs 5/18/2026 16:13",
-		"testRenderWithImageDoesNotRaise" : "cs 5/18/2026 16:13",
-		"testRenderWithoutImageDoesNotRaise" : "cs 5/18/2026 16:13",
-		"tootFromJson:" : "cs 5/18/2026 16:13" } }
+		"assertNoErrorDuring:" : "Pagpeter 7/2/2026 15:35",
+		"avatarUrlFromJson:" : "Pagpeter 7/2/2026 15:35",
+		"previewUrlFromJson:" : "JH 7/3/2026 03:34",
+		"sampleAccount" : "JH 7/4/2026 02:06",
+		"testAvatarSizeIsFortyEight" : "JH 7/5/2026 02:04",
+		"testIconsDecodeToForms" : "JH 7/5/2026 04:16",
+		"testImageMorphClickWiring" : "JH 7/5/2026 04:16",
+		"testLinkUrlsWrapsLinksAndMentions" : "JH 7/5/2026 04:16",
+		"testProfileLinkClickWiring" : "JH 7/5/2026 04:16",
+		"testRenderAccountCardDoesNotRaise" : "JH 7/5/2026 04:16",
+		"testRenderBuildsClickableProfileLink" : "JH 7/3/2026 07:14",
+		"testRenderWithImageDoesNotRaise" : "Pagpeter 7/2/2026 15:35",
+		"testRenderWithoutImageDoesNotRaise" : "Pagpeter 7/2/2026 15:35",
+		"tootFromJson:" : "Pagpeter 7/2/2026 15:35" } }

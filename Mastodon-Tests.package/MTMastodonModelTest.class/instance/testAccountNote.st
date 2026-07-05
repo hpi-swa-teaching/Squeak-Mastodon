@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountNote
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model note: 'a note'.
 	
-	Model note: 'a note'.
-	
-	self assert: (Model note)  equals: ('a note'). 
+	self assert: model note equals: 'a note'

@@ -1,4 +1,5 @@
-accessing
-isError 
+testing
+isError
+
 	self error ifNotNil: [^ true].
 	^ false

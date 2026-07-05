@@ -1,5 +1,4 @@
 accessing
 searchHelpText
-	^ (self mastodonApi isKindOf: MTBlueSkyApi)
-		ifTrue: ['handle']
-		ifFalse: ['@User@Domain']
+
+	^ self socialProvider searchHint

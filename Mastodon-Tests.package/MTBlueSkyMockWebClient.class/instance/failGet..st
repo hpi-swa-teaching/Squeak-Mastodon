@@ -1,3 +1,4 @@
 accessing
 failGet: aUrl
-	getResponses at: aUrl put: (MTBlueSkyMockResponse failureWith: '' code: 500)
+
+	self getResponses at: aUrl put: (MTBlueSkyMockResponse failureWith: '' code: 500)

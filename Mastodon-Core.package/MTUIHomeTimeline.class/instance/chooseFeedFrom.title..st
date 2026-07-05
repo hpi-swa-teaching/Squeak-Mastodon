@@ -1,5 +1,6 @@
 actions
 chooseFeedFrom: aCollection title: aTitle
+
 	| menu |
 	aCollection isEmpty ifTrue: [^ nil].
 	menu := DialogWindow new.

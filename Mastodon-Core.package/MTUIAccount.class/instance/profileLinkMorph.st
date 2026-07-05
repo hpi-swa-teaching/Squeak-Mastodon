@@ -1,4 +1,5 @@
 accessing
 profileLinkMorph
-	profileLink ifNil: [self headerMorph].
-	^ profileLink
+
+	self profileLink ifNil: [self headerMorph].
+	^ self profileLink

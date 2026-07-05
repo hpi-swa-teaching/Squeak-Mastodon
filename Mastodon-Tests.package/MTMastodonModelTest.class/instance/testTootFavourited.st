@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootFavourited
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model favourited: false.
 	
-	Model favourited: false.
-		
-	self assert: (Model favourited)  equals: (false). 
+	self assert: model favourited equals: false

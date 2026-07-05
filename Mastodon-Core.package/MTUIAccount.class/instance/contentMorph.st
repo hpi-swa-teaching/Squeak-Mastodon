@@ -1,8 +1,9 @@
 render
 contentMorph
-	content ifNotNil: [^ content].
-	content := AlignmentMorph new.
-	content
+
+	self content ifNotNil: [^ self content].
+	self content: AlignmentMorph new.
+	self content
 		layoutPolicy: TableLayout new;
 		listDirection: #topToBottom;
 		hResizing: #spaceFill;
@@ -15,4 +16,4 @@ contentMorph
 		color: Color transparent;
 		addMorphBack: self headerMorph;
 		addMorphBack: self textMorph.
-	^ content
+	^ self content

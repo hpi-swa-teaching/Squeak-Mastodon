@@ -1,8 +1,9 @@
-initialization
+initialize-release
 reset
 
 	self
 		token: nil;
 		baseURL: nil;
 		did: nil;
-		username: nil.
+		refreshToken: nil;
+		username: nil

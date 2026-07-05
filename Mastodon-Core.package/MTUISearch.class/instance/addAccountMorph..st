@@ -1,4 +1,4 @@
 render
 addAccountMorph: aMorph
 
-	accountMorph addFirst: aMorph
+	self accountMorph addFirst: aMorph

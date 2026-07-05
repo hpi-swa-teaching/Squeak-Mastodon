@@ -1,5 +1,6 @@
 instance creation
 fromGeneratorView: aDictionary
+
 	| uri |
 	uri := aDictionary at: 'uri' ifAbsent: [''].
 	^ self new

@@ -1,9 +1,9 @@
-as yet unclassified
+search result
 testSearchResultHashtags
-	| Model |
+
+	| model |
+	model := MTSearchResult new.
 	
-	Model :=  MTSearchResult new.
+	model hashtags: '#Hashtag'.
 	
-	Model hashtags: '#Hashtag'.
-		
-	self assert: (Model hashtags)  equals: ('#Hashtag'). 
+	self assert: model hashtags equals: '#Hashtag'

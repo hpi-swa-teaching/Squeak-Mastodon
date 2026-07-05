@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountAvatar
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model avatar: 'eine url'.
 	
-	Model avatar: 'eine url'.
-	
-	self assert: (Model avatar)  equals: ('eine url'). 
+	self assert: model avatar equals: 'eine url'

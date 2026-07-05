@@ -1,12 +1,12 @@
 render
 render
+
 	self accountMorph do: [:morph |
 		self removeMorph: morph.
 		morph delete].
-	self accounts do: [:account |
-		| card spacingMorph relationship |
-		card := MTUIAccount for: account mastodonApi: self mastodonApi.
-		(self mastodonApi isKindOf: MTBlueSkyApi)
+	self accounts do: [:account | | card spacingMorph relationship |
+		card := MTUIAccount for: account socialProvider: self socialProvider.
+		(self socialProvider isKindOf: MTBlueSkyApi)
 			ifTrue: [
 				card followButton render.
 				card followButton
@@ -25,7 +25,7 @@ render
 						actionSelector: #openProfileForAccount:;
 						arguments: (Array with: account)]]
 			ifFalse: [
-				relationship := (self mastodonApi getRelationship: account id) value at: 1.
+				relationship := (self socialProvider getRelationship: account id) value first.
 				card contentMorph addMorphBack: card actionsMorph.
 				card followButton
 					target: self;
@@ -43,7 +43,9 @@ render
 					arguments: (Array with: account acct with: card directTootButton);
 					active: true].
 		spacingMorph := Morph new color: Color veryVeryLightGray.
-		spacingMorph height: 1; hResizing: #spaceFill.
+		spacingMorph
+			height: 1;
+			hResizing: #spaceFill.
 		self addMorphBack: card.
 		self addAccountMorph: card.
 		self addMorphBack: spacingMorph]

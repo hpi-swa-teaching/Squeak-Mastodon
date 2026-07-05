@@ -1,9 +1,9 @@
-as yet unclassified
+error
 testErrorErrors
-	| Model |
+
+	| model |
+	model := MTError new.
 	
-	Model := MTError new.
+	model errors: Array.
 	
-	Model errors: Array.
-	
-	self assert: (Model errors)  equals: (Array). 
+	self assert: model errors equals: Array

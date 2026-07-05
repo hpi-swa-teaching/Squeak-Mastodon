@@ -1,9 +1,9 @@
-as yet unclassified
+relationship
 testRelationshipFollowedBy
-	| Model |
+
+	| model |
+	model := MTRelationship new.
 	
-	Model := MTRelationship new.
+	model followedBy: 'name'.
 	
-	Model followedBy:  'name'.
-		
-	self assert: (Model followedBy)  equals: ('name'). 
+	self assert: model followedBy equals: 'name'

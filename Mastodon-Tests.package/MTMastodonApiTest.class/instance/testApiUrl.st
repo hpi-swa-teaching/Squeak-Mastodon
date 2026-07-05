@@ -1,3 +1,4 @@
-tests
+configuration
 testApiUrl
-	self assert: (mastodonApi baseURL) equals: 'https://mastodon.social'.
+
+	self assert: self mastodonApi baseURL equals: 'https://mastodon.social'

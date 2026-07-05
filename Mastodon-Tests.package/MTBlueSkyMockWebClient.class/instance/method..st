@@ -1,0 +1,4 @@
+requests
+method: aHttpMethod
+
+	^ self

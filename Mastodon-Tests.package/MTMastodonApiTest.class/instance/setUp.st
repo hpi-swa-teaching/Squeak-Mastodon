@@ -1,3 +1,4 @@
-tests
+running
 setUp
-	mastodonApi := MTMastodonApi with: 'https://mastodon.social' password: 'test' username: 'test@test.de'.
+
+	self mastodonApi: (MTMastodonApi with: 'https://mastodon.social' password: 'test' username: 'test@test.de')

@@ -1,9 +1,9 @@
-as yet unclassified
+relationship
 testRelationshipId
-	| Model |
+
+	| model |
+	model := MTRelationship new.
 	
-	Model := MTRelationship new.
+	model id: 1337.
 	
-	Model id: 1337.
-		
-	self assert: (Model id)  equals: (1337). 
+	self assert: model id equals: 1337

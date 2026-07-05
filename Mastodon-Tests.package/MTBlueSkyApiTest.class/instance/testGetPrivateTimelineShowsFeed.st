@@ -1,15 +1,18 @@
-tests
+timeline endpoints
 testGetPrivateTimelineShowsFeed
+
 	| api client result toots toot account |
 	client := MTBlueSkyMockWebClient new.
-	client respondToGet: 'https://bsky.social/xrpc/app.bsky.feed.getTimeline?limit=30' with: self sampleTimelineJson.
+	client
+		respondToGet: 'https://bsky.social/xrpc/app.bsky.feed.getTimeline?limit=30'
+		with: self sampleTimelineJson.
 	api := self apiWithMockClient: client token: 'feed-token'.
-
+	
 	result := api getPrivateTimeline.
 	toots := result value.
 	toot := toots first.
 	account := toot acct.
-
+	
 	self assert: result isSuccess equals: true.
 	self assert: client lastGetUrl equals: 'https://bsky.social/xrpc/app.bsky.feed.getTimeline?limit=30'.
 	self assert: (client headerAt: 'Authorization') equals: 'Bearer feed-token'.
