@@ -1,3 +1,4 @@
 image
 flush
-	self removeAll.
+
+	self removeAll

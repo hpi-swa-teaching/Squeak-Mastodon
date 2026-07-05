@@ -3,7 +3,7 @@ loadProfileViewOf: aMTUser
 
 	| userTimeline |
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	userTimeline := MTUIUserTimeline new.
 	userTimeline
 		user: aMTUser;

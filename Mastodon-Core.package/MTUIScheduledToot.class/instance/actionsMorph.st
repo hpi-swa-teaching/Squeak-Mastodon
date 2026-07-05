@@ -13,7 +13,6 @@ actionsMorph
 		wrapCentering: #topLeft;
 		listCentering: #topLeft;
 		color: Color transparent;
-		addMorphBack: self editButton render;
 		addMorphBack: self scheduleButton render;
 		addMorphBack: self cancelButton render.
 	

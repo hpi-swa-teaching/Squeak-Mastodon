@@ -1,0 +1,1 @@
+A MTScheduledToot is an Object that represents a scheduled toot.

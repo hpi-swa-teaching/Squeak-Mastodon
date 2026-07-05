@@ -1,9 +1,10 @@
 render
 avatarMorph
-	image := MTMedia imageMorphFrom: self account avatar.
-	image ifNotNil: [
-	image
-		vResizing: #spaceFill;
-		hResizing: #shrinkWrap;
-		setNewImageFrom: (image form scaledToSize: 48).
-	^ image]
+
+	self image: (MTMedia imageMorphFrom: self account avatar).
+	self image ifNotNil: [
+		self image
+			vResizing: #rigid;
+			hResizing: #rigid;
+			setNewImageFrom: (self image form scaledToSize: 48).
+		^ self image]

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 acct: anAccount
 
 	acct := anAccount

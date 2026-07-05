@@ -1,5 +1,6 @@
 initialization
-initialize 
+initialize
+
 	super initialize.
 	self addAccessSection.
 	self addRequestSection.

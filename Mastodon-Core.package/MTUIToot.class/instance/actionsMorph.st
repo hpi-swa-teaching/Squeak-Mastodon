@@ -16,6 +16,6 @@ actionsMorph
 		color: Color transparent.
 	
 	{self repostButton. self heartButton. self replyButton} do: [:button | actionsMorph addMorphBack: button render].
-	showArchiveButton ifTrue: [actionsMorph addMorphBack: self archiveButton render].
+	self showArchiveButton ifTrue: [actionsMorph addMorphBack: self archiveButton render].
 	
 	^ actionsMorph

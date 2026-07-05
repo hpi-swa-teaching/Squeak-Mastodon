@@ -1,5 +1,6 @@
 toot
 scheduleToot: aText at: aDateAndTime visibility: aVisibility withMedia: imageID
+
 	[
 		imageID
 			ifNil: [mastodonApi toot: aText withVisibility: aVisibility scheduleAt: aDateAndTime]

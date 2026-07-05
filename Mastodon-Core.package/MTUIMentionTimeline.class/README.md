@@ -1,0 +1,1 @@
+A MTUIHomeTimeline is a UI component that shows all toots mentioning the currently logged in user.

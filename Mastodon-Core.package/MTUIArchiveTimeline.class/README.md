@@ -1,0 +1,1 @@
+A MTUIHomeTimeline is a UI component that shows posts mentioning the currently logged in user, which are archived.

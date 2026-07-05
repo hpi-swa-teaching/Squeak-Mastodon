@@ -1,0 +1,2 @@
+A MTUIScheduledToot is a UI component for scheduled toots. Unlike a MTUIToot, it does not contain buttons to like, reblog or reply to the post.
+It does contain buttons to cancel the scheduled toot, or to reschedule it.

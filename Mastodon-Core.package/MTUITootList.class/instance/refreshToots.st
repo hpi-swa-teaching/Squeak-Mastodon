@@ -2,13 +2,13 @@ updating
 refreshToots
 
 	| newToots |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	
-	newToots := mastodonApi getPrivateTimelineSince: self maxID.
+	newToots := self mastodonApi getPrivateTimelineSince: self maxID.
 	
 	newToots isError ifTrue: [
 		self inform: (newToots error ifNil: ['An error occurred']).
-		^ false].
+		^ self].
 	
 	self prependToots: newToots value.
 	self sortToots

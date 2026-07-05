@@ -12,7 +12,8 @@ render
 			account: toot acct;
 			initialize;
 			showArchiveButton: true;
-			render.
+			render;
+			yourself.
 		
 		tootMorph repostButton
 			target: self;

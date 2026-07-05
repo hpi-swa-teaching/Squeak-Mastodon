@@ -2,16 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mm 5/23/2017 23:24",
-		"testApiUrl" : "Tom1Schaepsmeier 5/9/2026 11:39",
-		"testBaseURL" : "fs 8/3/2017 16:11",
-		"testClientID" : "fs 8/3/2017 16:12",
-		"testClientSecret" : "fs 8/3/2017 16:13",
-		"testDeserializeAccount" : "fs 8/3/2017 16:52",
-		"testDeserializeScheduledToot" : "lapl 6/2/2026 13:02",
-		"testDeserializeSearch" : "fs 8/3/2017 16:48",
-		"testPassword" : "fs 8/3/2017 16:10",
-		"testReset" : "fs 8/3/2017 16:04",
-		"testToken" : "fs 8/3/2017 16:11",
-		"testUsername" : "fs 8/3/2017 16:09",
-		"testWebClient" : "fs 8/3/2017 16:14" } }
+		"mastodonApi" : "lapl 7/3/2026 16:23",
+		"mastodonApi:" : "lapl 7/3/2026 16:23",
+		"setUp" : "lapl 7/3/2026 16:23",
+		"testApiUrl" : "lapl 7/3/2026 16:23",
+		"testDeserializeAccount" : "lapl 7/2/2026 15:06",
+		"testDeserializeScheduledToot" : "lapl 7/2/2026 15:28",
+		"testDeserializeSearch" : "lapl 7/2/2026 15:06",
+		"testDeserializeToot" : "lapl 7/2/2026 15:28",
+		"testReset" : "lapl 7/2/2026 15:07" } }

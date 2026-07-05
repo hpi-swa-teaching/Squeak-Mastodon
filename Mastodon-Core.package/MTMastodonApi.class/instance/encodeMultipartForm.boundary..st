@@ -2,9 +2,10 @@ helpers
 encodeMultipartForm: form boundary: boundary
 
 	^ String streamContents: [:stream |
+		" file field "
 		stream
-			" file field "
-			nextPutAll: '--'; nextPutAll: boundary;
+			nextPutAll: '--';
+			nextPutAll: boundary;
 			crlf;
 			nextPutAll: 'Content-Disposition: form-data; ';
 			nextPutAll: 'name="file"; ';
@@ -13,4 +14,6 @@ encodeMultipartForm: form boundary: boundary
 			crlf;
 			nextPutAll: form content asString;
 			crlf;
-			nextPutAll: '--'; nextPutAll: boundary; nextPutAll: '--']
+			nextPutAll: '--';
+			nextPutAll: boundary;
+			nextPutAll: '--']

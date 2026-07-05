@@ -1,6 +1,7 @@
 requests
 httpPost: aUrl content: aContent type: aType
-	lastPostUrl := aUrl.
-	lastPostContent := aContent.
-	lastPostType := aType.
-	^ postResponse ifNil: [MTBlueSkyMockResponse successWith: '{}']
+
+	self lastPostUrl: aUrl.
+	self lastPostContent: aContent.
+	self lastPostType: aType.
+	^ self postResponse ifNil: [MTBlueSkyMockResponse successWith: '{}']

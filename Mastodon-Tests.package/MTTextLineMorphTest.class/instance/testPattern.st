@@ -1,5 +1,6 @@
 tests
 testPattern
+
 	| morph |
 	morph := MTTextLineMorph new.
 	morph pattern: '^\d*$'.

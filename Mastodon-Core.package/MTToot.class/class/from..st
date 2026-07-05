@@ -14,7 +14,6 @@ from: aJsonObject
 		reblogsCount: (aJsonObject at: 'reblogs_count');
 		favouritesCount: (aJsonObject at: 'favouritesCount');
 		repliesCount: (aJsonObject at: 'replies_count');
-		favouritesCount: (aJsonObject at: 'favourites_count');
 		urls: (aJsonObject at: 'url');
 		media: ((aJsonObject at: 'media_attachments') collect: [:json | MTMedia from: json]);
 		yourself

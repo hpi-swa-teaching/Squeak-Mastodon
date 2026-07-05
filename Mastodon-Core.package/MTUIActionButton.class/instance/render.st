@@ -1,10 +1,10 @@
 render
 render
+
 	self
-		height: 24;
-		width: 24;
+		height: self size;
+		width: self size;
 		borderWidth: 0;
-		color: Color transparent .
+		color: Color transparent.
 	
-	self active ifTrue: [
-		self color: Color veryLightGray ].
+	self active ifTrue: [self color: Color veryLightGray]

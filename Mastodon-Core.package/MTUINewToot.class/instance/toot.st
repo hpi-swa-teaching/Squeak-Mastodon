@@ -2,26 +2,26 @@ toot
 toot
 
 	| textRes text visibility |
-	self mastodonApi isAuthenticated ifFalse: [^ false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	textRes := self validateTootText.
 	textRes isError ifTrue: [
 		self inform: textRes error.
-		^ false].
+		^ self].
 	text := textRes value.
 	
 	visibility := self chooseVisibility.
 	
-	imageMorph
+	self imageMorph
 		ifNil: [
-			replyTo
-				ifNil: [mastodonApi toot: text withVisibility: visibility]
-				ifNotNil: [mastodonApi replyTo: replyTo id text: text]]
+			self replyTo
+				ifNil: [self mastodonApi toot: text withVisibility: visibility]
+				ifNotNil: [self mastodonApi replyTo: self replyTo id text: text]]
 		ifNotNil: [
-			replyTo
-				ifNil: [self tootImagewithVisibility: visibility]
-				ifNotNil: [self replyTootImagewithVisibility: visibility]].
+			self replyTo
+				ifNil: [self tootImageWithVisibility: visibility]
+				ifNotNil: [self replyTootImageWithVisibility: visibility]].
 	
-	replyTo ifNil: [tootTextArea contents: ' '] ifNotNil: [self owner delete].
+	self replyTo ifNil: [self tootTextArea contents: ' '] ifNotNil: [self owner delete].
 	
 	self reloadMentionTimeline ifTrue: [self mtuiWindow loadMentionTimelineView].
 	self cleanTextField.

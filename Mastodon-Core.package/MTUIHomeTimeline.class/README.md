@@ -1,0 +1,1 @@
+A MTUIHomeTimeline is a UI component that shows the logged in user's home timeline.

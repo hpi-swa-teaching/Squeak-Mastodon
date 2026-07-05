@@ -1,8 +1,7 @@
 updating
 collectArchived: aBlock
 
-	| mentions myToots archivedIds toots |
-	toots := OrderedCollection new.
+	| mentions myToots archivedIds posts |
 	mentions := aBlock value.
 	
 	myToots := (self mastodonApi getStatuses: self mastodonApi getCurrentUser value id) value.
@@ -11,6 +10,6 @@ collectArchived: aBlock
 	archivedIds := (myToots collect: [:toot | toot inReplyToID asString]) asSet.
 	archivedIds addAll: self archivedIds.
 	
-	toots := mentions select: [:mention | archivedIds includes: mention status id asString].
-	toots select: [:toot| toot notNil].
-	^ toots collect: [:mention | mention status].
+	posts := mentions select: [:mention | archivedIds includes: mention status id asString].
+	posts := posts select: [:toot | toot notNil].
+	^ posts collect: [:mention | mention status]

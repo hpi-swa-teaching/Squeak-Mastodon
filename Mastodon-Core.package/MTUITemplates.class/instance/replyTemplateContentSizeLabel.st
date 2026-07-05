@@ -1,3 +1,4 @@
 accessing
 replyTemplateContentSizeLabel
-	^replyTemplateContentSizeLabel
+
+	^ replyTemplateContentSizeLabel

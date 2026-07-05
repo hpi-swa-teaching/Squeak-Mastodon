@@ -1,3 +1,4 @@
-change reporting
+layout
 ownerChanged
-	self width: self owner width.
+
+	self width: self owner width

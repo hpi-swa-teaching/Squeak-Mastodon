@@ -1,0 +1,4 @@
+authentification
+registerApplication
+
+	^ self subclassResponsibility

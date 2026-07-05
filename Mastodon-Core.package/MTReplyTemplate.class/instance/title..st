@@ -1,3 +1,4 @@
-as yet unclassified
+accessing
 title: aTitle
-	title := aTitle.
+
+	title := aTitle

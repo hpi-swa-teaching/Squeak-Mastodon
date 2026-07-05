@@ -15,7 +15,8 @@
 		"usernameSizeLabel",
 		"descriptionSizeLabel",
 		"avatarImageMorph",
-		"headerImageMorph" ],
+		"headerImageMorph",
+		"providerButton" ],
 	"name" : "MTUISettings",
 	"pools" : [
 		 ],

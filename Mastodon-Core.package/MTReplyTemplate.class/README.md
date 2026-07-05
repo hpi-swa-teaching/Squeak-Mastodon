@@ -1,0 +1,1 @@
+A MTReplyTemplate is an Object that represents a reply template.

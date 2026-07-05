@@ -1,12 +1,13 @@
 views
 loadProfileView
-	| currentUser|
+
+	| currentUser |
 	self refreshProvider.
-	self mastodonApi isAuthenticated ifFalse: [^false].
+	self mastodonApi isAuthenticated ifFalse: [^ self].
 	
-	currentUser := mastodonApi getCurrentUser.
+	currentUser := self mastodonApi getCurrentUser.
 	
-	(currentUser isError)
-		ifTrue: [ self inform: 'An Error occurred.'. 
-			     ^ false].
-	self loadProfileViewOf: currentUser value.
+	currentUser isError ifTrue: [
+		self inform: 'An Error occurred.'.
+		^ self].
+	self loadProfileViewOf: currentUser value

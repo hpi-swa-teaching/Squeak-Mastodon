@@ -1,4 +1,5 @@
-initialization
+initialize-release
 initialize
-	getResponses := Dictionary new.
-	headers := Dictionary new
+
+	self getResponses: Dictionary new.
+	self headers: Dictionary new

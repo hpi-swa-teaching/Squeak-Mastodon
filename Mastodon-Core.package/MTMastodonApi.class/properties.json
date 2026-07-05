@@ -4,15 +4,12 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lapl 7/3/2026 21:37",
 	"instvars" : [
 		"username",
 		"password",
 		"clientID",
-		"clientSecret",
-		"token",
-		"webClient",
-		"baseURL" ],
+		"clientSecret" ],
 	"name" : "MTMastodonApi",
 	"pools" : [
 		 ],

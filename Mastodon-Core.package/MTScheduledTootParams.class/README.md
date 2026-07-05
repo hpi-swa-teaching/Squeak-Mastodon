@@ -1,0 +1,1 @@
+A MTScheduledTootParams is an Object that represents the parameters of a scheduled toot.

@@ -1,4 +1,5 @@
-as yet unclassified
+rounding
 cornerRadius
-	cornerRadius ifNil: [^0].
+
+	cornerRadius ifNil: [^ 0].
 	^ cornerRadius

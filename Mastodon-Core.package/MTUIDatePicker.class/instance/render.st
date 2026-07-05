@@ -6,11 +6,11 @@ render
 	container := AlignmentMorph newRow.
 	
 	container
-		addMorphBack: yearField;
-		addMorphBack: monthField;
-		addMorphBack: dayField;
-		addMorphBack: hourField;
-		addMorphBack: minuteField;
+		addMorphBack: self yearField;
+		addMorphBack: self monthField;
+		addMorphBack: self dayField;
+		addMorphBack: self hourField;
+		addMorphBack: self minuteField;
 		color: Color transparent;
 		hResizing: #spaceFill.
 	self addMorphBack: container
