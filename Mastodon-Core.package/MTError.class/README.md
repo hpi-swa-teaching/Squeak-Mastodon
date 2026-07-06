@@ -1,1 +1,1 @@
-A MTAccount represents an error
+A MTError represents an error
