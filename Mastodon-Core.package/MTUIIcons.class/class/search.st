@@ -1,4 +1,4 @@
 icon
 search
 
-	^ self getIcon: 'search' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'search' inColor: #black inSize: self menuButtonExtent

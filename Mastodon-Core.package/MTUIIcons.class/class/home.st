@@ -1,4 +1,4 @@
 icon
 home
 
-	^ self getIcon: 'home' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'home' inColor: #black inSize: self menuButtonExtent

@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "timhb 7/5/2026 22:39",
 	"instvars" : [
-		 ],
+		"active" ],
 	"name" : "MTUIToggleButton",
 	"pools" : [
 		 ],

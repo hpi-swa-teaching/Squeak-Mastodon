@@ -1,4 +1,4 @@
 icon
 newToot
 
-	^ self getIcon: 'newToot' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'newToot' inColor: #black inSize: self menuButtonExtent

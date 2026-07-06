@@ -6,6 +6,6 @@ showQuotePolicyWindow
 	self addMorph: menu.
 	
 	response := menu getUserResponse.
-	response ifTrue: [self quotePolicySetting: response].
+	response isBoolean ifTrue: [^ nil].
 	
-	^ response
+	^self quotePolicySetting: response

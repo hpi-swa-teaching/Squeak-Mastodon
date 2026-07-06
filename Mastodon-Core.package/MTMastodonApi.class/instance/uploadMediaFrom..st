@@ -6,4 +6,4 @@ uploadMediaFrom: aForm
 		on: ConnectionClosed
 		do: [:ex | self error: 'Media upload failed: connection was closed by server'].
 	
-	^ response
+	^ self deserialize: (self contentFromResponse: response)

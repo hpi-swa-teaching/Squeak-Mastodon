@@ -1,4 +1,4 @@
 icon
 account
 
-	^ self getIcon: 'account' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'account' inColor: #black inSize: self menuButtonExtent
