@@ -1,0 +1,4 @@
+responses-relationships
+secondAccountRelationship
+
+	^ MTDataProvider secondAccountRelationship

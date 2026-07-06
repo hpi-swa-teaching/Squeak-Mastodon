@@ -1,11 +1,10 @@
 render
 render
 
-	| container |
-	container := self getContainer.
+	self cellInset: 10.
 	
-	container addMorphBack: self getHeaderMorph.
-	MTCredentialStore getInstance credentials do: [:each | container addMorphBack: (self accountRowFor: each)].
-	container addMorphBack: self getFooterMorph.
+	self mastodonApi hasToken ifTrue: [self addMorphBack: self closeButton].
 	
-	self addMorph: container
+	self
+		addMorphBack: self getCredentialListMorph;
+		addMorphBack: self createNewAccountButton

@@ -1,4 +1,5 @@
 accessing
-reblogsCount: anObject
+reblogsCount: aNumber
+	" How many boosts this toot has received. See https://docs.joinmastodon.org/entities/Status/ "
 
-	reblogsCount := anObject
+	reblogsCount := aNumber

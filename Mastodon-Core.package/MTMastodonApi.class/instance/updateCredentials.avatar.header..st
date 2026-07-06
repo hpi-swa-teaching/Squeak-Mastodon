@@ -1,5 +1,5 @@
 endpoints
-updateCredentials: aDictionary avatar: avatarForm header: headerForm
+updateCredentials: aDictionary avatar: anAvatarForm header: aHeaderForm
 
 	| url boundary response |
 	url := self urlForPath: '/api/v1/accounts/update_credentials'.
@@ -8,12 +8,13 @@ updateCredentials: aDictionary avatar: avatarForm header: headerForm
 		httpPost: url
 		content: (self
 			encodeProfileForm: aDictionary
-			avatar: avatarForm
-			header: headerForm
+			avatar: anAvatarForm
+			header: aHeaderForm
 			boundary: boundary)
 		type: 'multipart/form-data; boundary=', boundary
 		do: [:req |
 			req method: 'PATCH'.
 			req addHeader: 'Authorization' value: 'Bearer ', self token].
-	response isSuccess ifTrue: [^ response content].
-	^ nil
+	
+	self flushCurrentUserCache.
+	^ self contentFromResponse: response

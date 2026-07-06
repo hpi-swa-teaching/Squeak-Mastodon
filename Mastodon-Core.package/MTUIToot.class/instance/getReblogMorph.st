@@ -2,11 +2,11 @@ render
 getReblogMorph
 
 	| reblogMorph |
-	self object reblog ifNotNil: [
-		reblogMorph := MTUIToot for: self object reblog.
+	self toot reblog ifNotNil: [
+		reblogMorph := MTUIToot for: self toot reblog.
 		reblogMorph actionsMorph delete].
-	self object quote ifNotNil: [
-		reblogMorph := MTUIToot for: self object quote.
+	self toot quote ifNotNil: [
+		reblogMorph := MTUIToot for: self toot quote.
 		reblogMorph actionsMorph delete].
 	
 	^ reblogMorph

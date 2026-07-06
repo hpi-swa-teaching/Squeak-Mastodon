@@ -1,0 +1,4 @@
+defaults
+profileEditButtonText
+
+	^ 'Edit Profile'

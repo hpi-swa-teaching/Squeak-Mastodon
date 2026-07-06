@@ -1,4 +1,4 @@
 icon
 starActive
 
-	^ self getIcon: 'starActive' inColor: #cantaloupe inSize: 30 @ 30
+	^ self getIcon: 'starActive' inColor: #cantaloupe inSize: self actionButtonExtent

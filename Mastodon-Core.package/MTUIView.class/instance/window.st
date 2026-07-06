@@ -1,0 +1,4 @@
+accessing
+window
+
+	^ MTUIWindow instance

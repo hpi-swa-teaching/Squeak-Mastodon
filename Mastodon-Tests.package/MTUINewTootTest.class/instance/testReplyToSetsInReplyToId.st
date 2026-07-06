@@ -1,8 +1,8 @@
 tests
 testReplyToSetsInReplyToId
 
-	| toot reply |
-	toot := MTToot from: DataProvider defaultTootPlainJsonObject.
-	reply := MTUINewToot replyTo: toot.
-
-	self assert: reply inReplyToId equals: toot id
+	| newTootView toot |
+	toot := MTDataProvider firstToot.
+	newTootView := MTUINewToot replyTo: toot.
+	
+	self assert: newTootView inReplyToId equals: toot id

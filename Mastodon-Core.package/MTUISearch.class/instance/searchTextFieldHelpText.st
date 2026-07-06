@@ -1,0 +1,4 @@
+defaults
+searchTextFieldHelpText
+
+	^ 'Enter Username'

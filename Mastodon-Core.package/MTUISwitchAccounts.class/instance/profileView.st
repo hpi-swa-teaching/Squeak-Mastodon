@@ -1,4 +1,0 @@
-accessing
-profileView
-
-	^ profileView

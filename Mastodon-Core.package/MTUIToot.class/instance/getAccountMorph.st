@@ -2,7 +2,7 @@ render
 getAccountMorph
 	| accountMorph start stop text account |
 	account := self toot account.
-	text := MTUtils asTextFromHtml: '<b>', account displayName, '</b> ', '<i>@', account federatedUsername, '<font color="', self htmlGray, '">', self interaction, '</font></i>'.
+	text := MTUtils asTextFromHtml: '<b>', account displayName, '</b> ', '<i>@', account federatedUsername, '<font color="', self htmlGray, '">', self getInteractionText, '</font></i>'.
 	
 	start := text indexOfSubCollection: '@'.
 	stop := start + account federatedUsername asString size.

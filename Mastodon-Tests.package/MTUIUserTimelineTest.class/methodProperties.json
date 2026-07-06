@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"getTimeline" : "timhb 7/5/2026 21:27",
+		"testGetMoreTootsSinceCallsGetStatusesOfSince" : "timhb 7/5/2026 21:28",
+		"testGetMoreTootsUpToCallsGetStatusesOfMax" : "timhb 7/5/2026 21:28",
+		"testGetTootsCallsGetStatusesOf" : "timhb 7/5/2026 21:28",
+		"testLoadMoreTootsCallsGetStatusesOfMax" : "timhb 7/5/2026 21:26",
+		"testLoadTootsCallsGetStatusesOf" : "timhb 7/5/2026 21:26",
+		"testRefreshTootsCallsGetStatusesOfSince" : "timhb 7/5/2026 21:28" } }

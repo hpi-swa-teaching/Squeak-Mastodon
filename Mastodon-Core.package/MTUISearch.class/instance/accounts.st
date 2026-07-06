@@ -1,4 +1,4 @@
 accessing
 accounts
 
-	^ accounts
+	^ accounts ifNil: [accounts := OrderedCollection new]

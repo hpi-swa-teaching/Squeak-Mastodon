@@ -1,4 +1,4 @@
-render
+actions
 refreshWindow
 
 	self

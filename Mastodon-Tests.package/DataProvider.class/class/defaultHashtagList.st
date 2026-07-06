@@ -1,4 +1,0 @@
-generated
-defaultHashtagList
-
-	^ {self defaultHashtag}

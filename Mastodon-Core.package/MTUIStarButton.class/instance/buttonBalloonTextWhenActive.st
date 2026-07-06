@@ -1,0 +1,4 @@
+defaults
+buttonBalloonTextWhenActive
+
+	^ 'Unfavourite toot'

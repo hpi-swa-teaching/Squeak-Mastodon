@@ -1,4 +1,4 @@
-render-containers
+render-container
 getRowContainer
 
 	^ Morph new
@@ -8,5 +8,4 @@ getRowContainer
 		cellInset: 10;
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
-		extent: 500 @ 80;
-		color: Color veryVeryLightGray
+		color: self rowContainerColor

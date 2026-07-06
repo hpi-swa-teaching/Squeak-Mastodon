@@ -1,0 +1,4 @@
+meta
+getCurrentCredentials
+
+	^ MTDataProvider firstAccountCredentials

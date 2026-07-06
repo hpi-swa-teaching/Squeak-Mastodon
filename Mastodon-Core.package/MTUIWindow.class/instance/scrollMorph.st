@@ -1,4 +1,4 @@
-accessing
+accessing-morph
 scrollMorph
 
-	^ scrollMorph
+	^ scrollMorph ifNil: [scrollMorph := MTUIScrollPane new]

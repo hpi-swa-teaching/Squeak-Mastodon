@@ -1,4 +1,4 @@
-render-containers
+render-container
 getButtonContainer
 
 	^ Morph new

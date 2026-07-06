@@ -1,4 +1,4 @@
-accessing
+accessing-morphs
 searchTextField
 
-	^ searchTextField
+	^ searchTextField ifNil: [searchTextField := self getSearchTextField]

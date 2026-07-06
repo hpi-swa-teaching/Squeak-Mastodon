@@ -4,12 +4,13 @@
 		"addSearchSection" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "timhb 7/5/2026 22:48",
 	"instvars" : [
 		"searchTextField",
 		"accountMorphs",
 		"accounts",
-		"spacingMorph" ],
+		"spacingMorph",
+		"searchButton" ],
 	"name" : "MTUISearch",
 	"pools" : [
 		 ],

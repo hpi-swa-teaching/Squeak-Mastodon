@@ -1,4 +1,4 @@
-accessing
+accessing-buttons
 saveButton
 
-	^ saveButton
+	^ saveButton ifNil: [saveButton := self getSaveButton]

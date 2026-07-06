@@ -1,7 +1,5 @@
-toot
+actions
 showFeedback
-
-	self removeMedia.
-	self updateTextSize.
+		
 	self feedbackMorph show.
-	self addAlarm: #hideFeedback after: 5000
+	self addAlarm: #hideFeedback after: self hideFeedbackDelay

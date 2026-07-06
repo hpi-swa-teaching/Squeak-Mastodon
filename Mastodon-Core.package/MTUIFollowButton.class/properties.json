@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "timhb 7/5/2026 22:39",
 	"instvars" : [
 		 ],
 	"name" : "MTUIFollowButton",
 	"pools" : [
 		 ],
-	"super" : "MTUIActionButton",
+	"super" : "MTUIToggleButton",
 	"type" : "normal" }

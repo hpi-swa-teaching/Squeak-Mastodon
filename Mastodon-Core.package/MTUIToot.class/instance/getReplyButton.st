@@ -1,5 +1,4 @@
 render-buttons
 getReplyButton
-	
-	^ MTUIReplyButton new
-		arguments: (Array with: self toot)
+
+	^ MTUIReplyButton new arguments: {self toot}

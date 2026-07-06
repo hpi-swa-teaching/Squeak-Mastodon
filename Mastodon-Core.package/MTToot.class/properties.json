@@ -4,14 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "PG 6/26/2017 15:45",
+	"commentStamp" : "timhb 7/5/2026 22:35",
 	"instvars" : [
 		"id",
 		"createdAt",
 		"content",
 		"tags",
 		"mentions",
-		"urls",
 		"media",
 		"reblogged",
 		"reblogsCount",
@@ -21,7 +20,8 @@
 		"favourited",
 		"reblog",
 		"quote",
-		"account" ],
+		"account",
+		"url" ],
 	"name" : "MTToot",
 	"pools" : [
 		 ],

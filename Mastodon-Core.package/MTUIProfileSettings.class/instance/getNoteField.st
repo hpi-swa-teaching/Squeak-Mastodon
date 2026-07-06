@@ -1,18 +1,12 @@
 render
 getNoteField
 
-	| field |
-	field := PluggableTextMorph
-		on: self
-		text: #profileNoteText
-		accept: #profileNoteText:
-		readSelection: nil
-		menu: nil.
+	| wrapper |
+	wrapper := (MTUIView applyWrapperLayoutTo: RectangleMorph new)
+		hResizing: #rigid;
+		width: self fieldWidth;
+		yourself.
 	
-	field
-		width: 400;
-		hResizing: #shrinkWrap;
-		vResizing: #shrinkWrap;
-		wrapFlag: true.
+	wrapper addMorphBack: self noteText.
 	
-	^ field
+	^ wrapper

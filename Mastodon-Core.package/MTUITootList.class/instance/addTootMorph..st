@@ -1,4 +1,4 @@
-render
+helpers
 addTootMorph: aMorph
 
 	self tootMorphs addFirst: aMorph.

@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUILoginTest",
+	"pools" : [
+		 ],
+	"super" : "MTUIViewTest",
+	"type" : "normal" }

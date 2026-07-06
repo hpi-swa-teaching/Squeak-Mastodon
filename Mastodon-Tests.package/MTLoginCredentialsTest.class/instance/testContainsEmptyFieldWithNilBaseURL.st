@@ -1,4 +1,4 @@
 helpers
 testContainsEmptyFieldWithNilBaseURL
 
-	self assert: DataProvider firstAccountCredentialsWithMissingBaseURL containsEmptyField
+	self assert: MTDataProvider firstAccountCredentialsWithMissingBaseURL containsEmptyField

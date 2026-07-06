@@ -1,4 +1,4 @@
 endpoints-timelines
-getHomeTimelineMax: aNumber
+getHomeTimelineMax: aTootID
 	
-	^ self getRequest: '/api/v1/timelines/home?max_id=', aNumber intoCollectionOf: MTToot
+	^ self getRequest: '/api/v1/timelines/home?max_id=', aTootID intoCollectionOf: MTToot

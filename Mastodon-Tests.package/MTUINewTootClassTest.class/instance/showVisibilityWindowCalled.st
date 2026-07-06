@@ -1,0 +1,4 @@
+helpers
+showVisibilityWindowCalled
+
+	^ showVisibilityWindowCalled

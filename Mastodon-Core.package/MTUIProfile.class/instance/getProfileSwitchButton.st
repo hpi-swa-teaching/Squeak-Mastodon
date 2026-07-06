@@ -2,8 +2,10 @@ render-buttons
 getProfileSwitchButton
 
 	| button |
-	button := MTUIPushButton new.
-	button text: 'Manage Accounts'.
-	button setBalloonText: 'Add, switch or remove accounts'.
+	button := MTUIPushButton new
+		text: self profileSwitchButtonText;
+		setBalloonText: self profileSwitchButtonBalloonText.
+		
 	self connect: button signal: #clicked: toSelector: #openSwitchAccounts.
+	
 	^ button

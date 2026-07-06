@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUIReblogButtonTest",
+	"pools" : [
+		 ],
+	"super" : "MTUIActionButtonTest",
+	"type" : "normal" }

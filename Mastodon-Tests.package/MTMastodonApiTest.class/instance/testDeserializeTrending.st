@@ -1,9 +1,8 @@
 tests
 testDeserializeTrending
-	| toots |
-	toots := MTMastodonApi getInstance
-		deserialize: DataProvider mockTrendingResponse
-		intoCollectionOf: MTToot.
 
-	self assert: toots size equals: 2.
-	toots do: [:toot | self assert: toot class equals: MTToot].
+	| result jsonString |
+	jsonString := Json render: MTDataProvider trendingTootsResponseJson.
+	result := self mastodonApi deserialize: jsonString intoCollectionOf: MTToot.
+
+	self assert: result equals: MTDataProvider trendingTootsResponse

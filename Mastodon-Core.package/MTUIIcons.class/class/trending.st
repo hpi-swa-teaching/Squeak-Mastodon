@@ -1,4 +1,4 @@
 icon
 trending
 
-	^ self getIcon: 'trending' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'trending' inColor: #black inSize: self menuButtonExtent

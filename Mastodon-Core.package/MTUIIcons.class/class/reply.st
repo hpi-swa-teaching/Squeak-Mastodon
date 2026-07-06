@@ -1,4 +1,4 @@
 icon
 reply
 
-	^ self getIcon: 'reply' inColor: #lightGray inSize: 30 @ 30
+	^ self getIcon: 'reply' inColor: #lightGray inSize: self actionButtonExtent

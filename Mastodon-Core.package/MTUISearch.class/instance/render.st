@@ -1,10 +1,8 @@
 render
 render
 
-	self removePreviousResults.
-	self accounts do: [:account | | container |
-		container := self getContainer.
-		container
-			addMorphBack: (MTUIAccount for: account);
-			addMorphBack: self getSpacingMorph.
-		self addAccountMorph: container]
+	self
+		cellInset: 10;
+		layoutInset: 20;
+		addMorphBack: self getSearchTitle;
+		addMorphBack: self getSearchRequestWrapper

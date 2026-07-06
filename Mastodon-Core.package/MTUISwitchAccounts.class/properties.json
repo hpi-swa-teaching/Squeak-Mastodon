@@ -4,10 +4,13 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "timhb 7/5/2026 22:48",
 	"instvars" : [
 		"profileView",
-		"account" ],
+		"account",
+		"closeButton",
+		"createNewAccountButton",
+		"loginButton" ],
 	"name" : "MTUISwitchAccounts",
 	"pools" : [
 		 ],

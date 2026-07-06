@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "timhb 7/5/2026 22:50",
 	"instvars" : [
 		"rootToot",
-		"depths",
-		"toots" ],
+		"depths" ],
 	"name" : "MTUIThread",
 	"pools" : [
 		 ],

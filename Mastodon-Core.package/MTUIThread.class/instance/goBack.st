@@ -1,4 +1,4 @@
 render
 goBack
 
-	MTUIWindow instance navigateBack
+	self window navigateBack

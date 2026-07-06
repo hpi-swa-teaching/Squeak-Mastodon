@@ -1,0 +1,4 @@
+comparing
+testRelationshipEqualsDifferentClass
+
+	self deny: MTDataProvider firstAccountRelationship equals: MTDataProvider firstAccount

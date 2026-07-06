@@ -1,4 +1,4 @@
-switching
+actions
 openSwitchAccounts
 
 	self

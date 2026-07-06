@@ -2,10 +2,10 @@ render-buttons
 getLoginButtonFor: aCredential
 
 	^ SimpleButtonMorph new
-		label: 'Login';
-		setBalloonText: 'Switch to this account';
+		label: self loginButtonText;
+		setBalloonText: self loginButtonBalloonText;
 		target: self;
 		actionSelector: #loginWithCredentials:;
 		arguments: {aCredential};
-		color: Color paleGreen;
+		color: self loginButtonColor;
 		yourself

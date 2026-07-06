@@ -1,0 +1,15 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"informCalled",
+		"informMessage" ],
+	"name" : "MTUIProfileSettingsClassTest",
+	"pools" : [
+		 ],
+	"super" : "MTUIProfileSettings",
+	"type" : "normal" }

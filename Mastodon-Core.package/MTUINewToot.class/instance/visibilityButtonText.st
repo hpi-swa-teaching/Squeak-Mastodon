@@ -1,0 +1,4 @@
+defaults-button
+visibilityButtonText
+
+	^ 'Visibility: '

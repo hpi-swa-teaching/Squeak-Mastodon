@@ -1,8 +1,8 @@
 render
 render
-
+	
 	self
-		height: 30;
-		width: 38;
+		balloonText: self buttonBalloonText;
+		labelGraphic: self buttonLabelGraphic;
 		borderWidth: 0;
 		color: Color transparent

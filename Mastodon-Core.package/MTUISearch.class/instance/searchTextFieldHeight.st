@@ -1,0 +1,4 @@
+defaults
+searchTextFieldHeight
+
+	^ 36

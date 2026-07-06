@@ -1,0 +1,4 @@
+constants
+maximumDisplayNameLength
+
+	^ 30

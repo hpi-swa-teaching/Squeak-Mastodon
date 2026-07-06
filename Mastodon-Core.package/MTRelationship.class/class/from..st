@@ -1,6 +1,6 @@
 initialization
 from: aJsonObject
-
+	
 	^ self new
 		id: (aJsonObject at: 'id');
 		following: (aJsonObject at: 'following');
@@ -8,5 +8,5 @@ from: aJsonObject
 		blocking: (aJsonObject at: 'blocking');
 		muting: (aJsonObject at: 'muting');
 		requested: (aJsonObject at: 'requested');
-		domainBlocking: (aJsonObject at: 'domainBlocking');
+		domainBlocking: (aJsonObject at: 'domain_blocking');
 		yourself

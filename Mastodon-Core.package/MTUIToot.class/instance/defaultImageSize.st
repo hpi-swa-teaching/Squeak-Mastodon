@@ -1,0 +1,4 @@
+defaults
+defaultImageSize
+
+	^ 300

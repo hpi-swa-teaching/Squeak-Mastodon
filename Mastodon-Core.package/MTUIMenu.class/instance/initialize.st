@@ -2,6 +2,5 @@ initialization
 initialize
 
 	super initialize.
-	buttons := OrderedCollection new.
 	
-	^ self
+	self color: Color transparent

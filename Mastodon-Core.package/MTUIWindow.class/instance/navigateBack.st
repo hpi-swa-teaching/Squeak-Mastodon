@@ -1,4 +1,4 @@
-views
+views-helpers
 navigateBack
 
 	| entry |

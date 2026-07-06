@@ -1,0 +1,4 @@
+render
+getTitleMorph
+	
+	^ TextMorph new

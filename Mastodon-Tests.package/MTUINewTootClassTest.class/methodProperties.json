@@ -1,0 +1,18 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"removeMedia" : "timhb 7/5/2026 00:25",
+		"removeMediaCalled" : "timhb 7/5/2026 00:27",
+		"selectImage" : "timhb 7/5/2026 00:25",
+		"selectImageCalled" : "timhb 7/5/2026 00:27",
+		"showQuotePolicyWindow" : "timhb 7/5/2026 00:26",
+		"showQuotePolicyWindowCalled" : "timhb 7/5/2026 00:27",
+		"showVisibilityWindow" : "timhb 7/5/2026 00:26",
+		"showVisibilityWindowCalled" : "timhb 7/5/2026 00:28",
+		"toot" : "timhb 7/5/2026 00:25",
+		"tootCalled" : "timhb 7/5/2026 00:28",
+		"updateCharacterLengthLabel" : "timhb 7/5/2026 00:44",
+		"updateCharacterLengthLabelCalled" : "timhb 7/5/2026 00:45",
+		"updateTootButton" : "timhb 7/5/2026 00:46",
+		"updateTootButtonCalled" : "timhb 7/5/2026 00:46" } }

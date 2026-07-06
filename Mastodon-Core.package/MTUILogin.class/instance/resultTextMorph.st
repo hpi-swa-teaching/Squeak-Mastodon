@@ -1,4 +1,4 @@
 accessing
 resultTextMorph
 
-	^ resultTextMorph ifNil: [resultTextMorph := TextMorph new contents: 'test']
+	^ resultTextMorph ifNil: [resultTextMorph := TextMorph new contents: '']

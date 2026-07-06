@@ -1,0 +1,4 @@
+helpers
+flushCurrentUserCache
+
+	currentUser := nil

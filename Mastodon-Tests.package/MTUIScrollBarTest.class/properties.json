@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MTUIScrollBarTest",
+	"pools" : [
+		 ],
+	"super" : "MTTestCase",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
 icon
 directMessage
 
-	^ self getIcon: 'directMessage' inColor: #lightGray inSize: 30 @ 30
+	^ self getIcon: 'directMessage' inColor: #lightGray inSize: self actionButtonExtent

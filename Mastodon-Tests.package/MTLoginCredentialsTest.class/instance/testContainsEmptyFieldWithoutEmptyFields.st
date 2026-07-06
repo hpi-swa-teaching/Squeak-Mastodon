@@ -1,4 +1,4 @@
 helpers
 testContainsEmptyFieldWithoutEmptyFields
 	
-	self deny: DataProvider firstAccountCredentials containsEmptyField
+	self deny: MTDataProvider firstAccountCredentials containsEmptyField

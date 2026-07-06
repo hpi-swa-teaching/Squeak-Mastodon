@@ -1,0 +1,4 @@
+constants
+loginViewMorph
+
+	^ MTUILogin new

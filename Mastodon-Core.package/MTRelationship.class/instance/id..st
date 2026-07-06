@@ -1,4 +1,5 @@
 accessing
-id: anObject
+id: anAccountID
+	" The account ID. See https://docs.joinmastodon.org/entities/Relationship/ "
 
-	id := anObject
+	id := anAccountID

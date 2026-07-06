@@ -2,7 +2,7 @@ render-container
 getProfileContainer
 
 	^ (MTUIView applyWrapperLayoutTo:  RectangleMorph new)
-		color: (Color r: 0.1 g: 0.2 b: 0.3);
+		color: self profileBannerColor;
 		cellPositioning: #center;
 		wrapCentering: #center;
 		cellInset: 20;

@@ -1,4 +1,4 @@
 accessing
 account
 
-	^ account ifNil: [account := MTMastodonApi getInstance getCurrentUser value]
+	^ account ifNil: [account := self mastodonApi getCurrentUser]

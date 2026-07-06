@@ -1,4 +1,4 @@
-render
+views-helpers
 updateViewMorph: aMorph
 
 	self viewMorph ifNotNil: [self viewMorph close].

@@ -1,0 +1,14 @@
+{
+	"category" : "Mastodon-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stream" ],
+	"name" : "MTFileChooserClassTest",
+	"pools" : [
+		 ],
+	"super" : "FileChooser",
+	"type" : "normal" }

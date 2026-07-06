@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testBlocking" : "SB 6/5/2026 18:47",
-		"testFollowedBy" : "SB 6/5/2026 18:45",
-		"testFollowing" : "SB 6/5/2026 18:46",
-		"testFromJson" : "SB 6/5/2026 18:52",
-		"testId" : "SB 6/5/2026 16:51",
-		"testMuting" : "SB 6/5/2026 18:46",
-		"testRequested" : "SB 6/5/2026 18:46" } }
+		"testFromJson" : "timhb 7/4/2026 21:08",
+		"testRelationshipEquals" : "timhb 7/5/2026 00:07",
+		"testRelationshipEqualsDifferentClass" : "timhb 7/5/2026 00:07",
+		"testRelationshipEqualsNil" : "timhb 7/5/2026 00:07",
+		"testRelationshipHashEquals" : "timhb 7/5/2026 00:07",
+		"testRelationshipHashNotEquals" : "timhb 7/5/2026 00:07",
+		"testRelationshipNotEquals" : "timhb 7/5/2026 00:07" } }

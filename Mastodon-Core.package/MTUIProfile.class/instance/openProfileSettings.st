@@ -1,4 +1,4 @@
-settings
+actions
 openProfileSettings
 
 	self

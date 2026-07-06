@@ -1,4 +1,4 @@
 helpers
 testHasAccountOnEmpty
 	
-	self deny: (MTCredentialStore getInstance hasCredentials: DataProvider firstAccountCredentials)
+	self deny: (MTCredentialStore getInstance hasCredentials: MTDataProvider firstAccountCredentials)

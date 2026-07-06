@@ -1,0 +1,4 @@
+model-relationships
+secondAccountFollowingRelationship
+
+	^ self relationshipFrom: self secondAccountFollowingRelationshipJson

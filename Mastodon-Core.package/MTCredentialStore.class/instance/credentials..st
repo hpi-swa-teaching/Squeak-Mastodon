@@ -1,4 +1,4 @@
 accessing
-credentials: anObject
+credentials: aCollection
 	
-	credentials := anObject
+	credentials := aCollection

@@ -1,4 +1,4 @@
-accessing
+accessing-morphs
 feedbackMorph
 
-	^ feedbackMorph
+	^ feedbackMorph ifNil: [feedbackMorph := self getFeedbackMorph]

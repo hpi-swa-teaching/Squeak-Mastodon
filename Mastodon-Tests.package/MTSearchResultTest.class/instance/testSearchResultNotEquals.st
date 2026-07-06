@@ -1,0 +1,4 @@
+comparing
+testSearchResultNotEquals
+
+	self deny: MTDataProvider firstSearchResult equals: MTDataProvider secondSearchResult

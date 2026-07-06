@@ -1,0 +1,4 @@
+helpers
+selectImageCalled
+
+	^ selectImageCalled

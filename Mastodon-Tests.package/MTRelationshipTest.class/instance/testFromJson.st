@@ -1,13 +1,9 @@
-json
+initialization
 testFromJson
 
-	| relationship |
-	relationship := MTRelationship from: DataProvider defaultRelationshipJsonObject.
+	| result expected |
+	result := MTRelationship from: MTDataProvider secondAccountRelationshipJson.
 	
-	self assert: relationship id equals: DataProvider defaultRelationshipId.
-	self assert: relationship blocking equals: true.
-	self assert: relationship domainBlocking equals: true.
-	self assert: relationship followedBy equals: true.
-	self assert: relationship following equals: true.
-	self assert: relationship muting equals: true.
-	self assert: relationship requested equals: true.
+	expected := MTDataProvider secondAccountRelationship.
+	
+	self assertRelationship: result matches: expected

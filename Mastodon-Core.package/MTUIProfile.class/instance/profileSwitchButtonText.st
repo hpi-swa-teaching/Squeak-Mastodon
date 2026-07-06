@@ -1,0 +1,4 @@
+defaults
+profileSwitchButtonText
+
+	^ 'Manage Accounts'

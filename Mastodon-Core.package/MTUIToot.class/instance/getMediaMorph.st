@@ -1,7 +1,7 @@
 render
 getMediaMorph
 
-	| media image |
+	| media |
 	self object media size = 0 ifTrue: [^ nil].
 	
 	media := Morph new
@@ -13,14 +13,13 @@ getMediaMorph
 		cellInset: 5;
 		color: Color white.
 	
-	self object media do: [:source |
-		image := MTMedia new imageMorphFrom: source previewUrl.
-		image
-			cornerRadius: 20;
+	self object media do: [:source | | form image |
+		form := self mastodonApi imageFormFrom: source url.
+		image := (MTUIImageMorph new setNewImageFrom: form size: self defaultImageSize)
+			cornerRadius: self defaultCornerRadius;
 			hResizing: #shrinkWrap;
-			vResizing: #shrinkWrap;
-			color: Color transparent;
-			setNewImageFrom: (image form scaledToSize: 300).
+			vResizing: #shrinkWrap.
+		
 		media addMorphBack: image].
 	
 	^ media

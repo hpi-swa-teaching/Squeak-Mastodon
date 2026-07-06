@@ -1,4 +1,4 @@
 icon
 camera
 
-	^ self getIcon: 'camera' inColor: #black inSize: 40 @ 40
+	^ self getIcon: 'camera' inColor: #black inSize: self menuButtonExtent

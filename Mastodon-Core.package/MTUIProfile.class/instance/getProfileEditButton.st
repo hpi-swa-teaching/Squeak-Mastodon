@@ -2,8 +2,10 @@ render-buttons
 getProfileEditButton
 
 	| button |
-	button := MTUIPushButton new.
-	button text: 'Edit Profile'.
-	button setBalloonText: 'Change username, description, avatar of current profile'.
+	button := MTUIPushButton new
+		text: self profileEditButtonText;
+		setBalloonText: self profileEditButtonBalloonText.
+		
 	self connect: button signal: #clicked: toSelector: #openProfileSettings.
+	
 	^ button

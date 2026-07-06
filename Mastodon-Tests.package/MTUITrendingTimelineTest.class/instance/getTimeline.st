@@ -1,0 +1,4 @@
+testing
+getTimeline
+
+	^ MTUITrendingTimeline new

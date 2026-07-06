@@ -1,4 +1,0 @@
-defaults
-defaultTootId
-
-	^ 42

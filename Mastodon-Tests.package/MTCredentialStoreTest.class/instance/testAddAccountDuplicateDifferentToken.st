@@ -2,7 +2,7 @@ add
 testAddAccountDuplicateDifferentToken
 
 	MTCredentialStore getInstance
-		addCredentials: DataProvider firstAccountCredentials;
-		addCredentials: DataProvider firstAccountCredentialsWithDifferentToken.
+		addCredentials: MTDataProvider firstAccountCredentials;
+		addCredentials: MTDataProvider firstAccountCredentialsWithDifferentToken.
 	
 	self assert: MTCredentialStore getInstance numberOfCredentials equals: 1

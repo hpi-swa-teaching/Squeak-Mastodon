@@ -1,4 +1,4 @@
-toot
+actions
 hideFeedback
 
 	self feedbackMorph hide

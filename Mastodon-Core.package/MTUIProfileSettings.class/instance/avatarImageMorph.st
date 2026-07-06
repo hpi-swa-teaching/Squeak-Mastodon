@@ -1,4 +1,0 @@
-accessing
-avatarImageMorph
-
-	^ avatarImageMorph

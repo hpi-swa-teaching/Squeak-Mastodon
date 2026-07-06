@@ -1,0 +1,4 @@
+utilities
+informMessage
+
+	^ informMessage

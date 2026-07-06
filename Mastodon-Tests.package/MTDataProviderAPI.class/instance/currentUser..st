@@ -1,0 +1,4 @@
+meta
+currentUser: aCredential
+
+	^ self

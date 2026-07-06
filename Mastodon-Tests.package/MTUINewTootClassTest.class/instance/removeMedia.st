@@ -1,0 +1,4 @@
+actions
+removeMedia
+
+	removeMediaCalled := true

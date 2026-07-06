@@ -2,8 +2,8 @@ remove
 testRemoveAllAccounts
 	
 	MTCredentialStore getInstance
-		addCredentials: DataProvider firstAccountCredentials;
-		addCredentials: DataProvider secondAccountCredentials;
+		addCredentials: MTDataProvider firstAccountCredentials;
+		addCredentials: MTDataProvider secondAccountCredentials;
 		removeAllCredentials.
 		
 	self assert: MTCredentialStore getInstance numberOfCredentials equals: 0

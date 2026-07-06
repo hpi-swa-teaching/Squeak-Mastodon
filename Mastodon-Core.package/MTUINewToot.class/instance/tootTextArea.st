@@ -1,4 +1,4 @@
-accessing
+accessing-morphs
 tootTextArea
 
-	^ tootTextArea
+	^ tootTextArea ifNil: [tootTextArea := self getTextArea]

@@ -1,4 +1,5 @@
 accessing
-mentions: anObject
+mentions: aMentionCollection
+	" Mentions of users within the toots content. See https://docs.joinmastodon.org/entities/Status/ "
 
-	mentions := anObject
+	mentions := aMentionCollection

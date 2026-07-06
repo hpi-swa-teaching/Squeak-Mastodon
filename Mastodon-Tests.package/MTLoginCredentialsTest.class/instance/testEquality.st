@@ -2,8 +2,8 @@ comparing
 testEquality
 
 	| firstLoginCredentials secondLoginCredentials |
-	firstLoginCredentials := DataProvider firstAccountCredentials.
-	secondLoginCredentials := DataProvider firstAccountCredentials.
+	firstLoginCredentials := MTDataProvider firstAccountCredentials.
+	secondLoginCredentials := MTDataProvider firstAccountCredentials.
 	
 	self assert: firstLoginCredentials = secondLoginCredentials.
 	self assert: firstLoginCredentials equals: secondLoginCredentials.

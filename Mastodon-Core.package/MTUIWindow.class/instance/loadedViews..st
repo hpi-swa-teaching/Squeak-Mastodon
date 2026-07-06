@@ -1,4 +1,4 @@
 accessing
-loadedViews: anObject
+loadedViews: aDictionary
 
-	loadedViews := anObject
+	loadedViews := aDictionary

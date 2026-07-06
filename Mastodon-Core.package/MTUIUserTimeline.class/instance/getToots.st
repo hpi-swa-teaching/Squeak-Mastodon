@@ -1,5 +1,5 @@
 updating
 getToots
 	
-	self accountID ifNil: [^ MTResult new].
+	self accountID ifNil: [^ {}].
 	^ self mastodonApi getStatusesOf: self accountID

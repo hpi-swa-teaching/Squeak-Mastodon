@@ -1,11 +1,10 @@
 initialization
 from: aJsonObject
-
+	
 	^ self new
 		id: (aJsonObject at: 'id');
 		username: (aJsonObject at: 'username');
 		federatedUsername: (aJsonObject at: 'acct');
-		cacheAccount;
 		displayName: (aJsonObject at: 'display_name');
 		createdAt: (aJsonObject at: 'created_at');
 		url: (aJsonObject at: 'url');

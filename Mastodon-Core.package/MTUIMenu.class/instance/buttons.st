@@ -1,4 +1,4 @@
 accessing
 buttons
 
-	^ buttons
+	^ buttons ifNil: [buttons := OrderedCollection new]

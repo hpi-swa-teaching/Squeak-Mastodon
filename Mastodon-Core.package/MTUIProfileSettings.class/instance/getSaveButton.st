@@ -2,8 +2,10 @@ render-buttons
 getSaveButton
 
 	| button |
-	button := MTUIPushButton new.
-	button text: 'Save Changes'.
-	button setBalloonText: 'Save current changes and close'.
+	button := MTUIPushButton new
+		text: self saveButtonText;
+		setBalloonText: self saveButtonBalloonText.
+		
 	self connect: button signal: #clicked: toSelector: #saveProfileChanges.
+	
 	^ button

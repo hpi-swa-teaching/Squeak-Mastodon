@@ -1,5 +1,5 @@
 actions
 changeViewToProfileView
 	
-	MTUIWindow instance loadProfileViewForCurrentUser.
+	self window loadProfileViewForCurrentUser.
 	self delete.

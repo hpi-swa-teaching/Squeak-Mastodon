@@ -1,12 +1,10 @@
 tests
 testDeserializeSearchResult
 
-	| json searchResult result |
-	searchResult := DataProvider defaultSearchResult.
-	json := DataProvider defaultSearchResultJsonString.
+	| result expected jsonString |
+	jsonString := Json render: MTDataProvider firstSearchResultJson.
+	result := MTMastodonApi new deserialize: jsonString intoObjectOf: MTSearch.
 	
-	result := MTMastodonApi new deserialize: json intoObjectOf: MTSearchResult.
+	expected := MTDataProvider firstSearchResult.
 	
-	self assert: result class equals: MTSearchResult.
-	self assert: result accounts size equals: (searchResult at: 'accounts') size.
-	self assert: result accounts first displayName equals: ((searchResult at: 'accounts') first  at: 'display_name')
+	self assertSearch: result matches: expected
