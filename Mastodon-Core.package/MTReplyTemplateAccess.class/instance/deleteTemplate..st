@@ -3,6 +3,6 @@ deleteTemplate: aTemplateTitle
 
 	(self templateExists: aTemplateTitle)
 		ifTrue: [
-			(FileDirectory on: (FileDirectory default fullNameFor: 'replyTemplates/', self user)) deleteFileNamed: aTemplateTitle.
+			(FileDirectory on: self baseDir) deleteFileNamed: aTemplateTitle.
 			^ true]
 		ifFalse: [^ false]
