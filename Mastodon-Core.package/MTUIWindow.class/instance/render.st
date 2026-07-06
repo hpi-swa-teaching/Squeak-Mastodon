@@ -3,4 +3,5 @@ render
 
 	self
 		addMenuMorph;
-		addScrollMorph
+		addScrollMorph;
+		minimumExtent: 600 @ 500
