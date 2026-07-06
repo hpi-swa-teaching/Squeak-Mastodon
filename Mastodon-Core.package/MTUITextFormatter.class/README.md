@@ -1,0 +1,1 @@
+A MTUITextFormatter is an object that maps html tags and formats html text.

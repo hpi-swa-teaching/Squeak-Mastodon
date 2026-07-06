@@ -1,0 +1,1 @@
+A MTUIScrollPane is an object that displays horizontal and vertical scrollbars.
