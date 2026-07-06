@@ -1,9 +1,10 @@
 actions
 tootWithImageAndParameters: aDictionary
 
-	| mediaAttachment |
+	| parameters mediaAttachment |
+	parameters := OrderedCollection withAll: aDictionary associations.
 	self media do: [:image |
 		mediaAttachment := self mastodonApi uploadMediaFrom: image.
-		aDictionary at: 'media_ids[]' put: mediaAttachment id asString].
+		parameters add: 'media_ids[]' -> mediaAttachment id asString].
 	
-	self mastodonApi tootWithParameters: aDictionary
+	self mastodonApi tootWithParameters: parameters

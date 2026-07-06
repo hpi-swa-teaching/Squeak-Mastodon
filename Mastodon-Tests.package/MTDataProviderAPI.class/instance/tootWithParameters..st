@@ -1,15 +1,20 @@
 endpoints
-tootWithParameters: aDictionary
+tootWithParameters: aParameterCollection
 
-	| json |
+	| json associations |
 	tootWithParametersCalled := true.
 	
+	associations := aParameterCollection isDictionary
+		ifTrue: [aParameterCollection associations]
+		ifFalse: [aParameterCollection].
+
 	json := MTDataProvider firstTootJson.
-	(aDictionary includesKey: 'status') ifTrue: [json at: 'content' put: (aDictionary at: 'status')].
-	(aDictionary includesKey: 'visibility') ifTrue: [json at: 'visibility' put: (aDictionary at: 'visibility')].
-	(aDictionary includesKey: 'quote_approval_policy') ifTrue: [json at: 'quote_approval_policy' put: (aDictionary at: 'quote_approval_policy')].
-	(aDictionary includesKey: 'media_ids[]') ifTrue: [
-		tootWithParameterAndMediaCalled := true.
-		json at: 'media_attachments' put: {MTDataProvider firstMediaJson}].
-	
+	associations do: [:each |
+		each key = 'status' ifTrue: [json at: 'content' put: each value].
+		each key = 'visibility' ifTrue: [json at: 'visibility' put: each value].
+		each key = 'quote_approval_policy' ifTrue: [json at: 'quote_approval_policy' put: each value].
+    		each key = 'media_ids[]' ifTrue: [
+			tootWithParameterAndMediaCalled := true.
+			json at: 'media_attachments' put: {MTDataProvider firstMediaJson}]].
+
 	^ MTToot from: json
