@@ -1,9 +1,6 @@
 render
 render
 
-	self tootMorphs do: [:morph |
-		self removeMorph: morph.
-		morph delete].
 	self removeAllMorphs.
 	self toots do: [:toot | | tootMorph spacingMorph actionToot |
 		tootMorph := MTUIToot for: toot.
