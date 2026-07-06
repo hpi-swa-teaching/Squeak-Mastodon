@@ -1,7 +1,6 @@
-accessing
+render
 renderScheduled
 
-	self removeAllMorphs.
 	self scheduledToots do: [:toot | | tootMorph spacingMorph |
 		tootMorph := MTUIScheduledToot for: toot with: self user.
 		tootMorph scheduleButton
@@ -16,7 +15,6 @@ renderScheduled
 		spacingMorph
 			height: 1;
 			hResizing: #spaceFill.
-		
-		self addMorphBack: tootMorph.
-		self scheduledMorphs addFirst: tootMorph.
-		self addMorphBack: spacingMorph]
+		self addMorph: spacingMorph.
+		self addMorph: tootMorph.
+		self scheduledMorphs addFirst: tootMorph]

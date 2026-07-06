@@ -15,6 +15,5 @@ loadScheduled
 		cur := scheduled first id].
 	
 	self scheduledToots sort: [:a :b | a scheduledAt >= b scheduledAt].
-	self renderScheduled.
 	
 	^ true
