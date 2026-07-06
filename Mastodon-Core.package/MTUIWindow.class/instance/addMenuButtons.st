@@ -8,4 +8,4 @@ addMenuButtons
 	self menuMorph addButton: #screenshotButton for: #loadScreenshotView on: self with: MTUIIcons camera.
 	self menuMorph addButton: #settingsButton for: #loadSettingsView on: self with: MTUIIcons settings.
 	self menuMorph addButton: #mentionButton for: #loadMentionTimelineView on: self with: MTUIIcons mentions.
-	self menuMorph addButton: #templatesButton for: #loadTemplatesView on: self with: MTUIIcons newTweet
+	self menuMorph addButton: #templatesButton for: #loadTemplatesView on: self with: MTUIIcons replyTemplates
