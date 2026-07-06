@@ -1,4 +1,4 @@
 accessing
 active
 
-	^ active
+	^ active ifNil: [active := false]

@@ -9,6 +9,7 @@ selectImage
 	
 	self
 		updateMediaPreview;
+		updateClearImagesButton;
 		updateTootButton;
 		updateSelectImageButton.
 	

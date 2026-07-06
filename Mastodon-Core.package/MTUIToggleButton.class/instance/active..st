@@ -3,6 +3,4 @@ active: aBoolean
 
 	active := aBoolean.
 	
-	self
-		selectAppropiateLabelGraphic;
-		selectAppropiateBalloonText
+	self render

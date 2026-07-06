@@ -4,6 +4,6 @@ loadMoreToots
 	| toots |
 	self mastodonApi hasToken ifFalse: [^ false].
 	
-	toots := self getMoreTootsUpTo: self minID - 1.
+	toots := self getMoreTootsUpTo: self minID.
 	
 	self appendToots: toots

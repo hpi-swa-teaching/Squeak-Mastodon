@@ -1,4 +1,6 @@
 defaults
 buttonLabelGraphic
 
-	^ self buttonLabelGraphicWhenInactive
+	^ self active
+		ifTrue: [self buttonLabelGraphicWhenActive]
+		ifFalse: [self buttonLabelGraphicWhenInactive]
