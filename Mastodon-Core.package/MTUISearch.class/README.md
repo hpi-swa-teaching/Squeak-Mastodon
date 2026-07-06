@@ -1,0 +1,1 @@
+MTUISearch is a view to search for other users

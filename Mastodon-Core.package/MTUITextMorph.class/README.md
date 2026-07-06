@@ -1,0 +1,1 @@
+A MTUITextMorph is like a regular UITextMorph, but it also has a recipient morph that it sends the message updateTextSize to.

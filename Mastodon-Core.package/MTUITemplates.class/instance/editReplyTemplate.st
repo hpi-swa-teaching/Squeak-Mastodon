@@ -1,21 +1,14 @@
 edit-template
 editReplyTemplate
 
-	| userTemplates menu replyTemplateAccess selectedTemplateName selectedReplyTemplate |
+	| userTemplates replyTemplateAccess selectedTemplate selectedReplyTemplate |
 	replyTemplateAccess := MTReplyTemplateAccess new.
 	replyTemplateAccess user: self mastodonApi getCurrentUser value username.
 	userTemplates := replyTemplateAccess templateDirectoryContent.
 	
-	menu := DialogWindow new.
-	menu title: 'Choose template'.
+	selectedTemplate := self chooseTemplate: userTemplates.
+	selectedTemplate = false ifTrue: [^ self].
+	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplate.
 	
-	userTemplates do: [:template | menu createButton: template name value: template].
-	menu createCancelButton.
-	self addMorph: menu.
-	
-	selectedTemplateName := menu getUserResponse.
-	selectedTemplateName ifFalse: [^ self].
-	selectedReplyTemplate := replyTemplateAccess readTemplate: selectedTemplateName.
-	self showSuccessMessage: 'Template deleted successfully'.
-	replyTemplateTextArea contents: selectedReplyTemplate content.
-	replyTemplateTitle contents: selectedReplyTemplate title
+	self replyTemplateTextArea contents: selectedReplyTemplate content.
+	self replyTemplateTitle contents: selectedReplyTemplate title

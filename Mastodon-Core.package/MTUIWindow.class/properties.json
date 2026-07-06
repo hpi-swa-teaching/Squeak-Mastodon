@@ -1,7 +1,7 @@
 {
 	"category" : "Mastodon-Core",
 	"classinstvars" : [
-		 ],
+		"instance" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "LS 8/4/2017 16:02",

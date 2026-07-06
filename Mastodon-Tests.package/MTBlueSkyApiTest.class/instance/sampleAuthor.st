@@ -1,5 +1,6 @@
 support
 sampleAuthor
+
 	| author |
 	author := Dictionary new.
 	author

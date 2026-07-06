@@ -1,11 +1,12 @@
 tests
 testTootFromFeedItemMapsPost
+
 	| api toot account |
 	api := MTBlueSkyApi new.
-
+	
 	toot := api tootFromFeedItem: self sampleFeedItem.
 	account := toot acct.
-
+	
 	self assert: toot class equals: MTToot.
 	self assert: toot id equals: 'at://did:plc:alice/app.bsky.feed.post/1'.
 	self assert: toot cid equals: 'cid-1'.

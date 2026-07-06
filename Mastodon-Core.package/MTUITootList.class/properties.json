@@ -4,12 +4,11 @@
 		"maxID" ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "Silver 7/5/2026 18:45",
 	"instvars" : [
-		"minID",
-		"maxID",
 		"toots",
-		"tootMorphs" ],
+		"tootMorphs",
+		"sortBlock" ],
 	"name" : "MTUITootList",
 	"pools" : [
 		 ],

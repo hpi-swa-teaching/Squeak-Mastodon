@@ -8,5 +8,4 @@ initialize
 	
 	self
 		cancelButton: MTUICancelButton new;
-		scheduleButton: MTUITimeButton new;
-		editButton: MTUIEditButton new
+		scheduleButton: MTUITimeButton new

@@ -1,3 +1,4 @@
-as yet unclassified
+accessing
 content: aContent
-	content := aContent.
+
+	content := aContent

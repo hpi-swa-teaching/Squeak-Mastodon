@@ -1,6 +1,5 @@
-as yet unclassified
+render
 render
 
 	super render.
-	"self labelGraphic: MTUIIcons reply."
 	self setBalloonText: 'reply'

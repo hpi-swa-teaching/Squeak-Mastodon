@@ -2,12 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assureTemplateDirectory" : "Mailin 6/28/2026 16:31",
-		"deleteTemplate:" : "Mailin 6/28/2026 16:31",
-		"isReplyTemplateTitleValid:" : "Tom1Schaepsmeier 5/26/2026 12:39",
-		"readTemplate:" : "SF 5/17/2026 11:31",
-		"templateDirectoryContent" : "Mailin 6/28/2026 16:31",
-		"templateExists:" : "Mailin 6/28/2026 16:31",
-		"user" : "SF 5/12/2026 18:50",
-		"user:" : "SF 5/17/2026 11:21",
-		"writeTemplate:" : "Mailin 6/28/2026 16:32" } }
+		"assureTemplateDirectory" : "SF 7/6/2026 12:06",
+		"baseDir" : "SF 7/6/2026 12:06",
+		"deleteTemplate:" : "SF 7/6/2026 12:08",
+		"isReplyTemplateTitleValid:" : "lapl 7/2/2026 15:39",
+		"readTemplate:" : "lapl 7/2/2026 15:39",
+		"templateDirectoryContent" : "SF 7/6/2026 12:06",
+		"templateExists:" : "SF 7/6/2026 12:07",
+		"user" : "lapl 7/2/2026 15:39",
+		"user:" : "lapl 7/2/2026 15:39",
+		"writeTemplate:" : "SF 7/6/2026 12:07" } }

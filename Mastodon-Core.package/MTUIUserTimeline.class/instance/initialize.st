@@ -1,5 +1,5 @@
-accessing
+initialization
 initialize
 
 	super initialize.
-	scheduledMorphs := OrderedCollection new
+	self scheduledMorphs: OrderedCollection new

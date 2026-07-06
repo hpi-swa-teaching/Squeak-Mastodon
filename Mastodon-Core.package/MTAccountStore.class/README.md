@@ -1,0 +1,1 @@
+A MTAccountStore is a class that is used to store Mastodon accounts.

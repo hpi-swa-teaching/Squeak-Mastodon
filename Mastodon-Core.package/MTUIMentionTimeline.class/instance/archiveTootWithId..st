@@ -9,4 +9,5 @@ archiveTootWithId: anInteger
 	stream nextPutAll: anInteger asString.
 	stream close.
 	
-	self mtuiWindow loadMentionTimelineView. "toot should despawn after archive button is pressed"
+	self mtuiWindow loadMentionTimelineView
+	"toot should despawn after archive button is pressed"

@@ -1,0 +1,16 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SF 7/6/2026 11:26",
+	"instvars" : [
+		"observers",
+		"sortKey",
+		"sortDirection" ],
+	"name" : "MTUISortFilter",
+	"pools" : [
+		 ],
+	"super" : "MTUIView",
+	"type" : "normal" }

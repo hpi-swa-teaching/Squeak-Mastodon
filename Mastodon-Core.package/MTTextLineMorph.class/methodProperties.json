@@ -4,10 +4,10 @@
 	"instance" : {
 		"handleKeystroke:" : "lapl 6/6/2026 00:27",
 		"handleTab:withShift:" : "lapl 6/6/2026 00:26",
-		"isSpecialCharacter:" : "lapl 6/2/2026 12:59",
-		"match:" : "lapl 5/26/2026 14:20",
-		"pattern" : "lapl 5/25/2026 10:07",
-		"pattern:" : "lapl 5/25/2026 10:07",
-		"validate:" : "lapl 6/2/2026 12:59",
-		"validator" : "lapl 5/25/2026 10:02",
-		"validator:" : "lapl 5/25/2026 10:02" } }
+		"isSpecialCharacter:" : "lapl 7/2/2026 15:45",
+		"match:" : "lapl 7/2/2026 15:45",
+		"pattern" : "lapl 7/2/2026 15:45",
+		"pattern:" : "lapl 7/2/2026 15:45",
+		"validate:" : "lapl 7/2/2026 20:22",
+		"validator" : "lapl 7/2/2026 15:45",
+		"validator:" : "lapl 7/2/2026 15:45" } }

@@ -1,0 +1,1 @@
+A MTScreenshot object is used to take screenshots.

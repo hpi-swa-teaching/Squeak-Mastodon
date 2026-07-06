@@ -1,5 +1,6 @@
 helpers
 getAuthorFeedFor: anAccountID cursor: aCursor
+
 	| url response json feed toots |
 	url := self buildUrl: '/xrpc/app.bsky.feed.getAuthorFeed?limit=30&actor=', anAccountID.
 	aCursor ifNotNil: [url := url, '&cursor=', aCursor].

@@ -1,5 +1,6 @@
 tests
 testTextValidation
+
 	| widget s |
 	widget := MTUINewToot new.
 	s := ''.

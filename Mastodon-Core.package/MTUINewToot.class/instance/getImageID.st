@@ -1,7 +1,8 @@
 toot
 getImageID
+
 	| imageID json |
-	imageMorph ifNil: [^ nil].
-	json := mastodonApi uploadMediaFrom: imageMorph imageForm.
-	imageID := (mastodonApi deserialize: json) at: 'id'.
+	self imageMorph ifNil: [^ nil].
+	json := self mastodonApi uploadMediaFrom: self imageMorph imageForm.
+	imageID := (self mastodonApi deserialize: json) at: 'id'.
 	^ imageID

@@ -1,3 +1,4 @@
 accessing
 headerAt: aHeader
-	^ headers at: aHeader ifAbsent: [nil]
+
+	^ self headers at: aHeader ifAbsent: [nil]

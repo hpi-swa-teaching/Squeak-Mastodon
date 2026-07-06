@@ -1,10 +1,11 @@
 helpers
 postRequest: url body: jsonString
+
 	| response |
-	response := webClient httpPost: url
+	response := self webClient
+		httpPost: url
 		content: jsonString
 		type: 'application/json'
 		do: [:req | self token ifNotNil: [req addHeader: 'Authorization' value: 'Bearer ', self token]].
-	response isSuccess
-		ifTrue: [^ response content utf8ToSqueak].
+	response isSuccess ifTrue: [^ response content utf8ToSqueak].
 	^ nil

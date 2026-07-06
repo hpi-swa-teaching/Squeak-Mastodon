@@ -1,0 +1,1 @@
+MTUITemplates is a view to create, edit and delete replyTemplates 

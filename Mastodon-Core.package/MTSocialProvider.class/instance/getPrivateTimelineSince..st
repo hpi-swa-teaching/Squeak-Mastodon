@@ -1,0 +1,4 @@
+endpoints
+getPrivateTimelineSince: aSinceID
+
+	^ self subclassResponsibility

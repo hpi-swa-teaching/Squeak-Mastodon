@@ -1,0 +1,4 @@
+accessing
+repliesCount
+
+	^ repliesCount

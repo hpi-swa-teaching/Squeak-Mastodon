@@ -1,0 +1,4 @@
+accessing
+clientID
+
+	^ self subclassResponsibility

@@ -1,7 +1,4 @@
 mouse-action
-getContentAtPoint: aPoint 
+getContentAtPoint: aPoint
 
-	World submorphs
-		do: [:submorph | (submorph containsPoint: aPoint)
-				ifTrue: [^submorph]]
-
+	^ World submorphs detect: [:submorph | submorph containsPoint: aPoint] ifNone: [nil]

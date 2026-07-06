@@ -1,8 +1,12 @@
 {
 	"class" : {
-		"blueSkyProvider" : "LZ 4/30/2026 14:04",
-		"mastodonProvider" : "LZ 4/30/2026 14:04",
-		"providerFor:" : "LZ 4/30/2026 14:04",
-		"providerFromSettings" : "LZ 4/30/2026 14:04" },
+		"blueSkyInstance" : "lapl 7/2/2026 20:23",
+		"blueSkyInstance:" : "lapl 7/2/2026 20:23",
+		"blueSkyProvider" : "lapl 7/2/2026 20:23",
+		"mastodonInstance" : "lapl 7/2/2026 20:23",
+		"mastodonInstance:" : "lapl 7/2/2026 20:23",
+		"mastodonProvider" : "lapl 7/2/2026 20:24",
+		"providerFor:" : "lapl 7/2/2026 14:44",
+		"providerFromSettings" : "lapl 7/2/2026 14:44" },
 	"instance" : {
 		 } }

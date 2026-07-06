@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"token",
+		"webClient",
+		"baseURL" ],
 	"name" : "MTSocialProvider",
 	"pools" : [
 		 ],

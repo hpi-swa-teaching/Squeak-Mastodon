@@ -3,16 +3,16 @@ linkFields
 
 	self yearField
 		nextField: self monthField;
-		previousField: minuteField.
+		previousField: self minuteField.
 	self monthField
 		nextField: self dayField;
-		previousField: yearField.
+		previousField: self yearField.
 	self dayField
-		nextField: hourField;
-		previousField: monthField.
+		nextField: self hourField;
+		previousField: self monthField.
 	self hourField
-		nextField: minuteField;
-		previousField: dayField.
+		nextField: self minuteField;
+		previousField: self dayField.
 	self minuteField
-		nextField: yearField;
-		previousField: hourField
+		nextField: self yearField;
+		previousField: self hourField

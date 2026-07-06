@@ -1,0 +1,1 @@
+A MTUIMuteButton is a button to mute a specific user

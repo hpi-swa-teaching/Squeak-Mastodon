@@ -1,0 +1,1 @@
+A MTUIToot is a UI component for regular toots. It contains the post's content, as well as buttons to interact with it (like, reply, reblog).

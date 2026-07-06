@@ -1,0 +1,1 @@
+A MTMastodonModel is a superclass for all MT models (e. g. MTAccount). It does not define any method that are not a subclass responsibility.

@@ -8,4 +8,4 @@ addMentionSection
 		contents: 'Mentions' asHtmlText;
 		lock.
 	
-	self addMorphBack: title.
+	self addMorphBack: title

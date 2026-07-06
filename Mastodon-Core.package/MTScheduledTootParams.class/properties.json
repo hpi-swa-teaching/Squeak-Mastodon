@@ -4,10 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "lapl 7/3/2026 19:33",
 	"instvars" : [
 		"text",
-		"mediaIDs",
 		"inReplyToID" ],
 	"name" : "MTScheduledTootParams",
 	"pools" : [

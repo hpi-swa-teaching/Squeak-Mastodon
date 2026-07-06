@@ -1,5 +1,6 @@
 helpers
 getCurrentDid
+
 	| url response json |
 	url := self buildUrl: '/xrpc/com.atproto.server.getSession'.
 	response := self getRequest: url.

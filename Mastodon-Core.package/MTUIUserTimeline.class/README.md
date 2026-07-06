@@ -1,0 +1,1 @@
+The MTUIUserTimeline is a UI component showing all toots made by a certain MTAccount. If the account matches the logged in user, it also shows scheduled toots.

@@ -1,5 +1,6 @@
 file operations
 readTemplate: aTemplateFile
+
 	| stream template |
 	stream := aTemplateFile readStream.
 	template := MTReplyTemplate new

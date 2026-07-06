@@ -1,13 +1,9 @@
 render
 addTemplateButtonInReply
 
-| templateButton|
-	
+	| templateButton |
 	templateButton := UiPushButton new.
 	templateButton text: 'Reply-Templates'.
-	self
-		connect: templateButton
-		signal: #clicked:
-		toSelector: #useReplyTemplates.
-		
-	self addMorphBack: templateButton.
+	self connect: templateButton signal: #clicked: toSelector: #useReplyTemplates.
+	
+	self addMorphBack: templateButton

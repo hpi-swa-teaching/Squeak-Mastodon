@@ -1,6 +1,7 @@
 updating
 updateTextSize
-	(self tootTextArea contents size) > 500
-		ifTrue: [tootSizeLabel textColor: Color red];
-		ifFalse: [tootSizeLabel textColor: Color black].
-	self tootSizeLabel contents: (tootTextArea contents size asString, '/500') asHtmlText.
+
+	(self tootTextArea contents size > self maxTextSize)
+		ifTrue: [self tootSizeLabel textColor: Color red];
+		ifFalse: [self tootSizeLabel textColor: Color black].
+	self tootSizeLabel contents: (self tootTextArea contents size asString, '/', self maxTextSize) asHtmlText

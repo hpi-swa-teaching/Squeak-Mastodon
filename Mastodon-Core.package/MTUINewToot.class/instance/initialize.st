@@ -12,9 +12,10 @@ initialize
 		messageArea: (AlignmentMorph newColumn
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
-			color: Color transparent);
-		addMorphBack: messageArea;
-		tootSizeLabel: (TextMorph new contents: (tootTextArea contents size asString, '/500') asHtmlText);
-		addMorph: tootSizeLabel;
+			color: Color transparent;
+			yourself);
+		addMorphBack: self messageArea;
+		tootSizeLabel: (TextMorph new contents: (self tootTextArea contents size asString, '/', self maxTextSize) asHtmlText);
+		addMorph: self tootSizeLabel;
 		reloadMentionTimeline: false;
 		addMorph: (TextMorph new contents: '<b>New toot</b>' asHtmlText)

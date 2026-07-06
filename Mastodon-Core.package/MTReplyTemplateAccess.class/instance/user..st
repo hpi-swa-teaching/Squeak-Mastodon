@@ -1,3 +1,4 @@
 accessing
 user: aUser
-	user := aUser.
+
+	user := aUser
