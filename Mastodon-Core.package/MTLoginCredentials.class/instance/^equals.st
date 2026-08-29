@@ -3,4 +3,4 @@ comparing
 
 	(anObject isKindOf: self class) ifFalse: [^ false].
 	
-	^ username = anObject username and: [baseURL = anObject baseURL]
+	^ self username = anObject username and: [self baseURL = anObject baseURL]

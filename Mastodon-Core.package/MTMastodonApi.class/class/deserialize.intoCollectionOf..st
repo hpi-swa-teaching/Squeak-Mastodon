@@ -1,6 +1,10 @@
 initialization
 deserialize: aJsonString intoCollectionOf: aClass
 
-	| parsedJson |
-	parsedJson := (Json new stream: (ReadStream on: aJsonString)) readAny.
-	^ parsedJson collect: [:jsonObject | aClass from: jsonObject]
+	| parsedJson result |
+	aJsonString ifNil: [^ OrderedCollection new].
+	parsedJson := [(Json new stream: (ReadStream on: aJsonString)) readAny] on: Error do: [:e | nil].
+	((parsedJson isKindOf: Array) or: [parsedJson isKindOf: OrderedCollection]) ifFalse: [^ OrderedCollection new].
+	result := OrderedCollection new.
+	parsedJson do: [:jsonObject | [result add: (aClass from: jsonObject)] on: Error do: [:e | nil]].
+	^ result

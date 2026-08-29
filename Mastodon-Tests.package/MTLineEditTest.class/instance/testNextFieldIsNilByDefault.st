@@ -1,3 +1,4 @@
-tests
+accessing
 testNextFieldIsNilByDefault
-	self assert: MTLineEdit new nextField isNil.
+
+	self assert: MTLineEdit new nextField isNil

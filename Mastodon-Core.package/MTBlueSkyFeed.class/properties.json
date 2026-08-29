@@ -1,0 +1,17 @@
+{
+	"category" : "Mastodon-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "Pagpeter 7/2/2026 22:36",
+	"instvars" : [
+		"displayName",
+		"uri",
+		"sourceType",
+		"pinned" ],
+	"name" : "MTBlueSkyFeed",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

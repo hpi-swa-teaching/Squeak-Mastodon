@@ -1,9 +1,9 @@
-as yet unclassified
+search result
 testSearchResultAccounts
-	| Model |
+
+	| model |
+	model := MTSearchResult new.
 	
-	Model :=  MTSearchResult new.
+	model accounts: 'schmidtflo'.
 	
-	Model accounts: 'schmidtflo'.
-		
-	self assert: (Model accounts)  equals: ('schmidtflo'). 
+	self assert: model accounts equals: 'schmidtflo'

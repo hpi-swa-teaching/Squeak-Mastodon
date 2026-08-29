@@ -1,3 +1,4 @@
 accessing
 selectHeaderImage
-	self headerImageMorph: self loadImage.
+
+	self headerImageMorph: self loadImage

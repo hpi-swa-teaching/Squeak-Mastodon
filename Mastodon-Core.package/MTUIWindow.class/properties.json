@@ -10,7 +10,7 @@
 		"viewMorph",
 		"scrollMorph",
 		"loadedViews",
-		"mastodonApi" ],
+		"socialProvider" ],
 	"name" : "MTUIWindow",
 	"pools" : [
 		 ],

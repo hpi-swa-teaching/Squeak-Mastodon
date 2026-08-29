@@ -1,5 +1,6 @@
 mouse-action
 getContentAtClick
+
 	| point |
-	self class cameraCursor showWhile: [point := Sensor waitButton].
-	^self getContentAtPoint: point
+	point := self class cameraCursor showWhile: [Sensor waitButton].
+	^ self getContentAtPoint: point

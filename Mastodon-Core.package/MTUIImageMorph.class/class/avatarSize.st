@@ -1,0 +1,4 @@
+accessing
+avatarSize
+
+	^ 48

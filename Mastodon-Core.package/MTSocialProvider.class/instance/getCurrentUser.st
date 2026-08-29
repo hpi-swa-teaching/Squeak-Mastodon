@@ -1,0 +1,4 @@
+endpoints
+getCurrentUser
+
+	^ self subclassResponsibility

@@ -1,9 +1,9 @@
-as yet unclassified
+media
 testMediaType
-	| Model |
+
+	| model |
+	model := MTMedia new.
 	
-	Model := MTMedia new.
+	model type: 'ein Typ'.
 	
-	Model type:  'ein Typ'.
-		
-	self assert: (Model type)  equals: ('ein Typ'). 
+	self assert: model type equals: 'ein Typ'

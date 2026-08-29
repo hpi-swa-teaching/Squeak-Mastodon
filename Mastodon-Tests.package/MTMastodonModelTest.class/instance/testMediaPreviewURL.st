@@ -1,9 +1,9 @@
-as yet unclassified
+media
 testMediaPreviewURL
-	| Model |
+
+	| model |
+	model := MTMedia new.
 	
-	Model := MTMedia new.
+	model previewUrl: 'eine URL'.
 	
-	Model previewUrl: 'eine URL'.
-		
-	self assert: (Model previewUrl)  equals: ('eine URL'). 
+	self assert: model previewUrl equals: 'eine URL'

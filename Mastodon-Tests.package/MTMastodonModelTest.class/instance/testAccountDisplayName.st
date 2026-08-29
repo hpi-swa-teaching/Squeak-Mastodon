@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountDisplayName
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model displayName: 'Florian'.
 	
-	Model displayName: 'Florian'.
-	
-	self assert: (Model displayName)  equals: ('Florian'). 
+	self assert: model displayName equals: 'Florian'

@@ -1,4 +1,4 @@
-tests
+support
 avatarUrlFromJson: accountJsonString
 
 	| jsonObject |

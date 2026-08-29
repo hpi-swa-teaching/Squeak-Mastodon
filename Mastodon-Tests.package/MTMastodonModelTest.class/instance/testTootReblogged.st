@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootReblogged
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model reblogged: true.
 	
-	Model reblogged: true.
-		
-	self assert: (Model reblogged)  equals: (true). 
+	self assert: model reblogged equals: true

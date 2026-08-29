@@ -1,0 +1,1 @@
+Persists application settings.

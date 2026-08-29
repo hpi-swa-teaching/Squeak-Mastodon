@@ -1,9 +1,9 @@
-as yet unclassified
+media
 testMediaId
-	| Model |
+
+	| model |
+	model := MTMedia new.
 	
-	Model := MTMedia new.
+	model id: 42.
 	
-	Model id: 42.
-		
-	self assert: (Model id)  equals: (42). 
+	self assert: model id equals: 42

@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "JH 7/3/2026 20:54",
+		"storedSettings" : "JH 7/3/2026 20:52",
+		"storedSettings:" : "JH 7/3/2026 20:53",
+		"tearDown" : "JH 7/3/2026 20:55",
+		"testDeleteCurrentSession" : "JH 7/3/2026 20:56",
+		"testLoadComboBoxSelectsActiveSession" : "JH 7/5/2026 04:16",
+		"testLogoutRemovesOnlyActiveSession" : "JH 7/4/2026 07:32",
+		"testMastodonProviderDefaultsToMastodonWorld" : "JH 7/5/2026 04:16",
+		"testResetCreatesFreshStore" : "JH 7/5/2026 04:16",
+		"testStoreCurrentSession" : "JH 7/3/2026 20:58",
+		"testStoreMultipleSessions" : "JH 7/3/2026 20:59",
+		"testSwitchToSelectedSession" : "JH 7/3/2026 21:00",
+		"testTootNumIsFive" : "JH 7/5/2026 02:35",
+		"view" : "JH 7/3/2026 20:50",
+		"view:" : "JH 7/3/2026 20:51" } }

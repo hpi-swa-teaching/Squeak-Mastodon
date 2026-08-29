@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 createWithUsername: aUsername baseURL: aBaseURL token: aToken
 
 	^ self new

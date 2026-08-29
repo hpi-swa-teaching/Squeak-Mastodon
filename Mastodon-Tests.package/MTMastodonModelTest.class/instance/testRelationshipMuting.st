@@ -1,9 +1,9 @@
-as yet unclassified
+relationship
 testRelationshipMuting
-	| Model |
+
+	| model |
+	model := MTRelationship new.
 	
-	Model := MTRelationship new.
+	model muting: 'nobody'.
 	
-	Model muting: 'nobody'.
-		
-	self assert: (Model muting)  equals: ('nobody'). 
+	self assert: model muting equals: 'nobody'

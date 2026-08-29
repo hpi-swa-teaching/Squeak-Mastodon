@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootInReplyToId
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model inReplyToID: 1337.
 	
-	Model inReplyToID: 1337.
-		
-	self assert: (Model inReplyToID)  equals: (1337). 
+	self assert: model inReplyToID equals: 1337

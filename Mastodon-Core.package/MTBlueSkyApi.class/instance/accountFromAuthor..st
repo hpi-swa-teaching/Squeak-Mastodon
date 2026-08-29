@@ -1,5 +1,6 @@
 helpers
 accountFromAuthor: anAuthor
+
 	| account displayName handle createdAt |
 	handle := anAuthor at: 'handle' ifAbsent: [''].
 	displayName := anAuthor at: 'displayName' ifAbsent: [handle].
@@ -15,8 +16,8 @@ accountFromAuthor: anAuthor
 		note: '';
 		avatar: (anAuthor at: 'avatar' ifAbsent: ['']);
 		header: '';
+		followUri: ((anAuthor at: 'viewer' ifAbsent: [Dictionary new]) at: 'following' ifAbsent: ['']);
 		followersCount: (anAuthor at: 'followersCount' ifAbsent: [0]);
 		followingCount: (anAuthor at: 'followsCount' ifAbsent: [0]);
-		statusesCount: (anAuthor at: 'postsCount' ifAbsent: [0]);
-		yourself.
+		statusesCount: (anAuthor at: 'postsCount' ifAbsent: [0]).
 	^ account

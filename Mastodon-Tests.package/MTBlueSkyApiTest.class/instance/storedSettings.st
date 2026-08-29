@@ -1,0 +1,4 @@
+accessing
+storedSettings
+
+	^ storedSettings

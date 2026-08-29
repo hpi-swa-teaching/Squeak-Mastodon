@@ -1,16 +1,13 @@
 {
 	"class" : {
-		"with:from:" : "LS 8/4/2017 16:20" },
+		"with:from:" : "Pagpeter 7/2/2026 15:35" },
 	"instance" : {
-		"addUserInfo" : "LS 7/30/2017 19:16",
-		"addUserTimeline" : "PG 5/28/2017 19:27",
-		"initialize" : "JS 6/4/2016 15:28",
-		"loadMoreToot" : "PG 5/28/2017 19:27",
-		"refreshToots" : "PG 5/28/2017 19:27",
-		"tootList" : "PG 5/28/2017 19:27",
-		"tootList:" : "PG 5/28/2017 19:27",
-		"toots" : "PG 5/28/2017 19:33",
-		"toots:" : "PG 5/28/2017 18:58",
-		"user" : "NK 6/4/2016 18:16",
-		"user:" : "NK 6/4/2016 18:16",
-		"userImageMorph" : "mm 6/26/2017 15:43" } }
+		"addUserInfo" : "JH 7/3/2026 05:53",
+		"addUserTimeline" : "Pagpeter 7/2/2026 15:35",
+		"loadMoreToot" : "Pagpeter 7/2/2026 15:35",
+		"refreshToots" : "Pagpeter 7/2/2026 15:35",
+		"tootList" : "Pagpeter 7/2/2026 15:35",
+		"tootList:" : "Pagpeter 7/2/2026 15:35",
+		"user" : "Pagpeter 7/2/2026 15:35",
+		"user:" : "Pagpeter 7/2/2026 15:35",
+		"userImageMorph" : "Pagpeter 7/2/2026 15:35" } }

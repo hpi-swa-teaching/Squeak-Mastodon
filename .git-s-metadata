@@ -21,13 +21,6 @@ GSMetadata {
 				#name : 'Mastodon-Core'
 			},
 			#path : FSAbsolutePath [ ]
-		},
-		GSCypressMapper {
-			#version : 1,
-			#package : MCPackage {
-				#name : 'Mastodon-Spike-Twitter'
-			},
-			#path : FSAbsolutePath [ ]
 		}
 	],
 	#name : 'Squeak-Mastodon'

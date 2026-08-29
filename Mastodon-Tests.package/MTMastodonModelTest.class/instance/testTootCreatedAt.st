@@ -1,9 +1,9 @@
-as yet unclassified
+toot
 testTootCreatedAt
-	| Model |
+
+	| model |
+	model := MTToot new.
 	
-	Model :=  MTToot new.
+	model createdAt: 1500000000.
 	
-	Model createdAt: 1500000000.
-		
-	self assert: (Model createdAt)  equals: (1500000000). 
+	self assert: model createdAt equals: 1500000000

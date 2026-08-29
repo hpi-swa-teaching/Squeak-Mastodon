@@ -1,9 +1,9 @@
-as yet unclassified
+search result
 testSearchResultStatuses
-	| Model |
+
+	| model |
+	model := MTSearchResult new.
 	
-	Model :=  MTSearchResult new.
+	model statuses: 'not available'.
 	
-	Model statuses: 'not available'.
-		
-	self assert: (Model statuses)  equals: ('not available'). 
+	self assert: model statuses equals: 'not available'

@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountId
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model id: 42.
 	
-	Model id: 42.
-	
-	self assert: (Model id)  equals: (42). 
+	self assert: model id equals: 42

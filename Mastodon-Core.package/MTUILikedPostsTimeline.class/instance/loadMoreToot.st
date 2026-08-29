@@ -1,0 +1,16 @@
+updating
+loadMoreToot
+
+	| result page |
+	self socialProvider isAuthenticated ifFalse: [^ false].
+	self likeCursor ifNil: [^ false].
+	
+	result := self socialProvider getLikesPageWithCursor: self likeCursor.
+	result isError ifTrue: [
+		self inform: (result error ifNil: ['An error occurred']).
+		^ false].
+	
+	page := result value.
+	self likeCursor: page cursor.
+	self appendToots: page toots.
+	^ true

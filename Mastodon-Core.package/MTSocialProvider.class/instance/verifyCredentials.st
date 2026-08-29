@@ -1,0 +1,4 @@
+authentication
+verifyCredentials
+
+	^ self subclassResponsibility

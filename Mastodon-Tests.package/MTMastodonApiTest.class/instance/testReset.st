@@ -1,15 +1,15 @@
-tests
-testReset 
-	| API |
-	API := MTMastodonApi new.
-	
-	API username: 'schmidtflo'.
-	API password: '123'.
-	API baseURL: 'https://mastodon.network'.
+configuration
+testReset
 
-	API reset.
+	| api |
+	api := MTMastodonApi new.
 	
-	self assert: (API username) equals: (nil). 	
-	self assert: (API password) equals: (nil).
-	self assert: (API baseURL) equals: (nil).
-
+	api username: 'schmidtflo'.
+	api password: '123'.
+	api baseURL: 'https://mastodon.network'.
+	
+	api reset.
+	
+	self assert: api username equals: nil.
+	self assert: api password equals: nil.
+	self assert: api baseURL equals: nil

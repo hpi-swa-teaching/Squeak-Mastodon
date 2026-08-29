@@ -1,8 +1,9 @@
-tests
+configuration
 testUsername
-	| API |
-	API := MTMastodonApi new.
+
+	| api |
+	api := MTMastodonApi new.
 	
-	API username: 'schmidtflo'.
+	api username: 'schmidtflo'.
 	
-	self assert: (API username) equals: ('schmidtflo').
+	self assert: api username equals: 'schmidtflo'

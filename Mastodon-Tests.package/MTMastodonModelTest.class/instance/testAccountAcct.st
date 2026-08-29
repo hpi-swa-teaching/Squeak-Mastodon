@@ -1,9 +1,9 @@
-as yet unclassified
+account
 testAccountAcct
-	| Model |
+
+	| model |
+	model := MTAccount new.
 	
-	Model := MTAccount new.
+	model acct: 'ein acct'.
 	
-	Model acct: 'ein acct'.
-	
-	self assert: (Model acct)  equals: ('ein acct'). 
+	self assert: model acct equals: 'ein acct'

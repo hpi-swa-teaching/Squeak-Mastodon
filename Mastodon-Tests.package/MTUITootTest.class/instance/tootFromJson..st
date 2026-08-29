@@ -1,4 +1,4 @@
-tests
+support
 tootFromJson: aString
 
 	| jsonObject |

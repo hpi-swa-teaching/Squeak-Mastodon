@@ -1,5 +1,6 @@
 helpers
 tootFromFeedItem: aFeedItem
+
 	| post record author viewer authorViewer toot likeUri followUri repostUri |
 	post := aFeedItem at: 'post' ifAbsent: [Dictionary new].
 	record := post at: 'record' ifAbsent: [Dictionary new].
@@ -25,6 +26,5 @@ tootFromFeedItem: aFeedItem
 		media: #();
 		followedByUser: followUri notNil;
 		followUri: (followUri ifNil: ['']);
-		repostUri: (repostUri ifNil: ['']);
-		yourself.
+		repostUri: (repostUri ifNil: ['']).
 	^ toot

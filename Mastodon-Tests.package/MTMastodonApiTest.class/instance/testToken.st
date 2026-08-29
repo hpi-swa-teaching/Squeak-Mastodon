@@ -1,8 +1,9 @@
-tests
+configuration
 testToken
-	| API |
-	API := MTMastodonApi new.
+
+	| api |
+	api := MTMastodonApi new.
 	
-	API baseURL: 'https://mastodon.social'.
+	api token: 'secret-token'.
 	
-	self assert: (API baseURL) equals: ('https://mastodon.social').
+	self assert: api token equals: 'secret-token'

@@ -1,5 +1,6 @@
-tests
+follow endpoints
 testFollowReturnsErrorWhenSessionFails
+
 	| api client result |
 	client := MTBlueSkyMockWebClient new.
 	client failGet: 'https://bsky.social/xrpc/com.atproto.server.getSession'.
